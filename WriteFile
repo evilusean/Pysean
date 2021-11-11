@@ -1,0 +1,10 @@
+#"r" = read "a" = append "w" = write append will add to file write will overwrite or make new
+content = "hello world!"
+
+file = open("file.txt", "w")
+file.write(content)
+file.close()
+
+#with open no longer need to close
+with open("file.txt", "a") as file:
+  file.write(content)
