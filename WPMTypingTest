@@ -1,4 +1,5 @@
 #must be run in a terminal/cmd with WPM.txt in directory
+#pip install windows-curses
 #to start type in terminal: python WPMTypingTest.py
 import curses
 from curses import wrapper
