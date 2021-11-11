@@ -1,0 +1,6 @@
+import random
+#random number between 1-10
+num = random.randint(0,10)
+#range 1-100 by 2 step
+num2 =random.randrange(0,10,2)
+print(num)
