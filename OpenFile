@@ -1,0 +1,8 @@
+file = open)"filename.txt", "r")
+print(file.readlines())
+#print(file.read())
+file.close()
+
+#use with opten so you do not need to close file
+with open("C://file.txt", "r" as file:
+  print(file.read())
