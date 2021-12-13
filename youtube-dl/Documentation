@@ -5,6 +5,8 @@ https://github.com/ytdl-org/youtube-dl/
 #pip install youtube-dl
 cmd:
 #python -m youtube_dl (URL)
+cmd list options:
+python -m youtube_dl --help
 Videos can be filtered by their upload date using the options --date, --datebefore or --dateafter. They accept dates in two formats:
 
 Absolute dates: Dates in the format YYYYMMDD.
