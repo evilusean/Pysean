@@ -1,6 +1,8 @@
 """
 #using Python
 #pip install youtube-dl
+cmd:
+#python -m youtube_dl (URL)
 Videos can be filtered by their upload date using the options --date, --datebefore or --dateafter. They accept dates in two formats:
 
 Absolute dates: Dates in the format YYYYMMDD.
@@ -129,7 +131,34 @@ the videos one by one By default the -f 18option is for 360p video
 You can get the list of available format codes for particular video using --list-formats or -F
 You can also use a file extension (currently 3gp, aac, flv, m4a, mp3, mp4, ogg, wav, webm are supported) to download the best quality format of a 
 particular file extension served as a single file, e.g. -f webm will download the best quality format with the webm extension served as a single file.
-                                     
+
+How do I put downloads into a specific folder?
+Use the -o to specify an output template, for example -o "/home/user/videos/%(title)s-%(id)s.%(ext)s". 
+If you want this for all of your downloads, put the option into your configuration file.
+
+How do I download a video starting with a -?
+Either prepend https://www.youtube.com/watch?v= or separate the ID from the options with --:
+youtube-dl -- -wNyEUrxzFU
+youtube-dl "https://www.youtube.com/watch?v=-wNyEUrxzFU"
+
+How do I stream directly to media player?
+You will first need to tell youtube-dl to stream media to stdout with -o -, and also tell your media player to read from stdin (it must be capable of this for streaming) and then pipe former to latter. For example, streaming to vlc can be achieved with:
+
+youtube-dl -o - "https://www.youtube.com/watch?v=BaW_jenozKcj" | vlc -
+
+How do I download only new videos from a playlist?
+Use download-archive feature. With this feature you should initially download the complete playlist with --download-archive /path/to/download/archive/file.txt that will record identifiers of all the videos in a special file. Each subsequent run with the same --download-archive will download only new videos and skip all videos that have been downloaded before. Note that only successful downloads are recorded in the file.
+
+For example, at first,
+
+youtube-dl --download-archive archive.txt "https://www.youtube.com/playlist?list=PLwiyx1dc3P2JR9N8gQaQN_BCvlSlap7re"
+will download the complete PLwiyx1dc3P2JR9N8gQaQN_BCvlSlap7re playlist and create a file archive.txt. Each subsequent run will only download new videos if any:
+
+supported sites:
+https://github.com/ytdl-org/youtube-dl/blob/master/docs/supportedsites.md
+It is not possible to detect whether a URL is supported or not. That's because youtube-dl contains a generic extractor which matches all URLs.
+If you want to find out whether a given URL is supported, simply call youtube-dl with it. If you get no videos back, chances are the URL is either not referring to a video or unsupported.
+
 """
 
 
