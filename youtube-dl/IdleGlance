@@ -1,0 +1,95 @@
+"""
+#using Python
+#pip install youtube-dl
+--date DATE
+          Download only videos uploaded in this date
+
+--datebefore DATE
+          Download only videos uploaded on or before this date (i.e.  inclusive)
+
+--dateafter DATE
+          Download only videos uploaded on or after this date (i.e.  inclusive)
+Not stated there, but only hidden in the code, is that DATE is in the format YYYYMMDD or (now|today)[+-][0-9](day|week|month|year)(s)?, so for example
+the 17th August 2016 would be 20160817, and seven days ago would be now-7days or now-1week.
+
+You can specify a range by using --datebefore and --dateafter together, so:
+
+youtube-dl -i --dateafter 20160808 --datebefore 20160810 https://www.youtube.com/channel/CHANNEL
+will download all videos from a channel uploaded between and including August 8th and August 10th 2016, and:
+
+youtube-dl -i --dateafter now-1week https://www.youtube.com/playlist?list=PLAYLIST
+will download all videos from a playlist uploaded in the past week.
+
+The -i option prevents youtube-dl from exiting prematurely if some videos are unavailable.
+Sync playlist/channel
+youtube-dl -o "%(title)s.%(ext)s" -x --audio-format mp3 --audio-quality 0 --download-archive Filename.txt https://www.youtube.com/playlist?list=PLAYLIS
+
+Download Playlist:
+youtube-dl -f FORMAT -ciw -o "%(title)s.%(ext)s" -v <url-of-playlist>
+where <url-of-playlist> is replaced by the URL of the playlist and replace FORMAT with any available video format,
+for example 18. You can use the -F option to see all valid formats like this:
+youtube-dl -f FORMAT -ci --playlist-start NUMBER --playlist-end NUMBER <url-of-playlist>  
+where <url-of-playlist> is replaced by the URL of the playlist, replace FORMAT with any available video format, for example 
+18, and NUMBER is the number of the video in the playlist to start/end downloading at.
+
+Download Youtube Channel:
+youtube-dl -f FORMAT -ciw -o "%(title)s.%(ext)s" -v <url-of-channel>
+
+Different Videos Batch File:
+First create a batch file which is a text file containing a list of URLs of videos from YouTube that you want to download. 
+The URLs should be arranged in a list having only one URL and nothing else on each line, with a new line for each URL in the list.
+Save the batch file with a name that is easy to remember like batch-file.txt. If the multiple files are all on the same playlist, 
+channel or user webpage in YouTube,  you can generate a text file with a list that has all the links on that page by running the following command:
+sudo apt install jq  
+youtube-dl -j --flat-playlist "https://<yourYoutubeWebpage>" | jq -r '.id' | sed 's_^_https://youtu.be/_' > batch-file.txt
+
+From the terminal run:
+youtube-dl -ct --simulate --batch-file='/path/to/batch-file.txt'
+This is the basic command, however you also need to add the formats of the videos that you want to download or else you may find yourself downloading videos with formats that you didn't want. So first simulate your download to see if the format you want is available:
+youtube-dl -ct -f 34 --simulate 'http://www.youtube.com/some-alphanumeric-string'
+If the video format is not available you will get an error message that says: requested format not available. If the video format is available you will not get any error message when you use the --simulate option. You can also add the -F option to see all valid formats like this:
+youtube-dl -F 'http://www.youtube.com/some-alphanumeric-string'
+In the third command I have used the common flv 360p video format:
+-f 34. You might prefer to try the flv 480p video format by using -f 35. So after you have added the video format that you want to the command, the command becomes something like this:
+youtube-dl -ciw -o "%(title)s.%(ext)s" --batch-file='/path/to/batch-file.txt'
+
+To download multiple files from YouTube:
+Go to your desktop and make a text document called list (or any other name). Copy and paste the URLs if files you want to download into the file, one URL per line.
+Open terminal and go to desktop
+cd ~/Desktop
+To download the files on your list, type (replace list accordingly if you named your file something else)
+youtube-dl -a list
+
+To download a YouTube playlist
+Run this command
+youtube-dl -citk -format mp4 -yes-playlist VIDEO_PLAYLIST_LINK
+-c resume partially downloaded files
+-i ignore any errors.
+-t use the video title as the file name.
+-k keep the video on the disk after the post-processing is finished.
+--format mp4 save the video files as MP4 files.
+--yes-playlist affirms that the URL that follows points to a video playlist.
+
+Bash Script:
+#!/bin/bash
+terminal=`tty`
+exec < ~/Documents/youtubevideolinks.txt
+
+while read -r line
+do
+    cd ~/Desktop/TilakDa/
+    youtube-dl -f 18 "$line"
+done
+exec < "$terminal"
+just copy and paste the the video links in that txt file in documents folder with each video url in a new line and run this script it will download 
+the videos one by one By default the -f 18option is for 360p video
+"""
+
+
+
+
+
+
+
+
+
