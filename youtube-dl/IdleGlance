@@ -1,3 +1,5 @@
 #run in cmd, downloads entire playlist of idleglance in mp3 as an archive and updates thumbnail
 #run again to get any new songs
+#requires youtube-dl and FFmpeg for python
+#let run overnight, takes a while, first time, if interupted starts where left off
 youtube-dl --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --embed-thumbnail --download-archive IdleGlance.txt --output "%(title)s.%(ext)s" "https://www.youtube.com/c/idleglance/videos"
