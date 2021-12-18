@@ -6,6 +6,7 @@ youtube-dl ^
 --restrict-filenames ^
 --ignore-errors ^
 --output Music/%%(playlist_uploader)s-%%(playlist_title)s/%%(title)s.%%(id)s.%%(ext)s ^
+--download-archive archive.txt ^
 --format bestaudio/best ^
 --extract-audio ^
 --audio-format mp3 ^
