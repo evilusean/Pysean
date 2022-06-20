@@ -23,13 +23,14 @@ else:
     x1 = (-b + math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
     x2 = (-b - math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
     print(f"The equation has two solutions: {x1} or {x2}")
-Sample output:
 
+"""
+Sample output:
 Enter the coefficient a: 1
 Enter the coefficient b: -5
 Enter the coefficient c: 6
 The equation has two solutions: 3.0 or 2.0
-###
+###"""
 import matplotlib.pyplot as plt
 import numpy as np
 plt.style.use("dark_background")
