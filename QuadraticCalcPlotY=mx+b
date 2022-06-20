@@ -1,0 +1,53 @@
+###
+"""
+The program below is based on the famous quadratic equation formula.
+ Input your values for a, b, and c from the equation in form ax² + bx + c = 0, 
+ and the (real) solutions will be displayed if there are any.
+A Python program to solve quadratic equations in the form
+ax^2 + bx + c = 0
+"""
+import math
+
+a = int(input("Enter the coefficient a: "))
+b = int(input("Enter the coefficient b: "))
+c = int(input("Enter the coefficient c: "))
+
+d = b ** 2 - 4 * a * c  # this part is called the discriminant
+
+if d < 0:
+    print("The equation has no real solutions")
+elif d == 0:
+    x = (-b + math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
+    print(f"The equation has one solution: {x} ")
+else:
+    x1 = (-b + math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
+    x2 = (-b - math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
+    print(f"The equation has two solutions: {x1} or {x2}")
+Sample output:
+
+Enter the coefficient a: 1
+Enter the coefficient b: -5
+Enter the coefficient c: 6
+The equation has two solutions: 3.0 or 2.0
+###
+import matplotlib.pyplot as plt
+import numpy as np
+plt.style.use("dark_background")
+
+# Create 1000 equally spaced points between -10 and 10
+x = np.linspace(-10, 10, 1000)
+
+# Calculate the y value for each x value
+y = a * x ** 2 + b * x + c
+
+# Plot the x, y pairs
+fig, ax = plt.subplots()
+ax.set_title("Quadratic Equations with Python")
+ax.plot(x, y)
+
+# Plot a zero line
+ax.hlines(y=0, xmin=min(x), xmax=max(x), colors='r', linestyles='--', lw=1)
+
+# Show the plot
+plt.show()
+###
