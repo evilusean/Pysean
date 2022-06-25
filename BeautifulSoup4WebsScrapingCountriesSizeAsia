@@ -1,0 +1,31 @@
+#BeautifulSoup4 Website Scraping
+import requests
+website_url = requests.get('https://en.wikipedia.org/wiki/List_of_Asian_countries_by_area').text
+
+#get soup
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(website_url,'lxml')
+print(soup.prettify())
+
+#gets table from wiki
+My_table = soup.find('table',{'class':'wikitable sortable'})
+My_table
+
+#extract links with a
+links = My_table.findAll('a')
+links
+
+#create list of countries
+Countries = []
+for link in links:
+    Countries.append(link.get('title'))
+    
+print(Countries)
+
+
+#create pandas dataframe
+import pandas as pd
+df = pd.DataFrame()
+df['Country'] = Countries
+
+df
