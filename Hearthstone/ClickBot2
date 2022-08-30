@@ -1,0 +1,37 @@
+import time
+import pyautogui
+import random
+"""
+gets current position for diagnostics
+currentMouseX, currentMouseY = pyautogui.position()
+print(currentMouseX, currentMouseY)
+
+upgrade tavern 810, 225
+first minion buy 875 400
+portrait 950 800
+hand minion 910 930
+your board side 966 575
+"""
+#clicks every 15ish seconds for roughly 8 hours
+n=0
+print('Press Ctrl + C to cancel')
+while n < 8000:
+    #random time to avoid detection
+    time.sleep(5)
+    time.sleep(5 + 5*random.random())
+    #moves to Point(x=1436, y=826) at 0.3 second speed
+    pyautogui.moveTo(1436, 826, 0.3)
+    pyautogui.click()
+    time.sleep(1)
+    #moves to upgrade and clicks
+    pyautogui.moveTo(810,225,0.3)
+    pyautogui.click()
+    #moves to first minion and buys it
+    time.sleep(1)
+    pyautogui.moveTo(875,400,0.3)
+    pyautogui.dragTo(950, 800,0.5, button='left')# drag mouse to X of 950, Y of 800 while holding down left mouse button    
+    #places minion on board
+    time.sleep(1)
+    pyautogui.moveTo(910,930,0.3)
+    pyautogui.dragTo(965,575,0.5, button='left')
+    n=n+1
