@@ -1,0 +1,102 @@
+"""Prerequisites
+https://www.scrapingbee.com/blog/python-wget/
+First, make sure you have Wget installed on your machine. This process differs depending on your operating system.
+
+If you’re using Linux, you may already have it preinstalled.
+If you’re using Mac, the easiest way to install Wget is by using Homebrew.
+Windows users can download the Wget command-line tool executable from this website:
+    https://eternallybored.org/misc/wget/
+ Once it’s downloaded, make sure it’s added to the PATH variable.
+ https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
+Running Commands with the Subprocess Package
+To run Wget commands from within a Python script, you’ll use the Popen method of
+ the subprocess package. Every time your script invokes popen(), it will execute
+ the command you passed in an independent instance of the operating system’s command 
+ processor. By setting the verbose argument to True, it will also return the output
+ of the command. Feel free to adapt this to your needs.
+
+All code snippets can be found in this file.
+https://colab.research.google.com/drive/1VyWXq_RAqeq-6UIiiM-3vpyKpIozKvsL?usp=sharing
+wget manual
+https://www.gnu.org/software/wget/manual/wget.html#Time_002dStamping
+
+
+runcmd("wget https://www.scrapingbee.com/images/logo-small.png", verbose = True)
+From the output of the command, you can observe that 
+(1) the URL is resolved to the IP address of the server, 
+(2) an HTTP request is sent, and (3) status code 200 OK is received. Finally 
+(4), Wget stores the file in the directory from where the script runs without 
+changing the file name.
+
+Download a file to a custom folder:
+To download a file to a specific folder,
+pass it the --directory-prefix or -P flag, followed by the destination folder.
+ Interestingly, when the path to the folder doesn’t exist, Wget will create it.
+
+runcmd("wget --directory-prefix=download_folder https://www.scrapingbee.com/images/logo-small.png", verbose = False)
+runcmd("wget -P download_folder https://www.scrapingbee.com/images/logo-small.png", verbose = False)
+
+Download a file to a specific file name: 
+Not only can you change the destination
+ folder for a file, but you can specify its local file name. 
+ Provide it the --output-document or -O flag, followed by the desired file name.
+
+runcmd("wget -O logo.png https://www.scrapingbee.com/images/logo-small.png")
+runcmd("wget --output-document=logo.png https://www.scrapingbee.com/images/logo-small.png")
+
+Download a newer version of a file:
+Sometimes you’ll only want to download a file if the local copy is older than the 
+version of the server. You can turn this feature on by providing the --timestamping
+option.
+
+runcmd("wget --timestamping https://www.scrapingbee.com/images/logo-small.png", verbose = True)
+
+Complete unfinished downloads: 
+The default behavior of Wget is to retry downloading a file if the connection is 
+lost midway through. However, if you want to continue getting a partially 
+downloaded file, you can set the -c or the --continue option.
+
+runcmd("wget -c https://www.scrapingbee.com/images/logo-small.png")
+runcmd("wget --continue https://www.scrapingbee.com/images/logo-small.png")
+
+Recursive retrieval: 
+Wget’s most exciting feature is recursive retrieval. Wget can retrieve and parse
+ the page on a given URL and the files to which the initial document refers via 
+ HTML src and href attributes or a CSS url() functional notation. If the next file
+ is also text/HTML, it will be parsed and followed further until the desired depth 
+ is reached. Recursive retrieval is breadth-first: it will download the files on 
+ depth 1, then depth 2, etc.
+There are a lot of options you can set:
+The -r or --recursive option will enable recursive retrieval.
+The -l or --level option allows you to set the depth, ie, the number of subdirectories that Wget can recurse. To prevent crawling huge websites, Wget sets a default depth of 5\. Change this option to zero (0) or 'inf' for infinite depth. If you want to make sure all the necessary resources (images, CSS, JavaScript) are loaded to display a page correctly, even if these resources don’t have the required maximum depth, you can set the -p or --page-requisites options.
+The -k or --convert-links option will convert the links in the downloaded documents, making them suitable for local viewing. Downloaded files will be referred to relatively (e.g., ../foo/bar.png). Files that have not been downloaded will be referred to with their hostname (e.g., https://scrapingbee.com/foo/bar/logo.png).
+The following command will recursively download the scrapingbee.com website into a www.scrapingbee.com directory, with a maximum depth of 3\. Wget will also convert all links to make this copy available locally.
+
+runcmd('wget --recursive --level=3 --convert-links https://www.scrapingbee.com')
+
+When Not to Use Wget
+Wget is an excellent solution if you’re focused on recursively downloading files from web servers. However, its use cases are limited due to this narrow focus, and alternatives are worth considering.
+To download files over protocols other than HTTP(S) or FTP(S), cURL with Python is probably your best bet.
+If you need to scrape only certain DOM elements on a web page without storing the file locally, consider requests in combination with [Beautiful Soup](https://www.scrapingbee.com/blog/python-web-scraping-beautiful-soup/. Alternatively, you can use paid solutions such as ScrapingBee.
+Selenium is a wonderful solution to simulate click and scroll behavior on a website (e.g., for testing purposes)
+"""
+import subprocess
+
+def runcmd(cmd, verbose = False, *args, **kwargs):
+
+    process = subprocess.Popen(
+        cmd,
+        stdout = subprocess.PIPE, 
+        stderr = subprocess.PIPE,
+        text = True, 
+        shell = True
+    )
+    std_out, std_err = process.communicate()
+    if verbose:
+        print(std_out.strip(), std_err)
+    pass
+
+    
+runcmd("wget --directory-prefix=I:\Coding\Website-dl https://anonymousplanet.org/guide.html", verbose = True)
+#run below from cmd in folder you wish to download into(doesnt save pictures)
+#wget --directory-prefix=I:\Coding\Website-dl https://anonymousplanet.org/guide.html
