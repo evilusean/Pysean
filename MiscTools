@@ -52,3 +52,17 @@ https://archive.st
 Privacy Tools:
 https://www.privacytools.io/
 https://anonymousplanet.org/guide.html
+
+
+Speech to Text:
+https://developer.nvidia.com/riva
+Windows 10 Speech Recognition
+Microsoft Dictate
+Google Docs Dictate-Voice Typing
+Apple Dictation
+Kaldi(Machine Learning/Public Training)(windows/linux)
+Simon(computer control/any language)(windows/linux)
+AWS Transcribe
+Python API:
+$ pip install SpeechRecognition
+https://realpython.com/python-speech-recognition/
