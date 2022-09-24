@@ -1,0 +1,32 @@
+"""
+CSV From:
+https://globaledge.msu.edu/states/texas/tradestats#source_1
+https://globaledge.msu.edu/states/texas/tradestats#
+https://www.census.gov/foreign-trade/reference/products/catalog/usatradeonline.html
+kept only top 10 to make it look cleaner dropped other 88
+"""
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import squarify
+df1 = pd.read_csv('I:\Coding\LocateSeans\Texas\TexasExports2.csv')
+df1.dropna(inplace=True)
+
+Resource = df1['Resource']
+#needed to remove '%' for it to work properly
+Value = df1['Export (%)'].str.rstrip('%').astype('float') / 100.0
+#Value = df1['Export (%)']
+
+data = {'labels': Resource,
+        'values':Value}
+df = pd.DataFrame(data)
+
+#colors=['#fae588','#f79d65','#f9dc5c','#e8ac65','#e76f51','#ef233c','#b7094c'] #color palette
+
+sns.set_style(style="whitegrid") # set seaborn plot style
+sizes= df["values"].values# proportions of the categories
+label=df["labels"]
+squarify.plot(sizes=sizes, label=label, alpha=0.6).set(title='Treemap with Squarify')
+plt.axis('off')
+plt.show()
