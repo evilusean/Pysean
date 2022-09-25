@@ -1,11 +1,12 @@
-#graphs out a fractal triangle
+#graphs out a fractal triangle, tri it out, newfs can triforce
+
 from turtle import Screen, Turtle, Vec2D
 from random import choice
 
 VERTICES = [Vec2D(0, 0), Vec2D(150, 260), Vec2D(300, 0)]
 point = Vec2D(100, 75)  # random point inside triangle
 
-def doit():
+def IlluminASean():#confirmed
     global point
     point = (choice(VERTICES) + point) * 0.5
 
@@ -13,7 +14,7 @@ def doit():
     turtle.dot(2)
 
     screen.update()
-    screen.ontimer(doit)
+    screen.ontimer(IlluminASean)
 
 screen = Screen()
 screen.tracer(False)
@@ -29,6 +30,6 @@ for vertex in VERTICES:
 turtle.goto(point)
 turtle.dot(5, 'green')
 
-doit()
+IlluminASean()
 
 screen.mainloop()
