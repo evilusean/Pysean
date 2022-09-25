@@ -1,5 +1,5 @@
 #graphs out a fractal triangle, tri it out, newfs can triforce
-
+#Windows: [alt-255] [alt-255] [alt-30] [enter] [alt 30] [alt 255] [alt 30] 
 from turtle import Screen, Turtle, Vec2D
 from random import choice
 
