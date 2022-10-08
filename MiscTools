@@ -97,7 +97,7 @@ Tutorial:
 https://numpy.org/doc/stable/user/absolute_beginners.html
 Scipy:
 https://docs.scipy.org/doc/scipy/reference/linalg.html#module-scipy.linalg
-sklearn:
+sklearn:+randomforest/regression
 https://scikit-learn.org/stable/user_guide.html
 Machine Learning=TensorFlow/Keras
 Matplotlib:
@@ -116,6 +116,10 @@ Stringi:
 https://stringi.gagolewski.com/
 R Blpapi:
 https://cran.r-project.org/web/packages/Rblpapi/Rblpapi.pdf
+GGPlot2:
+Plotly:
+Tidyverse:
+
 
 SQL Tutorials:
 https://www.w3schools.com/sql/
