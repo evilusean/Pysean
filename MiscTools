@@ -104,7 +104,9 @@ Matplotlib:
 https://matplotlib.org/stable/gallery/index
 Flask=Create Web Apps and dashboards with python
 Seaborn:
-
+OS:
+Requests:
+RegEx:
 
 R Libraries:
 data.table(faster than built in data.frame):
@@ -119,9 +121,6 @@ https://cran.r-project.org/web/packages/Rblpapi/Rblpapi.pdf
 GGPlot2:
 Plotly:
 Tidyverse:
-OS:
-Requests:
-RegEx:
 
 SQL Tutorials:
 https://www.w3schools.com/sql/
