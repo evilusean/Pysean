@@ -119,7 +119,14 @@ https://cran.r-project.org/web/packages/Rblpapi/Rblpapi.pdf
 GGPlot2:
 Plotly:
 Tidyverse:
-
+OS:
+Requests:
+RegEx:
 
 SQL Tutorials:
 https://www.w3schools.com/sql/
+
+Linux:
+shell/bash
+psutil
+shutil
