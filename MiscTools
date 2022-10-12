@@ -109,8 +109,10 @@ Requests:
 RegEx:
 GetPass Module:
 https://docs.python.org/3/library/getpass.html
-Image API:
+Image API(Pillow):
 https://pillow.readthedocs.io/en/stable/reference/Image.html
+PDF API(ReportLab):
+https://www.reportlab.com/opensource/
 
 Python Mail:
 Built in SMTP Python API:
