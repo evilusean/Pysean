@@ -107,6 +107,16 @@ Seaborn:
 OS:
 Requests:
 RegEx:
+GetPass Module:
+https://docs.python.org/3/library/getpass.html
+Image API:
+https://pillow.readthedocs.io/en/stable/reference/Image.html
+
+Python Mail:
+Built in SMTP Python API:
+https://docs.python.org/3/library/smtplib.html
+Built in Python MIME API official Docs:
+https://docs.python.org/3/library/email.html
 
 R Libraries:
 data.table(faster than built in data.frame):
