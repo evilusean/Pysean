@@ -107,6 +107,10 @@ Seaborn:
 OS:
 Requests:
 RegEx:
+import sys:
+import json
+import csv
+import reports
 GetPass Module:
 https://docs.python.org/3/library/getpass.html
 Image API(Pillow):
