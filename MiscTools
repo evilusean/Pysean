@@ -104,12 +104,13 @@ Matplotlib:
 https://matplotlib.org/stable/gallery/index
 Flask=Create Web Apps and dashboards with python
 Seaborn:
-OS:
-Requests:
 RegEx:
-import sys:
+import requests
+import os
+import sys
 import json
 import csv
+import emails
 import reports
 GetPass Module:
 https://docs.python.org/3/library/getpass.html
