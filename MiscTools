@@ -105,12 +105,16 @@ https://matplotlib.org/stable/gallery/index
 Flask=Create Web Apps and dashboards with python
 Seaborn:
 RegEx:
-import requests
+import requests:
+https://requests.readthedocs.io/en/latest/
+requests quickstart guide:
+https://requests.readthedocs.io/en/latest/user/quickstart/
 import os
 import sys
 import json
 import csv
-import emails
+import emails:
+https://docs.python.org/3/library/email.examples.html
 import reports
 GetPass Module:
 https://docs.python.org/3/library/getpass.html
@@ -118,6 +122,7 @@ Image API(Pillow):
 https://pillow.readthedocs.io/en/stable/reference/Image.html
 PDF API(ReportLab):
 https://www.reportlab.com/opensource/
+https://www.reportlab.com/docs/reportlab-userguide.pdf
 
 Python Mail:
 Built in SMTP Python API:
@@ -144,5 +149,7 @@ https://www.w3schools.com/sql/
 
 Linux:
 shell/bash
-psutil
-shutil
+psutil:
+https://psutil.readthedocs.io/en/latest/
+shutil:
+https://docs.python.org/3/library/shutil.html
