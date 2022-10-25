@@ -1,0 +1,13 @@
+"""
+quick script made to resize images for linkedin profile display, and correct ratio
+when capturing image should be close to 2width:1height, 2:1, save as jpg
+place script in same file as image, rename variables to image names and run
+"""
+from PIL import Image
+#input image name as variable 'im'
+im = Image.open("DisplayImage.jpg")
+#Images should be at least 640×320px 
+#(1280×640px for best display)
+new_im = im.resize((1280,640))
+#save as name
+new_im.save("DisplayImage_resized.jpg")
