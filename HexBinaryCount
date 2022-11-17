@@ -1,4 +1,4 @@
-"""Numeral System Counters, by Al Sweigart al@inventwithpython.com
+"""Numeral System Counters
 Shows equivalent numbers in decimal, hexadecimal, and binary.
 """
 
