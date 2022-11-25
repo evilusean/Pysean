@@ -2,6 +2,7 @@ import pygame
 import os
 import math
 from rotatingCubeTesseractMatrix import matrix_multiplication
+#requires the .py file rotatingCubeTesseractMatrix from this directory to run, contains the mathematical code for hypercube
 
 os.environ["SDL_VIDEO_CENTERED"]='1'
 black, white, blue  = (5, 6, 6), (230, 230, 230), (0, 154, 255)
