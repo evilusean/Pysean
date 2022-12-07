@@ -1,0 +1,8 @@
+Get-Help(Powershell windows):
+Get-Help ls #shows a brief summary and all potential parameters of ls command
+Get-Help ls -Full #shows more information and full description of parameters
+
+Listing Files Using CLI(Windows):
+ls <path>
+ls C:\ #Lists all files on C: drive root folder
+ls -Force C:\ #shows all hidden files on C drive, which aren't normally listed
