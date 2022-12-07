@@ -1,0 +1,14 @@
+ls --help #Add --help flag to get more information on list command such as summary and potential flag parameters
+man ls #Manual Command; used to show manual pages to get more information on list command such as summary and potential flag parameters
+
+Listing Files(Bash/Linux):
+ls / #lists all directorys under root directory
+ls -l / #-l long flag, shows detailed information(dates/size/file permissions/owner/size) of files in the format of a long list
+ls -a / #-a All flag, shows all files in a directory including hidden files
+Important Directories in Linux:
+  /bin #stores essential binaries/programs
+  /etc #stores important system configuration files
+  /home #personal directory for Users
+  /proc #contains information about currently running processes
+  /usr #For user installed software
+  /var #stores system logs
