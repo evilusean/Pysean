@@ -1,6 +1,12 @@
 ls --help #Add --help flag to get more information on list command such as summary and potential flag parameters
 man ls #Manual Command; used to show manual pages to get more information on list command such as summary and potential flag parameters
 
+Command History(Linux):
+history #shows a list of commands you have typed out recently
+  You can scroll through recent commands by pressing 'Up' or 'Down' arrows on keyboard
+Ctrl + R #history shortcut: shows recent commands used, start typing a part of recently used command for autofill
+clear #clears output on screen
+
 Listing Files(Bash/Linux):
 ls / #lists all directorys under root directory
 ls -l / #-l long flag, shows detailed information(dates/size/file permissions/owner/size) of files in the format of a long list
@@ -12,3 +18,26 @@ Important Directories in Linux:
   /proc #contains information about currently running processes
   /usr #For user installed software
   /var #stores system logs
+
+Changing Directories(Linux Bash same as Windows '/'):
+pwd #print working directory
+cd #change directory
+cd C:/Home/Sean/Documents #changes directory to absolute path of documents
+cd ../Documents #uses relative path to change to documents folder
+cd ~ /Desktop #takes you to home directory and then to /Desktop directory in it
+cd ../D <tab> #tab completion type 'D' press tab and it will print all that start with 'D'
+Creating Directories(Linux):
+mkdir #make directory
+mkdir New_Folder #makes a folder named 'New_Folder' in current working directory
+mkdir New/ Folder #linux command can not interpret spaces, use '/' forwardslash is an escape character in linux, or quotes 'New Folder'
+Copying Files and Directories(Linux):
+Ctrl + C #copy hotkey Ctrl + V #Paste hotkey
+
+Copying Files and Directories(Linux):
+Ctrl + C #copy hotkey Ctrl + V #Paste hotkey
+cp #copy command
+cp mycoolfile.txt ~/Desktop #copies mycoolfile.txt to the desktop, requires location as an argument to where it should copy to
+cp *.jpg ~/Desktop #copies all files that end with .jpg to desktop
+  Wildcard=A character that's used to help select files based on a certain pattern '*' asterisk=anything in windows
+cp -r 'Directory Name' ~/Desktop #-r Recurse parameter allows you to copy all the contents in a directory
+cp -r -v 'Directory Name' ~/Desktop #-v Verbose parameter prints a line for each item being copied
