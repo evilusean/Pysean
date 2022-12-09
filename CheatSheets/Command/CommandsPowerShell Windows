@@ -39,4 +39,14 @@ cp *.jpg C:\Users\Sean\Desktop\ #copies all files that end with .jpg to desktop
 cp 'Directory Name' C:\Users\Sean\Desktop\ -Recurse #-Recurse parameter allows you to copy all the contents in a directory
 cp 'Directory Name' C:\Users\Sean\Desktop\ -Recurse -Verbose #-Verbose parameter prints a line for each item being copied
 
+Moving/Renaming Files(Windows):
+mv #move item command, allows you to rename a file
+mv old_name.txt new_name.txt #renames old_name.txt to new_name.txt
+mv name.txt C:\USers\Sean\Documents #moves name.txt to \Documents\
+mv *.txt C:\Users\Sean\Documents #moves all .txt files to \Documents\
 
+Removing Files and Directories(Windows):
+rm #remove command, does not use recycle bin- gone forever, you can add permissions to files to prevent removing important files
+rm ~\text1.txt #removes text1.txt forever
+rm ~\important_system_file -Force #-Force parameter: use the force to remove files that require special permissions
+rm ~\Misc_folder -Recurse #-Recurse parameter: to remove a file, you must do it recursively
