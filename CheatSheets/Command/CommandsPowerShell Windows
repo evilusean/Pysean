@@ -2,8 +2,41 @@ Get-Help(Powershell windows):
 Get-Help ls #shows a brief summary and all potential parameters of ls command
 Get-Help ls -Full #shows more information and full description of parameters
 
+Command History(Windows):
+history #shows a list of commands you have typed out recently
+  You can scroll through recent commands by pressing 'Up' or 'Down' arrows on keyboard
+Ctrl + R #history shortcut: shows recent commands used, start typing a part of recently used command for autofill
+#tab completion #type '#' and part of the recently used command and then press 'Tab' to start cycling through matches
+clear #clears output on screen
+
 Listing Files Using CLI(Windows):
 ls <path>
 ls C:\ #Lists all files on C: drive root folder
 ls C:\Users\Sean\Desktop #lists all files on desktop
 ls -Force C:\ #shows all hidden files on C drive, which aren't normally listed
+
+Changing Directories(Windows Command '\'):
+pwd #print working directory
+cd #change directory
+cd C:\Users\Sean\Documents #changes directory to absolute path of documents
+cd.. #goes back/up a level in the directory tree
+cd..\Desktop #will take you back to the folder \Sean\ from C:\Users\Sean\Documents to C:\Users\Sean\Desktop
+cd ~ #takes you to the path of your home directory
+cd ~ \Desktop #takes you to home directory and then to /Desktop directory in it
+Tab Completion=Auto Completes the rest of a directory type 'D' press tab and it will go through all that start with 'D'
+
+Creating Directories(Windows):
+mkdir #make directory
+mkdir New_Folder #makes a folder named 'New_Folder' in current working directory
+mkdir New` Folder #windows command can not interpret spaces, use '`' backtick is an escape character in windows, or quotes 'New Folder'
+
+Copying Files and Directories(Windows):
+Ctrl + C #copy hotkey Ctrl + V #Paste hotkey
+cp #copy command
+cp mycoolfile.txt C:\Users\Sean\Desktop #copies mycoolfile.txt to the desktop, requires location as an argument to where it should copy to
+cp *.jpg C:\Users\Sean\Desktop\ #copies all files that end with .jpg to desktop
+  Wildcard=A character that's used to help select files based on a certain pattern '*' asterisk=anything in windows
+cp 'Directory Name' C:\Users\Sean\Desktop\ -Recurse #-Recurse parameter allows you to copy all the contents in a directory
+cp 'Directory Name' C:\Users\Sean\Desktop\ -Recurse -Verbose #-Verbose parameter prints a line for each item being copied
+
+
