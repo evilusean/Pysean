@@ -41,3 +41,13 @@ cp *.jpg ~/Desktop #copies all files that end with .jpg to desktop
   Wildcard=A character that's used to help select files based on a certain pattern '*' asterisk=anything in windows
 cp -r 'Directory Name' ~/Desktop #-r Recurse parameter allows you to copy all the contents in a directory
 cp -r -v 'Directory Name' ~/Desktop #-v Verbose parameter prints a line for each item being copied
+
+Moving/Renaming Files(Linux):
+mv #move item command, allows you to rename a file
+mv blue_document.txt ~/Documents #moves blue_document into documents folder
+mv *_document.txt ~/Desktop #moves ALL _document.txt files to desktop
+
+Removing Files and Directories(Linux):
+rm #remove command
+rm text1.txt #removes text1.txt
+rm -r misc_folder #-r Recursive flag: to remove a folder you must do it recursively
