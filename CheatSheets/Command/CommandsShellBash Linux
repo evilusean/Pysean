@@ -51,3 +51,25 @@ Removing Files and Directories(Linux):
 rm #remove command
 rm text1.txt #removes text1.txt
 rm -r misc_folder #-r Recursive flag: to remove a folder you must do it recursively
+
+Display File Contents(Linux):
+cat #concatonate command, used to view files
+cat text_file.txt #dumps entire contents of file
+head randomtext.txt #shows the first 10 lines of a file
+tail randomtext.txt #shows last 10 lines of a file
+less #displays file one page at a time
+less document.txt #displays one page of document.txt, one terminal window at a time
+  You can interact with the less command file
+  Up and Down Keys=Advances one line at a time
+  PageUp/PageDown=Advances through one page at a time
+  g=Advances to the beginning of a file
+  G=Advances to the end of a file
+  /word_search=Allows you to search for a word or a phrase
+  /<word you want to search>
+  Q=Quits the file and returns to shell
+
+Modifying Text Files(Linux):
+nano filename.txt #opens a file in nano text editor, VIM for linux chads
+  Ctrl(^)+G = Get Help
+  Ctrl(^)+K = Cut Text
+  Ctrl(^)+X = Exit
