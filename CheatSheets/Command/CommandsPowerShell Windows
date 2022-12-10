@@ -50,3 +50,18 @@ rm #remove command, does not use recycle bin- gone forever, you can add permissi
 rm ~\text1.txt #removes text1.txt forever
 rm ~\important_system_file -Force #-Force parameter: use the force to remove files that require special permissions
 rm ~\Misc_folder -Recurse #-Recurse parameter: to remove a file, you must do it recursively
+
+Display File Contents(Windows):
+cat #concatonate command, used to view files
+cat .\text_file.txt #dumps entire contents of file
+cat ./randomtext.txt -Head 10 #shows the first 10 lines of a file
+cat ./randomtext.txt -Tail 10 #shows last 10 lines of a file
+more #displays file one page at a time
+more .\document.txt #displays one page of document.txt, one terminal window at a time
+  You can interact with the more command file
+  Enter=Advances one line at a time
+  Space=Advances through one page at atime
+  Q=Quits the file and returns to cmd
+
+Modifying Text Files(Windows):
+start notepad++ randomtext.txt #runs notepad++ so you can edit a file
