@@ -73,3 +73,16 @@ nano filename.txt #opens a file in nano text editor, VIM for linux chads
   Ctrl(^)+G = Get Help
   Ctrl(^)+K = Cut Text
   Ctrl(^)+X = Exit
+
+Searching Within Files(Linux):
+grep #command that allows searching with RegularExpressions(RegEx)
+grep word randomtext.txt #finds word in randomtext.txt and prints line if matches
+grep word *.txt #searches all text files for a word that matches
+
+Input, Output, Pipeline(Linux):
+echo woof > dog.txt #prints 'woof' to dog.txt, '>'=redirector operator, sends output to file instead of screen, if file doesn't exist-it creates
+echo woof >> dog.txt #If you don't want to overwrite a file use '>>' to append to a file
+< #stdin operator, allows you to get input from files
+ls /dir/fake_dir 2> error_output.txt #sends error message to error_output.txt
+less /var/log/syslog 2> /dev/null #/dev/null file is used to filter out error messages(null)
+ls -la /etc | grep bluetooth #takes output to see how many files in directory /etc have 'bluetooth'
