@@ -1,6 +1,8 @@
 Get-Help(Powershell windows):
 Get-Help ls #shows a brief summary and all potential parameters of ls command
 Get-Help ls -Full #shows more information and full description of parameters
+/? (cmd windows):
+dir /? #returns information on the dir command
 
 Command History(Windows):
 history #shows a list of commands you have typed out recently
@@ -14,6 +16,7 @@ ls <path>
 ls C:\ #Lists all files on C: drive root folder
 ls C:\Users\Sean\Desktop #lists all files on desktop
 ls -Force C:\ #shows all hidden files on C drive, which aren't normally listed
+ls 'C:\Program Files\' -Recurse -Filter *.exe #-Filter parameter filters results for files that match pattern, shows all .exes in Program Files
 
 Changing Directories(Windows Command '\'):
 pwd #print working directory
@@ -65,3 +68,28 @@ more .\document.txt #displays one page of document.txt, one terminal window at a
 
 Modifying Text Files(Windows):
 start notepad++ randomtext.txt #runs notepad++ so you can edit a file
+
+Searching Within Files(Windows)Ctrl+F:
+  Windows Search Service: automatically indexes files by looking through them on a schedule, stores in a database, disabled on some machines
+  Start Menu -> Indexing Options -> Select Users -> Advanced -> File Types Tab -> Index Properties & File Contents -> Ok = Rebuilds the Index
+  Notepad ++:Ctrl+Shift+F=Find In Files -> Select Files you want to search(directory/extensions)
+sls # select string command: lets you search for text that matches a pattern you find RegEx(Regular Expressions)
+Select-String word randomtext.txt #returns word if found and what line
+Select-String word *.txt #searches all text documents for word and returns if found
+
+Get-Alias(Powershell Windows):
+Get-Alias ls #returns Get-ChildItem as alias, Get-Alias command get's alias for any command used in powershell
+Get-Alias echo #returns Write-Output
+
+Input, Output, Pipeline(Windows):
+Streams:
+  1:stdout
+  2:stderr
+< #stdin operator, allows you to get input from files
+echo woof > dog.txt #prints 'woof' to dog.txt, '>'=redirector operator, sends output to file instead of screen, if file doesn't exist-it creates
+echo woof >> dog.txt #If you don't want to overwrite a file use '>>' to append to a file
+| #pipe operator for putting together multiple commands
+cat words.txt | Select-String st #prints all strings with 'st' from words.txt
+cat words.txt | Select-String st > stwords.txt #sends output to a file called stwords.txt
+rm secure_file.txt 2> errors.txt #redirects stderr into errors.txt
+rm secure_file.txt 2> $null #output is filtered from error messages
