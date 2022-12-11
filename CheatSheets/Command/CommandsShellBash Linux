@@ -30,6 +30,13 @@ Creating Directories(Linux):
 mkdir #make directory
 mkdir New_Folder #makes a folder named 'New_Folder' in current working directory
 mkdir New/ Folder #linux command can not interpret spaces, use '/' forwardslash is an escape character in linux, or quotes 'New Folder'
+mkdir dir1 dir2 dir3 #creates multiple directories
+  -p # allow mkdir to create parent directories if they don't exist
+  -m # (mode) used to set permissions of directories during creation
+  -v # run command in verbose mode
+touch empty_file #creates file named empty_file
+  -c # do not create file if it doesn't exist
+
 Copying Files and Directories(Linux):
 Ctrl + C #copy hotkey Ctrl + V #Paste hotkey
 
@@ -41,24 +48,30 @@ cp *.jpg ~/Desktop #copies all files that end with .jpg to desktop
   Wildcard=A character that's used to help select files based on a certain pattern '*' asterisk=anything in windows
 cp -r 'Directory Name' ~/Desktop #-r Recurse parameter allows you to copy all the contents in a directory
 cp -r -v 'Directory Name' ~/Desktop #-v Verbose parameter prints a line for each item being copied
+cp /home/user/source_file /home/user/duplicates/target_file #copies source file to target file
 
 Moving/Renaming Files(Linux):
 mv #move item command, allows you to rename a file
 mv blue_document.txt ~/Documents #moves blue_document into documents folder
 mv *_document.txt ~/Desktop #moves ALL _document.txt files to desktop
+mv /home/user/source_file /home/user/moved_files/target_file #moves source file to target file
 
 Removing Files and Directories(Linux):
 rm #remove command
 rm text1.txt #removes text1.txt
 rm -r misc_folder #-r Recursive flag: to remove a folder you must do it recursively
+rm -r non_empty_dir # removes non empty directory
+rm /home/user/duplicates/target_file #removes target file
 
 Display File Contents(Linux):
 cat #concatonate command, used to view files
 cat text_file.txt #dumps entire contents of file
 head randomtext.txt #shows the first 10 lines of a file
 tail randomtext.txt #shows last 10 lines of a file
+
 less #displays file one page at a time
 less document.txt #displays one page of document.txt, one terminal window at a time
+less /path/to/file/file_name
   You can interact with the less command file
   Up and Down Keys=Advances one line at a time
   PageUp/PageDown=Advances through one page at a time
@@ -70,14 +83,22 @@ less document.txt #displays one page of document.txt, one terminal window at a t
 
 Modifying Text Files(Linux):
 nano filename.txt #opens a file in nano text editor, VIM for linux chads
+nano /path/to/existing/file # opens file
   Ctrl(^)+G = Get Help
   Ctrl(^)+K = Cut Text
   Ctrl(^)+X = Exit
+  CTRL(^)-O = Save
 
 Searching Within Files(Linux):
 grep #command that allows searching with RegularExpressions(RegEx)
 grep word randomtext.txt #finds word in randomtext.txt and prints line if matches
 grep word *.txt #searches all text files for a word that matches
+  -r: search recursively
+  -w: match the whole word
+  -n: only in line number
+  -e: match pattern
+  --include and --exclude: include and exclude files in the search
+  --include-dir and --exclude-dir: include or exclude directories in the search
 
 Input, Output, Pipeline(Linux):
 echo woof > dog.txt #prints 'woof' to dog.txt, '>'=redirector operator, sends output to file instead of screen, if file doesn't exist-it creates
