@@ -93,3 +93,8 @@ cat words.txt | Select-String st #prints all strings with 'st' from words.txt
 cat words.txt | Select-String st > stwords.txt #sends output to a file called stwords.txt
 rm secure_file.txt 2> errors.txt #redirects stderr into errors.txt
 rm secure_file.txt 2> $null #output is filtered from error messages
+
+Users/Groups(Powershell Windows):
+Get-LocalUser #lists users who used local machine
+Get-LocalGroup #lists group on local machine
+Get-LocalGroupMember Administrators #show's who is a member of the administrators group
