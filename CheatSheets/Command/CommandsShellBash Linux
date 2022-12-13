@@ -107,3 +107,11 @@ echo woof >> dog.txt #If you don't want to overwrite a file use '>>' to append t
 ls /dir/fake_dir 2> error_output.txt #sends error message to error_output.txt
 less /var/log/syslog 2> /dev/null #/dev/null file is used to filter out error messages(null)
 ls -la /etc | grep bluetooth #takes output to see how many files in directory /etc have 'bluetooth'
+
+Users/Groups (Linux):
+Root User #created when linux installed, has unlimited access to machine
+su #substitute user command allows you to change to a different user
+sudo #grants superuser privileges
+superuser do #grants superuser privileges
+cat sudo /etc/group #view who is a member of each group 4 tags seperated by colons; groupname:password:groupID:users in group
+cat /etc/passwd #shows encrypted passwords for users
