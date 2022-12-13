@@ -115,3 +115,7 @@ sudo #grants superuser privileges
 superuser do #grants superuser privileges
 cat sudo /etc/group #view who is a member of each group 4 tags seperated by colons; groupname:password:groupID:users in group
 cat /etc/passwd #shows encrypted passwords for users
+
+Change Passwords(Linux):
+passwd <username> #changes password for <username>, asks for current and new, stores in /etc/shadow can only be read in root encrypted
+sudo passwd <username> -e #expired flag, forces a user to reset their new password
