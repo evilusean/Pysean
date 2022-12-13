@@ -119,3 +119,7 @@ cat /etc/passwd #shows encrypted passwords for users
 Change Passwords(Linux):
 passwd <username> #changes password for <username>, asks for current and new, stores in /etc/shadow can only be read in root encrypted
 sudo passwd <username> -e #expired flag, forces a user to reset their new password
+
+Add/Remove User(Linux):
+sudo useradd <username> #adds a user, with basic configurations and home directory
+sudo userdel <username> #deletes a user
