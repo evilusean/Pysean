@@ -98,3 +98,8 @@ Users/Groups(Powershell Windows):
 Get-LocalUser #lists users who used local machine
 Get-LocalGroup #lists group on local machine
 Get-LocalGroupMember Administrators #show's who is a member of the administrators group
+
+Password(Windows):
+net user <username> 'some_password' #how to change password from command line
+net user <username> * #change password with a prompt, keeps password secret, doesn't log
+net user <username> /logonpasswordchg:yes #forces user to change password on next logon
