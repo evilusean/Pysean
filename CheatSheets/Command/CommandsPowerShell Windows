@@ -110,6 +110,16 @@ net user <username> pa55w0rd /add /logonpasswordchg:yes #creates a new user acco
 net user <username> /del #deletes an account
 Remove-LocalUser <username> #deletes an account
 
-Change Permissions:
+Change Permissions(Windows):
 icacls #improve/change ACL's(Access control lists) command allows you to change ACL's
 icacls ~\Desktop\ #shows user accounts that can use desktop
+Powershell: need to remove single quotes for it to work in cmd
+icacls 'C:\Vacation Pictures' /grant 'Everyone:(OI)(CI)(R) #grants permissions to everyone group
+icacls 'C:\Vacation Pictures' /remove Everyone #removes permissions from everyone group
+icacls C:\Windows\Temp 
+Command: no single quotes
+icacls "C:\Vacation Pictures" /grant Everyone:(OI)(CI)(R) #grants permissions in cmd
+
+
+
+
