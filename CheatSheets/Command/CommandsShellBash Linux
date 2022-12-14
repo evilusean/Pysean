@@ -123,3 +123,22 @@ sudo passwd <username> -e #expired flag, forces a user to reset their new passwo
 Add/Remove User(Linux):
 sudo useradd <username> #adds a user, with basic configurations and home directory
 sudo userdel <username> #deletes a user
+
+File Permissions(Linux):
+Linux permissions are seperated into sets of 3; first trio refers to permission of owner of file/second trio=group permissions/third=all other user
+  -Owner: u
+  -Group: g
+  -All other Users: o
+ls -l my_cool_file #shows permissions of a file
+chmod #change mode command: change file access permissions 3x types: owner 'u', group 'g', other users 'o', Use + or - for permissions
+chmod u+x my_cool_file #gives file owner 'u' executable permissions 'x'
+chmod u-x my_cool_file #removes executable permission from owner
+chmod ugo+r my_cool_file #gives everyone read permissions
+chmod 754 my_cool_file #gives permissions 754=Owner(rwx, 7),Group(rx, 5),Other Users(4, r)
+Numerical Format: 
+  -Read(4, r): Allows someone to read the contents of a file or folder
+  -Write(2, w): Allows someone to write information to a file or folder
+  -Execute(1, x): Allows someone to execute a program
+sudo chown sean my_cool_file #change owner command; changes owner of a file to sean
+sudo chgrp some_group my_cool_file #change group command; changes group of a file
+
