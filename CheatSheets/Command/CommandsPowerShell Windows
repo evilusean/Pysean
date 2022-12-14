@@ -109,3 +109,7 @@ net user <username> * /add #creates a new user named <username>, brings up PW di
 net user <username> pa55w0rd /add /logonpasswordchg:yes #creates a new user account with throwaway password, changed on logon
 net user <username> /del #deletes an account
 Remove-LocalUser <username> #deletes an account
+
+Change Permissions:
+icacls #improve/change ACL's(Access control lists) command allows you to change ACL's
+icacls ~\Desktop\ #shows user accounts that can use desktop
