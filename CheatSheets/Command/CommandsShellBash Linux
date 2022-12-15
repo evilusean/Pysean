@@ -141,4 +141,6 @@ Numerical Format:
   -Execute(1, x): Allows someone to execute a program
 sudo chown sean my_cool_file #change owner command; changes owner of a file to sean
 sudo chgrp some_group my_cool_file #change group command; changes group of a file
-
+sudo chmod u+s my_cool_file #Enables 's' SetUID special permission bit that is used to allow a file to be run as the owner of the file
+sudo chmod g+s <file> #SetGID(SetGroupID) special permission to allow it to to run as a group ID
+sudo chmod +t my_folder #'t'=stickybits allows you to write to a file but not delete
