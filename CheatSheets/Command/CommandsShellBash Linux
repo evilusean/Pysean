@@ -144,3 +144,7 @@ sudo chgrp some_group my_cool_file #change group command; changes group of a fil
 sudo chmod u+s my_cool_file #Enables 's' SetUID special permission bit that is used to allow a file to be run as the owner of the file
 sudo chmod g+s <file> #SetGID(SetGroupID) special permission to allow it to to run as a group ID
 sudo chmod +t my_folder #'t'=stickybits allows you to write to a file but not delete
+sudo chmod a+r not_so_important_document #use "a+r". This adds read permission to everyone (owner, group, and other).
+sudo chmod 764 not_so_important_document #numerical format to give all neccesary permissions quicker
+sudo chmod a+rwx public_document #gives all read write execute permissions
+sudo chmod 777 public_document #numerical way to give all permissions to everyone
