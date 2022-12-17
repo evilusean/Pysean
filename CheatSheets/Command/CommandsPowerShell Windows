@@ -120,6 +120,10 @@ icacls C:\Windows\Temp
 Command: no single quotes
 icacls "C:\Vacation Pictures" /grant Everyone:(OI)(CI)(R) #grants permissions in cmd
 
+Lab 2 Script:
+ICACLS C:\Users\Qwiklab\Documents\important_document #checks 'important_document'
+ICACLS C:\Users\Qwiklab\Documents\important_document /remove "Kara" #Remove Kara from permissions
+ICACLS C:\Users\Qwiklab\Documents\important_document /grant "Kara:(r)" #grants Kara read permissions
 
 
 
