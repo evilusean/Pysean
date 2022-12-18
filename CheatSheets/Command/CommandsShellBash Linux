@@ -148,3 +148,10 @@ sudo chmod a+r not_so_important_document #use "a+r". This adds read permission t
 sudo chmod 764 not_so_important_document #numerical format to give all neccesary permissions quicker
 sudo chmod a+rwx public_document #gives all read write execute permissions
 sudo chmod 777 public_document #numerical way to give all permissions to everyone
+
+Installing Software Packages(Linux Debian):
+dpkg #debian package command
+sudo dpkg -i atom-amd64.deb #-i install flag, installs atom text editor 
+sudo dpkg -r atom #-r remove flag, removes atom from linux
+dpkg -l #-l list flag, lists all debian packages(programs) installed on a linux machine
+dpkg -l | grep atom #uses pipe command to search for atom installed on a linux machine
