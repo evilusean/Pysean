@@ -133,3 +133,5 @@ Installing Packages(Windows):
 /norestart: Prevents prompting of the user when a restart of the computer is needed.
 /forcerestart: Forces a restart of the computer as soon as the update is finished.
 
+Archive(Windows):
+Compress-Archive -Path ~\Desktop\CoolFiles -\Desktop\CoolArchive.zip #archives everything in CoolFiles Directory to CoolArchives.zip
