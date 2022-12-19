@@ -155,9 +155,17 @@ sudo dpkg -i atom-amd64.deb #-i install flag, installs atom text editor
 sudo dpkg -r atom #-r remove flag, removes atom from linux
 dpkg -l #-l list flag, lists all debian packages(programs) installed on a linux machine
 dpkg -l | grep atom #uses pipe command to search for atom installed on a linux machine
+sudo dpkg -i google-chrome-stable_current_amd64.deb #installs google chrome
+
 
 Linux Archive:
 To extract a file using 7zip, use the command 7z and the flag 'e' for extract, and then the file you want to extract 
 tar #tar command http://www.linfo.org/tar.html
 7z # 7zip command
 7z e my_archive.tar # e flag, extracts archive.rar
+
+Package Management(APT=Advanced Package Tool):
+sudo apt install gimp #installs gimp with dependancies
+sudo apt remove gimp #removes gimp and dependancies
+sudo apt update #updates list of packages in software repository
+sudo apt upgrade #installs any outdated packages , run after update
