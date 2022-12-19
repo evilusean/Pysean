@@ -139,7 +139,10 @@ Find-Package sysinternals -IncludeDependencies #searches for the sysinternals li
 Register-PackageSource #adds another register to be searched when looking for libraries/dependancies
 Register-PackageSource -Name chocolatey -ProviderName Chocolatey -Location http://chocolatey.org/api/v2 #adds Chocolatey to library search
 Get-PackageSource #shows all package sources used for package searching
+Get-Package -name sysinternals #shows info on package sysinternals
 Install-Package #powershell command, cmdlet, Installs packages
+Install-Package -Name sysinternals #installs sysinternals package
+Uninstall-Package -Name sysinternals #uninstalls package sysinternals
 
 Archive(Windows):
 Compress-Archive -Path ~\Desktop\CoolFiles -\Desktop\CoolArchive.zip #archives everything in CoolFiles Directory to CoolArchives.zip
