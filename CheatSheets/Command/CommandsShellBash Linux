@@ -155,3 +155,9 @@ sudo dpkg -i atom-amd64.deb #-i install flag, installs atom text editor
 sudo dpkg -r atom #-r remove flag, removes atom from linux
 dpkg -l #-l list flag, lists all debian packages(programs) installed on a linux machine
 dpkg -l | grep atom #uses pipe command to search for atom installed on a linux machine
+
+Linux Archive:
+To extract a file using 7zip, use the command 7z and the flag 'e' for extract, and then the file you want to extract 
+tar #tar command http://www.linfo.org/tar.html
+7z # 7zip command
+7z e my_archive.tar # e flag, extracts archive.rar
