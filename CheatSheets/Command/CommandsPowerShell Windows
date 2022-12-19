@@ -133,5 +133,13 @@ Installing Packages(Windows):
 /norestart: Prevents prompting of the user when a restart of the computer is needed.
 /forcerestart: Forces a restart of the computer as soon as the update is finished.
 
+Package Management(Windows):
+Find-Package #powershell command, cmdlet, using the windows SxS library system, allows you to search for a library dependancy
+Find-Package sysinternals -IncludeDependencies #searches for the sysinternals library with dependencies
+Register-PackageSource #adds another register to be searched when looking for libraries/dependancies
+Register-PackageSource -Name chocolatey -ProviderName Chocolatey -Location http://chocolatey.org/api/v2 #adds Chocolatey to library search
+Get-PackageSource #shows all package sources used for package searching
+Install-Package #powershell command, cmdlet, Installs packages
+
 Archive(Windows):
 Compress-Archive -Path ~\Desktop\CoolFiles -\Desktop\CoolArchive.zip #archives everything in CoolFiles Directory to CoolArchives.zip
