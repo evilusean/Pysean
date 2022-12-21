@@ -169,3 +169,18 @@ sudo apt install gimp #installs gimp with dependancies
 sudo apt remove gimp #removes gimp and dependancies
 sudo apt update #updates list of packages in software repository
 sudo apt upgrade #installs any outdated packages , run after update
+
+Installing Devices/Drivers(Linux):
+From the command-line, enter $ lpadmin -p printername -m driverfilename.ppd 
+Lpadmin #is the printer administrator command.
+The -p printername command adds or modifies the named printer. 
+The -m driverfilename.ppd command installs the postscript printer description (PPD) driver filename that you provide. 
+  The file should be stored in the /usr/share/cups/model/ directory.
+Enter $ man lpadmin to open the manual for the lpadmin command to find additional command line options.
+#The most common way to check if a device is installed is to use the “ls” (lowercase L and S) command, which means “list”. 
+$ ls /dev #- Lists all devices in the /dev folder 
+$ lscpci #- Lists devices installed on the PCI bus 
+$ lsusb #- Lists devices installed on the USB bus
+$ lsscsi #- Lists SCSI devices, such as hard drives
+$ lpstat -p #- Lists all printers and whether they are enabled
+$ dmesg #- Lists devices recognized by the kernel
