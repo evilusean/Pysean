@@ -184,3 +184,8 @@ $ lsusb #- Lists devices installed on the USB bus
 $ lsscsi #- Lists SCSI devices, such as hard drives
 $ lpstat -p #- Lists all printers and whether they are enabled
 $ dmesg #- Lists devices recognized by the kernel
+
+Updating Kernel:
+uname #gives system information
+uname -r #shows kernel version
+sudo apt full upgrade #updates kernel if available
