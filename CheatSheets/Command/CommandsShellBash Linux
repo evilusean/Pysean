@@ -156,13 +156,19 @@ sudo dpkg -r atom #-r remove flag, removes atom from linux
 dpkg -l #-l list flag, lists all debian packages(programs) installed on a linux machine
 dpkg -l | grep atom #uses pipe command to search for atom installed on a linux machine
 sudo dpkg -i google-chrome-stable_current_amd64.deb #installs google chrome
-
+sudo dpkg -i /home/qwiklab/downloads/sublime-text_build-3211_amd64.deb #installs sublime text from downloads folder
+sudo apt install -f #run after above command to install dependancies
+dpkg -s sublime-text #checks if sublime text was correctly installed, it was
+sudo apt install p7zip-full #installs 7zip
+sudo apt remove gimp #uninstalls gimp
 
 Linux Archive:
 To extract a file using 7zip, use the command 7z and the flag 'e' for extract, and then the file you want to extract 
 tar #tar command http://www.linfo.org/tar.html
 7z # 7zip command
 7z e my_archive.tar # e flag, extracts archive.rar
+tar -cvf Planets.tar --absolute-names /home/qwiklab/documents/Earth /home/qwiklab/documents/Mercury /home/qwiklab/documents/Venus 
+  #above command archives from file location to Planets.tar
 
 Package Management(APT=Advanced Package Tool):
 sudo apt install gimp #installs gimp with dependancies
