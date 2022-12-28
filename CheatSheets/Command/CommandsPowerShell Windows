@@ -143,6 +143,20 @@ Get-Package -name sysinternals #shows info on package sysinternals
 Install-Package #powershell command, cmdlet, Installs packages
 Install-Package -Name sysinternals #installs sysinternals package
 Uninstall-Package -Name sysinternals #uninstalls package sysinternals
+Installing VLC from URL in Powershell(Lab 3 Windows):
+$VLC_URL = "https://download.videolan.org/vlc/last/win64/" #Sets URL Variable
+$GET_HTML = Invoke-WebRequest $VLC_URL 
+$FILE = $GET_HTML.Links | Select-Object @{Label='href';Expression={@{$true=$_.href}[$_.href.EndsWith('win64.exe')]}} | Select-Object -ExpandProperty href
+$URL = ($VLC_URL+$FILE)
+$DOWNLOAD_DIR = "C:\users\qwiklabs\Downloads\"
+$OUTPUT_FILE = ($DOWNLOAD_DIR+$FILE)
+(new-object System.Net.WebClient).DownloadFile($URL, $OUTPUT_FILE)
+cmd.exe /c $OUTPUT_FILE /S
+Get-Package -Name *vlc* #Once the installation process is successfully completed, verify that VLC has successfully been installed
+Uninstalling GIMP Powershell(Lab 3 Windows):
+cmd.exe /c "C:\Program Files\GIMP 2\uninst\unins000.exe" /VERYSILENT /NORESTART #Uninstalls GIMP in powershell
+Get-Package #ensures that GIMP is uninstalled
 
 Archive(Windows):
 Compress-Archive -Path ~\Desktop\CoolFiles -\Desktop\CoolArchive.zip #archives everything in CoolFiles Directory to CoolArchives.zip
+Compress-Archive -Path Earth, Mercury, Venus Planets.zip #Compresses Earth, Mercury, Venus files into Planets.zip
