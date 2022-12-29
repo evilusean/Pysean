@@ -160,3 +160,16 @@ Get-Package #ensures that GIMP is uninstalled
 Archive(Windows):
 Compress-Archive -Path ~\Desktop\CoolFiles -\Desktop\CoolArchive.zip #archives everything in CoolFiles Directory to CoolArchives.zip
 Compress-Archive -Path Earth, Mercury, Venus Planets.zip #Compresses Earth, Mercury, Venus files into Planets.zip
+
+Formatting a USB(Windows):
+Diskpart #run from command line in a terminal, opens the DISKPART prompt
+list disk #lists all current storage devices(disks+USB) currently attached to PC
+select disk 1 #selects disk 1
+clean #wipes disk 1
+create partition primary #creates a blank partition for filesystem on disk 1 usb
+select paritition 1 #selects newly created partition
+active #activitates partition 1
+format FS=NTFS label=my-thumb-drive quick #formats thumb drive 
+
+
+
