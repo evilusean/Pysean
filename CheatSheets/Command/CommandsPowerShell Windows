@@ -171,5 +171,33 @@ select paritition 1 #selects newly created partition
 active #activitates partition 1
 format FS=NTFS label=my-thumb-drive quick #formats thumb drive 
 
+Virtual Memory Dumps(Windows):
+%SystemRoot%\Minidump #history is stored in the  Small Dump Directory which is located in the %SystemRoot%\Minidump file path. 
+#To configure a small memory dump file, run the following command using the cmd utility:
+Wmic recoveros set DebugInfoType = 3
+#Alternatively, this option can be configured in the registry:
+Set the CrashDumpEnabled DWORD value to 3
+#To set a folder as the Small Dump Directory, use the following command line:
+Wmic recoveros set MiniDumpDirectory = <folderpath> 
+#Alternatively, the directory option can be set in the registry:
+Set the MinidumpDir Expandable String Value to <folderpath>
+
+%SystemRoot%\Memory.dmp #Where records the contents of system memory when the computer stops unexpectedly.
+#To configure a complete memory dump file, run the following command using the cmd utility:
+wmic recoveros set DebugInfoType = 1
+#Alternatively, a complete memory dump file can be configured in the registry:
+Set the CrashDumpEnabled DWORD value to 1
+#To set a memory dump file, use the following command line:
+wmic recoveros set DebugFilePath = <folderpath> 
+#Alternatively, the memory dump file can be set in the registry:
+Set the DumpFile Expandable String Value to <folderpath>
+#To indicate that the system should not overwrite kernel memory dumps or other complete memory dumps, which may be valuable for troubleshooting 
+  system problems, use the command:
+wmic recoveros set OverwriteExistingDebugFile = 0
+#Alternatively, the overwrite setting can be turned off in the registry:
+Set the Overwrite DWORD value to 0
+
+
+
 
 
