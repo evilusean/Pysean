@@ -195,3 +195,22 @@ Updating Kernel:
 uname #gives system information
 uname -r #shows kernel version
 sudo apt full upgrade #updates kernel if available
+
+Formatting/Partitioning Drives(Linux):
+Parted Tool(Linux)=Supports both MBR and GPT
+sudo parted -l #lists out disks connected to computer
+sudo parted /dev/sdb #runs interactive mode parted on /sdb/ thumbdrive
+  print #from interactive mode, shows currently selected drive information
+  quit #from interactive mode, quits
+  mklabel gpt #makes partition table gpt
+  mkpart primary ext4 1MiB 5GiB #requires what type of partition you want to make, start of disk, and end of disk (1MiB=1024 bytes)
+sudo mkfs -t ext4 /dev/sdb1 #formats filesystem, from command line mode
+
+Mounting(Linux): Often done automatically
+cd/dev/sdb #you can not cd into a drive until it is mounted, because it isn't a directory.. yet, you need to create a directory for the drive
+sudo mount /dev/sdb1 /my_usb_folder/ #mounts sdb partition 1 to my_usb_folder
+cd /my_usb_folder/ #changes directory correctly, after mounting
+sudo umount /my_usb_folder #unmounts thumbdrive attached to my_usb_folder
+sudo umount /dev/sdb1 #unmounts thumbdrive by name
+/etc/fstab #file that allows you to automatically mount files on system boot; contains unique device ID's, mount points, filesystems, +more
+sudo blkid #shows UUID(Universal Unique IDs) for devices
