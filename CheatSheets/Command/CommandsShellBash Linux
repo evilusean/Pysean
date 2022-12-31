@@ -214,3 +214,11 @@ sudo umount /my_usb_folder #unmounts thumbdrive attached to my_usb_folder
 sudo umount /dev/sdb1 #unmounts thumbdrive by name
 /etc/fstab #file that allows you to automatically mount files on system boot; contains unique device ID's, mount points, filesystems, +more
 sudo blkid #shows UUID(Universal Unique IDs) for devices
+
+Swap Space(Linux):
+sudo parted /dev/sdb #selects drive with parted tool to work with
+  print #prints selected drives information
+  mkpart primary linux-swap 5GiB 100% #makes partition for swap space
+sudo mkswap /dev/sdb2 #makes swap on newly created partition
+sudo swapon /dev/sdb2 #turns on swap space
+/etc/fstab #file that allows you to automatically mount files on system boot; can add swap space automatically on boot up
