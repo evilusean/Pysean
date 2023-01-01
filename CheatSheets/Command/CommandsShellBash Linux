@@ -224,3 +224,15 @@ sudo swapon /dev/sdb2 #turns on swap space
 /etc/fstab #file that allows you to automatically mount files on system boot; can add swap space automatically on boot up
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-swapspace
   #Official Docs/Commands
+
+Files/Linking(Linux):
+ln -s #creates a softlink to a file, like a shortcut that can be used in a terminal
+ln -s file1 file1_softlink #-s parameter creates a softlink to file1
+ln #without -s command creates hardlink, points to an inode on the inode table, a physical spot on the disk, can change name of file and still use
+ln file2 file2_hardlink #creates a hardlink of file2 that can be used even if file2 changes name
+
+Disk Usage(Linux):
+du -h #disk usage command to show disk usage, if you don't specify a directory it will automatically do current one, -h flag shows it human readabl
+df -h #disk free command to show how much free space available on entire machine, -h flag shows it in human readable form
+
+
