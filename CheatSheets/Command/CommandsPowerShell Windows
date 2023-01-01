@@ -197,7 +197,10 @@ wmic recoveros set OverwriteExistingDebugFile = 0
 #Alternatively, the overwrite setting can be turned off in the registry:
 Set the Overwrite DWORD value to 0
 
-
+mklink(NTFS Filesystems Windows):
+mklink #command to make a  link, can not use shortcuts through terminal command line
+mklink file_1_symlink file1.txt #makes a symbolic link to file1.txt that can be used in command line
+mklink /H file_1_hardlink file1.txt # /H argument makes a hardlink to file1.txt that can point to a file even if it changes it's name
 
 
 
