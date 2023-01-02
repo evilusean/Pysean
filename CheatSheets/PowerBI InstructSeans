@@ -1,3 +1,4 @@
+https://www.datacamp.com/cheat-sheet/power-bi-cheat-sheet
 Why use Power BI?
 While there are many reasons to use Power BI — here are our top 3 reasons:
 Easy to use—no coding involved
@@ -103,3 +104,47 @@ Click on Merge Queries under the Home tab under the Combine group
 Select the first table and the second table you would like to merge
 Select the columns you would like to join the tables on by clicking on the column from the first dataset, and from the second dataset
 Select the Join Kind that suits your operation
+
+Data Profiling:
+Data Profiling is a feature in Power Query that provides intuitive information about your data:
+Click on the View tab in the Query ribbon
+In the Data Preview tab—tick the options you want to visualize
+Tick Column Quality to see the amount of missing data
+Tick Column Distribution to see the statistical distribution under every column
+Tick Column Profile to see summary statistics and more detailed frequency information of columns
+
+DAX Expressions:
+Data Analysis Expressions (DAX) is a calculation language used in Power BI that lets you create calculations and perform data analysis. 
+  It is used to create calculated columns, measures, and custom tables. DAX functions are predefined formulas that perform calculations on 
+  specific values called arguments. :
+  
+Simple aggregations:
+SUM(<column>) adds all the numbers in a column
+AVERAGE(<column>) returns the average (arithmetic mean) of all numbers in a column
+MEDIAN(<column>) returns the median of numbers in a column
+MIN/MAX(<column>) returns the smallest/biggest value in a column
+COUNT(<column>) counts the number of cells in a column that contain non-blank values
+DISTINCTCOUNT(<column>) counts the number of distinct values in a column.
+
+Logical functions:
+IF(<logical_test>, <value_if_true>[, <value_if_false>]) check the result of an expression and create conditional results
+
+Text functions:
+LEFT(<text>, <num_chars>) returns the specified number of characters from the start of a text
+LOWER(<text>) converts a text string to all lowercase letters
+UPPER (<text>) converts a text string to all uppercase letters
+REPLACE(<old_text>, <start_num>, <num_chars>, <new_text>) replaces part of a text string with a different text string.
+
+Date and time functions:
+CALENDAR(<start date>, <end date>) generates a column of continuous sets of dates
+DATE(<year>, <month>, <day>) returns the specified date in the datetime format
+WEEKDAY(<date>, <return_type>) returns 1-7 corresponding to the day of the week of a date (return_type indicates week start and end (1: Sunday-Saturday, 2: Monday Sunday)
+
+Learn more about Power BI:
+Here are a few extra Power BI resources to get you started:
+Introduction to Power BI :
+https://www.datacamp.com/courses/introduction-to-power-bi
+How to Transition from Excel to Power BI:
+https://www.datacamp.com/blog/how-to-transition-from-excel-to-power-bi
+All about Power BI:
+https://www.datacamp.com/blog/all-about-power-bi
