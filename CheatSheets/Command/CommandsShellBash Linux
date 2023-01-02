@@ -235,4 +235,7 @@ Disk Usage(Linux):
 du -h #disk usage command to show disk usage, if you don't specify a directory it will automatically do current one, -h flag shows it human readabl
 df -h #disk free command to show how much free space available on entire machine, -h flag shows it in human readable form
 
+FileSystem Repair(Linux):
+fsck #filesystem check, make sure file system isn't mounted before using, may damage filesystem
+sudo fsck /dev/sda #runs fsck on sda drive
 
