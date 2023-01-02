@@ -256,3 +256,5 @@ To see more advanced flags, use the man fsck command.
 0 = All scanned file systems have been restored to a functional state.
 2 = fsck did not finish checks or repairs due to an interruption.
 4 = File system has changed and the computer needs to be rebo
+IBM fsck docs:
+https://www.ibm.com/docs/en/aix/7.2?topic=f-fsck-command
