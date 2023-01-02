@@ -238,4 +238,21 @@ df -h #disk free command to show how much free space available on entire machine
 FileSystem Repair(Linux):
 fsck #filesystem check, make sure file system isn't mounted before using, may damage filesystem
 sudo fsck /dev/sda #runs fsck on sda drive
-
+fsck [ -n ] [ -p ] [ -y ] [ -f ] [ FileSystem1name - FileSystem2name ... ]
+The -n flag - Sends a “no” response to all fsck questions and does not allow fsck to write to the drive. 
+The -p flag - Prevents error messages for minor problems from displaying while automatically fixing those minor errors. Outside of recovering 
+  from data corruption, it is a best practice to run the fsck -p command regularly at startup as a preventative measure. 
+The -y flag - Sends a “yes” response to all fsck questions to automatically attempt to repair all inconsistencies found. This flag should be 
+  reserved for severely corrupt file systems only. 
+The -f flag - Runs a fast check that excludes file systems that were successfully unmounted for shutdown before the system crashed. 
+FileSystem#name - If you do not specify a file system, the fsck command checks all file systems in /etc/filesystems, where the check attribute
+  is set to true.
+To see more advanced flags, use the man fsck command.
+                  a. To have the fsck command check all of the default file systems and prompt the user on how to handle each inconsistency 
+                    found, simply enter at a command line:
+                 b. For ext, ext2, ext3, and ext4 file systems, the e2fsck command can be used:
+                c. To have the fsck command check specific file system(s) and automatically fix any inconsistencies found, enter: 
+2. The fsck command outputs an exit value, or code, when the tool terminates. The code is the sum of one or more of the following conditions:
+0 = All scanned file systems have been restored to a functional state.
+2 = fsck did not finish checks or repairs due to an interruption.
+4 = File system has changed and the computer needs to be rebo
