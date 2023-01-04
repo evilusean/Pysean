@@ -1,0 +1,155 @@
+https://www.datacamp.com/cheat-sheet/sql-basics-cheat-sheet
+#Querying tables Get all the columns from a table:
+SELECT * 
+FROM airbnb_listings;
+
+Return the city column from the table:
+SELECT city 
+FROM airbnb_listings;
+
+Get the city and year_listed columns from the table:
+SELECT city, year_listed
+FROM airbnb_listings;
+
+Get the listing id, city, ordered by the number_of_rooms in ascending order:
+SELECT city, year_listed 
+FROM airbnb_listings 
+ORDER BY number_of_rooms ASC;
+
+Get the listing id, city, ordered by the number_of_rooms in descending order:
+SELECT city, year_listed 
+FROM airbnb_listings 
+ORDER BY number_of_rooms DESC;
+
+Get the first 5 rows from airbnb_listings:
+SELECT * 
+FROM airbnb_lisitings
+LIMIT 5;
+
+Get a unique list of cities where there are listings:
+SELECT DISTINCT city
+FROM airbnb_lisitings;
+
+Filtering on numeric columns Get all the listings where number_of_rooms is more or equal to 3:
+SELECT *
+FROM airbnb_listings 
+WHERE number_of_rooms >= 3;
+
+Get all the listings where number_of_rooms is more than 3:
+SELECT *
+FROM airbnb_listings 
+WHERE number_of_rooms > 3;
+
+Get all the listings where number_of_rooms is exactly 3:
+SELECT *
+FROM airbnb_listings 
+WHERE number_of_rooms = 3;
+
+Get all the listings where number_of_rooms is lower or equal to 3:
+SELECT *
+FROM airbnb_listings 
+WHERE number_of_rooms <= 3;
+
+Get all the listings where number_of_rooms is lower than 3:
+SELECT *
+FROM airbnb_listings 
+WHERE number_of_rooms < 3;
+
+Filtering columns within a range—Get all the listings with 3 to 6 rooms:
+SELECT *
+FROM airbnb_listings 
+WHERE number_of_rooms BETWEEN 3 AND 6;
+
+Filtering on text columns Get all the listings that are based in 'Paris':
+SELECT * 
+FROM airbnb_listings 
+WHERE city = ’Paris’;
+
+Filter one column on many conditions—Get the listings based in the 'USA' and in ‘France’:
+SELECT *
+FROM airbnb_listings 
+WHERE country IN (‘USA’, ‘France’);
+
+Get all listings where city starts with "j" and where it does not end with "t":
+SELECT * 
+FROM airbnb_listings 
+WHERE city LIKE ‘j%’ AND city NOT LIKE ‘%t’;
+
+Filtering on multiple columns Get all the listings in "Paris" where number_of_rooms is bigger than 3:
+SELECT *
+FROM airbnb_listings 
+WHERE city = ’Paris’ AND number_of_rooms > 3;
+
+Get all the listings in "Paris" OR the ones that were listed after 2012:
+SELECT * 
+FROM airbnb_listings
+WHERE city = 'Paris' OR year_listed > 2012;
+
+Filtering on missing data Get all the listings where number_of_rooms is missing:
+SELECT *
+FROM airbnb_listings 
+WHERE number_of_rooms IS NULL; 
+
+Get all the listings where number_of_rooms is not missing:
+SELECT *
+FROM airbnb_listings 
+WHERE number_of_rooms IS NOT NULL; 
+
+Simple aggregations Get the total number of rooms available across all listings :
+SELECT SUM(number_of_rooms) 
+FROM airbnb_listings; 
+
+Get the average number of rooms per listing across all listings:
+SELECT AVG(number_of_rooms) 
+FROM airbnb_listings;
+
+Get the listing with the highest number of rooms across all listings:
+SELECT MAX(number_of_rooms) 
+FROM airbnb_listings;
+
+Get the listing with the lowest number of rooms across all listings:
+SELECT MIN(number_of_rooms) 
+FROM airbnb_listings;
+
+Grouping, filtering, and sorting  Get the total number of rooms for each country:
+SELECT country, SUM(number_of_rooms)
+FROM airbnb_listings
+GROUP BY country;
+
+Get the average number of rooms for each country:
+SELECT country, AVERAGE(number_of_rooms)
+FROM airbnb_listings
+GROUP BY country;
+
+Get the listing with the maximum number of rooms for each country:
+SELECT country, MAX(number_of_rooms)
+FROM airbnb_listings
+GROUP BY country;
+
+Get the listing with the lowest amount of rooms per country:
+SELECT country, MIN(number_of_rooms)
+FROM airbnb_listings
+GROUP BY country;
+
+For each country, get the average number of rooms per listing, sorted by ascending order:
+SELECT country, AVG(number_of_rooms) AS avg_rooms
+FROM airbnb_listings
+GROUP BY country
+ORDER BY avg_rooms ASC;
+
+For Japan and the USA, get the average number of rooms per listing in each country:
+SELECT country, MAX(number_of_rooms)
+FROM airbnb_listings
+WHERE country IN (‘USA’, ‘Japan’);
+GROUP BY country;
+
+Get the number of cities per country, where there are listings:
+SELECT country, COUNT(city) AS number_of_cities
+FROM airbnb_listings
+GROUP BY country;
+
+Get all the years where there were more than 100 listings per year:
+SELECT year_listed
+FROM airbnb_listings
+GROUP BY year_listed
+HAVING COUNT(id) > 100;
