@@ -205,7 +205,8 @@ sudo parted /dev/sdb #runs interactive mode parted on /sdb/ thumbdrive
   mklabel gpt #makes partition table gpt
   mkpart primary ext4 1MiB 5GiB #requires what type of partition you want to make, start of disk, and end of disk (1MiB=1024 bytes)
 sudo mkfs -t ext4 /dev/sdb1 #formats filesystem, from command line mode
-Lab 4:
+
+Lab 4(Formatting/Partitioning Linux):
 lsblk #lsblk command. This command gathers information about all devices attached to the system, and prints them out using a tree-like structure.
 df -h #df command. This command is normally used to display the amount of space available on the file system.
   #It lists all block devices with the available space on them. Use the -h option to display file sizes in human readable format.
@@ -228,7 +229,18 @@ sudo fdisk /dev/sda #Start fdisk by passing the disk you want to partition as th
     #makes up the total size of the partition. Disk sector represents units used to measure the size on disks. Each sector stores a fixed 
     #amount of data. In lots of hard disks, for example, a sector stores 512 bytes. To create the first 1GB partition, 
     #enter 2097200 (divide the original partition by 10).
-
+  #Use the command control n again for a new partition.
+  #Select partition number 2 to issue partition numbers in sequence.
+  #Select the default partition starting sector, which is the next sector from the last partition you allocated.
+  #Also select the default last sector, which will be the last sector of the remaining disk space.
+  # Enter command control t to change the partition type, and select the first partition.
+  #You can use the command control L to view a list of all partition types.
+  #Enter 19 to change the partition type to ‘Linux swap', and press Enter.
+  #commit them to the disk by using the w command.
+lsblk #To do this, use lsblk again to find the disk you want to create the file system type in.
+sudo mkfs -t ext4 /dev/sdb2 #Format the second partition in your unmounted drive (sdb2 or sda2) to ext4 using this command:
+sudo mount /dev/sdb2 /home/my_drive #mount /dev/sdb2 to a location on the file system , Mount it on the directory /home/my_drive
+lsblk #verify the file systems and block devices attached to your system using lsblk command.
 
 Mounting(Linux): Often done automatically
 cd/dev/sdb #you can not cd into a drive until it is mounted, because it isn't a directory.. yet, you need to create a directory for the drive
