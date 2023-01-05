@@ -205,6 +205,30 @@ sudo parted /dev/sdb #runs interactive mode parted on /sdb/ thumbdrive
   mklabel gpt #makes partition table gpt
   mkpart primary ext4 1MiB 5GiB #requires what type of partition you want to make, start of disk, and end of disk (1MiB=1024 bytes)
 sudo mkfs -t ext4 /dev/sdb1 #formats filesystem, from command line mode
+Lab 4:
+lsblk #lsblk command. This command gathers information about all devices attached to the system, and prints them out using a tree-like structure.
+df -h #df command. This command is normally used to display the amount of space available on the file system.
+  #It lists all block devices with the available space on them. Use the -h option to display file sizes in human readable format.
+sudo fdisk -l #display partition information using the fdisk command. You can also use the -l option to list partitions in the block.
+  #You can pass a device name to the fdisk command to list the partitions contained in that device.
+sudo fdisk -l /dev/sdb #To list partitions contained in /dev/sdb, pass /dev/sdb to the fdisk command.
+sudo fdisk /dev/sda #Start fdisk by passing the disk you want to partition as the parameter.
+  #fdisk will start in interactive mode. You can use 'm' to use help provided by the command.
+  #You can use 'p' to show details about partitions on the disk.
+  #Enter 'q' to exit interactive mode when you are finished exploring
+  #To create a new partition, the command control n is used. However, since all the space on the disk is currently allocated, 
+    #you'll need to first free up space by deleting the default partitions.
+  #Use the d command control to delete the default partitions. When you issue the d command control, fdisk asks you to enter the number of 
+    #partitions you want to delete. Since you have twelve partitions, fdisk automatically selects the last partition by default, and 
+    #pressing Enter deletes the last partition. Repeat this process until you delete all the twelve partitions.
+  #You're now able to create your new partitions. Enter the command control for creating a new partition, n.
+    #You'll then need to provide the starting sector (memory location) of the new partition, from where you want to allocate.
+    #Here, press Enter to select the default value 2048.
+  #Provide the last sector of the new partition, up to where you want to allocate. The difference between the first and last sectors
+    #makes up the total size of the partition. Disk sector represents units used to measure the size on disks. Each sector stores a fixed 
+    #amount of data. In lots of hard disks, for example, a sector stores 512 bytes. To create the first 1GB partition, 
+    #enter 2097200 (divide the original partition by 10).
+
 
 Mounting(Linux): Often done automatically
 cd/dev/sdb #you can not cd into a drive until it is mounted, because it isn't a directory.. yet, you need to create a directory for the drive
