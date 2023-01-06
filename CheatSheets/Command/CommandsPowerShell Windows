@@ -208,4 +208,7 @@ fsutil repair query C: #queries C drive and fixes any problems
 chkdsk #check disk, used to recover from catastrophic disk corruption/failures-default runs in read only automatically
 chkdsk /f D:#/f flag, fixes any problems found on D drive
 
-
+Taskkill (windows):
+taskkill /pid 5856 #kills process 5856
+TaskKill Documentation:
+https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/taskkill
