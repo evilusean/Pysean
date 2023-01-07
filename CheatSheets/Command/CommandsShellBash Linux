@@ -294,3 +294,19 @@ To see more advanced flags, use the man fsck command.
 4 = File system has changed and the computer needs to be rebo
 IBM fsck docs:
 https://www.ibm.com/docs/en/aix/7.2?topic=f-fsck-command
+
+Processes(Linux):
+Full Documentation:
+http://man7.org/linux/man-pages/man1/ps.1.html
+ps #command that shows all currently running processes with PID(Process ID's)
+ps -x #-x Flag, The x option instructs ps to list the processes without a controlling terminal.
+ps -ef #-e flag, get's all process even those being run by other users, -f flag=Full, get's full details
+ps -ef | grep Chrome #pipe grep command, show's  all processes that have to do with Chrome
+/proc #Everything in Linux is a file, including processes, to view the file that corrspond with processes, check the '/proc' directory
+cat /proc/1805/status #gets even more details directly from the process directory of PID 1805
+kill #terminates a process
+kill 10235 #terminates process with ID 10235
+kill -KILL 10392 #sends SIGKILL signal, kills process instantly without time to cleanup to process ID 10392
+kill -TSTP 10754 #sends SIGTSTOP signal, terminal stop Signal that pauses a process, puts it in a suspended state to process ID 10754
+  Can also send SIGTSTOP signal using Ctrl+Z
+kill -CONT 10829 #sends SIGCONT signal, resumes a process for process ID 10829
