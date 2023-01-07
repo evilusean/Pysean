@@ -213,6 +213,7 @@ tasklist #shows all running processes with PID(Process ID's)
 Get-Process #powershell commandlet, same as tasklist, shows all currently running process' with PIDs
   Full Get-Process Documentation:
   https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-5.1
+Get-Process | Sort CPU -descending | Select -first 3 -Property ID,ProcessName,CPU #shows top 3 CPU using processes 
 taskkill /pid 5856 #kills process 5856
 TaskKill Documentation:
 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/taskkill
