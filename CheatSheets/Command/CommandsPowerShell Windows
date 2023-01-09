@@ -231,4 +231,10 @@ taskkill /F /PID 644 #kills process ID 5880
 taskkill /F /PID 644 #kills process ID 1612
 Get-Process -Name "*razzle*" #confirms process terminated
 
-
+Remote Access(Windows):
+ssh sean@104.131.122.215 #connects to a remote server PC using SSH(SecureSHell) with an account and IP address
+putty.exe -ssh sean@104.131.122.215 22#opens up putty SSH connection, if you installed it on computer -ssh flag username@IPaddress port 22
+File Transfer(Windows):
+pscp.exe C:\Users\sean\Desktop\MyFile.txt shawn@104.131.122.215: #sends a file over the same network to name@IPaddress target computer
+Shared Folder or net share
+net share ShareMe=C:\Users\sean\Desktop\ShareMe /grant:everyone, full #users will be able to access shared folder 
