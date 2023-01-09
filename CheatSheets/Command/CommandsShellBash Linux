@@ -311,6 +311,14 @@ kill -TSTP 10754 #sends SIGTSTOP signal, terminal stop Signal that pauses a proc
   Can also send SIGTSTOP signal using Ctrl+Z
 kill -CONT 10829 #sends SIGCONT signal, resumes a process for process ID 10829
 
+Lab 5:
+ps -aux | grep "totally_not_malicious" #searches for process totaly_not_malicious
+sudo kill 312 #kills process ID 312
+sudo kill 319 #kills process ID 319
+ps -aux | grep "razzle" #searches for process with "razzle"
+sudo kill 313 #kills process ID 313-318
+ps -aux | grep "razzle" #verify that processes have been terminated
+
 Resource Monitoring(Linux):
 top #shows top processes, using most resources, to escape new top terminal press 'q'
 uptime #shows information about current time, how long system running, how many users logged on, and load average of machine
