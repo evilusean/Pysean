@@ -1,0 +1,701 @@
+https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md
+
+ALTERNATIVES TO BLOATWARE
+The list is built pointing to software that has alternatives with less dependencies, and addressing dependencies was the easy thing. Some tools in particular were included because they add less dependencies overall while keeping a system functional. One such example is imagemagick and ffmpeg, by which you can do a lot of work and replace many tools by just using those with scripts and replace something like a screenshot utility. Certainly it would be great to have a comparative on resource usage. However, a new revision now includes software that was previously discarded for better comparison and featured recommendations will not be highlight for the moment.
+
+TL;DR: is about the unix principle, having a fully functional system pretty damn minimal with that.
+
+TOC
+ANDROID APPS
+Command Line
+Communication
+3.1. Desktop Client
+Data
+Decentralized Networking
+Emulation And Virtualization
+File Utilities
+Filesharing
+Forensics
+Hardware
+Monitoring
+11.1. Benchmarking
+11.2. System Information
+11.3. System Monitoring
+Multimedia
+12.1. ASCii Art
+12.2. Audio
+12.3. Image
+12.4. Metadata
+12.5. Video
+Network Setup
+Office
+Package Management
+Pentesting
+16.1. Exploitables
+16.2. Network Scanner
+16.3. Network Tampering
+16.4. Password Cracking
+16.5. Vulnerability Scanner
+Privacy
+Programming
+Remote Access
+Science And Engineering
+Security
+21.1. Containment
+21.2. Honeypots
+21.3. Host Intrusion
+21.4. Network Intrusion
+Server
+22.1. Server Authentication
+System Utilities
+23.1. Init
+23.2. Job Scheduler
+X Desktop
+
+ANDROID APPS
+Launcher: OpenLauncher (8,3 MB) -> Catapult (4,7 MB) -> Lawnchair (3,1 MB) -> Paper Launch (2,8 MB) -> Launch Time (2,5 MB) -> Silverfish (1,5 MB) -> T-UI (1,2 MB) -> Search Based Launcher (622 KB) -> KISS (431 KB) -> Emerald Launcher (172 KB) -> Hayai Launcher (106 KB) -> Fast (76 KB) -> Essential Launcher (26 KB) -> Null Launcher (12 KB)
+Facebook: FaceSlim (1,3 MB) -> Tinfoil for Facebook (525 KB) -> SlimSocial (313 KB)
+Twitter: Tinfoil for Twitter -> SlimSocial for Twitter (699 KB)
+YouTube: NewPipe (5,0 MB) -> SkyTube (4,9 MB) -> WebTube (2,1 MB) -> MinTube (981 KB)
+Photo Gallery: Simple Gallery (12 MB) -> LeafPic (10/2016: 4.3 MB) -> Cameraroll (2.4 MB) -> A Photo Manager (1.3MB)
+E-Books: Document Viewer (8.5 MB)
+Notes: Orgzly (3.9 MB) -> Markor (3 MB) -> miniNoteViewer (452 KB)
+Keyboards: Hacker's Keyboard (1,2 MB) -> Simple Keyboard (835 KB)
+File Manager: Amaze -> OI File Manager
+Dictionary: Quickdic
+Firewall: NetGuard -> AFWall+
+E-Mail: K-9 Mail
+Most apps are from F-Droid, we are just starting.
+
+Command Line
+Commands Cheatsheet: CLI Companion -> xman -> cheat / howdoi / clf / fu / bro -> curl cht.sh/PROGRAM
+Copy and Move Progress Bar: progress -> Advanced Copy
+Daemonize: dtach -> abduco -> GNU Screen
+Directory Bookmarks: Apparix -> fasd
+Framebuffer Environment: jfbterm/Fbterm -> yaft (because sixel) -> hterm (because regis) -> Fbpad -> FramebufferUI
+Hacker Culture: ddate, fortune, The Hacker Test, The Jargon File
+Login: fgetty -> mingetty -> stty (GNU Coreutils) -> agetty (util-linux)
+Menu: pdmenu -> tmenu -> iSelect -> pick -> fzy -> slmenu
+Multiplexer: Byobu -> Tmux -> GNU Screen (+sixel patch) -> dvtm
+Notification: skroll
+Progress Bar: vramsteg -> clpbar- > pv - Pipe Viewer -> sob - simple output bar -> dbar
+Scripting: Multipipe -> GNU Parallel (+ GNU SQL) -> execline -> Expect -> empty
+Shells: Xonsh -> PowerShell -> Bash (+ bash-completion + bash-completion-extras) -> zsh -> tcsh -> PC-DCL -> mksh -> dash -> rc -> s -> Danshell
+Terminal Colorizer: colout -> lolcat -> Bashish
+Terminal Dropdown: tdrop -> YeahConsole -> alwaysontop
+Terminal Emulator: PuTTY -> Cool Retro Term -> Terminology -> rxvt-unicode (a.k.a. urxvt) -> Termite -> UXTerm (XTerm) -> st -> Qodem
+Terminal Pager: most -> less (+ lesspipe)
+Terminal Screensaver: bb, sl, tty-clock, CMatrix, cowsay (or cowthink), rice, Asciiquarium, pipes, nyan.sh, rickrollrc, NCMatrix, terminal-screensaver, No More Secrets
+
+Communication
+BBS-MUD Client: SyncTERM -> KildClient -> kbtin -> TinTin++
+Bookmarks Manager: bookmarks.public -> bk_edit -> pmb -> b.
+Browser: ungoogled-chromium -> Pale Moon -> GNU IceCat -> luakit / vimb / surf (tabbed) / Uzbl (tabbed) -> NetSurf (works in the framebuffer too) -> Arachne (works in the framebuffer too)
+Browser (Command Line): w3m (can display images) -> Lynx -> Links2 (can display images) -> Netrik -> retawq
+Browser (Gopher): GopherVR -> gopherfs -> UMN Gopher client -> sacc -> cgo -> Lynx
+Chat Client: Finch (Pidgin) in irssi mode -> Centerim -> Bitlbee
+E-Mail Archiver: Hypermail -> Lurker
+E-Mail Client (MUA): Icedove/Thunderbird (+ Enigmail) -> Mailspring -> Emacs (Gnus) -> SquirrelMail -> Alpine -> Mutt -> mailutils ("mailx") -> S-nail ("mailx") + Muttprint
+E-Mail Fetcher: Fetchmail -> fdm -> isync (mbsync)
+E-Mail MIME: TNEF -> metamail
+E-Mail SMTP Client: nullmailer -> msmtp -> esmtp -> SSMTP
+IPTV: FreetuxTV -> iptvx
+IRC Client: HexChat -> BitchX -> Weechat -> Irssi -> ii -> sic
+Media Center: Plex -> Kodi ("XBMC", + Sonarr) -> Emby -> Popcorn Time -> LittleWeeb
+Offline Reader: Kiwix -> Darcy Ripper -> HTTrack -> Stallman.js -> Wget
+Online Radio: Nuvola Player
+RSS Feed and Podcast: gPodder -> Raggle -> Liferea -> Newsbeuter (+ Podbeuter) -> Newsboat -> sfeed
+Search Engine Scraper: Googler -> Surfraw (+ dmenu or slmenu)
+Streams Catcher: Streamripper -> youtube-dl -> cclive -> youtube-pl -> RTMPDump -> quvi
+UPnP (DLNA) Client: djmount
+Usenet Client (Newsreader): Pan -> slrn ( + slrnpull + slrnface) -> Trn
+VoIP Client: Empathy -> Jitsi -> Finch (Pidgin)
+XMPP Client: Profanity
+
+Desktop Client
+4chan: ANSIchan / yottu
+Booru: ahoviewer
+Facebook: facy - > FBCMD (unmaintained) -> FBCLI -> Facebook CLI
+General: Weboob -> Rambox -> Gwibber
+Pastebin: pastebinit
+Reddit: Reddit Comment Finder -> Cortex -> PRAW -> cReddit -> rtv
+Slack: ScudCloud -> slackterm
+Telegram: Telegram Desktop -> ncTelegram -> telegram-cli -> Telegram-Purple
+Twitter: Hotot -> turses -> oysttyer
+Youtube: mps-youtube -> youtube-viewer
+
+Data
+Data Mining and Business Intelligence: JasperReports -> KNIME -> GNU Ferret -> GURGLE
+Data Parsing: intltool -> XMLStarlet -> Flat file extractor (ffe)
+Database (Datalog): Datalog Educational System, Datalog
+Database (Middleware): MySQL Workbench -> Virtuoso Universal Server -> Orbada -> Autotable
+Database (NoSQL): GZigZag, RRDtool, Dgraph, Redis, GNU Recutils
+Database (SQL): MySQL -> Percona -> MariaDB -> CUBRID -> Ingres II -> ShellSQL
+Enterprise Resource Planning (ERP): IDempiere -> LedgerSMB -> SQL-Ledger
+Expert System: CLIPS -> Flora-2
+Financial Markets Monitoring: JStock -> QtTrader -> Qtstalker
+Full-Text Search: Xapian -> Tokyo Dystopia -> Groonga
+Human Resource Management: OrangeHRM
+Invoicing: Simple Invoices
+Project Management: GanttProject
+
+Decentralized Networking
+Backbone Framework: GNUnet -> OSF DCE (Distributed Computing Environment)
+Chat: Tox -> Matrix (Matrix-Ircd, Riot) -> GNU Jami -> eircd -> P2PIRC -> nircd
+Darknet: autovpn -> LibreVPN -> Tor -> AnoNet -> i2p
+Digital Library: Aletheia
+Distributed File Systems: Samba -> NFS (nfs-utils) -> davfs2 -> Upspin -> IPFS
+Distributed File Systems (Samba): SMB for FUSE (FuseSmb) -> SMBNetFS -> CIFS (cifs-utils)
+DNS Resolution: OpenNIC -> Namecoin -> KadNode
+E-Commerce: OpenBazaar + FIX Agora + Bitnation + GNU Taler
+E-Commerce (Bitcoin): Qt Bitcoin Trader (Bitcoin Trader), Abe (Block Chain Browser)
+E-Commerce (Bitcoin Wallet): Armory -> Bitcoin Core -> Monero
+E-Mail: Notbit (Bitmessage)
+Forum: Decentraland -> GNU Social (Pleroma, Mastodon) -> Syndie -> NNTPChan
+Gossip Network (Network Service Discovery): peernet
+Grid Computing: traceroute@home -> BOINC (+ boinctui)
+Media Hosting: MediaGoblin -> Alexandria (not ready yet but this how it works) -> ipfs.pics
+Mesh Network: Tinc -> cjdns -> BMX6 -> open80211s (802.11s) -> B.A.T.M.A.N.
+Monetary Incentives: Storj + Gridcoin + Stream Token
+Network Block Device: Usbredir -> nbd
+Search Engine: searx -> Seeks -> YaCy (truly decentralized, would be wonderful if searx/seeks could feed its data to YaCy)
+Search Engine (Gopher): Jugtail
+Search Engine (Torrents): Magnetissimo -> magnetico
+Streaming: Butter Project -> Livepeer -> PeerTube
+Version Control (Decentralized Github): git-annex (+ git-annex assistant) -> GitTorrent
+VPN: n2n -> PeerVPN
+Wiki: ikiwiki
+
+Emulation And Virtualization
+Containers: sandbox -> fakechroot -> FakeRoot -> PRoot -> chroot -> containerd -> OpenVZ -> User-mode Linux (UML) -> LXC -> Linux-VServer -> containers
+Emulators: Systemd/Linux: systemd-shim, Windows: Wine (+ Wine Staging), Android: Anbox, OS X: Darling, Atari: Hatari (16/32-bit) and Atari800 (8-bit), CP/M: cpm (+ cpmtool), Spectrum: FBZX, Commodore: VICE, DOS: DOSBox
+Hypervisors: Xen -> NOVA -> KVM
+Network Virtualization: GNS3 -> nsnam
+Video Game Console Emulation (ATARI): Stella
+Video Game Console Emulation (XBOX): XQEMU
+Video Game Console Emulation (MULTIPLE): Higan -> Mednafen -> RetroArch -> MAME -> AdvanceMAME (framebuffer support)
+Video Game Console Emulation (NINTENDO): FCEUX/Citra, DeSmuME (Nintendo DS), Mupen64Plus (Nintendo 64), Dolphin (GameCube and Wii)
+Video Game Console Emulation (SCUMM): ScummVM
+Video Game Console Emulation (SEGA): Gens/GS, Exodus, Yabause (Sega Saturn), Lxdream, Reicast (Dreamcast)
+Video Game Console Emulation (PLAYSTATION): PPSSPP, RPCS3, PCSX2
+Virtual Assembler: GNUSim8085, spim
+Virtual Machine: VirtualBox -> AQEMU + kvm -> Qemu + kvm -> Bochs
+Virtual Machine (IBM Mainframes): Hercules
+Virtual Machine (DEC): SIMH
+
+File Utilities
+Batch Renamer: Metamorphose -> GPRename -> vidir -> qmv (renameutils) -> mmv
+Duplicate Files Removal: dupeGuru -> FSlint -> freedup -> fdmf -> dupmerge -> duff -> Fdupes -> jdupes -> rmlint
+File Archiver: PeaZip -> Xarchiver -> Patool -> dtrx -> Atool -> dar -> tar -> pax
+File Compression: arj, Zstandard (Zstd), Zip, lzop, Plzip, pxz, ECM (Error Code Modeler), p7zip, lbzip2, lrzip, pigz
+File Conversion: nrg2iso, dmg2iso (dmg to iso), mdf2iso (mdf to iso), daa2iso (daa to iso), UIF2ISO (uif to iso), ccd2iso (img to iso), bin2iso (bin-cue to iso), bchunk (bin-cue to iso), mpq-tools (MPQ or MoPaQ), Macutils
+File De-Compression Only: unace, cabextract, unrar, Lunzip, UnZip
+File Manager: PCManFM -> Xfe -> SpaceFM -> File System Visualizer (“It’s a Unix system, I know this!”) -> Endeavour Mark II -> donnatella -> worker (+ imagemagick) -> Moxfm -> Emacs (Dired Plus Mode, Sunrise Commander, ranger.el, Image-Dired, ThumbsMode) -> Ranger -> Midnight Commander -> vifm -> FDclone -> Ytree -> rover -> CLEX -> nnn -> tree
+File Search: Beagle -> Puggle -> ANGRYsearch -> Tracker -> DocFetcher -> regain -> lightmediascanner -> find
+File Synchronization: Unison -> duplicity -> synk -> Rsync
+Pictures Organizer: hydrus network -> Shotwell -> GTKRawGallery -> digiKam -> gThumb (+ gphoto) -> Mapivi -> BASH-Booru
+RegEx Builder: regexxer -> Visual REGEXP -> txt2regex
+
+Filesharing
+Direct Connect: LinuxDC++ -> ncdc -> microdc2
+Download Manager: JDownloader -> giFT (+ giFTcurs) -> aria2 -> cURL -> Wget -> snarf -> Axel
+File Scraper: Grive2 (Google Drive) -> megatools (Mega) -> Rclone -> Plowshare
+FTP Client: FileZilla -> lftp -> NcFTP
+LAN Sharing: NitroShare -> Dukto
+Media Miner: FlexGet -> Sonarr
+Soulseek: Nicotine Plus -> Museek (mucous)
+Torrent Client: qBittorrent -> RTorrent -> transmission-daemon (web interface by default, other frontends optional) -> CTorrent -> btpd + mktorrent
+Torrent Tracker Scraper: Torrtux -> Torrench -> Jackett
+Usenet (File Grabber): LottaNZB -> SABnzbd -> NZBGet -> nzb -> nzbperl
+x-y-zmodem: lrzsz
+
+Forensics
+Application Profiling: CGprof -> Valgrind (+ Callgrind)
+Browser Debugger: Firebug
+Debugger: DDD -> CGDB -> OpenOCD -> GDB
+Delta Encoding: xdelta -> Bsdiff
+Forensic Analysis Framework: The Sleuth Kit -> DFF -> Radare
+Hex Editors: HT Editor -> biew -> dhex -> hexedit
+Java Profiling: VisualVM -> Quilt
+Memory Scanner (Cheat Engine): scanmem & Gameconqueror -> varedit
+Sandbox: Cuckoo Sandbox
+Steganalysis: Virtual Steganographic Laboratory -> Stegdetect
+
+Hardware
+Cameras: ZoneMinder (CCTV), Motion (motion detection), gPhoto (connecting digital cameras), ccdciel
+Car (as in automobile): can-utils
+CD-DVD Burn and Copy (Backends): cdrtools -> cdrkit -> cdrskin
+CD-DVD Burn and Copy (Frontends): K3b -> Brasero -> dvd+rw-tools -> xorriso -> cdw
+CD-DVD Cue Files: cuetools -> cuecmd
+CD-DVD Information: cd-discid -> cdstatus
+CD-DVD Ripping: Sound Juicer -> fre ac -> cdparanoia (+ ABCDE)
+Data Recovery: fatcat -> ext3grep -> giis (gET iT i sAY) -> extundelete -> Magic Rescue -> dvdisaster -> TestDisk (PhotoRec) -> ddrescue
+Device Management (and module autoloader): evdev -> udev -> vdev
+Disk Cloning and Writing: devio -> dd -> dcfldd -> dc3dd
+Display Color Temperature: Redshift -> sct -> luminous
+Display Settings: xrandr -> DDCcontrol -> fbset
+Displays (Miracast): MiracleCast
+Hardware Bus: multipath-tools, I2C Tools (i2c-tools), IPMI Tool (ipmitool, ipmiutil) (IPMI DANGEROUS IF ENABLED)
+Hardware RAID: mdadm -> dmraid
+Hibernation: TuxOnIce -> uswsusp -> pm-utils -> shutdownasap -> watchdog
+Home Automation: LinuxMCE
+Keyboard Bindings: Xbindkeys -> sxhkd -> bind (readline) -> loadkeys (+ keymaps)
+Keyboard Input Language: iBus -> SCIM -> Fcitx -> uim (+ Anthy)
+Keyboard Layout: XKB -> xmodmap -> KBD
+Media Transfer Protocol (MTP): MTPfs -> jmtpfs -> simple-mtpfs
+Microcontrollers: AVRDUDE
+Mounting: AcetoneISO -> Udisks (+ udevil) -> Lightweight Device Mounter (ldm) -> USBmount -> pmount -> bashmount -> mount (.ISO files too) -> udev rules
+Mouse: xbanish -> keynav -> GPM
+Power Management: tpfancontrol -> tpacpi-bat -> thinkfan -> TLP -> PowerTOP -> Powertweak
+Printers: CUPS -> LPR
+Scanners: Scanner Access Now Easy (SANE)
+Software-defined radio (SDR): GNU Radio (+ Gqrx) -> rtl-sdr
+Telescope: Talon
+Tv (DVR): xawtv -> tvtime
+Tv (Multicast): udpxy -> IGMPproxy
+Undevolting and Power Saving: TurionPowerControl -> Linux-PHC -> cpufrequtils -> cpupower -> schedtool
+UPS: egctl -> Network UPS Tools (NUT) -> apcupsd
+
+Monitoring
+-Benchmarking
+Drive Profiling: Smartmontools -> fio -> sdparm -> hdparm
+Filesystem Benchmark: IOzone -> Bonnie++ -> MBW
+General Benchmarking: collectd -> Phoronix Test Suite -> HPC Challenge Benchmark (hpcc) -> mcelog -> ProcBench -> Sysbench
+Network Data Visualization: weathermap4rrd (rrd) -> Xtract (pcap)
+Network Profiling: net-snmp -> vnStat -> iperf -> bing
+Server Benchmark: Siege
+Sort Benchmark: gensort
+System Tracing: SystemTap -> LTTng -> OProfile -> Sysdig -> dtrace -> strace -> trace-cmd (ftrace) -> perf + FlameGraph
+
+-System Information
+General Information: zCI -> inxi
+Hardware Information: vdpauinfo -> lshw -> hwloc -> lsscsi -> edac-utils -> usbutils (lsusb) -> pciutils (lspci) -> util-linux (lsblk, blkid, dmesg) -> acpitool dmidecode
+Screenshot Information (Bash): Neofetch -> screenFetch -> envee
+Screenshot Information (C): Linux_Logo
+Screenshot Information (Perl): screenfo -> alsi
+Software Information: vrms -> file -> ldd -> lsb_release -> os-prober -> uname (GNU Coreutils)
+
+-System Monitoring
+Database Monitoring: Mytop
+Disk Usage: QDirStat -> Baobab -> xdiskusage -> XDU -> dfc -> Ncdu -> ls++ -> tdu -> ncdt -> du + df (GNU coreutils)
+Geolocation: Prey
+Hardware Monitoring: lm-sensors (psensor for a GUI) -> CrazyDiskInfo -> Hddtemp
+Log Monitoring: Webalizer -> lnav -> Logcheck -> multiTail
+Log Visualizer: glTail -> Logstalgia -> ccze
+Network Flow: Argos -> HFlow -> nfdump (nfsen for a GUI)
+Network Latency: OpenNMS -> SmokePing -> bmon
+Network Monitoring: IPTraf -> tcptrack -> IPTState -> NetHogs -> iftop, dnstop
+Port Monitoring: psad
+Process Monitoring: lsof, PSmisc (fuser, pkill, pstree)
+Serial Monitoring: slsnif -> interceptty -> ttylog
+System Latency: LatencyTOP
+System Monitor: gnome-system-monitor -> psDooM -> HardInfo -> GKrellM -> treeps -> Conky -> xosview -> Glances -> dstat -> atop -> htop -> nmon -> procinfo -> Sysstat (sar, mpstat, pidstat, iostat, sadf) -> procps (ps, free, vmstat, top, pmap, nice)
+User Monitoring: wuzzah -> Whowatch -> acct
+Web Log Analytics: AWStats -> W3Perl -> Analog -> pmacct
+Web State Monitor: Nagios (+ NagVis) -> Sysmond -> sysmon
+Wi-Fi Network Monitor: wavemon
+
+Multimedia
+-ASCii Art
+ANSI Drawing: MysticDraw -> SHPaint
+ANSi Viewer: ANSiMat
+ASCii Animation: blessed -> Durdraw -> drawille
+ASCii Banner: shellpic -> TOIlet -> FIGlet -> sysvbanner
+ASCii Drawing: JavE -> Aewan -> cadubi -> CAVE WALL -> textdraw
+ASCii Presentations: wopr -> blessed-contrib
+Image to ASCii: jp2a
+Video to ASCii: libcaca -> AAlib
+
+-Audio
+Audio Editing: Audacity -> Snd -> Ecasound -> SoX
+Audio Effect Plugins: awesfx (SoundFont), Vamp, zam-plugins (LADSPA/LV2/VST/JACK), LV2 (x42-plugins), LADSPA (tap-plugins), DSSI (dssi-utils, dssi-vst), ALSA plugins (alsa-plugins)
+Background Sound: GNU GTick -> Ambient Noise -> ctronome
+Digital Audio Workstation: Rosegarden -> Ardour -> LMMS
+DJing: Mixxx
+Ear Training: LenMus -> GNU Solfege
+Multiple Audio Streams: pulseaudio -> apulse -> ALSA (aloop, Softvol, Dmix)
+Music Player: Audacious (+ Winamp Classic skin + GJay) -> Clementine -> Open Cubic Player -> MPD (vimus/ncmpcpp) -> cmus -> mp3blaster (runs with "aoss mp3blaster" or compiled with ALSA) -> MikMod -> MOC (+ moc-ffmpeg-plugin, dmenu_mocp) -> simple audio daemon (sad)
+Music Visualization: Spectrum3d -> Le Biniou -> projectM -> cava -> cli-visualizer
+Scorewriter: MuseScore -> LilyPond -> eTktab -> Emacs (lyqi) -> Philip's Music Writer (pmw) -> ABCmidi (abcpp + abc2prt + abcm2ps)
+Software Sampler: LinuxSampler -> orDrumbox -> Hydrogen
+Synthesizer: AlsaModularSynth -> ZynAddSubFX -> FluidSynth (+ SoundFonts)
+System Sound Compatibility: WineASIO, oss2jack, oss-compat, alsa-oss
+System Sound Extensions: pulseaudio -> Jack (jack, jack-audio-connection-kit) -> ESound (esound-common)
+System Sound Utilities: pavucontrol (pulseaudio) -> JACK Rack (for Jack) -> JAMin (for Jack) -> Qastools -> gnome-alsamixer -> aumix -> Rexima -> ALSA tools (alsa-tools, alsa-tools-gui) -> Alsaequal -> alsa-utils (alsamixer, amixer, aplay, arecord)
+Tonal Feature Analysis: CLAM Chordata -> Sonic-> Spek -> Pause
+Tracker Editors: MilkyTracker -> Schism
+Trackers: SID-Wizard -> GoatTracker
+Tray Icon: Volume Icon -> Volti
+
+-Image
+Bitmaps to Vector Conversion: AutoTrace -> Potrace
+Diagram Editor: Pencil Project -> Dia -> Graphviz
+Digital Drawing (Bitmap Graphics): Krita -> MyPaint -> Xournal -> XPaint -> GrafX2 / uberpaint
+Digital Drawing (Coloring): OpenColorIO -> deepcolor -> STYLE2PAINTS
+Digital Drawing (Fonts): FontForge
+Digital Drawing (Vector): Inkscape -> Xfig -> gozer -> ImageMagick
+Fonts Conversion: bdftopcf, PSF Tools, pcf2bdf, otf2bdf, bdf2psf
+Fractals and Random Computer Artwork: Mandelbulber -> Fyre -> Wassily
+Image Editing: RawTherapee -> darktable -> Gimp -> Netpbm -> G'MIC -> GraphicsMagick -> ImageMagick (display, import) -> Gifsicle
+Image Optimizing: OptiPNG -> pngcrush -> pngquant
+Image Viewer: Feh -> sxiv -> zgv -> lsix -> sdump -> display (ImageMagick) -> fim / fbi (fbida) -> idump
+Plotting: Gnuplot -> Ngraph-gtk -> ygraph -> PLplot -> FRTPLOT -> Picviz
+Screenshots: Shutter -> scrot -> maim -> shot.sh -> import (ImageMagick) -> fbcat (FBGrab)
+
+-Metadata
+Metadata: Easytag -> Beets -> MAT -> Exiv2 -> MediaInfo -> viexif -> ExifTool -> exif
+
+-Video
+Compositing: CinePaint -> Natron
+Datamoshing: Autodatamosh
+Digital Animation (2D): Synfig -> OpenToonz
+Digital Animation (3D): Blender
+Flash Player: Lightspark -> Gnash
+HDR (High-Dynamic-Range): pfstools
+Screencasting: Open Broadcaster Studio -> SimpleScreenRecorder -> XVidCap -> glc -> FFmpeg -> ttyrec (+ seq2gif)
+Video Editing: Kdenlive -> Avidemux -> OpenShot -> Cinelerra-cv -> Melt -> AvxSynth -> blind -> FFmpeg
+Video Effects Plugins: Frei0r
+Video Player: nvlc (VLC) -> MPV -> MPlayer -> fbff -> ffplay
+Video to gif: Video2Gif -> QGifer -> convert (ImageMagick) -> FFmpeg
+Video Transcoding: HandBrake -> WinFF -> FFmpeg / avconv
+
+Network Setup
+Bandwidth Saver: Wondershaper
+Bandwidth Testing: speedtest-cli -> speed-test
+Bluetooth: btmgmt -> Bluez-tools
+DHCP Client: dhclient -> dhcpcd
+DNS Encryption: DNSSEC, DNSCrypt
+DNS Resolution: dnsmasq -> Unbound + NDS -> BIND9 -> djbdns
+MAC Manipulation: GNU MAC Changer (macchanger)
+Network Encryption: OpenSSL -> LibreSSL -> GnuTLS -> IPsec / SAE (802.11s)
+Network Manager: Wicd -> NetworkManager -> ConnMan -> SetNet
+Networking Tools: WvDial -> ethtool -> iproute2 (ip, ss) -> net-tools (ifconfig, netstat)
+Point-to-Point Protocol: Point-to-Point Protocol daemon
+Wireless Tools: rfkill, iw -> Wireless Tools for Linux, iwd -> wpa_supplicant
+
+Office
+Address book: abook
+Desktop Publishing: Scribus
+Dictionary: Goldendict -> Artha -> Dico, dict -> wtf
+Document Format Conversion: unoconv -> Pandoc -> Yodl -> GNU a2ps -> inf2manp
+Document Processor: Emacs (AUCTeX) -> LyX -> GNU TeXmacs
+Ebook Utilities: DeDRM_tools
+Ebook Utilities (CHM): xCHM -> CHMLib (extract_chmLib)
+Ebook Utilities (Epub): Ebook Tools (ebook-tools)
+Ebook Utilities (PDF): PDF SaM -> Poppler -> PDFtk
+Ebook Utilities (PostScript): PSUtils -> ghostscript
+Ebook Viewer: Calibre -> Okular -> Zathura -> JFBView / fimgs (fim) / fbgs (fbida) / fbpdf
+Flashcards: awk flashcards -> Anki
+Gamification: HabitRPG -> Habitica
+Mind Mapping: FreeMind
+Office Suites: LibreOffice -> Siag Office -> catdoc (xls2csv, catppt, wordview)
+Outliner: TreeSheets -> Vault 3 -> GJots2 -> TuDu -> Emacs (Org-mode) -> Vim (Vimoutliner or Vim-orgmode) -> hnb -> snb
+Personal Accounting: GnuCash -> Ledger -> GNU Pem
+Personal Assistant: Mycroft -> Lucida (aka Sirius) -> betty
+Personal Organizer: Task Coach -> Wyrd -> wtf -> Taskwarrior -> calcurse -> todo.txt-cli -> when -> cal
+Presentation: Beamer -> Sozi -> Text Presentation Program
+Repetitive Strain Injury: Workrave
+Speed Reading: Flinks -> WordFlashReader -> GnomeRSVP -> spread0r -> speedread
+Spell Check: Ispell -> Aspell
+Spreadsheets: Libreoffice Calc -> Gnumeric -> Oleo -> SC-IM
+Text Editor: Vim -> Nano -> Neovim -> Kakoune -> vile -> mg -> GNU Zile (minimalist Emacs clone) -> nvi -> Elvis (minimalist Vi clone) -> ed
+Text Editor (IDE): Atom -> NetBeans -> Code Blocks -> Emacs (nox) -> Vim -> xwpe (full IDE in the terminal)
+Text Encoding: fuse-convmvfs, Dos2Unix, ASCII
+Text Formatting and Pretty Printing: par -> fmt (Textutils) -> MSORT
+Text-To-Speech: Orca -> Gespeaker -> eBook-speaker (+ pandoc) -> eSpeak
+Typesetting: LaTeX -> Texinfo + Pinfo -> Discount (Markdown) -> AFT -> groff (tbl, pic, eqn, chem, music, dpic, grohtml)
+Typing Training: Klavaro -> nlkt -> GNU Typist
+Word Processor: LibreOffice Writer -> Abiword -> MinEd -> WordGrinder
+
+Package Management
+CD/USB (Custom Installer): Respin -> Remastersys -> Distroshare -> PinguyBuilder -> Customizer -> Ubuntu Customization Kit -> Mklivecd
+CD/USB (Live): UNetbootin -> MultiCD
+Gaming Platform: LGOGDownloader (GOG.com), SteamCMD (Steam), Lutris, Gelide
+Language Specific: bpkg (Bash scripts) -> CPAN (+ Pinto) (Perl) -> clib (C)
+Package Creation: OBS (Open Build Service) -> src2pkg -> CheckInstall -> GNU Stow -> lt
+Portable Apps: Flatpak -> Snappy -> AppImage
+System Backup: Systemback -> Bacula -> FSArchiver -> CYA
+Universal Package Managers: Alien -> LinuxBrew -> pkgsrc -> GNU Guix
+
+Pentesting
+-Exploitables
+Distros: Security Scenario Generator (SecGen) -> Damn Vulnerable Linux -> Metasploitable -> Kioptrix
+Web Apps: Mutillidae -> hackxor -> WebGoat
+
+-Network Scan
+Bluetooth: btscanner -> bluesniff
+DNS Client: whois, dnsenum, dnstracer, slookup, bind-tools (nslookup, host, dig)
+Link Scanner: Metagoofil -> LinkChecker -> Linklint (+ linklint2dot)
+Network Enumeration: SSLScan, xprobe2, p0f, WhatWeb, PRADS
+Network File Retrieval: Driftnet -> VoIPong -> tcpxtract
+Network Mapping: Open Visual Traceroute -> EtherApe -> Paris Traceroute -> Dublin Traceroute -> MTR -> Layer Four Traceroute (LFT) -> tcptraceroute -> iputils (Ping, traceroute, tracepath, arping) -> ipcalc -> GeoIP
+OSINT: SpiderFoot -> TheHarvester -> Creepy -> Netglub
+Packet Sniffer: Tshark (Wireshark TUI) -> tcpflow -> tcpdump + tcpick
+Reconnaissance Framework: Recon-ng -> DMitry -> dsniff (urlsnarf, filesnarf, webspy, Tcpkill, macof, arpspoof) -> Nmap -> ngrep
+WiFi Scanner: FLUXION -> Kismet
+
+-Network Tampering
+General: netcat -> ncat (nmap) -> cryptcat (Netcat) -> socat -> Netsed
+Man-in-the-middle Attack: sslstrip -> Morpheus -> evilginx2 -> bettercap -> Ettercap
+Packet Crafting: Ostinato -> hping
+Traffic Generator: Mausezahn
+Traffic Replay: Tcpreplay
+
+-Password Cracking
+BIOS: CmosPwd
+Compressed Files: RarCrack
+General: John the Ripper / Hashcat
+PDF: pdfcrack
+Remote: THC Hydra
+WiFi: Reaver -> Aircrack-ng
+Windows: Ophcrack
+Wordlist Generator: CUPP -> crunch
+
+-Vulnerability Scanner
+Application Vulnerability: Fuzz -> BCCF -> afl-fuzz
+Backdooring: Veil -> Cymothoa -> Backdoor Factory -> Evilgrade -> EvilAbigail
+Cross-Scripting: xsser
+Exploit Famework: Metasploit -> Metasploit (Perl), WebSploit -> w3af
+Network Vulnerability: pytbull -> Yersinia
+Post Exploitation: Empire -> Post Exploitation Collection (Windows) -> mimikatz (Windows) -> Post Exploitation Linux Toolkit -> poet
+SIP: Sippts
+Social Engineering: SET (Social Engineering Toolkit), BeEF (The Browser Exploitation Framework Project)
+SQL Injection: sqlmap
+SSH Denial: screwSSH
+Web Application Vulnerability: Nikto
+Windows Registry Editor: Offline NT Password & Registry Editor (chntpw)
+
+Privacy
+Anti Stylometry: Anonymouth
+Data Erasure: Dban -> bleachbit_cli (BleachBit) -> shred (GNU Coreutils)
+Boot Encryption: cryptboot
+Disk Encryption: dislocker -> cryptsetup (dm-crypt)
+File Encryption: GNU Privacy Assistant -> MCrypt -> ccrypt -> GNU Privacy Guard
+Filesystem Encryption: eCryptfs -> EncFS -> StegFS
+Folder Encryption: VeraCrypt -> Tomb -> tcplay (full TrueCrypt implementation and still minimalist)
+Encrypted Version Control: Keyringer
+Identity Generator: The Random Identity Generator (rig)
+Password Generator: pwgen -> apg -> upwgen -> randstr
+Password Manager: KeePassX / KeePassXC -> pass (+ pass-tomb, + passmenu) -> kpcli
+Password Sync: KeySync
+Steganography: StegoShare -> Steghide -> SNOW (stegsnow) -> UUDeview -> Steganoroute
+
+Programming
+Build Automation: Ninja -> mk -> GNU make -> bmake -> Icmake -> Jam, Gnulib
+Build Script Generation: Gradle -> Cmake (+ cmocka + ECM) -> Autotools (Automake, Autoconf + GNU Autoconf Archive, Libtool) -> mk-configure
+Code Beautifier: TagSoup -> UniversalIndentGUI -> HTML Tidy -> tidyp -> Indent
+Compilers (Assembly): NASM -> Yasm -> as (GNU binutils)
+Compilers (C): clang -> Tiny C Compiler (tcc)
+Compilers (Java): Java SE (JDK) -> IcedTea (OpenJDK) -> GraalVM (compile multiple languages into JVM) -> JamVM (JVM) -> FastJar (Compiler)
+Compilers (Multiple languages): GCC (GNU -native- Compiler for Java, GnuCOBOL, GNU Fortran) + colorgcc
+Compiling Speeding Up: distcc, ccache
+Cross-compiler: Buildroot -> Crosstool-NG -> dev86
+Documentation Browser: Devhelp -> Zeal
+Documentation Generator: perlpod, bashdoc, Doxygen, GNU help2man
+Issue Tracking System: Bugzilla -> GNATS
+Linting: ShellCheck, GNU Source-highlight
+Memory Allocation: jemalloc -> boehm-gc
+Parser Generators: ANTLR -> Ragel-> AutoGen -> GNU bison and Flex -> re2c + lemon -> GNU m4
+Program Transformation: FermaT, Coccinelle, CIL, Stratego/XT
+Random Hacks: patchelf, elfhacks, SWIG, Gengetopt
+Source Code Count: Unified Code Count (UCC) -> CLOC
+Source Code Navigation: GNU idutils, cflow (+ cflow2dot), LXR: The Linux Cross Referencer -> GNU GLOBAL -> cscope -> Ctags -> cgvg -> ack -> ag
+Source-to-Source Compiler: ROSE
+System Query: sysconftool, Installwatch, pkgconf
+Version Control: Git (+ tig) -> CVS (+ CVSGraph) -> Fossil -> tla (GNU Arch) -> RCS + mr + quilt
+
+Remote Access
+Configuration Management: Puppet -> LCFG -> CFEngine -> cdist
+Control Panel: ZPanel -> Vesta Control Panel -> Webmin
+Diskless Booting: iPXE -> netboot
+PC-Mobile Connection: KDE Connect -> Wammu -> BitPim -> AndroidTools
+Remote Desktop (Client): rdesktop -> Remmina -> fbvnc
+Remote Desktop (Client and Server): X2Go
+Remote Desktop (Server): xrdp
+Remote Execution: PSSH -> pconsole -> DSH
+Remote File Manager: KodExplorer
+Remote Login: Mosh -> OpenSSH -> lsh -> Dropbear
+Remote X Apps: Xpra > X11 forwarding
+Reverse Shell: icmpsh -> RevSh
+Serial Console: Minicom -> Picocom -> Qodem -> GNU Screen
+Server Provisioning: FAI
+Wake-on-LAN: wakeonlan
+
+Science And Engineering
+Artificial Intelligence: Arcade Learning Environment, ETHNOS, Conscious Artificial Intelligence, OpenCog, OpenAI
+Astronomy: Sky Chart (Cartes du Ciel) -> astroTools + evTools -> GNU Astronomy Utilities (Gnuastro)
+Astronomy (Planetarium): Stellarium -> Celestia -> XEphem -> SkyCat
+Astronomy (Satelline Tracking): SaVi satellite constellation visualizer
+Bioinformatics: OpenSim, Cytoscape, BioJava -> UGENE -> EMBOSS -> SAMtools -> BioPerl
+CAD: AutoCAD -> Blender -> FreeCAD -> LibreCAD -> OpenSCAD
+Chemistry: MolComp, RasMol, PerlMol
+Circuit Simulator: KiCad -> ngspice -> Gnucap
+Computational Fluid Dynamics: TELEMAC -> FEATFLOW -> OpenFOAM -> Gerris
+Computer Algebra System: Singular -> Axiom -> Maxima (+ PLplot) -> bc + GNU Units
+Data Visualization: SocNetV -> Gephi -> Tulip
+Geography (Geographic Information System): qGIS -> FWTools (OGDI, PROJ.4, GDAL/OGR, MapServer, OpenEV)
+Geography (Street Map): JOSM -> Osmosis
+Geography (Subway Map): qMetro
+Geography (Virtual Globe): Marble
+Graphing Calculator: GraphMonkey -> Lybniz -> KAlgebra -> TilEm
+Multi-Agent (MA) Simulation: Mobility Testbed -> Galatea -> NetLogo -> Golly (Conway's Game of Life clone)
+Physics Simulation: OpenModelica -> CalculiX -> Elmer -> MCSim
+Semiconductor Modeling (TCAD): GNU Archimedes (and GNU Nano-Archimedes)
+Statistical Package: SageMath -> Physics Analysis WorkStation -> ROOT -> gretl -> PSPP (+ PSPP-Perl)
+Theorem Prover: Coq -> Abella -> Vampire -> Metamath
+Weather Forecast: XTide -> AWeather -> My Weather Indicator -> wego -> Weather Util -> rrdweather -> curl wttr.in/YOURCITY, YOURCOUNTRY
+
+Security
+-Containment
+Access Control (Kernel Patches): grsecurity + gradm -> Linux Intrusion Detection System -> SecurelLevel -> PaX -> RSBAC
+Access Control (Linux Security Modules (LSM)): SELinux -> TOMOYO Linux -> Smack -> AppArmor
+Authentication: Polkit -> ConsoleKit -> Sudo (visudo) -> Linux PAM -> checkpassword -> shadow
+Extended File Attributes: EVM -> IMA -> inotify
+Resource Usage Control: cpulimit -> ulimit (Bash) -> Disk Quota -> quotatool
+Sandbox: Arkose -> Firejail -> nsjail -> Bubblewrap
+
+-Honeypots
+Client: HoneyC -> Capture-HPC
+Distro Bundle: HoneyDrive -> ADHD
+Server: Honeyperl -> Nova -> Honeyd -> LaBrea
+Web-Based: HIHAT
+
+-Host Intrusion
+Anti Backdoor: rosenbridge, me_cleaner
+Anti Juice Jacking: usbkill -> USBGuard
+Anti Malware: ClamTk -> ClamAV -> Linux Malware Detect (LMD)
+Host Intrusion Detection Framework: OSSEC -> Tiger
+Host System Auditing: Bastille -> OpenVAS -> Linux Security Auditing Tool (LSAT) -> Lynis
+Integrity Check: PaX Utilities -> AIDE -> systraq -> Tripwire -> Samhain
+Rootkit Detection: rkhunter, Chkrootkit, Unhide
+System Logging: socklog (runit) -> Rsyslog -> Syslog-ng -> sysklogd
+
+-Network Intrusion
+Deep Packet Inspection (DPI) Block (Layer 7 Firewall): ipp2p -> l7-filter -> OpenDPI
+Deep Packet Inspection (DPI) Circumvention: zapret
+Firewall: ufw (Uncomplicated Firewall) + gufw (GUI) -> arptables -> ebtables -> iptables (+ ipset) -> nftables + conntrack-tools
+Man-In-The-Middle (MITM) Detection: arpwatch -> ArpON -> Arpalert
+Network Intrusion Detection: Snort -> Suricata
+Network Intrusion Prevention: Fail2ban -> Sshguard
+Network Logging: CoCaLoRes -> ulogd
+
+Server
+BBS Server: Citadel -> Synchronet -> Mystic BBS -> BBS100
+Bitcoin Miner: BFGMiner
+Blog: finger / cfingerd
+Bluetooth: BlueALSA
+Captcha: cool-php-captcha
+Chat: sshtalk -> util-linux (write, wall, mesg)
+Cloud File Server: Google Drive -> Nextcloud -> Syncthing -> sftp / SSHFS (SSH)
+CMS: WordPress -> GetSimple CMS -> werc
+Collaborative Real-Time Editor: Gobby -> EtherCalc -> Cryptpad
+Direct Connect Server: uhub
+DLNA: Universal Media Server -> ReadyMedia (a.k.a. MiniDLNA) -> MiniUPnP
+DNS Spam Detector: DNS Flood Detector
+Document Management System: OpenKM -> LogicalDOC -> EPrints
+Dynamic DNS (DDNS): DDClient
+E-Mail Filtering (LDA): Dovecot -> procmail
+E-Mail Indexing: Archmbox -> Chewmail -> Notmuch -> mairix
+E-Mail Mailing Lists: Mailman -> Sympa -> Dada Mail -> ezmlm -> mlmmj
+E-Mail Notifier: mswatch
+E-Mail Server (MTA): Mail-in-a-Box -> Kolab -> Sendmail -> Postfix -> Exim -> cmail -> qpsmtpd -> OpenSMTPD -> qmail
+E-Mail Spam Filter: Bogofilter -> DSPAM -> SpamAssassin -> SpamProbe + Hashcash + rbldnsd
+E-Mail Validation: OpenDKIM, SPF
+File Distribution: zsync
+Forum: lainchan -> vichan -> Akari-BBS -> sshchan -> KrautBBS -> 1436chan
+FTP Server: CurlFtpFS -> vsftpd
+Gopher Server: Gophernicus -> Bucktooth (Gopher) + Bucky (for HTTP exit)
+Groupware: Collabtive -> Alfresco -> eXo Platform -> Citadel/UX
+Image Hosting: img.bi -> Up1
+IRC Bot: Seabattle (bot game), Infobot, Eggdrop (IRC bot)
+IRC Bouncer (BNC): ZNC -> bip
+IRC Fileserver: iroffer
+IRC Server: UnrealIRCd -> Charybdis -> InspIRCd -> ngIRCd
+Learning Management System: GnuTutor -> OpenExpert -> Syllog
+MUD Server: LambdaMOO -> PennMUSH
+Paint chat: Drawpile -> Collab
+Pastebin: Stikked -> Paste -> PrivateBin
+Political: LittleSis, Loomio
+Port Tunnel: stunnel -> sslh
+Proxy Server: Tinyproxy
+Service Manager: xinetd -> linetd -> inetd (GNU inetutils) -> knockd -> TCP Wrappers (tcpd, tcpdchk) -> ucspi-tcp
+Streaming: Syncplay -> Peerflix (+ Torrentflix) -> Libresonic -> Icecast (+ DarkIce -> ezstream -> oggfwd) -> trx: Realtime audio over IP -> SRS -> VLC -> FFmpeg
+Torrent Tracker: Ocelot -> Gazelle -> hefur
+Tunneling: HTTPTunnel -> VTun -> ProxyChains -> VPNEncap -> VPNCHAINS
+Tunneling VM: PIA Tunnel -> Whonix
+Usenet Server: InterNetNews -> Leafnode
+VoIP: GNU SIP Witch -> GNU Gatekeeper -> Mumble -> Linphone (linphonec) -> PJSIP -> sscall
+VPN (Overlay): strongSwan -> Libreswan -> OpenVPN (+ PiVPN) -> WireGuard
+VPN (Pseudo-wire): Tunneldigger -> OpenMesher
+Web Caching: Decentraleyes on a web browser -> Squid (+ SquidGuard for Web Filtering)
+Web Filtering: Ad blocker on a web browser -> Pi-hole -> DansGuardian -> Privoxy -> Hostsblock
+Web Server: Apache -> Nginx -> lighttpd -> Hiawatha -> Monkey -> GNU MyServer -> webfs -> darkhttpd -> Bucky (Bucktooth HTTP exit)
+Web Server Certificate: Dehydrated -> acmetool
+Wiki: TWiki -> DokuWiki -> XWiki -> ikiwiki
+Wireless Access Point: hostapd
+XMPP Server: Tigase
+
+Server Authentication
+Directory Service: OpenLDAP -> NIS
+Domain Specific Authentication Server: Ident (IRC), SKS (PGP)
+RADIUS: FreeRADIUS -> GNU Radius
+SSO: krb5 (Kerberos) + keyutils -> GNU Shishi (Kerberos)
+Suites: FreeIPA -> SSSD
+
+System Utilities
+BIOS: efibootmgr -> SeaBIOS -> Coreboot -> Libreboot
+Boot Loader: GRUB 2 -> GRUB Legacy -> SYSLINUX (+ Hardware Detection Tool -HDT-) -> LILO (or ELILO for UEFI) -> AiR-Boot -> Das U-Boot (u-boot-tools)
+Boot Loaders (load on running machine): loadlin -> Kexec (kexec-tools)
+Cache: Memcached, EnhanceIO -> dm-cache -> bcache
+Core Utilities: moreutils -> Mtools -> util-linux -> GNU Coreutils -> BusyBox -> Asmutils and ARMutils
+Custom Initramfs: mkinitcpio -> dracut -> Genkernel -> mkinitramfs -> umkinitramfs
+Filesystem: CP/M (cpmtools), HFS Utilities, SquashFS (squashfs-tools), fuseflt, UnionFS (unionfs-fuse), udftools (UDF), F2FS (f2fs-tools), exFAT (exfat-utils, fuse-exfat), FAT (dosfstools), Btrfs (btrfs-progs), XFS (xfsprogs, xfsdump), Ext4, JFS, Reiser4, Bcachefs
+IPC: DBus -> ubus -> RPCBind -> ipcs (util-linux)
+Kernel Modules: NDISwrapper -> ibm-acpi-> kmod (lsmod, insmod, modprobe)
+Kernel Patches: V86 mode support, GoboHide, Kernel_gcc_patch, Linux-ck, Liquorix, Linux-rt, GNU Linux-libre, Linux Tiny
+Kernels: LUnix, Linux + Lux (kernel updater), GNU Mach, RTLinux, Muen, HiStar
+Load in RAM: E4rat -> readahead -> preload, prelink
+Logical Volume Management: LVM2
+Multiplexer Wrappers: ucspi-unix, ucspi-ipc, socket_wrapper, nss_wrapper, uid_wrapper, resolv_wrapper, pam_wrapper
+Network Time Protocol: clockspeed -> Network Time Protocol daemon (ntpd) -> chrony -> OpenNTPD
+OS Frameworks: OpenStack -> Genode
+Partitioning: Gparted -> GNU Parted -> util-linux (cfdisk, fdisk, sfdisk, mkfs, mkswap, swapon, swapoff)
+Partitioning Fixes: u3_tool, ms-sys
+Settings Manager: Youker Assistant -> Linux Lite Control Center -> Elektra -> Augeas -> Climate -> The Fuck -> Suicide Linux
+Virtual Filesystem: FuseIso -> Autofs -> AVFS -> afuse -> bindfs
+
+-Init
+Daemon: Upstart -> SysVinit -> Initng -> Finit -> sinit
+Service Manager: OpenRC (includes an optional own init) -> runit (includes an optional own init) -> Ignite -> daemontools-encore -> perp
+Startup Scripts Manager: bum -> svsh -> sysv-rc-conf -> chkconfig
+
+-Job Scheduler
+Event: incron -> inotify-tools -> entr -> wendy -> ACPI event daemon (acpid) -> waitfordevice (w4d)
+Queue: Slurm -> Task Spooler
+Time: Anacron -> fcron -> bcron -> dcron -> at
+
+X Desktop
+Application Launcher: ratmenu -> xcmd -> dmenu -> nenu
+Boot Screen: Plymouth -> Splashy -> Fbsplash -> <BOOTLOADERS>
+Clipboard: CopyQ -> clipmenu -> snippy -> xclip -> XSel
+Compositing Window Manager: Compiz -> Compton -> Xcompmgr
+Desktop Animated Character: Kawari + Ninix-aya (for Ukagaka) -> Gnome KiSS -> Oneko -> xevilteddy -> Xteddy
+Desktop Automation: Autokey -> Sikuli -> Easystroke -> xdotool -> GNU Xnee
+Font Settings: xfontsel + mkfontdir -> fontconfig -> /etc/X11/xorg.conf
+Graphics Settings: RiceDB -> Wpgtk -> LxAppearance -> dconf -> Xset -> /etc/X11/xorg.conf
+Login Manager: SLiM -> Qingy
+Nested Display: Xephyr -> Xnest
+Notification (Daemon): dunst -> slstatus -> SiND (Simple Notification Daemon)
+Notification (Server): Libcanberra + Libnotify -> xmessage
+Panel: Avant Window Navigator -> Global Menu -> Tint2
+Screensaver: XScreenSaver -> XLockmore -> i3lock -> sxlock -> slock -> xset
+Status Bar (Client): Dzen -> bevelbar -> Lemonbar
+Status Bar (Server): monky -> i3status
+Wallpaper Changer (Animated): Xphoon, xfireworks, Xsnow, xmountains, Xplanet, ImageMagick (animate)
+Wallpaper Changer (Still): FEH -> xsetroot -> hsetroot -> imagemagick (but using 10MB more RAM than the others)
+Wallpaper Changer (Terminal As Wallpaper): xli -> root-tail -> xrootconsole
+Wallpaper Changer (Video): VLC (nvlc) -> mpv -> MPlayer
+Window Manager: FVWM (+ FvwmTabs and 4dwm theme) -> IceWM (Windows XP-like) -> i3 -> Amiwm (Amiga-like) -> mlvwm (Macintosh-Like) -> MWM -> Ratpoison -> dwm (+ dwmstatus) -> FrankenWM -> TinyWM -> s3d (+ s3dfm, it's a 3D desktop independent of X!) -> Twin (independent of X) -> VWM (independent of X)
+Window Manipulation: QuickTile -> wmctrl -> wmutils
+Worskpace Pager: 3D-Desktop -> Skippy-XD
+X Event Display: xprop -> xwininfo -> xev
