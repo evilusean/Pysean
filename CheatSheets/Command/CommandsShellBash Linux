@@ -323,3 +323,6 @@ Resource Monitoring(Linux):
 top #shows top processes, using most resources, to escape new top terminal press 'q'
 uptime #shows information about current time, how long system running, how many users logged on, and load average of machine
 lsof #lists open files, and what processes are using them
+
+File Transfer Secure(Linux):
+scp /home/sean/Desktop/MyFile.txt shawn@104.131.122.215: # transfers a file from my current desktop to username@IPaddress target machine
