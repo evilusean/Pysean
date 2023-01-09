@@ -219,3 +219,16 @@ TaskKill Documentation:
 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/taskkill
 SIGINT(Signal Interrupt)=CTRL+C
 
+Lab 5:
+Get-Process -Name "totally_not_malicious" #gets details on process totally_not_malicious
+taskkill /F /PID 644 #kills process ID 644
+Get-Process -Name "totally_not_malicious" #check to ensure process terminated
+#There are processes containing the word "razzle" also running on this VM. Get-Process doesn't handle processes with partially-matching names,
+#like grep does, and running Get-Process -Name "razzle" would result in no matches. However, you can use "wildcards" (asterisks) to look for 
+#processes that contain "razzle" in their name:
+Get-Process -Name "*razzle*"
+taskkill /F /PID 644 #kills process ID 5880
+taskkill /F /PID 644 #kills process ID 1612
+Get-Process -Name "*razzle*" #confirms process terminated
+
+
