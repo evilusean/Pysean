@@ -326,3 +326,12 @@ lsof #lists open files, and what processes are using them
 
 File Transfer Secure(Linux):
 scp /home/sean/Desktop/MyFile.txt shawn@104.131.122.215: # transfers a file from my current desktop to username@IPaddress target machine
+
+Logs(Linux):
+/var/log #where all logs are stored
+/auth.log#shows authorization and security related events logged here
+/kern.log#kernel related events are logged here
+/dmesg#System startup messages are logged here
+/var/log/syslog#records pretty much all logs into one combined
+less /var/log/syslog | grep error #searches syslog(combined log) for errors 
+tail -f /var/log/syslog #keep in a seperate terminal to track logs in real time
