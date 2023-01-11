@@ -335,3 +335,8 @@ Logs(Linux):
 /var/log/syslog#records pretty much all logs into one combined
 less /var/log/syslog | grep error #searches syslog(combined log) for errors 
 tail -f /var/log/syslog #keep in a seperate terminal to track logs in real time
+
+Disk Cloning(Linux):
+dd #tool used to clone disk drives on linux
+unmount /dev/sdd #first insure that drive is unmounted
+sudo dd if=/dev/sdc of=~/Desktop/my_usb_image.img bs=100M #copies sdc drive to desktop in an image file
