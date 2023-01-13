@@ -1,9 +1,11 @@
 ls --help #Add --help flag to get more information on list command such as summary and potential flag parameters
 man ls #Manual Command; used to show manual pages to get more information on list command such as summary and potential flag parameters
+fc -e #fixcode, allows you to open previous command and fix it and run it again
 
 Command History(Linux):
 history #shows a list of commands you have typed out recently
   You can scroll through recent commands by pressing 'Up' or 'Down' arrows on keyboard
+  preface everything with a space so it doesn't save to command history
 Ctrl + R #history shortcut: shows recent commands used, start typing a part of recently used command for autofill
 clear #clears output on screen
 
@@ -24,12 +26,14 @@ pwd #print working directory
 cd #change directory
 cd C:/Home/Sean/Documents #changes directory to absolute path of documents
 cd ../Documents #uses relative path to change to documents folder
+cd - #returns to previous directory
 cd ~ /Desktop #takes you to home directory and then to /Desktop directory in it
 cd ../D <tab> #tab completion type 'D' press tab and it will print all that start with 'D'
 Creating Directories(Linux):
 mkdir #make directory
 mkdir New_Folder #makes a folder named 'New_Folder' in current working directory
 mkdir New/ Folder #linux command can not interpret spaces, use '/' forwardslash is an escape character in linux, or quotes 'New Folder'
+mkdir -p ./home/{a,b}.{x,y,z} #-p flag, parent will create child directories as needed, will create 2 directorys(a,b) each with 3 files(x,y,z)
 mkdir dir1 dir2 dir3 #creates multiple directories
   -p # allow mkdir to create parent directories if they don't exist
   -m # (mode) used to set permissions of directories during creation
