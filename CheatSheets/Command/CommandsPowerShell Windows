@@ -242,3 +242,5 @@ net share ShareMe=C:\Users\sean\Desktop\ShareMe /grant:everyone, full #users wil
 Record Commands and output:
 Start-Transcript #records commands and saves output, for documentation, and future reuse
 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.host/start-transcript?view=powershell-6
+Start-Transcript -Path C:\Transcript.txt #This will write the contents of the session to C:\Transcript.txt. When you want to stop recording you 
+  need to call Stop-Transcript. The file created is a plain text file where the commands executed and their outputs are stored.
