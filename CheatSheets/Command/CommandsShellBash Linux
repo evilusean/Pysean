@@ -349,3 +349,8 @@ Record Commands and output:
 script #records commands and saves output, for documentation, and future reuse
 https://manpages.ubuntu.com/manpages/bionic/man1/script.1.html
 script session.log #This will write the contents of your session to the session.log file. When you want to stop recording, type exit(Ctrl+D)
+
+Install SSH:
+sudo apt-get install openssh-client #installs openssh on a linux machine
+sudo apt-get install openssh-server #installs openssh server on a linux machine
+ssh sean@100.113.96.31 #try to ssh into server with account and IP address
