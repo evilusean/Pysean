@@ -344,3 +344,6 @@ Disk Cloning(Linux):
 dd #tool used to clone disk drives on linux
 unmount /dev/sdd #first insure that drive is unmounted
 sudo dd if=/dev/sdc of=~/Desktop/my_usb_image.img bs=100M #copies sdc drive to desktop in an image file
+
+Record Commands and output:
+script #records commands and saves output, for documentation, and future reuse
