@@ -238,3 +238,6 @@ File Transfer(Windows):
 pscp.exe C:\Users\sean\Desktop\MyFile.txt shawn@104.131.122.215: #sends a file over the same network to name@IPaddress target computer
 Shared Folder or net share
 net share ShareMe=C:\Users\sean\Desktop\ShareMe /grant:everyone, full #users will be able to access shared folder 
+
+Record Commands and output:
+Start-Transcript #records commands and saves output, for documentation, and future reuse
