@@ -347,3 +347,4 @@ sudo dd if=/dev/sdc of=~/Desktop/my_usb_image.img bs=100M #copies sdc drive to d
 
 Record Commands and output:
 script #records commands and saves output, for documentation, and future reuse
+https://manpages.ubuntu.com/manpages/bionic/man1/script.1.html
