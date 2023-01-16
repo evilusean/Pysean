@@ -367,3 +367,11 @@ date #checks date on local machine
 sudo service ntp stop #stops NTP service
 sudo service ntp start #starts NTP service
 sudo service ntp restart #restarts ntp service
+
+Configuring Services in Linux:
+/etc #configuration files are stored in this directory
+sudo apt install vsftpd #installs a FTP service
+service vsftpd status #gets status of newly installed service
+lftp localhost #attempts to connect to a FTP server on localhost
+sudo vim /etc/vsftpd.conf #opens vsftpd.conf so you can change anonymous connections enable setting
+sudo service vsftpd reload #reloads the service so changes in the config file take effect
