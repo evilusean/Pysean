@@ -354,3 +354,16 @@ Install SSH:
 sudo apt-get install openssh-client #installs openssh on a linux machine
 sudo apt-get install openssh-server #installs openssh server on a linux machine
 ssh sean@100.113.96.31 #try to ssh into server with account and IP address
+
+Unable to resolve a hostname or domain name:
+  First check your connection is actually working/ping www.google.com
+  nslookup #name server for a host or domain name, copy IP address and paste in web browser
+  /etc/hosts #where DNS is stored in linux check here before an authoritative server, change entry to www.google.com 
+
+Managing Services in Linux:
+service ntp status #checks Network Time Protocols(syncs clocks) status
+sudo date -s "2017-01-01 00:00:00" #-s, specify flag, changes date to 01 Jan 2017 
+date #checks date on local machine
+sudo service ntp stop #stops NTP service
+sudo service ntp start #starts NTP service
+sudo service ntp restart #restarts ntp service
