@@ -244,3 +244,14 @@ Start-Transcript #records commands and saves output, for documentation, and futu
 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.host/start-transcript?view=powershell-6
 Start-Transcript -Path C:\Transcript.txt #This will write the contents of the session to C:\Transcript.txt. When you want to stop recording you 
   need to call Stop-Transcript. The file created is a plain text file where the commands executed and their outputs are stored.
+
+Managing Services in Windows:
+Get-Service #powershell cmdlet, get's information on a service, default lists ALL services on windows
+Get-Service wuauserv #gets information on Windows Update service
+Get-Service wuauserv | Format-List * #shows all information on the Windows Update Service
+Stop-Service wuauserv #stops windows update service
+Start-Service wuauserv # starts windows update service
+You can also check all services in the system using the GUI by searching for 'services' in start menu
+
+
+
