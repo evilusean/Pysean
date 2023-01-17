@@ -384,3 +384,11 @@ service vsftpd status #gets status of newly installed service
 lftp localhost #attempts to connect to a FTP server on localhost
 sudo vim /etc/vsftpd.conf #opens vsftpd.conf so you can change anonymous connections enable setting
 sudo service vsftpd reload #reloads the service so changes in the config file take effect
+
+DNSMasq:A program that provides DNS, DHCP, TFTP and PXE services in a simple package
+  dig www.example.com @localhost #DNS lookup, checking the localhost, if none found checks DNS servers
+DHCP with DNSMasq:
+  ip address show eth_srv #shows IP address for eth_srv
+  ip address show eth_cli #shows IP address for eth_cli
+  cat dhcp.conf #shows a file with 'interface=eth_srv' which configures for listening for DHCP queries from eth_srv
+  sudo dnsmasq -d -q -C dhcp.conf #tells dnsmasq to start listening for queries using this config
