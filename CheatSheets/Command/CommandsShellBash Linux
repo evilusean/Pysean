@@ -339,6 +339,12 @@ Logs(Linux):
 /var/log/syslog#records pretty much all logs into one combined
 less /var/log/syslog | grep error #searches syslog(combined log) for errors 
 tail -f /var/log/syslog #keep in a seperate terminal to track logs in real time
+sudo service rsyslog status #rsyslog service. This service writes content to the log files /var/log/syslog,/var/log/kern.log,/var/log/auth.log
+logger This is a test log entry #The logger command will send the text to the rsyslog and the service will then write it into /var/log/syslog
+sudo tail -1 /var/log/syslog #check to see last entry on syslog
+sudo service rsyslog stop #stops logging service
+sudo service rsyslog status #checks to ensure it is turned off
+sudo service rsyslog start #starts logging service
 
 Disk Cloning(Linux):
 dd #tool used to clone disk drives on linux
@@ -367,6 +373,9 @@ date #checks date on local machine
 sudo service ntp stop #stops NTP service
 sudo service ntp start #starts NTP service
 sudo service ntp restart #restarts ntp service
+sudo service --status-all #If you run service with parameters --status-all, it lists the state of only the services that are running,
+  +: Service is active/running, -: Service is inactive/stopped, ?: Can't determine whether service is active or not
+
 
 Configuring Services in Linux:
 /etc #configuration files are stored in this directory
