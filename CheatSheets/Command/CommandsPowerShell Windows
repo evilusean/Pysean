@@ -251,7 +251,8 @@ Get-Service wuauserv #gets information on Windows Update service
 Get-Service wuauserv | Format-List * #shows all information on the Windows Update Service
 Stop-Service wuauserv #stops windows update service
 Start-Service wuauserv # starts windows update service
-You can also check all services in the system using the GUI by searching for 'services' in start menu
-
-
+  You can also check all services in the system using the GUI by searching for 'services' in start menu
+Set-Service ScardSvr -StartupType Manual #Set-Service command, which allows us to modify some of the properties of the service
+Install-WindowsFeature Web-WebServer,Web-Mgmt-Tools -IncludeAllSubFeature #Install-WindowsFeature command to enable these features.
+  run this command to enable the few more web serving features
 
