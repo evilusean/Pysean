@@ -387,8 +387,18 @@ sudo service vsftpd reload #reloads the service so changes in the config file ta
 
 DNSMasq:A program that provides DNS, DHCP, TFTP and PXE services in a simple package
   dig www.example.com @localhost #DNS lookup, checking the localhost, if none found checks DNS servers
+  sudo tail /var/log/dnsmasq.log #check log to see what is happening
+  dig linux-instance.mycompany.local @localhost #checks for specific local hosted 
 DHCP with DNSMasq:
   ip address show eth_srv #shows IP address for eth_srv
   ip address show eth_cli #shows IP address for eth_cli
   cat dhcp.conf #shows a file with 'interface=eth_srv' which configures for listening for DHCP queries from eth_srv
   sudo dnsmasq -d -q -C dhcp.conf #tells dnsmasq to start listening for queries using this config
+  cat /etc/dnsmasq.d/mycompany.conf #look at current config file
+  sudo service dnsmasq status #checks status
+  sudo service dnsmasq stop #stop service
+  sudo nano /etc/dnsmasq.d/mycompany.conf #edit conf file At the end of this file, add a line that contains the log-queries option
+  sudo dnsmasq --test -C /etc/dnsmasq.d/mycompany.conf # verify the syntax of the file is correct.  we can use a parameter to dnsmasq: --test
+  sudo service dnsmasq start #start service
+  sudo dhclient -i eth_cli -v -sf /root/debug_dhcp.sh #dhclient for linux, verbose flag, debugging flag sf
+  dhcp-host=aa:bb:cc:dd:ee:b2,192.168.1.2 #assign mac address to IP
