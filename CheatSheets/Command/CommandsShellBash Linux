@@ -402,3 +402,7 @@ DHCP with DNSMasq:
   sudo service dnsmasq start #start service
   sudo dhclient -i eth_cli -v -sf /root/debug_dhcp.sh #dhclient for linux, verbose flag, debugging flag sf
   dhcp-host=aa:bb:cc:dd:ee:b2,192.168.1.2 #assign mac address to IP
+
+Install Apache Webserver:
+sudo apt get install apache2 -y #-y flag, yes accepts all packages
+http://localhost #127.0.0.1 localhost by default hosts webpage, replace apache default web page with website you want to host, will need to DNS
