@@ -406,3 +406,45 @@ DHCP with DNSMasq:
 Install Apache Webserver:
 sudo apt get install apache2 -y #-y flag, yes accepts all packages
 http://localhost #127.0.0.1 localhost by default hosts webpage, replace apache default web page with website you want to host, will need to DNS
+Lab 3:
+ls -l /opt/devel/ourcompany #website is currently inside the /opt/devel/ourcompany directory. Let's look at the contents of this directory:
+sudo apt update #updates apt list
+sudo apt install apache2 #installs apache2 webserver
+sudo service apache2 status #check status, isn't running
+sudo service apache2 start #start apache2 webserver service
+ls -l /etc/apache2/sites-available #The list of sites that are available is located in /etc/apache2/sites-available, 2
+cat /etc/apache2/sites-available/000-default.conf #look at the contents of the 000-default.conf file about how the default website is configured.
+sudo mv /opt/devel/ourcompany /var/www/ourcompany #move website to correct location
+ls -l /var/www #check move
+cd /etc/apache2/sites-available #change directory
+sudo cp 000-default.conf 001-ourcompany.conf #change default site
+sudo nano 001-ourcompany.conf #open configuration file in nano
+  #Instead of /var/www/html we will put our site in /var/www/ourcompany, so let's change that in the configuration file.
+ls -l /etc/apache2/sites-enabled #enabled sites are managed in /etc/apache2/sites-enabled
+  #commands a2ensite and a2dissite, that manage these symlinks for us (the names come from Apache2 enable/disable site). 
+  #Let's use these commands to enable our new site and disable the default site.
+sudo a2ensite 001-ourcompany.conf #enable site
+sudo a2dissite 000-default.conf #disable site
+ls -l /etc/apache2/sites-enabled #check if site is enabled, it is
+sudo service apache2 reload #reload apache so configurations take effect
+cat /var/www/ourcompany/index.html #look at the contents of the index.html page:
+ls /etc/apache2/mods-available #list of modules that provide additional functionality. Many of them are available and only a few that are enabled.
+  #Similarly to a2ensite and a2dissite, there are a2enmod and a2dismod for managing which modules get enabled.
+sudo a2enmod include #enables include module
+sudo service apache2 restart #restart the server for changes to take effect
+sudo nano /etc/apache2/sites-available/001-ourcompany.conf #open configuration file
+"""
+#This is the snippet that you need to add after the DocumentRoot line:
+<Directory /var/www/ourcompany>
+        Options +Includes
+        XBitHack on
+</Directory>
+"""
+sudo service apache2 reload #reload for changes
+
+
+
+
+
+
+
