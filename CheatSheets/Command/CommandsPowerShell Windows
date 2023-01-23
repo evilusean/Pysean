@@ -256,3 +256,11 @@ Set-Service ScardSvr -StartupType Manual #Set-Service command, which allows us t
 Install-WindowsFeature Web-WebServer,Web-Mgmt-Tools -IncludeAllSubFeature #Install-WindowsFeature command to enable these features.
   run this command to enable the few more web serving features
 
+Active Directory(Windows):
+C:\Qwiklabs\ADSetup\active_directory_install.ps1 #installs active directory from powershell
+C:\Qwiklabs\ADSetup\configure_active_directory.ps1 #configures new install
+  #you can now search for "Active Directory" and manage users/groups through the GUI found in start menu search
+
+
+
+
