@@ -260,7 +260,12 @@ Active Directory(Windows):
 C:\Qwiklabs\ADSetup\active_directory_install.ps1 #installs active directory from powershell
 C:\Qwiklabs\ADSetup\configure_active_directory.ps1 #configures new install
   #you can now search for "Active Directory" and manage users/groups through the GUI found in start menu search
-
+Join an Active Directory(Windows):
+Add-Computer -DomainName 'example.com' -Server 'dc1'
+Find Functional Levels(Version):
+#https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-functional-levels
+Get-AdForest
+Get-AdDomain
 
 
 
