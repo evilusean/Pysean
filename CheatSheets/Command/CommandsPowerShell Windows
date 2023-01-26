@@ -266,6 +266,12 @@ Find Functional Levels(Version):
 #https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-functional-levels
 Get-AdForest
 Get-AdDomain
-
-
+DNS/SRV Records: #if you can't find these records, DNS might be misconfigured
+Resolve-DNSName -Type SRV -Name _ldap._tcp.dc._msdcs.example.com #DNS lookup for SRV records, records that are used for DNS domains
+w32tm /resync #forces a domain computer to resync
+gpupdate /force #forces all GPO(Group Policy Objects) updates to be done immediately
+gpupdate /force /sync #forces all GPO updates to be done immediately with a reboot
+$env:LOGONSERVER #checks domain variable used to log on to
+gpresult /R #creates RSOP report
+gpresult /H FILENAME.html #creates a full RSOP report as a readable html
 
