@@ -442,7 +442,9 @@ sudo nano /etc/apache2/sites-available/001-ourcompany.conf #open configuration f
 """
 sudo service apache2 reload #reload for changes
 
-
+OpenLDAP(Lightweight Directory Access Protocol):
+sudo apt-get install slapd ldap-utils #installs OpenLDAP
+sudo dpkg reconfigure slapd #reconfigures settings for OpenLDAP
 
 
 
