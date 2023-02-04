@@ -446,6 +446,22 @@ OpenLDAP(Lightweight Directory Access Protocol):
 sudo apt-get install slapd ldap-utils #installs OpenLDAP
 sudo dpkg reconfigure slapd #reconfigures settings for OpenLDAP
 
+OpenSSL(Free Encryption-Linux):
+openssl genrsa -out private_key.pem 2048 #generates a 2048 bit RSA private key called "private_key.pem".name of the key is specified "-out" flag,
+cat private_key.pem #look at newly created private key
+openssl rsa -in private_key.pem -outform PEM -pubout -out public_key.pem #generate the public key from the private key
+cat public_key.pem #check newly created public key
+echo 'This is a secret message, for authorized parties only' > secret.txt #create secret.txt to encrypt
+openssl rsautl -encrypt -pubin -inkey public_key.pem -in secret.txt -out secret.enc #encrypts secret.txt using the public key as secret.enc
+nano ~/secret.enc #check newly encrypted txt, unreadable, success
+openssl rsautl -decrypt -inkey private_key.pem -in secret.enc #decrypt secret.enc with private key
+# Remember that we must use the private key to decrypt the message, since it was encrypted using the public key.
+openssl dgst -sha256 -sign private_key.pem -out secret.txt.sha256 secret.txt #creates a file called "secret.txt.sha256" using your private key,
+  #which contains the hash digest of your ecret text file. With this file, anyone can use your public key and the hash digest to verify that the
+  #file hasn't been modified since you created and hashed it
+openssl dgst -sha256 -verify public_key.pem -signature secret.txt.sha256 secret.txt #verify hash digest, file hasn't been changed
+
+
 
 
 
