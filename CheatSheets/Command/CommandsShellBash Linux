@@ -461,6 +461,25 @@ openssl dgst -sha256 -sign private_key.pem -out secret.txt.sha256 secret.txt #cr
   #file hasn't been modified since you created and hashed it
 openssl dgst -sha256 -verify public_key.pem -signature secret.txt.sha256 secret.txt #verify hash digest, file hasn't been changed
 
+Hashing(md5sum, SHA1, SHA256 Linux):
+echo 'This is some text in a file, just so we have some data' > file.txt #create fil.txt to hash
+md5sum file.txt > file.txt.md5 # generate the MD5 sum for the file and store it.
+cat file.txt.md5 #check hash, smaller than original
+md5sum -c file.txt.md5 #check hash
+cp file.txt badfile.txt #copy file to create a new bad file test
+cat badfile.txt.md5 #check hash, same as file.txt, good
+nano badfile.txt #edit badfile.txt, add some text
+md5sum -c badfile.txt.md5 #check, bad file, now bad
+md5sum badfile.txt > new.badfile.txt.md5 #create new hash with edited file
+cat new.badfile.txt.md5 #check new hash
+SHA Hash:
+shasum file.txt > file.txt.sha1 #creates SHA1 hash of file.txt
+cat file.txt.sha1 #check new hash
+shasum -c file.txt.sha1 #check new hash
+shasum -a 256 file.txt > file.txt.sha256 #create new SHA256 hash, used to create a SHA256 sum. The "-a" flag specifies the algorithm to use
+cat file.txt.sha256 #Check new SHA256 hash
+shasum -c file.txt.sha256 #check new SHA256 hash
+
 
 
 
