@@ -480,8 +480,23 @@ shasum -a 256 file.txt > file.txt.sha256 #create new SHA256 hash, used to create
 cat file.txt.sha256 #Check new SHA256 hash
 shasum -c file.txt.sha256 #check new SHA256 hash
 
-
-
-
-
-
+tcpdump(Network Monitoring/Packet Capturing Linux):
+sudo apt-get install tcpdump #install
+sudo tcpdump -i eth0 #-i flag, specify an interface to listen on with the -i flag. eth0 listens
+sudo tcpdump -i eth0 -vn #-v flag=verbose most output, -n flag=disables reverse DNS lookup(resolve IP address to hostname. ports->Services)
+sudo tcpdump -i eth0 -vn host 8.8.8.8 and port 53 & #filter, 
+  #only listens to  port 53 portion means we only want to see packets where the source or destination port matches 
+  #Host 8.8.8.8 specifies that we only want packets where the source or destination IP address matches what we specify
+  #If we only want traffic in one direction, we could also add a direction qualifier, like 
+  #dst or src (for the destination and source IP addresses). leaving out the direction qualifier will match traffic in either direction.
+  #two filter statements are joined with the logical operator "and". both halves of the filter statement must be true for a packet to be captured
+jobs -l #lists all running jobs, note down the job ID of the above process
+dig @8.8.8.8 A example.com #uses the dig utility to query a specific DNS server (in this case 8.8.8.8), asking it for the A record
+fg % 615 # bring the process to foreground with the following command: 
+sudo tcpdump -i eth0 port 80 -w http.pcap & #This starts a capture on our eth0 interface that filters for only HTTP traffic by specifying port 80.
+  #The -w flag indicates that we want to write the captured packets to a file named http.pcap.
+jobs -l #list all jobs
+curl example.com #generate some traffic
+fg % [job-id] #use the job ID (that you've noted down earlier) to bring the process to foreground
+  # returns a summary of the number of packets captured.  file containing the packets we just captured, called http.pcap, will  have been created.
+tcpdump -r http.pcap -nv #We can read from this file using tcpdump
