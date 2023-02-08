@@ -121,8 +121,16 @@ https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md
 Change Background:
 https://support.microsoft.com/en-us/office/change-your-background-for-a-teams-meeting-f77a2381-443a-499d-825e-509a140f4780
 
-WEP Key Recovery:
+WEP Key Recovery/Wireless Monitoring:
 Aircrack NG, Airsnort can recover a WEP key in minutes, shouldn't be used
+Kismet
+TCPDump=A super popular, lightweight, command-line based utility that you can use to capture and analyze packets
+Wireshark=Another Packet capture tool, more powerful than TCPdump graphical utility, can decode encrypted payloads if encryption key is known
+  Id and extract data payloads from file transfers, has filter strings, filter by protocols, can view bluetooth traffic, USB Traffic
+  Can follow TCPStreams/Sessions=reassemble and view the full 2 sides of a TCP session
+  Can decode WPA/WEP encrypted packets
+  File Carving=Extracting data payloads(File transfers) from unecrypted HTTP traffic/FTP 
+  Extract audiostreams from unencrypted VOIP traffic
 
 Google Fonts(Add to website html):
 fonts.google.com
