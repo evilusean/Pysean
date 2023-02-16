@@ -1,0 +1,39 @@
+Started: 15Feb2023
+Ended:
+Page Leftoff: 22
+
+Chapter 1:
+Virtual Function(C)=A virtual function is a member function which is declared within a base class and is re-defined (overridden) by a derived class.
+BST(Binary Search Tree)=Binary search trees allow binary search for fast lookup, addition, and removal of data items. Since the nodes in a BST are
+  laid out so that each comparison skips about half of the remaining tree, the lookup performance is proportional to that of binary logarithm. 
+  BSTs were devised in the 1960s for the problem of efficient storage
+WhiteBoards=Used for coding interviews for the interviewee to explain their thought process/problem solving skills- Ask questions
+Some companies will give you homework, or use a synchronized code writing, or on paper and say it over phone, 
+Relative Comparisons=You are being compared with the other interviewees, if the problem is hard for you, it is hard for them- its ok to get wrong
+After interview if you don't hear back in 3-5 business days, check in politely with your interviewer in a week, or HR-they might be busy
+If you fail an interview most will let you apply again in 6-12 months
+Normally 3-6 interviews before an offer
+Often your interview goes to a commitee with your interviewers feedback where they will decide 'offer' 'more interviews' or 'rejectsean'
+Be nice to your interviewer, they can fight for you to be hired or not
+Explain your passion for technology, "Why do you want to work for us?" -Mention VS Code for Microsoft, etc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
