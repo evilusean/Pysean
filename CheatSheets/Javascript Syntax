@@ -17,3 +17,17 @@ else {//  block of code to be executed if the condition is false}
 if (condition1) {//  block of code to be executed if condition1 is true} 
   else if (condition2) {//  block of code to be executed if the condition1 is false and condition2 is true} 
   else {//  block of code to be executed if the condition1 is false and condition2 is false}
+&& #and operator, double ampersands, will only pass true if both things on left and right are true
+i++ #increment operator, equivalent to i + 1
+Boolean(null) #Boolean wrapper object, tests things to see what it would pass to; All False=false, null, undefined, "", 0, NaN
+// For loop
+  var sum = 0;
+  for (var i = 0; i < 10; i++) { #declare variable i=0, if i is less than 10, i + 1, print i, add sum, redo if less than 10
+    console.log(i);
+    sum = sum + i;
+  }
+  console.log("sum of 0 through 9 is: " + sum);
+
+
+
+
