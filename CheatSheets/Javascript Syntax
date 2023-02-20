@@ -1,0 +1,19 @@
+// comment something out
+Ctrl + / #press control + slash to comment out a highlighted section
+<script type="text/javascript"></script> #run javascript inbetween the <script> tags
+<script src="js/script.js"></script> #text/javascript is redundant, not needed but good practice
+var a = "Hello World!"; #var, declares a variable
+console.log(x); #print variable x to the console
+function a () { ..... } #declares a function
+var a = function () { ... } #assigns a variable to a function, value of function assigned-Not the returned result
+  a (); #executes function a
+function compare (x, y) {return x > y;} #defined arguments without keyword 'var', returns a value, if no value-terminates and returns nothing
+  var a = compare(4, 5) #stores variable returned from compare function to 'a', compare(4, "a");=legal function
+console.log((5 + 4)/ 3); #math operation, operators: +, -, *, / 
+== #equal to, instead of x = y use x == y to compare,
+=== #strict equality, a string '4' will not equal a number 4 
+if (condition) { //  block of code to be executed if the condition is true }
+else {//  block of code to be executed if the condition is false}
+if (condition1) {//  block of code to be executed if condition1 is true} 
+  else if (condition2) {//  block of code to be executed if the condition1 is false and condition2 is true} 
+  else {//  block of code to be executed if the condition1 is false and condition2 is false}
