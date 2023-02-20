@@ -18,6 +18,8 @@ if (condition1) {//  block of code to be executed if condition1 is true}
   else if (condition2) {//  block of code to be executed if the condition1 is false and condition2 is true} 
   else {//  block of code to be executed if the condition1 is false and condition2 is false}
 && #and operator, double ampersands, will only pass true if both things on left and right are true
+|| #or operator, if a variable is undefined, it will default to this, whatever the operator sees the first true statement
+  sideDish = sideDish || "rice"; #will choose the selected sidedish or default to rice if no selection
 i++ #increment operator, equivalent to i + 1
 Boolean(null) #Boolean wrapper object, tests things to see what it would pass to; All False=false, null, undefined, "", 0, NaN
 // For loop
@@ -27,7 +29,17 @@ Boolean(null) #Boolean wrapper object, tests things to see what it would pass to
     sum = sum + i;
   }
   console.log("sum of 0 through 9 is: " + sum);
-
-
-
+var company = new Object(); #declares variable company as a new object
+company.name = "Facebook"; #creates a key value pair for company object.name = facebook
+console.log(company); #prints out data on company object
+console.log(company["name"]); #prints out name of company object
+// Better way: object literal, to create an object with key value pairs; use this layout
+  var facebook = {
+    name: "Facebook",
+    ceo: {
+      firstName: "Mark",
+      favColor: "blue"
+    },
+    "stock of company": 110
+  };
 
