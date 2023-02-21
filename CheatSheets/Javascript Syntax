@@ -52,3 +52,6 @@ console.log(company["name"]); #prints out name of company object
     "stock of company": 110
   };
 
+Math:
+Math.PI #represents the ratio of the circumference of a circle to its diameter, approximately 3.14159.
+Math.pow #The Math.pow() static method returns the value of a base raised to a power.
