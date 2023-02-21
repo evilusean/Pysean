@@ -4,11 +4,18 @@ Ctrl + / #press control + slash to comment out a highlighted section
 <script src="js/script.js"></script> #text/javascript is redundant, not needed but good practice
 var a = "Hello World!"; #var, declares a variable
 console.log(x); #print variable x to the console
+
+Functions:
 function a () { ..... } #declares a function
 var a = function () { ... } #assigns a variable to a function, value of function assigned-Not the returned result
   a (); #executes function a
 function compare (x, y) {return x > y;} #defined arguments without keyword 'var', returns a value, if no value-terminates and returns nothing
   var a = compare(4, 5) #stores variable returned from compare function to 'a', compare(4, "a");=legal function
+function #creates a function that accepts arguments
+  function multiply(x, y) {
+    return x * y;
+
+Operators:
 console.log((5 + 4)/ 3); #math operation, operators: +, -, *, / 
 == #equal to, instead of x = y use x == y to compare,
 === #strict equality, a string '4' will not equal a number 4 
@@ -29,6 +36,8 @@ Boolean(null) #Boolean wrapper object, tests things to see what it would pass to
     sum = sum + i;
   }
   console.log("sum of 0 through 9 is: " + sum);
+
+Objects:
 var company = new Object(); #declares variable company as a new object
 company.name = "Facebook"; #creates a key value pair for company object.name = facebook
 console.log(company); #prints out data on company object
