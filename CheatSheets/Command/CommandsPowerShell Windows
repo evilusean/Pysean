@@ -275,3 +275,54 @@ $env:LOGONSERVER #checks domain variable used to log on to
 gpresult /R #creates RSOP report
 gpresult /H FILENAME.html #creates a full RSOP report as a readable html
 
+Windows Commands - Powershell commandlets
+1. ipconfig - Get-NetIPAddress #Gets windows IP address
+2. ipconfig /all - Get-NetIPConfiguration (only shows DNS-Server and Gateway) #Gets IP Address+MAC Address+DNS server
+3. findstr - Select-String #search for a specific string use | to link it to other command
+4. ipconfig /release - no equivalent afaik #release old IP address
+5. ipconig /renew - no equivalent afaik #gets a new IP address from DHCP
+6. ipconfig /displaydns - Get-DnsClientCache (you may use '| Format-List' to get all colums) #gets entire list of DNS cache addresses
+7. clip - Set-Clipboard  #use with a pipe to copy output of any other command
+8. ipconfig /flushdns - Clear-DnsClientCache #delete DNS resolver cache, 
+9. nslookup - Resolve-DnsName #looks up a DNS address
+10. cls - Clear-Host (or just Ctrl+L) #cleans/clears screen
+11. getmac /v - Get-NetAdapter #gets mac address
+12. powercfg Vs powercfg /energy Vs powercfg /batteryreport - no equivalent afaik #checks for any power issues on computer, Vs Battery
+13. assoc - no equivalent afaik (also assoc does not seem to exist on my Windows 11 21H2 VM) #shows which filetypes are associated with which
+  #programs
+  assoc .mp4=VLC.vlc #changes mp4 files to be run with VLC
+14. chkdsk - Repair-Volume #goes through desk and sees if there are any errors
+  chkdsk /f #check and fix
+  chkdsk /r #check and fix physical sector issues
+15. sfc - no equivalent afaik #system file checker, including DLL files and replace them if they are bad
+  sfc /scannow
+16. DISM - no equivalent afaik #deployment image servicing and management
+  DISM /Online /Cleanup-Image /CheckHealth #will scan and fix system image
+  DISM /Online /Cleanup-Image /ScanHealth #will scan and fix system image
+  DISM /Online /Cleanup-Image /RestoreHealth #will scan and fix system image
+17. tasklist - Get-Process #finds a process thats running
+18. taskkill - Stop-Process #stops a process with PID
+19. netsh - no equivalent afaik but you can manipulate the Windows firewall, just search with Get-Command firewall #like ipconfig
+  netsh wlan show wlanreport #creates a very detailed report of your wireless
+  netsh interface show interface #shows netsh interface
+  netsh ip show address | findstr "IP Address" #finds IP address
+  netsh interface ip show dnsservers #shows dns servers
+  netsh advfirewall set allprofiles state off #turns off windows firewall with one command
+  netsh advfirewall set allprofiles state on #turns on windows firewall with one command
+20. ping - Test-NetConnection # checks any website if its up
+21. ping /t - Test-Connection -Count 100000 (Test-Connection gives you much more data, while Test-NetConnection just shows the IP and Latency 
+  to the target) #checks a website 100 000 times
+22. tracert - Test-NetConnection -TraceRoute #trace route, traces path your pc takes to get to a website
+  tracert -d #not resolve domain names
+23. netstat - Get-NetTCPConnection #tell you what is connected to you, what you are connecting to, ports open
+  netstat -af #tells you which ports are open
+  netstat -o #shows process ID for all connections
+  netstat -e -t 5 #gets netstat stats every 5 seconds
+24. route print - Get-NetRoute #shows route your computer will take to get to certain networks, gateways used, routing table of PC
+25. route add - New-NetRoute #adds a route to PC, customize network
+26. route delete - Remove-NetRoute #removes a route to PC
+27. shutdown - Stop-Computer #turns off computer
+  shutdown /r /fw /f /t 0 #shutsdown PC and restarts it into systems BIOS
+28. restart - Restart-Computer #restart PC
+Expand-Archive - Extract file from a zip Archive
+Compress-Archive - Create a zip Archive
