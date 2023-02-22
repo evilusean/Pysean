@@ -37,6 +37,9 @@ Boolean(null) #Boolean wrapper object, tests things to see what it would pass to
   }
   console.log("sum of 0 through 9 is: " + sum);
 
+for (var i = 0; i < names.length; i++) {console.log("Hello " +names[i]); } #prints every name in an array for length of names list, 
+for (var name in names) { console.log("Hello " + names[name]); } #different notation for same loop as above
+
 Objects:
 var company = new Object(); #declares variable company as a new object
 company.name = "Facebook"; #creates a key value pair for company object.name = facebook
@@ -55,3 +58,9 @@ console.log(company["name"]); #prints out name of company object
 Math:
 Math.PI #represents the ratio of the circumference of a circle to its diameter, approximately 3.14159.
 Math.pow #The Math.pow() static method returns the value of a base raised to a power.
+
+Arrays:
+var array = new Array(); /n array[0] = "string /n array[1] = 9 #creates an array with a string and number 9
+var names = ["Shawn", "Sean", "Unsean"]; #creates an array with 3 names
+var myObj = { name: "Yaakov", course: "HTML/CSS/JS", platform: "Courera" }; #creates a simple array with key:value pairs
+for (var prop in myObj) { console.log(prop + ": " + myObj[prop]); } #for loop to loop over every property in above array
