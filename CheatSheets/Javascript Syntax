@@ -64,3 +64,15 @@ var array = new Array(); /n array[0] = "string /n array[1] = 9 #creates an array
 var names = ["Shawn", "Sean", "Unsean"]; #creates an array with 3 names
 var myObj = { name: "Yaakov", course: "HTML/CSS/JS", platform: "Courera" }; #creates a simple array with key:value pairs
 for (var prop in myObj) { console.log(prop + ": " + myObj[prop]); } #for loop to loop over every property in above array
+
+DOM(Document Object Model) Manipulation:
+document element represents the entire HTML document, allows you to select things in your HTML page by Id
+document.getElementById("") #gets element information by the id name of whichever element you input ""
+<input id="name" type="text"> #allows you to create a space for inputting typing commands
+<button onclick="SayHello();">TextHere</button> #creates a button to interact with input text, runs SayHello function in JS 
+var name = document.GetElementById("name").value #gets the value stored in the input box
+var message = "Hello " + name + "!"; #SayHello Function
+document.getElementById("content").textContent = message; #prints the stored message from above function into the <div id="content"> on HTML page
+var message = "<h2>Hello " + name + "!</h2>"; #SayHello Function
+document.getElementById("content").innerHTML = message; #prints the saved variable with the header size increase to <div id="content">
+document.querySelector("#title") #selects the header with the <h1 id="title"> Id, allowing you to manipulate it using a CSS selector
