@@ -76,3 +76,15 @@ document.getElementById("content").textContent = message; #prints the stored mes
 var message = "<h2>Hello " + name + "!</h2>"; #SayHello Function
 document.getElementById("content").innerHTML = message; #prints the saved variable with the header size increase to <div id="content">
 document.querySelector("#title") #selects the header with the <h1 id="title"> Id, allowing you to manipulate it using a CSS selector
+
+Handling Events:
+Event Handlers=Functions that you bind using methods to certain events that happen in the browser(page loads, user interaction, etc)
+onblur="function" #when you lose focus(unhighlight) on an element, the function will perform
+onclick="function" #when an element is clicked perform a function
+Unobtrusive Event Binding:
+document.querySelector("button").addEventListener("click", sayHello); #on the element tag "button" on click use function "sayHello"
+document.querySelector("button").onclick = sayHello; #same onclick function as above
+document.addEventListener("DOMContentLoaded", function (event) { ... } #when the entire content loads, THEN activate, for id's, etc
+document.querySelector("body").addEventListener("mousemove", if (event.shiftKey === true) console.log("x: " + event.clientX); 
+  console.log("y: " + event.clientY); #if the shift key is pressed down on the body, it will log the mouse's X and Y coordinates
+
