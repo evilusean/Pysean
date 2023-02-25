@@ -88,3 +88,16 @@ document.addEventListener("DOMContentLoaded", function (event) { ... } #when the
 document.querySelector("body").addEventListener("mousemove", if (event.shiftKey === true) console.log("x: " + event.clientX); 
   console.log("y: " + event.clientY); #if the shift key is pressed down on the body, it will log the mouse's X and Y coordinates
 
+JSON(Javascript Object Notation):
+Lightweight data interchange format, simple textual representation of data, easy to read write and parse, human readable
+Subset of Javascript object literal syntax
+property names/string values MUST be in double quotes
+{
+"firstName": "Sean",
+"lastName": "Teams",
+"supportsCurrentThing": false,
+} #JSON Format
+JSON is NOT a Javascript Object Literal, need to convert JSON into a JS object literal
+to make it a variable string simply add single quotes by the curly braces; var jsonString = '{...}'
+var obj = JSON.parse(jsonString); #converts from string to object
+var str = JSON.stringify(obj); #convert from object to string
