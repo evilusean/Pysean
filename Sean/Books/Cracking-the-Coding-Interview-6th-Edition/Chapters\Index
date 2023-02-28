@@ -1,0 +1,183 @@
++12 : Add Twelve Pages for EBOOK to account for the title/etc
+
+Introduction 
+Introduction 2 
+I. The Interview Process .4 
+Why? 4 
+How Questions are Selected 6 
+It's All Relative 7 
+Frequently Asked Questions 7 
+II. Behind the Scenes . .8 
+The Microsoft Interview 9 
+The Amazon Interview 10 
+The Google Interview 10 
+The Apple Interview 11 
+The Facebook Interview .1 2 
+The Palantir Interview 13 
+III. Special Situations 15 
+Experienced Candidates 15 
+Testers and SDETs 15 
+Product (and Program) Management 16 
+Dev Lead and Managers 17 
+Startups 18 
+Acquisitions and Acquihires 19 
+For Interviewers 21 
+IV. Before the Interview 26 
+Getting the Right Experience 26 
+Writing a Great Resume 27 
+Preparation Map 30 
+V. Behavioral Questions 32 
+Interview Preparation Grid 32 
+KnowYour Technical Projects 33 
+Responding to Behavioral Questions 34 
+So, tell me aboutyourself. 36 
+VI. BigO 38 
+An Analogy 38 
+Time Complexity 38 
+Space Complexity 40 
+Drop the Constants 41 
+Drop the Non-Dominant Terms 42 
+VIM Cracking the Coding Interview, 6th Edition 
+Introduction 
+Multi-Part Algorithms: Add vs. Multiply 42 
+Amortized Time 43 
+Log N Runtimes 44 
+Recursive Runtimes 44 
+Examples and Exercises 45 
+Vlt. Technical Questions 60 
+How to Prepare 60 
+What You Need To Know 60 
+Walking Through a Problem 62 
+Optimize & Solve Technique #1: Look for BUD 67 
+Optimize & Solve Technique #2: DfY (Do It Yourself) 69 
+Optimizes Solve Technique #3: Simplify and Generalize 71 
+Optimized Solve Technique #4: Base Case and Build 71 
+Optimize & Solve Technique #5: Data Structure Brainstorm 72 
+Best Conceivable Runtime (BCR) 72 
+Handling Incorrect Answers 76 
+When You've Heard a Question Before 76 
+The "Perfect" Language for Interviews 76 
+What Good Coding Looks Like 77 
+Don't Give Up! 81 
+VIII. The Offer and Beyond 82 
+Handling Offers and Rejection 82 
+Evaluating the Offer 83 
+Negotiation 84 
+On the Job 85 
+IX. Interview Questions 87 
+Data Structures 88 
+Chapter 1 | Arrays and Strings 88 
+Hash Tables 88 
+ArrayList & Resizable Arrays 89 
+StringBuilder 89 
+Chapter 2 I Linked Lists 92 
+Creating a Linked List 92 
+Deleting a Node from a Singly Linked List 93 
+The "Runner" Technique 93 
+Recursive Problems 93 
+CrackingTheCodinglnterview.com 16th Edition V I I 
+Introduction 
+Chapter 3 j Stacks and Queues 96 
+Implementing a Stack 96 
+Implementing a Queue 97 
+Chapter 4 | Trees and Graphs 100 
+Types of Trees 100 
+Binary Tree Traversal 103 
+Binary Heaps (Min-Heaps and Max-Heaps) 103 
+Tries (Prefix Trees) 105 
+Graphs 105 
+Graph Search 107 
+Concepts and Algorithms 112 
+Chapter 5 j Bit Manipulation 112 
+Bit Manipulation By Hand 112 
+Bit Facts and Tricks 112 
+Two's Complement and Negative Numbers 113 
+Arithmetic vs. Logical Right Shift 113 
+Common Bit Tasks: Getting and Setting 114 
+Chapter 6 j Math and Logic Puzzles 117 
+Prime Numbers 117 
+Probability 119 
+Start Talking 121 
+Develop Rules and Patterns 121 
+Worst Case Shifting 122 
+Algorithm Approaches 122 
+Chapter 7 | Object-Oriented Design 125 
+How to Approach 125 
+Design Patterns 126 
+Chapter 81 Recursion and Dynamic Programming 130 
+How to Approach 130 
+Recursive vs. Iterative Solutions 131 
+Dynamic Programming & Memoization 131 
+Chapter 9 | System Design and Scalability 137 
+Handling the Questions 137 
+Design: Step-By-Step 13S 
+Algorithms that Scale: Step-By-Step 139 
+KeyConcepts 140 
+V I M Cracking the Coding Interview, 6th Edition 
+Introduction 
+Considerations 142 
+There is no "perfect" system 143 
+Example Problem 143 
+Chapter 101 Sorting and Searching 146 
+Common Sorting Algorithms 146 
+Searching Algorithms 149 
+Chapter 11 [Testing 152 
+What the Interviewer Is Looking For 152 
+Testing a Real World Object 153 
+Testing a Piece of Software 154 
+Testing a Function 155 
+Troubleshooting Questions 156 
+Knowledge Based 158 
+Chapter 12 ] C and C++ 158 
+Classes and Inheritance 158 
+Constructors and Destructors 159 
+Virtual Functions 159 
+Virtual Destructor 160 
+Default Values 161 
+Operator Overloading 161 
+Pointers and References 162 
+Templates 163 
+Chapter 13 | Java 165 
+How to Approach 165 
+Overloading vs. Overriding 165 
+Collection Frame work 166 
+Chapter 141 Databases 169 
+SQL Syntax and Variations 169 
+Denormalized vs. Normalized Databases 169 
+SQi. Statements 169 
+Small Database Design 171 
+Large Database Design 172 
+Chapter 15 [Threadsand Locks 174 
+Threads in Java 174 
+Synchronization and Locks 176 
+Deadlocks and Deadlock Prevention 179 
+CrackingTheCodinglnterview.com 16th Edition VII 
+Introduction 
+Additional Review Problems 181 
+Chapter 16 | Moderate 181 
+Chapter 17 | Hard 186 
+X. Solutions 191 
+Data Structures 192 
+Concepts and Algorithms 276 
+Knowledge Based 422 
+Additional Review Problems 462 
+XI. Advanced Topics 628 
+Useful Math 629 
+Topological Sort 632 
+Dijkstra's Algorithm 633 
+Hash Table Collision Resolution 636 
+Rabin-Karp Substring Search 636 
+AVL Trees 637 
+Red-Black Trees 639 
+MapReduce 642 
+Additional Studying 644 
+XII. Code Library 645 
+HashMapList<T, E> 646 
+TreeNode (Binary Search Tree) 647 
+LinkedListNode (Linked List) 649 
+Trie & TrieNode 649 
+XIII. Hints 652 
+Hints for Data Structures 653 
+Hints for Concepts and Algorithms 662 
+Hints for Knowledge-Based Questions 676 
+Hints for Additional Review Problems 679
