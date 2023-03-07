@@ -216,6 +216,8 @@ https://matplotlib.org/stable/gallery/index
 Flask=Create Web Apps and dashboards with python
 Seaborn:
 RegEx:
+Flask:
+https://flask-socketio.readthedocs.io/en/latest/getting_started.html
 
 import requests:
 https://requests.readthedocs.io/en/latest/
