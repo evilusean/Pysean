@@ -4,11 +4,25 @@ Flask(SocketIO Script):
 https://flask-socketio.readthedocs.io/en/latest/getting_started.html
   socket server: uses sockets to communicate without refreshing the page, transmits to all clients listening for the updated messages
 
+For Python Chad Chatt App With Flask:
 @app.route("/", methods=["POST", "GET"]) ##set up a route with decorater syntax "@app" to the home page with methods, posting and getting 
     return render_template("home.html") #renders a template file for home.html
-    
 {{}} #double curly braces used in flask represents a variable in jenga template engine,
 <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"
   #/>url_for generates a dynamic URL from static directory for static\css\styles.css stylesheets
 <div class="content">{% block content %} {% endblock %}</div> #Block is a reusable part of code that can be overwritten, can be inherited by childs templates
   in flask, base.html acts as a base template, generic style for entire website, home and room will reuse parts of the code
+join = request.form.get("join", False) #get method retrieves data from 'join' dictionary, if nothing/error it will default to False
+if not name: return render_template("home.html", error="Please Enter a Name.") #if no name entered, returns you to home page with an error message
+{% if error %} <li>{{error}}</li> {% endif } #{% if error %} will print an error message to {{error}} if there is one, otherwise blank {% endif }
+
+
+
+
+
+
+
+
+
+
+
