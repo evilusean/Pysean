@@ -1,0 +1,14 @@
+https://flask.palletsprojects.com/en/2.2.x/quickstart/
+https://pymbook.readthedocs.io/en/latest/flask.html
+Flask(SocketIO Script):
+https://flask-socketio.readthedocs.io/en/latest/getting_started.html
+  socket server: uses sockets to communicate without refreshing the page, transmits to all clients listening for the updated messages
+
+@app.route("/", methods=["POST", "GET"]) ##set up a route with decorater syntax "@app" to the home page with methods, posting and getting 
+    return render_template("home.html") #renders a template file for home.html
+    
+{{}} #double curly braces used in flask represents a variable in jenga template engine,
+<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"
+  #/>url_for generates a dynamic URL from static directory for static\css\styles.css stylesheets
+<div class="content">{% block content %} {% endblock %}</div> #Block is a reusable part of code that can be overwritten, can be inherited by childs templates
+  in flask, base.html acts as a base template, generic style for entire website, home and room will reuse parts of the code
