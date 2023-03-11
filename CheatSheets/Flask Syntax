@@ -3,6 +3,26 @@ https://pymbook.readthedocs.io/en/latest/flask.html
 Flask(SocketIO Script):
 https://flask-socketio.readthedocs.io/en/latest/getting_started.html
   socket server: uses sockets to communicate without refreshing the page, transmits to all clients listening for the updated messages
+BareBones for a Flask Socket Server:
+  app = Flask(__name__)
+  app.config["SECRET_KEY"] = "abcde12345"
+  socketio = SocketIO(app)
+  if __name__ == "__main__":
+    socketio.run(app, debug=True)
+Second Boilerplate code:
+  from flask import Flask
+  app = Flask(__name__)
+  @app.route("/")
+  def hello_world():
+    return "<p>Hello, World!</p>"
+  app.run()
+
+
+Most used import functions:
+from flask import Flask, render_template, redirect, url_for, request
+
+
+
 
 For Python Chad Chatt App With Flask:
 @app.route("/", methods=["POST", "GET"]) ##set up a route with decorater syntax "@app" to the home page with methods, posting and getting 
