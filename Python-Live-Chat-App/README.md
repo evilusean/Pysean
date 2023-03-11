@@ -12,10 +12,34 @@ Project uses HTML/Javascript/CSS Frontend, Python, Flask+ socketIO backend, to c
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/ChatChatRoom.jpg"</center>  
 </p>
 
-<p align="center">  
-<img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/ChadChatFiles.jpg"</center>  
+<p align="left">  
+<img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/ChadChatFiles.jpg"</left>  
 </p>
 
 ## Code ExplanASeans:
 
+<p align="left">  
+<img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/1GenerateCode.jpg"</left>  
+</p>
+
+<p align="left">  
+<img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/2Home.jpg"</left>  
+</p>
+
+<p align="left">  
+<img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/3Room.jpg"</left>  
+</p>
+
+<p align="left">  
+<img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/4Message.jpg"</left>  
+</p>
+
+<p align="left">  
+<img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/5Connect.jpg"</left>  
+</p>
+
+
+<p align="left">  
+<img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/6Disconnect.jpg"</left>  
+</p>
 
