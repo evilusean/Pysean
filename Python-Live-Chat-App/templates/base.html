@@ -9,6 +9,7 @@
         href="{{url_for('static', filename='css/style.css')}}"
         />
         <script
+         <!-- used to communicate with backend python code, javascript for flask socketIO -->
          src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
          integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
          crossorigin="anonymous"
@@ -16,5 +17,8 @@
     </head>
     <body>
         <div class="content">{% block content %} {% endblock %}</div>
+        <!-- Block is a reusable part of code that can be overwritten, can be inherited by childs templates in flask, base.html acts as a base template, 
+            generic style for entire website, home and room will reuse parts of the code, override what is currently {% here %},
+            allows you to dynamically insert content -->
     </body>
 </html>
