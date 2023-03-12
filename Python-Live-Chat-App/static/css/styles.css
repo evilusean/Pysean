@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
 }
-
+/* Buttons Display: aligned in a column, center, with a 10 pixel gap */
 .buttons {
     display: flex;
     flex-direction: column;
@@ -11,14 +11,14 @@
     justify-content: center;
     gap: 10px;
 }
-
+/* Join Display */
 .join {
     display: flex;
     flex-direction: row;
     width: 100%;
 
 }
-
+/* Button Display,  makes it larger */
 .create-btn {
     width: 100%;
 }
