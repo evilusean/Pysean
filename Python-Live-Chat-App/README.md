@@ -38,8 +38,17 @@ Creates a room code of all randomly selected capital letters 4 characters long.
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/2Home2.jpg"</left>  
 </p>
 
-Line 23, @app.route.. #uses decorater syntax creates the route for the homepage("/") using the methods of "POST"(posts data) and "GET"(gets data) <br/>
-
+Line 23, @app.route.. #uses decorater syntax creates the route for the homepage("/") using the methods of "POST"(posts data) and "GET" <br/>
+Line 25, clears any remaining data from previous sessions <br/>
+Line 26-28, gets data from the form submission and uses it for this session, typed in "name" or "code" which is then used on the room page <br/>
+Line 29-30, Will check to see which button is pressed("POST" request) if given a "null/no response" it will default to False <br/>
+Line 32-33, if no name input, will give you an error message if you forget to input a name <br/>
+Line 35-36, If join is pressed and if you don't enter a code, will return to home and give you an error message asking for a code <br/>
+Line 38, takes the room code as input <br/>
+Line 39-43,if create is pressed they will create a new room with new code, if they have a name and room code, but it doesn't exist will give error
+Line 41, Creates a members count dictionary, and a list for messages that will get filled in 
+Line 45-46, saves name and room in the session that is stored on server in case they refresh or send another request
+Line 47, returns the redirect for the room they are joining
 Line 49, return render_template("home.html") #Renders the homepage located in the templates file
 
 <p align="left">  
