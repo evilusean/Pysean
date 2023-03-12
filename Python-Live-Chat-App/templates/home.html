@@ -3,6 +3,7 @@
 <!-- {% block content %} {% endblock %} Block is a reusable part of code that can be overwritten, can be inherited by childs templates in flask or shared
 between pages/variables{{code}}  -->
 <!--Home page used to create a room/join a room/choose a name -->
+<!-- Form, passes all the input data to the backend python whatever is labelled "name" will use this data for the key value={{name}} -->
 <form method="post" class="buttons"> 
     <h3>Enter Chat Room</h3>
     <div>
@@ -19,6 +20,7 @@ between pages/variables{{code}}  -->
         <button type="submit" name="join">Join a Room</button>
     </div>
     <button type="submit" name="create" class="create-btn">Create a Room</button>
+    <!-- if you have an error, it will display here, with the input you gave it from python in {{error}} -->
     {% if error %}
     <ul>
         <li>{{error}}</li>
