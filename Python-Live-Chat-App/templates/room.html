@@ -15,9 +15,9 @@
 <!-- saves and receives messages and updates without refreshing page, -->
 <script type="text/javascript">
     var socketio = io();
-
+    <!-- sends a message to the chat room by listening for socket events and then prints message to room --> 
     const message = document.getElementById("messages")
-
+    <!-- message content, with timestamp message inside the const content=' ' formatted with html/css -->
     const createMessage = (name, msg) => {
         const content = `
         <div class="text">
@@ -25,24 +25,24 @@
                 <strong>${name}</strong>: ${msg}
             </span>
             <span class="muted">
-                ${new Date().toLocaleString()}
+                ${new Date().toLocaleString()}<!-- stores datetime of message received by server -->
             </span>
         </div>
         `
         messages.innerHTML += content;
     }
-
+    <!-- event that is being listened for from python server, calls function above to create message -->
     socketio.on("message", (data) => {
         createMessage(data.name, data.message);
     });
-
+    <!-- if message is an empty string, won't send. {data: message.value} is the message payload being sent to server-->
     const sendMessage = () => {
         const message = document.getElementById("message")
         if (message.value == "") return;
         socketio.emit("message", {data: message.value})
         message.value = "";
     };
-</script>
+</script> <!-- calls create message function from a javascript tag, for every message in message history, so all messages are loaded on refresh -->
 {% for msg in messages %}
 <script type="text/javascript">
     createMessage("{{msg.name}}", "{{msg.message}}");
