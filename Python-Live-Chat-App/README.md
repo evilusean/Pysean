@@ -2,19 +2,19 @@
 
 ## Summary:
 
-Project uses HTML/Javascript/CSS Frontend, Python, Flask+ socketIO backend, to create a simple app with multiple chatrooms you can join each using their own socket server, each with their own logs/ID's
+Project uses HTML/Javascript/CSS Frontend, Python, Flask+ socketIO backend, to create a simple app with multiple chatrooms you can join each using their own socket server, each with their own logs/ID's. <br/>
 
 <p align="center">  
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/homepage.jpg"</center>  
 </p>
 
-Each room you create gives you a 4 digit code you can input on the home page to join the room with any number of people.
+Each room you create gives you a 4 digit code you can input on the home page to join the room with any number of people. <br/>
 
 <p align="center">  
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/ChatChatRoom.jpg"</center>  
 </p>
 
-Messages are saved, even if you leave the room or refresh page.
+Messages are saved, even if you leave the room or refresh page. <br/>
 
 <p align="left">  
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/ChadChatFiles.jpg"</left>  
@@ -32,7 +32,7 @@ from string import ascii_uppercase <br/>
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/1GenerateCode.jpg"</left>  
 </p>
 
-Creates a room code of all randomly selected capital letters 4 characters long.
+Creates a room code of all randomly selected capital letters 4 characters long. <br/>
 
 <p align="left">  
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/2Home2.jpg"</left>  
@@ -59,11 +59,19 @@ Line 51, @app.route("/room") routes to the room.html in the templates folder <br
 Line 52, Room Function <br/>
 Line 53-54, Session checks for room, ensures you filled out the home page form and input a name, or if the room has not been created, you can't join <br/>
 Line 55, returns redirect for home if you are missing some information so you can't just join /room <br/>
-Line 57, renders room.html with 4 character code as room name  <br/>
+Line 57, renders room.html with 4 character code as room name, messages=rooms.. saves messages so aren't lost if you refresh room  <br/>
 
 <p align="left">  
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/4Message.jpg"</left>  
 </p>
+Line 59, decorater syntax, listens for message, receives from user session and sends from server transmitted to everyone else <br/>
+Line 60, message function <br/>
+Line 61, Gets room user message is from <br/>
+Line 62-63, If room doesn't exist, returns(does nothing) <br/>
+Line 65-68, Gets name of user sending message and message payload and saves as content variable <br/>
+Line 69, sends message in content variable to room html from server <br/>
+Line 70, appends message content onto the room html <br/>
+Line 71, prints a message to the server console logs for debugging, stored in ram not a database <br/>
 
 <p align="left">  
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/5Connect.jpg"</left>  
@@ -82,5 +90,11 @@ Line 86, prints a string to server for debugging <br/>
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/6Disconnect.jpg"</left>  
 </p>
 
-Disconnect function 
-and finally, the webserver initialization
+Line 88, @app decorater syntax on disconnect <br/>
+Line 89, Disconnect function <br/>
+Line 90-91, Gets room and name from user session <br/>
+Line 92, users leaves the room <br/>
+Line 93-97, Checks for the room in rooms dictionary, subtracts a member, if the member count is equal to or less than zero, deletes room <br/>
+Line 99, sends a message to the room <br/>
+Line 100, sends a print message to server console for debugging <br/>
+Line 103, and finally, the webserver initialization <br/>
