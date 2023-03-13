@@ -55,11 +55,11 @@ Line 49, return render_template("home.html") #Renders the homepage located in th
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/3Room.jpg"</left>  
 </p>
 
-Line 51, @app.route("/room") routes to the room.html in the templates folder
-Line 52, Room Function
-Line 53-54, Session checks for room, ensures you filled out the home page form and input a name, or if the room has not been created, you can't join
-Line 55, returns redirect for home if you are missing some information so you can't just join /room
-Line 57, renders room.html with 4 character code as room name, 
+Line 51, @app.route("/room") routes to the room.html in the templates folder <br/>
+Line 52, Room Function <br/>
+Line 53-54, Session checks for room, ensures you filled out the home page form and input a name, or if the room has not been created, you can't join <br/>
+Line 55, returns redirect for home if you are missing some information so you can't just join /room <br/>
+Line 57, renders room.html with 4 character code as room name  <br/>
 
 <p align="left">  
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/4Message.jpg"</left>  
@@ -68,7 +68,15 @@ Line 57, renders room.html with 4 character code as room name,
 <p align="left">  
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/5Connect.jpg"</left>  
 </p>
-
+Line 73, socketio listens for a "connect" <br/>
+Line 74, connect function, with auth parameter(unused) <br/>
+Line 75-76, looks for users name and room in the session <br/>
+Line 77-78, checks if they do have a room and a name, if not they will leave <br/>
+line 79-80, if the room you attempted to join is not in the rooms dictionary, you will leave <br/>
+Line 83, after the first 2 checks, we know they have a name and a working room, so we will join the room <br/>
+Line 84, sends a JSON message to chat room that user has joined <br/>
+Line 85, add a member to the member count <br/>
+Line 86, prints a string to server for debugging <br/>
 
 <p align="left">  
 <img src="https://github.com/evilusean/Pysean/blob/main/Python-Live-Chat-App/static/Images/6Disconnect.jpg"</left>  
