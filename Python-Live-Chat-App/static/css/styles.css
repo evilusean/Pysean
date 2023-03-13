@@ -22,7 +22,7 @@
 .create-btn {
     width: 100%;
 }
-
+/* Message Display: makes it larger, black border, stretches size with size of window */
 .message-box {
     border-color: black;
     border-width: 2px;
@@ -35,22 +35,22 @@
     width: 80vw;
     align-items: stretch;
 }
-
+/* Message Display : makes it larger and scrollable */
 .messages {
     overflow-y: scroll;
     flex: 1;
     width: 100%
 }
-
+/* Message text box display: */
 .inputs {
     padding: 10px;
     display: flex;
 }
-
+/* Room.Html header */
 h2 {
     text-align: center;
 }
-
+/* Message box Display */
 #message {
     flex: 1;
 }
