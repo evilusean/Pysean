@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-<!-- room.html is used for main communication, quite a bit of css styling, -->
+<!-- room.html is used for main communication, quite a bit of css styling, pulls room code from form and puts in header {{code}}-->
 <div class="message-box">
     <h2>Chad Chat: {{code}}</h2>
     <div class="messages" id="messages"></div>
     <div class="inputs">
+        <!-- creates a messaging box for sending messages -->
         <input type="texts" rows="3" placeholder="Message" name="message" id="message" />
         <button type="button" name="send" id="send-btn" onClick="sendMessage()">
             Send
