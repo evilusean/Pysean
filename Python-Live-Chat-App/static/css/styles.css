@@ -54,7 +54,7 @@ h2 {
 #message {
     flex: 1;
 }
-
+/* Chat Text Display: flex/space between pushes date away from text, */
 .text {
     display: flex;
     flex-direction: row;
