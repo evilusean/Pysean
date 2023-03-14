@@ -3,6 +3,9 @@ https://pymbook.readthedocs.io/en/latest/flask.html
 Flask(SocketIO Script):
 https://flask-socketio.readthedocs.io/en/latest/getting_started.html
   socket server: uses sockets to communicate without refreshing the page, transmits to all clients listening for the updated messages
+Flask SQL Alchemy Official Docs:
+https://flask-sqlalchemy.palletsprojects.com/en/2.x/
+
 BareBones for a Flask Socket Server:
   app = Flask(__name__)
   app.config["SECRET_KEY"] = "abcde12345"
@@ -21,8 +24,75 @@ Second Boilerplate code:
 Most used import functions:
 from flask import Flask, render_template, redirect, url_for, request
 
+Creating a route: This is to make different endpoints in our flask app.
+@app.route("/")
+
+Setting Allowed methods: Used to specify which methods are allowed for a request. Allowing get and post requests on an endpoint.
+methods = ['GET', 'POST']
+
+Re-run while coding: This is used to automatically rerun the program when the file is saved.
+app.run(debug=True)
+
+Change host: This is used to change the host.
+app.run(host='0.0.0.0')
+
+Change port: This is used to change the port.
+app.run(port=80)
 
 
+Importing SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
+
+Database URI: This is the database's address.
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://username:password@localhost/db_name' 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+
+Initialization: This is used to initialize SQLAlchemy.
+db = SQLAlchemy(app)
+
+Creating a Model: Class used to get data from the database and to send data to the database.
+class TableName(db.Model): 
+    column_1 = db.Column(db.Integer, primary_key=True)
+    column_2 = db.Column(db.String(80), nullable=False)
+    column_3 = db.Column(db.String(12), nullable=False)
+
+Get all data - all() method: This is used to get all the data from the database.
+data = ClassName.query.filter_by().all()
+
+Filtered data - first() method: This is used to get the first dataset from the list returned by the filter_by function. You can get targetted data by this.
+data = ClassName.query.filter_by().first()
+
+Send/add data to database: This is used to send/add data to the database.
+data_to_send = ClassName(column_1=dataset1, column_2=dataset2, column_3=dataset3) 
+db.session.add(data_to_send) 
+db.session.commit()
+
+Delete data from the database: This is used to delete data from the database.
+data_to_send = ClassName(column_1=dataset1, column_2=dataset2, column_3=dataset3)
+db.session.delete(data_to_send)
+db.session.commit()
+
+Request method: This is used to know what request is made (get/post).
+request.method
+
+Render Template: This is used to pass and render an html file directly.
+render_template("file.html")
+
+Solving FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS allows you to disable the modification tracking system using this line:
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+Creating Database files: This is used to create database files
+from yourapplicationname import db 
+db.create_all() 
+exit()
+
+Method to return database items: This is used to return database items.
+def __repr__(self) -> str: 
+    return f"{self.item}"
+
+Printing returned content from the method: This is used to print returned database items.
+data = ClassNameWithMethod.query.all() 
+print(data)
 
 For Python Chad Chatt App With Flask:
 @app.route("/", methods=["POST", "GET"]) ##set up a route with decorater syntax "@app" to the home page with methods, posting and getting 
