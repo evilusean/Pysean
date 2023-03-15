@@ -4,6 +4,40 @@ Flutter API:
 https://api.flutter.dev/
 Flutter Official Youtube:
 https://www.youtube.com/c/flutterdev
+Flutter Basics:
+https://www.youtube.com/watch?v=1xipg02Wu8s
+
+ctrl + . #refactors code
+save file, type 'r' in terminal # hot reload, reloads file, can view on emulator instantly
+  Capital "R" #Full restart.
+import 'package:flutter/material.dart'; #imports a bunch of preloaded, hundreds of prebuilt widgets
+  every prebuilt widget has name parameters where you can customize it's appearance(ctrl+space) to see all options
+  right click on widget or ctrl+'.' to find refactor tool
+void main() { runApp( MyApp() ); } #main function, where a program will start running, 
+most fundamental way to layout a widget is with a container like a <div> in html, you can add margin and padding, 
+There is a padding widget
+Sizedbox widget for a fixed width and height
+decoration: #property allows you to customize look on different widgets (border, gradient, shape, shadow, etc)
+wrap with center #allows you to center an object/widget/container
+Flex layout: Row(horizontally, X main axis, Y cross axis) vs Column(vertically)
+  body: Column( children:[...]) #unlike a container(1 widget as a child), a container can take multiple children as a list
+  mainAxisAlignment: Vs crossAxisAlignment: #change spacing between the children by modifying these
+  Flexible Vs Expanded(flex: 4,) #Widgets, by default each child takes up the same amount of space, that can be changed with these widgets
+  body: Stack(...) #allows an element to float on top of another, takes a row of children as an argument
+trailing commas, keep code clean when you format document will only add one line instead of multiple lines
+Positioned(..) #widget comparable to absolute positioning in CSS
+Align(...) #widget comparable to relative positioning in CSS
+home: Scaffold(...) #in built UI elements
+onpressed: ({...}) #event handler, can add a function
+bottomNavigationBar: #creates a bottom bar navigate widget with multiple children
+drawer: Drawer(...) #creates a side drop down menu
+body: ListView(...) #takes a list of children as an argument, but can scroll between them
+builders #allow many widgets to be built dynamically
+State #flutter can use many different states, Stateless, state(mutable data), reactive, provider package, bloc, cubit
+setState(( { count++}); #creates a variable that adds to count
+'$count' #calls data from count variable with '$' dollar sign
+navigator.push(context, MaterialPageRoute(builder: (_) => AboutScreen(), #navigates to the About Screen
+Hero #widget that adds animation 
 
 DaGram Flutter:
 https://github.com/evilusean/DaGram-InstagramClone
