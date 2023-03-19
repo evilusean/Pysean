@@ -1,0 +1,25 @@
+https://www.youtube.com/watch?v=42iQKuQodW4&ab_channel=Fireship
+FHS 3(Filesystem Hierarchy Standard):
+cd #change directory
+cd / #goes to root
+ls #lists all files in directory
+$PATH #tell linux where to find executables
+which #finds out which binary is being used, where it is located
+~ #home directory
+
+/bin #contains binaries/executables
+/sbin #contains system binaries, should only be executed by rootuser/SUDO
+/lib #shared code between binaries
+/usr 
+  /bin #non essential user installed binaries/executables
+  /sbin #same as sbin above, non essential user system binaries
+  /local/bin #locally compiled binaries, safe place, won't conflict with other binaries
+/etc #Et Cetera, Editable Text Config, .conf, 
+/home #a folder for each user registered for each user
+/boot #contains files needed to boot the system
+/dev #device files, hardware/drivers
+/opt #optional or addon software, rarely used
+/var #variable files, change as OS is used, logs and cache files
+/temp #temporary files, will be gone each reboot
+/proc #doesn't exist on disk, created in memory
+
