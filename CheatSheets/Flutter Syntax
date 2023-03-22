@@ -6,6 +6,10 @@ Flutter Official Youtube:
 https://www.youtube.com/c/flutterdev
 Flutter Basics:
 https://www.youtube.com/watch?v=1xipg02Wu8s
+Flutter Widgets List Official:
+https://docs.flutter.dev/development/ui/widgets
+Flutter Flow(Drag and drop UI):
+https://flutterflow.io/
 
 ctrl + . #refactors code
 save file, type 'r' in terminal # hot reload, reloads file, can view on emulator instantly
