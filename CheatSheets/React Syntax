@@ -1,0 +1,87 @@
+https://www.freecodecamp.org/news/the-react-cheatsheet/
+#JavaScript uses a camelcase naming convention (that is, “camelCase”),
+<div className="container"></div> #class attribute, which we write as className.
+<h1 style={{ fontSize: 24, margin: '0 auto', textAlign: 'center' }}>My header</h1> #To apply inline styles instead of using(“”), we use two sets of curly braces
+<React.Fragment></React.Fragment> or <></>. #If we don’t want to wrap our elements in a container element like a div, we can use a fragment
+function App() { return (<div>Hello world!</div>);} #A basic function component is written similarly to a regular JavaScript
+function App() {return <User name="John Doe" />}
+  function User(props) {return <h1>Hello, {props.name}</h1>; // Hello, John Doe!} #React components can accept data passed to them called props.
+  function User({ children }) {return children; // Hello, John Doe!} #Props can also be passed by placing data between the tags of a component.
+"""
+#React components and elements can be conditionally displayed.
+function App() {
+	const isAuthUser = useAuth();
+
+  if (isAuthUser) {
+    // if our user is authenticated, let them use the app
+    return <AuthApp />;
+  }
+
+  // if user is not authenticated, show a different screen
+  return <UnAuthApp />;
+}
+
+#To use the ternary operator, wrap the entire conditional in curly braces.
+function App() {
+	const isAuthUser = useAuth();
+
+  return (
+    <>
+      <h1>My App</h1>
+      {isAuthUser ? <AuthApp /> : <UnAuthApp />}
+    </>
+  ) 
+}
+"""
+function SoccerPlayers() {
+  const players = ["Messi", "Ronaldo", "Laspada"];
+
+  return (
+    <div>
+      {players.map((playerName) => (
+        <SoccerPlayer key={playerName} name={playerName} />
+      ))}
+    </div>
+  );
+}
+#Lists of React components can be output using the .map() function. Whenever you are looping over an array of data, you must include the key prop on the element or component 
+  over which you are looping.
+"""
+"""
+#To use Context, we use the createContext function from React.
+import { createContext } from 'react';
+
+const NameContext = createContext('');
+
+function App() {
+  return (
+    <NameContext.Provider value="John Doe">
+      <Body />
+    <NameContext.Provider>
+  );
+} 
+
+function Body() {
+  return <Greeting />;
+} 
+
+function Greeting() {
+  return (
+    <NameContext.Consumer>
+      {name => <h1>Welcome, {name}</h1>}
+    </NameContext.Consumer>
+  );
+}
+"""
+"""
+#React hooks, a way to easily add reusable, stateful logic to React function components.
+useState #When state is updated, our component re-renders, usually to display that updated value.
+useEffect #useEffect is used to perform a side effect, which means to perform an operation that exists outside of our app 
+  that doesn’t have a predictable result.
+useRef #useRef allows us to get direct access to a JSX element.
+useContext #useContext provides an easier way of consuming context than using the standard Context.Consumer component.
+useCallback #useCallback is a hook that we use to help with our app's performance.
+  #prevents functions from being recreated every time our component re-renders,
+useMemo #useMemo is another performance hook that allows us to ‘memoize’ a given operation.
+"""
+
