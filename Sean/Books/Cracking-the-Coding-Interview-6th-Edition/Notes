@@ -50,7 +50,114 @@ At a very, very high level, there are four modes of questions;
     important to you if a candidate knows CSS or HTML. But if a candidate has worked in depth with these 
     technologies and can't talk about why tables are or aren't good, that suggests an issue. They're not 
     absorbing information core to their job.
-IV-Before the Interview 38- =========================================================================================================
+
+IV-Before the Interview 38-43 =========================================================================================================
+Without a great resume, there's no interview. And without great experience, there's no great resume.
+Take the Big Project Classes: Seek out the classes with big coding projects. This is a great way to get somewhat practical experience before you have any 
+  formal work experience. The more relevant the project is to the real world, the better. 
+Get an Internship: Do everything you can to land an internship early in school. It will pave the way for even better internships before you graduate
+Start Something: Build a project on your own time, participate in hackathons, or contribute to an open source project.
+  It doesn't matter too much what it is. The important thing is that you're coding.
+If you're trying to move from a lesser-known company to one of the "biggies," or from testing/IT into a dev role:
+  Shift Work Responsibilities More Towards Coding: Without revealing to your manager that you are thinking  of leaving, you can discuss your eagerness to
+    take on bigger coding challenges. As much as possible, try to ensure that these projects are "meaty," use relevant technologies, and lend themselves well
+    to a resume bullet or two. It is these coding projects that will, ideally, form the bulk of your resume,
+  Use Your Nights and Weekends: If you have some free time, use it to build a mobile app, a web app, or a piece of desktop software
+Resume screeners look for the same things that interviewers do. They want to know that you're smart and that you can code.
+  That means you should prepare your resume to highlight those two things
+In the US, it is strongly advised to keep a resume to one page if you have less than ten years of experience. Shorter resumes are often more impressive. 
+Recruiters only spend a fixed amount of time (about 10 seconds) looking at your resume. If you limit the content to the most impressive items, the 
+  recruiter is sure to see them. Adding additional items just distracts the recruiter from what you'd really like them to see,
+  Some people just flat-out refuse to read long resumes
+Employment History: Your resume does not—and should not—include a full history of every role you've ever had. Include only the relevant positions—the 
+  ones that make you a more impressive candidate.
+Writing Strong Bullets:
+  For each role, try to discuss your accomplishments with the following approach:"Accomplished X by implementing Y which led to Z." 
+  "Reduced object rendering time by 75% by implementing distributed caching, leading to a 10% reduction in log-in time.
+  "Increased average match accuracy from 1.2 to 1.5 by implementing a new comparison algorithm based on windiff."
+  Not everything you did will fit intothis approach, butthe principle is the same: show what you did, how you did it, and what the results were.
+    Ideally, you should try to make the results "measurable" somehow. 
+Developing the projects section on your resume is often the best way to present yourself as more experienced
+The projects should include your 2 - 4 most significant projects. State what the project was and which languages or technologies it employed
+Be conservative about what software you list, and understand what's appropriate for the company. Software like Microsoft Office can almost always be cut.
+  Technical software like Visual Studio and Eclipse is somewhat more relevant, but many of the top tech companies won't even care about that.
+Languages: Should you list everything you've ever worked with, or shorten the list to just the ones that you're most comfortable with? 
+  Listing everything you've ever worked with is dangerous. Many interviewers consider anything on your resume to be "fair game"as far as the interview.
+  One alternative is to list most of the languages you've used, but add your experience level. This approach is shown below:
+  Languages: Java (expert), C++ (proficient), JavaScript (prior experience). 
+  Use whatever wording ("expert" "fluent" etc.) effectively communicates your skillset. 
+  Some people list the number of years of experience they have with a particular language, but this can be really confusing. 
+  If you first learned Java 10 years ago, and have used it occasionally throughout that time, how many years of experience is this?
+  Some companies will throw out your resume just because of a typo.
+For US positions, do not include age, marital status, or nationality. This sort of personal information is not appreciated by companies, as it creates 
+  a legal liability for them. Vs Affirmative AxSean
+Certifications: Certifications for software engineers can be anything from a positive, to a neutral, to a negative. This goes hand-in-hand with being too
+  language focused; the companies that are biased against candidates with a very lengthy list of technologies tend to also be biased against certifications. 
+  This means that in some cases, you should actually remove this Sort of experience from your resume. 
+The languages in the cluster of {Python, Ruby, and JavaScript) are somewhat similar to each other. It's better if you can learn languages that are more
+  different, like Python, C++, and Java. 
+Page 42: Interview Prep guide
+
+V-Behavioral Questions 44- =========================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
