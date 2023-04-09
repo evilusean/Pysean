@@ -26,16 +26,31 @@ Feedback is typically broken down into four categories (Analytical Ability, Codi
 If the hiring committee recommends an offer, your packet will go to a compensation committee and then to the executive management committee. 
   Returning a decision can take several weeks because there are so many stages and committees. 
 
-III-Special Situations-Page 27- =========================================================================================================
-
-
-
-
-
-
-
-
-
+III-Special Situations-Page 27-37 =========================================================================================================
+SDETs =(software design engineers in test), PM=Product Manager ,Dev Lead and Managers
+Visas and Work Authorization =Unfortunately, many smaller startups in the U.S. are not able to sponsor work visas. 
+People without computer science degrees (or who earned their degrees a long time ago) should focus first on learning the core concepts discussed in this book,
+  especially big O time, , binary search tree, breadth-first search, and other important concepts.
+Most won't remember Dijkstra's algorithm or the specifics of how AVL trees works. 
+Many candidates are poor at articulating their specific accomplishments. 
+Not describing the details of the actions they took makes them a flawed candidate, but not necessarily a flawed employee. 
+Being a good interview candidate is its own skill
+At a very, very high level, there are four modes of questions;
+  Sanity Check: These are often easy problem-solving or design questions. They assess a minimum 
+    degree of competence in problem-solving. They won't tell distinguish between "okay" versus "great" so 
+    don't evaluate them as such. You can use them earfy in the process (to filter out the worst candidates), or 
+    when you only need a minimum degree of competency.
+  Quality Check: These are the more challenging questions, often in problem-solving or design. They 
+    are designed to be rigorous and really make a candidate think. Use these when algorithmic/problemsolving skiils are of high importance. 
+    The biggest mistake people make here is asking questions that are, in fact, bad problem-solving questions. 
+  Specialist Questions: These questions test knowledge of specific topics, such as Java or machine learning. . If it's easily acquirable,
+    then there's no reason to hire for it.
+  Proxy Knowledge: This is knowledge that is not quite at the specialist level (in fact, you might not even 
+    need it), but that you would expect a candidate at their level to know For example, it might not be very 
+    important to you if a candidate knows CSS or HTML. But if a candidate has worked in depth with these 
+    technologies and can't talk about why tables are or aren't good, that suggests an issue. They're not 
+    absorbing information core to their job.
+IV-Before the Interview 38- =========================================================================================================
 
 
 
