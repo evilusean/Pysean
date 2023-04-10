@@ -98,30 +98,44 @@ The languages in the cluster of {Python, Ruby, and JavaScript) are somewhat simi
   different, like Python, C++, and Java. 
 Page 42: Interview Prep guide
 
-V-Behavioral Questions 44- =========================================================================================================
+V-Behavioral Questions 44-49 =========================================================================================================
+Behavioral questions are asked to get to know your personality
+Go through each of the projects or components of your resume and ensure that you can talk about them in detail. Filling out a grid like this may help: 
+  Columns=Challenges, Mistakes/Failures, Enjoyed, Leadership, Conflicts, What you would do differently
+  Rows=Common Questions, Project 1, Project 2, Project 3, include any project, job, or activity included on resume
+  Study this grid before your interview. Reducing each story to just a couple of keywords may make the grid easier to study and recall.
+  you have one to three projects that you can talk about in detail. You should be able to discuss the technical components in depth.
+When asked about your weaknesses, give a real weakness! A good answer conveys a real, legitimate weakness but emphasizes how you work to overcome it.
+Most interviewers will give you a chance to ask them questions. The quality of your questions will be a factor, in their decisions.
+  Genuine Questions: These are the questions you actually want to know the answers to
+    "What is the ratio of testers to developers to program managers? What is the interaction like? How does project planning happen on the team?" 
+  Insightful Questions: These questions demonstrate your knowledge or understanding of technology.
+    "I noticed that you use technology X. How do you handle problem Y?
+  Passion Questions: These questions are designed to demonstrate your passion for technology. They show that you're interested in learning and will be a 
+    strong contributor to the company
+    "I'm very interested in scalability, and I'd love to learn more about it. What opportunities are there at this company to learn about this?" 
+For those projects, and all your projects, be able to talk about the challenges, mistakes, technical decisions, choices of technologies 
+  (and tradeoffs of these), and the things you would do differently.
+Be Specific, Not Arrogant: Specificity means giving just the facts and letting the interviewer derive an interpretation
+Limit Details: Stay tight on details and just state the key points. 
+Nugget First: means starting your response with a "nugget" that succinctly describes what your response will be about.
+  This technique grabs your interviewer's attention and makes it very ciear what your story will be about
+S.A.R. (Situation, Action, Result): you start off outlining the situation, then explaining the actions you took, and lastly, describing the result.
+Think about what your story says about you, What personality attributes has the candidate demonstrated?
+So, tell me about yourself.... This is essentially a "pitch". It's your interviewer's first impression of you, so you want to be sure to nail this.
+  A typical structure that works well for many people is essentially chronological, with the opening sentence describing their current job and the
+  conclusion discussing their relevant and interesting hobbies outside of work (if any). 
+  Current Role [Headline Only): "I'm a software engineer at Microworks, where I've been leading the Android team for the last five years." 
+  College: 
+  Post College & Onwards: 
+  Current Role (Details): 
+  Outside of Work: 
+  Wrap Up: Example on page 49
+Think carefully about your hobbies. You mayor may not want to discuss them. Often they're just fluff. If your hobby is just generic activities like skiing or 
+  playing with your dog, you can probably skip it. Vs hobby is technical. Vs hobby demonstrates a positive personality attribute.
+Sprinkle in Shows of Successes: (awards, promotions, being recruited out by someone you worked with, launches, etc.)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+VI-BigO 50- =========================================================================================================
 
 
 
