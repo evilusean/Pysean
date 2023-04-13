@@ -135,36 +135,50 @@ Think carefully about your hobbies. You mayor may not want to discuss them. Ofte
   playing with your dog, you can probably skip it. Vs hobby is technical. Vs hobby demonstrates a positive personality attribute.
 Sprinkle in Shows of Successes: (awards, promotions, being recruited out by someone you worked with, launches, etc.)
 
-VI-BigO 50- =========================================================================================================
+VI-BigO 50-71 =========================================================================================================
 Big 0 time is the language and metric we use to describe the efficiency of algorithms. 
 Time Complexity: This is what the concept of asymptotic runtime, or big 0 time, means.
 0(1):0 (big O): In academia, big 0 describes an upper bound on the time. An algorithm that prints all the 
-values in an array could be described asO(N), but it could also be described as OfN^J.O^) , or 0(2 N) (or many other big 0 times). The algorithm is at least as fast as each of these; therefore they are upper 
-bounds on the runtime.
-0( log N):
+  values in an array could be described asO(N), but it could also be described as OfN^J.O^) , or 0(2 N) (or many other big 0 times). The algorithm is at least
+  as fast as each of these; therefore they are upper bounds on the runtime. a simple  algorithm to print the values in an array isO(N) as well asO(M3) or any 
+  runtime bigger than 0(N). 
+0( log N): The total runtime is then a matter of how many steps (dividing N by 2 each time) we can take until N becomes 1. When you see a problem where the 
+number of elements in the problem space gets halved each time, that will likely be a 0(log N) runtime.
 0(N log N):
 O(N):
 O(N^):
 0(2^N):
+Q (big omega): In academia, 0 is the equivalent concept but for lower bound. Printing the values in an array is fl(N) as well as fi(log M) and Q(l).
+After all, you know that it won't be faster than those runtimes. 
+0 (big theta): In academia, 0 means both 0 and fi. That is, an algorithm is 0 (N) if it is both 0( N) and 0(N). 0 gives a tight bound on runtime.
 You can also have multiple variables in your runtime.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Best Case: If all elements are equal, then quick sort will, on average, just traverse through the array once. This is 0(N).
+Worst Case: What if we get really unlucky and the pivot is repeatedly the biggest element in the array? (Actually, this can easily happen. If the pivot is
+  chosen to be the first element in the subarray and the array is sorted in reverse order, we'll have this situation.) In this case, our recursion doesn't 
+  divide the array in half and recurse on each half. It just shrinks the subarray by one element. This will degenerate to an O(N^) runtime. 
+Expected Case: Usually, though, these wonderful or terrible situations won't happen. Sure, sometimes the pivot will be very low or very high, but it won't 
+  happen over and over again. We can expect a runtime  of 0( N log N). 
+For many—probably most—algorithms, the worst case and the expected case are the same.
+We rarely ever discuss best case time complexity, because it's not a very useful concept. After all, we could take essentially any algorithm, special case 
+  some input, and then get an 0(1 ) time in the best case. 
+Space Complexity: Time is not the only thing that matters in an algorithm. We might also care about the amount of memory— or space—required by an algorithm.
+Space complexity is a parallel concept to time complexity. If we need to create an array of size n, this will require 0(n) space. If we need a 
+  two-dimensional array of size nxn, this will require 0(n*) space. Stack space in recursive calls counts, too. Each of these calls is added to the call 
+  stack and takes up actual memory.
+  just because you have n calls total doesn't mean it takes O(n ) space. There will be roughly O(n) calls to pairSum. However, those calls do not exist 
+  simultaneously on the call stack, so you only need 0(1) space. 
+Drop the Constants: It is very possible for 0(N ) code to run faster than 0(1 ) code for specific inputs.
+  For this reason, we drop the constants in runtime. An algorithm that one might have described as 0( 2N) is actuallyO(N).
+  accept that it doesn't mean that 0(N) is always better than 0(N^).
+Drop the Non-Dominant Terms: 0(N2+ N) becomesO(N^). 0(N2 + N) becomesO(N^).
+Multi-Part Algorithms: Add vs. Multiply 
+  If your algorithm is in the form "do this, then, when you're all done, do that" then you add the runtimes.
+  If your algorithm is in the form "do this for each time you do that" then you multiply the runtimes.
+  Count the iterations/runtimes, do they add or multiply?
+Amortized Time:  It allows us to describe that, yes, this worst case happens every once in a while. But once it happens, it won't happen again for so 
+  long that the cost is "a moritized."
+Big 0 time is a difficult concept at first. Once it "clicks," it gets fairly easy. The same patterns come up again and again, and the rest you can derive. 
+Examples on page 58-69, Solutions on page 70.
 
 
 
