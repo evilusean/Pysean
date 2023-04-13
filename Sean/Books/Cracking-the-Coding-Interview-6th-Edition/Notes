@@ -136,11 +136,17 @@ Think carefully about your hobbies. You mayor may not want to discuss them. Ofte
 Sprinkle in Shows of Successes: (awards, promotions, being recruited out by someone you worked with, launches, etc.)
 
 VI-BigO 50- =========================================================================================================
-
-
-
-
-
+Big 0 time is the language and metric we use to describe the efficiency of algorithms. 
+Time Complexity: This is what the concept of asymptotic runtime, or big 0 time, means.
+0(1):0 (big O): In academia, big 0 describes an upper bound on the time. An algorithm that prints all the 
+values in an array could be described asO(N), but it could also be described as OfN^J.O^) , or 0(2 N) (or many other big 0 times). The algorithm is at least as fast as each of these; therefore they are upper 
+bounds on the runtime.
+0( log N):
+0(N log N):
+O(N):
+O(N^):
+0(2^N):
+You can also have multiple variables in your runtime.
 
 
 
