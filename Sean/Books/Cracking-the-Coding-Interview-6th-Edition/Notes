@@ -180,6 +180,58 @@ Amortized Time:  It allows us to describe that, yes, this worst case happens eve
 Big 0 time is a difficult concept at first. Once it "clicks," it gets fairly easy. The same patterns come up again and again, and the rest you can derive. 
 Examples on page 58-69, Solutions on page 70.
 
+VII-Technical Questions-Page 72-81=========================================================================================================
+Many candidates just read through problems and solutions. That's like trying to learn calculus by reading a problem and its answer. 
+You need to practice solving problems. Memorizing solutions won't help you much. 
+When you're solving a problem, make sure to think about the space and time efficiency.
+Write the code on paper. Coding on a computer offers luxuries such as syntax highlighting, code completion, and quick debugging. Coding on paper does not
+Test your code—on paper. This means testing the general cases, base cases, error cases, and so on. You'll need to do this during your interview, 
+Type your paper code as-is into a computer. You will probably make a bunch of mistakes. 
+  Start a list of all the errors you make so that you can keep these in mind during the actuai interview. 
+ost interviewers won't ask about specific algorithms for binary tree balancing or other complex algorithms.they probably don't remember these algorithmseither
+BUD(BottleNecks, Unneccesary Work, Duplicated Work) Optimization:
+Get a brute-force solution as soon as possible. Don't worry about developing an efficient algorithm yet. State a naive algorithm and its runtime, then 
+  optimize from there. Don't code yet though! It's okay and expected that your initial algorithm won't be very optimal. 
+Look for any unused info. You usually need all the information in a problem. 
+Listen for guidance from the interviewer.The interviewer might take a more active or less active roie in your problem solving. The level of interviewer
+  participation depends on your performance, the difficulty of the question, what the interviewer is looking for, and the interviewer's own personality
+Listen carefully to the problem, and be sure that you've mentally recorded any *unique* information in the problem. 
+When you hear a question, get out of your chair, go to the whiteboard, and draw an example. create an example that is: 
+  • Specific. It should use real numbers or strings (if applicable to the problem). 
+  • Sufficiently large. Most examples are too small, by about 50%,
+  • Not a special case. Be careful, it's very easy to inadvertently draw a special case
+Once you have a brute force algorithm, you should work on optimizing it. A few techniques that work well are:
+  Look for any unused information. Did your interviewer tell you that the array was sorted? How can you leverage that information? 
+  Use a fresh example. Sometimes, just seeing a different example will unclog your mind or help you see a pattern in the problem.
+  Make time vs. space tradeoff. Sometimes storing extra state about the problem can help you optimize the runtime.
+  Precompute information.Is there a way that you can reorganize the data(sorting, etc) or compute some values upfront that will help save time in the longrun
+  Use a hash table. Hash tables are widely used in interview questions and should be at the top of your mind
+  Think about the best conceivable runtime (discussed on page 72).
+  Walk through the brute force with these ideas in mind and look for BUD (page 67).
+Whiteboard coding is slow— So is testing your code and fixing it. you need to make sure that you get it as close to "perfect" in the beginning as possible. 
+Implement: Start coding in the far top left corner of the whiteboard (you'll need the space). Avoid "line creep" (where each line of code is written a slant)
+Remember that you only have a short amount of code to demonstrate that you're a great developer. Everything counts. Write beautiful code.
+Modularized code. This shows good coding style. It also makes things easier for you. don't waste your time writing this initialization code.
+  Just pretend you have a function init IncrementalMatrix(int size)
+Error checks. Some interviewers care a lot about this, while others don't. 
+  A good compromise here is to add a todo and then just explain out loud what you'd like to test.
+Good variable names. Code that uses single-letter variables everywhere is difficult to read. Long variable names can also be slow to write though. 
+  A good compromise that most interviewers will be okay with is to abbreviate it after the first usage. You can use startChil d the first time, and then 
+  explain to your interviewer that you wilt abbreviate this as 'sc' after this.
+If you get confused (which is common), go back to your example and walk through it again. 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
