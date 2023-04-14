@@ -104,7 +104,12 @@ Gab AI: Gabby
 Microsoft Office CoPilot
 BingChat
 CoPilotX
-AWS CodeWhisperer(Free Github CopilotX)
+AWS CodeWhisperer(Free Github CopilotX) Install VSCode AWS Toolkit extension, then register
+AWS Bedrock(Infrastructure for AI apps
+  Stability.ai(Stable Diffusion)
+  Ai21labs(Jurassic 2)
+  AWS Titan=Text/Image Processing-Upload Labeled Images, ~20, get a result
+  AWS EC2 INF2- custom built chips can train machine learning models, train LLM from scratch
 S.A.M(Segement Anything Model) from Meta
 
 Voice AI: https://beta.elevenlabs.io/
