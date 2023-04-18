@@ -111,10 +111,14 @@ AWS Bedrock(Infrastructure for AI apps
   AWS Titan=Text/Image Processing-Upload Labeled Images, ~20, get a result
   AWS EC2 INF2- custom built chips can train machine learning models, train LLM from scratch
 S.A.M(Segement Anything Model) from Meta
+OpenAssistant-AI=Uncensored GPT:
+https://open-assistant.io/chat
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
 Riffusion
+RobertoNickson:
+https://www.youtube.com/channel/UCdOCkS8RM0RWXRPAgDtKa0w
 
 Pytorch Raspberry Pi:
 https://pytorch.org/tutorials/intermediate/realtime_rpi.html
