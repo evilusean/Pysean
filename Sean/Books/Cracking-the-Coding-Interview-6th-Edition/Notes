@@ -305,9 +305,10 @@ Evaluating the Offer: The Financial Package Perhaps the biggest mistake that can
     fresh, and also keep you in tune with what sorts of opportunities (and salaries) are out there.
 
 IX-Interview Questions-Page 99-=========================================================================================================
-
-
-
+hash table= is a data structure that maps keys to values for highly efficient lookup. There are a number of ways of implementing this.
+     we can implement the hash table with a balanced binary search tree.This gives us an 0 (log N) lookup time. The advantage of this is potentially using 
+     less space, since we no longer allocate a large array. 
+Be sure you are comfortable with dynamically resizable arrays/lists in whatever language you will be working with.
 
 
 
