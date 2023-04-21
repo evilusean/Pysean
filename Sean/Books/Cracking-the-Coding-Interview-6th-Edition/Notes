@@ -309,9 +309,39 @@ hash table= is a data structure that maps keys to values for highly efficient lo
      we can implement the hash table with a balanced binary search tree.This gives us an 0 (log N) lookup time. The advantage of this is potentially using 
      less space, since we no longer allocate a large array. 
 Be sure you are comfortable with dynamically resizable arrays/lists in whatever language you will be working with.
-
-
-
+linked list= is a data structure that represents a sequence of nodes. In a singly linked list, each node points to the next node in the linked list. A 
+doubly linked= list gives each node pointers to both the next node and the previous node.
+  Unlike an array, a linked list does not provide constant time access to a particular "index" within the list
+  this means that if you'd like to find the Kth element in the list, you will need to iterate through K elements.
+The stack data structure is precisely what it sounds like: a stack of data, it can be favorable to store data in a stack rather than in an array. A stack uses
+  LIFO (last-in first-out) ordering. That is, as in a stack of dinner plates, the most recent item added to the stack is the first item to be removed.
+  • pop(): Remove the top item from the stack. 
+  • push( item) : Add an item to the top of the stack. 
+  • peek ( ): Return the top of the stack. 
+  • isEmpty() : Return true if and only if the stack is empty
+queue= implements FIFO (first-in first-out) ordering. As in a ticket stand, items are removed from the data structure in the same order that they are added
+  One place where queues are often used is in breadth-first search or in implementing a cache
+A tree=is a data structure composed of nodes, Each tree has a root node, The root node has zero or more child nodes, each child may have nodes, etc
+A node is called a "leaf" node if it has no children.
+Binary Tree Traversal Prior to your interview, you should be comfortable implementing in-order, post-order, and pre-order traversal. 
+  The most common of these is in-order traversal.
+min-heap=is a complete binary tree (that is, totally filled other than the rightmost elements on the last level) where each node is smaller than its children
+  The root, therefore, is the minimum element in the tree, We have two key operations on a min-heap: insert and extract_min .
+Max-heaps=are essentially equivalent, but the elements are in descending order rather than ascending order, 
+A trie (sometimes called a prefix tree) is a funny data structure. A trie is a variant of an n-arytree in which characters are stored at each node. Each
+  path down the tree may represent a word. Very commonly, a trie is used to store the entire (English) language for quick prefix lookups. While a hash 
+  table can quickly look up whether a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this very quickly. 
+A tree is actually a type of graph, but not all graphs are trees, a tree is a connected graph without cycles.
+A graph is simply a collection of nodes with edges between (some of) them.
+  Graphs can be either directed (like the following graph) or undirected. directed edges are like a one-way street, undirected edges are like a two-way street
+Adjacency List=This is the most common way to represent a graph. Every vertex (or node] stores a list of adjacent vertices. Adjacency Matrices 
+Graph Search The two most common ways to search a graph are depth-first search and breadth-first search
+depth-first search (DFS),= we start at the root (or another arbitrarily selected node) and explore each branch completely before moving on to the next branch.
+  That is, we go deep first (hence the name depthfirst search) before we go wide. DFS is often preferred if we want to visit every node in the graph.
+breadth-first search (BFS),= we start at the root (or another arbitrarily selected node) and explore each neighbor before going on to any of their children.
+  That is, we go wide (hence breadth-first search) before we go deep. , if we want to find the shortest path between two nodes, BFS is generally better. 
+Bidirectional search=is used to find the shortest path between a source and destination node. It operates by essentially running two simultaneous
+  breadth-first searches, one from each node. When their searches collide, we have found a path.
 
 
 
