@@ -326,3 +326,46 @@ Windows Commands - Powershell commandlets
 28. restart - Restart-Computer #restart PC
 Expand-Archive - Extract file from a zip Archive
 Compress-Archive - Create a zip Archive
+
+copy /b fakeimage.extension+secretfolder.zip hiddenname.extension #first zip files you wish to hide, specify image to replace zip image, 
+cipher /E #encrypts everything in a folder
+attrib +h +s  +r foldername #hides folder from everyone
+  attrib -h -s  -r foldername #unhides folder for everyone
+netsh wlan show profile #will show you every wifi network you've ever connected to
+  netsh wlan show profile wifinetwork key=clear | findstr"Key Content" #will show you every wifi network you've ever connected to, with passwords
+  netsh wlan show profile "SeansNetwork" key=clear #will show PW to seans network 
+for /f "skip=9 tokens=1,2 delims=:" %i in ('netsh wlan show profiles do @i f "%j" NEQ "" (echo SSID: %j & netsh wlan show profiles %j key=clear 
+  | findstr "Key Content") >> wifipasswords.txt #one string, finds all wifi passwords you've ever connected to and saves into wifipasswords.txt
+systeminfo #finds all system info of PC
+scp file.txt root@serverip:~/file.txt #copies a file to a remote server securely
+explorer . #opens explorer for directory you are currently in
+subst q:c:\filelocation #creates a new drive, q for filelocation
+subst /d q: #undoes above command
+color 02 #{background:text} creates a new color for command prompt window, first number is background, second is text
+  color /? #gets a list of colors you can use
+prompt {text}$G #allows you to create a custom prompt
+  prompt #reset to normal
+title {stuff} #changes window title
+curl wttr.in/location #gives weather of <location>
+curl --head--location "https://shortenedlink.com" | findstr Location #shows you where a shortened URL link takes you
+curl -Is http://websitetocheck.com | findstr ^Location #checks status of a website
+curl checkip.amazonaws.com #gets public IP address
+curl qrenco.de/https://qrcodewebsitetocreate.com #creates a QR code of a website 
+curl -s https://decapi.me/youtube/latest_video?user=networkchuck #checks if user uploaded a video
+curl -s https://decapi.me/twitter/latest?name=networkchuck #checks users latest tweet
+curl dict.org/d:wordtolookup #looks up dictionary definition of a word
+curl <https://api.openai.com/v1/chat/completions> -H
+  "Authorization: Bearer skFZ75cesnv4FnuQqI2NIbT3BlbkFJC4UbZ8MEfRLE5uFkIxS7" -H
+  "Content-Type: application/json" -d "{\\"model\\": \
+  \"gpt-3.5-turbo\\", \\"messages\\": [{\\"role\\": \
+  \"user\\", \\"content\\": \\"Who is NetworkChuck?\\"}]}" #interacts with chatgpt from command line
+start websiteurl.com #opens a website from command terminal
+del /q /f /s %temp%\\* 
+  del /s /q C:\\Windows\\temp\* #deletes all temporary files to save space
+telnet telehack.com #ASCII art movies, using telnet
+f3 #will type your previous command
+f5 #cycles through previous commands
+f7 #opens a list of previous commands
+doskey /history #prints a list of all previous commands
+
+
