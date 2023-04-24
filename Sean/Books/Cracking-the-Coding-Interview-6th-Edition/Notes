@@ -305,6 +305,14 @@ Evaluating the Offer: The Financial Package Perhaps the biggest mistake that can
     fresh, and also keep you in tune with what sorts of opportunities (and salaries) are out there.
 
 IX-Interview Questions-Page 99-=========================================================================================================
+  pg100-103 Arrays and Strings
+  pg104-107 Linked Lists 
+  pg108-111 Stacks and Queues 
+  pg112-123 Trees and Graphs
+  pg124-128 Bit Manipulation
+  pg129-136 Math and Logic Puzzles
+  pg137-141 Object-Oriented Design 
+  pg142- Recursion and Dynamic Programming 
 hash table= is a data structure that maps keys to values for highly efficient lookup. There are a number of ways of implementing this.
      we can implement the hash table with a balanced binary search tree.This gives us an 0 (log N) lookup time. The advantage of this is potentially using 
      less space, since we no longer allocate a large array. 
@@ -342,6 +350,105 @@ breadth-first search (BFS),= we start at the root (or another arbitrarily select
   That is, we go wide (hence breadth-first search) before we go deep. , if we want to find the shortest path between two nodes, BFS is generally better. 
 Bidirectional search=is used to find the shortest path between a source and destination node. It operates by essentially running two simultaneous
   breadth-first searches, one from each node. When their searches collide, we have found a path.
+So-called "puzzles"(or brain teasers) are some of the most hotly debated questions, and many companies have policies banning them
+Generating a List of Primes: The Sieve of Eratosthenes=It works by recognizing that ail non-prime numbers are divisible by a prime number.
+  We start with a list of all the numbers up through some value max. First, we cross off alt numbers divisible by 2. Then, we look for the next prime 
+  (the next non-crossed off number) and cross off alt numbers divisible by it. By crossing off alt numbers divisible by 2, 3, 5, 7,11, and so on, we wind
+  up with a list of prime numbers from 2 through max. 
+Many people, strangely, mix up the concepts of independence and mutual exclusivity. They are entirely different. In fact,
+  two events cannot be both independent and mutually exclusive. mutual exclusivity means that if one happens then the other cannot. 
+  Independence, however, says that one event happening means absolutely nothing about the other event.
+interviewers want to see how you tackle a problem; Start talking, and show the interviewer how you approach a problem. 
+In many cases, you will find it useful to write down 'ruies"or patterns that you discover white solving the problem. And yes, you really should write 
+  these down—it will help you remember them as you solve the problem.
+Many brainteasers are worst-case minimization problems, worded either in terms of minimizing an action or reducing the amount of times you do an action
+Object-oriented design questions require a candidate to sketch out the classes and methods to implement technical problems or real-life objects. 
+  These problems give—or at least are believed to give— an interviewer insight into your coding style. These questions are not so much about regurgitating 
+  design patterns as they are about demonstrating that you understand how to create elegant, maintainable object-oriented code
+  Step 1; Handle Ambiguity: (OOD) questions are often intentionally vague in order to test if you'll make assumptions or if you'll ask clarifying questions.
+    inquire who is going to use it and how they are going to use it. "six Ws"; who, what, where, when, how, why.
+  Step 2: Define the Core Objects: object-oriented design for a restaurant. Our core objects might be things like 
+    Table, Guest, Party , Order, Meal, Employee, Server, and Host, 
+  Step 3: Analyze Relationships: Which objects are members of which other objects? Do any objects inherit from any others? Are relationships 
+    many-to-many or one-to-many?
+  Step 4: Investigate Actions: you should have the basic outline of your object-oriented design. What remains is to consider the key actions that the 
+    objects will take and how they relate to each other
+Singleton Class=ensures that a class has only one instance and ensures access to the instance through the application. 
+  "global" object with exactly one instance
+Factory Method=interface for creating an instance of a class, with its subclasses deciding which class to instantiate.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
