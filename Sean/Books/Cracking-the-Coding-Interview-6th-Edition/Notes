@@ -312,8 +312,8 @@ IX-Interview Questions-Page 99-=================================================
   pg124-128 Bit Manipulation
   pg129-136 Math and Logic Puzzles
   pg137-141 Object-Oriented Design 
-  pg142- Recursion and Dynamic Programming 
-  
+  pg142-148 Recursion and Dynamic Programming 
+  pg149-157 System Design and Scalability 
 hash table= is a data structure that maps keys to values for highly efficient lookup. There are a number of ways of implementing this.
      we can implement the hash table with a balanced binary search tree.This gives us an 0 (log N) lookup time. The advantage of this is potentially using 
      less space, since we no longer allocate a large array. 
