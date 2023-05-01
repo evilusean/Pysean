@@ -392,25 +392,52 @@ Dynamic programming is mostly just a matter of taking a recursive algorithm and 
 Alternatively, you can study the pattern of the recursive calls and implement something iterative.
 Tip: Remember this for future problems. Drawing the recursive calls as a tree is a great way to figure out the runtime of a recursive algorithm
 memoization=Each time we compute f ib ( i) , we should just cache this result and use it later. 
+Despite how intimidating they seem, scalability questions can be among the easiest questions.
+ Tackle the problem by doing it just like you would at work. Ask questions. Engage the interviewer. Discuss the tradeoffs.
+Communicate: A key goal of system design questions is to evaluate your ability to communicate. Stay 
+engaged with the interviewer. Ask them questions. Be open about the issues of your system, 
+• Go broad first: Don't dive straight into the algorithm part or get excessively focused on one part. 
+• Use the whiteboard: Using a whiteboard helps your interviewerfollow your proposed design. Get up to 
+the whiteboard in the very beginning and use it to draw a picture of what you're proposing. 
+• Acknowledge interviewer concerns: Your interviewer will likely jump in with concerns. Don't brush 
+them off; validate them. Acknowledge the issues your interviewer points out and make changes accordingly. 
+• Be careful about assumptions: An incorrect assumption can dramatically change the problem. For 
+example, if your system produces analytics / statistics for a dataset, it matters whether those analytics 
+must be totally up to date. 
+• State your assumptions explicitly: When you do make assumptions, state them.This allows your interviewer to correct you if you're mistaken, and shows 
+  that you at least know what assumptions you're making. 
+• Estimate when necessary: In many cases, you might not have the data you need. For example, if you're 
+designing a web crawler, you might need to estimate how much space it will take to store all the URLs. 
+You can estimate this with other data you know. 
+• Drive: As the candidate, you should stay in the driver's seat. This doesn't mean you don't talk to your 
+interviewer; in fact, you musrtalkto your interviewer. However, you should be driving through the ques
+Ask questions. Be open about tradeoffs. Continue to go deeper. Continue to make improvements. 
+Step 1:Scope the Problem:You can't design a system if you don't know what you're designing. 
+Step 2: Make Reasonable Assumptions
+Step 3: Draw the Major Components(whiteboard)
+Step 4; Identify the Key Issues Once you have a basic design in mind. Focus on the key issues. What will be the bottlenecks or major challenges in the system?
+Step 5: Redesign for the Key Issues: Once you have identified the key issues, it's time to adjust your design for it. You might find that it involves 
+  a major redesign or just some minor tweaking (like using a cache). Be open about any limitations in your design. Your interviewer will likely be aware of 
+  them, so it's important to communicate that you're aware of them, too
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Algorithms that Scale: Step-By-Step: In some cases, you're not being asked to design an entire system. You're just being asked to design a single 
+  feature or algorithm, but you have to do it in a scalable way
+Step 1: Ask Questions: ask questions to make sure you really understand the question. There might be details the interviewer left out
+Step 2; Make Believe: Pretend that the data can all fit on one machine and there are no memory limitations. How would you solve 
+  the problem? The answer to this question will provide the general outline for your solution. 
+Step 3: Get Real: Now go back to the original problem. How much data can you fit on one machine, and what problems will occur when you split up the data? 
+Step 4: Solve Problems: Finally, think about how to solve the issues you identified in Step 2. Remember that the solution for each 
+  issue might be to actually remove the issue entirely, or it might be to simply mitigate the issue. 
+Your goal is not to re-architect a complex system that companies have spent millions of dollars building, but rather to demonstrate that you can analyze 
+  and solve problems, Poking holes in your own solution is a fantastic way to demonstrate this. 
+A system can be scaled one of two ways: Vertical scaling means increasing the resources of a specific node, increasing memory on a machine
+  Horizontal scaling means increasing the number of nodes. For example, you might add additional servers
+Vertical scaling is generally easier than horizontal scaling, but it's limited. You can only add so much memory or disk space. 
+Load Balancer: allows a system to distribute the load evenly so that one server doesn't crash and take down the whole system. 
+Database Denormalization and NoSQL: Joins in a relational database such as SQL can get very slow as the system grows bigger. For this reason, you would
+  generally avoid them.  Denormalization means adding redundant information into a database to speed up reads.
+A NoSQL database does not support joins and might structure data in a different way. It is designed to scale better. 
+Database Partitioning (Sharding): means splitting the data across multiple machines while ensuring you have a way of figuring out which data is on which PC
 
 
 
