@@ -438,15 +438,17 @@ Database Denormalization and NoSQL: Joins in a relational database such as SQL c
   generally avoid them.  Denormalization means adding redundant information into a database to speed up reads.
 A NoSQL database does not support joins and might structure data in a different way. It is designed to scale better. 
 Database Partitioning (Sharding): means splitting the data across multiple machines while ensuring you have a way of figuring out which data is on which PC
-
-
-
-
-
-
-
-
-
+Vertical Partitioning: This is basically partitioning by feature. For example, if you were building a social network, you might have one partition for
+  tables relating to profiles, another one for messages,
+Key-Based (or Hash-Based) Partitioning: This uses some part of the data 
+Directory-Based Partitioning: In this scheme, you maintain a lookup table for where the data can be found. 
+Caching An in-memory cache can deliver very rapid results. It is a simple key-value pairing and typically sits between your application layer and data store. 
+Slow operations should ideally be done asynchronously
+Networking Metrics:
+  Bandwidth: This is the maximum amount of data that can be transferred in a unit of time. It is typically expressed in bits per second
+  Throughput: Whereas bandwidth is the maximum data that can be transferred in a unit of time, throughput is the actual amount of data that is transferred.
+  Latency:This is how long it takes data to go from one end to the other. That is, it is the delay between the sender sending information and receiving it
+MapReduce=program is typically used to process large amounts of data. requires you to write a Map step and a Reduce step
 
 
 
