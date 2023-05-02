@@ -256,6 +256,8 @@ Bash/Shell Linux
 Active Directory/OpenLDAP/Puppet
 Excel/Google Sheets
 
+Python WebDev: Django, Flask, FastAPI(library), beautifulsoup4, selenium
+
 Blpapi:
 Python Library/API, gets market data from bloomberg automatically
 https://bloomberg.github.io/blpapi-docs/python/3.16/
