@@ -450,13 +450,19 @@ Networking Metrics:
   Throughput: Whereas bandwidth is the maximum data that can be transferred in a unit of time, throughput is the actual amount of data that is transferred.
   Latency:This is how long it takes data to go from one end to the other. That is, it is the delay between the sender sending information and receiving it
 MapReduce=program is typically used to process large amounts of data. requires you to write a Map step and a Reduce step
-
-
-
-
-
-
-
+Understanding the common sorting and searching algorithms is incredibly valuable, as many sorting and searching problems are tweaks of well-known algorithms
+  Bubble Sort=, we start at the beginning of the array and swap the first two elements if the first is greater than the second.
+  Selection Sort=inefficient. Find the smallest element using a linear scan and move it to the front (swapping it with the front element). Then, find the
+    second smallest and move it, again doing a linear scan.
+  Merge Sort=Merge sort divides the array in half, sorts each of those halves, and then merges them back together
+  Quicksort=we pick a random element and partition the array, such that all numbers that are iess than the partitioning element come before all elements
+    that are greater than it.
+  Radix Sort=In radix sort, we iterate through each digit of the number, grouping numbers by each digit.
+Searching Algorithms:
+ binary search=we look for an element x in a sorted array by first comparing x to the midpoint of the array. 
+  If x is less than the midpoint, then we search the left half of the array. If x is greater than the midpoint, then we search the right half of the array.
+  We then repeat this process, treating the left and right halves as subarrays. Again, we compare x to the midpoint of this subarray and then search either
+  its left or right side. We repeat this process until we either find x or the subarray has size 0.
 
 
 
