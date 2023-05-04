@@ -315,6 +315,7 @@ IX-Interview Questions-Page 99-=================================================
   pg142-148 Recursion and Dynamic Programming 
   pg149-157 System Design and Scalability 
   pg158-163 Sorting and Searching
+  pg164-169 Testing
 hash table= is a data structure that maps keys to values for highly efficient lookup. There are a number of ways of implementing this.
      we can implement the hash table with a balanced binary search tree.This gives us an 0 (log N) lookup time. The advantage of this is potentially using 
      less space, since we no longer allocate a large array. 
@@ -463,28 +464,29 @@ Searching Algorithms:
   If x is less than the midpoint, then we search the left half of the array. If x is greater than the midpoint, then we search the right half of the array.
   We then repeat this process, treating the left and right halves as subarrays. Again, we compare x to the midpoint of this subarray and then search either
   its left or right side. We repeat this process until we either find x or the subarray has size 0.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Big Picture Understanding: Are you a person who understands what the software is really about? Can you prioritize test cases properly?
+Knowing How the Pieces Fit Together: Do you understand how software works, and how it might fit into a greater ecosystem?
+Organization: Do you approach the problem in a structured manner, or do you just spout off anything that comes to your head?
+Practicality: Can you actually create reasonable testing plans?
+Step 1: Who will use it? And why?
+Step 2: What are the use cases?
+Step 3: What are the bounds of use? 
+Step 4: What are the stress / failure conditions?
+Step 5: How would you perform the testing? 
+Black Box Testing vs. White Box Testing:  In black box testing, we're just given the software as-ts and need to test it. With white box 
+  testing, we have additional programmatic access to test individual functions
+Breakdown your testing into the main components, and go from there
+Step 1; Define the test cases
+  The normal case; Does it generate the correct output for typical inputs?
+  The extremes: What happens when you pass in an empty array? Or a very small (one element) array? What if you pass in a very large one?
+  Nulls and "illegal"input: 
+  Strange input; A fourth kind of input sometimes comes up; strange input
+Step 2: Define the expected result
+Step 3: Write test code
+A final type of question is explaining how you would debug or troubleshoot an existing issue. 
+Step 1: Understand the Scenario= first thing you should do is ask questions to understand as much about the situation as possible
+Step 2: Break Down the Problem 
+Step 3: Create Specific, Manageable Tests
 
 
 
