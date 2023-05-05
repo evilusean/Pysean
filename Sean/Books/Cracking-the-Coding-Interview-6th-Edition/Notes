@@ -316,6 +316,7 @@ IX-Interview Questions-Page 99-=================================================
   pg149-157 System Design and Scalability 
   pg158-163 Sorting and Searching
   pg164-169 Testing
+  pg170-176 c & C++
 hash table= is a data structure that maps keys to values for highly efficient lookup. There are a number of ways of implementing this.
      we can implement the hash table with a balanced binary search tree.This gives us an 0 (log N) lookup time. The advantage of this is potentially using 
      less space, since we no longer allocate a large array. 
@@ -487,10 +488,11 @@ A final type of question is explaining how you would debug or troubleshoot an ex
 Step 1: Understand the Scenario= first thing you should do is ask questions to understand as much about the situation as possible
 Step 2: Break Down the Problem 
 Step 3: Create Specific, Manageable Tests
-
-
-
-
+If you don't remember all the APIs, don't worry—most interviewers (though not ail) don't care that much. We do recommend, however, studying up 
+  on basic C++ syntax so that you can approach these questions with ease
+Templates are a way of reusing code to apply the same class to different data types
+A pointer holds the address of a variable and can be used to perform any operation that could be directly done on the variable, such as accessing/modifying it 
+A reference is another name (an alias) for a pre-existing object and it does not have memory of its own
 
 
 
