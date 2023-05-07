@@ -316,7 +316,8 @@ IX-Interview Questions-Page 99-=================================================
   pg149-157 System Design and Scalability 
   pg158-163 Sorting and Searching
   pg164-169 Testing
-  pg170-176 c & C++
+  pg170-176 C & C++
+  pg177-180 Java
 hash table= is a data structure that maps keys to values for highly efficient lookup. There are a number of ways of implementing this.
      we can implement the hash table with a balanced binary search tree.This gives us an 0 (log N) lookup time. The advantage of this is potentially using 
      less space, since we no longer allocate a large array. 
@@ -493,13 +494,18 @@ If you don't remember all the APIs, don't worry—most interviewers (though not 
 Templates are a way of reusing code to apply the same class to different data types
 A pointer holds the address of a variable and can be used to perform any operation that could be directly done on the variable, such as accessing/modifying it 
 A reference is another name (an alias) for a pre-existing object and it does not have memory of its own
-
-
-
-
-
-
-
+Java:
+  Overloading is a term used to describe when two methods have the same name but differ in the type or number of arguments, 
+  Overriding, however, occurs when a method shares the same name and function signature as another method in its super clas 
+Java's collection framework is incredibly useful, and you will see it used throughout this book. Here are some of the most useful items: 
+  ArrayList : An Arra y Lis t is a dynamically resizing array, which grows as you insert elements. 
+  Vector: A vecto r is very similar to an ArrayList , except that it is synchronized. Its syntax is almost identical as well.
+  LinkedList : Linked Lis t is, of course, Java's built-in Linked Lis t class. Though it rarely comes up in an interview
+  HashMap:TheHashMap collection is widely used, both in interviews and in the real world. We've provided a snippet of the syntax below. 
+    1 HashMap<String, String> map = new HashMap<Stringj String>(); 
+    2 map.put("one", "uno"); 
+    3 map.putC'two", "dos"); 
+    4 System.out.print In(map.get("one")); 
 
 
 
