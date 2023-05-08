@@ -318,6 +318,7 @@ IX-Interview Questions-Page 99-=================================================
   pg164-169 Testing
   pg170-176 C & C++
   pg177-180 Java
+  pg181-185 Databases
 hash table= is a data structure that maps keys to values for highly efficient lookup. There are a number of ways of implementing this.
      we can implement the hash table with a balanced binary search tree.This gives us an 0 (log N) lookup time. The advantage of this is potentially using 
      less space, since we no longer allocate a large array. 
@@ -506,12 +507,12 @@ Java's collection framework is incredibly useful, and you will see it used throu
     2 map.put("one", "uno"); 
     3 map.putC'two", "dos"); 
     4 System.out.print In(map.get("one")); 
-
-
-
-
-
-
-
+Normalized databases are designed to minimize redundancy, while denormalized databases are designed to optimize read time. 
+Small Database Design : you might be asked to design your own database. We'll walk you through an approach
+  Step 1: Handle Ambiguity=Before you proceed with your design, you must understand exactly what you need to design. 
+  Step 2: Define the Core Objects=Each of these core objects typically translates into a table. 
+  Step 3: Analyze Relationships
+  Step 4: Investigate Actions
+When designing a large, scalable database, joins (which are required in the above examples) are generally very slow. Thus, you must denormalize your data
 
 
