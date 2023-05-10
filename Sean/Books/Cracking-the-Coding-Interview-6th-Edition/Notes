@@ -319,6 +319,7 @@ IX-Interview Questions-Page 99-=================================================
   pg170-176 C & C++
   pg177-180 Java
   pg181-185 Databases
+  pg186-192 Threads and Locks
 hash table= is a data structure that maps keys to values for highly efficient lookup. There are a number of ways of implementing this.
      we can implement the hash table with a balanced binary search tree.This gives us an 0 (log N) lookup time. The advantage of this is potentially using 
      less space, since we no longer allocate a large array. 
@@ -514,5 +515,58 @@ Small Database Design : you might be asked to design your own database. We'll wa
   Step 3: Analyze Relationships
   Step 4: Investigate Actions
 When designing a large, scalable database, joins (which are required in the above examples) are generally very slow. Thus, you must denormalize your data
+Every thread in Java is created and controlled by a unique object of the java , lang . Thread class When a standalone application is run, a user thread is 
+  automatically created to execute the main () method.
+In Java, we can implement threads in one of two ways: 
+• By implementing the j ava . lang , Runnable interface 
+• By extending the java . lang . Thread class 
+Threads within a given process share the same memory space, which is both a positive and a negative. It enables threads to share data, which can be valuable. 
+  However, it also creates the opportunity for issues when two threads modify a resource at the same time.
+A lock (or monitor)= is used to synchronize access to a shared resource by associating the resource with the lock
+A deadlock= is a situation where a thread is waiting for an object lock that another thread holds, and this second thread is waiting for an object lock that the 
+  first thread holds Since each thread is waiting for the other thread to relinquish a lock, they both remain waiting forever.
+In order for a deadlock to occur, you must have all four of the following conditions met: 
+  Mutual Exclusion: Only one process can access a resource at a given time
+  Hold and Wait: Processes already holding a resource can request additional resources, without relinquishing their current resources
+  No Preemption:One process cannot forcibly remove another process'resource. 
+  Circular lVa/f;Two or more processes form a circular chain where each process is waiting on another resource in the chain. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
