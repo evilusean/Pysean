@@ -320,6 +320,7 @@ IX-Interview Questions-Page 99-=================================================
   pg177-180 Java
   pg181-185 Databases
   pg186-192 Threads and Locks
+  pg193-197 Moderate Questions
 hash table= is a data structure that maps keys to values for highly efficient lookup. There are a number of ways of implementing this.
      we can implement the hash table with a balanced binary search tree.This gives us an 0 (log N) lookup time. The advantage of this is potentially using 
      less space, since we no longer allocate a large array. 
