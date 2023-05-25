@@ -65,17 +65,17 @@ https://www.freecodecamp.org/news/code-alphazero-machine-learning-algorithm/
 RegEx ChatGPT Generator:
 https://www.freecodecamp.org/news/use-chatgpt-to-build-a-regex-generator/
 
-MinGPT Python Pytorch:
+[X]MinGPT Python Pytorch:
 https://github.com/karpathy/minGPT
 https://www.youtube.com/watch?v=kCc8FmEb1nY
 https://github.com/karpathy/ng-video-lecture
-NanoGPT:
+[X]NanoGPT:
 https://github.com/karpathy/nanoGPT
 [X] 15+ hour playlist for GPT/Neural Networks Training:
 https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=2
 OCR(Optical Character Recognition) Model-physical book reading app
 https://neptune.ai/blog/building-deep-learning-based-ocr-model
-Twitter AI Chatbot:
+[X]Twitter AI Chatbot: *REQUIRES PAID SIGNUP*
 https://www.youtube.com/watch?v=SWd_KU70C0s&ab_channel=TechWithTim
 https://dev.to/mindsdb/build-a-celebrity-twitter-chatbot-with-gpt-4-3l34
 Stable Diffusion Deployment:
@@ -84,10 +84,11 @@ ChatGPT Course x5 Projects:
 https://www.freecodecamp.org/news/chatgpt-course-use-the-openai-api-to-create-five-projects/
 FullStack App With ChatGPT:
 https://www.youtube.com/watch?v=GizsSo-EevA&ab_channel=freeCodeCamp.org
+[X]GPT4All, Run ChatGPT Locally:
+https://github.com/nomic-ai/gpt4all
+
 Webscraping with ChatGPT:
 https://www.youtube.com/watch?v=qo_fUjb02ns&ab_channel=BeyondFireship
-GPT4All, Run ChatGPT Locally:
-https://github.com/nomic-ai/gpt4all
 
 WebScraper For Zillow(Raw land=landwatch.com, listserve email list from realtors):
 https://data-ox.com/scraping-zillow-a-detailed-guide/
