@@ -327,6 +327,7 @@ IX-Interview Questions-Page 99-=================================================
     pg220-238 Solutions to Linked Lists
     pg239-252 Solutions to Stacks and Queues
     pg253-287 Solutions to Trees and Graphs
+    pg288-300 Solutions to Bit Manipulation
 hash table= is a data structure that maps keys to values for highly efficient lookup. There are a number of ways of implementing this.
      we can implement the hash table with a balanced binary search tree.This gives us an 0 (log N) lookup time. The advantage of this is potentially using 
      less space, since we no longer allocate a large array. 
