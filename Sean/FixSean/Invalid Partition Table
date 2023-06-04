@@ -1,5 +1,15 @@
 Problem= invalid partition table
 Broke on morning of June 3 2023
-broke After downloading some resume templates(zipped-pdfs) and epsteins foia
+broke After downloading some resume templates(zipped-pdfs) and epsteins foia(400+ mb, PDFile)
+problem originally began where it would continuously boot to BIOS, changed some bios settings and now get to 'invalid partition table'
 downloaded windows 7 isos, added to USB drive, still won't boot properly
 attempting to repair with chkdsk
+opened up laptop, removed dust, hard drives still intact
+bios can still read hard drives 
+attempted to update bios with ez flash-did not work
+downloaded new copy of windows 7, attempted to boot from USB, didn't work
+?using apple and boot camp to create USBs-might be incompatible-not/can't use rufus
+?potentially need a new usb stick to install, might be incompatible
+?potentially try using a windows 7 installation disk
+attempting to recover data for MC saves, and all image downloads(havn't backed up in months-of lost progress, 50-100 images a day)
+
