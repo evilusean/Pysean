@@ -10,6 +10,7 @@ bios can still read hard drives
 attempted to update bios with ez flash-did not work
 downloaded new copy of windows 7, attempted to boot from USB, didn't work
 ?using apple and boot camp to create USBs-might be incompatible-not/can't use rufus
+  potential fix-dual booting from boot camp- download rufus- and flash usb from that-ensure to use GPT
 ?potentially need a new usb stick to install, might be incompatible
 ?potentially try using a windows 7 installation disk
 ?if all else fails attempt to boot from newer version of windows and install that(all data lost, months of progress gone)
