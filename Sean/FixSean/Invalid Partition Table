@@ -1,6 +1,7 @@
 Problem= invalid partition table
 Broke on morning of June 3 2023
 broke After downloading some resume templates(zipped-pdfs) and epsteins foia(400+ mb, PDFile)
+partitioned C drive 2?ish months before to add more space 64 -> 128 gb
 problem originally began where it would continuously boot to BIOS, changed some bios settings and now get to 'invalid partition table'
 downloaded windows 7 isos, added to USB drive, still won't boot properly
 attempting to repair with chkdsk
@@ -11,5 +12,7 @@ downloaded new copy of windows 7, attempted to boot from USB, didn't work
 ?using apple and boot camp to create USBs-might be incompatible-not/can't use rufus
 ?potentially need a new usb stick to install, might be incompatible
 ?potentially try using a windows 7 installation disk
+?if all else fails attempt to boot from newer version of windows and install that(all data lost, months of progress gone)
+  windows 7 was removed from microsofts support in january 2023- can't download from official site
 attempting to recover data for MC saves, and all image downloads(havn't backed up in months-of lost progress, 50-100 images a day)
 
