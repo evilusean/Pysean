@@ -25,6 +25,8 @@ Attempted to put mac into dual boot mode using boot camp - after partitioning fo
   returned to macintosh screen with partition in tact by holding the 'option' key on restart
 Attempting to create bootable USB drive on linux using  balenaeEtcher-told us to use woeUSB-will need to format old USB first
 
+June 5
+bumped bootable usb while attempting to write OS, attempting to fix
 using terminal to repair an old corrupted usb drive on macos:
 diskutil list #finds the usb
 diskutil verifyDisk /dev/disk2 #checks usb, received back error message:
@@ -44,3 +46,8 @@ diskutil repairDisk /dev/disk2 #attempt to repair corrupted usb, received error:
   Proceed? (y/N) y
   Error repairing map: MediaKit reports bad partition or no map found (-5324)
 USB drive still not working, attempting updates on macos for next step- havn't used mac in years, outdated
+
+attempt 2:
+diskutil list #find usb
+diskutil unmountDisk force /dev/disk2 #forced unmount
+sudo dd if=/dev/zero of=/dev/disk2 bs=1024 count=1024
