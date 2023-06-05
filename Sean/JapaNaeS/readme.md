@@ -3,3 +3,4 @@ A repository started for learning Japanese and escaping communist canada</br>
 Hiragana = used for native japanese word functions. </br>
 Katakana = used for words borrowed from other languages </br>
 Kanji = used for words of chinese origin adapted into Japanese </br>
+Romaji = Japanese words written in Latin-Roman Alphabet(phonetically) </br>
