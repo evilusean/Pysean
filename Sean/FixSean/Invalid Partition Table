@@ -54,6 +54,7 @@ sudo dd if=/dev/zero of=/dev/disk2 bs=1024 count=1024
 diskutil eraseDisk free EMPTY /dev/disk2 #tried to erase, got error:
   Error: -69760: Unable to write to the last block of the device
 Spent 12 hours trying to fix a 5$ corrupted USB..
+Removed bootcamp windows partition from mac using bootcamp,
 
 Links:
 5 Ways to Fix the “Invalid Partition Table” Error on Windows:
