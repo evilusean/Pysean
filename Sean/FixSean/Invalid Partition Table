@@ -24,3 +24,23 @@ Attempted to put mac into dual boot mode using boot camp - after partitioning fo
   so the USB i used for windows 7 is NOT BOOTABLE-
   returned to macintosh screen with partition in tact by holding the 'option' key on restart
 Attempting to create bootable USB drive on linux using  balenaeEtcher-told us to use woeUSB-will need to format old USB first
+
+using terminal to repair an old corrupted usb drive on macos:
+diskutil list #finds the usb
+diskutil verifyDisk /dev/disk2 #checks usb, received back error message:
+  Nonexistent, unknown, or damaged partition map scheme
+  If you are sure this disk contains a (damaged) APM, MBR, or GPT partition
+  scheme, you might be able to repair it with "diskutil repairDisk /dev/disk2"  
+diskutil eraseDisk JHFS+ BackupMaster disk2 #format the usb, recieved error:
+  Started erase on disk2
+  Unmounting disk
+  Creating the partition map
+  Error: -69760: Unable to write to the last block of the device
+diskutil repairDisk /dev/disk2 #attempt to repair corrupted usb, received error:
+  Nonexistent, unknown, or damaged partition map scheme
+  If you are sure this disk contains a (damaged) APM, MBR, or GPT partition map,
+  you can hereby try to repair it enough to be recognized as a map; another
+  "diskutil repairDisk /dev/disk2" might then be necessary for further repairs
+  Proceed? (y/N) y
+  Error repairing map: MediaKit reports bad partition or no map found (-5324)
+USB drive still not working, attempting updates on macos for next step- havn't used mac in years, outdated
