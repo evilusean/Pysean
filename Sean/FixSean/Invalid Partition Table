@@ -53,3 +53,11 @@ diskutil unmountDisk force /dev/disk2 #forced unmount
 sudo dd if=/dev/zero of=/dev/disk2 bs=1024 count=1024
 diskutil eraseDisk free EMPTY /dev/disk2 #tried to erase, got error:
   Error: -69760: Unable to write to the last block of the device
+Spent 12 hours trying to fix a 5$ corrupted USB..
+
+Links:
+5 Ways to Fix the “Invalid Partition Table” Error on Windows:
+https://www.makeuseof.com/windows-invalid-partition-table-fix/?newsletter_popup=1
+https://recoverit.wondershare.com/computer-problems/invalid-partition-table.html
+https://support.microsoft.com/en-us/windows/create-installation-media-for-windows-99a58364-8c02-206f-aa6f-40c3b507420d
+https://www.datanumen.com/blogs/7-solutions-invalid-partition-table-error-windows/
