@@ -19,7 +19,7 @@ downloaded new copy of windows 7, attempted to boot from USB, didn't work
 attempting to recover data for MC saves, and all image downloads(havn't backed up in months-of lost progress, 50-100 images a day)
 
 June 04 2023
-Attempted to put mac into dual boot mode - after partitioning for ~hour, on restart went to a screen that said 
+Attempted to put mac into dual boot mode using boot camp - after partitioning for ~hour, on restart went to a screen that said 
   "no bootable device - insert boot disk and press any key"
   so the USB i used for windows 7 is NOT BOOTABLE-
   returned to macintosh screen with partition in tact by holding the 'option' key on restart
