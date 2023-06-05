@@ -23,3 +23,4 @@ Attempted to put mac into dual boot mode using boot camp - after partitioning fo
   "no bootable device - insert boot disk and press any key"
   so the USB i used for windows 7 is NOT BOOTABLE-
   returned to macintosh screen with partition in tact by holding the 'option' key on restart
+Attempting to create bootable USB drive on linux using  balenaeEtcher-told us to use woeUSB-will need to format old USB first
