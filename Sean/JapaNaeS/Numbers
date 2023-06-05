@@ -1,0 +1,28 @@
+"""
+4, 7 and 9 all have two possible readings. In times past, the Japanese created the preferable alternatives, yon, nana, and kyu, because of superstition
+around the sounds shi, shichi and ku (which can mean “death”, “place of death” and “agony”).
+after 10, only those preferred pronunciations – yon, nana and kyu – are used for 4, 7 and . So for double-digit numbers ending in a 0, like 40, 
+we usually say _yonjuu and not shi juu.
+"""
+
+いち Ichi = One,
+に Ni = Two,
+さん San = Three,
+し / よん Shi / Yon = Four,
+ご Go = Five,
+ろく Roku = Six,
+しち / なな ShiChi / Nana = Seven,
+はち HaChi = Eight,
+きゅう/く Kyu/Ku = Nine,
+じゅう Juu = Ten,
+
+じゅういち Juu-Ichi = Eleven,
+じゅうに Juu-Ni = Twelve,
+じゅうさん Juu-San = Thirteen,
+じゅうよん Juu-Yon = Fourteen,
+じゅうご Juu-Go = Fifteen,
+じゅうろく Juu-Roku = Sixteen,
+じゅうなな Juu-Nana = Seventeen,
+じゅうはち Juu-Hachi = Eighteen,
+じゅうきゅう Juu-Kyu = Nineteen,
+
