@@ -51,3 +51,5 @@ attempt 2:
 diskutil list #find usb
 diskutil unmountDisk force /dev/disk2 #forced unmount
 sudo dd if=/dev/zero of=/dev/disk2 bs=1024 count=1024
+diskutil eraseDisk free EMPTY /dev/disk2 #tried to erase, got error:
+  Error: -69760: Unable to write to the last block of the device
