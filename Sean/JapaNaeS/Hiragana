@@ -46,17 +46,31 @@
 ね = ne #looks like a sNAIl hiding behind a NAIl
 の = no #looks like a no sign
 
-は = ha
-ひ = hi
-ふ = Fu (foo)
-へ = he
-ほ = ho
+は = ha # looks like a fused 'H' and 'a'
+ひ = hi # looks like a smiling mouth going 'HEhehe'
+ふ = Fu (foo) #looks like Mt. FUji
+へ = he # points to HEaven
+ほ = ho # looks like a HOrses face with a mane
+  
+  " Dakouten-H(B)
+  ば = ba
+  び = bi
+  ぶ = bu
+  べ = be
+  ぼ = bo
+  
+  ゜Circle Handakuten-H(P)
+  ぱ = pa
+  ぴ = pi
+  ぷ = pu
+  ぺ = pe
+  ぽ = po
 
-ま = ma
-み = mi
-む = mu
-め = me
-も = mo
+ま = ma #looks like a MAn in a MAsk
+み = mi #musical note MI, do re MI
+む = mu #looks like a cow, MOOooooooo
+め = me # chopsticks(ぬ = nu) dropped some NOOdles and made a MEss
+も = mo # looks like a MOniter lizard
 
 や = ya
 ゆ = yu
@@ -85,4 +99,7 @@ In Japanese they use corner brackets for quotes instead of "" quotation marks so
   when found at the end of a word, acts a glottal stop
 じ and ぢ are both ji, most of the time you use じ, ぢ is rarely used
 の = no #particle used to denote possession
+は = ha # ha(wa) is a topic marking particle, the word or phrase that comes before it is the topic of the sentence, when used like this sounds like wa
+へ = he # he is the particle used to indicate the place towards which something is moving, pronounced as 'e' when used like this
+は = ha and ほ = ho, both have a HOop, ほ = ho has 2 horizontal lines, は = ha ha has HAlf the lines, ほ = ho, ho has the wHOle amount
 """
