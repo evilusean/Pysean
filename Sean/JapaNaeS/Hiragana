@@ -40,11 +40,11 @@
   で = de
   ど = do
 
-な = na
-に = ni
-ぬ = nu
-ね = ne
-の = no
+な = na #knat knot, similar to 'ta' but more complex and ta is taller
+に = ni #looks like a KNEE
+ぬ = nu #looks like a pair of chopsticks holding NOOdles
+ね = ne #looks like a sNAIl hiding behind a NAIl
+の = no #looks like a no sign
 
 は = ha
 ひ = hi
@@ -78,9 +78,11 @@ Dakuten (濁音) Referes to adding ゛two little marks in the top right, changin
 Handakuten (半濁点) Refers to adding a ゜circle to the top right, changing the pronunciation of h-line to (P)
 In Japanese they use corner brackets for quotes instead of "" quotation marks so you won't confuse Dakuten
 い = i #acts as a suffix to most adjectives in japanese
+な = na # acts as another suffix particle to connect 2 nouns (clean room)
 お = o #commonly found at beginning of words to imply politeness
 か = ka #question marking particle; when used at the end of a sentence, denotes a question
 つ = tsu # has a tiny version called chisai tsu(小さい「っ」) turns a consonant into a double consonant
   when found at the end of a word, acts a glottal stop
 じ and ぢ are both ji, most of the time you use じ, ぢ is rarely used
+の = no #particle used to denote possession
 """
