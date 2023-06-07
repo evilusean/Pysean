@@ -1,26 +1,44 @@
-あ = a 
-い = i
-う = u
-え = e
-お = o
+あ = a #looks like an Apple
+い = i #looks like 2 I's
+う = u #looks like a boxer getting hit saying 'Ugh'
+え = e #looks like an E-ninja(energetic)
+お = o #looks like a ufO, can differentiate from 'a' because of floating dongle
 
-か = ka
-き = ki
-く = ku
-け = ke
-こ = ko
+か = ka #looks like a blade CUtting a stick
+き = ki #looks like a KEY
+く = ku #likes like a KUku's beak
+け = ke #looks like a KEg
+こ = ko #looks like 2 KOi fish swimming beside eachother
 
-さ = sa
-し = shi (she)
-す = su
-せ = se
-そ = so
+  が = ga
+  ぎ = gi
+  ぐ = gu
+  げ = ge
+  ご = go
 
-た = ta
-ち = chi
-つ = tsu
-て = te
-と = to
+さ = sa # looks like a sad face
+し = shi (she) # looks like a fiSHIng hook
+す = su # looks like a SUper sip straw in a glass
+せ = se # looks like a sideways face SAYing something
+そ = so #looks like a SEWing stitch
+
+  ざ = za
+  じ = ji
+  ず = zu
+  ぜ = ze
+  ぞ = zo
+
+た = ta #looks like ta
+ち = chi #CHEErleader vs SAd face(mirror image)
+つ = tsu #looks like a TSUnami
+て = te #looks like a dogs TAIl
+と = to # looks like a TOrnado
+
+  だ = da
+  ぢ = ji
+  づ = zu
+  で = de
+  ど = do
 
 な = na
 に = ni
@@ -54,3 +72,15 @@
 を = o
 
 ん = n
+
+"""
+Dakuten (濁音) Referes to adding ゛two little marks in the top right, changing the pronunciation of k-line(g), s-line(z), t-line(d) and h-line(b)
+Handakuten (半濁点) Refers to adding a ゜circle to the top right, changing the pronunciation of h-line to (P)
+In Japanese they use corner brackets for quotes instead of "" quotation marks so you won't confuse Dakuten
+い = i #acts as a suffix to most adjectives in japanese
+お = o #commonly found at beginning of words to imply politeness
+か = ka #question marking particle; when used at the end of a sentence, denotes a question
+つ = tsu # has a tiny version called chisai tsu(小さい「っ」) turns a consonant into a double consonant
+  when found at the end of a word, acts a glottal stop
+じ and ぢ are both ji, most of the time you use じ, ぢ is rarely used
+"""
