@@ -6,4 +6,4 @@ Romaji = Japanese words written in Latin-Roman Alphabet(phonetically) </br>
 Kanji = used for words of chinese origin adapted into Japanese </br>
   On-yomi = way to read kanji from chinese pronounciation </br>
   Kun-yomi = way to read kanji from japanese pronounciation </br>
-
+Furigana = Hiragana characters are used to spell out the pronunciation of a kanji be being written above(or beside)
