@@ -10,11 +10,19 @@
 け = ke #looks like a KEg
 こ = ko #looks like 2 KOi fish swimming beside eachother
 
+  きゃ = kya
+  きゅ = kyu
+  きょ = kyo
+
   が = ga
   ぎ = gi
   ぐ = gu
   げ = ge
   ご = go
+  
+    ぎゃ = gya
+    ぎゅ = gyu
+    ぎょ = gyo
 
 さ = sa # looks like a sad face
 し = shi (she) # looks like a fiSHIng hook
@@ -22,11 +30,19 @@
 せ = se # looks like a sideways face SAYing something
 そ = so #looks like a SEWing stitch
 
+  しゃ = sha
+  しゅ = shu
+  しょ = sho
+
   ざ = za
   じ = ji
   ず = zu
   ぜ = ze
   ぞ = zo
+  
+    じゃ = ja
+    じゅ = ju
+    じょ = jo
 
 た = ta #looks like ta
 ち = chi #CHEErleader vs SAd face(mirror image)
@@ -39,6 +55,10 @@
   づ = zu
   で = de
   ど = do
+  
+  ちゃ = cha
+  ちゅ = chu
+  ちょ = cho
 
 な = na #knat knot, similar to 'ta' but more complex and ta is taller
 に = ni #looks like a KNEE
@@ -46,11 +66,19 @@
 ね = ne #looks like a sNAIl hiding behind a NAIl
 の = no #looks like a no sign
 
+  にゃ = nya
+  にゅ = nyu
+  にょ = nyo
+
 は = ha # looks like a fused 'H' and 'a'
 ひ = hi # looks like a smiling mouth going 'HEhehe'
 ふ = Fu (foo) #looks like Mt. FUji
 へ = he # points to HEaven
 ほ = ho # looks like a HOrses face with a mane
+  
+  ひゃ = hya
+  ひゅ = hyu
+  ひょ = hyo
   
   " Dakouten-H(B)
   ば = ba
@@ -59,12 +87,21 @@
   べ = be
   ぼ = bo
   
+    びゃ bya
+    びゅ = byu
+    びょ = byo
+  
   ゜Circle Handakuten-H(P)
   ぱ = pa
   ぴ = pi
   ぷ = pu
   ぺ = pe
   ぽ = po
+    
+    ぴゃ = pya
+    ぴゅ = pyu
+    ぴょ = pyo
+  
 
 ま = ma #looks like a MAn in a MAsk
 み = mi #musical note MI, do re MI
@@ -72,15 +109,23 @@
 め = me # chopsticks(ぬ = nu) dropped some NOOdles and made a MEss
 も = mo # looks like a MOniter lizard
 
-や = ya
-ゆ = yu
-よ = yo
+  みゃ = mya
+  みゅ = myu
+  みょ = myo
+
+や = ya #looks like a YAk
+ゆ = yu #looks like a YUnicorn
+よ = yo #looks like a YOyo on a finger
 
 ら = ra #looks like a RAbbit
 り = ri #looks like a RIver
 る = ru #looks like a hand holding a RUby
 れ = re #looks like a REindeer looking up
 ろ = ro # (る = ru) RUby was RObbed
+  
+  りゃ = rya
+  りゅ = ryu
+  りょ = ryo
 
 わ = wa
 を = o
@@ -90,6 +135,12 @@
 """
 Dakuten (濁音) Referes to adding ゛two little marks in the top right, changing the pronunciation of k-line(g), s-line(z), t-line(d) and h-line(b)
 Handakuten (半濁点) Refers to adding a ゜circle to the top right, changing the pronunciation of h-line to (P)
+Youon(拗音)Another group of additional Japanese hiragana called 拗音 youon is formed by adding smaller version of ya, yu or yo (ゃ, ゅ or ょ)to hiragana
+  Remove the 'I' sound at the end of the character it was added to
+Sokuon (促音) When a small tsu (っ) called 促音 (sokuon) is added, it means the following consonant is geminated or doubled (double consonants). 
+  This small (っ) forms the double consonants with the following character. This also means after we pronounce the previous consonant, we pause for 
+  the same amount of time used to pronounce the consonant, then continue to pronounce the following consonant.
+Chouon (長音)Long Vowels. For long vowels, we normally add a second vowel following the first vowel. 
 In Japanese they use corner brackets for quotes instead of "" quotation marks so you won't confuse Dakuten
 い = i #acts as a suffix to most adjectives in japanese
 な = na # acts as another suffix particle to connect 2 nouns (clean room)
@@ -103,3 +154,4 @@ In Japanese they use corner brackets for quotes instead of "" quotation marks so
 へ = he # he is the particle used to indicate the place towards which something is moving, pronounced as 'e' when used like this
 は = ha and ほ = ho, both have a HOop, ほ = ho has 2 horizontal lines, は = ha ha has HAlf the lines, ほ = ho, ho has the wHOle amount
 """
+
