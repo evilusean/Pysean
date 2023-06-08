@@ -127,10 +127,10 @@
   りゅ = ryu
   りょ = ryo
 
-わ = wa
-を = o
+わ = wa #looks like a white sWAn sitting in the WAter
+を = o #looks like a crack in the wAll
 
-ん = n
+ん = n #looks like italicized N
 
 """
 Dakuten (濁音) Referes to adding ゛two little marks in the top right, changing the pronunciation of k-line(g), s-line(z), t-line(d) and h-line(b)
@@ -153,5 +153,7 @@ In Japanese they use corner brackets for quotes instead of "" quotation marks so
 は = ha # ha(wa) is a topic marking particle, the word or phrase that comes before it is the topic of the sentence, when used like this sounds like wa
 へ = he # he is the particle used to indicate the place towards which something is moving, pronounced as 'e' when used like this
 は = ha and ほ = ho, both have a HOop, ほ = ho has 2 horizontal lines, は = ha ha has HAlf the lines, ほ = ho, ho has the wHOle amount
+を = o, wo(o) is the object marking particle, never in a word, the word before it is the object of the sentence
+ん = n #you can never start a word with ん = n, it can only be foun in the middle or at the end, pronunciation 'n' 'ng' 'm' depends on word coming next
 """
 
