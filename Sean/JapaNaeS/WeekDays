@@ -1,0 +1,54 @@
+ようび = youbi = Day
+曜日 = -yōbi = Day
+月曜日 げつようび getsuyoubi = Monday
+火曜日 かようび kayoubi = Tuesday	
+水曜日 すいようび suiyoubi = Wednesday
+木曜日 もくようび mokuyoubi	= Thursday
+金曜日 きんようび kinyoubi = Friday	
+土曜日 どようび doyoubi = Saturday	
+日曜日 にちようび nichiyoubi = Sunday	
+
+月 = Getsu / Tsuki = Moon
+火 = Ka = Fire
+水 = Sui / Mizu = Water
+木 = moku = Wood
+金 = kin = gold
+土 = do = soil
+日 = Nichi = Sun / Day 
+
+今日 きょう kyou	= today
+昨日 きのう kinou = yesterday
+一昨日 おととい ototoi	= the day before yesterday
+明日 あした ashita	= tomorrow
+明後日 あさって = asatte	the day after tomorrow
+一日 いちにち ichinichi	= all day long
+週 しゅう shuu = week
+今週 こんしゅう konshuu	= this week
+先週 せんしゅう senshuu =	last week
+来週 らいしゅう raishuu	= next week
+月 げつ getsu	= month
+今月 こんげつ kongetsu	= this month
+先月 せんげつ sengetsu	= last month
+来月 らいげつ raigetsu = next month
+年 ねん nen	= year
+今年 ことし kotoshi	= this year
+去年 きょねん kyonen = last year
+来年 らいねん rainen = next year
+
+"""
+the particle に (ni) is used for words depicting time, place, and the direction of action. This means that days of the week will almost always be followed by the particle
+  金曜日にライブへ行きました” (Kinyoubi ni raibu e ikimashita). =  “I went to a concert on Friday”
+the subject marker が (ga) and the topic marker は (wa) will take precedence if the day of the week is the subject and/or topic of the sentence.
+  “金曜日がライブの日です” (Kinyoubi ga raibu no hi desu) = “Friday is the day of the concert,”
+if a day is used as a possessive, it will take the particle の (no).
+  “金曜日のライブはすごかった!” (Kinyoubi no raibu wa sugokatta!) = “Friday’s concert was awesome!”
+native speakers often drop the particles from days of the week and other date-related words. You could say,
+  “金曜日, ライブへ行きました” (Kinyoubi, raibu e ikimashita) and still be correct.
+"""
+火曜日のランチはかならずパスタです. Kayoubi no ranchi wa kanarazu pasta desu. = Tuesday’s lunch is always spaghetti. 
+金曜日に試験があります. Kinyoubi ni shaken ga arimasu. = I have a test on Friday.
+明日が私の誕生日です. Ashita ga watashi no tanjoubi desu. = Tomorrow is my birthday.
+来週, うちのおばさんの家に行きます. Raishuu, uchi no obsa-san no ie ni ikimasu. = We’re going to my aunt’s house next week.
+月曜日にデートがあります. Getsuyoubi ni deeto ga arimasu. = I have a date on Monday.
+
+
