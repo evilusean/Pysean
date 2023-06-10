@@ -5,16 +5,16 @@ after 10, only those preferred pronunciations – yon, nana and kyu – are used
 we usually say _yonjuu and not shi juu.
 """
 
-いち Ichi = One,
-に Ni = Two,
-さん San = Three,
-し / よん Shi / Yon = Four,
-ご Go = Five,
-ろく Roku = Six,
-しち / なな ShiChi / Nana = Seven,
-はち HaChi = Eight,
-きゅう/く Kyu/Ku = Nine,
-じゅう Juu = Ten,
+一 いち Ichi = One,
+二 に Ni = Two,
+三 さん San = Three,
+四 し / よん Shi / Yon = Four,
+五 ご Go = Five,
+六 ろく Roku = Six,
+七 しち / なな ShiChi / Nana = Seven,
+八 はち HaChi = Eight,
+九 きゅう/く Kyu/Ku = Nine,
+十 じゅう Juu = Ten,
 
 じゅういち Juu-Ichi = Eleven,
 じゅうに Juu-Ni = Twelve,
@@ -34,17 +34,78 @@ we usually say _yonjuu and not shi juu.
 ななじゅう Nana-Juu = Seventy,
 はちじゅう Hachi-Juu = Eighty,
 きゅうじゅう Kyu-Juu = Ninety,
-ひゃく Hyaku = One Hundred,
+百 ひゃく Hyaku = One Hundred,
+千	せん (sen) = 1,000
+万	まん (man) = 10,000
+十万	じゅうまん (juuman) = 100,000
+百万	ひゃくまん (hyakuman) = 1,000,000
+千万	せんまん (senman) = 10,000,000
+一億	いちおく (ichioku) = 100,000,000
+十億	じゅうおく (juuoku) = 1,000,000,000
+一兆	いっちょう (icchou) = 1,000,000,000,000
 
 にじゅうさん Ni-Juu-San = 23,
 よんじゅうきゅう Yon-Juu-Kyu = 49,
 ごじゅうはち Go-Juu-Hachi = 58,
 きゅうじゅうなな Kyu-Juu-Nana = 97,
 
+"""
+The biggest difference is that the big numbers are divided by units of 4 (or 10,000) rather than 3 (1,000). So once you get past 10,000, it can be a bit confusing to 
+  think of one million as “one hundred ten-thousands” at first.
+The other thing to take note of is that some numbers conjugate differently with certain counters. The ones to look out for are 1, 3, 6, and 8.
+三分 (sanpun, “three minutes”)
+六 (6) changes the “h” kana to “pp,” like 六匹 (roppiki, “six animals”).
+八 (8) changes “h” counters the same as 6, usually. 
+hen counting people in Japanese, you use the counter ~人 (nin) for 3 or more people.
+
+For one person, you say ひとり (hitori), and for two people you say ふたり (futari). Any number after that is the Sino-Japanese number system followed by ~人, 
+  such as 三人 (sannin, “three people”).
+  
+For long, thin objects, like pens, chopsticks, or bottles, the counter is ~本 (hon).
+四本のペン (yon hon no pen, “four pens”).
+
+Although 本 means “book” in Japanese, it isn’t the counter for books (that’s ~冊, satsu, which is the counter for bound objects, like manga).
+
+~本 is also the counter for things like roads, rivers, and train tracks – anything that travels that is very long and thin. 
+  It’s also used for long-distance telephone calls and travel routes.
+  
+Used for small objects, connect ~個 (ko) to the number to count it. And it’s also used for round objects, like apples: リンゴ二個 (ringo niko, ‘two apples”).
+
+When counting small animals, you use ~匹 (hiki), like dogs and cats.
+For larger animals, like horses or elephants, you use ~頭 (tou).
+For example, 三匹の犬 (sanbiki no inu, “three dogs” – also note the change from h to b in hiki) and 三頭の馬 (santou no uma, “three horses”).
+
+Yes, even cars, your washer and dryer, and your video game console for playing games in Japanese have their own counter. Bicycles fall under this category, too.
+You use ~台 (dai) for these objects, like 二台の車 (nidai no kuruma, “two cars”).
+
+To express time in Japanese, you’ve guessed it, you use counters! You express seconds with ~秒 (byou), minutes with ~分 (fun or pun), hours with ~時 (ji), and length
+of time with ~時間 (jikan).
+For months, you use ~月 (getsu), and for years you use ~年 (nen).
+
+Other counters you’ll stumble across often are ~枚 (mai), ~回 (kai), and ~階 (kai or gai).
+
+~枚 is used to count flat objects, like paper. ~回 is used to express the number of times, like the number of times in a week you workout.
+  ~階 is used to count the number of floors in a building.
+
+In Japanese, numbers can come before or after the item being counted.
+But they typically come after the item + particle, such as はがきを五枚買います (Hagaki wo gomai kaimasu, “I will buy 5 postcards”). はがき (item counted) を (particle) 五枚 
+  (number + counter) 買います (verb).
+If you put the number before the item, then it needs の (no) to connect them.
+Reversing the last sentence, 五枚のはがきを買います (Gomai no hagaki wo kaimasu) means the same thing but puts the emphasis on the quantity. It’s usually said this way in 
+  response to a question (like “How many did you buy?”).
+
+Japanese Ordinal Numbers:
+Japanese ordinal numbers express order or sequence, like first, second, and third.
+In Japanese, you add 第~ (dai) before the number.
+So first is 第一 (dai ichi)、第二 (dai ni), and so on.
+For numbers with counters that you’re giving in a sequence, you add ~目 (me). So “for the first time” is 一回目 (ikkai me). “Third person” is 三人目 (sannin me).
+
+To say “number” in Japanese, you can say 数 (kazu) to express a number as quantity, or 数字 (suuji) as in figures or cardinal numbers. “To count” is 数える (kazoeru).
+If you need to express yourself in mathematical terms, here are some words you can use:
+Plus: プラス (purasu) or 足す (tasu) Minus: マイナス (mainasu) Equals: は (wa) Multiply: 掛ける (kakeru) Divide: 割る (waru) Half: 半分 (hanbun) Point: 点 (ten)
+
+Saying Japanese phone numbers out loud is pretty straightforward. You always read the numbers as single digits, then you say “の” (no) wherever the dash is.
+So the number 123-456-7890 would be いち に さん の よん ご ろく の なな はち きゅう まる(ichi ni san no yon go roku no nana hachi kyuu maru).
 
 
-
-
-
-
-
+"""
