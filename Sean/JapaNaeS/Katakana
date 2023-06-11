@@ -2,7 +2,7 @@
 イ = i #looks like an EAsel
 ウ = u	#looks like hiragana う
 エ = e #looks like Elevator doors
-オ = o
+オ = o #looks like an Opera singer
 
 カ = ka
 キ = ki
@@ -54,3 +54,6 @@
 ヲ = wo
 
 ン = n
+"""
+same pronunciation as hiragana, used for foreign words, onomatopeia, and italic(emphasis)
+"""
