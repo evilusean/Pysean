@@ -4,11 +4,17 @@
 エ = e #looks like Elevator doors
 オ = o #looks like an Opera singer
 
-カ = ka
-キ = ki
-ク = ku
-ケ = ke
-コ = ko
+カ = ka #similar hiragana ka
+キ = ki #similar to hiragana ki, looks like a KEy
+ク = ku # looks like a KUku's tail
+ケ = ke # looks like rotated english 'K'
+コ = ko # looks like a road with 2 COrners
+
+  ガ = ga
+  ギ = gi
+  グ = gu
+  ゲ = ge
+  ゴ = go
 
 サ = sa
 シ = si
@@ -56,4 +62,19 @@
 ン = n
 """
 same pronunciation as hiragana, used for foreign words, onomatopeia, and italic(emphasis)
+伸ばし棒 nobashibou のばしぼう = used to indicate a long vowel in katakana '-' after a vowel = literally means 'stretching word'
+to make digraphs use a small version of the previous character
+similar to hiragana, katakana has dakuten with '' 2 strokes in top right, same pronunciation
 """
+
+KataKana Digraphs:
+Characters: ヤ, ユ, ヨ.
+
+キャ, キュ, キョ, ギャ, ギュ, ギョ.
+シャ, シュ, ショ, ジャ, ジュ, ジョ.
+チャ, チュ, チョ, ニャ, ニュ, ニョ.
+ヒャ, ヒュ, ヒョ, ビャ, ビュ, ビョ, ピャ, ピュ, ピョ.
+ミャ, ミュ, ミョ, リャ, リュ, リョ.
+
+
+
