@@ -16,17 +16,34 @@
   ゲ = ge
   ゴ = go
 
-サ = sa
-シ = si
-ス = su
-セ = se
-ソ = so
+サ = sa #looks like a SAddle
+シ = shi #looks like a SInking ship
+ス = su #looks like a SUper skier
+セ = se #similar to hiragana se
+ソ = so #looks like a SOft ice cream cone
 
-タ = ta
-チ = ti
-ツ = tu
-テ = te
-ト = to
+  ザ = za
+  ジ = ji
+  ズ = zu
+  ゼ = ze
+  ゾ = zo
+  
+  シェ = she
+  ジェ = je
+
+タ = ta #looks like a person with a TAblet
+チ = chi #looks like a CHIcken
+ツ = tsu #looks like a TUna fish head
+テ = te #looks like a TElephone pole
+ト = to #looks like a TOtem pole
+
+  ダ = da
+  ヂ = ji
+  ヅ = zu
+  デ = de
+  ド = do
+  
+  チェ = che
 
 ナ = na
 ニ = ni
@@ -36,7 +53,7 @@
 
 ハ = ha
 ヒ = hi
-フ = hu
+フ = fu
 ヘ = he
 ホ = ho
 
@@ -65,6 +82,7 @@ same pronunciation as hiragana, used for foreign words, onomatopeia, and italic(
 伸ばし棒 nobashibou のばしぼう = used to indicate a long vowel in katakana '-' after a vowel = literally means 'stretching word'
 to make digraphs use a small version of the previous character
 similar to hiragana, katakana has dakuten with '' 2 strokes in top right, same pronunciation
+to differentiate シ(shi) and ツ(tsu) look at the angles of the strokes ツ(tsu) points down and シ(shi) go accross
 """
 
 KataKana Digraphs:
