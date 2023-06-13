@@ -4,17 +4,48 @@
 エ = e #looks like Elevator doors
 オ = o #looks like an Opera singer
 
+  イィ = yi
+  イェ = ye
+  
+  ヴ = vu
+  ヴァ = va
+  ヴィ = vi
+  ヴェ = ve
+  ヴォ = vo  
+  ヴィェ = vye
+  
+  キェ = kye
+  ギェ = gye
+
 カ = ka #similar hiragana ka
 キ = ki #similar to hiragana ki, looks like a KEy
 ク = ku # looks like a KUku's tail
 ケ = ke # looks like rotated english 'K'
 コ = ko # looks like a road with 2 COrners
+  
+  キャ = kya
+  キュ = kyu
+  キョ = kyo
+  
+  クァ = kwa
+  クィ = kwi
+  クェ = kwe
+  クォ = kwo
 
   ガ = ga
   ギ = gi
   グ = gu
   ゲ = ge
   ゴ = go
+  
+    ギャ = gya
+    ギュ = gyu
+    ギョ = gyo
+    
+    グァ = gwa
+    グィ = gwi
+    グェ = gwe
+    グォ = gwo
 
 サ = sa #looks like a SAddle
 シ = shi #looks like a SInking ship
@@ -22,14 +53,27 @@
 セ = se #similar to hiragana se
 ソ = so #looks like a SOft ice cream cone
 
+  シャ = sha
+  シュ = shu
+  ショ = sho
+  シェ = she
+  
+  スィ = si
+
   ザ = za
   ジ = ji
   ズ = zu
   ゼ = ze
   ゾ = zo
   
-  シェ = she
-  ジェ = je
+    ジャ = ja
+    ジュ = ju
+    ジョ = jo
+    ジェ = je
+  
+    ズィ = zi
+  
+
 
 タ = ta #looks like a person with a TAblet
 チ = chi #looks like a CHIcken
@@ -37,19 +81,38 @@
 テ = te #looks like a TElephone pole
 ト = to #looks like a TOtem pole
 
+  チャ = cha
+  チュ = chu
+  チョ = cho
+  チェ = che
+  
+  ツァ = tsa
+  ツィ = tsi
+  ツェ = tse
+  ツォ = tso
+  
+  ティ = ti
+  テゥ = tu
+
   ダ = da
   ヂ = ji
   ヅ = zu
   デ = de
   ド = do
   
-  チェ = che
-
+    ディ = di
+    デゥ = du
+  
 ナ = na #looks like a KNife with a curved blAde
 ニ = ni #similar to hiragana に = ni 
 ヌ = nu #looks like a NOOse
 ネ = ne #looks like a NEst in a tree
 ノ = no #looks like a NO sign
+
+  ニャ = nya
+  ニュ = nyu
+  ニョ = nyo
+  ニェ = nye
 
 ハ = ha #looks like a roof on a HOUse
 ヒ = hi #looks like a HEEl of a foot
@@ -57,26 +120,77 @@
 ヘ = he #same as hiragana, points to HEaven
 ホ = ho #looks like a shining HOly cross
 
-マ = ma
-ミ = mi
-ム = mu
-メ = me
-モ = mo
+  ヒャ = hya
+  ヒュ = hyu
+  ヒョ = hyo
+  ヒェ = hye
+  
+  ファ = fa
+  フィ = fi
+  フェ = fe
+  フォ = fo
+  フィェ = fye
+  
+  ホゥ = hu
 
-ヤ = ya
-ユ = yu
-ヨ = yo
+  バ = ba
+  ビ = bi
+  ブ = bu
+  ベ = be
+  ボ = bo
+    
+    ビャ = bya
+    ビュ = byu
+    ビョ = byo
+    ビェ = bye	
+  
+  パ = pa
+  ピ = pi
+  プ = pu
+  ペ = pe
+  ポ = po
+  
+    ピャ = pya
+    ピュ = pyu
+    ピョ = pyo
+    ピェ = pye
 
-ラ = ra
-リ = ri
-ル = ru
-レ = re
-ロ = ro
+マ = ma #looks like a MAnta ray
+ミ = mi #has a MIddle line
+ム = mu #looks like a MOOses antlers
+メ = me #looks like MAIl (draw a rectangle around it)
+モ = mo #similar to hiragana も = mo
 
-ワ = wa
-ヲ = wo
+  ミャ = mya
+  ミュ = myu
+  ミョ = myo
+  ミェ = mye
 
-ン = n
+ヤ = ya #similar to hiragana や = ya
+ユ = yu #looks like a YU-boat parascope
+ヨ = yo #YOke pulled by 2 YOxen
+
+ラ = ra #looks like a ROcking chair
+リ = ri #similar to hiragana り = ri
+ル = ru #looks like ROOts of a tree
+レ = re #looks like a RAzor blade
+ロ = ro #looks like a RObots mouth
+  
+  リャ = rya
+  リュ = ryu
+  リョ = ryo
+  リェ = rye
+  
+  ラ゜= la
+  リ゜= li
+  ル゜= lu
+  レ゜= le
+  ロ゜= lo
+
+ワ = wa #looks like a WIne glass
+ヲ = wo #looks like a WOrld Olympic torch
+
+ン = n #looks like a spacecraft eNtering earths atmosphere
 """
 same pronunciation as hiragana, used for foreign words, onomatopeia, and italic(emphasis)
 伸ばし棒 nobashibou のばしぼう = used to indicate a long vowel in katakana '-' after a vowel = literally means 'stretching word'
