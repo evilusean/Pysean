@@ -1,3 +1,4 @@
+""" DIAL 119 TO CALL AN AMBULANCE"""
 Face:
 1.hair = 髪 = kami
 2. eye = 目 = me
@@ -187,7 +188,138 @@ syringe = 注射器 = chūshaki
 thermometer = 体温計 = taionkē
 waiting room = 待合室 = machiai-shitsu
 
-===============================================================================================================================================Dental
+Which ward is he/she in? = 病棟はどこですか。 = byōtō wa doko desu ka?
+What are the visiting hours? = 面会時間はいつですか。 = menkai-jikan wa itsu desu ka?
+
+He/She is in ward… = …病棟です。 = …byōtō desu.
+Visiting hours are from … to… = 面会時間は…から…までです。 = menkai-jikan wa …kara …made desu.
+public/private hospital = 公立／私立病院 = kōritsu/shiritsu byōin
+A&E = 救急医療科 = kyūkyū iryōka
+physiotherapist = 理学療法士 = rigaku ryōhōshi
+radiographer = X線技師 = ekkusu-sen gishi
+surgeon = 外科医 = geka-i
+operation = 手術 = shujutsu
+scan = スキャン = sukyan
+defibrillator = 除細動器 = josaidōki
+intensive care = 集中治療 = shūchū chiryō
+diagnosis = 診断 = shindan
+to undergo surgery = 手術を受ける = shujutsu o ukeru
+to be admitted/discharged = 入院／退院する = nyūin/tai-in suru
+air ambulance = ドクターヘリ = dokutā heri
+ambulance = 救急車 = kyūkyūsha
+crutches = 松葉づえ = matsubazue
+drip = 点滴 = tenteki
+hospital bed = 病院ベッド = byōin beddo
+monitor = モニター = monitā
+operating theatre = 手術室 = shujutsu-shitsu 
+oxygen mask = 酸素マスク = sanso masuku
+ward = 病棟 = byōtō
+wheelchair = 車椅子 = kuruma-isu
+X-ray = レントゲン = rentogen
+Zimmer frame® = 歩行補助器 = hokō hojoki
+
+INJURY |  けが
+YOU MIGHT SAY…
+Can you call an ambulance? = 救急車を呼んでください。 = kyūkyūsha o yonde kudasai.
+I’ve had an accident. = 事故を起こしました。 = jiko o okoshimashita.
+I’ve hurt my… = …を痛めました。 = …o itamemashita.
+I’ve broken my… = …の骨を折りました。 = …no hone o orimashita.
+I’ve sprained my… = …をくじきました。 = …o kujikimashita.
+I’ve cut myself. = 切りました。 = kirimashita.
+I’ve burnt myself. = やけどしました。 = yakedo shimashita.
+I’ve hit my head. = 頭を打ちました。 = atama o uchimashita.
+
+Do you feel dizzy? = 気が遠くなりそうですか。 = ki ga tōku nari-sō desu ka?
+Do you feel sick? = 吐き気がしますか。 = hakike ga shimasu ka?
+I’ve called an ambulance. = 救急車を呼びました。 = kyūkyūsha o yobimashita.
+You need to be admitted. = 入院してください。 = nyūin shite kudasai.
+
+pulse = 脈拍 = myakuhaku
+concussion = 脳震とう = nōshintō
+accident = 事故 = jiko
+fall = 転落 = tenraku
+dislocation = 脱臼 = dakkyū
+sprain = 捻挫 = nenza
+scar = 傷跡 = kizuato
+whiplash = むち打ち症 = muchiuchishō
+swelling = むくみ = mukumi
+tourniquet = 止血帯 = shiketsutai
+recovery position = 回復体位 = kaifuku tai-i
+CPR = 心肺蘇生法 = shinpai sosēhō
+neck brace = けいつい装具 = kētsui sōgu
+plaster cast = ギプス = gipusu
+splint = 添え木 = soegi
+to be unconscious = 気を失っている = ki o ushinatte iru
+to take his/her pulse = 脈を測る = myaku o hakaru
+to injure oneself = けがをする = kega o suru
+to fall = 転落する = tenraku suru
+to break one’s arm = 腕を折る = ude o oru
+to twist one’s ankle = 足首をひねる = ashikubi o hineru
+blister = まめ = mame
+bruise = 打ち身 = uchimi
+burn = 火傷 = yakedo
+cut = 切り傷 = kirikizu
+fracture = 骨折 = kossetsu
+graze = 擦り傷 = surikizu
+splinter = とげ = toge
+sting = 虫刺され = mushisasare
+sunburn = 日焼けの炎症 = hiyake no enshō
+adhesive tape = 絆創膏 = bansōkō 
+bandage = 包帯 = hōtai
+First-aid kit = 救急箱 = kyūkyūbako
+gauze = ガーゼ = gāze
+ice pack = 氷のう = hyōnō
+ointment = 軟膏 = nankō
+plaster(bandaid) = 救急絆創膏 = kyūkyū bansōkō
+sling = 吊り包帯 = tsuri hōtai
+tweezers = ピンセット = pinsetto
+
+ILLNESS | 病気
+I have a cold. = 風邪をひきました。 = kaze o hikimashita.
+I have flu. = インフルエンザにかかりました。 = infuruenza ni kakarimashita.
+I have a rash. = 発疹が出ました。 = hasshin ga demashita.
+I have a sore stomach. = お腹が痛いです。 = onaka ga itai desu.
+I have a temperature. = 熱があります。 = netsu ga arimasu.
+I feel shivery/dizzy. = ぞくぞく／ふらふらします。 = zokuzoku/furafura shimasu.
+I feel faint. = 気が遠くなりそうです。 = ki ga tōku nari-sō desu.
+I have asthma/diabetes. = 喘息／糖尿病があります。 = zensoku/tōnyōbyō ga arimasu.
+
+You should go to a pharmacy/clinic. = 薬局／医者に行ったほうがいいですよ。 = yakkyoku/isha ni itta hō ga ii desu yo.
+You need to rest. = 休んだほうがいいですよ。 = yasunda hō ga ii desu yo.
+
+heart attack = 心臓発作 = shinzō hossa
+stroke = 脳卒中 = nōsotchū
+infection = 感染 = kansen
+ear infection = 耳感染 = mimi kansen
+virus = ウィールス = wiirusu
+cold = 風邪 = kaze
+flu = インフルエンザ = infuruenza
+chicken pox = 水ぼうそう = mizubōsō
+stomach bug = お腹の風邪 = onaka no kaze
+food poisoning = 食中毒 = shokuchūdoku
+vomiting = 嘔吐 = ōto
+diarrhoea = 下痢 = geri
+constipation = 便秘 = benpi
+coeliac disease = セリアック病 = seriakku-byō
+diabetes = 糖尿病 = tōnyōbyō
+epilepsy = てんかん = tenkan
+asthma = 喘息 = zensoku
+cancer = 癌 = gan
+migraine = 偏頭痛 = henzutsū
+inhaler = 吸入器 = kyūnyūki
+insulin = インシュリン = inshurin
+period pain = 生理痛 = sēritsū
+to have high/low blood pressure = 血圧が高い／低い = ketsuatsu ga takai/hikui
+to cough = 咳が出る = seki ga deru
+to sneeze = くしゃみをする = kushami o suru
+to vomit = 吐く = haku
+to faint = 気が遠くなる = ki ga tōku naru
+Fever = 熱 = netsu
+nausea = 吐き気 = hakike
+rash = 発疹 = hasshin 
+to give birth = 出産する = shussan suru
+
+Dental===============================================================================================================================================
 Can I book an emergency appointment? = 救急の予約がしたいんですが。 = kyūkyū no yoyaku ga shitai n desu ga.
 I have toothache. = 歯が痛いです。 = ha ga itai desu.
 I have an abscess. = うんでいます。 = unde imasu.
@@ -220,3 +352,37 @@ dentist’s drill = 歯科用ドリル = shikayō doriru
 dentures = 入れ歯 = ireba 
 gums = 歯茎 = haguki 
 teeth = 歯 = ha
+
+Optical===============================================================================================================================================
+Can I book an appointment? = 予約したいんですが。 = yoyaku shitai n desu ga.
+Do you repair glasses? = 眼鏡を直してもらえますか。 = megane o naoshite moraemasu ka?
+
+YOU MIGHT HEAR…
+Your appointment is at … o’clock. = 予約は…時です。 = yoyaku wa …ji desu.
+Look up/down/ahead. = 上／下／前を見てください。 = ue/shita/mae o mite kudasai.
+
+ophthalmologist = 眼科医／眼医者 = ganka-i/me-isha
+reading glasses = 読書用メガネ = dokusho yō megane
+bifocals = 遠近両用眼鏡 = enkin ryōyō megane
+hard/soft contact lenses = ハード／ソフトレンズ = hādo/sofuto renzu
+conjunctivitis = 結膜炎 = ketsumakuen
+stye = ものもらい = monomorai
+cataracts = 白内障 = hakunaishō
+blurred vision = かすみ目 = kasumime
+short-sighted = 近視 = kinshi
+long-sighted = 遠視 = enshi
+visually impaired = 視覚障害者 = shikaku shōgaisha
+blind = 目の不自由な = me no fujiyū-na
+colour-blind = 色盲の = shikimō no
+to wear glasses = 眼鏡を掛ける = megane o kakeru
+to wear contacts = コンタクトを使う = kontakuto o tsukau
+Contact lenses = コンタクトレンズ = kontakuto renzu
+contact lens case = コンタクトレンズケース = kontakuto renzu kēsu
+eye chart = 視力表 = shiryoku hyō
+eye drops = 目薬 = megusuri
+eye test = 視力検査 = shiryoku kensa
+frames = フレーム = furēmu
+glasses = 眼鏡 = megane
+glasses case = 眼鏡ケース = megane kēsu
+optician = 眼鏡屋 = megane-ya
+
