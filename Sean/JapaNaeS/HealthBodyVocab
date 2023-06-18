@@ -1,0 +1,222 @@
+Face:
+1.hair = 髪 = kami
+2. eye = 目 = me
+3. ear = 耳 = mimi
+4. nose = 鼻 = hana
+5. jaw = あご = ago
+6. forehead = 額 =hitai
+7. cheek = ほお =hō
+8. mouth = 口 = kuchi
+9. chin = あご = ago
+
+Hand:
+1. wrist = 手首 = tekubi
+2. knuckle = 指関節 = yubi kansetsu
+3. fingernail = 爪 = tsume
+4. palm = 手のひら = tenohira
+5. thumb = 親指 = oyayubi
+6. finger = 手の指 = te no yubi
+
+Foot:
+1. big toe = 足の親指 = ashi no oyayubi
+2. toe = 足の指 = ashi no yubi
+3. sole = 足の裏 = ashi no ura
+4. heel = かかと = kakato
+5. toenail = 足のつめ = ashi no tsume
+6. ankle = くるぶし = kurubushi
+
+Body - Front:
+1. Head = 頭 = atama
+2. neck = 首 =kubi
+3. chest = 胸 = mune
+4. abdomen = 腹 = hara
+5. thigh = 腿 = momo
+6. knee = ひざ = hiza
+7. shin = むこうずね = mukouzune
+8. face = 顔 = kao
+9. arm = 腕 = ude
+10. hand = 手 = te
+11. leg = 脚 = ashi
+12. foot = 足 = ashi
+
+Body - Back:
+1. shoulder = 肩 = kata
+2. back = 背中 = senaka
+3. hip/buttock = 臀部／尻 = denbu/shiri
+4. elbow = ひじ = hiji
+5. lower back = 腰 = koshi
+6. calf = ふくらはぎ = fukurahagi
+
+Body - Internal:
+skeleton = 骨格 = kokkaku
+organ = 臓器 = zōki
+brain = 脳 = nō
+heart = 心臓 = shinzō
+lung = 肺 =hai
+liver = 肝臓 =kanzō
+stomach = 胃 = i
+kidney = 腎臓 = jinzō
+intestines = 腸 = chō
+digestive system = 消化器官 = shōka kikan
+bladder = 膀胱 = bōkō
+blood = 血液／血 = ketsueki/chi
+oxygen = 酸素 = sanso
+joint = 関節 = kansetsu
+bone = 骨 = hone
+muscle = 筋肉 = kinniku
+tendon = 腱 =ken
+tissue = 組織 = soshiki
+cell = 細胞 = saibō
+artery = 動脈 = dōmyaku
+vein = 静脈 = jōmyaku
+
+Skeleton:
+1. Skull = 頭蓋骨 = zugaikotsu
+2. collarbone = 鎖骨 = sakotsu
+3. humerus = 上腕骨 = jōwankotsu
+4. radius = とう骨 = tōkotsu
+5. ulna = 尺骨 = shakkotsu
+6. pelvis = 骨盤 = kotsuban
+7. kneecap = 膝蓋骨 = shitsugaikotsu
+8. vertebrae = 椎骨 = tsuikotsu
+9. breastbone = 胸骨 = kyōkotsu
+10. ribs = 肋骨 = rokkotsu
+11. spine = 脊柱 = sekichū
+12. femur = 大腿骨 = daitaikotsu
+13. fibula = ひ骨 = hikotsu
+14. tibia = 脛骨 = kēkotsu
+
+throat = のど = nodo
+genitals = 性器 =sēki
+breast = 乳房 = chibusa
+eyelash = まつ毛 = matsuge
+eyebrow = 眉毛 = mayuge
+eyelid = まぶた = mabuta
+nostrils = 鼻の孔 =hana no ana
+lips = 唇 =kuchibiru
+tongue = 舌 = shita
+skin = 皮膚 = hifu
+(body) hair = 髪 = kami
+height = 身長 = shinchō
+weight = 体重 = taijū
+sense of hearing = 聴覚 = chōkaku
+sense of sight = 視覚 =shikaku
+sense of smell = 嗅覚 = kyūkaku
+sense of taste = 味覚 = mikaku
+sense of touch = 触覚 = shokkaku
+to see = 見る = miru
+to smell = においをかぐ = nioi o kagu
+to hear = 聞く = kiku
+to touch = 触る = sawaru
+to taste = 味わう = ajiwau
+to lose one’s balance = バランスを失う = baransu o ushinau
+
+first-aid kit = 救急箱 = kyūkyūbako
+bandage = 包帯 = hōtai
+syringe = 注射器 = chūshaki
+tablet = 錠剤 = jōzai
+plaster = 救急絆創膏 = kyūkyū bansōkō
+
+I don’t feel well. = 気分がよくないです。 = kibun ga yokunai desu.
+I’ve been feeling unwell. = ずっと気分が悪いです。 = zutto kibun ga warui desu.
+I’ve hurt my… = …を痛めました。 = …o itamemashita.
+I’m going to be sick. = 吐きそうです。 = haki-sō desu.
+I need to see a doctor. = お医者さんに診てもらう必要があります。 = o-isha-san ni mite morau hitsuyō ga arimasu.
+I need to go to hospital. = 病院に行く必要があります。 = byōin ni iku hitsuyō ga arimasu.
+Call an ambulance. = 救急車を呼んでください。= kyūkyūsha o yonde kudasai.
+
+What’s wrong? = どうしましたか。 = dō shimashita ka?
+Where does it hurt? = どこが痛みますか。 = doko ga itamimasu ka?
+
+specialist = 専門医 = senmon’i
+first aid = 応急手当 = ōkyū teate
+patient = 患者 = kanja
+pain = 痛み = itami
+illness = 病気 = byōki
+mental health = 精神衛生 = sēshin ēsē
+treatment = 治療 = chiryō
+recovery = 回復 = kaifuku
+health insurance = 健康保険 = kenkō hoken
+health insurance card = 健康保険証 = kenkō hoken-shō
+healthy = 健康的な = kenkōteki-na
+to be unwell = 元気じゃない = genki ja nai
+to recover = 回復する = kaifuku suru
+to look after = 面倒を見る = mendō o miru
+to treat = 治療する = chiryō suru
+
+doctor = 医者／お医者さん = isha/o-isha-san
+hospital = 病院 = byōin
+nurse = 看護師 = kangoshi
+paramedic = 救急救命士 = kyūkyū kyūmēshi
+pharmacist = 薬剤師 = yakuzaishi
+pharmacy = 薬局／薬屋 = kusuri-ya/yakkyoku
+
+I’d like to make an appointment. = 予約したいんですが。 = yoyaku shitai n desu ga.
+I have an appointment with Dr… = …先生に予約してあります。 = …sensē ni yoyaku shite arimasu.
+I’m allergic to… = …にアレルギーがあります。 = …ni arerugii ga arimasu.
+I take medication for… = …の薬を飲んでいます。 = …no kusuri o nonde imasu.
+
+Your appointment is at … o’clock. = 予約は…時です。 = yoyaku wa …ji desu.
+The doctor/nurse will call you through. = 医師／看護師がお呼びします。 = ishi/kangoshi ga o-yobi shimasu.
+What are your symptoms? = どんな症状ですか。 = donna shōjō desu ka?
+May I examine you? = 診てみましょうか。 = mite mimashō ka?
+Tell me if that hurts. = 痛かったら言ってください。 = itakattara itte kudasai.
+Do you have any allergies? = 何かアレルギーがありますか。 = nanika arerugii ga arimasu ka?
+Do you take any medication? = 何か治療のために薬を飲んでいますか。 = nanika chiryō no tame ni kusuri o nonde imasu ka?
+Take two tablets twice a day. = 1日に2回、2錠ずつ飲んでください。 = ichi-nichi ni ni-kai, ni-jō zutsu nonde kudasai.
+You need to see a specialist. = 専門医に診てもらってください。 = senmon’i ni mite moratte kudasai.
+
+appointment = 予約 = yoyaku
+clinic = 診療所 = shinryōjo
+examination room = 診察室 = shinsatsu-shitsu
+examination = 診察 = shinsatsu
+test = 検査 = kensa
+antibiotics = 抗生物質 = kōsēbusshitsu
+the pill = ピル = piru
+sleeping pill = 睡眠薬 = suimin’yaku
+prescription = 処方せん = shohōsen
+home visit = 往診 = ōshin
+vaccination = 予防接種 = yobōsesshu
+injection = 注射 = chūsha
+to examine = 診察する = shinsatsu suru
+to be on medication = 薬物治療を受けている = yakubutsu chiryō o ukete iru
+blood pressure monitor = 血圧計 = ketsuatsukē
+examination table = 診察台 = shinsatsudai
+stethoscope = 聴診器 = chōshinki
+syringe = 注射器 = chūshaki
+thermometer = 体温計 = taionkē
+waiting room = 待合室 = machiai-shitsu
+
+===============================================================================================================================================Dental
+Can I book an emergency appointment? = 救急の予約がしたいんですが。 = kyūkyū no yoyaku ga shitai n desu ga.
+I have toothache. = 歯が痛いです。 = ha ga itai desu.
+I have an abscess. = うんでいます。 = unde imasu.
+My filling has come out. = 詰め物が取れました。 = tsumemono ga toremashita.
+I’ve broken my tooth. = 歯が折れました。 = ha ga oremashita.
+My dentures are broken. = 入れ歯が壊れました。 = ireba ga kowaremashita.
+
+We don’t have any emergency appointments available. = 救急の予約はできません。 = kyūkyū no yoyaku wa dekimasen.
+Your tooth has to come out. = 歯を抜かなければいけませんね。 = ha o nukanakereba ikemasen ne.
+You need a new filling. = 新しい詰め物をしなければいけませんね。 = atarashii tsumemono o shinakereba ikemasen ne.
+
+check-up = 定期健診 = tēki kenshin
+molar = 臼歯 = kyūshi
+incisor = 切歯 = sesshi
+canine = 犬歯 = kenshi
+wisdom teeth = 親知らず = oyashirazu
+filling = 詰め物 = tsumemono
+crown = 歯冠 = shikan
+root canal treatment = 根管治療 = konkan chiryō
+toothache = 歯痛 = shitsū
+abscess = 腫れ = hare
+extraction = 抜歯 = basshi
+to brush one’s teeth = 歯を磨く = ha o migaku
+braces = 歯列矯正器 = shiretsukōsēki
+dental floss = デンタルフロス = dentaru-furosu
+dental nurse = 歯科助手 = shika joshu
+dentist = 歯医者／歯科医 = haisha/shika-i
+dentist’s chair = 歯医者の椅子 = haisha no isu 
+dentist’s drill = 歯科用ドリル = shikayō doriru 
+dentures = 入れ歯 = ireba 
+gums = 歯茎 = haguki 
+teeth = 歯 = ha
