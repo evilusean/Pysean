@@ -1,0 +1,138 @@
+"""
+which ones end in  I (い) and which ones end in Na (な). These are the two main types of Japanese adjectives
+Unlike English, Japanese adjectives conjugate to fit the sentence.
+い-adjectives can simply drop in front of a noun as is, or be added to the end of a sentence and conjugated to fit the tense.
+if you wanted to say “dirty socks,” you would just drop the adjective 汚い in front of the noun, socks – 靴下. So you get 汚い靴下.
+But if you wanted to say “My socks are dirty,” you’d say 靴下が汚いです. Since this is in the present tense, all we have to do is add です to the end,
+If you wanted to express it in the past tense, you drop the い and add かった, like casual-form verb conjugation. So, 汚い becomes 汚かった (kitanakatta). 
+For negative and past negative, drop the final い and add くない (present) or くなかった (past). Again, 汚い would become present negative 汚くない (kitanakunai) or past 
+negative 汚くなかった (kitanakatta). In formal situations, you can use ありません instead of ない: 汚くありません (kitanakuarimasen).
+if you forget the opposite word? If you forget the word for “clean,” you can just say “It’s not dirty” or 汚くないです.
+If you want to join two adjectives, you drop the い and add くて to the first adjective only. So, let’s use 汚い靴下 again. 
+  Maybe these dirty socks are also stinky (臭い, nioi). So, we would drop the い from 汚い and change it to 汚くて. 
+  Then add the second adjective and noun: 汚くて臭い靴下 (kitanakute nioi kutsushita).
+
+な-adjectives, like い-adjectives, conjugate when placed at the end of sentences. But when used directly before a noun, they’re used as-is.
+If I wanted to say an “energetic child,” I would say 元気な子供 (genki na kodomo). 
+But if I wanted to say “The child is energetic,” I would drop な and add です: 子供は元気です (kodomo wa genki desu).
+To make this negative or past tense, you would conjugate the verb です like you normally would.
+でした (past), ではありません (present negative), ではありませんでした (past negative). 
+In casual form, this would be だ (present), だった (past), じゃない (present negative), and じゃなかった (past negative).
+To combine two な-adjectives, you only have to add で to connect them. So, if the child is energetic yet quiet, you could say
+子供は元気で静かです (kodomo wa genki de shizuka desu).
+
+Positive vs Negative: it’s best to learn opposite adjectives as pairs. It’ll be easier to memorize and recall them if you learn them together. 
+One of the most common, すごい, means “amazing” but it’s used to say everything from “That’s really cool” to an indifferent “Oh, I see.”
+  often shortened to a more casual すげー
+Not all Japanese colors are い or な adjectives. So, if you want to use them as adjectives, you combine them to the noun using the particle の. 
+  For example: ピンクの花 (pinku no hana, “pink flower”).
+"""
+Positive Feeling Adjectives:
+Good: 良い (yoi)
+Amazing: すごい (sugoi)
+Cool: かっこいい (kakkoii)
+Correct: 正しい (tadashii)
+Simple: 簡単な (kantan na)
+Kind: 優しい (yasashii)
+Happy: 嬉しい (ureshii)
+Energetic: 元気な (genki na)
+Enjoyable: 楽しい (tanoshii)
+Wonderful: 素晴らしい (subarashii) #often used to say “lovely” or “beautiful” as well.
+
+Negative Feeling Adjectives:
+Bad: 悪い (warui)
+Horrible: ひどい (hidoi)
+Lame: ダサい (dasai)
+Wrong, Incorrect: 間違った (machigatta) 
+  #間違った means “wrong,” but it doesn’t end in い or な. That’s because this is the past tense adjective form of the noun 間違い (machigai, “mistake, error”)
+  This adjective is only used in the past tense because to be “wrong” or “incorrect,” you must have already done the action or given the answer that is wrong.
+Difficult: 難しい (muzukashii)
+Mean: 失礼な (shitsurei na)
+Sad: 悲しい (kanashii)
+Lazy: めんどい (mendoi)
+Boring: つまらない (tsumaranai)
+Awful: 嫌な (iya na)
+
+Adjectives for size and weight:
+Big: 大きい (ookii)
+Small: 小さい (chiisai)
+Tall: 背が高い (se ga takai)
+Short: 背が低い (se ga hikui)
+Wide: 広い (hiroi)
+Narrow: 狭い (semai)
+Thick: 太い (futoi) #“thick” is often used to say “fat”
+Thin: 細い (hosoi)
+Heavy: 重い (omoi)
+Lightweight: 軽い (karui)
+
+Adjectives for Color:
+Red: 赤い (akai)
+Orange: オレンジ (orenji)
+Yellow: 黄色い (kiiroi)
+Green: 緑 (midori)
+Blue: 青い (aoi)
+Purple: 紫 (murasaki)
+Pink: ピンク (pinku)
+Black: 黒い (kuroi)
+White: 白い (shiroi)
+Grey: 灰色 (haiiro)
+Brown: 茶色 (chairo)
+
+Adjectives for Distance and Speed:
+Long: 長い (nagai)
+Short: 短い (mijikai) # 短い is “short,” but it’s not used to call someone short. You can describe objects with 短い, though, or things like hair: 髪が短いです
+Far: 遠い (tooi)
+Near: 近い (chikai)
+Deep: 深い (fukai)
+Shallow: 浅い (asai)
+High: 高い (takai)
+Low: 低い (hikui)
+Fast: 速い (hayai)
+Slow: 遅い (osoi) #遅い can also mean “late,” as in to show up late to an appointment, or to describe the late hour (遅い時間 – osoi jikan).
+
+Adjectives for Quantity:
+Many: 多い (ooi)
+Few, less: 少ない (sukunai)
+A little: 少し (sukoshi)
+A lot: たくさん (takusan)
+Enough: 十分な (juubun na)
+Lacking, not enough: 足りない (tarinai)
+
+Adjectives for Charasteristics:
+Delicious: おいしい (oishii)
+Disgusting: 不味い (mazui)
+Beautiful: 美しい (utsukushii)
+Ugly: 醜い (minikui)
+Expensive: 高い (takai) # it means both “expensive” and “tall/high.”
+Cheap: 安い (yasui)
+Hot: 暑い (atsui)
+Cold: 寒い (samui)
+New: 新しい (atarashii)
+Old: 古い (furui)
+Fresh: 新鮮な (shinsen na)
+Rotten: 腐った (kusatta)
+Bright: 明るい (akarui)
+Dark: 暗い (kurai)
+Clean: 清潔な (seiketsu na)
+Dirty: 汚い (kitanai)
+Soft: 柔らかい (yawarakai)
+Hard: 硬い (katai)
+Strong: 強い (tsuyoi)
+Weak: 弱い (yowai)
+Safe: 安全な (anzen na)
+Dangerous: 危ない (abunai)
+Wet: ぬれた (nureta)
+Dry: 乾いた (kawaita)
+Quiet: 静かな (shizuka na)
+Noisy: 騒々しい (souzoushii), うるさい (urusai)
+Busy: 忙しい (isogashii)
+Free: 暇な (hima na)
+Cute: 可愛い (kawaii)
+Pretty: きれいな (kirei na)
+Scary: 怖い (kowai)
+Round: 丸い (marui)
+Sharp: 鋭い (surudoi)
+Awful or amazing?: やばい (yabai)
+Good: うまい (umai)
+
+
