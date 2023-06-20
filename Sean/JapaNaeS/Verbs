@@ -1,3 +1,48 @@
+"""
+You have the stem of the verb, and you change the ending based on your meaning
+there are about 10 – 14 base verb conjugations, and about 150 ways to conjugate the verbs from there.
+There are only two irregular verbs in Japanese
+Many grammar patterns have similar rules once you know the present, past, negative, and continuous form in formal and informal Japanese. 
+There’s no future tense in Japanese. That’s right. Present tense is used to express the future as well, and it’s understood by context
+There are 3 Japanese verb groups. They are:
+  Godan verbs (五段動詞, godan-doushi), also called U-verbs or V1 verbs ( end with the う-row )
+  Ichidan verbs (一段動詞, ichidan-doushi), also called Ru-verbs or V2 verbs ( end in る)  they conjugate much easier than godan verbs
+  Irregular verbs (不規則動詞, fukisoku-doushi), also called V3 verbs
+Sometimes, godan (u) verbs can end in る, too.
+If it ends in a, o, or u + る, then it’s a godan verb.
+Ichidan verbs always end in “iru” or “eru”
+"""
+Godian (Uう verbs):
+話す (hanasu), “to speak”
+飲む (nomu), “to drink”
+死ぬ (shinu), “to die”
+聞く (kiku), “to hear”
+遊ぶ (asobu), “to play”
+買う (kau), “to buy”
+待つ (matsu), “to wait”
+
+Godan Verbs that end in iru/eru:
+走る (hashiru), “to run”
+帰る (kaeru), “to return home”
+要る (iru), “to need”
+切る (kiru), “to cut”
+知る (shiru), “to know”
+入る (hairu), “to enter”
+喋る (shaberu), “to chat”
+
+Ichidan Verbs / Ru-Verbs ( end in る)
+食べる (taberu), “to eat”
+見る (miru), “to see”
+出る (deru), “to leave”
+寝る (neru), “to sleep”
+起きる (okiru), “to get up/wake up”
+調べる (shiraberu), “to investigate”
+
+Irregular Verbs:
+する, suru
+来る, kuru
+
+Misc Verbs(unsorted):
 To do: する (suru)
 To be: です (desu)
 To become: なる (naru)
@@ -11,3 +56,109 @@ To eat: 食べる (taberu)
 あげる (Ageru) = to give “me giving something to someone else”
 くれる (Kureru) = to “give something from someone to me” (in other words, “receive”),
 もらう = to receive
+
+Japanese Verb Conjugation: Present Tense, Masu-Form and Plain Form===============================================================================================
+How do you conjugate present tense verbs in Japanese? Well, there are two ways: the formal masu-form, and the casual plain form.
+The masu-form is the polite form of Japanese. 
+  You’ll use it when speaking to strangers, co-workers, people of higher status, and any time you need to show respect and politeness.
+You’ll use plain form when you’re speaking with family or friends, people at the same level or younger than you, and anytime you’re in a casual situation.
+Present tense plain form is actually quite nice because it’s exactly what the word is in the dictionary. In fact, its other name is dictionary form for this reason.
+So, there’s no conjugation needed. Plain present tense of 食べる is just 食べる
+
+Present Polite Form:
+Verb Type /	Rule /	Example: Hiragana	Romanized
+る-verbs	/ Drop る and add ~ます / 	食べる → 食べます	= taberu → tabemasu
+う-verbs /	Change う to い-row and add ~ます /	飲む → 飲みます	= nomu → nomimasu
+Irregular verbs:
+する → します	= suru → shimasu
+来る → 来ます	= kuru → kimasu
+
+Past Tense: Formal Mashita-Form and Plain Ta-Form====================================================================================================================
+Learning past tense in polite mashita-form is easy. It’s exactly the same as masu-form, except you’ve changed the ending to ~ました, mashita, to mean the past.
+う-verbs are where you’re going to have to memorize some extra rules depending on which consonant comes before the final う. you conjugate 
+う-verbs depending on the final hiragana character. This can make conjugating these verbs a bit trickier to memorize, but with practice, it does become natural!
+
+Past Polite Form:
+Verb Type /	Rule	/ Example: Hiragana	Romanized
+る-verbs	/ Drop る and add ~ました /	食べる → 食べました	= taberu → tabemashita
+う-verbs	/ Change う to い-row and add ~ました /	飲む → 飲みました	= nomu → nomimashita
+Irregular verbs		:
+する → しました	= suru → shimashita
+来る → 来ました	= kuru → kimashita
+
+Past Plain Form:
+Verb Type	/ Rule	/ Example: Hiragana	Romanized
+る-verbs	/ Drop る and add ~た	/ 食べる → 食べた	= taberu → tabeta
+う-verbs	/ Ends in う, つ, or る: Drop final う / つ / る and add ~った	/ 買う → 買った =	kau → katta
+Ends in く: / Drop く and add ~いた	/ 聞く → 聞いた	= kiku → kiita
+Ends in ぐ: / Drop ぐ and add ~いだ	/ 泳ぐ → 泳いだ	= oyogu → oyoida
+Ends in す: / Drop す and add ~した	/ 話す → 話した	= hanasu → hanashita
+Ends in ぬ, ぶ, or む:/  Drop ぬ / ぶ / む and add ~んだ /	飲む → 飲んだ	= nomu → nonda
+Irregular verbs		:
+する → した	= suru → shita
+来る → 来た	= kuru → kita
+
+There are a handful of verbs that do not conjugate -ta and -te form
+One of the most notable (and common) is 行く (iku, “to go”). = 行く, iku → 行った, itta (not iita)
+
+Forming Negative Verbs in Japanese: Masen, Masen Deshita, Nai, and Nakatta=======================================================================================
+Masu-form. It’s pretty simple again: just add -masen (present negative) or -masen deshita (past negative) to the verb stem.
+Verbs ending in う as the final character change to わ not あ.
+  So 買う (kau, “to buy”) becomes かわない, kawanai, instead of かあない, kaanai
+  歌う (utau, “to sing”) becomes うたわない, utawanai, not うたあない, utaanai.
+
+Present Negative Polite Form:
+Verb Type /	Rule /	Example: Hiragana	Romanized
+る-verbs	/ Drop る and add ~ません	/ 食べる → 食べません	= taberu → tabemasen
+う-verbs	/ Change う to い-row and add ~ません /	飲む → 飲みません	= nomu → nomimasen
+Irregular verbs		:
+する → しません	= suru → shimasen
+来る → 来ません	= kuru → kimasen
+
+Past Negative Polite Form:
+Verb Type	/ Rule	/ Example: Hiragana	Romanized
+る-verbs	/ Drop る and add ~ませんでした	/ 食べる → 食べませんでした 	= taberu → tabemasen deshita
+う-verbs	/ Change う to い-row and add ~ませんでした	/ 飲む → 飲みませんでした	= nomu → nomimasen deshita
+Irregular verbs		:
+する → しませんでした	suru → shimasen deshita
+来る → 来ませんでした	kuru → kimasen deshita
+
+Present Negative Plain Form:
+Verb Type	/ Rule	/ Example: Hiragana	Romanized
+る-verbs	/ Drop る and add ~ない	/ 食べる → 食べない	= taberu → tabenai
+う-verbs	/ Change う to あ-row and add ~ない	/ 飲む → 飲まない	= nomu → nomanai
+Verbs ending in う: / Change う to わ and add ~ない / 買う → 買わない	= kau  → kawanai
+Irregular verbs		:
+する → しない	= suru → shinai
+来る → 来ない	= kuru → konai
+
+Past Negative Plain Form:
+Verb Type	/ Rule	/ Example: Hiragana	Romanized
+る-verbs	/ Drop る and add ~なかった	食べる → 食べなかった	= taberu → tabenakatta
+う-verbs	/ Change う to あ-row and add ~なかった	/ 飲む → 飲まなかった =	nomu → nomanakatta
+Verbs ending in う: / Change う to わ and add ~なかった / 買う → 買わなかった	= kau  → kawanakatta
+Irregular verbs		:
+する → しなかった	suru → shinakatta
+来る → 来なかった	kuru → konakatta
+
+Te-Form in Japanese============================================================================================================================================
+Te-form is the Japanese verb conjugation for “-ing” form, also known as the continuous form or present progressive.
+う-verbs have special conjugation again depending on the final hiragana.
+Te-form is conjugated the same as ta-form, except you change た, ta, to て, te. So if you mastered the plain past tense, te-form is easy
+ 行く is also irregular here, but in the same was as ta-form. It becomes 行って, itte, not iite.
+
+
+
+Present Progressive, Te-Form:
+Verb Type	/ Rule	/ Example: Hiragana	Romanized
+る-verbs	/ Drop る and add ~て	食べる → 食べて	= taberu → tabete
+う-verbs	/ Ends in う, つ, or る: Drop final う / つ / る and add ~って /	買う → 買って =	kau → katte
+Ends in く: / Drop く and add ~いて	/ 聞く → 聞いて =	kiku → kiite
+Ends in ぐ: / Drop ぐ and add ~いで	/ 泳ぐ → 泳いで	 = oyogu → oyoide
+Ends in す: / Drop す and add ~して	/ 話す → 話して	= hanasu → hanashite
+Ends in ぬ, ぶ, or む: / Drop ぬ / ぶ / む and add ~んで	/ 飲む → 飲んで	= nomu → nonde
+Irregular verbs		:
+する → して	suru → shite
+来る → 来て	kuru → kite
+
+ToDo: Conjugate all verbs and add to Anki Deck==========================================================================================================================
