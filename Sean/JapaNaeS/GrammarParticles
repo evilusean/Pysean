@@ -1,0 +1,256 @@
+"""
+Japanese particles are small words that indicate relations of words within a sentence. They follow other words such as nouns, verbs, adjectives are parts of a sentence. 
+Some but not all can be compared to prepositions in English. The Japanese language uses a total of 188 particles.
+"""
+Commonly Used:
+Particle = Formation = Example = Explanation
+は (wa) = [ A ] wa [ B ] desu. = [ A ] is [ B ]. = 昨日は雨だった。 = Kinō wa ame datta. = It was rainy yesterday
+  = は (wa) follows the topic the speaker wants to talk about. Therefore, wa（は）is often called topic marking particle. The “topic” is often the grammatical 
+  subject, but can be anything (including the grammatical object, and sometimes the verb), and it may also follow some other particles.
+
+を (o) = Noun + o (を) + verb = 私はチョコを食べます。 = Watashi wa choko o tabemasu. = I eat chocolate.
+  を (o) marks the grammatical object of a sentence. It follows nouns and noun phrases.
+
+も (mo) = [Object1] は [property1/action1] です = [Object2] も [property1/action1] です. = 
+A: 私はフランス人です。  = Watashi wa furansujin desu. = I am French. = B: 私もフランス人です。 = Watashi mo furansujin desu. = I am also French.
+  も (mo) functions as “also” or “too” in English. It is used to indicate that something which has previously 
+  been stated also holds true for the item currently under discussion.It replaces ga, wa or o when used.
+
+に (ni) = place + ni (に) = 学校に行きます。 = Gakkō ni ikimasu. = I go to school.
+  に (ni) indicates a place towards which someone or something moves. It is preceded by the name of the place and followed by a verb that indicates a moving action such 
+  as iku (行く) “to go.” 
+  It is also used with giving/receiving verbs and can then mean “from”.
+  In the case of passive verbs, it marks the grammatical agent, making it the same as “by” in English. (i.e. “my wallet was stolen by my brother.” ).
+  に is also used to indicate the location of existence when combined with the verbs いる or ある, making it the Japanese version of “at” (in some instances).
+
+へ (e) = location/direction + e(へ) = 彼へ 手紙を送りました。 = Kare e tegami o okurimasita. = I sent him a letter.
+  へ (e) is basically the same as に, except it emphasizes direction over arrival. The main difference is usage. へ is never used as “from”, “by”, “at”.
+  In addition, the particle の can follow the へ particle directly, whereas it cannot follow に.
+
+で (de) = location + de (で) = 私は家で 本を読みます。 =  Watashi wa ie de hon o yomimasu. = I read books at home.
+  で (de) is used to indicate the location of an action. The performer of the action (the subject) is followed by either of the particles wa or ga, and the place is 
+  followed by de. However, it can’t be used with with the verbs いる or ある.
+
+が (ga) = だれ が 来ますか。 = Dare ga kimasu ka. = Who will come?
+  が (ga) marks the grammatical subject of a sentence when it is first introduced to a conversation. It can also be used to join sentences, 
+  like the word “but,” though that が is technically a different word. The particle が can also be used to emphasize the subject or distinguish it from others. 
+  While は is used when a question word (who, where, etc.) comes after the topic in the sentence (レストランはどこですか。), we use the particle が when the question word 
+  is the subject or part of it.
+
+から (kara) = Noun + kara (から) = 学校から 家までどれくらいかかりますか。 = Gakkō kara ie made dorekurai kakarimasu ka? = How long does it take you to get home from school?
+  から (kara) indicates the source of an object or action. This starting position may be either a point in space (in which case it is translated as “from”), or a point in
+  time (in which case it is translated as “since” or “after”).
+
+まで (made) = Noun + made (まで) = 彼女と７時まで ドライブしました。 = Kanojo to shichi-ji made doraibu shimashita. = I went driving around with my girlfriend until 7 o’clock.
+  まで (made) indicates that an action/effect extends or reaches a specified limit or a point in time or space. It is therefore equivalent to the English “until.”
+
+と (to) = Noun + to (と) + Noun = 肉と 魚が好きです。 = Niku to sakana ga suki desu. = I like meat and fish.
+  と (to) is used to join nouns together into an exhaustive list that functions as a single noun: ”with,” “and.” It’s also the particle used to indicate a direct quote 
+  (from someone’s mind or speech), functioning like quotation marks in English.
+
+や (ya) = AやB AやBや = 赤や 黄色の花が咲いていた。 = Aka ya kīro no hana ga saiteita. = There were red, yellow, and other color flowers blooming.
+  や (ya) is used in the same way as the first sense of と, but the list is not exhaustive. It means “such things as A, B, and C.”
+
+の (no) = Object1 + の + Object2 = あなた の 名前はなんですか。 = Anata no namae wa nan desuka? = What’s your name?
+  の (no) indicates possession (functioning like the English “apostrophe-S”). In the structure A no B, B belongs to A, however, many nouns act like adjectives when 
+  followed by no. It directly follows nouns and noun phrases.
+
+ね (ne) = End of the sentence + ne (ね) = これは美味しいです ね 。 = Kore wa oishii desu ne . = This is delicious, isn’t it?
+  ね (ne) is used at the end of sentences, basically in the same way as an English tag question. If said with rising intonation, it indicates a request for confirmation
+  from the listener (i.e., “It’s a beautiful day, isn’t it?” ), whereas if said with falling intonation, it’s used as a rhetorical device (i.e.,
+  “It’s a beautiful day, isn’t it.” )
+
+よ (yo) = End of the sentence + yo (よ) = 明日私は行く よ 。 = Ashita Watashi wa iku yo . = I’ll go tomorrow!
+  よ (yo) is used by the speaker to express a strong conviction about something or to emphatically declare something.
+======================================================================================================================================================================
+Full List of Particles:
+List of 188 Japanese particles
+No	Particle	Meaning / usage
+1	は (wa)	Indicantes the topic of a sentence
+2	か (ka)	At the end of a sentence indicating a question
+3	が (ga)	Indicates the subject of a sentence
+4	に (ni)	Indicates a location
+5	の (no)	Indicates possession
+6	は (wa)	Indicates a contrast between 2 items
+7	に (ni)	Indicates time or frequency
+8	へ (e)	Indicates direction
+9	を (wo/o)	Indicates the direct object of a verb
+10	と (to)	Used to connect and list up multiple items
+11	や (ya)	Used to connect and partially list up multiple items
+12	など (nado)	Used with や (ya) to partially list up multiple items
+13	も (mo)	means “too”, “either”, “also”
+14	も (mo)	both…and…, neither…nor…
+15	に (ni)	Indicates the indirect object of a verb
+16	に (ni)	Indicates the surface of a object where some action takes place
+17	で (de)	Indicates the location of an action
+18	と (to)	Together with
+19	の (no)	Indicates an apposition
+20	から (kara)	Indicates a starting point in time or place
+21	より (yori)	Indicates a starting point in time or place but more formal than kara (20)
+22	まで (made)	Indicates a limit on time, space or quantity
+23	くらい (kurai)	Indicates an approximate amount
+24	ほど (hodo)	Indicates an approximate amount
+25	ばかり(bakari)	Indicates an approximate amount
+26	で (de)	Indicates a means or material
+27	か (ka)	Indicates a choice or alternative
+28	を (wo/o)	Indicates a point of departure
+29	を (wo/o)	Indicates a route of a movement/motion
+30	に (ni)	Indicates a point of arrival
+31	に (ni)	Indicates an entering motion
+32	に (ni)	Used together with a verb to express a purpose
+33	と (to)	Used when quoting someone
+34	と いう (to iu)	Indicates the name of something
+35	とか (toka)	“something like”
+36	で (de)	Indicates a limit or scope
+37	と (to)	Indicates a comparison
+38	より (yori)	Indicates a comparison
+39	より (yori)	Indicates superlative
+40	くらい (kurai)	Indicates a comparison
+41	ほど (hodo)	Indicates a comparison in a negative sentence
+42	か (ka)	someone, something
+43	も (mo)	“nothing”, nobody”, nowhere” if used with an interrogative word
+44	に (ni)	Used with a verb to indicate a change or choice
+45	をする (wo/o suru)	Expresses an occupation or position
+46	でも (demo)	Indicates emphasis
+47	でも (demo)	Together with an interrogative word it means “anything”, “anyone”, any time”
+48	で (de)	Indicates a cause or a reason
+49	から (kara)	Indicates a source such as a giver, a cause or material
+50	に (ni)	Indicates a person who gives something or who provides a service
+51	は (wa) + が (ga)	Indicates the relation between an object / subjects and a verb or adjective
+52	が (ga)	Connects two sentences with the meaning “but…”
+53	を (wo/o)	Used with an verb expressing emotions, it indicates the cause of this emotion
+54	で (de)	Indicates a state / condition of something
+55	で (de)	Limits numbers
+56	だけ (dake)	Indicates a limit on things or amounts
+57	だけ (dake)	Indicates a limit on an action or state
+58	で (de)	Indicates the time of completion or expiration of something
+59	でも (demo)	Following a noun, means “or something like this”
+60	も (mo)	Emphasizes in a positive or negative way
+61	でも (demo)	Indicates two or more items as an example of a larger list
+62	ばかり (bakari)	Indicates that an item, state or action is a single one
+63	ばかり (bakari)	Indicates an action was just completed
+64	ところ (tokoro)	Indicates that an action takes place, just took place or is about to take place
+65	が (ga)	Indicates the subject of subordinate clause when it is different from the subject of the main clause
+66	から (kara)	conjunction meaning “after” or “since”
+67	ながら (nagara)	Indicates that an action is happening simultaneously
+68	が (ga)	Indicates the subject of a relative clause
+69	の (no)	Indicates the subject of a relative clause
+70	から (kara)	Used as a conjunction and indicates a cause or reason
+71	ので (node)	Indicates a strong reason
+72	の (no)	Indicates a modified pronoun
+73	の (no)	Used to nominalize verbs & sentences
+74	なら (nara)	Used as a conjunction and indicates a supposition or condition
+75	なら (nara)	Indicates a topics and is used as an alternative to wa (No.1)
+76	と (to)	Indicates a condition that results in an inevitable outcome
+77	ば (ba)	Used as a conjunction to express a probable results
+78	ばいい (ba)	“all you have to do…”
+79	ば (ba)	Used to enumerate two or more actions or states
+80	たら (tara)	Used as a conjunction, indicates a supposition or condition
+81	たら (tara)	Used as a conjunction to indicate that one action takes place before the action described in the main sentence
+82	ところ (tokoro)	Used as a conjunction to indicate a condition that brings about a discovery
+83	ても (temo)	a conjunction meaning “even if”
+84	ても (temo)	Used with a set of contrasting verbs and adjectives
+85	ても (temo)	Together with an interrogative word it means “no matter what/where/who”
+86	ては (tewa)	Indicates a condition which will bring a negative conclusion
+87	のみ (nomi)	Indicates a limit (similar to だけ　dake)
+88	まで (made)	“even”, used to emphasize
+89	さえ (sae)	“even”, used to emphasize
+90	さえ (sae)	“if only” or “as long as”
+91	のに (noni)	“although”, “in spite of the fact that”
+92	ながら (nagara)	“although”, “though”, “but”
+93	とか (toka)	Indicates that a list of two ore more things or actions is not exhaustive
+94	たり (tari)	List of two or more actions in no particular sequence
+95	たり (tari)	Indicates actions or states that alternate
+96	のに (noni)	Indicates a purpose or function
+97	のです (no desu)	Asks for an explanation or reason
+98	きり (kiri)	Indicates a limit to an amount
+99	きり (kiri)	Indicates the last time a certain incident occured
+100	とも (tomo)	Used with numbers and counters to mean “both” or “all”
+101	ながら (nagara)	Used with numbers and counters to mean “both” or “all”
+102	しか (shika)	Used with a negative verb to indicate limits on conditions or quantities meaning “only”
+103	しかない (shika nai)	used with a verb meaning “to have no choice but to”
+104	し (shi)	Used as a conjunction, indicating two or more actions or states
+105	し (shi)	Used as a conjunction indicating a reason
+106	とも (tomo)	Indicates inclusion
+107	に (ni)	Indicates the one acting or the one acted upon
+108	か (ka)	Indicates uncertainty about something
+109	か (ka)	Indicates uncertainty about a state or reason
+110	だの (dano)	 Indicates two or more items or actions of a longer list (similar to toka とか)
+111	だの (dano)	Indicates a pair of opposite actions or states
+112	など (nado)	“something to the effect”
+113	やら (yara)	Indicates two or more items of a longer list
+114	やら (yara)	Indicates uncertainty
+115	ても (temo)	Indicates an approximate limit with the meaning of “at the most”
+116	とも (tomo)	Indicates an approximate maximum or minimum
+117	は (wa)	Indicates that a number is the higher or lowest limit
+118	と (to)	Emphasizes a number in a negative sentence
+119	など (nado)	Indicates examples
+120	くらい (kurai)	Expresses an extent of an action or condition similar to ぐらい gurai
+121	ほど (hodo)	Indicates the extend of an action or condition
+122	 ほど (hodo)	“the more… the more…”
+123	だけ (dake)	“as… as…”
+124	だけ (dake)	“the more… the more…”
+125	と (to)	“about to do something”, “trying to do something”
+126	と (to)	“even if…”, “whether… or not”
+127	なり (nari)	“either…”, “whether…or”
+128	なり (nari)	“anything”, “anyone”, “any time”
+129	こそ (koso)	Emphasizes the word preceding it
+130	こそ (koso)	Emphasizes a reason or a cause
+131	ては (tewa)	Expresses repetition of an action
+132	に (ni)	Joins two or more nouns to indicate a list of items
+133	に (ni)	Connects two or more items to indicate a matching or a contrast
+134	にしては (ni shite wa)	Indicates a generally agreed upon standard
+135	にとって (ni totte)	Indicates an effect or value of a person or thing
+136	について (ni tsuite)	“about”, “concerning” something or someone
+137	とも…とも (tomo… tomo)	“can’t say whether… or…”
+138	が (ga)	“even if”, “whether… or not”
+139	は (wa)	Emphasizes contrasting elements
+140	として (toshite)	Indicates status, capacity or function
+141	として (toshite)	Provides emphasis in a negative sentence
+142	ばかりでなく(bakari de naku)	“not only… but also”
+143	だけ (dake)	 used to express “not only…but also”
+144	のみ (nomi)	used to express “not only…but also”
+145	なり (nari)	“as soon as”
+146	がはやいか (ga hayai ka)	“as soon as”
+147	やいなや (ya ina ya)	“as soon as”
+148	かないうちに (ka nai uchi ni)	“no sooner had”, “hardly had”
+149	ばかり (bakari)	Indicates the only action left to do
+150	ばかりに (bakari ni)	Emphasizes a reason or cause
+151	すら (sura)	Emphasizes in the meaning of “even”
+152	など (nado)	Expresses a humble attitude towards an item
+153	とも (tomo)	“no matter what”, “even if”
+154	ともあろうひと (tomo aroo hito)	To express that someone did something not to be expected
+155	どころか (dokoro ka)	“far from”, “not to mention”
+156	だけに (dake ni)	Indicates a cause or reason
+157	までもない (made mo nai)	“there is no need to…”
+158	ものの (mono no)	“but” or “although”
+159	ところで (tokoro de)	“even if”
+160	けれども (keredomo)	Connects 2 sentences meaning “but” or “although”
+161	けれども (keredomo)	Indicates a preliminary remark
+162	が (ga)	Used to soften a statement or refusal
+163	けれども (keredomo)	Indicates a desire
+164	ね (ne)	At the end of a sentence to confirm a statement
+165	ね (ne)	At the end of a sentence to soften a request or suggestion
+166	ね (ne)	At the end of a sentence to indicate a reason or cause
+167	ねえ (nee)	At the end of a sentence to indicate emotion
+168	よ (yo)	At the end of a sentence to state a strong conviction
+169	よ (yo)	At the end of a sentence to articulate a request or suggestion
+170	かしら (kashira)	At the end of a sentence to express uncertainty, a request or a question and mainly used by women
+171	かな (kana)	At the end of a sentence to express uncertainty, a request or a question and mainly used by men
+172	な (na)	At the end of a sentence and used by men to confirm a statement
+173	な (na)	At the end of a sentence to express a prohibition, used by men
+174	なあ (naa)	At the end of a sentence to express emotion, used by men
+175	なあ (naa)	At the end of a sentence to express a desire
+176	の (no)	At the end of a sentence to express a question or soften a command, used by women
+177	わ (wa)	At the end of a sentence to soften a statement, used by women
+178	さ (sa)	At the end of a sentence to indicate slight emphasis, used by men
+179	こと (koto)	At the end of a sentence to indicate emotion, used by women
+180	こと (koto)	At the end of a sentence to express a suggestion or invitation, used by women
+181	もの (mono)	At the end of a sentence to express a reason or excuse
+182	とも (tomo)	At the end of a sentence to express an assertion
+183	ものか (monoka)	At the end of a sentence to express a negative determination, used by men
+184	や (ya)	At the end of a sentence to soften a statement, request or suggestion, used by men
+185	たら (tara)	At the end of a sentence to indicate a suggestion or proposal
+186	やら (yara)	At the end of a sentence to indicate a rhetorical question with a negative implication
+187	ぜ (ze)	At the end of a sentence to add for to sentence, used by men
+188	ぞ (zo)	At the end of a sentence to add force to a sentence or to express a question to oneself
