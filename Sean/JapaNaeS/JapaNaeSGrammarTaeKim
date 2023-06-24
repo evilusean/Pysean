@@ -6,6 +6,9 @@ Also: Android/iOS apps:
 https://play.google.com/store/apps/details?id=com.alexisblaze.japanese_grammar
 https://itunes.apple.com/app/id1366698942
 
+Dictionary of Japanese Grammar Reference:
+https://itazuraneko.neocities.org/grammar/dojg/dojgbasic#basic%E3%81%AF(1)
+
 Complete Guide:
 https://guidetojapanese.org/learn/complete/writing
 Grammar Guide:
@@ -107,10 +110,10 @@ one special character 々 that is really not a character. It simply indicates th
   For example, 「時時」 、「様様」、「色色」、「一一」 can and usually are written as 「時々」、「様々」、「色々」、「一々」.
 
 Basic Grammatical Structures 19-22: Expressing state-of-being ========================================================================================================
-19 ~だ = Da = Is, Declaring something is so and so using ~だ = Da vs Desu
-20 ~じゃない = Janai = Is Not, Conjugating to the negative state-of-being 
-21 ~だった = Daatta = Was, Conjugating to the past state-of-being 
-22 ~じゃなかった = JaNaKaata = Was Not, Conjugation summary
++19 ~だ = Da = Is, Declaring something is so and so using ~だ = Da vs Desu
++20 ~じゃない = Janai = Is Not, Conjugating to the negative state-of-being 
++21 ~だった = Daatta = Was, Conjugating to the past state-of-being 
++22 ~じゃなかった = JaNaKaata = Was Not, Conjugation summary
 +there is no verb for the state-of-being like the verb "to be" in English. You can declare what something is by attaching the「だ」 to a noun or な-adjective only. 
 +A state-of-being can be implied without using 「だ」! through context
 In Japanese, negative and past tense are all expressed by conjugation.
@@ -121,8 +124,26 @@ In Japanese, negative and past tense are all expressed by conjugation.
 
 23-26: Introduction to Particles 23 Defining grammatical functions with particles =====================================================================================
 24 The 「は」= ha, topic particle 
+associating a noun with another noun. This is done with something called particles. Particles are one or more Hiragana characters that attach to the end of a word to
+  define the grammatical function of that word in the sentence. 
+the meaning of a sentence can completely change just by changing the particles. For example, the sentence "Eat fish." can become "The fish eats."
+は = ha(wa) = The topic particle will allow us to express what our sentences are about. 
+   this character is normally pronounced as /ha/, it is pronounced /wa/ only when it is being used as the topic particle.
 25 The「も」= mo, inclusive topic particle
+the inclusive topic particle. It is essentially the topic particle with the additional meaning of "also". 
+Basically, it can introduce another topic in addition to the current topic. 
+The inclusion of 「も」 must be consistent with the answer.
 26 The 「が」 = ga, identifier particle
+It is also referred to as the subject particle but I hate that name since "subject" means something completely different in English grammar.
+Instead, I call it the identifier particle because the particle indicates that the speaker wants to identify something unspecified.
+The two particles 「は」 and 「が」 may seem very similar only because it is impossible to translate them directly into English. 
+  I often translate the topic particle as "as for; about" and the identifier particle as "the one; the thing"
+You can also think about the 「が」 particle as always answering a silent question.
+
+
+
+
+
 
 
 
