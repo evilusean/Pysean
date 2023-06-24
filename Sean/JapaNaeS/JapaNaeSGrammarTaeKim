@@ -106,9 +106,11 @@ words often have a string of kana (called okurigana) that come attached to the w
 one special character 々 that is really not a character. It simply indicates that the previous character is repeated. 
   For example, 「時時」 、「様様」、「色色」、「一一」 can and usually are written as 「時々」、「様々」、「色々」、「一々」.
 
-Basic Grammatical Structures======================================================================================================================================
-19-22: Expressing state-of-being 19 Declaring something is so and so using 「だ」20 Conjugating to the negative state-of-being=====================================
-21 Conjugating to the past state-of-being 22 Conjugation summary==================================================================================================
+Basic Grammatical Structures 19-22: Expressing state-of-being ========================================================================================================
+19 ~だ = Da, Declaring something is so and so using ~だ = Da vs Desu
+20 ~じゃない = Janai, Conjugating to the negative state-of-being 
+21 ~だった = Daatta, Conjugating to the past state-of-being 
+22 Conjugation summary
 +there is no verb for the state-of-being like the verb "to be" in English. You can declare what something is by attaching the「だ」 to a noun or な-adjective only. 
 +A state-of-being can be implied without using 「だ」! through context
 In Japanese, negative and past tense are all expressed by conjugation.
@@ -117,7 +119,10 @@ In Japanese, negative and past tense are all expressed by conjugation.
 +past tense of the state-of-being. To say something was something, attach 「だった」 to the noun or な-adjective.
 +In order to say the negative past (was not), conjugate the negative to the negative past tense by dropping the 「い」 from 「じゃない」 and adding 「かった」.
 
-
+23-26: Introduction to Particles 23 Defining grammatical functions with particles =====================================================================================
+24 The 「は」= ha, topic particle 
+25 The「も」= mo, inclusive topic particle
+26 The 「が」 = ga, identifier particle
 
 
 
