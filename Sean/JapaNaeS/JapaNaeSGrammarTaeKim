@@ -68,6 +68,7 @@ The Long Vowel Sound-You can extend the vowel sound of a character by adding eit
 /u/ u, ku, kyu + う
 /o/ + う(or o)
 When pronouncing long vowel sounds, try to remember that they are really two sounds merged together.
+MGS vs La Li Lu Le Lo removed, don't need to study handukuten
 
 12-14: Katakana- 12 The Long Vowel Sound 13 The Small 「ア、イ、ウ、エ、オ」14 Some examples of words in Katakana==========================================================
 Katakana is mainly used for words imported from foreign languages. It can also be used to emphasize certain words similar to the function of italics. 
@@ -146,17 +147,33 @@ You can also think about the 「が」 particle as always answering a silent que
 Japanese doesn't make a distinction between singular or plural
 27 Properties of Adjectives
 28 The な-adjective
-na(な) adjectives don't have a specific ending so the can alaso end in I (い)
+na(な) adjectives don't have a specific ending so the can also end in I (い)
+な-adjective can directly modify a noun following it by sticking 「な」 between the adjective and noun. (Hence the name, な-adjective.)
 when modifying a noun with a na adjective you must put it front of the noun and add a na = ~na noun
+The な-adjective is very simple to learn because it acts essentially like a noun. All the conjugation rules for both nouns and な-adjectives are the same. 
+You can also use adjectives with particles just like we did in the last lesson with nouns.
+"like" is an adjective and not a verb in Japanese, you can think of 「好き」 as meaning "desirable"
 29 The い-adjective
 the I in I adjectives when looking at their kanji, the I must be in hiragna 
+the whole point of the 「い」 in い-adjectives is to allow conjugation without changing the Kanji.
 to modify a noun with an I adjecctive, simply place it right before the ~noun
+Unlike な-adjectives, you do not need to add 「な」 to directly modify a noun with an い-adjective.
+Remember how the negative state-of-being for nouns also ended in 「い」 (じゃない) ? Well, just like the negative state-of-being for nouns, 
+  you can never attach the declarative 「だ」 to い-adjectives. Do NOT attach 「だ」 to い-adjectives.
+Conjugation rules for い-adjectives:
+Negative: First remove the trailing 「い」 from the い-adjective and then attach 「くない」
+Example: 高い → 高くない
+Past-tense: First remove the trailing 「い」 from the い-adjective or negative い-adjective and then attach 「かった」 Examples
+1. 高い → 高かった
+2. 高くない → 高くなかった
 30 An annoying exception
-
-
-
-
-
+There is one い-adjective meaning "good" that acts slightly differently from all other い-adjectives. 
+This is a classic case of how learning Japanese is harder for beginners because the most common and useful words also have the most exceptions. 
+The word for "good" was originally 「よい (良い) 」. However, with time, it soon became 「いい」
+it is written in Kanji, it is usually read as 「よい」 so 「いい」 is almost always Hiragana.
+all the conjugations are still derived from 「よい」
+Another adjective that acts like this is 「かっこいい」 because it is an abbreviated version of two words merged together: 
+  「格好」 and 「いい」. Since it uses the same 「いい」, you need to use the same conjugations.
 
 
 
