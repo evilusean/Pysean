@@ -18,22 +18,26 @@ VerbList (big):
 https://www.japaneseverbconjugator.com/JVerbList.asp
 """
 Godian (Uう verbs):
-話す (hanasu), “to speak”
-飲む (nomu), “to drink”
-死ぬ (shinu), “to die”
-聞く (kiku), “to hear”
-遊ぶ (asobu), “to play”
-買う (kau), “to buy”
-待つ (matsu), “to wait”
+1: 話す (hanasu), “to speak”
+2: 飲む (nomu), “to drink”
+3: 死ぬ (shinu), “to die”
+4: 聞く (kiku), “to hear”
+5: 遊ぶ (asobu), “to play”
+6: 買う (kau), “to buy”
+7: 待つ (matsu), “to wait”
+8: 持つ (motsu) = to have, hold, own
 
 Godan Verbs that end in iru/eru:
-走る (hashiru), “to run”
-帰る (kaeru), “to return home”
-要る (iru), “to need”
-切る (kiru), “to cut”
-知る (shiru), “to know”
-入る (hairu), “to enter”
-喋る (shaberu), “to chat”
+1: 走る (hashiru), “to run”
+2: 帰る (kaeru), “to return home”
+3: 要る (iru), “to need”
+4: 切る (kiru), “to cut”
+5: 知る (shiru), “to know”
+6: 入る (hairu), “to enter”
+7: 喋る (shaberu), “to chat”
+
+Above 2 lists reference for:
+https://github.com/evilusean/Pysean/edit/main/Sean/JapaNaeS/VerbsConjugationGodan
 
 Ichidan Verbs / Ru-Verbs ( end in る)
 食べる (taberu), “to eat”
@@ -48,7 +52,6 @@ Irregular Verbs:
 来る, kuru
 
 Misc Verbs(unsorted):
-To do: する (suru)
 To be: です (desu)
 To become: なる (naru)
 There is (inanimate): ある (aru)
@@ -82,20 +85,7 @@ To eat: 食べる (taberu)
 死ぬ 【し・ぬ】 (う-verb) to die
 する (exception) to do
 来る 【く・る】 (exception) to come
-
-もって います = motte imasu = To have. [motsu → motte]
-します = shimasu = To do. [suru]
-きいて います = kiite imasu = Listening. [kiru → kiite]
 くりかえして ください = kurikaeshite kudasai = Repeat please [kurikaesu → kurikaeshite (te form)]
-のみます = nomimasu = To drink [nomu]
-たべます = tabemasu = To eat [taberu]
-したい です = shitai desu = Want to do [suru]
-わかりました = wakarimashita = Understood. [wakaru]
-かいたい です = kaitai desu = To want to buy [kau]
-はなします hanashimasu = To speak [hanasu]
-あります = arimasu = To have, exist (inanimate). [aru]
-あげます = agemasu = To give. [ageru]
-かいます = kaimasu = To buy [kau]
 
 Japanese Verb Conjugation: Present Tense, Masu-Form and Plain Form===============================================================================================
 How do you conjugate present tense verbs in Japanese? Well, there are two ways: the formal masu-form, and the casual plain form.
