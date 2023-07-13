@@ -7,7 +7,7 @@ Kanji = used for words of chinese origin adapted into Japanese </br>
   On-yomi = way to read kanji from chinese pronounciation </br>
   Kun-yomi = way to read kanji from japanese pronounciation </br>
 Furigana = Hiragana characters are used to spell out the pronunciation of a kanji be being written above(or beside)
-Keigo (敬語) means “respectful language” 
-Teineigo (丁寧語) is the standard polite form
-Sonkeigo (尊敬語) is used when you show respect to others in situations where you are talking about someone else who is a higher status than you
-Kenjougo (謙譲語) is used to show humility. 
+Keigo (敬語) means “respectful language” </br>
+Teineigo (丁寧語) is the standard polite form</br>
+Sonkeigo (尊敬語) is used when you show respect to others in situations where you are talking about someone else who is a higher status than you</br>
+Kenjougo (謙譲語) is used to show humility. </br>
