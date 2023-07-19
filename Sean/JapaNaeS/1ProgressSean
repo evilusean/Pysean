@@ -16,19 +16,16 @@ so ソ vs n ン
 
 ToDo:
 *Need to export decks 'with scheduling information' before adding to anki deck to preserve progress inbetween laptop and mac*
-Create Anki Deck Template for Kanji (big front, smallish back)
 Add Basic Phrases to Anki Decks
 Add new pimseleur to anki decks
 Add Tae Kim Grammar Vocabulary to anki deck
 start writing out N5 Kanji 10 a day, add '*' or '+' next to ones written by hand
 
+Create handwritten hangable sheet for family members
+
 Create Tango Folder:
 Vocab+Convo sheets
 Create Tango repository + add convo/vocab texts + add family + add schools to files
-
-Create Genki Folder:
-Get Genki 1(2nd edition) Vocab Sheet 
-Create Genki(1/2) Repository +Add notes + add workbook + add vocab
 
 Create N4 Kanji+Vocab
 Create N3 Kanji+Vocab
@@ -55,9 +52,6 @@ Find out what vocab I need for working in IT, are manuals/documentation written 
 
 Add verbs+conjugations for:
 Keep conjugating, adding to list
-
-Write Down irregular dates into notebook/memorize (1-10, 14, 19, 20, 24, 29):
-https://github.com/evilusean/Pysean/blob/main/Sean/JapaNaeS/MonthsDaysWeeks
 
 add past tense verb conjugation quiz cards for below to anki deck(from tae kim):
 Verb Ending Character -> Conjugation Ending:
