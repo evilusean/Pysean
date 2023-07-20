@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+import time
+import pyautogui
+import random
+"""
+gets current position for diagnostics
+currentMouseX, currentMouseY = pyautogui.position()
+print(currentMouseX, currentMouseY)
+
+import pyautogui
+pyautogui.displayMousePosition()
+
+import pyautogui as py #Import pyautogui
+import time #Import Time
+while True: #Start loop
+    print (py.position())
+    time.sleep(1)
+
+New File For Mac Windowed mode default opening position
+Windows laptop broke, Need to update coords/locations, lower res monitor on macbook
+to add after fix: rejoin and relaunch 
+
+Start location:  Point(x=987, y=577)
+upgrade tavern : Point(x=580, y=170)
+first minion buy : Point(x=619, y=294)
+portrait : 683, 560
+hand minion : 670,650
+your board side: 595, 430
+
+Disconnect location 
+battleground button location
+Open hearthstone
+"""
+#clicks every 15ish seconds for roughly 8 hours
+n=0
+print('Press Ctrl + C to cancel')
+while n < 8000:
+    #random time to avoid detection
+    time.sleep(5)
+    time.sleep(5 + 5*random.random())
+    #moves to start Point(x=987, y=577) at 0.3 second speed
+    pyautogui.moveTo(987, 577, 0.3)
+    pyautogui.click()
+    time.sleep(1)
+    #moves to upgrade and clicks
+    pyautogui.moveTo(580,170,0.3)
+    pyautogui.click()
+    #moves to first minion and buys it
+    time.sleep(1)
+    pyautogui.moveTo(620,295,0.3)
+    pyautogui.dragTo(683, 560,0.5, button='left')# drag mouse to X of 950, Y of 800 while holding down left mouse button    
+    #places minion on board
+    time.sleep(1)
+    pyautogui.moveTo(670,650,0.3)
+    pyautogui.dragTo(595,430,0.5, button='left')
+    n=n+1
