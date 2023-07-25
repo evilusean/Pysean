@@ -20,6 +20,7 @@ sudo snap install ffmpeg
 #verify ffmpeg install
 ffmpeg -version
 
+#if multiple sub languages, you need to select the correct language and use -map feature
 #from .mkv to .mp4 with 2 commands
 #first, extract subs
 ffmpeg -i input.mkv -map 0:s:1 subs.srt
