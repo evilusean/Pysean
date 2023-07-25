@@ -31,4 +31,4 @@ ffmpeg -i input.mkv -map 0:0 -map 0:2 -vf subtitles=subs.srt output.mp4
 #first, remove ass subs from mkv file
 for f in *.mkv; do ffmpeg -i "$f" -vn -an -codec:s ass "$f.ass"; done 
 #converts to mp4 and hard encodes subs
-for f in *.mkv; do ffmpeg -i "$f" -vf ass="$f.ass"  anime2/"${f%.mkv}.mp4";  done
+for f in *.mkv; do ffmpeg -i "$f" -vf ass="$f.ass" anime2/"${f%.mkv}.mp4"; done
