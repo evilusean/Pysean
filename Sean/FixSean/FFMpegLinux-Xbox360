@@ -1,0 +1,33 @@
+#Installing ffmpeg on my linux machine to hard encode subs to play on xbox 360 as mp4 with hard encoded subs for japanese practice, was using vlc without encoding
+#first update and upgrade system packages
+sudo apt update && sudo apt upgrade
+#installing ffmpeg
+sudo apt install ffmpeg
+#check install
+ffmpeg -version
+
+#Installing with snap
+#first check if snap is installed
+snap version
+#system package upgrade
+sudo apt update && sudo apt upgrade
+#install snapd
+sudo apt install snapd
+#check snap version
+snap version
+#install ffmpeg with snap
+sudo snap install ffmpeg
+#verify ffmpeg install
+ffmpeg -version
+
+#from .mkv to .mp4 with 2 commands
+#first, extract subs
+ffmpeg -i input.mkv -map 0:s:1 subs.srt
+#then convert mp4
+ffmpeg -i input.mkv -map 0:0 -map 0:2 -vf subtitles=subs.srt output.mp4
+
+#doing mkv multiple files
+#first, remove ass subs from mkv file
+for f in *.mkv; do ffmpeg -i "$f" -vn -an -codec:s ass "$f.ass"; done 
+#converts to mp4 and hard encodes subs
+for f in *.mkv; do ffmpeg -i "$f" -vf ass="$f.ass"  anime2/"${f%.mkv}.mp4";  done
