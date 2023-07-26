@@ -31,7 +31,9 @@ ffmpeg -i input.mkv -map 0:0 -map 0:2 -vf subtitles=subs.srt output.mp4
 #first, remove ass subs from mkv file
 for f in *.mkv; do ffmpeg -i "$f" -vn -an -codec:s ass "$f.ass"; done 
 #converts to mp4 and hard encodes subs
-for f in *.mkv; do ffmpeg -i "$f" -vf ass="$f.ass" anime2/"${f%.mkv}.mp4"; done
+for f in *.mkv; do ffmpeg -i "$f" -vf ass="$f.ass" anime2"${f%.mkv}.mp4"; done
 
-#for multiple files using an image based subtitle overlay
-for f in *.mkv; do ffmpeg -i "$f" -filter_complex "[0:v][0:s]overlay[v]" -map "[v]" -map 0:a anime2"$f{f%.mkv}.mp4"; done
+#for multiple files using an image based subtitle overlay, change the [0:s:1] to select the language from multiple subtitle tracks
+for f in *.mkv; do ffmpeg -i "$f" -filter_complex "[0:v][0:s:1]overlay[v]" -map "[v]" -map 0:a anime2"${f%.mkv}.mp4"; done
+#https://trac.ffmpeg.org/wiki/HowToBurnSubtitlesIntoVideo
+#http://ffmpeg.org/ffmpeg-filters.html#overlay-1
