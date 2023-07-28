@@ -57,6 +57,21 @@ Kana	/ Kanji	/ Romaji	/ English
 おにいさん	= お兄さん	= oniisan	= older brother
 いもうと	= 妹	= imooto	= younger sister
 おとうと	= 弟	= otooto	= younger brother
+一	イチ; イッ; ひと	one	
+二	ニ; ふた	two	
+三	サン; みっ	three	
+四	よん; よ; よっ; シ	four
+五	ゴ; いつ	five	
+六	ロク; ロッ; むっ	six
+七	シチ; なな	seven	
+八	ハチ; ハッ; やっ	eight
+九	キュウ; ク; ここの	nine	
+十	ジュウ; ジュッ; とお	ten	
+百	ヒャク; ピャク; ビャク	hundred	
+千	セン; ゼン	thousand	
+万	マン	ten thousand	
+円	エン	yen	
+時	ジ; とき	time; o'clock
 Onamae wa? = What is your name
 GoShuusshin wa? = Where do you come from?
 Oshigoto wa? = What is your occupation?
@@ -123,6 +138,20 @@ denki = light
 kaaten = curtain
 mado = window
 isu = chair
+日	ニ; ニチ; び; ひ; ニッ	sun; day; daytime	
+本	ホン; もと	origin; book	
+人	ジン; ひと; ニン	person	
+月	ゲツ; ガツ; つき	counter for name of month; moon	
+火	カ; ひ	fire	
+水	スイ; みず	water	
+木	モク; き	tree; wood	
+金	キン; かね	gold	
+土	ド; つち	earth; soil	
+曜	ヨウ	weekday	
+上	うえ; ジョウ	top; above; on	
+下	した; カ	under; beneath; below; bottom	
+中	なか; チュウ; ジュウ	inside; within	
+半	ハン	half	
 Wakarimashita ka? = do you understand?
 Wakarimashita = I understand
 Wakarimasen = I don't understand
