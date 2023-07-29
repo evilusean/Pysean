@@ -37,3 +37,6 @@ for f in *.mkv; do ffmpeg -i "$f" -vf ass="$f.ass" anime2"${f%.mkv}.mp4"; done
 for f in *.mkv; do ffmpeg -i "$f" -filter_complex "[0:v][0:s:1]overlay[v]" -map "[v]" -map 0:a anime2"${f%.mkv}.mp4"; done
 #https://trac.ffmpeg.org/wiki/HowToBurnSubtitlesIntoVideo
 #http://ffmpeg.org/ffmpeg-filters.html#overlay-1
+
+#mapping audio for multiple audio tracks to get not english
+https://trac.ffmpeg.org/wiki/Map
