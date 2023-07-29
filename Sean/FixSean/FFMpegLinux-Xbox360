@@ -40,3 +40,5 @@ for f in *.mkv; do ffmpeg -i "$f" -filter_complex "[0:v][0:s:1]overlay[v]" -map 
 
 #mapping audio for multiple audio tracks to get not english
 https://trac.ffmpeg.org/wiki/Map
+#fixing bitrate/audio channel issues
+https://superuser.com/questions/517102/convert-mp4-video-to-a-format-xbox-360-can-play
