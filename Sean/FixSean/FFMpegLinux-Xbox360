@@ -1,4 +1,6 @@
 #Installing ffmpeg on my linux machine to hard encode subs to play on xbox 360 as mp4 with hard encoded subs for japanese practice, was using vlc without encoding
+#handbrake also works
+
 #first update and upgrade system packages
 sudo apt update && sudo apt upgrade
 #installing ffmpeg
@@ -33,7 +35,7 @@ for f in *.mkv; do ffmpeg -i "$f" -vn -an -codec:s ass "$f.ass"; done
 #converts to mp4 and hard encodes subs
 for f in *.mkv; do ffmpeg -i "$f" -vf ass="$f.ass" a2"${f%.mkv}.mp4"; done
 #if above doesn't work use below to force bitrate h264/and audio channels
-for f in *.mkv; do ffmpeg -i "$f" -vf ass="$f.ass"
+for f in *.mkv; do ffmpeg -i "$f" -vf ass="$f.ass" -c:v libx264 -c:a aac -strict experimental -q:a 100 -ac 2 -sn a2"${f%.mkv}.mp4"; done
 
 #for multiple files using an image based subtitle overlay, change the [0:s:1] to select the language from multiple subtitle tracks
 for f in *.mkv; do ffmpeg -i "$f" -filter_complex "[0:v][0:s:1]overlay[v]" -map "[v]" -map 0:a anime2"${f%.mkv}.mp4"; done
