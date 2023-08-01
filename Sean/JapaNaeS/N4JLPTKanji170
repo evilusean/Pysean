@@ -22,7 +22,7 @@ Need to format, and add to anki
 18	/ 問 = mon(モン) = to(u)(と(う)) = question, ask, problem
 19	/ 代 = dai(ダイ) = ka(wari)(か(わり)) = substitute, change, convert, replace, period
 20	/ 明 = mei, myou(メイ、 ミョウ) = aka(rui)(あか(るい)) = bright, light
-21  / 動 = dou(ドウ) = ugo(ku)(うご(く)) = move, motion, change
+21	/ 動 = dou(ドウ) = ugo(ku)(うご(く)) = move, motion, change
 22	/ 京 = kyou, kei, kin(キョウ、 ケイ、 キン) = miyako(みやこ) = capital
 23	/ 目 = moku, boku(モク、 ボク) = me(め) = eye, class, look, insight, experience
 24	/ 通 = tsuu(ツウ) = too(ru), kayo(u)(とお(る)、かよ(う)) = traffic, pass through, avenue, commute
@@ -42,90 +42,16 @@ Need to format, and add to anki
 38	/ 持 = ji(ジ) = mo(tsu)(も(つ)) = hold, have
 39	/ 野 = ya(ヤ) = no(の) = plains, field, rustic, civilian life
 40	/ 以 = i(イ) = mo(tte)(もっ(て)) = by means of, because, in view of, compared with
-41	
-思
-shi
-シ
-
-omo(u)
-おも(う)
-
-think
-42	
-家
-ka
-カ
-
-ie, ya, uchi
-いえ、 や、 うち
-
-house, home, family, professional, expert
-43	
-世
-sei, se
-セイ、 セ
-
-yo
-よ
-
-generation, world, society, public
-44	
-多
-ta
-タ
-
-oo(i)
-おお(い)
-
-many, frequent, much
-45	
-正
-sei, shou
-セイ、 ショウ
-
-tada(shii), masa(ni)
-ただ(しい)、 まさ(に)
-
-correct, justice, righteous
-46	
-安
-an
-アン
-
-yasu(i)
-やす(い)
-
-safe, peaceful, cheap
-47	
-院
-in
-イン
-
-institution, temple, mansion, school
-48	
-心
-shin
-シン
-
-kokoro
-こころ
-
-heart, mind, spirit
-49	
-界
-kai
-カイ
-
-world, boundary
-50	
-教
-kyou
-キョウ
-
-oshi(eru), oso(waru)
-おし(える)、 おそ(わる)
-
-teach, faith, doctrine
+41	/ 思 = shi(シ) = omo(u)(おも(う)) = think
+42	/ 家 = ka(カ) = ie, ya, uchi(いえ、 や、 うち) = house, home, family, professional, expert
+43	/ 世 = sei, se(セイ、 セ) = yo(よ) = generation, world, society, public
+44	/ 多 = ta(タ) = oo(i)(おお(い)) = many, frequent, much
+45	/ 正 = sei, shou(セイ、 ショウ) = tada(shii), masa(ni)(ただ(しい)、 まさ(に)) = correct, justice, righteous
+46	/ 安 = an(アン) = yasu(i)(やす(い)) = safe, peaceful, cheap
+47	/ 院 = in(イン) = institution, temple, mansion, school
+48	/ 心 = shin(シン) = kokoro(こころ) = heart, mind, spirit
+49	/ 界 = kai(カイ) = world, boundary
+50	/ 教 = kyou(キョウ) = oshi(eru), oso(waru)(おし(える)、 おそ(わる)) = teach, faith, doctrine
 51	
 文
 bun, mon
