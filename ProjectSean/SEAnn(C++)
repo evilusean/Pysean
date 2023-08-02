@@ -1,0 +1,43 @@
+Created this document to store links/resources of where to start learning SEA(C) after I'm finished with japaNeaS:
+Move on to C++ for embedded systems/microcontrollers(Arduino/Raspberry Pi) after you understand C
+========================================================================================================================================================
+Harvards CS50: Free to audit, 200$ for a certificate(Edx):
+https://pll.harvard.edu/course/cs50-introduction-computer-science
+
+Build a Modern Computer from First Principles(Coursera):
+https://www.coursera.org/learn/build-a-computer
+CS:APP Intro To Computer Systems(Free Videos):
+https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/
+
+Basic Syntax:
+learn-c.org
+
+Solving Problems:
+https://www.codestepbystep.com/problem/list/c
+
+Youtube Playlist:
+Neso Academy:
+https://www.youtube.com/playlist?list=PLBlnK6fEyqRhX6r2uhhlubuF5QextdCSM
+Jacob Sorber:
+https://www.youtube.com/@JacobSorber/featured
+Crash Course in Computer Science:
+https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo
+Another C Playlist:
+https://www.youtube.com/playlist?list=PLA1FTfKBAEX4hblYoH6mnq0zsie2w6Wif
+
+Teach yourself Computer Science:
+https://teachyourselfcs.com/
+
+Books:
+*C Programming Modern approach by K. N King* -Highly reccomended book after harvards CS50
+BeeJ's guide to C programming(Free):
+https://beej.us/guide/bgc/
+Modern C by Jens Gustedat
+The C Progromming language by Ken and Ritchie
+
+Project Book(100+ Ideas):
+https://projectbook.code.brettchalupa.com/
+Project Based Learning:
+https://github.com/practical-tutorials/project-based-learning#cc
+
+
