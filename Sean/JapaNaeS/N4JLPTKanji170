@@ -62,93 +62,16 @@ Need to format, and add to anki
 58	/ 売 = bai(バイ) = u(ru)(う(る)) = sell
 59	/ 知 = chi(チ) = shi(ru)(し(る)) = know, wisdom
 60	/ 道 = dou(ドウ) = michi(みち) = road-way, street, district, journey, course
-61	
-集
-shuu
-シュウ
-
-atsu(meru)
-あつ(める)
-
-gather, meet
-62	
-別
-betsu
-ベツ
-
-waka(reru), wa(keru)
-わか(れる)、 わ(ける)
-
-separate, branch off, diverge
-63	
-物
-butsu, motsu
-ブツ、 モツ
-
-mono
-もの
-
-thing, object, matter
-64	
-使
-shi
-シ
-
-tsuka(u)
-つか(う)
-
-use, order, messenger, ambassador
-65	
-品
-hin
-ヒン
-
-shina
-しな
-
-goods, refinement, dignity, article
-66	
-計
-kei
-ケイ
-
-haka(ru)
-はか(る)
-
-plot, plan, scheme, measure
-67	
-死
-shi
-シ
-
-shi(nu)
-し(ぬ)
-
-death, die
-68	
-特
-toku
-トク
-
-special
-69	
-私
-shi
-シ
-
-watakushi, watashi
-わたくし、 わたし
-
-private, I, me
-70	
-始
-shi
-シ
-
-haji(meru)
-はじ(める)
-
-commence, begin
+61	/ 集 = shuu(シュウ) = atsu(meru)(あつ(める)) = gather, meet
+62	/ 別 = betsu(ベツ) = waka(reru), wa(keru)(わか(れる)、 わ(ける)) = separate, branch off, diverge
+63	/ 物 = butsu, motsu(ブツ、 モツ) = mono(もの) = thing, object, matter
+64	/ 使 = shi(シ) = tsuka(u)(つか(う)) = use, order, messenger, ambassador
+65	/ 品 = hin(ヒン) = shina(しな) = goods, refinement, dignity, article
+66	/ 計 = kei(ケイ) = haka(ru)(はか(る)) = plot, plan, scheme, measure
+67	/ 死 = shi(シ) = shi(nu)(し(ぬ)) = death, die
+68	/ 特 = toku(トク) = special
+69	/ 私 = shi(シ) = watakushi, watashi(わたくし、 わたし) = private, I, me
+70	/ 始 = shi(シ) = haji(meru)(はじ(める)) = commence, begin
 71	
 朝
 chou
