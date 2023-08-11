@@ -57,20 +57,6 @@ Kana	/ Kanji	/ Romaji	/ English
 おにいさん	= お兄さん	= oniisan	= older brother
 いもうと	= 妹	= imooto	= younger sister
 おとうと	= 弟	= otooto	= younger brother
-一	イチ; イッ; ひと	one	
-二	ニ; ふた	two	
-三	サン; みっ	three	
-四	よん; よ; よっ; シ	four
-五	ゴ; いつ	five	
-六	ロク; ロッ; むっ	six
-七	シチ; なな	seven	
-八	ハチ; ハッ; やっ	eight
-九	キュウ; ク; ここの	nine	
-十	ジュウ; ジュッ; とお	ten	
-百	ヒャク; ピャク; ビャク	hundred	
-千	セン; ゼン	thousand	
-万	マン	ten thousand	
-円	エン	yen	
 時	ジ; とき	time; o'clock
 Onamae wa? = What is your name
 GoShuusshin wa? = Where do you come from?
@@ -138,20 +124,6 @@ denki = light
 kaaten = curtain
 mado = window
 isu = chair
-日	ニ; ニチ; び; ひ; ニッ	sun; day; daytime	
-本	ホン; もと	origin; book	
-人	ジン; ひと; ニン	person	
-月	ゲツ; ガツ; つき	counter for name of month; moon	
-火	カ; ひ	fire	
-水	スイ; みず	water	
-木	モク; き	tree; wood	
-金	キン; かね	gold	
-土	ド; つち	earth; soil	
-曜	ヨウ	weekday	
-上	うえ; ジョウ	top; above; on	
-下	した; カ	under; beneath; below; bottom	
-中	なか; チュウ; ジュウ	inside; within	
-半	ハン	half	
 Wakarimashita ka? = do you understand?
 Wakarimashita = I understand
 Wakarimasen = I don't understand
@@ -161,6 +133,20 @@ Chotto matte kudasai = Please wait for a while
 Kiite kudasai = Please listen
 jupeeji o mite kudasai = please look at page 10
 Pun vs Fun = If time ends in 2,5,7 minutes = Fun, all others are pun, ichi(1) = ippun, Juu(10)=Jipun/Jupun
+一	イチ; イッ; ひと	one	
+二	ニ; ふた	two	
+三	サン; みっ	three	
+四	よん; よ; よっ; シ	four
+五	ゴ; いつ	five	
+六	ロク; ロッ; むっ	six
+七	シチ; なな	seven	
+八	ハチ; ハッ; やっ	eight
+九	キュウ; ク; ここの	nine	
+十	ジュウ; ジュッ; とお	ten	
+百	ヒャク; ピャク; ビャク	hundred	
+千	セン; ゼン	thousand	
+万	マン	ten thousand	
+円	エン	yen	
 
 ================================================================================Lesson 3: Page 92-93 + Audio Tapes = Kaiwa_Bunpo_L03 K03-05 / K03-06
 えいが	= 映画	= movie
@@ -218,20 +204,20 @@ LL（エルエル）		= language lab
 そうですね		= That's right.; Let me see.
 でも		= but
 どうですか		= How about...?; How is...?
-山	やま; サン	mountain
-川	かわ; がわ	river
-元	ゲン	origin
-気	キ	spirit; mind; energy
-私	わたし; シ	I
-今	いま; コン	now; present
-田	た; だ	rice field
-女	おんな; ジョ	woman; girl; female
-男	おとこ; ダン	man; male
-見	み; ケン	to see
-行	い; コウ; キョウ	to go
-食	た; ショク	to eat
-飲	の; イン	to drink
-天	テン	heaven
+日	ニ; ニチ; び; ひ; ニッ	sun; day; daytime	
+本	ホン; もと	origin; book	
+人	ジン; ひと; ニン	person	
+月	ゲツ; ガツ; つき	counter for name of month; moon	
+火	カ; ひ	fire	
+水	スイ; みず	water	
+木	モク; き	tree; wood	
+金	キン; かね	gold	
+土	ド; つち	earth; soil	
+曜	ヨウ	weekday	
+上	うえ; ジョウ	top; above; on	
+下	した; カ	under; beneath; below; bottom	
+中	なか; チュウ; ジュウ	inside; within	
+半	ハン	half	
 
 ================================================================================Lesson 4: The First Date Page 112-114 + Audio Tapes = Kaiwa_Bunpo_L04 K04-07 / K04-08
 アルバイト	=	part-time job
@@ -297,3 +283,17 @@ LL（エルエル）		= language lab
 そこ	=	there
 ここ	 =	here
 げつようび	= 月曜日	= Monday
+山	やま; サン	mountain
+川	かわ; がわ	river
+元	ゲン	origin
+気	キ	spirit; mind; energy
+私	わたし; シ	I
+今	いま; コン	now; present
+田	た; だ	rice field
+女	おんな; ジョ	woman; girl; female
+男	おとこ; ダン	man; male
+見	み; ケン	to see
+行	い; コウ; キョウ	to go
+食	た; ショク	to eat
+飲	の; イン	to drink
+天	テン	heaven
