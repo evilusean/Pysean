@@ -1,0 +1,18 @@
+https://www.freecodecamp.org/news/vim-beginners-guide/
+https://opensource.com/article/19/3/getting-started-vim
+==========
+#Start in directory terminal
+vim file.txt #opens file.txt in vim
+#vim starts in command mode, press "i" to edit, vim has 4 modes
+#press esc to enter command mode again
+:wq #type :w (write) and q(quit to save and quit)
+:q #to quit vim without saving
+:[range]s/{pattern}/{string}/[flags] #find and replace text in vim
+#How to undo: To undo a change in Vim, press u in command mode. 
+#To redo, press CTRL + R. 
+#You can prepend a number (n) with u to undo n times. for example, 2u will undo 2 times. To list the available undo options, type :undolist in command mode.
+
+
+
+
+
