@@ -1,0 +1,22 @@
+#100 pushups, 100 situps, 100 squats, 10km run
+# indicate a new line of code with \n
+import csv
+from datetime import datetime
+
+def write_in_csv(rows):
+
+    with open(r'/Users/teams/Desktop/Workouts/Workout.csv', 'a', newline='') as file:
+
+        file_write = csv.writer(file)
+
+        for val in rows:
+            
+            # writing the data in csv file
+            file_write.writerow(val)
+current_date_time = datetime.now()
+
+rows = [[current_date_time, "Situps", " 100 " ],[current_date_time, "Pushups", " 100 "] , [current_date_time, "Squats", " 100 "], [current_date_time, "Run", " 10Km "]]
+
+val = []
+
+write_in_csv(rows)
