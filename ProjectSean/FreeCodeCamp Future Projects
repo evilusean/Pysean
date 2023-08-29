@@ -145,10 +145,12 @@ https://open.appacademy.io/login
 Mercenaries Bot:
 Should be easy, less likely to get reported than battlegrounds, could do in a weekend using python
 Japanese Big Number Converter
+Sakura Bloom Counter
 [X] Python Calisthenics script, saves to a CSV with date, exercise, reps = /runscript.py(exercise, reps) #takes exercise and reps as args and appends to a csv
 Python Journal script = saves with date, appends to the bottom of a csv
 Dream Journal = try to summarize dream with one sentence before moving out of bed, 
 Pomodoro Timer
+
 
 Awesome for beginners Open source projects:
 https://github.com/MunGell/awesome-for-beginners
