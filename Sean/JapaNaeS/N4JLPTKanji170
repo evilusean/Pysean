@@ -132,96 +132,16 @@ Need to format, and add to anki
 128	/ 歩 = ho, bu(ホ、 ブ) = aru(ku), ayu(mu)(ある(く)、 あゆ(む)) = walk, counter for steps
 129	/ 風 = fuu, fu(フウ、 フ) = kaze, kaza-(かぜ、 かざ-) = wind, air, style, manner
 130	/ 紙 = shi(シ) = kami(かみ) = paper
-131	
-黒
-koku
-コク
-
-kuro
-くろ
-
-black
-132	
-花
-ka, ke
-カ、 ケ
-
-hana
-はな
-
-flower
-133	
-春
-shun
-シュン
-
-haru
-はる
-
-spring
-134	
-赤
-seki, shaku
-セキ、 シャク
-
-aka(i)
-あか(い)
-
-red
-135	
-青
-sei, shou
-セイ、 ショウ
-
-ao(i)
-あお(い)
-
-blue
-136	
-館
-kan
-カン
-
-yakata
-やかた
-
-building, mansion, large building, palace
-137	
-屋
-oku
-オク
-
-ya
-や
-
-roof, house, shop, dealer, seller
-138	
-色
-shoku, shiki
-ショク、 シキ
-
-iro
-いろ
-
-color
-139	
-走
-sou
-ソウ
-
-hashi(ru)
-はし(る)
-
-run
-140	
-秋
-shuu
-シュウ
-
-aki
-あき
-
-autumn, fall
+131	/ 黒 = koku(コク) = kuro(くろ) = black
+132	/ 花 = ka, ke(カ、 ケ) = hana(はな) = flower
+133	/ 春 = shun(シュン) = haru(はる) = spring
+134	/ 赤 = seki, shaku(セキ、 シャク) = aka(i)(あか(い)) = red
+135	/ 青 = sei, shou(セイ、 ショウ) = ao(i)(あお(い)) = blue
+136	/ 館 = kan(カン) = yakata(やかた) = building, mansion, large building, palace
+137	/ 屋 = oku(オク) = ya(や) = roof, house, shop, dealer, seller
+138	/ 色 = shoku, shiki(ショク、 シキ) = iro(いろ) = color
+139	/ 走 = sou(ソウ) = hashi(ru)(はし(る)) = run
+140	/ 秋 = shuu(シュウ) = aki(あき) = autumn, fall
 141	
 夏
 ka, ge
