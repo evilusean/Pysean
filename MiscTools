@@ -255,6 +255,9 @@ Wireshark=Another Packet capture tool, more powerful than TCPdump graphical util
   File Carving=Extracting data payloads(File transfers) from unecrypted HTTP traffic/FTP 
   Extract audiostreams from unencrypted VOIP traffic
 
+Flipper Zero Vs HACK RF One H2+ portapack (firmware) : 
+https://github.com/eried/portapack-mayhem
+
 NIDS(Network Intrusion Detection Systems):
 Snort:
 https://www.snort.org/
