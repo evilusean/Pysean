@@ -182,6 +182,13 @@ https://www.builder.io/c/docs/visual-copilot
 google gemini
 google alphacode 2
 MS Office copilot
+Mistral/Mixtral (M8x7b) (torrent dropped AI-open source-Apache 2.0 license-Free):
+https://mistral.ai/news/mixtral-of-experts/
+https://erichartford.com/uncensored-models
+Ollama(download and install models locally):
+https://github.com/jmorganca/ollama
+https://github.com/oobabooga/text-generation-webui
+HuggingFace AutoTrain (can download/train any model-remove the censorship/alignment - to run locally need 64gb + of ram)
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
