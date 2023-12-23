@@ -6,6 +6,9 @@ How Japanese Numbers Work(groups of 4 '0's instead of 3 '0's) special cases 600,
 https://guidetojapanese.org/learn/grammar/numbers
 https://www.sljfaq.org/afaq/large-numbers.html#:~:text=Japanese%20uses%20a%20different%20counting,and%20then%20an%20oku%20(%E5%84%84)
 
+Roman Numeral Converter.js:
+https://github.com/evilusean/CourseraGoogleFCC/blob/main/FCC-Javascript-Algos-DataStructures/2.1RomanNumeralConverter/roman-numeral-converter.js
+
 After first project for numbers Do:
 Time Converter
 days of month: tsuitachi, futsuka, mikka, yokka, etc (special cases= 1-10, 14, 19, 20, 24, 29)
