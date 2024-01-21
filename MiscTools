@@ -189,6 +189,8 @@ Ollama(download and install models locally):
 https://github.com/jmorganca/ollama
 https://github.com/oobabooga/text-generation-webui
 HuggingFace AutoTrain (can download/train any model-remove the censorship/alignment - to run locally need 64gb + of ram)
+Run llama locally:
+https://replicate.com/blog/run-llama-locally
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
