@@ -191,6 +191,8 @@ https://github.com/oobabooga/text-generation-webui
 HuggingFace AutoTrain (can download/train any model-remove the censorship/alignment - to run locally need 64gb + of ram)
 Run llama locally:
 https://replicate.com/blog/run-llama-locally
+Genie : 3D Model Generator:
+https://lumalabs.ai/genie?view=create
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
