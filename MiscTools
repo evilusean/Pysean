@@ -314,7 +314,7 @@ PersistenceSniper - Powershell Script:
 https://www.kitploit.com/2022/09/persistencesniper-powershell-script.html
 https://github.com/last-byte/PersistenceSniper
 
-ESP32 With Arduino Embedded Systems/MicroControllers Vs
+ESP32 With Arduino Embedded Systems/MicroControllers Vs 
 Raspberry Pi:
 badder bad USB:
 https://github.com/RoganDawes/P4wnP1
@@ -329,7 +329,12 @@ PiHole Webserver +unbound + pihole VPN:
 https://pi-hole.net/
 Docker:
 https://pimylifeup.com/raspberry-pi-docker/
-
+AngryOxide(wifi sniffer/handshakes)
+https://github.com/Ragnt/AngryOxide
+Hashcat: 
+https://hashcat.net/hashcat/
+wordlists : 
+https://weakpass.com/download
 P4wnP1 payloads:
 https://github.com/NightRang3r/P4wnP1-A.L.O.A.-Payloads
 Rubber Ducky Payload repository(scripts):
