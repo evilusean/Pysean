@@ -1,0 +1,20 @@
+NeoVimChad(turns neovim into a more IDE experience, linter/syntax highlighting for many different languages):
+https://nvchad.com/
+https://github.com/NvChad/NvChad
+One Liner:
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+Personalize Theme: <space> + T + H
+Find Files Menu: <space> + F + F
+Find Open Files in buffers: <space> + F + B  / tab to go forward / shift + tab to go backwards / close : <space> + x
+NVIM Tree Shows a file tree: <Ctrl> + N
+Rename: R
+Copy: C
+Paste: P
+Delete: D
+Mark: M
+Vertical split: :VSP
+Horizontal Split: :SP
+To Navigate: Ctrl + HJKL = Ctrl +K (up) / Ctrl+ H (Down) 
+CheatSheet : <space> + C + H
+https://www.youtube.com/watch?v=yW3ovyQCwpw&ab_channel=MentalOutlaw
+https://www.youtube.com/watch?v=Mtgo-nP_r8Y&ab_channel=DreamsofCode
