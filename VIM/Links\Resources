@@ -18,3 +18,7 @@ To Navigate: Ctrl + HJKL = Ctrl +K (up) / Ctrl+ H (Down)
 CheatSheet : <space> + C + H
 https://www.youtube.com/watch?v=yW3ovyQCwpw&ab_channel=MentalOutlaw
 https://www.youtube.com/watch?v=Mtgo-nP_r8Y&ab_channel=DreamsofCode
+# Linux / Macos (unix) Uninstall:
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+
