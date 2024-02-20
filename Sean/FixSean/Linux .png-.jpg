@@ -1,0 +1,5 @@
+#Installed Linux recently, had a problem with .png files not working correctly, decided to make a bash script that converts all files in current directory to .jpg so I can work with them easier
+#A simple for loop bash script
+for i in *.png ; do convert "$i" "${i%.*}.jpg" ; done
+#no for loop unix xargs approach
+ls -1 *.png | xargs -n 1 bash -c 'convert "$0" "${0%.*}.jpg"'
