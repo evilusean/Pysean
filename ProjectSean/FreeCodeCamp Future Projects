@@ -182,3 +182,13 @@ TWT Data Structures and Algorithims Roadmap:
 https://www.youtube.com/watch?v=QkV3xlxdF_0&ab_channel=TechWithTim
 
 Pelosi Bot(AI trading bot that automatically updates and does all the trades nancy pelosi does-save % returns-ROI)
+
+Speech to Translated Text(Japanese):
+https://github.com/kj7kunal/Speech-to-Translated-Text
+
+Maybe try voicevox? You can self-host the http server:
+https://github.com/VOICEVOX/voicevox_engine/tree/master
+Then use this library:
+https://github.com/voicevox-client/python
+Google TTS
+Azure TTS
