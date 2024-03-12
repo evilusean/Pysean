@@ -195,9 +195,15 @@ https://github.com/digininja/DVWA
 Speech to Translated Text(Japanese):
 https://github.com/kj7kunal/Speech-to-Translated-Text
 
+OpenAI speech to text:
+https://huggingface.co/spaces/openai/whisper
+https://www.youtube.com/watch?v=jb7L7Pj1ye0&ab_channel=kliksphilip
+
 Maybe try voicevox? You can self-host the http server:
 https://github.com/VOICEVOX/voicevox_engine/tree/master
 Then use this library:
 https://github.com/voicevox-client/python
 Google TTS
 Azure TTS
+
+
