@@ -371,6 +371,12 @@ ISoon/An Xun(Chyna Leaks) Vs Promis/Pegasus-Max well:
 https://github.com/I-S00N/I-S00N?tab=readme-ov-file
 https://www.youtube.com/watch?v=jA4agletxl0&ab_channel=Seytonic
 
+Cache Memory Side Channel Attacks(All macs vulnerable-M1,M2,M3 chips, even encrypted) 
+-Hits vs Miss time taken for process, if it hits and takes less time, it's a piece - if it misses and takes more time-memory pointers to get crypto keys:
+Spectre Paper: https://spectreattack.com/spectre.pdf
+Gofetch Info: https://gofetch.fail
+Gofetch Paper: https://gofetch.fail/files/gofetch.pdf
+
 MAC Address Fingerprinting techniques:
 https://fingerprint.com/blog/browser-fingerprinting-techniques/
 
