@@ -232,4 +232,4 @@ TranslaSean(japanese speech to  japanese text to translate to english readable=t
 Japanese learning app with push notificaSeans
 Finish japanese number generator(half way done, layout is already started, just need input and output fix, and make sure it is using right words for denominaseans)
 Encrypted Password storage (input old PW, receive new one/hash)
-
+DicSeanAry - a simple script goes through a dictionary and replaces every tion/ / / with sean, saves it to an array and spits out the output for unlimited moniker works
