@@ -229,4 +229,5 @@ New Resume
 TranslaSean(japanese speech to  japanese text to translate to english readable=that's like 4 different API calls=very impressive portfolio resume project-solves real world problem)
 Japanese learning app with push notificaSeans
 Finish japanese number generator(half way done, layout is already started, just need input and output fix, and make sure it is using right words for denominaseans)
+Encrypted Password storage (input old PW, receive new one/hash)
 
