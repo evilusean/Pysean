@@ -1,0 +1,5 @@
+input_string = input("Enter a string: ")
+
+character_count = len(input_string)
+
+print("The string has", character_count, "characters.")
