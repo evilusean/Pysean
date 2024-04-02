@@ -202,6 +202,8 @@ HuggingFace AutoTrain (can download/train any model-remove the censorship/alignm
 Run llama locally:
 https://replicate.com/blog/run-llama-locally
 pip install ollama #can use python to install a library in one line of code
+LM Studio (run models locally with GUI):
+https://lmstudio.ai/
 Genie : 3D Model Generator:
 https://lumalabs.ai/genie?view=create
 Perplexity AI:
