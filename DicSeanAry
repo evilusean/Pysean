@@ -2,7 +2,7 @@
 Dicsenary:
 Every english word in CSV, can put in a centralized location and make a for loop to go through each one
 https://github.com/manassharma07/English-Words-CSV
-create a script that goes through each word and replace all tion/ sion / sen / sean / seen / scene / etc with sean
+create a script that goes through each word and replace all tion/ sion / sen / sean / seen / scene / cian / etc with sean
 and save it to an array, giving us the output
 """
 
