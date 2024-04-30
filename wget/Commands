@@ -1,0 +1,1 @@
+wget -p -k http://www.example.com/ #Use wget in terminal, It'll make a clone of site frontend html, css, js, svg etc. But not in one file as asked. Rather, it'll recreate the whole folder structure
