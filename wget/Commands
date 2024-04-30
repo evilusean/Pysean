@@ -1,1 +1,3 @@
+Needed to figure out how to get CSS from a site, 'inspect' chrome tools wasn't working, wget can pull an entire site for us to look at.
+
 wget -p -k http://www.example.com/ #Use wget in terminal, It'll make a clone of site frontend html, css, js, svg etc. But not in one file as asked. Rather, it'll recreate the whole folder structure
