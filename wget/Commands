@@ -3,3 +3,8 @@ Ok, what seems to work = use below wget command, download site, inspect site for
 search for either 'style' or the 'element' you are trying to reproduce and use those styles(their posted into tags, not a file)
 
 wget -p -k http://www.example.com/ #Use wget in terminal, It'll make a clone of site frontend html, css, js, svg etc. But not in one file as asked. Rather, it'll recreate the whole folder structure
+
+Use webhttrack:
+sudo apt-get install webhttrack #will install webhttrack
+webhttrack #will open it up in your brwoser, after installing 
+#go through the tutorial for above, select your folder you want to download the file in, put the URL for downloaded website, and it should start the download, and download ALL files, including CSS
