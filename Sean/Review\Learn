@@ -3,7 +3,6 @@ TCP/IP Protocols - review
 Active Directory - MS Built in keylogger - Everything in a corporation ends in active directory, from identity management to secrets to logging, it's the heart of every corporation. 
   Attackers always crack active directory first and then start plundering and damaging the corporation from this central point.
   Do these hacking challenges that involve active directory networks and learn from that. Ofc you also need to know common attack techniques and tools and need to know how to program 
-Cybersecurity
 Basic Pentesting
 SimCardSwap:
 https://www.youtube.com/watch?v=2Ple9F5XOdE&ab_channel=MentalOutlaw
@@ -24,3 +23,10 @@ Electrical Engineering:
 https://www.ibiblio.org/kuphaldt/electricCircuits/
 
 System Design(crawl-walk-run) create a MVP, solve an actual problem(translaSean=japanese->text->translator->readable text):
+
+Cybersecurity:
+Kali VM
+pwnable.kr
+hackthebox
+tryhackme
+hackthissite
