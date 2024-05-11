@@ -1,0 +1,50 @@
+    Resume Template - fill in the blanks with AI - add all skills(alot) - courses - brief job summary, one sentence per -
+    get AI to help write resume - will need to find old one, it's in old email somewhere, update it with all the buzzwords
+        get the dates, add DescriptSeans from AI, hit all the ATS bingo words, then toss to a recruiter
+    find a recruiter - we are already a month behind schedule, was supposed to be applying April 01, need to - Escape.
+        they will do the heavy lifting for me and also the higher my salary, the more they get paid -
+
+    Resume Work:
+    Formatting = Simple Text / Format - If AI can't read, won't be sean
+    Be brief about old job experience - one seantence each
+    create a courses completed list, and a skills list, place up front.
+    try to keep it to one page, if accidently overshoot, use the 'empty space' and fill it in with 1 size white text font with ALL the buzzwords
+    if feeling ambitious customize the resume for the job, read their buzzwords and insert them into your resume - we have a recruiter to sell us
+    Add all old DoD courses to new course list - found them on my old resume, do I need to add the volunteer work I did 10 years ago?
+    What about TEFL? What if I used my course list instead of work experience? I forget the dates for that, I think I have the cert somewhere around
+    Do they really give a F if I worked in grocery/landscaping/plumbing? I don't - If I need space - this is the first thing that can go
+    I don't technically have any relevant work experience, the first job is the hardest, the resume I found was OLD - like 6-7 years, it's missing stuff
+    We just need an MVP, find a good template and start filling in the blanks, if it sucks the recruiter will let me know, I'm wasting time thinking
+    If I don't think about the layout - we don't even have a resume, I guess this is a neccesary step - Do I want work exp or not, courses or not?
+    I have over 50 personal projects, scripts are technically a project, although not that impressive
+    maybe do no work exp - just do courses/skills/projects with summaries - I should be able to hit all the buzzwords and keep it under a page with that
+    My portfolios are good, my resume should just be a way for me to get them to bother looking at my portfolios - I'm already behind my goal
+        This will probably take 2 days, 12th is new goal
+    Maybe add genki I+II as a 'course' - completed both textbooks in ~4 months, shows I have a genuine interest to learn Japanese
+    Can hyperlink each course + certificate to the github repo it's attached to; create 2 versions - would I trust a random dude sending me a resume
+        with hyperlinks? seems sus, add hyperlinks after, create a second version with +HL tag in name at end
+    I could combine my work experience + Courses into one master list and color code it, work experience = green, courses = plain
+    Let's go with just courses for now, who cares if I stocked shelves when I was 19, I don't, why should they?
+
+Going to try this out first better formatting than microsoft word uses 'LatTex' - for typesetting, has fontawesome icons, :
+https://github.com/posquit0/Awesome-CV
+sudo apt-get install texlive-full #installs texlive-full and dependancies
+xelatex {your-cv}.tex #how to start a new CV/open a CV
+https://www.overleaf.com/latex/templates/awesome-cv/dfnvtnhzhhbm #awesome cv template
+https://www.overleaf.com/latex/templates/awesome-cv-cover-letter/hzvvsbxccjhz #awesome cv cover letter template
+https://www.latex-project.org/ #official site for LaTex
+https://github.com/plorcupine/latex-fontawesome #Icons for resume
+https://www.latex-project.org/help/documentation/ #Official Documentation,
+starting a new project for a fancy CV, as a Web Dev, I should be able to use something fancier than Microsoft Word, the fanseanist
+How do I hyperlink in LaTex and convert to a PDF? going to link each course/certificate to the github repo it's attached to
+will do 4 versions, two with work experience(one with hyperlinks), and 2 without work exp(one with hyperlinks)
+
+Resume Layout/Formatting:
+SectSeans:
+Name(large text-no monikers-centered) - New Line -  
+ Job Title (Full Stack Web Developer/Data Analyst-centered) - New Line -
+Email / Phone / LinkedIn / Portfolio1 / Portfolio2 -- Line Break --
+Skills -- Line Break --
+Courses -- Line Break -- (ExplanASean at end, ) - Course Name / Provider(DoD + Location, Google, Etc) / Date-Started -- Date-Ended
+Personal Projects / Work Experience(probably cutting this) -- Line Break -- Why not just put both my portfolios here as projects instead?
+Da Gram / ECommerce Site / WeatherApp Vs CV1 / CV2 + Trade Offer Generator(Default Values = my terms)
