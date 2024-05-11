@@ -25,11 +25,30 @@
         with hyperlinks? seems sus, add hyperlinks after, create a second version with +HL tag in name at end
     I could combine my work experience + Courses into one master list and color code it, work experience = green, courses = plain
     Let's go with just courses for now, who cares if I stocked shelves when I was 19, I don't, why should they?
+    At least I have an unbroken chain of employment with no real 'gaps' in my resume. regardless of how garbage pay/skill the employment was. Vs Dave Graeber - BS Jobs
+    Can you explain this gap in your resume? 'Yes. That was when I was unemployed.' Vs Covid Cultists, Branch Covidians.
+    Call myself a 'Freelance Developer' instead of 'Unemployed NEET' for the past 3 years. Perspective.
+    can still say I went to UNB for a year, technically true, they just didn't let me in. Remote Classes. Lol, Lmao. 'Finding Myself' 'Gap Year'
+        You paid 40k to be read verbatim the powerpoint slides to you by a noPants so called 'teacher' through a webcam. Lol, Lmao.
+        Hope that special piece of paper "I Paid for my own IndoctrinateSean" was worth it. You should feel 'special'.
+        If you were so smart, why are you taking experimental untested so called 'MedicASeans'? Doesn't seem that smart to me. 'Trust the $cience'
+        I had to entirely reorient my life, again, because of you idiots, never again. If you want to be a brainwashed vaxcattle, do it to yourself,
+        I'm gonna make like a canadian, and leave. Your decisions will never again affect me. God, I can't wait. Good Riddance.
+
+Resume Layout/Formatting:
+SectSeans:
+Name(large text-no monikers-centered) - New Line -  
+ Job Title (Full Stack Web Developer/Data Analyst-centered) - New Line -
+Email / Phone / LinkedIn / Portfolio1 / Portfolio2 -- Line Break --
+Skills -- Line Break --
+Courses -- Line Break -- (ExplanASean at end, ) - Course Name / Provider(DoD + Location, Google, Etc) / Date-Started -- Date-Ended
+Personal Projects / Work Experience(probably cutting this) -- Line Break -- Why not just put both my portfolios here as projects instead?
+Da Gram / ECommerce Site / WeatherApp Vs CV1 / CV2 + Trade Offer Generator(Default Values = my terms)
 
 Going to try this out first better formatting than microsoft word uses 'LaTex' - for typesetting, has fontawesome icons, :
 https://github.com/posquit0/Awesome-CV
 sudo apt-get install texlive-full #installs texlive-full and dependancies
-xelatex {your-cv}.tex #how to start a new CV/open a CV
+xelatex {your-cv}.tex #how to open a CV from terminal,
 https://www.overleaf.com/latex/templates/awesome-cv/dfnvtnhzhhbm #awesome cv template
 https://www.overleaf.com/latex/templates/awesome-cv-cover-letter/hzvvsbxccjhz #awesome cv cover letter template
 https://www.latex-project.org/ #official site for LaTex
@@ -42,12 +61,19 @@ Still Installing, takes a while.. 'Pregenerating ConTeXt MarkIV format. This may
 https://debian-tex-maint.debian.narkive.com/KjtaGDTU/bug-913697-texlive-full-apt-hangs-at-pregenerating-context-markiv-format-this-may-take-some-time
 #fix was holding 'enter' for a few seconds, install started running again, taking a break and then building resume resumes
 
-Resume Layout/Formatting:
-SectSeans:
-Name(large text-no monikers-centered) - New Line -  
- Job Title (Full Stack Web Developer/Data Analyst-centered) - New Line -
-Email / Phone / LinkedIn / Portfolio1 / Portfolio2 -- Line Break --
-Skills -- Line Break --
-Courses -- Line Break -- (ExplanASean at end, ) - Course Name / Provider(DoD + Location, Google, Etc) / Date-Started -- Date-Ended
-Personal Projects / Work Experience(probably cutting this) -- Line Break -- Why not just put both my portfolios here as projects instead?
-Da Gram / ECommerce Site / WeatherApp Vs CV1 / CV2 + Trade Offer Generator(Default Values = my terms)
+How am I going to edit this without putting my personal info on the internet?
+-keep default values in for name, IdentificASean, phone number, address, copy files when done at end and move to a new non-repo folder
+turn into a PDF from there, we get backup copy of PDF on github, just need a note to change name again if we need to make changes
+
+The example resume is 3 pages long, need to cut that down to 1. will add 'work' section last, if there is extra space
+-if they ask for 'work experience' we can send them the one that is longer,
+-can also add 'eduKsean' section with JIBC stuff
+Going to start with adding the example repo, removing most of it, then adding in my stuff, play around with LaTex for a bit, see how it works,
+-we need to create a 'skills' section at the very top, example repo doesn't have one. Place after 'Summary' Section
+-everything else can stay the same,
+-remove 'honors and awards' section
+-top section has hyperlinks in the pdf, can copy those and use for 'certificates'
+-do everything in reverse chronological order
+-need to add a 'projects' section
+-projects section links to both portfolios and 'trade offer'
+-after adding the 'bones' of the resume we can add the 'muscles' of hyperlinks - save as a different name/project/file
