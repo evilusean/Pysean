@@ -1,4 +1,4 @@
-Going to try this out first better formatting than microsoft word uses 'LatTex' - for typesetting, has fontawesome icons, :
+Going to try this out first better formatting than microsoft word uses 'LaTex' - for typesetting, has fontawesome icons, :
 https://github.com/posquit0/Awesome-CV
 sudo apt-get install texlive-full #installs texlive-full and dependancies
 xelatex {your-cv}.tex #how to start a new CV/open a CV

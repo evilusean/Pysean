@@ -26,7 +26,7 @@
     I could combine my work experience + Courses into one master list and color code it, work experience = green, courses = plain
     Let's go with just courses for now, who cares if I stocked shelves when I was 19, I don't, why should they?
 
-Going to try this out first better formatting than microsoft word uses 'LatTex' - for typesetting, has fontawesome icons, :
+Going to try this out first better formatting than microsoft word uses 'LaTex' - for typesetting, has fontawesome icons, :
 https://github.com/posquit0/Awesome-CV
 sudo apt-get install texlive-full #installs texlive-full and dependancies
 xelatex {your-cv}.tex #how to start a new CV/open a CV
@@ -38,6 +38,9 @@ https://www.latex-project.org/help/documentation/ #Official Documentation,
 starting a new project for a fancy CV, as a Web Dev, I should be able to use something fancier than Microsoft Word, the fanseanist
 How do I hyperlink in LaTex and convert to a PDF? going to link each course/certificate to the github repo it's attached to
 will do 4 versions, two with work experience(one with hyperlinks), and 2 without work exp(one with hyperlinks)
+Still Installing, takes a while.. 'Pregenerating ConTeXt MarkIV format. This may take some time... ' #from terminal
+https://debian-tex-maint.debian.narkive.com/KjtaGDTU/bug-913697-texlive-full-apt-hangs-at-pregenerating-context-markiv-format-this-may-take-some-time
+#fix was holding 'enter' for a few seconds, install started running again, taking a break and then building resume resumes
 
 Resume Layout/Formatting:
 SectSeans:
