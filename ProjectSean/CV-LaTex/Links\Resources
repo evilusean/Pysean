@@ -1,0 +1,9 @@
+Going to try this out first better formatting than microsoft word uses 'LatTex' - for typesetting, has fontawesome icons, :
+https://github.com/posquit0/Awesome-CV
+sudo apt-get install texlive-full #installs texlive-full and dependancies
+xelatex {your-cv}.tex #how to start a new CV/open a CV
+https://www.overleaf.com/latex/templates/awesome-cv/dfnvtnhzhhbm #awesome cv template
+https://www.overleaf.com/latex/templates/awesome-cv-cover-letter/hzvvsbxccjhz #awesome cv cover letter template
+https://www.latex-project.org/ #official site for LaTex
+https://github.com/plorcupine/latex-fontawesome #Icons for resume
+https://www.latex-project.org/help/documentation/ #Official Documentation, 
