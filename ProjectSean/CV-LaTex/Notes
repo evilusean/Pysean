@@ -114,3 +114,6 @@ Remove 'honors and awards'
 First page layout is done, now need 'summary' then add a 'skills' section then 'certifications'
 then 'work experience' 'education' in a seperate layout/file - try to keep the above stuff under one page:
 -'Projects' / 'Portfolios' SectSean - Add both portfolios / Trade-Offer Here,
+Added 2 new sectSeans, still need to test if they look good as a PDF, should have hyperlinks to 'portfolio', also created 'skills'
+Now just need to update 'certificates' and 'summary' and hope for a 1 pager, might actually be done tonight, if we push it
+Just tested, 'portfolio' links didn't work, and there is a weird floating '2' for some reason.
