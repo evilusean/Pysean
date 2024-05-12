@@ -3,6 +3,7 @@ using ubuntu, recently installed LaTex via apt-get, install was slow, had like 1
 After reading error message, sounds pretty bad, making this file to store notes and error messages.
 
 Rebooted, got an initial message of:
+ACPI Error: AE already exists ubuntu
 
 Rebooted into recovery mode:
 /dev/mapper/vgubuntu-root contains a file system ith errors, check forced.
@@ -12,3 +13,6 @@ fsck exited with status code 4
 done
 Failure: File system check of the root filesystem failed
 the Root filesystem on /dev/mapper/vgubuntu-root requires a manual fsck
+
+Fix:
+fsck -y /dev/mapper/vgubuntu-root
