@@ -1,0 +1,14 @@
+12May2024
+using ubuntu, recently installed LaTex via apt-get, install was slow, had like 100 tabs open in google chrome, linux froze/crashed, I restarted then error. 
+After reading error message, sounds pretty bad, making this file to store notes and error messages.
+
+Rebooted, got an initial message of:
+
+Rebooted into recovery mode:
+/dev/mapper/vgubuntu-root contains a file system ith errors, check forced.
+Inodes that were part of a corrupted orphan linked list found
+/dev/mapper/vgubuntu-root: UNEXPECTED INCONSISTENCY; RUN fsck MANUALLY. (i.e, without -a or -p options)
+fsck exited with status code 4
+done
+Failure: File system check of the root filesystem failed
+the Root filesystem on /dev/mapper/vgubuntu-root requires a manual fsck
