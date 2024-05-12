@@ -1,3 +1,7 @@
+    !FUTURE SEAN! If you are creating another CV/updating, take the files from here after downloading the repo: https://github.com/posquit0/Awesome-CV
+    !Then replace those example files with the personal edited ones - it should allow you to create the fanseanist CV
+    !Also note: Used Dummy Data for Name/Address/LocaSean - will need to replace that first.
+
     Resume Template - fill in the blanks with AI - add all skills(alot) - courses - brief job summary, one sentence per -
     get AI to help write resume - will need to find old one, it's in old email somewhere, update it with all the buzzwords
         get the dates, add DescriptSeans from AI, hit all the ATS bingo words, then toss to a recruiter
@@ -94,3 +98,14 @@ entering extended mode
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./awesome-cv.cls
 ! Undefined control sequence.
+Missing character: There is no 1 ("31) in font nullfont!
+! LaTeX Error: Missing \begin{document}.
+
+Ok, keep getting errors, above 'Missing \begin{document}' doesn't even exist, downloading repo as zip and starting from new
+I'll be able to make edits here and just move the changed files over,
+Ok, just got it to work from the downloaded repo, now I just need to change values and copy over, I must be missing a critical file
+'xelatex resume.tex' #will run and create the PDF with the input values,
+It creates 3 files 'resume.pdf' 'resume.log' and 'resume.aux' maybe some 'png's, I wasn't paying attention till after it worked
+I now need to switch around the components to add my own customizeASean
+Will open new repo in VSCode with '.code' make changes to those files, and transfer them over here for future use, so I don't waste a day looking through
+-old harddrives and emails for a 7+ year old resume missing half my employment history and dates,
