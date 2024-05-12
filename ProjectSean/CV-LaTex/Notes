@@ -32,7 +32,7 @@
         You paid 40k to be read verbatim the powerpoint slides to you by a noPants so called 'teacher' through a webcam. Lol, Lmao.
         Hope that special piece of paper "I Paid for my own IndoctrinateSean" was worth it. You should feel 'special'.
         If you were so smart, why are you taking experimental untested so called 'MedicASeans'? Doesn't seem that smart to me. 'Trust the $cience'
-        I had to entirely reorient my life, again, because of you idiots, never again. If you want to be a brainwashed vaxcattle, do it to yourself,
+        I had to entirely reorient(ha) my life, again, because of you idiots, never again. If you want to be a brainwashed vaxcattle, do it to yourself,
         I'm gonna make like a canadian, and leave. Your decisions will never again affect me. God, I can't wait. Good Riddance.
 
 Resume Layout/Formatting:
@@ -77,3 +77,11 @@ Going to start with adding the example repo, removing most of it, then adding in
 -need to add a 'projects' section
 -projects section links to both portfolios and 'trade offer'
 -after adding the 'bones' of the resume we can add the 'muscles' of hyperlinks - save as a different name/project/file
+
+12May2024 -
+just tried to test LaTex, downloaded example(s), added to repo, tried to run with below:
+xelatex resume.tex #supposed to build our resume with files
+added 'awesome-cv.cls' fixed first errors, tried again and got a literal book of errors(100's of lines).
+-and got a wall of errors, I think it might a reference error, since literally nothing seems to be working, might be
+-folder layout/structure, maybe referencing the wrong files 'resume.tex' seems to be the main file, and
+'awesome-cv.cls' appears to be similar to CSS
