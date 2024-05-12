@@ -85,3 +85,12 @@ added 'awesome-cv.cls' fixed first errors, tried again and got a literal book of
 -and got a wall of errors, I think it might a reference error, since literally nothing seems to be working, might be
 -folder layout/structure, maybe referencing the wrong files 'resume.tex' seems to be the main file, and
 'awesome-cv.cls' appears to be similar to CSS
+
+ERROR!
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex)
+restricted \write18 enabled.
+entering extended mode
+(./resume.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (./awesome-cv.cls
+! Undefined control sequence.
