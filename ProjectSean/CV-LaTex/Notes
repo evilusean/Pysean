@@ -109,3 +109,8 @@ It creates 3 files 'resume.pdf' 'resume.log' and 'resume.aux' maybe some 'png's,
 I now need to switch around the components to add my own customizeASean
 Will open new repo in VSCode with '.code' make changes to those files, and transfer them over here for future use, so I don't waste a day looking through
 -old harddrives and emails for a 7+ year old resume missing half my employment history and dates,
+
+Remove 'honors and awards'
+First page layout is done, now need 'summary' then add a 'skills' section then 'certifications'
+then 'work experience' 'education' in a seperate layout/file - try to keep the above stuff under one page:
+-'Projects' / 'Portfolios' SectSean - Add both portfolios / Trade-Offer Here,
