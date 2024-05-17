@@ -31,6 +31,8 @@ tryhackme
 hackthissite
 
 Leetcode is easily teachable. It's just 15 overall patterns / approaches described in different ways. Having worked in Big Tech, I prefer the pre-Cracking the Coding Interview style of interviews.
+Start with top 100 liked questions, start with 50 easy/medium, solve at least 20 questions for each 'topic' until it 'clicks', learn from the soluseans, if you are stuck on a problem for >45 min look up answer, 
+'topics' = string -> two pointer -> sliding window -> binary search -> recursion -> binary tree -> backtracking -> BFS -> DFS -> graph -> linked list -> sort -> trie -> stack qeue -> priority qeue -> dynamic programming
 8 Design Patterns:
 https://neetcode.io/courses/lessons/8-design-patterns
 NeetCode 150:
