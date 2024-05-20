@@ -33,6 +33,7 @@ hackthissite
 Leetcode is easily teachable. It's just 15 overall patterns / approaches described in different ways. Having worked in Big Tech, I prefer the pre-Cracking the Coding Interview style of interviews.
 Start with top 100 liked questions, start with 50 easy/medium, solve at least 20 questions for each 'topic' until it 'clicks', learn from the soluseans, if you are stuck on a problem for >45 min look up answer, review in 2 weeks 
 'topics' = string -> two pointer -> sliding window -> binary search -> recursion -> binary tree -> backtracking -> BFS -> DFS -> graph -> linked list -> sort -> trie -> stack qeue -> priority qeue -> dynamic programming
+Most Leetcode problems are recgonizing which core algorithm is required and succesfully implementing it - problem solving = pattern recgoniSean
 8 Design Patterns:
 https://neetcode.io/courses/lessons/8-design-patterns
 NeetCode 150:
@@ -40,6 +41,12 @@ https://neetcode.io/
 How to study DSA:
 https://leetcode.com/discuss/general-discussion/494279/comprehensive-data-structure-and-algorithm-study-guide
 https://www.youtube.com/watch?v=7UsYOo5_x0o&ab_channel=CodingMoney
+DFS(depth first search) Algo(JS):
+https://vishalrana9915.medium.com/depth-first-search-dfs-using-javascript-d59c5c200c7d
+Binary Search Algo(JS):
+https://www.geeksforgeeks.org/binary-search-in-javascript/
+The Sliding Window Technique(JS):
+https://dev.to/sanukhandev/the-sliding-window-technique-a-powerful-algorithm-for-javascript-developers-3nfm
 
 jeetcode its actually based but infested with pajeets. every problem you solve add the subroutine to a class file. then add that project to github. then presto you just made a portfolio. if you dont have 6 cool projects pinned on 
 your github you are a failure. leetcode is actually based because its readymade problems you can solve in your favorite language. shoot for building your github portfolio and focus on length of lines of code produced rather 
