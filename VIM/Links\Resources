@@ -3,6 +3,10 @@ https://nvchad.com/
 https://github.com/NvChad/NvChad
 One Liner:
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+
+WebDev NeoVim Setup:
+https://www.youtube.com/watch?v=fFHlfbKVi30&ab_channel=devaslife
+
 Personalize Theme: <space> + T + H
 Find Files Menu: <space> + F + F
 Find Open Files in buffers: <space> + F + B  / tab to go forward / shift + tab to go backwards / close : <space> + x
