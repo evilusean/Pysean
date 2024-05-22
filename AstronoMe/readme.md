@@ -1,0 +1,3 @@
+Start: 22May2024 </br>
+End: </br>
+Creating a repo that will allow me to build an astronomy app in python, I know I should technically be working on web development when I'm applying for tech jobs, but I can just build it in python, add my own changes, then use Flask/Vercel for backend and create a UI with React/JS/NextJS for frontend - and it will technically be a frontend project, plus I've been wanting to build something like this for a while, since the movement of the planets is predictable, it should be entirely math related, planets don't just randomly jump around retrograde - after learning this I can add on to it later on for moon phases, eclipses, etc</br>
