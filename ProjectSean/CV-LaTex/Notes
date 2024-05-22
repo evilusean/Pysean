@@ -138,6 +138,11 @@ also need to add hyperlinks(if they fit-if long URL will have to drop)
 Added Alias-Resume-Sean- LocaSean=Failed State of canada #=(555)555-5555-5555 to linkedIn, don't want randoms on internet knowing my address/phone #
 Added WebDeveloper Portfolio to LinkedIn Aswell - haven't updated LinkedIn in over a year, not going to upload a year of projects today -
 
+21May2024- Created a Japanese version, required 2 text/font/character sets - imported into 'awesome.cv.cls' the 2 Japanese packages are:
+\RequirePackage{xeCJK}
+\RequirePackage{xltxtra}
+some characters were missing, so I replaced the kanji with hiragana - looks way better than liberoffice edit I did,
+
 Certificates(Edited):
 
 FreeCodeCamp - GraphQL / NodeJS / Apollo :
