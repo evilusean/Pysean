@@ -11,113 +11,105 @@
 
 %---------------------------------------------------------
   \cventry
-    {DevOps Engineer} % Job title
-    {Dunamu Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Sep. 2023 - Present} % Date(s)
-    {
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Site Reliability Engineer \& Infrastructure Team Lead} % Job title
-    {Danggeun Pay Inc. (KarrotPay)} % Organization
-    {Seoul, S.Korea} % Location
-    {Mar. 2021 - Jun. 2023} % Date(s)
+    {Full Stack Developer} % Job title
+    %{Dunamu Inc.} % Organization
+    {Canada} % Location
+    {2021 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Everything that matters.}
-        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
-        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
-        \item {Established a standardized base for declarative management of infrastructures and service deployments, enabling operational efficiency and consistency. Over 90\% of AWS resources were all managed through standardized terraform modules. All add-ons and service workloads on the Kubernetes cluster were managed on a GitOps basis with Kustomize and ArgoCD.}
-        \item {Saved over 30\% of the overall AWS costs by establishing a quarterly purchasing strategiy for RI (Reserved Instance) and SP (Savings Plan) and by introducing Graviton instances.}
-        \item {Established a core architecture for regulating of outbound DNS traffic in multi-account and multi-VPC environments utilizing AWS Route53 DNS Firewall and FMS. This significantly increased the level of security confidence in the financial sector's segregated environment.}
-        \item {Introduced Okta employee identity solution in the company, establishing security policies and configuring SSO integration with over 20 enterprise systems including AWS, GitHub, Slack, Google Workspace. Set up a Hub and Spoke architecture, enabling a collaborative account structure with the parent company, Daangn Market.}
+        \item {3+ years of experience as a self-taught full-stack web developer with a passion for creating user-friendly and responsive websites that meet the needs of users. Proficient in a wide range of technologies including HTML, CSS, JavaScript, React, NextJS, Node.js, PHP - Laravel, and Python.}
+        \item {Skilled in both front-end and back-end development, with a strong understanding of web architecture and best practices. Experienced in working with agile methodologies and collaborating with cross-functional teams to deliver high-quality software products.}
+        \item {Eager to learn new technologies and stay up-to-date with the latest trends in web development. Committed to delivering exceptional results and exceeding expectations.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Site Reliability Engineer} % Job title
-    {Danggeun Market Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Feb. 2021 - Mar. 2021} % Date(s)
+    {Bachelors of Economics} % Job title
+    {University of New Brunswick} % Organization
+    {Fredericton, NB, Canada} % Location
+    {2019 - 2020} % Date(s)
     {
+     % \begin{cvitems} % Description(s) of tasks/responsibilities
+      %  \item {Was not allowed to attend university/'higher eduKSean' because I refused to take an untested so called medication because the TV/Govt/Big Phama told me to, If you are so smart - why are you taking god knows what mystery $cience juice?}
+      %  \item {I saved 40k/a year by not paying for my own indoctrinateSean, and getting my special piece of paper that says I am competent. While listening to so called teachers read verbatim powerpoints for 4 years telling me how smart I am for wasting 4 years, and 100's of thousands of dollars on my special piece of paper. }
+      %  \item {Also didn't waste time listening to govt funded so called schools, tell me how 'keynes was right - deficit spending gud - more spending - more taxes, muh central banks muh interest rates, green line go up!'}
+      %  \item {Established a standardized base for declarative management of infrastructures and service deployments, enabling operational efficiency and consistency. Over 90\% of AWS resources were all managed through standardized terraform modules. All add-ons and service workloads on the Kubernetes cluster were managed on a GitOps basis with Kustomize and ArgoCD.}
+      %  \item {Saved over 30\% of the overall AWS costs by establishing a quarterly purchasing strategiy for RI (Reserved Instance) and SP (Savings Plan) and by introducing Graviton instances.}
+      %  \item {Established a core architecture for regulating of outbound DNS traffic in multi-account and multi-VPC environments utilizing AWS Route53 DNS Firewall and FMS. This significantly increased the level of security confidence in the financial sector's segregated environment.}
+      %  \item {Introduced Okta employee identity solution in the company, establishing security policies and configuring SSO integration with over 20 enterprise systems including AWS, GitHub, Slack, Google Workspace. Set up a Hub and Spoke architecture, enabling a collaborative account structure with the parent company, Daangn Market.}
+     % \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Founding Member \& Director of Infrastructure Division} % Job title
-    {Kasa} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2018 - Jan. 2021} % Date(s)
+    {Senior English Teacher / Manager} % Job title
+    {Shane English} % Organization
+    {Yangzhou, China} % Location
+    {2016 - 2019} % Date(s)
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
-        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
-        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
-        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
-        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
-        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
-        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
-        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
-        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
+      \begin{cvitems}
+        \item {Curriculum Development: Expertise in designing and implementing comprehensive English language curricula aligned with international standards and best practices.}
+        \item {Instructional Delivery: Skilled in delivering dynamic and interactive lessons that incorporate a variety of teaching methodologies, including communicative language teaching, task-based learning, and technology integration.}
+        \item {Successfully led a team of English teachers, providing guidance, support, and professional development opportunities. Monitored teacher performance and provided constructive feedback to help them improve their teaching skills and effectiveness.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May. 2018} % Date(s)
+    {Landscaper} % Job title
+    {Fredericton Landscaping} % Organization
+    {Fredericton, NB, Canada} % Location
+    {2015} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
+        \item {Excellent communication and interpersonal skills, fostering positive relationships with clients and colleagues.}
+        \item {Successfully managed a team of 3 landscapers, ensuring efficient and productive work practices.}
+        \item {Proactively identified and resolved potential landscape issues, preventing costly repairs.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
+    {Apprentice Plumber} % Job title
+    {Mystique Mechanical} % Organization
+    {Calgary, AB, Canada} % Location
+    {2014} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
+        \item {Completed plumbing projects on time and within budget, exceeding client expectations.}
+        \item {Adaptable and able to work independently or as part of a team.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
+    {ACP-EMT-Medic MOS ID 00334} % Job title
+    {DoD- Canadian Forces} % Organization
+    {Canada} % Location
+    {2009-2013} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
+        \item {Highly motivated and results-oriented ACP-EMT-Medic with 4+ years of experience in providing emergency medical care in diverse military settings.}
+        \item {Proven ability to assess and treat patients with a wide range of injuries and illnesses, ensuring their safety and well-being. In both a clinical and field ambulance settings.}
+        \item {Skilled in administering medications, performing advanced medical procedures, and operating medical equipment.}
+        \item {Strong knowledge of medical protocols and procedures, ensuring adherence to best practices and patient safety.}
+        \item {Excellent communication and interpersonal skills, fostering trust and rapport with patients and colleagues.}
+        \item {Maintained accurate and complete electronic medical records (EMRs), ensuring patient confidentiality and data integrity. Adhered to HIPAA regulations and best practices for data security and privacy.}
+        \item {Utilized EMR systems to document patient encounters, track medications, and monitor health conditions. As well as secure funding and reschedule clinical appointments and treatments.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Engineer} % Job title
-    {ShitOne Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
+    {Grocery} % Job title
+    {Sobeys} % Organization
+    {Fredericton, NB, Canada} % Location
+    {2008-2009} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer.}
-        \item {Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
+        \item {Responsible for transportation and distribution of stock. Management and processing of stock in a warehouse environment.}
+        \item {Proactively identified and addressed potential stock issues, preventing product shortages and ensuring customer satisfaction.}
       \end{cvitems}
     }
 
