@@ -15,4 +15,5 @@ Failure: File system check of the root filesystem failed
 the Root filesystem on /dev/mapper/vgubuntu-root requires a manual fsck
 
 Fix:
+First reboot in recovery mode, then type below:
 fsck -y /dev/mapper/vgubuntu-root
