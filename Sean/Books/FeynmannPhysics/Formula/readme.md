@@ -1,6 +1,6 @@
 # Feynnmann's Formulae:</br>
-
 Asked AI how to get started on this project, answer below:</br>
+After writing this 'readme.md'(MARKDOWN), I realized that markdown can do formulas aswell, very cool. </br>
 Using XeLaTeX to showcase Feynman's physics and math formulas is a great way to learn and visualize them. Here's how you can get started:</br>
 
 ## 1. Setting Up the Project:</br>
