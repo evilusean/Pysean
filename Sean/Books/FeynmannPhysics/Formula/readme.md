@@ -4,3 +4,4 @@ After writing this 'readme.md'(MARKDOWN), I realized that markdown can do formul
 Going to use This Markdown to store all the formulae below, if I'm feeling ambitious, can create a XeLateX or if something doesn't work in this markdown:</br>
 
 ## 1-1 Atoms in Motion:</br>
+The Phi equation is φ = (1 + √5) / 2.
