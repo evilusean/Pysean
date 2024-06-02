@@ -88,6 +88,7 @@ Applied to 5 jobs in CO on linkedin / Applied to 5 in Japan / Applied to 5 in TX
   You are tasked with implementing two UI elements to intelligently show email recipients in the 'AuditTable' component.
   Inside the resource provided below, you will find a challenge_details folder and folders for the different frameworks. The framework folders are identical projects implemented in their respective framework.
   For the submission, we only accept a single 'RecipientsDisplay.tsx' file, which is located inside the /src/components/ directory.
+Spent hours on it, was building the paginaSean wrong, at least I figured it out, going to sleep on it, and start tomorrow fresh, 
 
 TODO: Add all projects to LinkedIn(theres like 10 missing - haven't updated in a year)
   Update Wantedly / Daijob accounts with new info - should take all day
