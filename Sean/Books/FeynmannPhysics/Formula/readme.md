@@ -5,3 +5,4 @@ Going to use This Markdown to store all the formulae below, if I'm feeling ambit
 
 ## 1-1 Atoms in Motion:</br>
 The Phi equation is φ = (1 + √5) / 2.
+φ = \frac{1 + \sqrt{5}}{2}
