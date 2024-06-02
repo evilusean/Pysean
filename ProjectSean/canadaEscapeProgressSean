@@ -80,8 +80,15 @@ Applied to 5 jobs in CO on linkedin / Applied to 5 in Japan / Applied to 5 in TX
 
 01June2024: Applied x5 Japan LinkedIn / Applied x5 Ireland LinkedIn / Applied x5 TN LinkedIn / Applied x10 FL / Applied x5 TX / Applied x5 AZ / Applied x5 CO / 
 
-02June2024: Applied x1 Specialized Group Japan / 
+02June2024: Applied x1 Specialized Group Japan / Applied x5 TokyoDev / 
   Created acct on GitTap
+  Was given a react coding challenge, to set up an 'Email Audit' System with React = Implement 2 UI Elements, show email recipients in the 'AuditTable' - Download a file, Implement x2 componetns -> Github Gist -> JSON with email
+  https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
+  -Downloaded Repo, 'npm i' #install dependancies, 'npm audit fix' fix dependancies, 'npm run dev' will start a local server to test, next we need to build 2 components
+  You are tasked with implementing two UI elements to intelligently show email recipients in the 'AuditTable' component.
+  Inside the resource provided below, you will find a challenge_details folder and folders for the different frameworks. The framework folders are identical projects implemented in their respective framework.
+  For the submission, we only accept a single 'RecipientsDisplay.tsx' file, which is located inside the /src/components/ directory.
+Spent hours on it, was building the paginaSean wrong, at least I figured it out, going to sleep on it, and start tomorrow fresh, 
 
 TODO: Add all projects to LinkedIn(theres like 10 missing - haven't updated in a year)
   Update Wantedly / Daijob accounts with new info - should take all day
@@ -136,3 +143,6 @@ https://evilusean.github.io/Trade-Offer/
 私は毎日日本語を勉強します. I study Japanese every day.
 3年間コーディングを勉強しました. I studied coding for 3 years.
 お会いできてうれしいです.はじめまして.よろしくお願いします. Pleased to meet you.
+
+I am writing to express my keen interest in the Backend Python Developer position advertised on TokyoDev. With my 3 years of experience in Python development and a strong understanding of backend technologies,
+I am confident that I possess the skills and qualifications necessary to excel in this role. I have enclosed my Japanese resume, if you require an English version, simply send an email and ask. ~Best Regards, Shawn
