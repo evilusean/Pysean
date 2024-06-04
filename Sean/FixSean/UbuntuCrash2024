@@ -14,6 +14,9 @@ done
 Failure: File system check of the root filesystem failed
 the Root filesystem on /dev/mapper/vgubuntu-root requires a manual fsck
 
+Crashed Again ~ May 28th, 04 June 2024 - New error = 
+ubuntu [firmware bug] ACPI Region does not cover the entire command/response buffer
+
 Fix:
 First reboot in recovery mode, then type below:
 fsck -y /dev/mapper/vgubuntu-root
