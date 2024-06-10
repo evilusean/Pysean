@@ -1,0 +1,3 @@
+[0610/142017.016674:ERROR:process_memory_range.cc(75)] read out of range
+
+code --in-process-gpu #fixed the memory issue
