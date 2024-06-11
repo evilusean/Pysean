@@ -1,0 +1,37 @@
+* = Owned/Downloaded
+
+
+
+
+
+
+
+
+
+
+
+
+
+Plugins 
+Bespoke Synth - Free - not a DAW - hardware/modular electronic synths + sequencers - Free - 
+Cardinal - Free - can be run on browser
+VCV Rack - 
+
+DAWS:
+*Reaper
+*BitWig
+Ableton
+FruityLoops - Don't use - Teaches bad habits, easier to learn the hard way to unlearn bad habits
+
+Free DAWS:
+*Audacity - Multi Track Processing / Stereo Track Recording - Good for single track recording( Audio Recorder - No Midi /Virtual instruments - 100% Free - ALl 3 OS'):
+https://www.audacityteam.org/download/
+QTractor - Free - Only for Linux - Multi Track Recording - Editing - Midi composition + Editing - Supports many formats/samples
+https://www.qtractor.org/doc/Manual%20-%202%20Installing%20and%20Configuring%20Qtractor.html
+Tracktion 6 - Free - Multi Track Editing/Recording Midi Support - Samples - Midis -  :
+*LMMS (Linux MultiMedia Studio) - Alot of instruments - 
+*Ardour - build from source code = free - good for recording live :
+sudo apt install ardour #installs on ubuntu
+Soundbridge - Limited 'free' - sign in - worse than reaper
+Cakewalk -> Roland -> Gibson - Input Step sequencing
+BandLab
