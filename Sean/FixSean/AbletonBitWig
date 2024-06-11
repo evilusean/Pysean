@@ -1,0 +1,29 @@
+Ableton 10 (11 is current version) can be installed through lutris, uncracked, requires a license - Can not save without a license / crack
+
+BitWig is for pro audio productSean for linux - also is licensed.. - can not save without
+https://www.bitwig.com/support/technical_support/installing-bitwig-studio-on-linux-via-flatpak-52/
+https://www.youtube.com/watch?v=C45rLPAtRD8&t=35s&ab_channel=LinuxAudioTips
+sudo apt update && sudo apt dist-upgrade #update system
+Also requires Git / Vim / BuildEssential
+sudo apt install git-all #will install git on ubuntu
+sudo apt-get install vim #will install vim on ubuntu
+sudo apt install build-essential #will install build essential on ubuntu
+
+Next install kx.studio repositories / cadence (tools for audio productsean):
+kx.studio
+sudo apt-get install apt-transport-https gpgv wget #install dependancies
+wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_11.1.0_all.deb #download package file
+sudo dpkg -i kxstudio-repos_11.1.0_all.deb #deploy it
+sudo apt install cadence #will install cadence
+
+Next install realtimeconfigquickscan(free perl script on github):
+https://github.com/raboof/realtimeconfigquickscan
+git clone https://github.com/raboof/realtimeconfigquickscan.git #download code, use git clone 
+cd realtimeconfigquickscan/ #change into directory, 
+perl realTimeConfigQuickScan.pl #run perl script, all items in red will need to be changed
+sudo apt install cpufrequtils
+eco 'GOVERNER="performance"' | sudo tee /etc/default/cpufrequtils GOVERNOR="performance"
+sudo systemctl disable ondemand
+
+https://www.bitwig.com/download/
+sudo apt install ./bitwig-studio-5.1.9.deb #install bitwig
