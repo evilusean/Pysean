@@ -1,0 +1,4 @@
+Tried to install Docker, want to learn this month, which told me to install 'gnome-terminal' which messed up my VSCode and now I'm using 'X-Term' as default terminal, got a pseudo fix, with below code
+gsettings set org.gnome.desktop.default-applications.terminal exec /usr/bin/terminator
+gsettings set org.gnome.desktop.default-applications.terminal exec-arg "-x"
+#had to install terminator, works and looks better than default terminal, but wasted hours already this morning on fixing terminal, works now CTRL+ALT+T works now
