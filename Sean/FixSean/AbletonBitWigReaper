@@ -27,3 +27,8 @@ sudo systemctl disable ondemand
 
 https://www.bitwig.com/download/
 sudo apt install ./bitwig-studio-5.1.9.deb #install bitwig
+
+Install Reaper:
+https://gist.github.com/wcoastsands/406bd892465a2334f4eff89204149451
+
+
