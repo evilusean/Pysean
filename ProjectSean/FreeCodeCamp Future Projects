@@ -273,4 +273,4 @@ Laughter Bots - Design a small basic drone swarm that can be used for a short pe
   Most parts can be 3D printed, or mass produced plastics(cheap) - except the electronics, which has gotten cheap, might not even need a gyro if the software is good enough, could probably run an ESP32/Arduino or custom chip(cheap)
   Build 3D printable blueprints for this: https://www.youtube.com/watch?v=Sa6EslOHsI0&t=26s&ab_channel=MaxImagination
   IR Tracking for Swarm: https://www.youtube.com/watch?v=0ql20JKrscQ&ab_channel=JoshuaBird
-
+  FLIR Hub vs Heat Sig Vs IR Targetting Vs FPV - Chain Gang x6 - Have them follow each other then switch lead to FPV, and have x5 in reserve stationary, preprogram FormASeans/patterns 
