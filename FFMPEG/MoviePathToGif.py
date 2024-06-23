@@ -50,8 +50,8 @@ def movie_to_gif(input_file, start_time, end_time, output_file, fps=10, width="m
 # Example usage:
 #input_movie = "/home/sean/Downloads/movie_1.mp4"
 input_movie = "/media/sean/D80477BF04779EE6/CyberpunkEdgerunners/Cyberpunk - Edgerunners - S01E01 - Let You Down.mkv"
-start_time = 355  # Start Time
-end_time = 361  # End Time
+start_time = 125  # Start Time
+end_time = 140  # End Time
 output_gif = "/home/sean/Pictures/gif/Cyberpunk.gif"
 output_gif2 = "/home/sean/Pictures/gif/Cyberpunk_full.gif"
 gif_fps = 15  # Set the GIF frame rate FPS

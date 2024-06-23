@@ -12,6 +12,6 @@ def time_to_seconds(time_str):
   return hours * 3600 + minutes * 60 + seconds
 
 # Example usage:
-time_str = "00:05:55"
+time_str = "00:00:00" #Hour/Minute/Second
 seconds = time_to_seconds(time_str)
 print(f"Time in seconds: {seconds}")
