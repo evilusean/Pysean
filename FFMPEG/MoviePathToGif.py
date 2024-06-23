@@ -1,4 +1,5 @@
 import subprocess
+import os
 
 def movie_to_gif(input_file, start_time, end_time, output_file="output.gif", fps=10, width="max"):
   """
@@ -20,9 +21,17 @@ def movie_to_gif(input_file, start_time, end_time, output_file="output.gif", fps
 
   # Set width based on input
   if width == "max":
-    width = movie_width #type "max" to automatically set the width of the saved gif to the same size as movie
+    width = movie_width  # type "max" to automatically set the width of the saved gif to the same size as movie
   else:
-    width = int(width) #type the width of the size of gif you want, Ex: 640, 1280 etc
+    width = int(width)  # type the width of the size of gif you want, Ex: 640, 1280 etc
+
+  # Check if output files exist, if so, increment the name
+  for output_file in [output_gif, output_gif2]:
+    base_name, ext = os.path.splitext(output_file)
+    counter = 1
+    while os.path.exists(output_file):
+      output_file = f"{base_name}_{counter}{ext}"
+      counter += 1
 
   # Construct the ffmpeg command
   command = [
@@ -44,10 +53,14 @@ input_movie = "/home/sean/Downloads/movie_1.mp4"
 start_time = 10  # Start at 10 seconds
 end_time = 20  # End at 20 seconds
 output_gif = "/home/sean/Pictures/gif/my_gif.gif"
+output_gif2 = "/home/sean/Pictures/gif/my_gif_full.gif"
 gif_fps = 5  # Set the GIF frame rate to 5 fps
-gif_width = "max"  # type "max" to automatically set the width of the saved gif to the same size as movie, 
+gif_width = 640  # will save the first gif as 640 (for cell phones/whatever)
+gif_width2 = "max"  # type "max" to automatically set the width of the saved gif to the same size as movie, 
 #type an int to use another size
 
-movie_to_gif(input_movie, start_time, end_time, output_gif, gif_fps, gif_width)
+movie_to_gif(input_movie, start_time, end_time, output_gif, gif_fps, gif_width)  # will save first small gif
+movie_to_gif(input_movie, start_time, end_time, output_gif2, gif_fps, gif_width2)  # will save full size gif
+
 
 
