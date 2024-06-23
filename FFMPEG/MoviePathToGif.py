@@ -49,11 +49,12 @@ def movie_to_gif(input_file, start_time, end_time, output_file="output.gif", fps
   subprocess.run(command)
 
 # Example usage:
-input_movie = "/home/sean/Downloads/movie_1.mp4"
+#input_movie = "/home/sean/Downloads/movie_1.mp4"
+input_move = "/media/sean/D80477BF04779EE6/Cyberpunk Edgerunners - Season 1 (2022)"
 start_time = 10  # Start at 10 seconds
 end_time = 20  # End at 20 seconds
-output_gif = "/home/sean/Pictures/gif/my_gif.gif"
-output_gif2 = "/home/sean/Pictures/gif/my_gif_full.gif"
+output_gif = "/home/sean/Pictures/gif/Cyberpunk.gif"
+output_gif2 = "/home/sean/Pictures/gif/Cyberpunk_full.gif"
 gif_fps = 5  # Set the GIF frame rate to 5 fps
 gif_width = 640  # will save the first gif as 640 (for cell phones/whatever)
 gif_width2 = "max"  # type "max" to automatically set the width of the saved gif to the same size as movie, 
