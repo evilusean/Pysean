@@ -40,7 +40,7 @@ def movie_to_gif(input_file, start_time, end_time, output_file="output.gif", fps
     "-i", input_file,
     "-t", str(end_time - start_time),
     "-vf", f"scale={width}:-1",  # Adjust the width, height will be scaled proportionally
-    "-gifflags", f"fps={fps}",  # Set GIF frame rate
+    "-r", str(fps),  # Set GIF frame rate
     "-y",  # Overwrite existing output file
     output_file
   ]
@@ -50,9 +50,9 @@ def movie_to_gif(input_file, start_time, end_time, output_file="output.gif", fps
 
 # Example usage:
 #input_movie = "/home/sean/Downloads/movie_1.mp4"
-input_move = "/media/sean/D80477BF04779EE6/Cyberpunk Edgerunners - Season 1 (2022)"
-start_time = 10  # Start at 10 seconds
-end_time = 20  # End at 20 seconds
+input_movie = "/media/sean/D80477BF04779EE6/CyberpunkEdgerunners/Cyberpunk - Edgerunners - S01E01 - Let You Down.mkv"
+start_time = 31  # Start at 10 seconds
+end_time = 35  # End at 20 seconds
 output_gif = "/home/sean/Pictures/gif/Cyberpunk.gif"
 output_gif2 = "/home/sean/Pictures/gif/Cyberpunk_full.gif"
 gif_fps = 5  # Set the GIF frame rate to 5 fps
