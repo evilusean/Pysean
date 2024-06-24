@@ -66,15 +66,19 @@ def read_timestamps_from_file(file_path):
   timestamps = []
   with open(file_path, 'r') as f:
     for line in f:
-      start_time_str, end_time_str = line.strip().split('-')
-      start_time = time_to_seconds(start_time_str)
-      end_time = time_to_seconds(end_time_str)
-      timestamps.append((start_time, end_time))
+      line = line.strip()  # Remove leading/trailing whitespace
+      if '-' in line:  # Check if hyphen exists in the line
+        start_time_str, end_time_str = line.split('-')
+        start_time = time_to_seconds(start_time_str)
+        end_time = time_to_seconds(end_time_str)
+        timestamps.append((start_time, end_time))
   return timestamps
+
 
 def time_to_seconds(time_str):
   """
   Converts a time string in 00:00:00, 00:00, or 00 format to seconds.
+  Handles timestamps with or without leading zeros for hours.
 
   Args:
     time_str: The time string.
@@ -87,10 +91,10 @@ def time_to_seconds(time_str):
   if len(parts) >= 3:
     hours, minutes, seconds = map(int, parts[:3])
     seconds += hours * 3600 + minutes * 60
-  if len(parts) >= 2:
+  elif len(parts) >= 2:
     minutes, seconds = map(int, parts[-2:])
     seconds += minutes * 60
-  if len(parts) >= 1:
+  elif len(parts) >= 1:
     seconds += int(parts[-1])
   return seconds
 
