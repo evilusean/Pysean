@@ -94,26 +94,30 @@ def time_to_seconds(time_str):
   """
   parts = time_str.split(':')
   seconds = 0
-  if len(parts) >= 3:
-    hours, minutes, seconds = map(int, parts[:3])
-    seconds += hours * 3600 + minutes * 60
-  elif len(parts) >= 2:
-    minutes, seconds = map(int, parts[-2:])
-    seconds += minutes * 60
-  elif len(parts) >= 1:
-    seconds += int(parts[-1])
+  try:
+    if len(parts) >= 3:
+      hours, minutes, seconds = map(int, parts[:3])
+      seconds += hours * 3600 + minutes * 60
+    elif len(parts) >= 2:
+      minutes, seconds = map(int, parts[-2:])
+      seconds += minutes * 60
+    elif len(parts) >= 1:
+      seconds += int(parts[-1])
+  except ValueError:
+    print(f"Invalid timestamp format: {time_str}")
+    return 0  # handles an error if you put the timestamp in wrong, instead of breaking
   return seconds
 
 # Example usage:
 #input_movie = "/home/sean/Downloads/movie_1.mp4"
-input_movie = "/media/sean/D80477BF04779EE6/CyberpunkEdgerunners/Cyberpunk - Edgerunners - S01E03 - Smooth Criminal.mkv"
+input_movie = "/media/sean/D80477BF04779EE6/CyberpunkEdgerunners/Cyberpunk - Edgerunners - S01E06 - Girl on Fire.mkv"
 gif_fps = 15  # Set the GIF frame rate FPS
 gif_width = 640  # will save the first gif as 640 (for cell phones/whatever)
 gif_width2 = "max"  # type "max" to automatically set the width of the saved gif to the same size as movie, 
 
 # Read timestamps from a file
-episode = "S01E03" #replace with current episode
-timestamps_file = "/media/sean/40F47947F4794068/MEmes/Timestamps/CyberpunkEdgerunners/S01E03Stamps.txt"  # Replace with your actual file path
+episode = "S01E06" #replace with current episode
+timestamps_file = "/media/sean/40F47947F4794068/MEmes/Timestamps/CyberpunkEdgerunners/S01E06.txt"  # Replace with your actual file path
 timestamps = read_timestamps_from_file(timestamps_file)
 
 # Create GIFs for each timestamp
