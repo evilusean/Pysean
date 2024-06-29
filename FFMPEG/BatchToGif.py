@@ -4,6 +4,10 @@ import os
 def movie_to_gif(input_file, start_time, end_time, output_file, fps=10, width="max"):
   """
     Everytime you load a new episode update 3 variables: 'input_movie', 'episode', and 'timestamps_file'
+    Don't just look for AxSean Seans(action scenes) - Also look for ReactSean's 
+    - Zoomers communicate emoseans through emoji's, I use Gif's - Faceless !YT channel, MEmes B Roll, #tags 4 ReactSeans
+    Can further cut down gifs in size/time - most have at least 50% 'empty space' - 
+    You can tell a story in pictures - just cut out the fluff - once all components tagged workflow is quick
   
     Below Code to create a new Timestamp file in correct folder from terminal:
     cd /media/sean/40F47947F4794068/MEmes/Timestamps/CyberpunkEdgerunners
@@ -110,14 +114,14 @@ def time_to_seconds(time_str):
 
 # Example usage:
 #input_movie = "/home/sean/Downloads/movie_1.mp4"
-input_movie = "/media/sean/D80477BF04779EE6/CyberpunkEdgerunners/Cyberpunk - Edgerunners - S01E06 - Girl on Fire.mkv"
+input_movie = "/media/sean/D80477BF04779EE6/CyberpunkEdgerunners/Cyberpunk - Edgerunners - S01E10 - My Moon My Man.mkv"
 gif_fps = 15  # Set the GIF frame rate FPS
 gif_width = 640  # will save the first gif as 640 (for cell phones/whatever)
 gif_width2 = "max"  # type "max" to automatically set the width of the saved gif to the same size as movie, 
 
 # Read timestamps from a file
-episode = "S01E06" #replace with current episode
-timestamps_file = "/media/sean/40F47947F4794068/MEmes/Timestamps/CyberpunkEdgerunners/S01E06.txt"  # Replace with your actual file path
+episode = "S01E10" #replace with current episode
+timestamps_file = "/media/sean/40F47947F4794068/MEmes/Timestamps/CyberpunkEdgerunners/S01E10.txt"  # Replace with your actual file path
 timestamps = read_timestamps_from_file(timestamps_file)
 
 # Create GIFs for each timestamp
