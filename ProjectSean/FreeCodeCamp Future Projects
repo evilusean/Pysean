@@ -225,6 +225,10 @@ TranslaSean:
 Speech to Translated Text(Japanese):
 https://github.com/kj7kunal/Speech-to-Translated-Text
 11ElevenLabs Free Speech to Text: https://www.youtube.com/watch?v=K5hR5DMd2lc
+based and Voxpilled - free Speech to Text - Locally(requires a special keyboard-works on mobile phone) :
+https://keyboard.futo.org
+https://gitlab.futo.org/alex/latinime
+https://github.com/abb128/LiveCaptions
 
 OpenAI speech to text:
 https://huggingface.co/spaces/openai/whisper
