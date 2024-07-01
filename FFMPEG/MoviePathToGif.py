@@ -49,11 +49,11 @@ def movie_to_gif(input_file, start_time, end_time, output_file, fps=10, width="m
 
 # Example usage:
 #input_movie = "/home/sean/Downloads/movie_1.mp4"
-input_movie = "/media/sean/D80477BF04779EE6/CyberpunkEdgerunners/Cyberpunk - Edgerunners - S01E01 - Let You Down.mkv"
-start_time = 125  # Start Time
-end_time = 140  # End Time
-output_gif = "/home/sean/Pictures/gif/Cyberpunk.gif"
-output_gif2 = "/home/sean/Pictures/gif/Cyberpunk_full.gif"
+input_movie = "/home/sean/Downloads/Everything Everywhere All At Once/Everything.Everywhere.All.At.Once.2022.1080p"
+start_time = 2236  # Start Time of gif in seconds
+end_time = 2270  # End Time of gif in seconds
+output_gif = "/media/sean/MusIX/Pics/Gifs/A1L/EverythingEverywhereAllAtOnce.gif"
+output_gif2 = "/media/sean/MusIX/Pics/Gifs/A1L/EverythingEverywhereAllAtOnce_full.gif"
 gif_fps = 15  # Set the GIF frame rate FPS
 gif_width = 640  # will save the first gif as 640 (for cell phones/whatever)
 gif_width2 = "max"  # type "max" to automatically set the width of the saved gif to the same size as movie, 

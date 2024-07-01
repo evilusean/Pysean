@@ -114,19 +114,19 @@ def time_to_seconds(time_str):
 
 # Example usage:
 #input_movie = "/home/sean/Downloads/movie_1.mp4"
-input_movie = "/media/sean/D80477BF04779EE6/CyberpunkEdgerunners/Cyberpunk - Edgerunners - S01E10 - My Moon My Man.mkv"
+input_movie = "/home/sean/Downloads/Everything Everywhere All At Once/Everything.Everywhere.All.At.Once.2022.1080p"
 gif_fps = 15  # Set the GIF frame rate FPS
 gif_width = 640  # will save the first gif as 640 (for cell phones/whatever)
 gif_width2 = "max"  # type "max" to automatically set the width of the saved gif to the same size as movie, 
 
 # Read timestamps from a file
-episode = "S01E10" #replace with current episode
-timestamps_file = "/media/sean/40F47947F4794068/MEmes/Timestamps/CyberpunkEdgerunners/S01E10.txt"  # Replace with your actual file path
+episode = "A1L" #replace with current episode
+timestamps_file = "/media/sean/40F47947F4794068/MEmes/Timestamps/EverythingEverywhereAllAtOnce.txt"  # Replace with your actual file path
 timestamps = read_timestamps_from_file(timestamps_file)
 
 # Create GIFs for each timestamp
 for i, (start_time, end_time) in enumerate(timestamps):
-  output_gif = f"/media/sean/MusIX/Pics/Gifs/Cyberpunk_{episode}_{i+1}_small.gif"  # Generate unique output file names
-  output_gif2 = f"/media/sean/MusIX/Pics/Gifs/Cyberpunk_{episode}_{i+1}_full.gif"  # Generate unique output file names
+  output_gif = f"/media/sean/MusIX/Pics/Gifs/EverythingEverywhereAllAtOnce_{episode}_{i+1}_small.gif"  # Generate unique output file names
+  output_gif2 = f"/media/sean/MusIX/Pics/Gifs/EverythingEverywhereAllAtOnce_{episode}_{i+1}_full.gif"  # Generate unique output file names
   movie_to_gif(input_movie, start_time, end_time, output_gif, gif_fps, gif_width)
   movie_to_gif(input_movie, start_time, end_time, output_gif2, gif_fps, gif_width2)
