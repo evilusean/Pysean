@@ -276,6 +276,7 @@ DicSeanAry - a simple script goes through a dictionary and replaces every tion/ 
 Gym App-Burpees Situps Pushups etc until we can escape canada, and get back in da gym, apples walled garden doesn't allow us to side load our project, could build in react native, we already built a python script
 Recipe App - Enter Inputs in fridge/cupboards and will give you recipes for the reagents you have currently - or what you need to buy if you have like 80% -  
 HSR/ZZZ/Genshin Stamina Timer (input how many stamina required for next run or to full from now - super simple = total number / (remaining amount * time)
+Leetcode quiz - Take all of the Leetcode JS I've built and create an app that will quiz you based on the title like 'Reverse a Linked List' - Alot of it seems to be just rote memorization of the techniques
 
 Python OpenCV Arduino:
 https://www.youtube.com/watch?v=mfiRJ1qgToc&ab_channel=Murtaza%27sWorkshop-RoboticsandAI
