@@ -280,6 +280,7 @@ Leetcode quiz - Take all of the Leetcode JS I've built and create an app that wi
 
 Python OpenCV Arduino:
 https://www.youtube.com/watch?v=mfiRJ1qgToc&ab_channel=Murtaza%27sWorkshop-RoboticsandAI
+https://www.youtube.com/watch?v=LmEcyQnfpDA&ab_channel=Murtaza%27sWorkshop-RoboticsandAI
 Laughter Bots - Design a small basic drone swarm that can be used for a short period to create funny designs to make people laugh, accessories like lights can also be attached, controlled by a central hub
   Most parts can be 3D printed, or mass produced plastics(cheap) - except the electronics, which has gotten cheap, might not even need a gyro if the software is good enough, could probably run an ESP32/Arduino or custom chip(cheap)
   Build 3D printable blueprints for this: https://www.youtube.com/watch?v=Sa6EslOHsI0&t=26s&ab_channel=MaxImagination
