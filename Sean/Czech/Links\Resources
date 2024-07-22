@@ -1,3 +1,6 @@
+Czech Keyboard(with special characters):
+https://www.lexilogos.com/keyboard/czech.htm
+
 Czech Levels(Official-Common European Framework of Reference): A1 -> A2 -> B1 -> B2 -> C1 -> C2
 
 English Czech Texts (side by side reading) Corpus:
@@ -10,3 +13,4 @@ Use Czech Characters in XeLatex(For Resume+Cover Letter-Will need to translate a
 https://stackoverflow.com/questions/3779234/unicode-characters-in-xelatex
 https://latex.org/forum/viewtopic.php?t=23608
 https://tex.stackexchange.com/questions/580696/the-czech-accents-%C4%9B%C5%A1%C4%8D%C5%99%C5%BE%C3%BD-are-not-showing-in-the-output
+https://github.com/evilusean/Pysean/blob/main/Sean/Czech/Czech_Vocab.tex
