@@ -1,5 +1,6 @@
 Github Can not save the letters with the arrow on top so I marked them with 'letter<' note the '<' points to the letter, they default to 'a' 'p' or 'e' when copied and pasted in
 Also the long vowels don't appear either, I marked them with a 'letter-'. note the '-' dash
+Added a new file that I can use for vocabulary called 'Czech_Vocab.tex' in this repo, 'pdflatex' allows use of modern latin library which can handle the Czech letters
 
 bar
 hamburger
