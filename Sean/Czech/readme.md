@@ -1,2 +1,2 @@
-a Repo for storing Czech language studies
+a Repo for storing Czech language studies</br>
 After checking (czeching) my birth certificate, my mother is either ignorant or lying and attempting to sabotage future Sean - she said he was hungarian - he isn't - she said his parents were czech (technically true, czechoslovakia broke up) -they weren't - they were slovak - I would of wasted months? years? learning the wrong language and going to the wrong country attempting to get citizenship - never take anything a canadian says at face value - lie to your face and stab you in the back - Kosice is in Slovakia - Target Acquired 
