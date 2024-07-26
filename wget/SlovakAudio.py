@@ -31,7 +31,7 @@ def download_sound(sound_url, filename):
     # Add filename and location to CSV in the desired format
     with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow([filename, f"[sound:file:///{os.path.join(download_dir, filename)}]"])
+        writer.writerow(["", filename, f"[sound:file://{os.path.join(download_dir, filename)}]"])
 
 # Create the download directory if it doesn't exist
 if not os.path.exists(download_dir):
