@@ -4,6 +4,15 @@ search for either 'style' or the 'element' you are trying to reproduce and use t
 
 wget -p -k http://www.example.com/ #Use wget in terminal, It'll make a clone of site frontend html, css, js, svg etc. But not in one file as asked. Rather, it'll recreate the whole folder structure
 
+#to get all audio files on a website, like pulling all MP3's to make an Anki deck for a lesson
+wget -r -l1 -H -nd -A mp3 -e robots=off http://example/url 
+-r turns on recursion and downloads all links on page
+-l1 goes only one level of links into the page(this is really important when using -r)
+-H spans domains meaning it will download links to sites that don't have the same domain
+-nd means put all the downloads in the current directory instead of making all the directories in the path
+-A mp3 filters to only download links that are mp3s(this can be a comma separated list of different file formats to search for multiple types)
+-e robots=off just means to ignore the robots.txt file which stops programs like wget from crashing the site
+
 Use webhttrack:
 sudo apt-get install webhttrack #will install webhttrack
 webhttrack #will open it up in your brwoser, after installing 
