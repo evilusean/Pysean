@@ -1,0 +1,6 @@
+#playing around, just getting the model to download the slovak package and say hello!
+#use this website to replace the --model: https://rhasspy.github.io/piper-samples/
+echo 'Dobrý deň' | piper \
+  --model sk_SK-lili-medium \
+  --output_file welcome.wav
+  #will download the slovak and convert the echo 'text' into a .wav to be played in your current working directory, will also download the '.onnx' files to the current directory - but it works 
