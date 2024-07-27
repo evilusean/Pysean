@@ -84,5 +84,19 @@ https://www.youtube.com/watch?v=BwGNP3GXmxg&ab_channel=languagegirl
 Adding Audio To Anki Decks(LibreOffice+Audacity+Anki):
 https://www.youtube.com/watch?v=02vwciRkRYg&ab_channel=languagegirl
 
+Ubuntu TTS Options (since slovak is an obscure language, spoken by 6 million people.. allegedly, I can't find any vocabulary lists on youtube to play in the backgroud as I work on other stuff):
+https://askubuntu.com/questions/53896/natural-sounding-text-to-speech
+Slovak TTS:
+Piper (local TTS-Supports slovak):
+https://github.com/rhasspy/piper
+https://rhasspy.github.io/piper-samples/
+https://github.com/rhasspy/piper/blob/master/VOICES.md
+Tortoise TTS(local):
+https://github.com/neonbjb/tortoise-tts
+Coqui.AI(local, works with tortoise, 16 languages):
+https://github.com/coqui-ai/TTS
+Silero(Supports cyrillic-slovak isn't cyrillic-STT/TTS):
+https://github.com/snakers4/silero-models
+
 Slovak Characters(UTF-8 doesn't always work, use Latin-2, also Alt Keys):
 https://sites.psu.edu/symbolcodes/languages/europe/czechslovak/
