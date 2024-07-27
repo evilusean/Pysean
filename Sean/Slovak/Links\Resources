@@ -97,6 +97,10 @@ Coqui.AI(local, works with tortoise, 16 languages):
 https://github.com/coqui-ai/TTS
 Silero(Supports cyrillic-slovak isn't cyrillic-STT/TTS):
 https://github.com/snakers4/silero-models
+gTTS(google text to speech):
+https://pypi.org/project/gTTS/
+https://cloud.google.com/text-to-speech?hl=en
+https://cloud.google.com/speech-to-text?hl=en
 
 Slovak Characters(UTF-8 doesn't always work, use Latin-2, also Alt Keys):
 https://sites.psu.edu/symbolcodes/languages/europe/czechslovak/
