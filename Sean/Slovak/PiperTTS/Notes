@@ -29,6 +29,13 @@ ModuleNotFoundError: No module named 'piper.application'
 https://github.com/libratbag/piper/issues/341
 sudo ln -nsf /usr/lib/python3.7/site-packages/piper /usr/lib/python3/dist-packages/piper #didn't work, python version is different, 3.10.12
 Still broke, updating ubuntu, and restarting, 
+Restart fixed it, 'Did you try turning it off and on again?' 
+Ran below command '
+echo 'Welcome to the world of speech synthesis!' | piper \
+  --model en_US-lessac-medium \
+  --output_file welcome.wav
+' #will take your current working directory, download the speech package(will need this later for slovak)model automatically, create a '.wav' file with that newly downloaded speech model in your current directory,
+Now I need to figure out a way for it to bounce back and forth from Slovak to English after an '=' sign and slovak on a newline, need to fiddle with the commands and read docs to see what can be done, also download slovak package
 
 
 
