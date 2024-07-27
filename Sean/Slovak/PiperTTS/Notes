@@ -26,3 +26,16 @@ Traceback (most recent call last):
     from piper.application import Application
 ModuleNotFoundError: No module named 'piper.application'
 """ #I guess adding to PATH was important, trying to fix
+https://github.com/libratbag/piper/issues/341
+sudo ln -nsf /usr/lib/python3.7/site-packages/piper /usr/lib/python3/dist-packages/piper #didn't work, python version is different, 3.10.12
+Still broke, updating ubuntu, and restarting, 
+
+
+
+
+
+
+
+
+
+
