@@ -40,9 +40,9 @@ if not os.path.exists(download_dir):
 # Example usage:
 # Assuming you have the HTML content in a variable called 'html_content'
 html_content = """
-<span id="sound_yw01722012045" class="sound" data-sound="/sounds/words/mp3/ahoj.mp3">
+<span id="sound_yw91722012045" class="sound" data-sound="/sounds/words/mp3/zbohom.mp3">
         <span class="glyphicon glyphicon-volume-up"></span>
-        <span class="orig">Ahoj!</span>
+        <span class="orig">Zbohom.</span>
     </span>
 """
 
