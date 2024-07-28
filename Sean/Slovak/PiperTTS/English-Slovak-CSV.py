@@ -14,8 +14,9 @@ english_audio_dir = "/media/sean/MusIX/Piper/TransLaSean/English"
 os.makedirs(slovak_audio_dir, exist_ok=True)
 os.makedirs(english_audio_dir, exist_ok=True)
 
-# Define the CSV file path
-csv_file = "/media/sean/MusIX/Piper/Slovak/translation_data.csv"
+# Define the CSV file paths, testing with 'slovak10.csv' before 'slovak1000.csv'
+input_csv_file = "/media/sean/MusIX/Piper/TransLaSean/slovak10.csv"  # Replace with your input CSV file path
+output_csv_file = "/media/sean/MusIX/Piper/TransLaSean/slovak10_anki.csv"
 
 # Function to synthesize and save Slovak audio
 def synthesize_slovak(text, filename):
@@ -34,40 +35,33 @@ def synthesize_english(text, filename):
     print(f"English audio saved to {audio_path}")
 
 # Function to write to the CSV
-def write_to_csv(english_text, slovak_text, filename):
-    with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
+def write_to_csv(english_text, slovak_text, slovak_filename, english_filename):
+    with open(output_csv_file, 'a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow([english_text, filename, f"[sound:file://{os.path.join(slovak_audio_dir, filename + '.mp3')}]"])  
+        writer.writerow([english_text, slovak_text, f"[sound:file://{os.path.join(slovak_audio_dir, slovak_filename + '.mp3')}]"])  
         # Update CSV link to .mp3
 
-# Example usage:
-english_lines = [
-    "Hello, world!",
-    "This is a test.",
-    "How are you?",
-    # ... add more English lines here
-]
+# Process the input CSV file
+with open(input_csv_file, 'r', encoding='utf-8') as csvfile:
+    reader = csv.reader(csvfile)
+    next(reader)  # Skip the header row (if any)
 
-slovak_lines = [
-    "Dobrý deň!",
-    "Toto je test.",
-    "Ako sa máš?",
-    # ... add more Slovak lines here
-]
+    for i, row in enumerate(reader):
+        english_text = row[0].strip()
+        slovak_text = row[1].strip()
 
-# Loop through the English lines
-for i, (english_text, slovak_text) in enumerate(zip(english_lines, slovak_lines)):
-    # Create a unique filename with 4-digit formatting
-    filename = f"{str(i+1).zfill(4)}"  # Pad with zeros to get 4-digit format
+        # Create unique filenames with 4-digit formatting and words
+        slovak_filename = f"{str(i+1).zfill(4)}{slovak_text.replace(' ', '')}"
+        english_filename = f"{str(i+1).zfill(4)}{english_text.replace(' ', '')}"
 
-    # Synthesize and save the Slovak audio
-    synthesize_slovak(slovak_text, filename)
+        # Synthesize and save the Slovak audio
+        synthesize_slovak(slovak_text, slovak_filename)
 
-    # Synthesize and save the English audio
-    synthesize_english(english_text, filename)
+        # Synthesize and save the English audio
+        synthesize_english(english_text, english_filename)
 
-    # Write to the CSV
-    write_to_csv(english_text, slovak_text, filename)
+        # Write to the CSV
+        write_to_csv(english_text, slovak_text, slovak_filename, english_filename)
 
 print("Translation and audio synthesis complete!")
 
