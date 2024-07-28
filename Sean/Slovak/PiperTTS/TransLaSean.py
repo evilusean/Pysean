@@ -49,3 +49,7 @@ with open(input_csv_file, 'r', encoding='utf-8') as csvfile, open(output_csv_fil
         writer.writerow([english_text, slovak_text])
 
 print("Translation complete!")
+
+#Consider using a different translation service like DeepL (https://www.deepl.com/en/translator) or
+#  Microsoft Translator (https://www.microsoft.com/en-us/translator). 
+# These services often have more generous rate limits and might handle translations more reliably.
