@@ -36,9 +36,34 @@ echo 'Welcome to the world of speech synthesis!' | piper \
   --output_file welcome.wav
 ' #will take your current working directory, download the speech package(will need this later for slovak)model automatically, create a '.wav' file with that newly downloaded speech model in your current directory,
 Now I need to figure out a way for it to bounce back and forth from Slovak to English after an '=' sign and slovak on a newline, need to fiddle with the commands and read docs to see what can be done, also download slovak package
-
-
-
+Spent all day making the script, finally got it to work, but piper can't find the voices, here is the fix, 
+piper --update-voices -m en_US-lessac-medium #still didn't work, will need to update the code manually another way, 
+run this in repo '
+echo 'Welcome to the world of speech synthesis!' | piper \
+  --model en_US-lessac-medium \
+  --output_file welcome.wav
+'
+then run this '
+echo 'Dobrý deň' | piper \
+  --model sk_SK-lili-medium \
+  --output_file welcome.wav
+'
+then update the script with the location of the downloaded '.onnx' and '.json' 
+    subprocess.run(
+        [
+            "piper",
+            "-m",
+            "/media/sean/MusIX/Piper/sk_SK-lili-medium.onnx",  # Replace with the path to your Slovak model
+            "-c",
+            "/media/sean/MusIX/Piper/sk_SK-lili-medium.onnx.json",  # Replace with the path to your Slovak config
+            "-f",
+            os.path.join(slovak_audio_dir, filename + ".mp3"),
+            # "-s",  # Remove the speaker argument as it's not needed
+            "--sentence-silence",
+            "0.5", # Add a 0.5 second silence between sentences
+        ],
+        input=text.encode("utf-8"),
+    )
 
 
 
