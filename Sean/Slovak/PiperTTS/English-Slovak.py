@@ -1,7 +1,10 @@
 import piper
-#work in progress, need to get 1,000's of lines, if I could use a wrapper that would be easier and just wrap the text in 'slovak("text")' and default in English
-#If I use it like this, that will be 1,000's of variables 'english_text1, 2, 3...' 'slovak_text1, 2, 3...' but it should in theory work, and save it as one big '.wav' file
-#going to see if there is an easier way to do this, instead of manually translating 1,000 + lines of slovak and creating a new variable for each line x2
+#work in progress, need to get 1,000's of lines, if I could use a wrapper that would be easier and just wrap the text in 'slovak("text")'
+#  and default in English
+#If I use it like this, that will be 1,000's of variables 'english_text1, 2, 3...' 'slovak_text1, 2, 3...' but it should in theory work,
+#  and save it as one big '.wav' file
+#going to see if there is an easier way to do this, instead of manually translating 1,000 + lines of slovak and creating a new 
+#   variable for each line x2
 #https://github.com/rhasspy/piper
 #I could just create a bunch of files, one set in english, 
 #one set in slovak(use it for anki, add an incrementing number automatically update title to the input name,
