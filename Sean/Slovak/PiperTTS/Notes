@@ -65,7 +65,8 @@ then update the script with the location of the downloaded '.onnx' and '.json'
         input=text.encode("utf-8"),
     )
 
-
+Had an error, when converting my second batch - switched from '.mp3' to '.wav' which piper is default used for, it wasn't that - you need to remove all strange characters before doing a batch So...
+ No '...', ',' '/' '?' etc, spent half an hour trying to figure out what broke,
 
 
 
