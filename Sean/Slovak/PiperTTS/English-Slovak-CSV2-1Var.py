@@ -108,7 +108,7 @@ def process_csv(category):
     print(f"Translation and audio synthesis complete for {category}!")
 
 # Example usage:
-category = "Transport"  # Replace with your directory / CSV name (must be the same)
+category = "Technology"  # Replace with your directory / CSV name (must be the same)
 process_csv(category)
 
 # Commented out the ffmpeg command to combine audio files
