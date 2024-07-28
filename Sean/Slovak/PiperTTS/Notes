@@ -69,6 +69,6 @@ Had an error, when converting my second batch - switched from '.mp3' to '.wav' w
  No '...', ',' '/' '?' etc, spent half an hour trying to figure out what broke,
 
 they are labeled numerically, so I just need to sort and the english/slovak should match up together, create a VLC playlist for each batch, and then a master playlist of all the small ones for a new vocab playlist
-
+Everything added to anki deck, I need to try for the summit tommorrow, and start the 1,000 most common slovak words tomorrow, I can't use API calls because google blocks those after <10 attempts, has to be done manually~ days gone
 
 
