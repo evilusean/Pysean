@@ -2,6 +2,10 @@ import piper
 import csv
 import os
 
+#THIS ONE WAS A PROTOTYPE:
+#USE 'CSV2.py' = WORKING VERSION
+#https://github.com/evilusean/Pysean/blob/main/Sean/Slovak/PiperTTS/English-Slovak-CSV2.py
+
 # Define the voices
 english_voice = "en_US-lessac-medium"
 slovak_voice = "sk_SK-lili-medium"  # Assuming you have a Slovak model named 'sk_SK-lili-medium'
