@@ -8,16 +8,16 @@ english_voice = "en_US-lessac-medium"
 slovak_voice = "sk_SK-lili-medium"  # Assuming you have a Slovak model named 'sk_SK-lili-medium'
 
 # Define the output directories for Slovak and English audio files
-slovak_audio_dir = "/media/sean/MusIX/Piper/TestWords/Slovak"
-english_audio_dir = "/media/sean/MusIX/Piper/TestWords/English"
+slovak_audio_dir = "/media/sean/MusIX/Piper/Slovak/Basic/Slovak"
+english_audio_dir = "/media/sean/MusIX/Piper/Slovak/Basic/English"
 
 # Create the directories if they don't exist
 os.makedirs(slovak_audio_dir, exist_ok=True)
 os.makedirs(english_audio_dir, exist_ok=True)
 
 # Define the CSV file paths, testing with 'slovak10.csv' before 'slovak1000.csv'
-input_csv_file = "/media/sean/MusIX/Piper/TestWords/slovak10.csv"  # Replace with your input CSV file path
-output_csv_file = "/media/sean/MusIX/Piper/TestWords/slovak10_anki.csv"
+input_csv_file = "/media/sean/MusIX/Piper/Slovak/Basic/Basic.csv"  # Replace with your input CSV file path
+output_csv_file = "/media/sean/MusIX/Piper/Slovak/Basic/Basic_anki.csv"
 
 # Function to synthesize and save Slovak audio
 def synthesize_slovak(text, filename):
