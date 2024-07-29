@@ -29,55 +29,44 @@ english_wav_files = get_files_from_path(english_audio_dir, ext=".wav")
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-# List to store combined file names
-combined_files = []
+# Create a temporary file to store the file list
+temp_file = os.path.join(output_dir, "temp_concat_list.txt")
 
-# Iterate through each Slovak file
-for i, (slovak_file, english_file) in enumerate(zip(slovak_wav_files, english_wav_files)):
-    print(f"Processing files: {slovak_file} and {english_file}")  # Print the file paths for debugging
+# Write the file list to the temporary file
+with open(temp_file, "w") as f:
+    for i in range(len(slovak_wav_files)):
+        f.write(f"file '{slovak_wav_files[i]}'\n")
+        f.write(f"file '{slovak_wav_files[i]}'\n")
+        f.write(f"file '{slovak_wav_files[i]}'\n")
+        f.write(f"file '{english_wav_files[i]}'\n")  # Add the English file
 
-    # Create a temporary file to store the file list
-    temp_file = os.path.join(output_dir, f"temp_concat_list_{i+1:04d}.txt")
+# Construct the FFmpeg command
+output_file = os.path.join(output_dir, f"{category}_Combined.mp3")  # Change to .mp3
+ffmpeg_command = [
+    "ffmpeg",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    temp_file,  # Use the temporary file as input
+    "-filter_complex",
+    "[0:a]adelay=1000|1000[slovak1];"
+    "[slovak1]adelay=1000|1000[slovak2];"
+    "[slovak2]adelay=1000|1000[out]",
+    "-map",
+    "[out]",
+    "-c:a",
+    "libmp3lame",  # Use the MP3 codec (libmp3lame)
+    output_file,
+]
 
-    # Write the file list to the temporary file
-    with open(temp_file, "w") as f:
-        f.write(f"file '{slovak_file}'\n")
-        f.write(f"file '{slovak_file}'\n")
-        f.write(f"file '{slovak_file}'\n")
-        f.write(f"file '{english_file}'\n")  # Add the English file
+# Run the FFmpeg command with error handling
+try:
+    subprocess.run(ffmpeg_command)
+    print(f"Combined files saved to {output_file}")
+except subprocess.CalledProcessError as e:
+    print(f"Error processing files: {e}")
 
-    # Construct the FFmpeg command
-    output_file = os.path.join(output_dir, f"{category}_{i+1:04d}_Combined.mp3")  # Change to .mp3
-    ffmpeg_command = [
-        "ffmpeg",
-        "-f",
-        "concat",
-        "-safe",
-        "0",
-        "-i",
-        temp_file,  # Use the temporary file as input
-        "-filter_complex",
-        "[0:a]adelay=1000|1000[slovak1];"
-        "[slovak1]adelay=1000|1000[slovak2];"
-        "[slovak2]adelay=1000|1000[out]",
-        "-map",
-        "[out]",
-        "-c:a",
-        "libmp3lame",  # Use the MP3 codec (libmp3lame)
-        output_file,
-    ]
-
-    # Run the FFmpeg command with error handling
-    try:
-        subprocess.run(ffmpeg_command)
-        combined_files.append(output_file)
-    except subprocess.CalledProcessError as e:
-        print(f"Error processing files {slovak_file} and {english_file}: {e}")
-
-    # Delete the temporary file
-    os.remove(temp_file)
-
-# Print the list of combined files
-print("Combined Files:")
-for file in combined_files:
-    print(file)
+# Delete the temporary file
+os.remove(temp_file)
