@@ -88,8 +88,8 @@ def write_to_csv(english_text, slovak_text, slovak_filename, english_filename):
     global output_csv_file, slovak_audio_dir  # Declare variables as global
     with open(output_csv_file, 'a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow([english_text, slovak_text, f"[sound:file://{os.path.join(slovak_audio_dir, slovak_filename + '.wav')}]"])  
-        # Update CSV link to .wav
+        writer.writerow([english_text, slovak_text, f"[sound:file://{os.path.join(slovak_audio_dir, slovak_filename + '_slow.wav')}]"])  
+        # Update CSV link to .wav, using the slowed down file
 
 # Function to combine audio files into a single file using FFmpeg
 def combine_audio_files(category):
@@ -104,15 +104,18 @@ def combine_audio_files(category):
     # Write the file list to the temporary file
     with open(temp_file, "w") as f:
         # Get a list of all audio files in both folders
-        slovak_files = [f for f in os.listdir(slovak_audio_dir) if f.endswith(".wav")]
+        slovak_files = [f for f in os.listdir(slovak_audio_dir) if f.endswith("_slow.wav")]  # Get slowed down Slovak files
         english_files = [f for f in os.listdir(english_audio_dir) if f.endswith(".wav")]
 
         # Sort the files numerically (assuming filenames start with numbers)
         slovak_files.sort()
         english_files.sort()
 
+        # Ensure both lists have the same length
+        min_length = min(len(slovak_files), len(english_files))
+
         # Write the file list to the temporary file
-        for i in range(len(slovak_files)):
+        for i in range(min_length):  # Iterate up to the shorter list's length
             slovak_file = slovak_files[i]
             english_file = english_files[i]
             f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
@@ -162,7 +165,7 @@ def process_csv(category):
             english_filename = f"{str(i+1).zfill(4)}"  # Only use the 4-digit number
 
             # Synthesize and save the Slovak audio with speed control
-            synthesize_slovak(slovak_text, slovak_filename, speed_factor=0.8)  # Slow down the Slovak speaker
+            synthesize_slovak(slovak_text, slovak_filename, speed_factor=0.7)  # Slow down the Slovak speaker
 
             # Synthesize and save the English audio
             synthesize_english(english_text, english_filename)
