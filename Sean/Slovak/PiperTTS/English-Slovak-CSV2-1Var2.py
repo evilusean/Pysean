@@ -77,6 +77,58 @@ def write_to_csv(english_text, slovak_text, slovak_filename, english_filename):
         writer.writerow([english_text, slovak_text, f"[sound:file://{os.path.join(slovak_audio_dir, slovak_filename + '.wav')}]"])  
         # Update CSV link to .wav
 
+# Function to combine audio files into a single file using FFmpeg
+def combine_audio_files(category):
+    global slovak_audio_dir, english_audio_dir  # Declare variables as global
+    slovak_audio_dir, english_audio_dir = get_audio_dirs(category)
+    output_dir = os.path.join(f"/media/sean/MusIX/Piper/Slovak/{category}/", "combined")
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Get a list of all audio files in both folders
+    slovak_files = [f for f in os.listdir(slovak_audio_dir) if f.endswith(".wav")]
+    english_files = [f for f in os.listdir(english_audio_dir) if f.endswith(".wav")]
+
+    # Sort the files numerically (assuming filenames start with numbers)
+    slovak_files.sort()
+    english_files.sort()
+
+    # Construct the FFmpeg command to combine the files
+    ffmpeg_command = [
+        "ffmpeg",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "<(for f in " + " ".join(
+            [os.path.join(slovak_audio_dir, f) for f in slovak_files]
+        ) + "; do echo \"file '$f'\"; done)",
+        "-i",
+        "<(for f in " + " ".join(
+            [os.path.join(english_audio_dir, f) for f in english_files]
+        ) + "; do echo \"file '$f'\"; done)",
+        "-filter_complex",
+        # Repeat Slovak three times with a 1-second delay
+        "[0:a]atrim=0:1,asetpts=PTS-STARTPTS[slovak1];"
+        "[slovak1]adelay=1000|1000[slovak2];"
+        "[slovak2]atrim=0:1,asetpts=PTS-STARTPTS[slovak3];"
+        "[slovak3]adelay=1000|1000[slovak4];"
+        "[slovak4]atrim=0:1,asetpts=PTS-STARTPTS[slovak5];"
+        "[slovak5]adelay=1000|1000[slovak6];"
+        # Combine Slovak and English
+        "[slovak6][1:a]concat=n=2:v=0:a=1[out]",
+        "-map",
+        "[out]",
+        "-c:a",
+        "libmp3lame",
+        os.path.join(output_dir, f"{category}_Combined.mp3"),  # Use category in the filename
+    ]
+
+    # Run the FFmpeg command
+    subprocess.run(ffmpeg_command)
+
+    print(f"Audio files combined into {category}_Combined.mp3 in {output_dir}")
+
 # Main function to process the CSV
 def process_csv(category):
     global output_csv_file  # Declare variable as global
@@ -107,9 +159,9 @@ def process_csv(category):
 
     print(f"Translation and audio synthesis complete for {category}!")
 
-# Example usage:
-category = "Numbers2"  # Replace with your directory / CSV name (must be the same)
-process_csv(category)
+    # Combine the audio files using FFmpeg
+    combine_audio_files(category)
 
-# Commented out the ffmpeg command to combine audio files
-# ffmpeg -f concat -i <(for f in *.wav; do echo "file '$f'"; done) -c copy combined_slovak.wav
+# Example usage:
+category = "Numbers"  # Replace with your directory / CSV name (must be the same)
+process_csv(category)
