@@ -4,7 +4,7 @@ import subprocess
 category = "Numbers"
 slovak_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/Slovak"
 english_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/English"
-output_dir = os.path.join(f"/media/sean/MusIX/Piper/Slovak/{category}/", "x3")  # Define the output directory
+output_dir = os.path.join(f"/media/sean/MusIX/Piper/Slovak/{category}/", "x3")
 
 def get_files_from_path(path: str = ".", ext=None) -> list:
     result = []
@@ -21,9 +21,9 @@ def get_files_from_path(path: str = ".", ext=None) -> list:
                         result.append(filepath)
     return result
 
-# Get the list of .wav files for Slovak and English
-slovak_wav_files = get_files_from_path(slovak_audio_dir, ext=".wav")
-english_wav_files = get_files_from_path(english_audio_dir, ext=".wav")
+# Get the list of .mp3 files for Slovak and English
+slovak_mp3_files = get_files_from_path(slovak_audio_dir, ext=".mp3")
+english_mp3_files = get_files_from_path(english_audio_dir, ext=".mp3")
 
 # Create the output directory if it doesn't exist
 if not os.path.exists(output_dir):
@@ -34,14 +34,14 @@ temp_file = os.path.join(output_dir, "temp_concat_list.txt")
 
 # Write the file list to the temporary file
 with open(temp_file, "w") as f:
-    for i in range(len(slovak_wav_files)):
-        f.write(f"file '{slovak_wav_files[i]}'\n")
-        f.write(f"file '{slovak_wav_files[i]}'\n")
-        f.write(f"file '{slovak_wav_files[i]}'\n")
-        f.write(f"file '{english_wav_files[i]}'\n")  # Add the English file
+    for i in range(len(slovak_mp3_files)):
+        f.write(f"file '{slovak_mp3_files[i]}'\n")
+        f.write(f"file '{slovak_mp3_files[i]}'\n")
+        f.write(f"file '{slovak_mp3_files[i]}'\n")
+        f.write(f"file '{english_mp3_files[i]}'\n")  # Add the English file
 
 # Construct the FFmpeg command
-output_file = os.path.join(output_dir, f"{category}_Combined.mp3")  # Change to .mp3
+output_file = os.path.join(output_dir, f"{category}_Combined.mp3")
 ffmpeg_command = [
     "ffmpeg",
     "-f",
@@ -49,7 +49,7 @@ ffmpeg_command = [
     "-safe",
     "0",
     "-i",
-    temp_file,  # Use the temporary file as input
+    temp_file,
     "-filter_complex",
     "[0:a]adelay=1000|1000[slovak1];"
     "[slovak1]adelay=1000|1000[slovak2];"
@@ -57,7 +57,7 @@ ffmpeg_command = [
     "-map",
     "[out]",
     "-c:a",
-    "libmp3lame",  # Use the MP3 codec (libmp3lame)
+    "libmp3lame",
     output_file,
 ]
 
@@ -67,6 +67,7 @@ try:
     print(f"Combined files saved to {output_file}")
 except subprocess.CalledProcessError as e:
     print(f"Error processing files: {e}")
+    print(f"Check the contents of '{temp_file}' for correct formatting.")
 
 # Delete the temporary file
 os.remove(temp_file)
