@@ -104,7 +104,7 @@ def combine_audio_files(category):
             f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
             f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
             f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
-            f.write(f"file '{os.path.join(english_audio_dir, english_file)}'\n")
+            f.write(f"file '{os.path.join(english_audio_dir, english_file)}'\n")  # Add English file path
 
     # Construct the FFmpeg command to combine the files
     ffmpeg_command = [
@@ -115,18 +115,6 @@ def combine_audio_files(category):
         "0",
         "-i",
         temp_file,
-        "-filter_complex",
-        # Repeat Slovak three times with a 1-second delay
-        "[0:a]atrim=0:1,asetpts=PTS-STARTPTS[slovak1];"
-        "[slovak1]adelay=1000|1000[slovak2];"
-        "[slovak2]atrim=0:1,asetpts=PTS-STARTPTS[slovak3];"
-        "[slovak3]adelay=1000|1000[slovak4];"
-        "[slovak4]atrim=0:1,asetpts=PTS-STARTPTS[slovak5];"
-        "[slovak5]adelay=1000|1000[slovak6];"
-        # Combine Slovak and English
-        "[slovak6][1:a]concat=n=2:v=0:a=1[out]",
-        "-map",
-        "[out]",
         "-c:a",
         "libmp3lame",
         os.path.join(output_dir, f"{category}_Combined.mp3"),  # Use category in the filename
@@ -139,7 +127,7 @@ def combine_audio_files(category):
 
     # Delete the temporary file
     os.remove(temp_file)
-
+    
 # Main function to process the CSV
 def process_csv(category):
     global output_csv_file  # Declare variable as global
