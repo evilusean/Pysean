@@ -6,7 +6,7 @@ import subprocess
 # Define the voices
 english_voice = "en_US-lessac-medium"
 slovak_voice = "sk_SK-lili-medium"  # Assuming you have a Slovak model named 'sk_SK-lili-medium'
-pause = "/media/sean/MusIX/Piper/silent_1-second.wav"
+pause = "/media/sean/MusIX/Piper/silent_half-second.wav"
 
 # Define the output directories for Slovak and English audio files
 # Make the directory names dynamic
@@ -135,9 +135,16 @@ def combine_audio_files(category):
         "0",
         "-i",
         temp_file,
+        "-filter_complex",
+        # Reset timestamps for each segment
+        "[0:a]asetpts=PTS-STARTPTS[out]",
+        "-map",
+        "[out]",
         "-c:a",
         "libmp3lame",
         os.path.join(output_dir, f"{category}_Combined.mp3"),  # Use category in the filename
+        "-loglevel",
+        "error",  # Suppress warning messages
     ]
 
     # Run the FFmpeg command
