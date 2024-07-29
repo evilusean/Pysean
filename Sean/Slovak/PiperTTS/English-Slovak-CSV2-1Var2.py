@@ -27,8 +27,8 @@ def get_csv_paths(category):
     output_csv_file = f"/media/sean/MusIX/Piper/Slovak/{category}/{category}_anki.csv"
     return input_csv_file, output_csv_file
 
-# Function to synthesize and save Slovak audio
-def synthesize_slovak(text, filename):
+# Function to synthesize and save Slovak audio with speed control
+def synthesize_slovak(text, filename, speed_factor=1.0):
     global slovak_audio_dir  # Declare variable as global
     # Use subprocess to run the piper command
     subprocess.run(
@@ -47,6 +47,20 @@ def synthesize_slovak(text, filename):
         input=text.encode("utf-8"),
     )
     print(f"Slovak audio saved to {os.path.join(slovak_audio_dir, filename + '.wav')}")
+
+    # Modify the audio file using FFmpeg to change the speed
+    input_file = os.path.join(slovak_audio_dir, filename + ".wav")
+    output_file = os.path.join(slovak_audio_dir, filename + "_slow.wav")
+    ffmpeg_command = [
+        "ffmpeg",
+        "-i",
+        input_file,
+        "-filter:a",
+        f"atempo={speed_factor}",
+        output_file,
+    ]
+    subprocess.run(ffmpeg_command)
+    print(f"Slovak audio slowed down and saved to {output_file}")
 
 # Function to synthesize and save English audio
 def synthesize_english(text, filename):
@@ -147,8 +161,8 @@ def process_csv(category):
             slovak_filename = f"{str(i+1).zfill(4)}"  # Only use the 4-digit number
             english_filename = f"{str(i+1).zfill(4)}"  # Only use the 4-digit number
 
-            # Synthesize and save the Slovak audio
-            synthesize_slovak(slovak_text, slovak_filename)
+            # Synthesize and save the Slovak audio with speed control
+            synthesize_slovak(slovak_text, slovak_filename, speed_factor=0.8)  # Slow down the Slovak speaker
 
             # Synthesize and save the English audio
             synthesize_english(english_text, english_filename)
