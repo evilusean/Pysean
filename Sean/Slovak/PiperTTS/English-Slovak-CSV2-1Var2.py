@@ -6,6 +6,7 @@ import subprocess
 # Define the voices
 english_voice = "en_US-lessac-medium"
 slovak_voice = "sk_SK-lili-medium"  # Assuming you have a Slovak model named 'sk_SK-lili-medium'
+pause = "/media/sean/MusIX/Piper/silent_1-second.wav"
 
 # Define the output directories for Slovak and English audio files
 # Make the directory names dynamic
@@ -93,7 +94,7 @@ def write_to_csv(english_text, slovak_text, slovak_filename, english_filename):
 
 # Function to combine audio files into a single file using FFmpeg
 def combine_audio_files(category):
-    global slovak_audio_dir, english_audio_dir  # Declare variables as global
+    global slovak_audio_dir, english_audio_dir, pause  # Declare variables as global
     slovak_audio_dir, english_audio_dir = get_audio_dirs(category)
     output_dir = os.path.join(f"/media/sean/MusIX/Piper/Slovak/{category}/", "combined")
     os.makedirs(output_dir, exist_ok=True)
@@ -121,7 +122,9 @@ def combine_audio_files(category):
             f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
             f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
             f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
+            f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
             f.write(f"file '{os.path.join(english_audio_dir, english_file)}'\n")  # Add English file path
+            f.write(f"file '{pause}'\n")  # Add pause after each English word
 
     # Construct the FFmpeg command to combine the files
     ffmpeg_command = [
@@ -144,7 +147,14 @@ def combine_audio_files(category):
 
     # Delete the temporary file
     os.remove(temp_file)
-    
+
+    # Delete the original fast Slovak files
+    for slovak_file in slovak_files:
+        original_file = os.path.join(slovak_audio_dir, slovak_file.replace("_slow.wav", ".wav"))
+        if os.path.exists(original_file):
+            os.remove(original_file)
+            print(f"Deleted original Slovak file: {original_file}")
+
 # Main function to process the CSV
 def process_csv(category):
     global output_csv_file  # Declare variable as global
