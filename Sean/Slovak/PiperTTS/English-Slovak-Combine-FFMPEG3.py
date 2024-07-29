@@ -1,9 +1,8 @@
 import os
 import subprocess
 
-category = "Technology"
+category = "Numbers"
 slovak_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/Slovak"
-english_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/English"
 output_dir = os.path.join(f"/media/sean/MusIX/Piper/Slovak/{category}/", "x3")  # Define the output directory
 
 def get_files_from_path(path: str = ".", ext=None) -> list:
@@ -35,7 +34,17 @@ combined_files = []
 for i, slovak_file in enumerate(slovak_wav_files):
     print(f"Processing file: {slovak_file}")  # Print the file path for debugging
 
+    # Create a temporary file to store the file list
+    temp_file = os.path.join(output_dir, f"temp_concat_list_{i+1:04d}.txt")
+
+    # Write the file list to the temporary file
+    with open(temp_file, "w") as f:
+        f.write(f"file '{slovak_file}'\n")
+        f.write(f"file '{slovak_file}'\n")
+        f.write(f"file '{slovak_file}'\n")
+
     # Construct the FFmpeg command
+    output_file = os.path.join(output_dir, f"{category}_{i+1:04d}_Combined.wav")
     ffmpeg_command = [
         "ffmpeg",
         "-f",
@@ -43,24 +52,21 @@ for i, slovak_file in enumerate(slovak_wav_files):
         "-safe",
         "0",
         "-i",
-        f"concat:{slovak_file}|{slovak_file}|{slovak_file}",  # Correct way to concatenate files
-        "-filter_complex",
-        "[0:a]adelay=1000|1000[slovak1];"
-        "[slovak1]adelay=1000|1000[slovak2];"
-        "[slovak2]adelay=1000|1000[out]",
-        "-map",
-        "[out]",
+        temp_file,  # Use the temporary file as input
         "-c:a",
         "copy",
-        os.path.join(output_dir, f"{category}_{i+1:04d}_Combined.wav"),  # Use index for filename
+        output_file,
     ]
 
     # Run the FFmpeg command with error handling
     try:
         subprocess.run(ffmpeg_command)
-        combined_files.append(os.path.join(output_dir, f"{category}_{i+1:04d}_Combined.wav"))
+        combined_files.append(output_file)
     except subprocess.CalledProcessError as e:
         print(f"Error processing file {slovak_file}: {e}")
+
+    # Delete the temporary file
+    os.remove(temp_file)
 
 # Print the list of combined files
 print("Combined Files:")
