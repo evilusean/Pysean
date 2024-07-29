@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-category = "Numbers"
+category = "Technology"
 slovak_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/Slovak"
 english_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/English"
 output_dir = os.path.join(f"/media/sean/MusIX/Piper/Slovak/{category}/", "x3")  # Define the output directory
@@ -43,7 +43,7 @@ for i, slovak_file in enumerate(slovak_wav_files):
         "-safe",
         "0",
         "-i",
-        f"""<(for f in {slovak_file}; do echo "file '$f'"; done)""",  # Correct syntax for bash
+        f"concat:{slovak_file}|{slovak_file}|{slovak_file}",  # Correct way to concatenate files
         "-filter_complex",
         "[0:a]adelay=1000|1000[slovak1];"
         "[slovak1]adelay=1000|1000[slovak2];"
@@ -55,11 +55,12 @@ for i, slovak_file in enumerate(slovak_wav_files):
         os.path.join(output_dir, f"{category}_{i+1:04d}_Combined.wav"),  # Use index for filename
     ]
 
-    # Run the FFmpeg command
-    subprocess.run(ffmpeg_command)
-
-    # Add the combined file name to the list
-    combined_files.append(os.path.join(output_dir, f"{category}_{i+1:04d}_Combined.wav"))
+    # Run the FFmpeg command with error handling
+    try:
+        subprocess.run(ffmpeg_command)
+        combined_files.append(os.path.join(output_dir, f"{category}_{i+1:04d}_Combined.wav"))
+    except subprocess.CalledProcessError as e:
+        print(f"Error processing file {slovak_file}: {e}")
 
 # Print the list of combined files
 print("Combined Files:")
