@@ -96,7 +96,7 @@ def write_to_csv(english_text, slovak_text, slovak_filename, english_filename):
 def combine_audio_files(category):
     global slovak_audio_dir, english_audio_dir, pause  # Declare variables as global
     slovak_audio_dir, english_audio_dir = get_audio_dirs(category)
-    output_dir = os.path.join(f"/media/sean/MusIX/Piper/Slovak/{category}/", "combined")
+    output_dir = "/media/sean/MusIX/Piper/Slovak/1VocabLists"  # New output directory
     os.makedirs(output_dir, exist_ok=True)
 
     # Create a temporary file to store the file list
@@ -142,7 +142,7 @@ def combine_audio_files(category):
         "[out]",
         "-c:a",
         "libmp3lame",
-        os.path.join(output_dir, f"{category}_Combined.mp3"),  # Use category in the filename
+        os.path.join(output_dir, f"{category}.mp3"),  # Use category in the filename
         "-loglevel",
         "error",  # Suppress warning messages
     ]
@@ -150,7 +150,7 @@ def combine_audio_files(category):
     # Run the FFmpeg command
     subprocess.run(ffmpeg_command)
 
-    print(f"Audio files combined into {category}_Combined.mp3 in {output_dir}")
+    print(f"Audio files combined into {category}.mp3 in {output_dir}")
 
     # Delete the temporary file
     os.remove(temp_file)
