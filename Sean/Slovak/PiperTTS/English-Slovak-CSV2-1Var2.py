@@ -84,13 +84,27 @@ def combine_audio_files(category):
     output_dir = os.path.join(f"/media/sean/MusIX/Piper/Slovak/{category}/", "combined")
     os.makedirs(output_dir, exist_ok=True)
 
-    # Get a list of all audio files in both folders
-    slovak_files = [f for f in os.listdir(slovak_audio_dir) if f.endswith(".wav")]
-    english_files = [f for f in os.listdir(english_audio_dir) if f.endswith(".wav")]
+    # Create a temporary file to store the file list
+    temp_file = os.path.join(output_dir, "temp_concat_list.txt")
 
-    # Sort the files numerically (assuming filenames start with numbers)
-    slovak_files.sort()
-    english_files.sort()
+    # Write the file list to the temporary file
+    with open(temp_file, "w") as f:
+        # Get a list of all audio files in both folders
+        slovak_files = [f for f in os.listdir(slovak_audio_dir) if f.endswith(".wav")]
+        english_files = [f for f in os.listdir(english_audio_dir) if f.endswith(".wav")]
+
+        # Sort the files numerically (assuming filenames start with numbers)
+        slovak_files.sort()
+        english_files.sort()
+
+        # Write the file list to the temporary file
+        for i in range(len(slovak_files)):
+            slovak_file = slovak_files[i]
+            english_file = english_files[i]
+            f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
+            f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
+            f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
+            f.write(f"file '{os.path.join(english_audio_dir, english_file)}'\n")
 
     # Construct the FFmpeg command to combine the files
     ffmpeg_command = [
@@ -100,13 +114,7 @@ def combine_audio_files(category):
         "-safe",
         "0",
         "-i",
-        "<(for f in " + " ".join(
-            [os.path.join(slovak_audio_dir, f) for f in slovak_files]
-        ) + "; do echo \"file '$f'\"; done)",
-        "-i",
-        "<(for f in " + " ".join(
-            [os.path.join(english_audio_dir, f) for f in english_files]
-        ) + "; do echo \"file '$f'\"; done)",
+        temp_file,
         "-filter_complex",
         # Repeat Slovak three times with a 1-second delay
         "[0:a]atrim=0:1,asetpts=PTS-STARTPTS[slovak1];"
@@ -128,6 +136,9 @@ def combine_audio_files(category):
     subprocess.run(ffmpeg_command)
 
     print(f"Audio files combined into {category}_Combined.mp3 in {output_dir}")
+
+    # Delete the temporary file
+    os.remove(temp_file)
 
 # Main function to process the CSV
 def process_csv(category):
@@ -163,5 +174,5 @@ def process_csv(category):
     combine_audio_files(category)
 
 # Example usage:
-category = "Numbers"  # Replace with your directory / CSV name (must be the same)
+category = "Numbers2"  # Replace with your directory / CSV name (must be the same)
 process_csv(category)
