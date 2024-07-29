@@ -77,57 +77,97 @@ def write_to_csv(english_text, slovak_text, slovak_filename, english_filename):
         writer.writerow([english_text, slovak_text, f"[sound:file://{os.path.join(slovak_audio_dir, slovak_filename + '.wav')}]"])  
         # Update CSV link to .wav
 
-# Function to combine audio files into a single file
-def combine_audio(category, output_filename):
+# Function to create a temporary string with the desired audio sequence
+def create_audio_sequence(category):
+    audio_sequence = ""
+    input_csv_file, output_csv_file = get_csv_paths(category)
+    with open(input_csv_file, 'r', encoding='utf-8') as csvfile:
+        reader = csv.reader(csvfile)
+        next(reader)  # Skip the header row (if any)
+
+        for i, row in enumerate(reader):
+            slovak_text = row[0].strip()
+            english_text = row[1].strip()
+
+            # Add Slovak text three times
+            audio_sequence += f"{slovak_text} {slovak_text} {slovak_text} "
+            # Add English text once
+            audio_sequence += f"{english_text} "
+
+    return audio_sequence
+
+# Function to combine audio files into a single file using Piper
+def combine_audio_piper(category, output_filename):
     global slovak_audio_dir, english_audio_dir  # Declare variables as global
     slovak_audio_dir, english_audio_dir = get_audio_dirs(category)
     output_dir = os.path.join(f"/media/sean/MusIX/Piper/Slovak/{category}/", "combined")
     os.makedirs(output_dir, exist_ok=True)
 
-    # Get the list of .wav files for Slovak and English
-    slovak_wav_files = [f for f in os.listdir(slovak_audio_dir) if f.endswith(".wav")]
-    english_wav_files = [f for f in os.listdir(english_audio_dir) if f.endswith(".wav")]
+    # Create a temporary file to store the combined audio data
+    temp_file = os.path.join(output_dir, "temp_combined.wav")
 
-    # Sort the files numerically (assuming filenames start with numbers)
-    slovak_wav_files.sort()
-    english_wav_files.sort()
+    # Open the temporary file in binary write mode
+    with open(temp_file, "wb") as outfile:
+        # Read the CSV file
+        input_csv_file, output_csv_file = get_csv_paths(category)
+        with open(input_csv_file, 'r', encoding='utf-8') as csvfile:
+            reader = csv.reader(csvfile)
+            next(reader)  # Skip the header row (if any)
 
-    # Construct the FFmpeg command to combine the files
-    ffmpeg_command = [
-        "ffmpeg",
-        "-f",
-        "concat",
-        "-safe",
-        "0",
-        "-i",
-        "<(for f in " + " ".join(
-            [os.path.join(slovak_audio_dir, f) for f in slovak_wav_files]
-        ) + "; do echo \"file '$f'\"; done)",
-        "-i",
-        "<(for f in " + " ".join(
-            [os.path.join(english_audio_dir, f) for f in english_wav_files]
-        ) + "; do echo \"file '$f'\"; done)",
-        "-filter_complex",
-        # Repeat Slovak three times with a 1-second delay
-        "[0:a]atrim=0:1,asetpts=PTS-STARTPTS[slovak1];"
-        "[slovak1]adelay=1000|1000[slovak2];"
-        "[slovak2]atrim=0:1,asetpts=PTS-STARTPTS[slovak3];"
-        "[slovak3]adelay=1000|1000[slovak4];"
-        "[slovak4]atrim=0:1,asetpts=PTS-STARTPTS[slovak5];"
-        "[slovak5]adelay=1000|1000[slovak6];"
-        # Combine Slovak and English
-        "[slovak6][1:a]concat=n=2:v=0:a=1[out]",
-        "-map",
-        "[out]",
-        "-c:a",
-        "libmp3lame",
-        os.path.join(output_dir, output_filename),
-    ]
+            for i, row in enumerate(reader):
+                slovak_text = row[0].strip()
+                english_text = row[1].strip()
 
-    # Run the FFmpeg command
-    subprocess.run(ffmpeg_command)
+                # Synthesize and write Slovak audio three times
+                for _ in range(3):
+                    # Use subprocess to run the piper command
+                    process = subprocess.run(
+                        [
+                            "piper",
+                            "-m",
+                            "/media/sean/MusIX/Piper/sk_SK-lili-medium.onnx",  # Replace with the path to your Slovak model
+                            "-c",
+                            "/media/sean/MusIX/Piper/sk_SK-lili-medium.onnx.json",  # Replace with the path to your Slovak config
+                            "-f",
+                            "-",  # Output to stdout
+                            "--sentence-silence",
+                            "1",  # Add a 1 second silence between sentences
+                        ],
+                        input=slovak_text.encode("utf-8"),
+                        capture_output=True,  # Capture the output
+                    )
+                    if process.returncode == 0:
+                        outfile.write(process.stdout)
+                    else:
+                        print(f"Error synthesizing Slovak audio: {process.stderr.decode('utf-8')}")
+
+                # Synthesize and write English audio
+                process = subprocess.run(
+                    [
+                        "piper",
+                        "-m",
+                        "/media/sean/MusIX/Piper/en_US-lessac-medium.onnx",  # Replace with the path to your English model
+                        "-c",
+                        "/media/sean/MusIX/Piper/en_US-lessac-medium.onnx.json",  # Replace with the path to your English config
+                        "-f",
+                        "-",  # Output to stdout
+                        "--sentence-silence",
+                        "1",  # Add a 1 second silence between sentences
+                    ],
+                    input=english_text.encode("utf-8"),
+                    capture_output=True,  # Capture the output
+                )
+                if process.returncode == 0:
+                    outfile.write(process.stdout)
+                else:
+                    print(f"Error synthesizing English audio: {process.stderr.decode('utf-8')}")
+
+    # Move the temporary file to the final output file
+    os.rename(temp_file, os.path.join(output_dir, output_filename))
 
     print(f"Audio files combined into {output_filename} in {output_dir}")
+
+
 
 # Main function to process the CSV
 def process_csv(category):
@@ -159,8 +199,8 @@ def process_csv(category):
 
     print(f"Translation and audio synthesis complete for {category}!")
 
-    # Combine the audio files
-    combine_audio(category, f"{category}_Combined.mp3")
+    # Combine the audio files using Piper
+    combine_audio_piper(category, f"{category}_Combined.wav")
 
 # Example usage:
 category = "Numbers2"  # Replace with your directory / CSV name (must be the same)
