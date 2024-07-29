@@ -10,8 +10,8 @@ def combine_audio_files(category):
         category (str): The category name (e.g., "Numbers", "Shopping").
     """
 
-    slovak_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/Slovak/"
-    english_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/English/"
+    slovak_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/Slovak"
+    english_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/English"
 
     # Get a list of all audio files in both folders, sorted numerically
     slovak_files = sorted([f for f in os.listdir(slovak_audio_dir) if f.endswith(".wav")])
@@ -80,7 +80,7 @@ def combine_audio_files(category):
     # Run the FFmpeg command
     subprocess.run(ffmpeg_command)
 
-    print(f"Audio files combined into {category}_Slovak_English_Combined.wav in /media/sean/MusIX/Piper/Slovak/{category}/")
+    print(f"Audio files combined into {category}_Slovak_English_Combined.wav in /media/sean/MusIX/Piper/Slovak/{category}")
 
 # Example usage:
 category = "Numbers"  # Replace with your category
