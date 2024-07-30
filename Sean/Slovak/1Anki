@@ -1,6 +1,10 @@
-All Files/CSV's added to anki+made a vocab list audio with - need to delete all the old stuff I made and replace it with the Slowvak versean:
+All Files/CSV's added to anki+made a vocab list audio with - need to delete all the old stuff I made and replace it with the Slowvak versean, For future sean = USE 'English-Slovak-CSV2-1Var2.py' - I made like 10 files to get it right:
 +Adjectives: https://github.com/evilusean/Pysean/blob/main/Sean/Slovak/PiperTTS/CSV/Adjectives.csv 
   +Basic (all the next indented ones will be CSV's from the same repo, not copying and pasting each one):
   +Colors
   +Directions
   +Essential
+  +Food
+  +Health
+  +Nature
+  +Numbers
