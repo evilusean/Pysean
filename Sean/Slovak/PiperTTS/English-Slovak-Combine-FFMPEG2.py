@@ -2,58 +2,44 @@ import os
 import subprocess
 
 slovak_audio_dir = "/media/sean/MusIX/Piper/Slovak/Numbers/Slovak"
-output_dir = "/media/sean/MusIX/Piper/Slovak/Numbers/3x"  # Output directory
+slovak_file = os.path.join(slovak_audio_dir, "0001dva.wav")
+output_file = os.path.join(slovak_audio_dir, "0001dva_repeated.mp3")  # Change to .mp3
 
-def get_files_from_path(path: str = ".", ext=None) -> list:
-    result = []
-    for subdir, dirs, files in os.walk(path):
-        for fname in files:
-            filepath = f"{subdir}{os.sep}{fname}"
-            if ext == None:
-                result.append(filepath)
-            elif type(ext) == str and fname.lower().endswith(ext.lower()):
-                result.append(filepath)
-            elif type(ext) == list:
-                for item in ext:
-                    if fname.lower().endswith(item.lower()):
-                        result.append(filepath)
-    return result
+# Create a temporary file to store the file list
+temp_file = os.path.join(slovak_audio_dir, "temp_concat_list.txt")
 
-# Get the list of .wav files for Slovak
-slovak_wav_files = get_files_from_path(slovak_audio_dir, ext=".wav")
+# Write the file list to the temporary file
+with open(temp_file, "w") as f:
+    f.write(f"file '{slovak_file}'\n")
+    f.write(f"file '{slovak_file}'\n")
+    f.write(f"file '{slovak_file}'\n")
 
-# Create the output directory if it doesn't exist
-if not os.path.exists(output_dir):
-    os.makedirs(output_dir)
+# Construct the FFmpeg command
+ffmpeg_command = [
+    "ffmpeg",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    temp_file,  # Use the temporary file as input
+    "-filter_complex",
+    "[0:a]adelay=1000|1000[slovak1];"
+    "[slovak1]adelay=1000|1000[slovak2];"
+    "[slovak2]adelay=1000|1000[out]",
+    "-map",
+    "[out]",
+    "-c:a",
+    "libmp3lame",  # Use the MP3 codec (libmp3lame)
+    output_file,
+]
 
-# Iterate through each Slovak file
-for i, slovak_file in enumerate(slovak_wav_files):
-    print(f"Processing file: {slovak_file}")  # Print the file path for debugging
+# Run the FFmpeg command with error handling
+try:
+    subprocess.run(ffmpeg_command)
+    print(f"Audio file repeated and saved to {output_file}")
+except subprocess.CalledProcessError as e:
+    print(f"Error processing file {slovak_file}: {e}")
 
-    # Construct the FFmpeg command
-    output_file = os.path.join(output_dir, f"{os.path.basename(slovak_file).replace('.wav', '_repeated.mp3')}")
-    ffmpeg_command = [
-        "ffmpeg",
-        "-f",
-        "concat",
-        "-safe",
-        "0",
-        "-i",
-        f"concat:{slovak_file}|{slovak_file}|{slovak_file}",  # Concatenate the file 3 times
-        "-filter_complex",
-        "[0:a]adelay=1000|1000[slovak1];"
-        "[slovak1]adelay=1000|1000[slovak2];"
-        "[slovak2]adelay=1000|1000[out]",
-        "-map",
-        "[out]",
-        "-c:a",
-        "libmp3lame",  # Use the MP3 codec (libmp3lame)
-        output_file,
-    ]
-
-    # Run the FFmpeg command with error handling
-    try:
-        subprocess.run(ffmpeg_command)
-        print(f"Audio file repeated and saved to {output_file}")
-    except subprocess.CalledProcessError as e:
-        print(f"Error processing file {slovak_file}: {e}")
+# Delete the temporary file
+os.remove(temp_file)

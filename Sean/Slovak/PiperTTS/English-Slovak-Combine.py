@@ -61,6 +61,7 @@ def process_csv(category, output_filename):  # Add output_filename parameter
                 audio_data = synthesize_audio(slovak_text, slovak_voice, output_dir, f"{str(i+1).zfill(4)}{slovak_text.replace(' ', '')}")
                 if audio_data:
                     outfile.write(audio_data)
+                    time.sleep(1)  # 1-second delay
 
             # Synthesize and save the English audio
             audio_data = synthesize_audio(english_text, english_voice, output_dir, f"{str(i+1).zfill(4)}{english_text.replace(' ', '')}")

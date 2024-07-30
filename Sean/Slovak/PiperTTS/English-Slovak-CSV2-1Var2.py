@@ -205,5 +205,5 @@ def process_csv(category):
     combine_audio_files(category)
 
 # Example usage:
-category = "Numbers2"  # Replace with your directory / CSV name (must be the same)
+category = "Verbs"  # Replace with your directory / CSV name (must be the same)
 process_csv(category)
