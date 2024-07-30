@@ -204,6 +204,6 @@ def process_csv(category):
     # Combine the audio files using FFmpeg
     combine_audio_files(category)
 
-# Example usage:
-category = "Verbs"  # Replace with your directory / CSV name (must be the same)
+# going to use this for Slovake.eu course 'Slovake.eu-L1' = lesson 1
+category = "2000"  # Replace with your directory / CSV name (must be the same)
 process_csv(category)
