@@ -127,7 +127,9 @@ def combine_audio_files(category):
             slovak_file = slovak_files[i]
             english_file = english_files[i]
             f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
+            f.write(f"file '{pause}'\n")
             f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
+            f.write(f"file '{pause}'\n")
             f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
             f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
             f.write(f"file '{os.path.join(english_audio_dir, english_file)}'\n")  # Add English file path
