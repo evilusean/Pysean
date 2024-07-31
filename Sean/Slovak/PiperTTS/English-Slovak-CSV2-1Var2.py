@@ -205,5 +205,5 @@ def process_csv(category):
     combine_audio_files(category)
 
 # going to use this for Slovake.eu course 'Slovake.eu-L1' = lesson 1
-category = "2000"  # Replace with your directory / CSV name (must be the same)
+category = "Slovake.eu-L6"  # Replace with your directory / CSV name (must be the same)
 process_csv(category)
