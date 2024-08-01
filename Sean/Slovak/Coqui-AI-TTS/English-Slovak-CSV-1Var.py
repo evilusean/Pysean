@@ -1,25 +1,17 @@
-import piper
-import csv
 import os
 import subprocess
-
-#THIS IS THE WORKING VERSION TO USE FOR PARSING A CSV(SLOVAK[0]ENGLISH[1]), IT WILL CREATE A FAST SLOVAK AUDIO AND
-#SLOW IT DOWN THEN DELETE THE FAST ONE (SLOWVAK) THEN UPDATE A CSV FOR ANKI WITH THE SOUND LOCATION
-# IT WILL THEN TAKE THE SLOWVAK AUDIO, REPEAT it x3 TIMES WITH a PAUSE, AND ADD ENGLISH ONCE, SAVE THAT TO A CENTRAL LOCASEAN
-# CREATING A VOCABULARY LIST OF THE WORDS FROM THE CSV - USES PIPER SLOVAK VOICE FOR CREATING THE AUDIO
-# TO USE: PLACE THE CSV IN A FILE WITH THE SAME NAME '/{category}/category.csv' SCROLL TO BOTTOM, CHANGE THE 'CATEGORY=' TO CSV
-# WITH SLOVAK / ENGLISH - MAKE SURE YOU HAVE THE PIPER VOICE MODELS DOWNLOADED - CHANGE DIRECTORIES IF USING ON NEW PC -
+import csv
 
 # Define the voices
-english_voice = "en_US-lessac-medium"
-slovak_voice = "sk_SK-lili-medium"  # Assuming you have a Slovak model named 'sk_SK-lili-medium'
+english_voice = "tts_models/en/ljspeech/vits"  # Assuming you have an English model named 'en-US-ljspeech'
+slovak_voice = "tts_models/sk/cv/glow-tts"  # Assuming you have a Slovak model named 'tts_models/sk/cv/vits'
 pause = "/media/sean/MusIX/Piper/silent_half-second.wav"
 
 # Define the output directories for Slovak and English audio files
 # Make the directory names dynamic
 def get_audio_dirs(category):
-    slovak_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/Slovak"
-    english_audio_dir = f"/media/sean/MusIX/Piper/Slovak/{category}/English"
+    slovak_audio_dir = f"/media/sean/MusIX/Coqui-AI/Slovak/{category}/Slovak"
+    english_audio_dir = f"/media/sean/MusIX/Coqui-AI/Slovak/{category}/English"
     return slovak_audio_dir, english_audio_dir
 
 # Create the directories if they don't exist
@@ -31,63 +23,47 @@ def create_dirs(category):
 
 # Define the CSV file paths, testing with 'slovak10.csv' before 'slovak1000.csv'
 def get_csv_paths(category):
-    input_csv_file = f"/media/sean/MusIX/Piper/Slovak/{category}/{category}.csv"  # Replace with your input CSV file path
-    output_csv_file = f"/media/sean/MusIX/Piper/Slovak/{category}/{category}_anki.csv"
+    input_csv_file = f"/media/sean/MusIX/Coqui-AI/Slovak/{category}/{category}.csv"  # Replace with your input CSV file path
+    output_csv_file = f"/media/sean/MusIX/Coqui-AI/Slovak/{category}/{category}_anki.csv"
     return input_csv_file, output_csv_file
 
 # Function to synthesize and save Slovak audio with speed control
 def synthesize_slovak(text, filename, speed_factor=1.0):
     global slovak_audio_dir  # Declare variable as global
-    # Use subprocess to run the piper command
+    # Use subprocess to run the coqui-ai-tts command
     subprocess.run(
         [
-            "piper",
-            "-m",
-            "/media/sean/MusIX/Piper/sk_SK-lili-medium.onnx",  # Replace with the path to your Slovak model
-            "-c",
-            "/media/sean/MusIX/Piper/sk_SK-lili-medium.onnx.json",  # Replace with the path to your Slovak config
-            "-f",
+            "coqui-ai-tts",
+            "--model_path",
+            slovak_voice,  # Replace with the path to your Slovak model
+            "--text",
+            text,
+            "--voice_path",
+            slovak_voice,  # Replace with the path to your Slovak voice
+            "--output_path",
             os.path.join(slovak_audio_dir, filename + ".wav"),
-            # "-s",  # Remove the speaker argument as it's not needed
-            "--sentence-silence",
-            "0.5", # Add a 0.5 second silence between sentences
+            "--speed_factor",
+            str(speed_factor),  # Set the speed factor
         ],
-        input=text.encode("utf-8"),
     )
     print(f"Slovak audio saved to {os.path.join(slovak_audio_dir, filename + '.wav')}")
-
-    # Modify the audio file using FFmpeg to change the speed
-    input_file = os.path.join(slovak_audio_dir, filename + ".wav")
-    output_file = os.path.join(slovak_audio_dir, filename + "_slow.wav")
-    ffmpeg_command = [
-        "ffmpeg",
-        "-i",
-        input_file,
-        "-filter:a",
-        f"atempo={speed_factor}",
-        output_file,
-    ]
-    subprocess.run(ffmpeg_command)
-    print(f"Slovak audio slowed down and saved to {output_file}")
 
 # Function to synthesize and save English audio
 def synthesize_english(text, filename):
     global english_audio_dir  # Declare variable as global
-    # Use subprocess to run the piper command
+    # Use subprocess to run the coqui-ai-tts command
     subprocess.run(
         [
-            "piper",
-            "-m",
-            "/media/sean/MusIX/Piper/en_US-lessac-medium.onnx",  # Replace with the path to your English model
-            "-c",
-            "/media/sean/MusIX/Piper/en_US-lessac-medium.onnx.json",  # Replace with the path to your English config
-            "-f",
+            "coqui-ai-tts",
+            "--model_path",
+            english_voice,  # Replace with the path to your English model
+            "--text",
+            text,
+            "--voice_path",
+            english_voice,  # Replace with the path to your English voice
+            "--output_path",
             os.path.join(english_audio_dir, filename + ".wav"),
-            # "-s",  # Remove the speaker argument as it's not needed
-            "--sentence-silence",
-            "0.5",  # Add a 0.5 second silence between sentences
         ],
-        input=text.encode("utf-8"),
     )
     print(f"English audio saved to {os.path.join(english_audio_dir, filename + '.wav')}")
 
@@ -103,7 +79,7 @@ def write_to_csv(english_text, slovak_text, slovak_filename, english_filename):
 def combine_audio_files(category):
     global slovak_audio_dir, english_audio_dir, pause  # Declare variables as global
     slovak_audio_dir, english_audio_dir = get_audio_dirs(category)
-    output_dir = "/media/sean/MusIX/Piper/Slovak/1VocabLists"  # New output directory
+    output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
     os.makedirs(output_dir, exist_ok=True)
 
     # Create a temporary file to store the file list
