@@ -9,10 +9,10 @@ import csv
 base_url = "https://slovake.eu"
 
 # Path to the directory where you want to save the files
-download_dir = "/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Greetings"
+download_dir = "/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Dates"
 
 # Path to the CSV file
-csv_file = "/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Greetings/greetings.csv"
+csv_file = "/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Dates/Dates.csv"
 
 # Function to extract the data-sound URL from a span tag
 def extract_sound_url(span_tag):
@@ -40,9 +40,9 @@ if not os.path.exists(download_dir):
 # Example usage:
 # Assuming you have the HTML content in a variable called 'html_content'
 html_content = """
-<span id="sound_yw91722012045" class="sound" data-sound="/sounds/words/mp3/zbohom.mp3">
+<span id="sound_yw181722546376" class="sound" data-sound="/sounds/words/mp3/nedeľa.mp3">
         <span class="glyphicon glyphicon-volume-up"></span>
-        <span class="orig">Zbohom.</span>
+        <span class="orig">nedeľa</span>
     </span>
 """
 
