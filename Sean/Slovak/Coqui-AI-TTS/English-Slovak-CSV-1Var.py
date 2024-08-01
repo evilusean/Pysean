@@ -3,8 +3,10 @@ import subprocess
 import csv
 
 # Define the voices
-english_voice = "tts_models/en/ljspeech/vits"  # Assuming you have an English model named 'en-US-ljspeech'
-slovak_voice = "tts_models/sk/cv/glow-tts"  # Assuming you have a Slovak model named 'tts_models/sk/cv/vits'
+english_voice = "tts_models/en/ljspeech/glow-tts"  # Assuming you have an English model named 'en-US-ljspeech'
+slovak_voice = "tts_models/sk/cv/vits"  # Choose a Slovak model that works from the list
+english_vocoder = "vocoder_models/en/ljspeech/univnet"
+slovak_vocoder = "vocoder_models/universal/libri-tts/wavegrad"  # Define the Slovak vocoder
 pause = "/media/sean/MusIX/Piper/silent_half-second.wav"
 
 # Define the output directories for Slovak and English audio files
@@ -34,14 +36,14 @@ def synthesize_slovak(text, filename):
     subprocess.run(
         [
             "tts",
-            "--model_path",
-            slovak_voice,  # Replace with the path to your Slovak model
             "--text",
             text,
-            "--out_path",  # Use --out_path instead of --output_path
+            "--model_name",
+            slovak_voice,
+            "--vocoder_name",
+            slovak_vocoder,  # Use the defined Slovak vocoder
+            "--out_path",
             os.path.join(slovak_audio_dir, filename + ".wav"),
-            "--config_path",  # Add the config_path argument
-            os.path.join(os.path.dirname(slovak_voice), "config.json"),  # Assuming config.json is in the same directory as the model
         ],
     )
     print(f"Slovak audio saved to {os.path.join(slovak_audio_dir, filename + '.wav')}")
@@ -52,14 +54,14 @@ def synthesize_english(text, filename):
     subprocess.run(
         [
             "tts",
-            "--model_path",
-            english_voice,  # Replace with the path to your English model
             "--text",
             text,
-            "--out_path",  # Use --out_path instead of --output_path
+            "--model_name",
+            english_voice,
+            "--vocoder_name",
+            english_vocoder,
+            "--out_path",
             os.path.join(english_audio_dir, filename + ".wav"),
-            "--config_path",  # Add the config_path argument
-            os.path.join(os.path.dirname(english_voice), "config.json"),  # Assuming config.json is in the same directory as the model
         ],
     )
     print(f"English audio saved to {os.path.join(english_audio_dir, filename + '.wav')}")
