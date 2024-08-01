@@ -5,8 +5,6 @@ import csv
 # Define the voices
 english_voice = "tts_models/en/ljspeech/glow-tts"  # Assuming you have an English model named 'en-US-ljspeech'
 slovak_voice = "tts_models/sk/cv/vits"  # Choose a Slovak model that works from the list
-english_vocoder = "vocoder_models/en/ljspeech/univnet"
-slovak_vocoder = "vocoder_models/universal/libri-tts/wavegrad"  # Define the Slovak vocoder
 pause = "/media/sean/MusIX/Piper/silent_half-second.wav"
 
 # Define the output directories for Slovak and English audio files
@@ -40,8 +38,6 @@ def synthesize_slovak(text, filename):
             text,
             "--model_name",
             slovak_voice,
-            "--vocoder_name",
-            slovak_vocoder,  # Use the defined Slovak vocoder
             "--out_path",
             os.path.join(slovak_audio_dir, filename + ".wav"),
         ],
@@ -58,14 +54,11 @@ def synthesize_english(text, filename):
             text,
             "--model_name",
             english_voice,
-            "--vocoder_name",
-            english_vocoder,
             "--out_path",
             os.path.join(english_audio_dir, filename + ".wav"),
         ],
     )
     print(f"English audio saved to {os.path.join(english_audio_dir, filename + '.wav')}")
-
 
 
 # Function to write to the CSV
