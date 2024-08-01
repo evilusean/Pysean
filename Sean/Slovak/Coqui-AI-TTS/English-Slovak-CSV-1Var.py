@@ -44,14 +44,14 @@ def synthesize_slovak(text, filename):
     )
     print(f"Slovak audio saved to {os.path.join(slovak_audio_dir, filename + '.wav')}")
 
-def synthesize_english(text, filename):
+def synthesize_english(text, filename, counter):
     global english_audio_dir  # Declare variable as global
     # Use subprocess to run the coqui-ai-tts command
     subprocess.run(
         [
             "tts",
             "--text",
-            text,
+            f"{counter}. {text}",  # Add the counter to the text
             "--model_name",
             english_voice,
             "--out_path",
@@ -134,13 +134,6 @@ def combine_audio_files(category):
     # Delete the temporary file
     os.remove(temp_file)
 
-    # Delete the original fast Slovak files
-    for slovak_file in slovak_files:
-        original_file = os.path.join(slovak_audio_dir, slovak_file)
-        if os.path.exists(original_file):
-            os.remove(original_file)
-            print(f"Deleted original Slovak file: {original_file}")
-
 # Main function to process the CSV
 def process_csv(category):
     global output_csv_file  # Declare variable as global
@@ -152,6 +145,7 @@ def process_csv(category):
         reader = csv.reader(csvfile)
         next(reader)  # Skip the header row (if any)
 
+        counter = 1  # Initialize the counter
         for i, row in enumerate(reader):
             slovak_text = row[0].strip()
             english_text = row[1].strip()
@@ -163,11 +157,13 @@ def process_csv(category):
             # Synthesize and save the Slovak audio (no speed control)
             synthesize_slovak(slovak_text, slovak_filename)
 
-            # Synthesize and save the English audio
-            synthesize_english(english_text, english_filename)
+            # Synthesize and save the English audio with counter
+            synthesize_english(english_text, english_filename, counter)
 
             # Write to the CSV
             write_to_csv(english_text, slovak_text, slovak_filename, english_filename)
+
+            counter += 1  # Increment the counter
 
     print(f"Translation and audio synthesis complete for {category}!")
 
