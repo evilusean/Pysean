@@ -143,7 +143,6 @@ def process_csv(category):
 
     with open(input_csv_file, 'r', encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile)
-        next(reader)  # Skip the header row (if any)
 
         counter = 1  # Initialize the counter
         for i, row in enumerate(reader):
