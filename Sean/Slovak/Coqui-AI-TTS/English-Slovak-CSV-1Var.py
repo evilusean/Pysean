@@ -27,52 +27,51 @@ def get_csv_paths(category):
     output_csv_file = f"/media/sean/MusIX/Coqui-AI/Slovak/{category}/{category}_anki.csv"
     return input_csv_file, output_csv_file
 
-# Function to synthesize and save Slovak audio with speed control
-def synthesize_slovak(text, filename, speed_factor=1.0):
+# Function to synthesize and save Slovak audio (no speed control)
+def synthesize_slovak(text, filename):
     global slovak_audio_dir  # Declare variable as global
     # Use subprocess to run the coqui-ai-tts command
     subprocess.run(
         [
-            "coqui-ai-tts",
+            "tts",
             "--model_path",
             slovak_voice,  # Replace with the path to your Slovak model
             "--text",
             text,
-            "--voice_path",
-            slovak_voice,  # Replace with the path to your Slovak voice
-            "--output_path",
+            "--out_path",  # Use --out_path instead of --output_path
             os.path.join(slovak_audio_dir, filename + ".wav"),
-            "--speed_factor",
-            str(speed_factor),  # Set the speed factor
+            "--config_path",  # Add the config_path argument
+            os.path.join(os.path.dirname(slovak_voice), "config.json"),  # Assuming config.json is in the same directory as the model
         ],
     )
     print(f"Slovak audio saved to {os.path.join(slovak_audio_dir, filename + '.wav')}")
 
-# Function to synthesize and save English audio
 def synthesize_english(text, filename):
     global english_audio_dir  # Declare variable as global
     # Use subprocess to run the coqui-ai-tts command
     subprocess.run(
         [
-            "coqui-ai-tts",
+            "tts",
             "--model_path",
             english_voice,  # Replace with the path to your English model
             "--text",
             text,
-            "--voice_path",
-            english_voice,  # Replace with the path to your English voice
-            "--output_path",
+            "--out_path",  # Use --out_path instead of --output_path
             os.path.join(english_audio_dir, filename + ".wav"),
+            "--config_path",  # Add the config_path argument
+            os.path.join(os.path.dirname(english_voice), "config.json"),  # Assuming config.json is in the same directory as the model
         ],
     )
     print(f"English audio saved to {os.path.join(english_audio_dir, filename + '.wav')}")
+
+
 
 # Function to write to the CSV
 def write_to_csv(english_text, slovak_text, slovak_filename, english_filename):
     global output_csv_file, slovak_audio_dir  # Declare variables as global
     with open(output_csv_file, 'a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow([english_text, slovak_text, f"[sound:file://{os.path.join(slovak_audio_dir, slovak_filename + '_slow.wav')}]"])  
+        writer.writerow([english_text, slovak_text, f"[sound:file://{os.path.join(slovak_audio_dir, slovak_filename + '.wav')}]"])  
         # Update CSV link to .wav, using the slowed down file
 
 # Function to combine audio files into a single file using FFmpeg
@@ -88,7 +87,7 @@ def combine_audio_files(category):
     # Write the file list to the temporary file
     with open(temp_file, "w") as f:
         # Get a list of all audio files in both folders
-        slovak_files = [f for f in os.listdir(slovak_audio_dir) if f.endswith("_slow.wav")]  # Get slowed down Slovak files
+        slovak_files = [f for f in os.listdir(slovak_audio_dir) if f.endswith(".wav")]  # Get slowed down Slovak files
         english_files = [f for f in os.listdir(english_audio_dir) if f.endswith(".wav")]
 
         # Sort the files numerically (assuming filenames start with numbers)
@@ -142,7 +141,7 @@ def combine_audio_files(category):
 
     # Delete the original fast Slovak files
     for slovak_file in slovak_files:
-        original_file = os.path.join(slovak_audio_dir, slovak_file.replace("_slow.wav", ".wav"))
+        original_file = os.path.join(slovak_audio_dir, slovak_file)
         if os.path.exists(original_file):
             os.remove(original_file)
             print(f"Deleted original Slovak file: {original_file}")
@@ -166,8 +165,8 @@ def process_csv(category):
             slovak_filename = f"{str(i+1).zfill(4)}"  # Only use the 4-digit number
             english_filename = f"{str(i+1).zfill(4)}"  # Only use the 4-digit number
 
-            # Synthesize and save the Slovak audio with speed control
-            synthesize_slovak(slovak_text, slovak_filename, speed_factor=0.7)  # Slow down the Slovak speaker
+            # Synthesize and save the Slovak audio (no speed control)
+            synthesize_slovak(slovak_text, slovak_filename)
 
             # Synthesize and save the English audio
             synthesize_english(english_text, english_filename)
@@ -181,5 +180,5 @@ def process_csv(category):
     combine_audio_files(category)
 
 # going to use this for Slovake.eu course 'Slovake.eu-L1' = lesson 1
-category = "Slovake.eu-L6"  # Replace with your directory / CSV name (must be the same)
+category = "Adjectives"  # Replace with your directory / CSV name (must be the same)
 process_csv(category)

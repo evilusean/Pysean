@@ -12,8 +12,8 @@ download_dir = "/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/ABECEDA"
 if not os.path.exists(download_dir):
     os.makedirs(download_dir)
 
-# Loop through sound files 1-40
-for i in range(1, 50):
+# Loop through sound files 1-46, they changed the filenames for 46-49
+for i in range(1, 46):
     # Construct the URL for the current sound file
     file_url = f"{base_url}/sounds/pronunciation/mp3/sound{i}_lit.mp3"
 
