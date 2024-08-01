@@ -96,14 +96,14 @@ def combine_audio_files(category):
         for i in range(min_length):  # Iterate up to the shorter list's length
             slovak_file = slovak_files[i]
             english_file = english_files[i]
-            f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
-            f.write(f"file '{pause}'\n")
-            f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
-            f.write(f"file '{pause}'\n")
-            f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")
-            f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
             f.write(f"file '{os.path.join(english_audio_dir, english_file)}'\n")  # Add English file path
             f.write(f"file '{pause}'\n")  # Add pause after each English word
+            f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")  # Add Slovak file path
+            f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
+            f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")  # Add Slovak file path
+            f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
+            f.write(f"file '{os.path.join(slovak_audio_dir, slovak_file)}'\n")  # Add Slovak file path
+            f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
 
     # Construct the FFmpeg command to combine the files
     ffmpeg_command = [
