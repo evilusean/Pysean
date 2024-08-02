@@ -276,6 +276,20 @@ North	= sever.mp3
 South	= juh.mp3
 East	= východ.mp3
 West	= západ.mp3
+Kde je _	= Where is _ 
+Zmenáreň je vpravo.	= The exchange office is on your right hand side.
+Vlaková stanica je vľavo	= The train station is on your left hand side
+Centrum je vpredu	= The centre is just ahead
+Novinový stánok je vzadu	= The newsagent is located in the back
+Kam musím ísť	= Where should I go
+Musíte ísť doprava.	= You must go to the right.
+Musíte ísť doľava.	= You must go to the left.
+Musíte ísť dopredu.	= You must go straight ahead.
+Musíte ísť dozadu.	= You must go to the back.
+severovýchod	= northeast
+juhovýchod	= southeast
+juhozápad	= southwest
+severozápad	= northwest
 
 
 
