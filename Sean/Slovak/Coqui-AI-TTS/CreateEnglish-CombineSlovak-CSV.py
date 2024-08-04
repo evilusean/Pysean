@@ -6,6 +6,7 @@ import csv
 #creates an english version from the CSV I used for ANKI, and combines the natural slovak with AI english into a vocabulary list
 #keep getting below error :
 # [concat @ 0x591cfeb16840] Impossible to open '/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Dates/január' /media/sean/MusIX/Coqui-AI/Slovak/1VocabLists/temp_concat_list.txt: No such file or directory
+#[concat @ 0x59eef205d880] Impossible to open 'pipe:/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Dates/English/0001.wav'pipe:0: Invalid data found when processing input
 
 # Define the voices
 english_voice = "tts_models/en/ljspeech/vits"  # taco bout it
@@ -50,12 +51,11 @@ def combine_audio_files(category, csv_file):
     output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
     os.makedirs(output_dir, exist_ok=True)
 
-    # Create a temporary file to store the file list
-    temp_file = os.path.join(output_dir, "temp_concat_list.txt")
-
     # Construct the FFmpeg command to combine the files
     ffmpeg_command = [
         "ffmpeg",
+        "-protocol_whitelist",
+        "pipe",  # Add this option
         "-f",
         "concat",
         "-safe",
