@@ -56,17 +56,10 @@ def combine_audio_files(category, csv_file):
 
     temp_file = os.path.join(output_dir, "temp_concat_list.txt")
 
-    ffmpeg_command = [
-        "ffmpeg",
-        "-f", "concat",
-        "-safe", "0",
-        "-i", temp_file,
-        "-c:a", "libmp3lame",  # Use MP3 codec for output
-        os.path.join(output_dir, f"{category}_combined.mp3"),
-        "-loglevel", "error",
-    ]
-
     # Write the file list to the temporary file
+    if not os.path.exists(temp_file):
+        print(f"Creating temp file: {temp_file}")
+
     with open(temp_file, "w") as f:
         with open(csv_file, 'r', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
@@ -95,9 +88,20 @@ def combine_audio_files(category, csv_file):
                 f.write(f"file '{pause}'\n")
 
     # Print the contents of the temp file for review
-    with open(temp_file, 'r') as f:
-        print("\nContents of temp_concat_list.txt:")
-        print(f.read())
+    # with open(temp_file, 'r') as f:
+    #     print("\nContents of temp_concat_list.txt:")
+    #     print(f.read())
+
+    # FFmpeg command to combine the files
+    ffmpeg_command = [
+        "ffmpeg",
+        "-f", "concat",
+        "-safe", "0",
+        "-i", temp_file,
+        "-c:a", "libmp3lame",  # Use MP3 codec for output
+        os.path.join(output_dir, f"{category}_combined.mp3"),
+        "-loglevel", "error",
+    ]
 
     # Run FFmpeg and check for errors
     result = subprocess.run(ffmpeg_command, capture_output=True, text=True)
@@ -107,6 +111,7 @@ def combine_audio_files(category, csv_file):
         print(f"Audio files combined into {category}_combined.mp3 in {output_dir}")
 
     os.remove(temp_file)
+
 
 def process_csv(category):
     input_csv_file = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/{category}.csv"
