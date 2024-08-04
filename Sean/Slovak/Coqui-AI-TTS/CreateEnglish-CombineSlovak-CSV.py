@@ -36,13 +36,18 @@ def synthesize_english(text, filename):
     return out_path
 
 def convert_to_mp3(input_file, output_file):
-    subprocess.run([
+    result = subprocess.run([
         "ffmpeg",
         "-i", input_file,
         "-codec:a", "libmp3lame",
         "-qscale:a", "2",  # Adjust quality (2 is a good balance between size and quality)
         output_file
-    ])
+    ], capture_output=True, text=True)
+    
+    if result.returncode != 0:
+        print(f"Error converting to MP3: {result.stderr}")
+    else:
+        print(f"Converted {input_file} to {output_file}")
 
 def combine_audio_files(category, csv_file):
     global pause
@@ -78,8 +83,13 @@ def combine_audio_files(category, csv_file):
                 # Ensure the paths are correctly formatted
                 english_file = os.path.abspath(english_file)
                 slovak_file = os.path.abspath(slovak_file)
-                
+
+                # Add English - pause - Slovak - pause - Slovak - pause - Slovak - pause
                 f.write(f"file '{english_file}'\n")
+                f.write(f"file '{pause}'\n")
+                f.write(f"file '{slovak_file}'\n")
+                f.write(f"file '{pause}'\n")
+                f.write(f"file '{slovak_file}'\n")
                 f.write(f"file '{pause}'\n")
                 f.write(f"file '{slovak_file}'\n")
                 f.write(f"file '{pause}'\n")

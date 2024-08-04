@@ -9,10 +9,10 @@ import csv
 base_url = "https://slovake.eu"
 
 # Path to the directory where you want to save the files
-download_dir = "/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Hotel"
+download_dir = "/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Restaurant"
 
 # Path to the CSV file
-csv_file = "/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Hotel/Hotel.csv"
+csv_file = "/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Restaurant/Restaurant.csv"
 
 # Function to extract the data-sound URL from a span tag
 def extract_sound_url(span_tag):
