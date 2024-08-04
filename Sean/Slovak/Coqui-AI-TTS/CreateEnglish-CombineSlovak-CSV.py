@@ -53,20 +53,6 @@ def combine_audio_files(category, csv_file):
     # Create a temporary file to store the file list
     temp_file = os.path.join(output_dir, "temp_concat_list.txt")
 
-    # Write the file list to the temporary file
-    with open(temp_file, "w") as f:
-        with open(csv_file, 'r', encoding='utf-8') as csvfile:
-            reader = csv.reader(csvfile)
-            next(reader)  # Skip the header row
-
-            for row in reader:
-                english_file = row[1]
-                slovak_file = row[2]
-                f.write(f"file '{english_file}'\n")  # Add English file path
-                f.write(f"file '{pause}'\n")  # Add pause after each English word
-                f.write(f"file '{slovak_file}'\n")  # Add Slovak file path
-                f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
-
     # Construct the FFmpeg command to combine the files
     ffmpeg_command = [
         "ffmpeg",
@@ -75,7 +61,7 @@ def combine_audio_files(category, csv_file):
         "-safe",
         "0",
         "-i",
-        temp_file,
+        "pipe:0",  # Read from stdin
         "-filter_complex",
         # Reset timestamps for each segment
         "[0:a]asetpts=PTS-STARTPTS[out]",
@@ -88,13 +74,25 @@ def combine_audio_files(category, csv_file):
         "error",  # Suppress warning messages
     ]
 
-    # Run the FFmpeg command
-    subprocess.run(ffmpeg_command)
+    # Run the FFmpeg command with input from a pipe
+    with subprocess.Popen(ffmpeg_command, stdin=subprocess.PIPE) as process:
+        with open(csv_file, 'r', encoding='utf-8') as csvfile:
+            reader = csv.reader(csvfile)
+            next(reader)  # Skip the header row
+
+            for row in reader:
+                english_file = row[1]
+                slovak_file = row[2]
+                process.stdin.write(f"file '{english_file}'\n".encode())  # Add English file path
+                process.stdin.write(f"file '{pause}'\n".encode())  # Add pause after each English word
+                # Directly write the Slovak file path from the CSV
+                process.stdin.write(f"file '{slovak_file}'\n".encode())  # Add Slovak file path
+                process.stdin.write(f"file '{pause}'\n".encode())  # Add pause after each Slovak word
+
+        process.stdin.close()
+        process.wait()
 
     print(f"Audio files combined into {category}_combined.mp3 in {output_dir}")
-
-    # Delete the temporary file
-    os.remove(temp_file)
 
 # Main function to process the CSV
 def process_csv(category):
