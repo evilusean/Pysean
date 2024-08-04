@@ -120,7 +120,7 @@ def process_csv(category):
             slovak_audio_file = row[2].strip()  # Assuming Slovak audio file location is in the third column
 
             # Extract the filename from the audio file location
-            slovak_filename = os.path.basename(slovak_audio_file).replace("[sound:file://", "").replace("]", "").replace(".mp3", "")
+            slovak_filename = slovak_audio_file.split("file:///")[1].replace("]", "").replace(".mp3", "")
 
             # Create unique filenames with 4-digit formatting and words
             english_filename = f"{str(i+1).zfill(4)}"  # Only use the 4-digit number
