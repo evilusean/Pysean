@@ -1,6 +1,7 @@
 import os
 import subprocess
 import csv
+import shutil
 
 #created a script that combined the naturally spoken slovak I downloaded as individual MP3's, which then
 #creates an english version from the CSV I used for ANKI, and combines the natural slovak with AI english into a vocabulary list
@@ -19,13 +20,15 @@ pause = "/media/sean/MusIX/Piper/silent_half-second.wav"
 # Make the directory names dynamic
 def get_audio_dirs(category):
     english_audio_dir = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/English"
-    return english_audio_dir
+    slovak_audio_dir = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/Slovak"
+    return english_audio_dir, slovak_audio_dir
 
 # Create the directories if they don't exist
 def create_dirs(category):
-    global english_audio_dir  # Declare variables as global
-    english_audio_dir = get_audio_dirs(category)
+    global english_audio_dir, slovak_audio_dir  # Declare variables as global
+    english_audio_dir, slovak_audio_dir = get_audio_dirs(category)
     os.makedirs(english_audio_dir, exist_ok=True)
+    os.makedirs(slovak_audio_dir, exist_ok=True)
 
 # Function to synthesize and save English audio (no speed control)
 def synthesize_english(text, filename):
@@ -51,17 +54,18 @@ def combine_audio_files(category, csv_file):
     output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
     os.makedirs(output_dir, exist_ok=True)
 
+    # Create a temporary file to store the file list
+    temp_file = os.path.join(output_dir, "temp_concat_list.txt")
+
     # Construct the FFmpeg command to combine the files
     ffmpeg_command = [
         "ffmpeg",
-        "-protocol_whitelist",
-        "pipe",  # Add this option
         "-f",
         "concat",
         "-safe",
         "0",
         "-i",
-        "pipe:0",  # Read from stdin
+        temp_file,  # Read from the temp file
         "-filter_complex",
         # Reset timestamps for each segment
         "[0:a]asetpts=PTS-STARTPTS[out]",
@@ -74,8 +78,8 @@ def combine_audio_files(category, csv_file):
         "error",  # Suppress warning messages
     ]
 
-    # Run the FFmpeg command with input from a pipe
-    with subprocess.Popen(ffmpeg_command, stdin=subprocess.PIPE) as process:
+    # Write the file list to the temporary file
+    with open(temp_file, "w") as f:
         with open(csv_file, 'r', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
             next(reader)  # Skip the header row
@@ -83,16 +87,18 @@ def combine_audio_files(category, csv_file):
             for row in reader:
                 english_file = row[1]
                 slovak_file = row[2]
-                process.stdin.write(f"file '{english_file}'\n".encode())  # Add English file path
-                process.stdin.write(f"file '{pause}'\n".encode())  # Add pause after each English word
-                # Directly write the Slovak file path from the CSV
-                process.stdin.write(f"file '{slovak_file}'\n".encode())  # Add Slovak file path
-                process.stdin.write(f"file '{pause}'\n".encode())  # Add pause after each Slovak word
+                f.write(f"file '{english_file}'\n")  # Add English file path
+                f.write(f"file '{pause}'\n")  # Add pause after each English word
+                f.write(f"file '{slovak_file}'\n")  # Add Slovak file path
+                f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
 
-        process.stdin.close()
-        process.wait()
+    # Run the FFmpeg command
+    subprocess.run(ffmpeg_command)
 
     print(f"Audio files combined into {category}_combined.mp3 in {output_dir}")
+
+    # Delete the temporary file
+    os.remove(temp_file)
 
 # Main function to process the CSV
 def process_csv(category):
@@ -123,8 +129,11 @@ def process_csv(category):
                 # Synthesize and save the English audio (no speed control)
                 english_file_path = synthesize_english(english_text, english_filename)
 
+                # Copy the Slovak audio file to the new directory
+                shutil.copyfile(slovak_audio_file, os.path.join(slovak_audio_dir, slovak_filename + ".mp3"))
+
                 # Write to the new CSV file
-                writer.writerow([english_text, english_file_path, slovak_filename])
+                writer.writerow([english_text, english_file_path, f"media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Dates/{slovak_filename}.mp3"])
 
     # Combine the audio files using FFmpeg
     combine_audio_files(category, output_csv_file)
