@@ -12,14 +12,13 @@ pause = "/media/sean/MusIX/Piper/silent_half-second.wav"
 # Define the output directories for Slovak and English audio files
 # Make the directory names dynamic
 def get_audio_dirs(category):
-    slovak_audio_dir = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}"
     english_audio_dir = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/English"
-    return slovak_audio_dir, english_audio_dir
+    return english_audio_dir
 
 # Create the directories if they don't exist
 def create_dirs(category):
-    global slovak_audio_dir, english_audio_dir  # Declare variables as global
-    slovak_audio_dir, english_audio_dir = get_audio_dirs(category)
+    global english_audio_dir  # Declare variables as global
+    english_audio_dir = get_audio_dirs(category)
     os.makedirs(english_audio_dir, exist_ok=True)
 
 # Define the CSV file paths
@@ -46,8 +45,8 @@ def synthesize_english(text, filename):
 
 # Function to combine audio files into a single file using FFmpeg
 def combine_audio_files(category, slovak_filenames):
-    global slovak_audio_dir, english_audio_dir, pause  # Declare variables as global
-    slovak_audio_dir, english_audio_dir = get_audio_dirs(category)
+    global english_audio_dir, pause  # Declare variables as global
+    english_audio_dir = get_audio_dirs(category)
     output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
     os.makedirs(output_dir, exist_ok=True)
 
@@ -70,7 +69,7 @@ def combine_audio_files(category, slovak_filenames):
             english_file = english_files[i]
             f.write(f"file '{os.path.join(english_audio_dir, english_file)}'\n")  # Add English file path
             f.write(f"file '{pause}'\n")  # Add pause after each English word
-            f.write(f"file '{slovak_filenames[i]}'\n")  # Add Slovak file path (directly from the list)
+            f.write(f"file '{os.path.join(english_audio_dir, slovak_filenames[i])}'\n")  # Add Slovak file path (directly from the list)
             f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
 
     # Construct the FFmpeg command to combine the files
@@ -104,7 +103,7 @@ def combine_audio_files(category, slovak_filenames):
 
 # Main function to process the CSV
 def process_csv(category):
-    global output_csv_file  # Declare variable as global
+    global english_audio_dir  # Declare variable as global
     create_dirs(category)
     input_csv_file = get_csv_paths(category)
 
