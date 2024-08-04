@@ -67,22 +67,23 @@ def combine_audio_files(category, csv_file):
         "error",
     ]
 
-    # Ensure paths in temp file are correctly formatted
     with open(temp_file, "w") as f:
         with open(csv_file, 'r', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
-            next(reader)
+            next(reader)  # Skip header row
 
             for row in reader:
-                english_file = row[1]
-                slovak_file = row[2]
+                english_file = row[1].strip()
+                slovak_file = row[2].strip()
 
-                # Fix paths to be absolute
-                if not os.path.isabs(english_file):
-                    english_file = os.path.abspath(english_file)
-                if not os.path.isabs(slovak_file):
-                    slovak_file = os.path.abspath(slovak_file)
-
+                # Handle URLs for Slovak audio files
+                if slovak_file.startswith("[sound:file:///"):
+                    slovak_file = slovak_file[16:].rstrip(']')
+                
+                # Ensure the paths are correctly formatted
+                english_file = os.path.abspath(english_file)
+                slovak_file = os.path.abspath(slovak_file)
+                
                 f.write(f"file '{english_file}'\n")
                 f.write(f"file '{pause}'\n")
                 f.write(f"file '{slovak_file}'\n")
@@ -103,33 +104,27 @@ def process_csv(category):
 
         with open(input_csv_file, 'r', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
-            next(reader)
+            next(reader)  # Skip header row
 
             for i, row in enumerate(reader):
                 english_text = row[0].strip()
                 slovak_audio_file = row[2].strip()
 
-                # Remove '[sound:file:///' prefix and extra characters
+                # Handle URLs for Slovak audio files
                 if slovak_audio_file.startswith("[sound:file:///"):
-                    slovak_audio_file = slovak_audio_file[14:].rstrip(']')  # Strip '[sound:file:///' prefix and closing ']'
+                    slovak_audio_file = slovak_audio_file[14:].rstrip(']')
+                
+                # Ensure the path is correctly formatted
+                slovak_audio_file = os.path.abspath(slovak_audio_file)
 
-                # Construct the full path to the Slovak audio file
-                slovak_audio_file = os.path.join("/media/sean/MusIX/Slovak.Czech/slovake.eu-audio", category, os.path.basename(slovak_audio_file))
-
-                # Extract the filename from the audio file path
-                slovak_filename = os.path.splitext(os.path.basename(slovak_audio_file))[0]
-
+                # Create unique filenames with 4-digit formatting and words
                 english_filename = f"{str(i+1).zfill(4)}"
 
+                # Synthesize and save the English audio
                 english_file_path = synthesize_english(english_text, english_filename)
 
-                # Ensure the Slovak file exists before copying
-                if os.path.isfile(slovak_audio_file):
-                    shutil.copyfile(slovak_audio_file, os.path.join(slovak_audio_dir, slovak_filename + ".mp3"))
-                else:
-                    print(f"Warning: Slovak audio file not found: {slovak_audio_file}")
-
-                writer.writerow([english_text, english_file_path, f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/Slovak/{slovak_filename}.mp3"])
+                # Write to the new CSV file
+                writer.writerow([english_text, english_file_path, slovak_audio_file])
 
     combine_audio_files(category, output_csv_file)
     print(f"Translation and audio synthesis complete for {category}!")
