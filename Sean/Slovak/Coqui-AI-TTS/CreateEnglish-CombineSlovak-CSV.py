@@ -67,28 +67,38 @@ def combine_audio_files(category, csv_file):
         "error",
     ]
 
+    # Write the file list to the temporary file
     with open(temp_file, "w") as f:
         with open(csv_file, 'r', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
-            next(reader)
+            next(reader)  # Skip header row
 
             for row in reader:
-                english_file = row[1]
-                slovak_file = row[2]
+                english_file = row[1].strip()
+                slovak_file = row[2].strip()
 
-                # Clean the Slovak file path
+                # Handle URLs for Slovak audio files
                 if slovak_file.startswith("[sound:file:///"):
-                    slovak_file = slovak_file[14:].rstrip(']')
+                    slovak_file = slovak_file[16:].rstrip(']')
+                
+                # Ensure the paths are correctly formatted
+                english_file = os.path.abspath(english_file)
+                slovak_file = os.path.abspath(slovak_file)
 
-                # Verify the path to the Slovak audio file
-                if not os.path.isabs(slovak_file):
-                    slovak_file = os.path.abspath(slovak_file)
-
+                # Log the paths being written to the temp file
+                print(f"Adding to temp file: {english_file}")
+                print(f"Adding pause: {pause}")
+                print(f"Adding Slovak file: {slovak_file}")
+                
                 f.write(f"file '{english_file}'\n")
                 f.write(f"file '{pause}'\n")
                 f.write(f"file '{slovak_file}'\n")
                 f.write(f"file '{pause}'\n")
 
+    # Print the contents of the temp file for review
+    with open(temp_file, 'r') as f:
+        print("\nContents of temp_concat_list.txt:")
+        print(f.read())
 
     subprocess.run(ffmpeg_command)
     print(f"Audio files combined into {category}_combined.mp3 in {output_dir}")
