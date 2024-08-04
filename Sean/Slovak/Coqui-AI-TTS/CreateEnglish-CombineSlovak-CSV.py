@@ -4,6 +4,8 @@ import csv
 
 #created a script that combined the naturally spoken slovak I downloaded as individual MP3's, which then
 #creates an english version from the CSV I used for ANKI, and combines the natural slovak with AI english into a vocabulary list
+#keep getting below error :
+# [concat @ 0x591cfeb16840] Impossible to open '/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Dates/január' /media/sean/MusIX/Coqui-AI/Slovak/1VocabLists/temp_concat_list.txt: No such file or directory
 
 # Define the voices
 english_voice = "tts_models/en/ljspeech/vits"  # taco bout it
@@ -69,8 +71,8 @@ def combine_audio_files(category, slovak_filenames):
             english_file = english_files[i]
             f.write(f"file '{os.path.join(english_audio_dir, english_file)}'\n")  # Add English file path
             f.write(f"file '{pause}'\n")  # Add pause after each English word
-            f.write(f"file '{os.path.join(english_audio_dir, slovak_filenames[i])}'\n")  # Add Slovak file path (directly from the list)
-            f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
+            f.write(f"file '{slovak_filenames[i]}'\n")  # Add Slovak file path (directly from the list)
+            f.write(f"file '{pause}'\n") 
 
     # Construct the FFmpeg command to combine the files
     ffmpeg_command = [
@@ -114,7 +116,6 @@ def process_csv(category):
 
         for i, row in enumerate(reader):
             english_text = row[0].strip()  # Assuming English text is in the first column
-            slovak_text = row[1].strip()  # Assuming Slovak text is in the second column
             slovak_audio_file = row[2].strip()  # Assuming Slovak audio file location is in the third column
 
             # Extract the filename from the audio file location
