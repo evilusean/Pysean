@@ -129,7 +129,7 @@ def process_csv(category):
                 else:
                     print(f"Warning: Slovak audio file not found: {slovak_audio_file}")
 
-                writer.writerow([english_text, english_file_path, f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/{slovak_filename}.mp3"])
+                writer.writerow([english_text, english_file_path, f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/Slovak/{slovak_filename}.mp3"])
 
     combine_audio_files(category, output_csv_file)
     print(f"Translation and audio synthesis complete for {category}!")
