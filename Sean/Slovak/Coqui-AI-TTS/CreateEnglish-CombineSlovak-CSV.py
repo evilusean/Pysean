@@ -5,7 +5,7 @@ import shutil
 
 # Define the voices
 english_voice = "tts_models/en/ljspeech/vits"
-pause = "/media/sean/MusIX/Piper/silent_half-second.wav"
+pause = "/media/sean/MusIX/Piper/silent_half-second.mp3"
 
 def get_audio_dirs(category):
     english_audio_dir = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/English"
