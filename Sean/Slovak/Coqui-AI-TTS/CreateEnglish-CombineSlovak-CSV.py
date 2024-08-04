@@ -50,11 +50,11 @@ def synthesize_english(text, filename):
 def combine_audio_files(category, english_filenames, slovak_filenames):
     global english_audio_dir, pause  # Declare variables as global
     english_audio_dir = get_audio_dirs(category)
-    output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
-    os.makedirs(output_dir, exist_ok=True)
+    # Removed: output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
+    # Removed: os.makedirs(output_dir, exist_ok=True)
 
     # Create a temporary file to store the file list
-    temp_file = os.path.join(output_dir, "temp_concat_list.txt")
+    temp_file = os.path.join(english_audio_dir, "temp_concat_list.txt")  # Use english_audio_dir
 
     # Write the file list to the temporary file
     with open(temp_file, "w") as f:
@@ -91,7 +91,7 @@ def combine_audio_files(category, english_filenames, slovak_filenames):
         "[out]",
         "-c:a",
         "libmp3lame",
-        os.path.join(output_dir, f"{category}_combined.mp3"),  # Use category in the filename
+        os.path.join(english_audio_dir, f"{category}_combined.mp3"),  # Use english_audio_dir
         "-loglevel",
         "error",  # Suppress warning messages
     ]
@@ -99,7 +99,7 @@ def combine_audio_files(category, english_filenames, slovak_filenames):
     # Run the FFmpeg command
     subprocess.run(ffmpeg_command)
 
-    print(f"Audio files combined into {category}_combined.mp3 in {output_dir}")
+    print(f"Audio files combined into {category}_combined.mp3 in {english_audio_dir}")  # Use english_audio_dir
 
     # Delete the temporary file
     os.remove(temp_file)
@@ -114,9 +114,9 @@ def process_csv(category):
     english_filenames = []  # Create a list to store English filenames
 
     # Create the temporary file outside the loop
-    output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
-    os.makedirs(output_dir, exist_ok=True)
-    temp_file = os.path.join(output_dir, "temp_concat_list.txt")
+    # Removed: output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
+    # Removed: os.makedirs(output_dir, exist_ok=True)
+    temp_file = os.path.join(english_audio_dir, "temp_concat_list.txt")  # Use english_audio_dir
     with open(temp_file, "w") as f:
         with open(input_csv_file, 'r', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
@@ -126,7 +126,7 @@ def process_csv(category):
                 slovak_audio_file = row[2].strip()  # Assuming Slovak audio file location is in the third column
 
                 # Extract the filename from the audio file location
-                slovak_filename = slovak_audio_file.split("file:///")[1].replace("]", "").replace(".mp3", "")
+                slovak_filename = slovak_audio_file.split("file:///")[1].replace("]", "")
                 slovak_filenames.append(slovak_filename)  # Add the filename to the list
 
                 # Create unique filenames with 4-digit formatting and words
