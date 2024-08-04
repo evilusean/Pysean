@@ -111,24 +111,35 @@ def process_csv(category):
 
     slovak_filenames = []  # Create a list to store Slovak filenames
 
-    with open(input_csv_file, 'r', encoding='utf-8') as csvfile:
-        reader = csv.reader(csvfile)
+    # Create the temporary file outside the loop
+    output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
+    os.makedirs(output_dir, exist_ok=True)
+    temp_file = os.path.join(output_dir, "temp_concat_list.txt")
+    with open(temp_file, "w") as f:
+        with open(input_csv_file, 'r', encoding='utf-8') as csvfile:
+            reader = csv.reader(csvfile)
 
-        for i, row in enumerate(reader):
-            english_text = row[0].strip()  # Assuming English text is in the first column
-            slovak_audio_file = row[2].strip()  # Assuming Slovak audio file location is in the third column
+            for i, row in enumerate(reader):
+                english_text = row[0].strip()  # Assuming English text is in the first column
+                slovak_audio_file = row[2].strip()  # Assuming Slovak audio file location is in the third column
 
-            # Extract the filename from the audio file location
-            slovak_filename = slovak_audio_file.split("file:///")[1].replace("]", "").replace(".mp3", "")
-            slovak_filenames.append(slovak_filename)  # Add the filename to the list
+                # Extract the filename from the audio file location
+                slovak_filename = slovak_audio_file.split("file:///")[1].replace("]", "").replace(".mp3", "")
+                slovak_filenames.append(slovak_filename)  # Add the filename to the list
 
-            # Create unique filenames with 4-digit formatting and words
-            english_filename = f"{str(i+1).zfill(4)}"  # Only use the 4-digit number
+                # Create unique filenames with 4-digit formatting and words
+                english_filename = f"{str(i+1).zfill(4)}"  # Only use the 4-digit number
 
-            # Synthesize and save the English audio (no speed control)
-            synthesize_english(english_text, english_filename)
+                # Synthesize and save the English audio (no speed control)
+                synthesize_english(english_text, english_filename)
 
-    # Combine all audio files into one file
+                # Write the English and Slovak filenames to the temp file
+                f.write(f"file '{os.path.join(english_audio_dir, english_filename + '.wav')}' \n")
+                f.write(f"file '{pause}'\n")
+                f.write(f"file '{slovak_filenames[i]}'\n")
+                f.write(f"file '{pause}'\n")
+
+    # Combine all audio files into one file after the loop
     combine_audio_files(category, slovak_filenames)  # Pass the list of Slovak filenames
 
     print(f"Translation and audio synthesis complete for {category}!")
