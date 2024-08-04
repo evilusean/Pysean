@@ -44,9 +44,10 @@ def synthesize_english(text, filename):
         ],
     )
     print(f"English audio saved to {os.path.join(english_audio_dir, filename + '.wav')}")
+    return os.path.join(english_audio_dir, filename + ".wav")  # Return the full path
 
 # Function to combine audio files into a single file using FFmpeg
-def combine_audio_files(category, slovak_filenames):
+def combine_audio_files(category, english_filenames, slovak_filenames):
     global english_audio_dir, pause  # Declare variables as global
     english_audio_dir = get_audio_dirs(category)
     output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
@@ -57,22 +58,22 @@ def combine_audio_files(category, slovak_filenames):
 
     # Write the file list to the temporary file
     with open(temp_file, "w") as f:
-        # Get a list of all audio files in both folders
-        english_files = [f for f in os.listdir(english_audio_dir) if f.endswith(".wav")]
-
-        # Sort the files numerically (assuming filenames start with numbers)
-        english_files.sort()
-
         # Ensure both lists have the same length
-        min_length = len(english_files)
+        min_length = len(english_filenames)
 
         # Write the file list to the temporary file
         for i in range(min_length):  # Iterate up to the shorter list's length
-            english_file = english_files[i]
-            f.write(f"file '{os.path.join(english_audio_dir, english_file)}'\n")  # Add English file path
+            # English - Slovak - English - Slovak order
+            f.write(f"file '{english_filenames[i]}'\n")  # Add English file path
             f.write(f"file '{pause}'\n")  # Add pause after each English word
             f.write(f"file '{slovak_filenames[i]}'\n")  # Add Slovak file path (directly from the list)
-            f.write(f"file '{pause}'\n") 
+            f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
+            if i < min_length - 1:  # Add another English-Slovak pair if not the last one
+                f.write(f"file '{english_filenames[i + 1]}'\n")  # Add English file path
+                f.write(f"file '{pause}'\n")  # Add pause after each English word
+                f.write(f"file '{slovak_filenames[i + 1]}'\n")  # Add Slovak file path (directly from the list)
+                f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
+                i += 1  # Skip the next iteration to avoid repetition
 
     # Construct the FFmpeg command to combine the files
     ffmpeg_command = [
@@ -110,6 +111,7 @@ def process_csv(category):
     input_csv_file = get_csv_paths(category)
 
     slovak_filenames = []  # Create a list to store Slovak filenames
+    english_filenames = []  # Create a list to store English filenames
 
     # Create the temporary file outside the loop
     output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
@@ -131,16 +133,24 @@ def process_csv(category):
                 english_filename = f"{str(i+1).zfill(4)}"  # Only use the 4-digit number
 
                 # Synthesize and save the English audio (no speed control)
-                synthesize_english(english_text, english_filename)
+                english_file_path = synthesize_english(english_text, english_filename)
+                english_filenames.append(english_file_path)  # Add the filename to the list
 
                 # Write the English and Slovak filenames to the temp file
-                f.write(f"file '{os.path.join(english_audio_dir, english_filename + '.wav')}' \n")
+                f.write(f"file '{english_file_path}'\n")
                 f.write(f"file '{pause}'\n")
                 f.write(f"file '{slovak_filenames[i]}'\n")
                 f.write(f"file '{pause}'\n")
 
+        # Print the slovak_filenames list for debugging
+        print("slovak_filenames:", slovak_filenames)
+        # Print the contents of the temp_concat_list.txt file
+        print("temp_concat_list.txt contents:")
+        with open(temp_file, "r") as f:
+            print(f.read())
+
     # Combine all audio files into one file after the loop
-    combine_audio_files(category, slovak_filenames)  # Pass the list of Slovak filenames
+    combine_audio_files(category, english_filenames, slovak_filenames)  # Pass the list of Slovak filenames
 
     print(f"Translation and audio synthesis complete for {category}!")
 
