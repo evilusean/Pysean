@@ -3,12 +3,6 @@ import subprocess
 import csv
 import shutil
 
-#created a script that combined the naturally spoken slovak I downloaded as individual MP3's, which then
-#creates an english version from the CSV I used for ANKI, and combines the natural slovak with AI english into a vocabulary list
-#keep getting below error :
-# [concat @ 0x591cfeb16840] Impossible to open '/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Dates/január' /media/sean/MusIX/Coqui-AI/Slovak/1VocabLists/temp_concat_list.txt: No such file or directory
-#[concat @ 0x59eef205d880] Impossible to open 'pipe:/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Dates/English/0001.wav'pipe:0: Invalid data found when processing input
-
 # Define the voices
 english_voice = "tts_models/en/ljspeech/vits"
 pause = "/media/sean/MusIX/Piper/silent_half-second.wav"
@@ -41,6 +35,15 @@ def synthesize_english(text, filename):
     print(f"English audio saved to {out_path}")
     return out_path
 
+def convert_to_mp3(input_file, output_file):
+    subprocess.run([
+        "ffmpeg",
+        "-i", input_file,
+        "-codec:a", "libmp3lame",
+        "-qscale:a", "2",  # Adjust quality (2 is a good balance between size and quality)
+        output_file
+    ])
+
 def combine_audio_files(category, csv_file):
     global pause
     output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"
@@ -50,21 +53,12 @@ def combine_audio_files(category, csv_file):
 
     ffmpeg_command = [
         "ffmpeg",
-        "-f",
-        "concat",
-        "-safe",
-        "0",
-        "-i",
-        temp_file,
-        "-filter_complex",
-        "[0:a]asetpts=PTS-STARTPTS[out]",
-        "-map",
-        "[out]",
-        "-c:a",
-        "libmp3lame",
+        "-f", "concat",
+        "-safe", "0",
+        "-i", temp_file,
+        "-c:a", "libmp3lame",  # Use MP3 codec for output
         os.path.join(output_dir, f"{category}_combined.mp3"),
-        "-loglevel",
-        "error",
+        "-loglevel", "error",
     ]
 
     # Write the file list to the temporary file
@@ -100,9 +94,14 @@ def combine_audio_files(category, csv_file):
         print("\nContents of temp_concat_list.txt:")
         print(f.read())
 
-    subprocess.run(ffmpeg_command)
-    print(f"Audio files combined into {category}_combined.mp3 in {output_dir}")
-    #os.remove(temp_file)
+    # Run FFmpeg and check for errors
+    result = subprocess.run(ffmpeg_command, capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f"FFmpeg Error:\n{result.stderr}")
+    else:
+        print(f"Audio files combined into {category}_combined.mp3 in {output_dir}")
+
+    os.remove(temp_file)
 
 def process_csv(category):
     input_csv_file = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/{category}.csv"
@@ -132,16 +131,21 @@ def process_csv(category):
                 slovak_filename = os.path.splitext(os.path.basename(slovak_audio_file))[0]
 
                 english_filename = f"{str(i+1).zfill(4)}"
-
                 english_file_path = synthesize_english(english_text, english_filename)
 
-                # Ensure the Slovak file exists before copying
+                # Convert English audio to MP3
+                mp3_english_file_path = os.path.join(english_audio_dir, english_filename + ".mp3")
+                convert_to_mp3(english_file_path, mp3_english_file_path)
+
+                # Ensure the Slovak file exists before copying and converting
                 if os.path.isfile(slovak_audio_file):
-                    shutil.copyfile(slovak_audio_file, os.path.join(slovak_audio_dir, slovak_filename + ".mp3"))
+                    slovak_mp3_path = os.path.join(slovak_audio_dir, slovak_filename + ".mp3")
+                    if not os.path.isfile(slovak_mp3_path):
+                        convert_to_mp3(slovak_audio_file, slovak_mp3_path)
                 else:
                     print(f"Warning: Slovak audio file not found: {slovak_audio_file}")
 
-                writer.writerow([english_text, english_file_path, f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/Slovak/{slovak_filename}.mp3"])
+                writer.writerow([english_text, mp3_english_file_path, f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/Slovak/{slovak_filename}.mp3"])
 
     combine_audio_files(category, output_csv_file)
     print(f"Translation and audio synthesis complete for {category}!")
