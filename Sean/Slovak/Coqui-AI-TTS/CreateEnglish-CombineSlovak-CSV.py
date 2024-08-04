@@ -78,11 +78,6 @@ def combine_audio_files(category, csv_file):
                 # Ensure the paths are correctly formatted
                 english_file = os.path.abspath(english_file)
                 slovak_file = os.path.abspath(slovak_file)
-
-                # Log the paths being written to the temp file
-                print(f"Adding to temp file: {english_file}")
-                print(f"Adding pause: {pause}")
-                print(f"Adding Slovak file: {slovak_file}")
                 
                 f.write(f"file '{english_file}'\n")
                 f.write(f"file '{pause}'\n")
