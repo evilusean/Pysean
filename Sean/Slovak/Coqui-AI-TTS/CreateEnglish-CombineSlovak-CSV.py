@@ -10,30 +10,23 @@ import shutil
 #[concat @ 0x59eef205d880] Impossible to open 'pipe:/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Dates/English/0001.wav'pipe:0: Invalid data found when processing input
 
 # Define the voices
-english_voice = "tts_models/en/ljspeech/vits"  # taco bout it
+english_voice = "tts_models/en/ljspeech/vits"
 pause = "/media/sean/MusIX/Piper/silent_half-second.wav"
 
-# Define the output directory for the new CSV file
-# output_csv_file = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists/{category}_combined_audio.csv"
-
-# Define the output directory for English audio files
-# Make the directory names dynamic
 def get_audio_dirs(category):
     english_audio_dir = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/English"
     slovak_audio_dir = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/Slovak"
     return english_audio_dir, slovak_audio_dir
 
-# Create the directories if they don't exist
 def create_dirs(category):
-    global english_audio_dir, slovak_audio_dir  # Declare variables as global
+    global english_audio_dir, slovak_audio_dir
     english_audio_dir, slovak_audio_dir = get_audio_dirs(category)
     os.makedirs(english_audio_dir, exist_ok=True)
     os.makedirs(slovak_audio_dir, exist_ok=True)
 
-# Function to synthesize and save English audio (no speed control)
 def synthesize_english(text, filename):
-    global english_audio_dir  # Declare variable as global
-    # Use subprocess to run the coqui-ai-tts command
+    global english_audio_dir
+    out_path = os.path.join(english_audio_dir, filename + ".wav")
     subprocess.run(
         [
             "tts",
@@ -42,22 +35,19 @@ def synthesize_english(text, filename):
             "--model_name",
             english_voice,
             "--out_path",
-            os.path.join(english_audio_dir, filename + ".wav"),
+            out_path,
         ],
     )
-    print(f"English audio saved to {os.path.join(english_audio_dir, filename + '.wav')}")
-    return os.path.join(english_audio_dir, filename + ".wav")  # Return the full path
+    print(f"English audio saved to {out_path}")
+    return out_path
 
-# Function to combine audio files into a single file using FFmpeg
 def combine_audio_files(category, csv_file):
-    global pause  # Declare variable as global
-    output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"  # New output directory
+    global pause
+    output_dir = "/media/sean/MusIX/Coqui-AI/Slovak/1VocabLists"
     os.makedirs(output_dir, exist_ok=True)
 
-    # Create a temporary file to store the file list
     temp_file = os.path.join(output_dir, "temp_concat_list.txt")
 
-    # Construct the FFmpeg command to combine the files
     ffmpeg_command = [
         "ffmpeg",
         "-f",
@@ -65,79 +55,83 @@ def combine_audio_files(category, csv_file):
         "-safe",
         "0",
         "-i",
-        temp_file,  # Read from the temp file
+        temp_file,
         "-filter_complex",
-        # Reset timestamps for each segment
         "[0:a]asetpts=PTS-STARTPTS[out]",
         "-map",
         "[out]",
         "-c:a",
         "libmp3lame",
-        os.path.join(output_dir, f"{category}_combined.mp3"),  # Use category in the filename
+        os.path.join(output_dir, f"{category}_combined.mp3"),
         "-loglevel",
-        "error",  # Suppress warning messages
+        "error",
     ]
 
-    # Write the file list to the temporary file
+    # Ensure paths in temp file are correctly formatted
     with open(temp_file, "w") as f:
         with open(csv_file, 'r', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
-            next(reader)  # Skip the header row
+            next(reader)
 
             for row in reader:
                 english_file = row[1]
                 slovak_file = row[2]
-                f.write(f"file '{english_file}'\n")  # Add English file path
-                f.write(f"file '{pause}'\n")  # Add pause after each English word
-                f.write(f"file '{slovak_file}'\n")  # Add Slovak file path
-                f.write(f"file '{pause}'\n")  # Add pause after each Slovak word
 
-    # Run the FFmpeg command
+                # Fix paths to be absolute
+                if not os.path.isabs(english_file):
+                    english_file = os.path.abspath(english_file)
+                if not os.path.isabs(slovak_file):
+                    slovak_file = os.path.abspath(slovak_file)
+
+                f.write(f"file '{english_file}'\n")
+                f.write(f"file '{pause}'\n")
+                f.write(f"file '{slovak_file}'\n")
+                f.write(f"file '{pause}'\n")
+
     subprocess.run(ffmpeg_command)
-
     print(f"Audio files combined into {category}_combined.mp3 in {output_dir}")
-
-    # Delete the temporary file
     os.remove(temp_file)
 
-# Main function to process the CSV
 def process_csv(category):
-    # global output_csv_file  # Declare variable as global
-    input_csv_file = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/{category}.csv"  # Replace with your input CSV file path
+    input_csv_file = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/{category}.csv"
     create_dirs(category)
 
-    # Create the new CSV file
     output_csv_file = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/{category}_combined_audio.csv"
     with open(output_csv_file, 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["English Text", "English Audio", "Slovak Audio"])  # Write the header row
+        writer.writerow(["English Text", "English Audio", "Slovak Audio"])
 
         with open(input_csv_file, 'r', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
-            next(reader)  # Skip the header row
+            next(reader)
 
             for i, row in enumerate(reader):
-                english_text = row[0].strip()  # Assuming English text is in the first column
-                slovak_audio_file = row[2].strip()  # Assuming Slovak audio file location is in the third column
+                english_text = row[0].strip()
+                slovak_audio_file = row[2].strip()
 
-                # Extract the filename from the audio file location
-                slovak_filename = slovak_audio_file.split("file:///")[1].replace("]", "")
+                # Remove '[sound:file:///' prefix and extra characters
+                if slovak_audio_file.startswith("[sound:file:///"):
+                    slovak_audio_file = slovak_audio_file[14:].rstrip(']')  # Strip '[sound:file:///' prefix and closing ']'
 
-                # Create unique filenames with 4-digit formatting and words
-                english_filename = f"{str(i+1).zfill(4)}"  # Only use the 4-digit number
+                # Construct the full path to the Slovak audio file
+                slovak_audio_file = os.path.join("/media/sean/MusIX/Slovak.Czech/slovake.eu-audio", category, os.path.basename(slovak_audio_file))
 
-                # Synthesize and save the English audio (no speed control)
+                # Extract the filename from the audio file path
+                slovak_filename = os.path.splitext(os.path.basename(slovak_audio_file))[0]
+
+                english_filename = f"{str(i+1).zfill(4)}"
+
                 english_file_path = synthesize_english(english_text, english_filename)
 
-                # Copy the Slovak audio file to the new directory
-                shutil.copyfile(slovak_audio_file, os.path.join(slovak_audio_dir, slovak_filename + ".mp3"))
+                # Ensure the Slovak file exists before copying
+                if os.path.isfile(slovak_audio_file):
+                    shutil.copyfile(slovak_audio_file, os.path.join(slovak_audio_dir, slovak_filename + ".mp3"))
+                else:
+                    print(f"Warning: Slovak audio file not found: {slovak_audio_file}")
 
-                # Write to the new CSV file
-                writer.writerow([english_text, english_file_path, f"media/sean/MusIX/Slovak.Czech/slovake.eu-audio/Dates/{slovak_filename}.mp3"])
+                writer.writerow([english_text, english_file_path, f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/{slovak_filename}.mp3"])
 
-    # Combine the audio files using FFmpeg
     combine_audio_files(category, output_csv_file)
-
     print(f"Translation and audio synthesis complete for {category}!")
 
 category = "Dates"  # Replace with your directory / CSV name (must be the same)
