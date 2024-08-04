@@ -79,7 +79,7 @@ def combine_audio_files(category, csv_file):
 
                 # Handle URLs for Slovak audio files
                 if slovak_file.startswith("[sound:file:///"):
-                    slovak_file = slovak_file[16:].rstrip(']')
+                    slovak_file = slovak_file[14:].rstrip(']')
                 
                 # Ensure the paths are correctly formatted
                 english_file = os.path.abspath(english_file)
@@ -102,7 +102,7 @@ def combine_audio_files(category, csv_file):
 
     subprocess.run(ffmpeg_command)
     print(f"Audio files combined into {category}_combined.mp3 in {output_dir}")
-    os.remove(temp_file)
+    #os.remove(temp_file)
 
 def process_csv(category):
     input_csv_file = f"/media/sean/MusIX/Slovak.Czech/slovake.eu-audio/{category}/{category}.csv"
