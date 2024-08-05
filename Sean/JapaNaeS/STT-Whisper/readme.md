@@ -1,3 +1,5 @@
 A repo for creating a STT(Speech-To-Text) app that can take in an audio recording and return the Japanese text </br>
 Goals and AspireASeans = I want the model to be able to listen to a Japanese audio(movie, podcast, interview, work meeting, etc) and be able to transcribe with timestamps an English transcription and a Japanese translation in a csv. </br>
 Bonus Points/if I am feeling ambitious = If I can get it to do it live through a push-to-talk or run in background when capslock is down, that would be perfect, and transcribe/translate on the fly with timestamps for later review. </br> 
+I can then later, take that text from the CSV and do a TTS through Coqui-AI and retranscribe it into an audio file for future use or playback (in real time - would be ideal) it's just a matter of connecting the pieces. </br>
+All tech I would be using is free and open source and runs locally, so it can be run anywhere in the world without an internet connection, as long as I have my laptop and the python scripts/models installed. </br>
