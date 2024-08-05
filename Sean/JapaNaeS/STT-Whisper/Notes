@@ -67,4 +67,5 @@ Traceback (most recent call last):
     return t.to(
 torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 
 
-
+import whisper
+model = whisper.load_model('medium', download_root='/media/sean/MusIX/OpenAI-Whisper/pip') #installing medium model, should work, large is too.. large. 6 year old laptop can't handle it
