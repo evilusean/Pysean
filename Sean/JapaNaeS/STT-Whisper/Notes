@@ -42,7 +42,7 @@ installed without the '--target', works now.
 
 you can specify the directory you want to saved the download with download_root:
 import whisper
-model = whisper.load_model('base', download_root='some_directory')
+model = whisper.load_model('large', download_root='/media/sean/MusIX/OpenAI-Whisper/pip')
 #going to try above code to download the model where I have a tonne of space, 2.88 gigs for large model, not bad, some other AI's I used (midjourney) were 10-25-50gigs just to run them locally. 
 
 
