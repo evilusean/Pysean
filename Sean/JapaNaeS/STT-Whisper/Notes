@@ -69,3 +69,5 @@ torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 26.00 MiB. GP
 
 import whisper
 model = whisper.load_model('medium', download_root='/media/sean/MusIX/OpenAI-Whisper/pip') #installing medium model, should work, large is too.. large. 6 year old laptop can't handle it
+
+I found the problem, my nvidia graphics isn't loading or the drivers, spent hours trying to fix it, accidently forgot to save notes while rebooting on attempt #? and lost all notes, just going to install Arch, btw. 
