@@ -26,10 +26,10 @@ pip install --user [packages]
   #Will install packages into $HOME: /home/[USER]/.local/lib/python3.5/site-packages Python searches automatically from this .local path so you don't need to put it to your PYTHONPATH.
   #=> In most of the cases --user is the best option to use. In case home folder can't be used because of some reason then --prefix.
 
-
-
-
-
+/media/sean/MusIX/OpenAI-Whisper/pip
+pip install --target /media/sean/MusIX/OpenAI-Whisper/pip 
+pip install -U openai-whisper #installing openAI whisper
+pip install --target /media/sean/MusIX/OpenAI-Whisper/pip -U openai-whisper #updated directory, main SSD is getting full~
 
 
 
