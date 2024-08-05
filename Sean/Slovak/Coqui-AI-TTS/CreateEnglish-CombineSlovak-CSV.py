@@ -128,6 +128,7 @@ def process_csv(category):
 
             for i, row in enumerate(reader):
                 english_text = row[0].strip()
+                #I ALREADY KNOW I WILL NEED TO CHANGE ABOVE TO [1], FUTURE SEAN REMEMBER TO CHECK THE CSV ROW FOR ENGLISH
                 slovak_audio_file = row[2].strip()
 
                 # Remove '[sound:file:///' prefix and trailing ']'
