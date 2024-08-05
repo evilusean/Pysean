@@ -9,6 +9,8 @@ Live Movie Transcription:
 https://huggingface.co/spaces/anzorq/openai_whisper_stt
 Whisper Models (model-VRam reqs = tiny-1GB, base-1GB, small-2GB, medium-5GB, large-10GB with '.en' variants for English audio):
 https://github.com/openai/whisper#available-models-and-languages
+How To Run (and full comparisons of each model):
+https://www.assemblyai.com/blog/how-to-run-openais-whisper-speech-recognition-model/
 
 Others:
 Otter - Free version comes with a lot of great features but to convert separate files requires putting down some cash. Generally good results in tests so far.
