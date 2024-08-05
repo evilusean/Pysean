@@ -11,6 +11,8 @@ Whisper Models (model-VRam reqs = tiny-1GB, base-1GB, small-2GB, medium-5GB, lar
 https://github.com/openai/whisper#available-models-and-languages
 How To Run (and full comparisons of each model):
 https://www.assemblyai.com/blog/how-to-run-openais-whisper-speech-recognition-model/
+Word Error Rate across languages and models:
+https://www.speechly.com/blog/analyzing-open-ais-whisper-asr-models-word-error-rates-across-languages
 
 Others:
 Otter - Free version comes with a lot of great features but to convert separate files requires putting down some cash. Generally good results in tests so far.
