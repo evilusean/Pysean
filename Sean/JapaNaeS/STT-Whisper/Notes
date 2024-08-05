@@ -36,8 +36,9 @@ whisper --help #got an error running first command, trying to fix
 Command 'whisper' not found, did you mean:
 https://github.com/openai/whisper/discussions/531
 pip install --target /media/sean/MusIX/OpenAI-Whisper/pip --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git
-I installed it to the new directory, and added it to the path, it still won't run correctly - I found an old minecraft installed and could delete that to regain 16 gigs, and just install it in the default directory
-
+I installed it to the new directory, and added it to the path, it still won't run correctly - I found an old minecraft installed and could delete that to regain 16 gigs, and just install it in the default directory 'home'
+even after updating the .bashrc it still won't work, going to install it the regular way with pip, then try again, I'll only use the 'medium' model instead of 'large' for translating Slovak/Japanese
+installed without the '--target', works now.
 
 
 
