@@ -1,0 +1,46 @@
+https://github.com/openai/whisper
+Going to just follow the github repo for install locally, I should already have python3 and all dependancies installed (pytorch, torchaudio, etc) 
+
+Main drive getting full (<20GB) , small amount remaining on main SSD, using a new way to install via pip commands
+https://betterstack.com/community/questions/how-to-install-packages-from-requirements-txt/
+https://stackoverflow.com/questions/2915471/install-a-python-package-into-a-different-directory-using-pip
+  If you want to install the packages to a specific location, you can use the '--target' option to specify the directory where you want the packages to be installed
+  pip install -r requirements.txt --target=/path/to/target/directory #will install 'requirements.txt' to specified directory
+  pip install --target d:\somewhere\other\than\the\default package_name
+You can also use the -t or --target option to specify a different directory for each package in the requirements.txt file. To do this, you will need to add the -t or --target option to each line in the requirements.txt file
+  followed by the path to the directory where you want the package to be installed. For example:
+  package1 -t /path/to/package1/directory
+  package2 -t /path/to/package2/directory
+  package3 -t /path/to/package3/directory
+pip install --install-option="--prefix=$PREFIX_PATH" package_name 
+  #You might also want to use --ignore-installed to force all dependencies to be reinstalled using this new prefix. 
+  #You can use --install-option to multiple times to add any of the options you can use with python setup.py install (--prefix is probably what you want, but there are a bunch more options you could use).
+pip install --target /myfolder [packages]
+  #Installs ALL packages including dependencies under /myfolder. Does not take into account that dependent packages are already installed elsewhere in Python. 
+  #You will find packages from /myfolder/[package_name]. In case you have multiple Python versions, this doesn't take that into account (no Python version in package folder name).
+pip install --prefix /myfolder [packages]
+  #Checks if dependencies are already installed. Will install packages into /myfolder/lib/python3.5/site-packages/[packages]
+pip install --root /myfolder [packages]
+  #Checks dependencies like --prefix but install location will be /myfolder/usr/local/lib/python3.5/site-packages/[package_name].
+pip install --user [packages]
+  #Will install packages into $HOME: /home/[USER]/.local/lib/python3.5/site-packages Python searches automatically from this .local path so you don't need to put it to your PYTHONPATH.
+  #=> In most of the cases --user is the best option to use. In case home folder can't be used because of some reason then --prefix.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
