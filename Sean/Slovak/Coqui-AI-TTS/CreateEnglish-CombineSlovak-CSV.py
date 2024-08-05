@@ -124,7 +124,6 @@ def process_csv(category):
 
         with open(input_csv_file, 'r', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
-            next(reader)
 
             for i, row in enumerate(reader):
                 english_text = row[0].strip()
@@ -161,5 +160,5 @@ def process_csv(category):
     combine_audio_files(category, output_csv_file)
     print(f"Translation and audio synthesis complete for {category}!")
 
-category = "Dates"  # Replace with your directory / CSV name (must be the same)
+category = "Verbs"  # Replace with your directory / CSV name (must be the same)
 process_csv(category)
