@@ -30,11 +30,13 @@ pip install --user [packages]
 pip install --target /media/sean/MusIX/OpenAI-Whisper/pip 
 pip install -U openai-whisper #installing openAI whisper
 pip install --target /media/sean/MusIX/OpenAI-Whisper/pip -U openai-whisper #updated directory, main SSD is getting full~
-
-
-
-
-
+sudo apt update && sudo apt install ffmpeg #should already be installed, updating
+pip install --target /media/sean/MusIX/OpenAI-Whisper/pip setuptools-rust #following guide
+whisper --help #got an error running first command, trying to fix
+Command 'whisper' not found, did you mean:
+https://github.com/openai/whisper/discussions/531
+pip install --target /media/sean/MusIX/OpenAI-Whisper/pip --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git
+I installed it to the new directory, and added it to the path, it still won't run correctly - I found an old minecraft installed and could delete that to regain 16 gigs, and just install it in the default directory
 
 
 
