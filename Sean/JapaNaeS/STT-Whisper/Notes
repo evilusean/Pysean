@@ -45,6 +45,26 @@ import whisper
 model = whisper.load_model('large', download_root='/media/sean/MusIX/OpenAI-Whisper/pip')
 #going to try above code to download the model where I have a tonne of space, 2.88 gigs for large model, not bad, some other AI's I used (midjourney) were 10-25-50gigs just to run them locally. 
 
-
+New Error:
+/bin/python3 /media/sean/SeanDrive/Code/Pysean/Sean/JapaNaeS/STT-Whisper/Whisper-InstallModel-CustomDir.py
+Traceback (most recent call last):
+  File "/media/sean/SeanDrive/Code/Pysean/Sean/JapaNaeS/STT-Whisper/Whisper-InstallModel-CustomDir.py", line 3, in <module>
+    model = whisper.load_model('large', download_root='/media/sean/MusIX/OpenAI-Whisper/pip')
+  File "/home/sean/.local/lib/python3.10/site-packages/whisper/__init__.py", line 156, in load_model
+    return model.to(device)
+  File "/home/sean/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1173, in to
+    return self._apply(convert)
+  File "/home/sean/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/home/sean/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/home/sean/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  [Previous line repeated 2 more times]
+  File "/home/sean/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 804, in _apply
+    param_applied = fn(param)
+  File "/home/sean/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1159, in convert
+    return t.to(
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 
 
 
