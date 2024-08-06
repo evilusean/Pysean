@@ -25,10 +25,24 @@ ran 'archinstall' after getting network set up, it allowed me to automatically s
 I tried to manually do it before, using a UEFI setup, and something broke, it fixed the SSD drives and added a boot partition, installing arch linux to sda now
 Succesfully logged in, created a new user, and now playing around.. the only thing I see is a terminal, no GUI
 https://www.reddit.com/r/archlinux/comments/up5qcg/how_to_chroot_into_installed_arch_from_usb_boot/
+https://wiki.archlinux.org/title/Chroot
+after getting back into chroot from bootable usb, install these before leaving, internet doesn't work without, get everything installed from initial chroot
+pacman -S <package name>
+https://www.reddit.com/r/archlinux/comments/v3ghbc/setting_up_wifi_on_arch/
+https://www.reddit.com/r/archlinux/comments/szo572/share_your_pacstrap/
+https://geo.mirror.pkgbuild.com/iso/latest/arch/pkglist.x86_64.txt
+
+https://wiki.archlinux.org/title/Users_and_groups#User_management
+https://gist.github.com/kevinwright/6884737
 
 Post Install:
 https://wiki.archlinux.org/title/General_recommendations
 https://wiki.archlinux.org/title/NVIDIA
 https://wiki.archlinux.org/title/List_of_applications
-https://wiki.archlinux.org/title/Desktop_environment
 https://wiki.archlinux.org/title/NetworkManager
+
+https://wiki.archlinux.org/title/Desktop_environment
+https://wiki.archlinux.org/title/KDE
+https://wiki.archlinux.org/title/KDE#Plasma
+https://community.kde.org/Distributions/Packaging_Recommendations
+https://wiki.archlinux.org/title/Xorg#Composite
