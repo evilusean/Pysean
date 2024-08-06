@@ -8,6 +8,18 @@ found in '/boot' from chroot 'initramfs-linux.img' and backup
 'arch.conf' also mentions microloader for intel and initramfs, it is the bootloader config file found in '/boot/loader/entries'
 just finished final step of installation guide, installed the bootloader, and removed the bootable USB, and was greeted with 'Invalid Partition Table', It's 3:03 - taking a break
 
+Ok, day 2, step 1 is to fix the wifi 
+rfkill #checks wifi/bluetooth
+rfkill unblock wlan #unblocks wifi
+iwctl #puts it in wifi mode
+modprobe -r rtl8723be
+modprobe rtl8723be fwlps=0
+device wlan0 Powered off #have you tried turning it off and on again? this seemed to work last time
+device wlan0 Powered on
+station wlan0 scan
+station wlan0 get-networks
+station wlan0 connect <network>
+  enter <network> name, and then password, have it ready because I only have a few second window before it loses the network again (??)
 
 
 
