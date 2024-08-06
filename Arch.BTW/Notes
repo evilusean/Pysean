@@ -14,8 +14,8 @@ rfkill unblock wlan #unblocks wifi
 iwctl #puts it in wifi mode
 modprobe -r rtl8723be
 modprobe rtl8723be fwlps=0
-device wlan0 Powered off #have you tried turning it off and on again? this seemed to work last time
-device wlan0 Powered on
+device wlan0 set-property Powered off #have you tried turning it off and on again? this seemed to work last time
+device wlan0 set-property Powered on
 station wlan0 scan
 station wlan0 get-networks
 station wlan0 connect <network>
@@ -24,9 +24,11 @@ station wlan0 connect <network>
 ran 'archinstall' after getting network set up, it allowed me to automatically suggest the partition layout
 I tried to manually do it before, using a UEFI setup, and something broke, it fixed the SSD drives and added a boot partition, installing arch linux to sda now
 Succesfully logged in, created a new user, and now playing around.. the only thing I see is a terminal, no GUI
+https://www.reddit.com/r/archlinux/comments/up5qcg/how_to_chroot_into_installed_arch_from_usb_boot/
 
 Post Install:
 https://wiki.archlinux.org/title/General_recommendations
 https://wiki.archlinux.org/title/NVIDIA
 https://wiki.archlinux.org/title/List_of_applications
-
+https://wiki.archlinux.org/title/Desktop_environment
+https://wiki.archlinux.org/title/NetworkManager
