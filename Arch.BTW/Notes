@@ -4,6 +4,7 @@ found old USB used to install ubuntu, formatted it, downloaded arch iso from a t
 ran 'mkinitcpio -P' from chroot, missing a tonne of firmware, will need to fix, 
 /etc/mkinitcpio.conf
 'initramfs' #this is what broke on ubuntu, couldn't fix and was running without a GPU for ? who knows how long - maybe this is why blender was terrible?
+found in '/boot' from chroot 'initramfs-linux.img' and backup
 
 
 
