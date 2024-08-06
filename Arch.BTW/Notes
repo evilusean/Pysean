@@ -1,6 +1,9 @@
 https://wiki.archlinux.org/title/Installation_guide
 found old USB used to install ubuntu, formatted it, downloaded arch iso from a torrent, verfied, and added to the reformatted usb to make a bootable usb for install
 
+ran 'mkinitcpio -P' from chroot, missing a tonne of firmware, will need to fix, 
+/etc/mkinitcpio.conf
+'initramfs' #this is what broke on ubuntu, couldn't fix and was running without a GPU for ? who knows how long - maybe this is why blender was terrible?
 
 
 
