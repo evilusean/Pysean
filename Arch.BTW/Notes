@@ -52,3 +52,5 @@ https://wiki.archlinux.org/title/Hyprland
 
 Adding second hard drive:
 https://forums.linuxmint.com/viewtopic.php?t=255774
+
+Ok, finally got it - don't use /home as a seperate directory, use archinstall - Archon? ArchSean - Power Overwhelming.
