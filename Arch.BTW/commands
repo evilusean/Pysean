@@ -1,0 +1,13 @@
+su #after logging in as a user, use SU to log in as a superuser(root) -will ask for root PW
+findmnt #check where mounted
+mount 
+lsblk -f #check all drives
+pacman -S <package name> #installs a package
+useradd -m -G additional_groups -s login_shell username #user add command login shell = '/bin/bash' https://wiki.archlinux.org/title/Users_and_groups#User_management
+passwd username #need to add a PW for the new user
+
+
+
+
+
+
