@@ -23,9 +23,10 @@ station wlan0 connect <network>
 
 ran 'archinstall' after getting network set up, it allowed me to automatically suggest the partition layout
 I tried to manually do it before, using a UEFI setup, and something broke, it fixed the SSD drives and added a boot partition, installing arch linux to sda now
+Succesfully logged in, created a new user, and now playing around.. the only thing I see is a terminal, no GUI
 
-
-
-
-
+Post Install:
+https://wiki.archlinux.org/title/General_recommendations
+https://wiki.archlinux.org/title/NVIDIA
+https://wiki.archlinux.org/title/List_of_applications
 
