@@ -6,8 +6,9 @@ pacman -S <package name> #installs a package
 useradd -m -G additional_groups -s login_shell username #user add command login shell = '/bin/bash' https://wiki.archlinux.org/title/Users_and_groups#User_management
 passwd username #need to add a PW for the new user
 
-
-
+Connect to Wifi (ensure to install network manager in chroot after first install): https://wiki.archlinux.org/title/NetworkManager#Usage
+  nmcli device wifi list #lists all wifi devices
+  nmcli device wifi connect SSID_or_BSSID password password
 
 
 
