@@ -130,3 +130,6 @@ user ALL=(ALL) ALL
 Installed wine manually, works now, instead of using lutris installer, download the .exe, load through lutris manually, on the drive you want(HDD with phunky name worked this time) 
 https://wine.htmlvalidator.com/install-wine-on-arch-linux.html
 https://wiki.archlinux.org/title/Wine
+
+found the problem:
+/dev/sda2/usr # taking 7 / 10 gigs right here, if I can just move this directory, 70% of the root bloat will be gone
