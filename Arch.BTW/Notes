@@ -105,6 +105,10 @@ https://forum.endeavouros.com/t/how-to-add-second-hdd-for-lutris-and-steam-games
 NVIDIA GPU RESOURCES (why I started this entire eneavour to begin with):
 https://rtfm.co.ua/en/arch-linux-nvidia-driver-installation-for-geforce-gtx-1050-ti/
 https://wiki.archlinux.org/title/NVIDIA
+lspci -k | grep -A 2 -E "(VGA | 3D)" #command for checking GPU 
+01:00.0 3D controller: NVIDIA Corporation GP107M [GeForce GTX 1050 Mobile] (rev a1)
+        Subsystem: ASUSTeK Computer Inc. Device 15e0
+        Kernel driver in use: nouveau
 
 Ok, I am downloading the files, and moving them when they are completed off the SSD, should fix the download issue, without messing with the disks/mounting
 
