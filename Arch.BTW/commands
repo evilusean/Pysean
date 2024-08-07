@@ -10,5 +10,8 @@ Connect to Wifi (ensure to install network manager in chroot after first install
   nmcli device wifi list #lists all wifi devices
   nmcli device wifi connect SSID_or_BSSID password password
 
-
+chmod #change mod(?) 777 = full permisSeans
+chown #change owner
+rm -r <file> #removes all recursively, doesn't put it in trash, it's gone - forever - so be careful  
+rm -f <file> #removes file with force - it will give you a confirmASean for each file to be removed
 
