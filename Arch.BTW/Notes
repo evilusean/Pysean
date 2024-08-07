@@ -60,3 +60,7 @@ Tried to reboot, wouldn't load, maybe you do need /home as a seperate directory,
 https://www.reddit.com/r/archlinux/comments/q8e6lx/psa_clear_your_pacman_cache_i_freed_40_gb_by/
 https://pacman.archlinux.page/pacman.conf.5.html
 pacman -Scc
+
+Tried to install some things overnight, everything still works, except - 
+'/run/media/ArchSean/bc1e0382-20ad-43a4-ad0d-f1adc06926ad' the hard drives are weirdly named, and some things won't install
+going to try to rename these drives / mountpoints the mountpoint is used for the install, and it's length is causing problems with getting my system functional again
