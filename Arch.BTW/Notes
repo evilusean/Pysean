@@ -131,8 +131,10 @@ Installed wine manually, works now, instead of using lutris installer, download 
 https://wine.htmlvalidator.com/install-wine-on-arch-linux.html
 https://wiki.archlinux.org/title/Wine
 
-found the problem:
+found the problem - I really don't want to mess around with directories that are critical to boot, still got 10 gigs left, not critical - yet:
 /dev/sda2/usr # taking 7 / 10 gigs right here, if I can just move this directory, 70% of the root bloat will be gone
+https://bbs.archlinux.org/viewtopic.php?id=232338
+https://superuser.com/questions/1795674/moved-usr-to-another-disk-as-it-was-getting-too-big-but-now-my-system-wont-boo
 
 Next hurdle, can't delete files? tedious to 'su' 'rmdir' 'rm' for each file:
 https://wiki.archlinux.org/title/Sudo
