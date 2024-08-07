@@ -133,3 +133,6 @@ https://wiki.archlinux.org/title/Wine
 
 found the problem:
 /dev/sda2/usr # taking 7 / 10 gigs right here, if I can just move this directory, 70% of the root bloat will be gone
+
+Next hurdle, can't delete files? tedious to 'su' 'rmdir' 'rm' for each file:
+https://wiki.archlinux.org/title/Sudo
