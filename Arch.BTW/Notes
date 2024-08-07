@@ -106,3 +106,19 @@ NVIDIA GPU RESOURCES (why I started this entire eneavour to begin with):
 https://rtfm.co.ua/en/arch-linux-nvidia-driver-installation-for-geforce-gtx-1050-ti/
 https://wiki.archlinux.org/title/NVIDIA
 
+Ok, I am downloading the files, and moving them when they are completed off the SSD, should fix the download issue, without messing with the disks/mounting
+
+Also figured out a fix for the 'MAKEPKG' Error:
+==> ERROR: Running makepkg as root is not allowed as it can cause permanent, catastrophic damage to your system.
+https://bbs.archlinux.org/viewtopic.php?id=85614
+su -
+pacman -Sy sudo
+nano /etc/sudoers
+Then find the following lines
+# User privilege specification
+root    ALL=(ALL) ALL
+and change them to
+# User privilege specification
+root    ALL=(ALL) ALL
+user ALL=(ALL) ALL
+#can now install programs with MAKEPKG
