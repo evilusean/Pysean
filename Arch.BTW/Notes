@@ -64,3 +64,7 @@ pacman -Scc
 Tried to install some things overnight, everything still works, except - 
 '/run/media/ArchSean/bc1e0382-20ad-43a4-ad0d-f1adc06926ad' the hard drives are weirdly named, and some things won't install
 going to try to rename these drives / mountpoints the mountpoint is used for the install, and it's length is causing problems with getting my system functional again
+https://bbs.archlinux.org/viewtopic.php?id=289559
+https://wiki.archlinux.org/title/Persistent_block_device_naming
+I think if I reformat the drive(s), and add new mount points - I was using 'gnome-disk-utility' which automatically created a 30character mountpoint name(?) then I should be good
+I reallly don't want to reinstall Arch again, after 2 days, finally got it working correctly ~ I still don't like how the SSD/HDD setup is though, 20gigs for root? and now these mountpoints 
