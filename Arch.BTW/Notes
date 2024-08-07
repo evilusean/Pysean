@@ -88,8 +88,9 @@ Enable:
 Apply
 Reboot
 For automounting non removable media at boot time just edit /etc/fstab and set the proper permissions as always.
-https://wiki.archlinux.org/title/File_systems#Mount_a_file_system
 After reading the wiki, I am using the systemd bootloader, and that is the mountpoint that is being used, maybe try a new bootloader and use gnome-disk-utility? or try it again manually?~
+https://wiki.archlinux.org/title/File_systems#Mount_a_file_system
+https://wiki.archlinux.org/title/Fstab
 
 https://www.reddit.com/r/archlinux/comments/k9ee1l/add_second_hdd_to_arch_linux_setup/
 1: Have yay installed.
@@ -99,3 +100,4 @@ https://www.reddit.com/r/archlinux/comments/k9ee1l/add_second_hdd_to_arch_linux_
 5: Uncheck "User Session Defaults" and make sure "mount at system startup" and show in user interface are checked.
 6: type in your credentials for it to edit the /etc/fstab file.
 7: reboot and if you are on KDE Plasma at least (I don't know how the other ones are) it will be mounted under devices without asking for a password or anything.
+https://forum.endeavouros.com/t/how-to-add-second-hdd-for-lutris-and-steam-games-on-existing-endeavouros-installation-on-ssd/27441/2
