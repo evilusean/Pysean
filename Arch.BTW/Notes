@@ -54,3 +54,5 @@ Adding second hard drive:
 https://forums.linuxmint.com/viewtopic.php?t=255774
 
 Ok, finally got it - don't use /home as a seperate directory, use archinstall - Archon? ArchSean - Power Overwhelming.
+Tried to reboot, wouldn't load, maybe you do need /home as a seperate directory, found out why my 20gig boot partition might be filling up too quick -
+https://www.reddit.com/r/archlinux/comments/q8e6lx/psa_clear_your_pacman_cache_i_freed_40_gb_by/
