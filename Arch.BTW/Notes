@@ -101,3 +101,6 @@ https://www.reddit.com/r/archlinux/comments/k9ee1l/add_second_hdd_to_arch_linux_
 6: type in your credentials for it to edit the /etc/fstab file.
 7: reboot and if you are on KDE Plasma at least (I don't know how the other ones are) it will be mounted under devices without asking for a password or anything.
 https://forum.endeavouros.com/t/how-to-add-second-hdd-for-lutris-and-steam-games-on-existing-endeavouros-installation-on-ssd/27441/2
+
+NVIDIA GPU RESOURCES (why I started this entire eneavour to begin with):
+https://rtfm.co.ua/en/arch-linux-nvidia-driver-installation-for-geforce-gtx-1050-ti/
