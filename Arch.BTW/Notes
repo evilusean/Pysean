@@ -68,3 +68,13 @@ https://bbs.archlinux.org/viewtopic.php?id=289559
 https://wiki.archlinux.org/title/Persistent_block_device_naming
 I think if I reformat the drive(s), and add new mount points - I was using 'gnome-disk-utility' which automatically created a 30character mountpoint name(?) then I should be good
 I reallly don't want to reinstall Arch again, after 2 days, finally got it working correctly ~ I still don't like how the SSD/HDD setup is though, 20gigs for root? and now these mountpoints 
+Going to try this again, reformat the drives, reduce the partitions, then manually add new mountpoints in a minimal directory '/' or '/home',  here is what gnome added to '/etc/fstab'
+'/dev/disk/by-uuid/b718cd7c-2328-494a-9c4e-724f5e96310d /mnt/b718cd7c-2328-494a-9c4e-724f5e96310d auto nosuid,nodev,nofail,x-gvfs-show 0 0'
+https://docs.kde.org/stable5/en/partitionmanager/partitionmanager/partitionmanager.pdf
+
+if you do edit fstab manually, always be sure to run - this was the problem I had, I edited it manually, and then it crashed on reboot - wouldn't load mountpoints I created so used gnome-disk
+sudo findmnt --verify --verbose
+mount -a
+Also just to add to conversation, there is a genfstab package that will generate fstab output based on what's currently mounted. You can redirect that output to the /etc/fstab file 
+(-U means to use UUID for the mounts, / is the mount you want to use as the root filesystem):
+genfstab -U / > /etc/fstab
