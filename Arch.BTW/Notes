@@ -78,3 +78,24 @@ mount -a
 Also just to add to conversation, there is a genfstab package that will generate fstab output based on what's currently mounted. You can redirect that output to the /etc/fstab file 
 (-U means to use UUID for the mounts, / is the mount you want to use as the root filesystem):
 genfstab -U / > /etc/fstab
+
+https://forum.endeavouros.com/t/auto-mount-drives-without-password-kde/19335/3
+Settings → Removable storage → Removable devices
+Enable:
+ Enable automatic mounting of removable media
+ Automatically mount all removable media at login
+ Automatically mount all removable media when attached
+Apply
+Reboot
+For automounting non removable media at boot time just edit /etc/fstab and set the proper permissions as always.
+https://wiki.archlinux.org/title/File_systems#Mount_a_file_system
+After reading the wiki, I am using the systemd bootloader, and that is the mountpoint that is being used, maybe try a new bootloader and use gnome-disk-utility? or try it again manually?~
+
+https://www.reddit.com/r/archlinux/comments/k9ee1l/add_second_hdd_to_arch_linux_setup/
+1: Have yay installed.
+2: yay -S gnome-disk-utility.
+3: Go and type in Disk in the search bar and it'll say "Disks Manage Drives and Media".
+4: click on the drive you want to add on there and "Edit Mount Options".
+5: Uncheck "User Session Defaults" and make sure "mount at system startup" and show in user interface are checked.
+6: type in your credentials for it to edit the /etc/fstab file.
+7: reboot and if you are on KDE Plasma at least (I don't know how the other ones are) it will be mounted under devices without asking for a password or anything.
