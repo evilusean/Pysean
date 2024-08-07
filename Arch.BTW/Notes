@@ -52,6 +52,8 @@ https://wiki.archlinux.org/title/Hyprland
 
 Adding second hard drive:
 https://forums.linuxmint.com/viewtopic.php?t=255774
+https://www.reddit.com/r/archlinux/comments/k9ee1l/add_second_hdd_to_arch_linux_setup/
+pacman -S gnome-disk-utility
 
 Ok, finally got it - don't use /home as a seperate directory, use archinstall - Archon? ArchSean - Power Overwhelming.
 Tried to reboot, wouldn't load, maybe you do need /home as a seperate directory, found out why my 20gig boot partition might be filling up too quick -
