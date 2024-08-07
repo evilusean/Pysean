@@ -136,3 +136,6 @@ found the problem:
 
 Next hurdle, can't delete files? tedious to 'su' 'rmdir' 'rm' for each file:
 https://wiki.archlinux.org/title/Sudo
+
+Github Desktop:
+https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
