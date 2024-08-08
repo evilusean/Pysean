@@ -153,5 +153,25 @@ git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 Second day, everything booted correctly, most things installed, going to install Coqui-AI / OpenAI-Whisper and Anki. Get back to languages, Step 1) Escape.
 Location of Python `pip` packages: '/home' #still have 80+ gigs on SSD for home, after reinstalling, don't have to worry about this going to '/root' - less than 10 left
 pip show numpy #Location: /home/user/.local/lib/python3.10/site-packages.
-Coqui-AI:
+Both of these are >5 years old, both recomend pacman? - docs say if not using a venv, it can conflict with packages in /usr/ - which is on my root dir - which is already half full
+https://unix.stackexchange.com/questions/76389/recommended-way-of-installing-python-packages-on-arch
+https://www.reddit.com/r/archlinux/comments/dzbbgc/pacman_or_pip/
+https://wiki.archlinux.org/title/Python
+Going to use Pip, don't want to add more strain on '/root' - pip installs to '/home' 
 
+Coqui-AI:
+pip install tts #got below error message, in VScode, computer is yelling at me, maybe pip is a bad idea
+error: externally-managed-environment
+× This environment is externally managed
+╰─> To install Python packages system-wide, try 'pacman -S
+    python-xyz', where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Arch-packaged Python package,
+    create a virtual environment using 'python -m venv path/to/venv'.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip.
+    
+    If you wish to install a non-Arch packaged Python application,
+    it may be easiest to use 'pipx install xyz', which will manage a
+    virtual environment for you. Make sure you have python-pipx
+    installed via pacman.
