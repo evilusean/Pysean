@@ -192,7 +192,7 @@ from docs: 'python >= 3.9, < 3.12..' - my python --version is 3.12.4 - is that i
 https://gist.github.com/beci/53a08cb73ec8539b895a64bebbd49734
 sudo pacman -S python3.9 #installing 3.9 with pacman - didn't work?
 yay -S python39 #this works, had to lookup 
-python3.9 -m venv TranslaSean3.9 #creating the python 3.9 venv
+python    3.9 -m venv TranslaSean3.9 #creating the python 3.9 venv
 source TranslaSean3.9/bin/activate #go into newly created venv
 pip install TTS #works!
 pip -m uninstall [packagename] #going to need to uninstall when TTS get's updated to work with newest version of python, each time I download - multiple gigs off of /root gone for each model
@@ -200,4 +200,11 @@ pip -m uninstall [packagename] #going to need to uninstall when TTS get's update
 OpenAI Whisper : 
 https://github.com/openai/whisper
 https://aur.archlinux.org/packages/whisper-git
-Sudo pacman didn't work
+Sudo pacman didn't work, use below method:
+git clone https://aur.archlinux.org/whisper-git.git #copied from above directory
+cd whisper-git #change directory
+makepkg -si #installs
+sudo pacman -S python-tiktoken #missing some dependancies, can be installed through pacman
+sudo pacman -S python-numba #dependancy
+sudo pacman -S python-pytorch 
+sudo pacman -S python-tqdm
