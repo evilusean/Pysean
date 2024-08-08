@@ -131,11 +131,47 @@ Installed wine manually, works now, instead of using lutris installer, download 
 https://wine.htmlvalidator.com/install-wine-on-arch-linux.html
 https://wiki.archlinux.org/title/Wine
 
-found the problem:
+found the problem - I really don't want to mess around with directories that are critical to boot, still got 10 gigs left, not critical - yet:
 /dev/sda2/usr # taking 7 / 10 gigs right here, if I can just move this directory, 70% of the root bloat will be gone
+https://bbs.archlinux.org/viewtopic.php?id=232338
+https://superuser.com/questions/1795674/moved-usr-to-another-disk-as-it-was-getting-too-big-but-now-my-system-wont-boo
 
 Next hurdle, can't delete files? tedious to 'su' 'rmdir' 'rm' for each file:
 https://wiki.archlinux.org/title/Sudo
 
 Github Desktop:
 https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
+
+NeoVimChad:
+https://nvchad.com/docs/quickstart/install/#pre-requisites
+sudo pacman -S neovim
+https://github.com/neovim/neovim
+nerdfonts
+https://lopes.id/2020-arch-installing-nerd-fonts/
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+
+Second day, everything booted correctly, most things installed, going to install Coqui-AI / OpenAI-Whisper and Anki. Get back to languages, Step 1) Escape.
+Location of Python `pip` packages: '/home' #still have 80+ gigs on SSD for home, after reinstalling, don't have to worry about this going to '/root' - less than 10 left
+pip show numpy #Location: /home/user/.local/lib/python3.10/site-packages.
+Both of these are >5 years old, both recomend pacman? - docs say if not using a venv, it can conflict with packages in /usr/ - which is on my root dir - which is already half full
+https://unix.stackexchange.com/questions/76389/recommended-way-of-installing-python-packages-on-arch
+https://www.reddit.com/r/archlinux/comments/dzbbgc/pacman_or_pip/
+https://wiki.archlinux.org/title/Python
+Going to use Pip, don't want to add more strain on '/root' - pip installs to '/home' 
+
+Coqui-AI:
+pip install tts #got below error message, in VScode, computer is yelling at me, maybe pip is a bad idea
+error: externally-managed-environment
+× This environment is externally managed
+╰─> To install Python packages system-wide, try 'pacman -S
+    python-xyz', where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Arch-packaged Python package,
+    create a virtual environment using 'python -m venv path/to/venv'.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip.
+    
+    If you wish to install a non-Arch packaged Python application,
+    it may be easiest to use 'pipx install xyz', which will manage a
+    virtual environment for you. Make sure you have python-pipx
+    installed via pacman.

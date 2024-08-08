@@ -278,6 +278,9 @@ Recipe App - Enter Inputs in fridge/cupboards and will give you recipes for the 
 HSR/ZZZ/Genshin Stamina Timer (input how many stamina required for next run or to full from now - super simple = total number / (remaining amount * time)
 Leetcode quiz - Take all of the Leetcode JS I've built and create an app that will quiz you based on the title like 'Reverse a Linked List' - Alot of it seems to be just rote memorization of the techniques
 Create own DB storage (don't forget version) - bit encoder/parser - and put it on the homelab: https://www.youtube.com/watch?v=vi-qMzxxtYs
+TeMEsMeme Sorter = Arch Linux will not allowed you to click and drag images to directories, can create a program with a basic GUI(ReactSean) - Will use the 'unsorted' folder - 
+  Apply an image hash + remove duplicates - autosort GIFS -> Gifs folder -  then use keys 1-0 and go through one by one of each image, don't delete + have an undo feature - then to trash
+  as you go through allows you to place each meme in it's respective folder with a key - has feature can remove dupes - can change folder locaSeans with key
 
 Python OpenCV Arduino:
 https://www.youtube.com/watch?v=mfiRJ1qgToc&ab_channel=Murtaza%27sWorkshop-RoboticsandAI
