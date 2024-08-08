@@ -188,3 +188,10 @@ source envname/bin/activate
 source TranslaSean/bin/activate # nm, disregard last, this works to 'turn on' the venv - type this command to 'use' the venv, use it from the 'Pysean' directory
 deactivate # type this to leave venv
 tried to install using the command given from 'https://github.com/coqui-ai/TTS/tree/dev#installation' - 'pip install TTS' -  still won't work even after installing venv and updating pip
+from docs: 'python >= 3.9, < 3.12..' - my python --version is 3.12.4 - is that it? just need to create a new venv with  reduced version of python?
+https://gist.github.com/beci/53a08cb73ec8539b895a64bebbd49734
+sudo pacman -S python3.9 #installing 3.9 with pacman - didn't work?
+yay -S python39 #this works, had to lookup 
+python3.9 -m venv TranslaSean3.9 #creating the python 3.9 venv
+source TranslaSean3.9/bin/activate #go into newly created venv
+pip install TTS #works!
