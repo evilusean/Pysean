@@ -157,6 +157,7 @@ Both of these are >5 years old, both recomend pacman? - docs say if not using a 
 https://unix.stackexchange.com/questions/76389/recommended-way-of-installing-python-packages-on-arch
 https://www.reddit.com/r/archlinux/comments/dzbbgc/pacman_or_pip/
 https://wiki.archlinux.org/title/Python
+https://wiki.archlinux.org/title/Python_package_guidelines
 Going to use Pip, don't want to add more strain on '/root' - pip installs to '/home' 
 
 Coqui-AI:
@@ -175,3 +176,15 @@ error: externally-managed-environment
     it may be easiest to use 'pipx install xyz', which will manage a
     virtual environment for you. Make sure you have python-pipx
     installed via pacman.
+pacman -S python-<packagename> # use this syntax to install via pacman
+I tried with pacman(file not found), without(big mad warning), now going to try with a venv to get around the warning -
+https://wiki.archlinux.org/title/Python/Virtual_environment
+python -m venv <envname>
+python -m venv TranslaSean #created it in my 'PySean' repo that auto uploads to github, added a .gitignore to ignore it. Should be able to DL with pip now
+python virtualenv envname
+python virtualenv TranslaSean # command didn't work, maybe already in? thought it was like 'cd' for when creating new dirs
+https://wiki.archlinux.org/title/Python/Virtual_environment#Activation
+source envname/bin/activate
+source TranslaSean/bin/activate # nm, disregard last, this works to 'turn on' the venv - type this command to 'use' the venv, use it from the 'Pysean' directory
+deactivate # type this to leave venv
+tried to install using the command given from 'https://github.com/coqui-ai/TTS/tree/dev#installation' - 'pip install TTS' -  still won't work even after installing venv and updating pip
