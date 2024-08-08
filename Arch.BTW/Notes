@@ -150,4 +150,8 @@ nerdfonts
 https://lopes.id/2020-arch-installing-nerd-fonts/
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 
+Second day, everything booted correctly, most things installed, going to install Coqui-AI / OpenAI-Whisper and Anki. Get back to languages, Step 1) Escape.
+Location of Python `pip` packages: '/home' #still have 80+ gigs on SSD for home, after reinstalling, don't have to worry about this going to '/root' - less than 10 left
+pip show numpy #Location: /home/user/.local/lib/python3.10/site-packages.
+Coqui-AI:
 
