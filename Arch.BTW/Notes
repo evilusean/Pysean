@@ -141,3 +141,13 @@ https://wiki.archlinux.org/title/Sudo
 
 Github Desktop:
 https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
+
+NeoVimChad:
+https://nvchad.com/docs/quickstart/install/#pre-requisites
+sudo pacman -S neovim
+https://github.com/neovim/neovim
+nerdfonts
+https://lopes.id/2020-arch-installing-nerd-fonts/
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+
+
