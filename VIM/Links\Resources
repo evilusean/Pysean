@@ -34,4 +34,4 @@ https://www.youtube.com/watch?v=Mtgo-nP_r8Y&ab_channel=DreamsofCode
 # Linux / Macos (unix) Uninstall:
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
-
+:help local-additions #shows all plugins/addons in NeoVim(Chad)
