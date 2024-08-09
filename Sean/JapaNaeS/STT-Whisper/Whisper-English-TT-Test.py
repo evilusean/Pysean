@@ -1,5 +1,6 @@
 import whisper
 import os
+
 # English Audio LocaSean : '/home/ArchSean/Downloads/TakenPhoneSpeech.mp3'
 # Set paths
 audio_file = '/home/ArchSean/Downloads/TakenPhoneSpeech.mp3'
@@ -25,6 +26,14 @@ with open(os.path.join(output_dir, "segments.csv"), "w", encoding="utf-8") as f:
     for segment in segments:
         f.write(f"{segment['start']},{segment['end']},{segment['text']}\n")
 
+def format_timestamp(seconds):
+    """Formats a timestamp in seconds to the SRT format (HH:MM:SS,mmm)."""
+    milliseconds = int(seconds * 1000)
+    hours, remainder = divmod(milliseconds, 3600000)
+    minutes, remainder = divmod(remainder, 60000)
+    seconds, milliseconds = divmod(remainder, 1000)
+    return f"{hours:02}:{minutes:02}:{seconds:02},{milliseconds:03}"
+
 # Save the segments to an SRT file
 with open(os.path.join(output_dir, "transcription.srt"), "w", encoding="utf-8") as f:
     for i, segment in enumerate(segments):
@@ -46,17 +55,10 @@ with open(os.path.join(output_dir, "results.json"), "w", encoding="utf-8") as f:
     json.dump(result, f, indent=4)
 
 # Helper function to format timestamps
-def format_timestamp(seconds):
-    """Formats a timestamp in seconds to the SRT format (HH:MM:SS,mmm)."""
-    milliseconds = int(seconds * 1000)
-    hours, remainder = divmod(milliseconds, 3600000)
-    minutes, remainder = divmod(remainder, 60000)
-    seconds, milliseconds = divmod(remainder, 1000)
-    return f"{hours:02}:{minutes:02}:{seconds:02},{milliseconds:03}"
+
 
 print("Transcription saved to:", os.path.join(output_dir, "transcription.txt"))
 print("Segments saved to:", os.path.join(output_dir, "segments.csv"))
 print("Segments saved to:", os.path.join(output_dir, "transcription.srt"))
 print("Full results saved to:", os.path.join(output_dir, "results.json"))
-
 
