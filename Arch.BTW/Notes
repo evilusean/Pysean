@@ -235,9 +235,10 @@ sudo pacman -S python-stanza #didn't work
 sudo pacman -S python-sentencepiece-git #didn't work
 sudo pacman -S ctranslate2-git #didn't work 
 Going to need to think about this before moving forward, 3/4 dependancies aren't installing with sudo pacman - Do I need to do the work around for each of them and THEIR OWN dependancies?
-
-
-
+After doing the work around for each dependancy, worked out well, only problem is with ctranslate-2 - 2 versions? which one - and the first one is 5 Gigs! 
+https://aur.archlinux.org/packages/python-ctranslate2 #updated 2024, 5 gigs, massive. 
+https://aur.archlinux.org/packages/python-ctranslate2-git # hasn't been updated since 2022~ version recomended by makepkg, if I don't have it will it still work? 
+going to go with the 2024 updated model, if it doesn't work - how to remove? not using pacman - doing workaround
 
 
 
