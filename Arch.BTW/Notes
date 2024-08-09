@@ -261,8 +261,9 @@ It was more of a nice to have, take one audio of slovak - transcribe slovak text
 Going to clean cache, try to remove all the recently installed packages, just wasted last hour(s?) trying to get translation to work, would of been cool - can do without
 https://wiki.archlinux.org/title/Pacman#Cleaning_the_package_cache
 
-
-
+Resize Root Partition :
+https://bbs.archlinux.org/viewtopic.php?id=232408
+Use GParted bootable usb(don't have any extra USB's - last time my laptop broke down it took 9 months to get this one. F=-F)
 
 
 
