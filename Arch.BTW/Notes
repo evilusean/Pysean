@@ -219,3 +219,6 @@ Just realized that there is no Japanese kanji/hiragana characters - will need to
 https://wiki.archlinux.org/title/Localization/Japanese
 https://unix.stackexchange.com/questions/356084/how-can-i-get-japanese-characters-to-show-properly-in-firefox-on-arch
 https://bbs.archlinux.org/viewtopic.php?id=275690
+
+LibreTranslate : while messing around with OpenAI-Whisper, every single API to translate is payed(openai/google/etc) - trying to find a free open source way to translate english-slovak jp/sk-en
+https://libretranslate.com/
