@@ -213,6 +213,7 @@ sudo pacman -S python-tqdm
 import whisper
 model = whisper.load_model('medium', download_root='/mnt/4e1c82f2-2f37-4698-9019-ee96f71a51ca/Lang/OpenAI-Whisper')
 #model actually loaded, no error messages, no audio to test it with - legit fresh install - no files remained, but at least it loaded without an error message - and no graphics card warning
+https://platform.openai.com/docs/guides/speech-to-text/quickstart
 
 Just realized that there is no Japanese kanji/hiragana characters - will need to fix that first before building a STT script - 
 https://wiki.archlinux.org/title/Localization/Japanese
