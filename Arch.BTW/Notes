@@ -241,6 +241,19 @@ https://aur.archlinux.org/packages/python-ctranslate2-git # hasn't been updated 
 going to go with the 2024 updated model, if it doesn't work - how to remove? not using pacman - doing workaround
 
 
+error: Partition / too full: 1289755 blocks needed, 1120704 blocks free
+error: not enough free disk space
+error: failed to commit transaction (not enough free disk space)
+Errors occurred, no packages were upgraded.
+Having problems with installing ctranslate2 and its dependancy cuda, I knew I was going to run out of space, here is how to mount /usr on a seperate drive (replace /opt/var/home):
+mkdir /mnt/extra
+mount /dev/sda6 /mnt/extra
+mkdir /mnt/extra/opt
+mkdir /mnt/extra/var
+mkdir /mnt/extra/home
+mount --bind /mnt/extra/opt /opt
+mount --bind /mnt/extra/var /var
+mount --bind /mnt/extra/home /home
 
 
 
