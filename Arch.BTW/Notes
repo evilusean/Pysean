@@ -224,3 +224,43 @@ LibreTranslate : while messing around with OpenAI-Whisper, every single API to t
 https://libretranslate.com/
 https://github.com/argosopentech/argos-translate
 https://github.com/niedev/RTranslator
+
+Argos Translate - is free, runs locally, and is open source - Libre Translate is free, but an API (requires internet) and built on Argos translate - trying to install - sudo pacman won't work
+https://aur.archlinux.org/packages/argos-translate-git
+git clone https://aur.archlinux.org/argos-translate-git.git #installs the directory from above, trying the pacman workaround by using makepkg
+cd argos-translate-git #go into newly creaed directory
+makepkg -si #trying to install with makepkg, missing dependancies : 'python-pyqt5' 'python-stanza' 'python-sentencepiece-git' 'ctranslate2-git'
+sudo pacman -S python-pyqt5 #worked
+sudo pacman -S python-stanza #didn't work
+sudo pacman -S python-sentencepiece-git #didn't work
+sudo pacman -S ctranslate2-git #didn't work 
+Going to need to think about this before moving forward, 3/4 dependancies aren't installing with sudo pacman - Do I need to do the work around for each of them and THEIR OWN dependancies?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
