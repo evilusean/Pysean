@@ -196,6 +196,7 @@ python    3.9 -m venv TranslaSean3.9 #creating the python 3.9 venv
 source TranslaSean3.9/bin/activate #go into newly created venv
 pip install TTS #works!
 pip -m uninstall [packagename] #going to need to uninstall when TTS get's updated to work with newest version of python, each time I download - multiple gigs off of /root gone for each model
+sudo pacman -S python-TTS # run this command every morning until it updates, if it doesn't after a week(2?) - you can use the venv method, tedious, but works - if it does DL = remove venv
 
 OpenAI Whisper : 
 https://github.com/openai/whisper
