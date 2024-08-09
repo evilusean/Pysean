@@ -259,7 +259,7 @@ I still don't want to mess around with /usr after finally getting arch linux up 
 I don't actually need translate with STT - if it saves it as a .csv and a .txt, I can just copy and paste the .txt into google translate - use the .csv/.srt for reading/watching/timestamps
 It was more of a nice to have, take one audio of slovak - transcribe slovak text and english to a csv, also having an option for english/slovak .srt subtitles, would of been nice-can do w/o
 Going to clean cache, try to remove all the recently installed packages, just wasted last hour(s?) trying to get translation to work, would of been cool - can do without
-
+https://wiki.archlinux.org/title/Pacman#Cleaning_the_package_cache
 
 
 
