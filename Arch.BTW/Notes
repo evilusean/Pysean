@@ -253,6 +253,8 @@ mkdir /mnt/extra/home
 mount --bind /mnt/extra/opt /opt
 mount --bind /mnt/extra/var /var
 mount --bind /mnt/extra/home /home
+https://wiki.archlinux.org/index.php/Btrfs#Subvolumes
+https://wiki.archlinux.org/index.php/LVM
 I still don't want to mess around with /usr after finally getting arch linux up and running after 3 days of trying to fix the drives, 
 I don't actually need translate with STT - if it saves it as a .csv and a .txt, I can just copy and paste the .txt into google translate - use the .csv/.srt for reading/watching/timestamps
 It was more of a nice to have, take one audio of slovak - transcribe slovak text and english to a csv, also having an option for english/slovak .srt subtitles, would of been nice-can do w/o
