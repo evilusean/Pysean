@@ -240,7 +240,6 @@ https://aur.archlinux.org/packages/python-ctranslate2 #updated 2024, 5 gigs, mas
 https://aur.archlinux.org/packages/python-ctranslate2-git # hasn't been updated since 2022~ version recomended by makepkg, if I don't have it will it still work? 
 going to go with the 2024 updated model, if it doesn't work - how to remove? not using pacman - doing workaround
 
-
 error: Partition / too full: 1289755 blocks needed, 1120704 blocks free
 error: not enough free disk space
 error: failed to commit transaction (not enough free disk space)
@@ -254,10 +253,10 @@ mkdir /mnt/extra/home
 mount --bind /mnt/extra/opt /opt
 mount --bind /mnt/extra/var /var
 mount --bind /mnt/extra/home /home
-
-
-
-
+I still don't want to mess around with /usr after finally getting arch linux up and running after 3 days of trying to fix the drives, 
+I don't actually need translate with STT - if it saves it as a .csv and a .txt, I can just copy and paste the .txt into google translate - use the .csv/.srt for reading/watching/timestamps
+It was more of a nice to have, take one audio of slovak - transcribe slovak text and english to a csv, also having an option for english/slovak .srt subtitles, would of been nice-can do w/o
+Going to clean cache, try to remove all the recently installed packages, just wasted last hour(s?) trying to get translation to work, would of been cool - can do without
 
 
 
