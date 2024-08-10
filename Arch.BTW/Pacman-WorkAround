@@ -1,0 +1,7 @@
+After doing this enough times, I'll just make a doc in case I forget the steps, or future Sean can't install a package 
+Step 1) Go to AUR (Arch User Package Repo):
+  https://aur.archlinux.org/
+Step 2) 'git clone URL' , copy the first option, open a terminal and 'git clone <package name>
+Step 3) 'cd <package name>
+Step 4) 'makepkg -si' #should install the package
+Step 5) Delete the downloaded/git clone repo, no longer needed, package should be installed on your system
