@@ -1,5 +1,9 @@
 import whisper
 import os
+#Just tested again, it's like 80% of the words, from what I can tell comparing the audio and romaji
+# Pretty good, but not great - could I use this for work recording audio of meetings and then translate?
+# Shows/Anime/Conversations/Daily use? It's too slow to be used live, future goals = TransLaSean
+# add translation with a locally run free open source translator like 'Argos Translate' to the CSV
 
 # Set paths
 audio_file = '/home/ArchSean/Downloads/Egg-Sans-Diary.mp3'  #add a japanese audio file - audiophile?    

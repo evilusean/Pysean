@@ -14,7 +14,7 @@ result = model.transcribe(audio_file)
 
 # Extract the transcription results
 text = result["text"]
-segments = result["segments"]
+segments = result["segments"]       
 
 # Save the transcription to a text file
 with open(os.path.join(output_dir, "transcription.txt"), "w", encoding="utf-8") as f:
