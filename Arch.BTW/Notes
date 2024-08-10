@@ -261,6 +261,8 @@ https://wiki.archlinux.org/title/Pacman#Cleaning_the_package_cache
 Resize Root Partition :
 https://bbs.archlinux.org/viewtopic.php?id=232408
 Use GParted bootable usb(don't have any extra USB's - last time my laptop broke down it took 9 months to get this one. F=-F)
+Figured out a fix, make a multi boot bootable usb (Arch linx, gparted (ubuntu?), Kali, etc) because I don't want to lose Arch linux, just in case I break something, again. 
+https://www.geeksforgeeks.org/create-a-multi-iso-bootable-usb-drive/
 
 Just realized that there is no Japanese kanji/hiragana characters - will need to fix that first before building a STT script - 
 https://wiki.archlinux.org/title/Localization/Japanese
