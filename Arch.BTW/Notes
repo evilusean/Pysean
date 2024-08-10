@@ -270,7 +270,7 @@ https://unix.stackexchange.com/questions/356084/how-can-i-get-japanese-character
 https://bbs.archlinux.org/viewtopic.php?id=275690
 Tried to read the transcription from OpenAI-Whispper... without the fonts - All these square hieroglyphs? where are the moon runes, I know my Japanese isn't that bad 
 sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts # installs A Japanese capable font
-yay -S ttf-freefont ttf-ms-fonts ttf-linux-libertine ttf #also recomended, installed with yay
+yay -S ttf-freefont ttf-ms-fonts ttf-linux-libertine ttf-dejavu ttf-inconsolata ttf-ubuntu-font-family #also recomended, installed with yay
 
 
 
