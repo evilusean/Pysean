@@ -214,11 +214,8 @@ import whisper
 model = whisper.load_model('medium', download_root='/mnt/4e1c82f2-2f37-4698-9019-ee96f71a51ca/Lang/OpenAI-Whisper')
 #model actually loaded, no error messages, no audio to test it with - legit fresh install - no files remained, but at least it loaded without an error message - and no graphics card warning
 https://platform.openai.com/docs/guides/speech-to-text/quickstart
-
-Just realized that there is no Japanese kanji/hiragana characters - will need to fix that first before building a STT script - 
-https://wiki.archlinux.org/title/Localization/Japanese
-https://unix.stackexchange.com/questions/356084/how-can-i-get-japanese-characters-to-show-properly-in-firefox-on-arch
-https://bbs.archlinux.org/viewtopic.php?id=275690
+sudo pacman -S python-unidecode #allows for OpenAI-Whisper to use romaji(english characters) when translating Japanese
+to switch from slovak/english japanese 
 
 LibreTranslate : while messing around with OpenAI-Whisper, every single API to translate is payed(openai/google/etc) - trying to find a free open source way to translate english-slovak jp/sk-en
 https://libretranslate.com/
@@ -265,7 +262,10 @@ Resize Root Partition :
 https://bbs.archlinux.org/viewtopic.php?id=232408
 Use GParted bootable usb(don't have any extra USB's - last time my laptop broke down it took 9 months to get this one. F=-F)
 
-
+Just realized that there is no Japanese kanji/hiragana characters - will need to fix that first before building a STT script - 
+https://wiki.archlinux.org/title/Localization/Japanese
+https://unix.stackexchange.com/questions/356084/how-can-i-get-japanese-characters-to-show-properly-in-firefox-on-arch
+https://bbs.archlinux.org/viewtopic.php?id=275690
 
 
 
