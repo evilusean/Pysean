@@ -268,8 +268,9 @@ Just realized that there is no Japanese kanji/hiragana characters - will need to
 https://wiki.archlinux.org/title/Localization/Japanese
 https://unix.stackexchange.com/questions/356084/how-can-i-get-japanese-characters-to-show-properly-in-firefox-on-arch
 https://bbs.archlinux.org/viewtopic.php?id=275690
-
-
+Tried to read the transcription from OpenAI-Whispper... without the fonts - All these square hieroglyphs? where are the moon runes, I know my Japanese isn't that bad 
+sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts # installs A Japanese capable font
+yay -S ttf-freefont ttf-ms-fonts ttf-linux-libertine ttf #also recomended, installed with yay
 
 
 
