@@ -198,6 +198,23 @@ pip install TTS #works!
 pip -m uninstall [packagename] #going to need to uninstall when TTS get's updated to work with newest version of python, each time I download - multiple gigs off of /root gone for each model
 sudo pacman -S python-TTS # run this command every morning until it updates, if it doesn't after a week(2?) - you can use the venv method, tedious, but works - if it does DL = remove venv
 
+CoquiAI - TTS : Pacman Workaround
+https://aur.archlinux.org/packages/python-tts
+git clone https://aur.archlinux.org/python-tts.git # tried to install, missing like 10 dependancies, need to install each one manually to even test if this worked
+==> ERROR: 'pacman' failed to install missing dependencies.
+==> Missing dependencies:
+  -> cython0
+  -> python-torchaudio
+  -> python-soundfile
+  -> python-librosa
+  -> python-inflect
+  -> python-anyascii
+  -> python-fsspec
+  -> python-aiohttp
+  -> python-flask
+  -> python-pysbd
+
+
 OpenAI Whisper : 
 https://github.com/openai/whisper
 https://aur.archlinux.org/packages/whisper-git
