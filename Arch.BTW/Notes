@@ -203,17 +203,35 @@ https://aur.archlinux.org/packages/python-tts
 git clone https://aur.archlinux.org/python-tts.git # tried to install, missing like 10 dependancies, need to install each one manually to even test if this worked
 ==> ERROR: 'pacman' failed to install missing dependencies.
 ==> Missing dependencies:
-  -> cython0
-  -> python-torchaudio
-  -> python-soundfile
-  -> python-librosa
-  -> python-inflect
-  -> python-anyascii
-  -> python-fsspec
-  -> python-aiohttp
-  -> python-flask
+  -> cython0  #installed with workaround
+  -> python-torchaudio #installed with workaround
+    -> python-soundfile #installed with workaround
+  -> python-librosa 
+  -> python-inflect #installed with pacman
+  -> python-anyascii #installed with pacman
+  -> python-fsspec #installed with pacman
+  -> python-aiohttp  #installed with pacman
+  -> python-flask #installed with pacman
   -> python-pysbd
-
+Now when installing 'python-librosa':
+==> Making package: python-librosa 0.10.2.post1-1 (Sat 10 Aug 2024 01:55:13 PM ADT)
+==> Checking runtime dependencies...
+==> Installing missing dependencies...
+error: target not found: python-audioread
+error: target not found: python-lazy-loader
+error: target not found: python-resampy
+error: target not found: python-soxr
+==> ERROR: 'pacman' failed to install missing dependencies.
+==> Missing dependencies:
+  -> python-audioread
+  -> python-decorator
+  -> python-joblib
+  -> python-lazy-loader
+  -> python-resampy
+  -> python-scikit-learn
+  -> python-soxr
+==> Checking buildtime dependencies...
+Need to install all these before I can do the workaround with librosa
 
 OpenAI Whisper : 
 https://github.com/openai/whisper
