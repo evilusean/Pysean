@@ -319,6 +319,7 @@ Installed succesfully, just need to import all the cards I saved before wiping o
 TTS still isn't working (without a venv) if I need to make more, will need to install TTS with a venv, 
 I'm taking notes on every program I needed to install, so if I do need to wipe arch linux(again), to expand '/root', it won't take me 3 days to get up and running, again..
 I'm running dangerously low on '/root' >5 gigs left, and I still need to install voice models, really could of used a larger partition, but when I did it manually, they didn't mount correct
+sudo pacman -S mpv #audio from flashcards won't work without mpv
 
 
 
