@@ -10,8 +10,8 @@ pause = "/media/sean/MusIX/Piper/silent_half-second.wav"
 # Define the output directories for Slovak and English audio files
 # Make the directory names dynamic
 def get_audio_dirs(category):
-    slovak_audio_dir = f"/media/sean/MusIX/Coqui-AI/Slovak/{category}/Slovak"
-    english_audio_dir = f"/media/sean/MusIX/Coqui-AI/Slovak/{category}/English"
+    slovak_audio_dir = f"/mnt/4e1c82f2-2f37-4698-9019-ee96f71a51ca/Lang/Slovake/Coqui-AI/Slovak/{category}/Slovak"
+    english_audio_dir = f"/mnt/4e1c82f2-2f37-4698-9019-ee96f71a51ca/Lang/Slovake/Coqui-AI/Slovak/{category}/English"
     return slovak_audio_dir, english_audio_dir
 
 # Create the directories if they don't exist
@@ -23,8 +23,8 @@ def create_dirs(category):
 
 # Define the CSV file paths, testing with 'slovak10.csv' before 'slovak1000.csv'
 def get_csv_paths(category):
-    input_csv_file = f"/media/sean/MusIX/Coqui-AI/Slovak/{category}/{category}.csv"  # Replace with your input CSV file path
-    output_csv_file = f"/media/sean/MusIX/Coqui-AI/Slovak/{category}/{category}_anki.csv"
+    input_csv_file = f"/mnt/4e1c82f2-2f37-4698-9019-ee96f71a51ca/Lang/Slovake/Coqui-AI/Slovak/{category}/{category}.csv"  # Replace with your input CSV file path
+    output_csv_file = f"/mnt/4e1c82f2-2f37-4698-9019-ee96f71a51ca/Lang/Slovake/Coqui-AI/Slovak/{category}/{category}_anki.csv"
     return input_csv_file, output_csv_file
 
 # Function to synthesize and save Slovak audio (no speed control)
@@ -170,5 +170,5 @@ def process_csv(category):
     combine_audio_files(category)
 
 # going to use this for Slovake.eu course 'Slovake.eu-L1' = lesson 1
-category = "2000"  # Replace with your directory / CSV name (must be the same)
+category = "Adjectives"  # Replace with your directory / CSV name (must be the same)
 process_csv(category)
