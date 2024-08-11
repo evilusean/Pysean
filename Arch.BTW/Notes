@@ -303,6 +303,14 @@ https://bbs.archlinux.org/viewtopic.php?id=232408
 Use GParted bootable usb(don't have any extra USB's - last time my laptop broke down it took 9 months to get this one. F=-F)
 Figured out a fix, make a multi boot bootable usb (Arch linx, gparted (ubuntu?), Kali, etc) because I don't want to lose Arch linux, just in case I break something, again. 
 https://www.geeksforgeeks.org/create-a-multi-iso-bootable-usb-drive/
+https://wiki.archlinux.org/title/Ventoy
+https://aur.archlinux.org/packages/ventoy-bin
+https://kb.adamsdesk.com/application/ventoy/
+ventoy -i /dev/sd #after downloading and installing 'ventoy-bin' from AUR, use this to install to USB, after installed, simply move all .iso's to the new 'Ventoy' USB 
+Creating a new bootable USB with : Arch(Btw), Ubuntu, Tails OS, Kali, Gparted - All on one USB, added some other stuff below that are tools that can be used during boot, future sean problem 
+Other Misc Tools:
+https://www.nirsoft.net/
+https://www.hiren.info/pages/bootcd
 
 Just realized that there is no Japanese kanji/hiragana characters - will need to fix that first before building a STT script - 
 https://wiki.archlinux.org/title/Localization/Japanese
