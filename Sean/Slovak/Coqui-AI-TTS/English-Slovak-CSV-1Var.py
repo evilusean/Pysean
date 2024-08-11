@@ -5,7 +5,7 @@ import csv
 # Define the voices
 english_voice = "tts_models/en/ljspeech/vits"  # taco bout it
 slovak_voice = "tts_models/sk/cv/vits"  # Choose a Slovak model that works from the list
-pause = "/media/sean/MusIX/Piper/silent_half-second.wav"
+pause = "/mnt/4e1c82f2-2f37-4698-9019-ee96f71a51ca/Lang/Slovake/Coqui-AI/silent_half-second.wav"
 
 # Define the output directories for Slovak and English audio files
 # Make the directory names dynamic
