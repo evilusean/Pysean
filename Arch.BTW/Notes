@@ -320,6 +320,8 @@ TTS still isn't working (without a venv) if I need to make more, will need to in
 I'm taking notes on every program I needed to install, so if I do need to wipe arch linux(again), to expand '/root', it won't take me 3 days to get up and running, again..
 I'm running dangerously low on '/root' >5 gigs left, and I still need to install voice models, really could of used a larger partition, but when I did it manually, they didn't mount correct
 sudo pacman -S mpv #audio from flashcards won't work without mpv
+After wasting hours last night trying to get audio to work on flashcards the problem is 'mpv 0.38' isn't compatible with Anki, it's been an issue since at least April - that's 4 months.
+  So who knows when there is going to be a fix? I'm just going to save the .csv's so when it does get fixed, it will only take me a day to get everything back, also might reinstall Arch OS
 
 
 
