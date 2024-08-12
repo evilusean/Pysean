@@ -12,7 +12,7 @@ model = whisper.load_model("medium", download_root="/mnt/4e1c82f2-2f37-4698-9019
 result = model.transcribe(audio_file, language="sk")  # Specify Slovak language
 
 # Extract the transcription results
-text = result["text"]
+text = result["text"]   
 segments = result["segments"]
 
 # Save the transcription to a text file
