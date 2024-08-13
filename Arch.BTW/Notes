@@ -358,6 +358,8 @@ https://store.kde.org/p/1081236
 https://store.kde.org/p/998901
 https://store.kde.org/p/2130967
 https://store.kde.org/p/2137308
+Music Lyrics: https://store.kde.org/p/2166807
+Nvidia or Intel Graphics Display : https://store.kde.org/p/2138473
 ZSh (Zoomer Shell - Syntax Highlighting - https://en.wikipedia.org/wiki/List_of_Generation_Z_slang):
 https://wiki.archlinux.org/title/Zsh
 https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
@@ -379,4 +381,8 @@ https://community.kde.org/Plasma/Browser_Integration
 sudo pacman -S kdeconnect
 sudo pacman -S xdg-desktop-portal
 Download 'KDE Connect' from iOS App Store
+Can I run scripts from KDE connect? like tell have a script 'open-wine-HS' 'run-HS-bot.py' 'force-reconnect.py' or get something to run and text a json object like
+Centralized Calendar?
+Plasma Home Assistant: 
+https://store.kde.org/p/2131364
 
