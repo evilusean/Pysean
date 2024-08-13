@@ -364,9 +364,10 @@ https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 https://www.youtube.com/watch?v=eLEo4OQ-cuQ
 https://gist.github.com/LukeSmithxyz/e62f26e55ea8b0ed41a65912fbebbe52
 https://aur.archlinux.org/packages/zsh-syntax-highlighting-git
-NeoVim(Chad):
+NeoVim(Chad) :
 https://github.com/rockerBOO/awesome-neovim
 https://dotfyle.com/neovim/plugins/trending
 https://nvchad.com/
 https://github.com/NvChad/NvChad
-
+https://github.com/neovim/neovim/blob/master/INSTALL.md #follow the install methods here, had to reinstall and then export new path to ~/.zshrc and ~/.bashrc, added colors, finally, 
+sudo pacman -S xclip #to fix the copy and paste, you need to isntall one of these, I forget which fixed it 'gvim' or 'xclip'
