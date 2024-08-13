@@ -257,6 +257,12 @@ Glif.app(wojAIck generator) - how long until this get's neutered? 25June2024 - F
 Local AI Copilot (OLlama): https://www.youtube.com/watch?v=he0_W5iCv-I&ab_channel=DaveGray
 claude sonnet 3.5 (good for coding)
 critic GPT
+AliceApp (AI integrated chatbot, integrated across mac/pc/phone, custom remote snippets - AI Assistant ) : https://www.heyalice.app/
+promptfoo.dev #automatically test prompts for other LLMS - proompt engineering - AI writing AI prompts - Is this the singularity? - provide docs for context
+Cursor IDE (built in AI, like copilot ++, inline generation, select code then write in natural language the changes needed - referencing multiple files, directories, or entire codebase or external documentation)
+JetBrains - IntelliJ - Good for autocomplete
+Aider - Will indicate files that require editing and then making changes itself asking for confirmation at each stage
+
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
