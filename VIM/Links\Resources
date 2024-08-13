@@ -4,6 +4,9 @@ https://github.com/NvChad/NvChad
 One Liner:
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
+Undo Tree (Shows a tree of undos - not with NVChad):
+https://github.com/mbbill/undotree
+
 WebDev NeoVim Setup:
 https://www.youtube.com/watch?v=fFHlfbKVi30&ab_channel=devaslife
 
