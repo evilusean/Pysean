@@ -28,3 +28,5 @@ tmux new -s <My-Session> #will create a new session with the name <My-Session>
 tmux ls #will list any active tmux sessions
 tmux attach #will attach to your most recent session
 tmux -t <my-session> #will attach to the <named> session
+tmux kill-server #removes all current sessions
+pkill -f tmux #same as above
