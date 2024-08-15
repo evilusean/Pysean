@@ -1,6 +1,7 @@
 https://tmuxcheatsheet.com/
-Get Tmux to work with NVim:
+Get Tmux to work with NVim (with .conf):
 https://www.youtube.com/watch?v=DzNmUNvnB04
+https://github.com/dreamsofcode-io/tmux/blob/main/tmux.conf
 Tmux has 3 objects : Sessions / Windows / Panes
   Sessions - Are the topmost layer in tmux, can be a collection of one or more windows, managed as a single unit, each sessions has one active window
   Windows - Container to one or more panes(similar to tabs in browser) 
