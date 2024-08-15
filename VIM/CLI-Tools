@@ -10,5 +10,11 @@ https://www.reddit.com/r/commandline/comments/12lm54c/a_good_list_of_rss_feeds_f
 https://www.omglinux.com/command-line-rss-readers-for-linux/#:~:text=Newsboat&text=When%20it%20comes%20to%20command,right%20there%2C%20in%20the%20terminal.
 https://about.fb.com/wp-content/uploads/2016/05/rss-urls-1.pdf
 
-Play Videos(Ascii) in Terminal:
+Play Videos(Ascii) in Terminal -  this is actually pretty cool - converts it to ascii :
 mpv --no-config --vo=tct /home/ArchSean/Downloads/LearnSlovakWhileYouSleep8Hours.mp4
+mpv --vo=drm file.mp4
+Just use ffmpeg and output to acscii in the console. #future sean project, take in a youtube url and convert it to an ascii video to play in terminal
+
+Audio (Media) Player for terminal? :
+https://archlinux.org/packages/extra/x86_64/audacious/
+https://audacious-media-player.org/
