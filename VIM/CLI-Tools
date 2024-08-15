@@ -1,0 +1,11 @@
+Now that I've got tmux working nicely, creating a sort of CLI UI for my second screen, repo to store all commands for running in background, 
+btop #aesthetically pleasing process manager
+eza #pretty ls
+
+sudo pacman -S newsboat
+Create a ~/.newsboat/urls file (by hand, in any text editor), and add the RSS feed addresses for the sites you want to track inside of it, and hit save.
+  Now, when you run newsboat in a terminal emulator it’ll track the links you added.
+newsboat #RSS feed for news, will add some websites
+https://www.reddit.com/r/commandline/comments/12lm54c/a_good_list_of_rss_feeds_for_a_cli_rss_reader/
+https://www.omglinux.com/command-line-rss-readers-for-linux/#:~:text=Newsboat&text=When%20it%20comes%20to%20command,right%20there%2C%20in%20the%20terminal.
+https://about.fb.com/wp-content/uploads/2016/05/rss-urls-1.pdf
