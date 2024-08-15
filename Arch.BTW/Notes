@@ -389,3 +389,39 @@ https://store.kde.org/p/2131364
 Signal :
 https://archlinux.org/packages/extra/x86_64/signal-desktop/
 https://signal.org/
+
+Command Line Tools:
+Atuin : Alternative to 'up scrolling' with search feature, list feature
+ChezMoi : Shares your .config files among other devices, encrypts
+PowerTop : Intel Tool to monitor power usage - auto settings for low power usage
+Dust : Shows What files are taking up space on PC (or remote server) uses ascii bars and colors, shows what is taking up HD
+Grub-Reboot : For Dual Booting
+Bat (replacement for cat) : colored highlingting/syntax highlighting for cat(reading a file)
+
+HomeBrew : 
+https://docs.brew.sh/Homebrew-on-Linux
+https://brew.sh/
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" #will install homebrew
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)" #next 3 lines add to path
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc 
+
+fzf (Fuzzy Files) :
+sudo pacman -S fzf
+fzf -q <Search File> #search for files on your system/git commits/etc, will return any file/string that matches <Search Terms> you used, use -e flag for 'exact' match, $ '.mov$' to find files that end with .mov
+
+Btop (Similar to 'top' or 'htop' for resource monitoring-looks way cleaner for disk usage/gpu/ram usage/battery life - terminal process monitor):
+https://archlinux.org/packages/extra/x86_64/btop/
+sudo pacman -S btop
+
+Eza (colourful ls):
+https://archlinux.org/packages/extra/x86_64/eza/
+
+TLDR (shortened man pages) :
+https://archlinux.org/packages/extra/any/tldr/
+
+ZelliJ (Similar to Tmux Tiling window management for terminals / workspace) - After installing theres a learning curve (Alt+H to move a pane, most functionality already built in ) :
+https://zellij.dev/
+https://archlinux.org/packages/extra/x86_64/zellij/
+sudo pacman -R zellij
+
