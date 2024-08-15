@@ -9,3 +9,6 @@ newsboat #RSS feed for news, will add some websites
 https://www.reddit.com/r/commandline/comments/12lm54c/a_good_list_of_rss_feeds_for_a_cli_rss_reader/
 https://www.omglinux.com/command-line-rss-readers-for-linux/#:~:text=Newsboat&text=When%20it%20comes%20to%20command,right%20there%2C%20in%20the%20terminal.
 https://about.fb.com/wp-content/uploads/2016/05/rss-urls-1.pdf
+
+Play Videos(Ascii) in Terminal:
+mpv --no-config --vo=tct /home/ArchSean/Downloads/LearnSlovakWhileYouSleep8Hours.mp4
