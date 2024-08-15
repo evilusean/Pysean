@@ -1,0 +1,27 @@
+https://tmuxcheatsheet.com/
+Tmux has 3 objects : Sessions / Windows / Panes
+  Sessions - Are the topmost layer in tmux, can be a collection of one or more windows, managed as a single unit, each sessions has one active window
+  Windows - Container to one or more panes(similar to tabs in browser) 
+  Panes are splints in the window, there will only be one interactive pane at a time
+'Ctrl + B' = Prefix Key (Ctrl + B is default)
+Prefix (Ctrl + B) + C = Create a new window
+Prefix (Ctrl + B) + # = To change window, Prefix + < Window Number> will change the currently active window
+  Prefix + N = Cycle up through windows (Next)
+  Prefix + P = Cycle down through windows (Previous)
+Prefix (Ctrl + B) + & = Close current window
+Prefix (Ctrl + B) + % = Split Horizontally
+Prefix (Ctrl + B) + " = Split Vertically
+Prefix (Ctrl + B) + <Arrow Key> = Panes can be navigated by pressing the prefix + whichever direction it is on the arrow key
+Prefix (Ctrl + B) + { = Swap Panes around(position) Left
+Prefix (Ctrl + B) + } = Swap Pane Position Right
+Prefix (Ctrl + B) + Q = will select a pane by number 
+Prefix (Ctrl + B) + Z = Full Screen Current Active pane
+Prefix (Ctrl + B) + ! = Turns a pane into a window(full screen)
+Prefix (Ctrl + B) + X = Closes a pane
+Prefix (Ctrl + B) + S = Show All Active Sessions
+Prefix (Ctrl + B) + W = Preview All Active Windows for each session
+A new session can be created by using the 'tmux' command in the terminal while not connected to a current tmux session, or while in tmux 'new' will create a new session
+tmux new -s <My-Session> #will create a new session with the name <My-Session> 
+tmux ls #will list any active tmux sessions
+tmux attach #will attach to your most recent session
+tmux -t <my-session> #will attach to the <named> session
