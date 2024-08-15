@@ -425,3 +425,10 @@ https://zellij.dev/
 https://archlinux.org/packages/extra/x86_64/zellij/
 sudo pacman -R zellij
 
+Tmux (terminal windows):
+https://github.com/tmux/tmux/wiki
+https://www.youtube.com/watch?v=DzNmUNvnB04
+sudo pacman -S tmux
+
+Tmux Plugin Manager(TPM):
+https://github.com/tmux-plugins/tpm
