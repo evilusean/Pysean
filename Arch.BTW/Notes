@@ -473,4 +473,41 @@ ncmpcpp is a client for running MPD in the terminal (looks aesthetik AF) - I can
   alsa_output: Error opening default ALSA device: No such device or address
   output: Successfully detected a pulse audio device
 I just need to fix the config files, going to leave all resources/links here for future sean to figure out a fix, Welcome to the ricefields MF'er : https://www.youtube.com/watch?v=i8a3gjt_Ar0
+https://www.musicpd.org/
+https://mpd.readthedocs.io/en/stable/user.html
+https://rybczak.net/ncmpcpp/
+https://rybczak.net/ncmpcpp/installation/
+Commented out everything in '/etc/mpd.conf' so the config files don't clash,   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
