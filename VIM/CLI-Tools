@@ -18,3 +18,109 @@ Just use ffmpeg and output to acscii in the console. #future sean project, take 
 Audio (Media) Player for terminal? :
 https://archlinux.org/packages/extra/x86_64/audacious/
 https://audacious-media-player.org/
+
+https://bbs.archlinux.org/viewtopic.php?id=50475
+CLI Softwares
+
+    Accessoris:
+        eSpeak - text to speech app
+        Abook - a text-based addressbook program designed to use with mutt mail client
+        Antiword - a reader for proprietary Microsoft Word documents.
+        Live-F1 - a Linux client for viewing the information feed of the offical F1 site
+        bc - (calculator)
+        gnuplot - a command-line Program generate 2D/3D dimensinal plots of functions and data
+        FBGrab - a framebuffer screenshot program
+        Fbshot - a small program that allows you to take screenshots
+        pdf2ascii - PDF to ascii software
+        GNU Oleo - a lightweight free spreadsheet software package.
+        SC - spreadsheet calculatior
+        vim-latexsuite - Latex plugin to VIM
+        cmatrix - CLI Matrix screensaver
+
+    Games:
+        BSD-Games - a collection of the classic text based games
+        gnuchess - let most moden computer play a full game of chess
+        Netris - a free, networked variant of Tetris
+        NetHack - a single-player roguelike computer game originally released in 1987
+        Slash'EM - (Super Lotsa Added Stuff Hack - Extended Magic)
+        ADOM - a roguelike game
+        Linley's Dungeon Crawl - a free and portable roguelike game
+        Angband - a dungeon-crawling roguelike computer game derived from Umoria
+
+    Graphic:
+        zgv - a picutre viewer with a thumbnail-based file selector
+        fbida - a few app for viewing/editing images (fbi, fbgs, ida, exiftran, thumbnail.cgi)
+        imagemagick - a software suite for image manipulation
+    Internet:
+        ELinks - Full-Featured Text WWW Browser
+        Lynx - a text browswer for the World Wide Web
+        Links - The WWW Text Browser
+        Links2 - provides a fas graphics browser that run on Linux console
+        w3m - a text-based web browser as well as a pager like `more' or `less'
+        Mutt - E mail client
+        Mlmo - a feature-rich, highly configurable and fast mail client
+        Pine - a Program for Internet News & Email
+        Freetalk - a console based Jabber client
+        Naim - a console AIM, ICQ, IRC, and Lily CMC client
+        IRSSI - terminal based IRC client for UNIX systerms
+        BitlBee - an IRC instant messaging gateway Licensed under GPL
+        Finch - the console client that comes with the Linux Pidgin Package
+        MCabber - a free software client for the Jabber/XMPP instant messging protocol
+        Centericq - a text mode menu- and window-driven instant messaging interface
+        CenterIM - a fork of CenterICQ
+        gaim-text - a text based user interface for Gaim
+        Ekg2 - an IM client for Unix systems
+        Raggle - a console RSS aggregator
+        newsbeuter - a RSS feed reader for the text console
+        Podget - a simple command line aggregator for podcasts
+        BashPodder - a podcast client written in bash
+        Snownews - a console RSS/RDF newsreader
+        rTorrent - a BitTorrent client
+        MLDonkey - a multi-platform multi-network peer-to-peer client.
+        Wget - a program implements simple and powerful content retrieval from web servers             Lftyp - a command-line file transfer program(FTP client)
+        NcFTP - the first alternative FTP client program
+        Ethereal - a network traffic analyzer, or "sniffer", for Unix
+        cURL - a command line tool for transferring files with URL syntax
+        IPTraf - a console-based network statistic utility for Linux
+        Cryptcat - a version of netcat with integrated transport encryption capabilities
+
+    Programming:
+        VIM - an advanced text editor
+        Emacs - an extensible, customizable text editor and more
+        ncurses - a library providing an API, allowing the programmer to write TUI
+        Charva - a Java framework for presenting a "graphical" user interface
+    Media:
+        MPlayer - a movie player which runs on many systems
+        VLC - a free cross-platform media player
+        Cplay - a music player offers high quality audio playback of media files
+        MPD - Music Player Daemon (MPD) is a database-using music player server
+        MPC - Music Player Command (mpc), the command line interface to MPD
+        ncmpc - a curses client for the MPD
+        Mp3blaster - a mp3 player for computers running a UNIX-like operating system
+        MOC - a console audio player for Linux/UNIX
+        cmus - a small and fast console audio Player
+        Herrie - a minimalistic music player that use command line.
+        Orpheus - a light-weight text mode menu and window-driven audio player app for CDs
+        ABCDE - a CD ripper for Linux operated entirely from the command line
+        BashBurn - a collection of scripts for CD burning in a Linux console
+        shell-fm - a lightweight console based player for Last FM radio steams.
+        lastBASH - a console/terminal based player for Last.fm
+        tagger of lltag - a frontend to tag (and rename) mp3/ogg/flac files automagically.
+        ogg123 - a command line audio player for Unix
+        mpg123 - a fast, free, minimalist, console MPEG audio player
+
+    System tool:
+        GNU Screen - a free terminal multiplexer developed by the GNU Project
+        Midnight Commander - a file manager for free operating systems
+        Vifm - a ncurses based file manager with vi like keybindings
+        dvtm - brings the concept of tiling window mangament popularized by X11 to the console
+        Twin - a textmode window environment
+        fdisk - hard disk partition table editor programs
+        gpart - a software utility which scans a hard disk drive
+        LVM - a logical volume manger for the Linux kernel
+        alsamixer - the mixer program for the Advanced Linux Sound Architecture
+        bmom - a portable bandwidth monitor and rate estimator
+        Multitail - a program for monitoring multiple log files
+        rdup - a utilty inspired by rsync and the plan9 way of doing backups
+        alsamixer - ALSA Mixer
+        htop - an ncursed-based process viewer
