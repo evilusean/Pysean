@@ -1,4 +1,4 @@
-https://wiki.archlinux.org/title/Installation_guide
+ƒhttps://wiki.archlinux.org/title/Installation_guide
 found old USB used to install ubuntu, formatted it, downloaded arch iso from a torrent, verfied, and added to the reformatted usb to make a bootable usb for install
 
 ran 'mkinitcpio -P' from chroot, missing a tonne of firmware, will need to fix, 
@@ -114,6 +114,421 @@ https://wiki.archlinux.org/title/NVIDIA
 https://www.reddit.com/r/archlinux/comments/1buwng1/how_well_does_nvidia_work_on_arch_linux/
 https://wiki.archlinux.org/title/Kernel_parameters#Parameter_list
 https://github.com/korvahannu/arch-nvidia-drivers-installation-guide
+https://bbs.archlinux.org/viewtopic.php?id=293588
+
+Ok, I am downloading the files, and moving them when they are completed off the SSD, should fix the download issue, without messing with the disks/mounting
+
+Also figured out a fix for the 'MAKEPKG' Error:
+==> ERROR: Running makepkg as root is not allowed as it can cause permanent, catastrophic damage to your system.
+https://bbs.archlinux.org/viewtopic.php?id=85614
+su -
+pacman -Sy sudo
+nano /etc/sudoers
+Then find the following lines
+# User privilege specification
+root    ALL=(ALL) ALL
+and change them to
+# User privilege specification
+root    ALL=(ALL) ALL
+user ALL=(ALL) ALL
+#can now install programs with MAKEPKG
+
+Installed wine manually, works now, instead of using lutris installer, download the .exe, load through lutris manually, on the drive you want(HDD with phunky name worked this time) 
+https://wine.htmlvalidator.com/install-wine-on-arch-linux.html
+https://wiki.archlinux.org/title/Wine
+
+found the problem - I really don't want to mess around with directories that are critical to boot, still got 10 gigs left, not critical - yet:
+/dev/sda2/usr # taking 7 / 10 gigs right here, if I can just move this directory, 70% of the root bloat will be gone
+https://bbs.archlinux.org/viewtopic.php?id=232338
+https://superuser.com/questions/1795674/moved-usr-to-another-disk-as-it-was-getting-too-big-but-now-my-system-wont-boo
+
+Next hurdle, can't delete files? tedious to 'su' 'rmdir' 'rm' for each file:
+https://wiki.archlinux.org/title/Sudo
+
+Github Desktop:
+https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
+
+NeoVimChad:
+https://nvchad.com/docs/quickstart/install/#pre-requisites
+sudo pacman -S neovim
+https://github.com/neovim/neovim
+nerdfonts
+https://lopes.id/2020-arch-installing-nerd-fonts/
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+
+Second day, everything booted correctly, most things installed, going to install Coqui-AI / OpenAI-Whisper and Anki. Get back to languages, Step 1) Escape.
+Location of Python `pip` packages: '/home' #still have 80+ gigs on SSD for home, after reinstalling, don't have to worry about this going to '/root' - less than 10 left
+pip show numpy #Location: /home/user/.local/lib/python3.10/site-packages.
+Both of these are >5 years old, both recomend pacman? - docs say if not using a venv, it can conflict with packages in /usr/ - which is on my root dir - which is already half full
+https://unix.stackexchange.com/questions/76389/recommended-way-of-installing-python-packages-on-arch
+https://www.reddit.com/r/archlinux/comments/dzbbgc/pacman_or_pip/
+https://wiki.archlinux.org/title/Python
+https://wiki.archlinux.org/title/Python_package_guidelines
+Going to use Pip, don't want to add more strain on '/root' - pip installs to '/home' 
+
+Coqui-AI:
+pip install tts #got below error message, in VScode, computer is yelling at me, maybe pip is a bad idea
+error: externally-managed-environment
+× This environment is externally managed
+╰─> To install Python packages system-wide, try 'pacman -S
+    python-xyz', where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Arch-packaged Python package,
+    create a virtual environment using 'python -m venv path/to/venv'.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip.
+    
+    If you wish to install a non-Arch packaged Python application,
+    it may be easiest to use 'pipx install xyz', which will manage a
+    virtual environment for you. Make sure you have python-pipx
+    installed via pacman.
+pacman -S python-<packagename> # use this syntax to install via pacman
+I tried with pacman(file not found), without(big mad warning), now going to try with a venv to get around the warning -
+https://wiki.archlinux.org/title/Python/Virtual_environment
+python -m venv <envname>
+python -m venv TranslaSean #created it in my 'PySean' repo that auto uploads to github, added a .gitignore to ignore it. Should be able to DL with pip now
+python virtualenv envname
+python virtualenv TranslaSean # command didn't work, maybe already in? thought it was like 'cd' for when creating new dirs
+https://wiki.archlinux.org/title/Python/Virtual_environment#Activation
+source envname/bin/activate
+source TranslaSean/bin/activate # nm, disregard last, this works to 'turn on' the venv - type this command to 'use' the venv, use it from the 'Pysean' directory
+deactivate # type this to leave venv
+tried to install using the command given from 'https://github.com/coqui-ai/TTS/tree/dev#installation' - 'pip install TTS' -  still won't work even after installing venv and updating pip
+from docs: 'python >= 3.9, < 3.12..' - my python --version is 3.12.4 - is that it? just need to create a new venv with  reduced version of python?
+https://gist.github.com/beci/53a08cb73ec8539b895a64bebbd49734
+sudo pacman -S python3.9 #installing 3.9 with pacman - didn't work?
+yay -S python39 #this works, had to lookup 
+python    3.9 -m venv TranslaSean3.9 #creating the python 3.9 venv
+source TranslaSean3.9/bin/activate #go into newly created venv
+pip install TTS #works!
+pip -m uninstall [packagename] #going to need to uninstall when TTS get's updated to work with newest version of python, each time I download - multiple gigs off of /root gone for each model
+sudo pacman -S python-TTS # run this command every morning until it updates, if it doesn't after a week(2?) - you can use the venv method, tedious, but works - if it does DL = remove venv
+
+CoquiAI - TTS : Pacman Workaround
+https://aur.archlinux.org/packages/python-tts
+git clone https://aur.archlinux.org/python-tts.git # tried to install, missing like 10 dependancies, need to install each one manually to even test if this worked
+==> ERROR: 'pacman' failed to install missing dependencies.
+==> Missing dependencies:
+  -> cython0  #installed with workaround
+  -> python-torchaudio #installed with workaround
+    -> python-soundfile #installed with workaround
+  -> python-librosa #installed with workaround
+  -> python-inflect #installed with pacman
+  -> python-anyascii #installed with pacman
+  -> python-fsspec #installed with pacman
+  -> python-aiohttp  #installed with pacman
+  -> python-flask #installed with pacman
+  -> python-pysbd #installed with workaround
+Now when installing 'python-librosa':
+==> Making package: python-librosa 0.10.2.post1-1 (Sat 10 Aug 2024 01:55:13 PM ADT)
+==> Checking runtime dependencies...
+==> Installing missing dependencies...
+error: target not found: python-audioread
+error: target not found: python-lazy-loader
+error: target not found: python-resampy
+error: target not found: python-soxr
+==> ERROR: 'pacman' failed to install missing dependencies.
+==> Missing dependencies:
+  -> python-audioread  #installed with workaround
+  -> python-decorator #installed with pacman
+  -> python-joblib #installed with pacman
+  -> python-lazy-loader #installed with pacman
+  -> python-resampy #installed with workaround
+  -> python-scikit-learn #installed with pacman
+  -> python-soxr #installed dependancies and soxr with workaround
+==> Checking buildtime dependencies...
+Need to install all these before I can do the workaround with librosa
+After installing all 20+ dependancies, by hand, I get greeted with this error when trying to install 'python-TTS', the entire reason I did the workaround was to avoid running a venv everytime
+RuntimeError: TTS requires python >= 3.9 and < 3.12 but your Python version is 3.12.4 (main, Jun  7 2024, 06:33:07) [GCC 14.1.1 20240522]
+ERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel
+==> ERROR: A failure occurred in build().
+    Aborting...
+
+OpenAI Whisper : 
+https://github.com/openai/whisper
+https://aur.archlinux.org/packages/whisper-git
+Sudo pacman didn't work, use below method:
+git clone https://aur.archlinux.org/whisper-git.git #copied from above directory
+cd whisper-git #change directory
+makepkg -si #installs
+sudo pacman -S python-tiktoken #missing some dependancies, can be installed through pacman
+sudo pacman -S python-numba #dependancy
+sudo pacman -S python-pytorch 
+sudo pacman -S python-tqdm
+#After install, time to download model to an external HDD - 
+import whisper
+model = whisper.load_model('medium', download_root='/mnt/4e1c82f2-2f37-4698-9019-ee96f71a51ca/Lang/OpenAI-Whisper')
+#model actually loaded, no error messages, no audio to test it with - legit fresh install - no files remained, but at least it loaded without an error message - and no graphics card warning
+https://platform.openai.com/docs/guides/speech-to-text/quickstart
+sudo pacman -S python-unidecode #allows for OpenAI-Whisper to use romaji(english characters) when translating Japanese
+to switch from slovak/english japanese 
+
+LibreTranslate : while messing around with OpenAI-Whisper, every single API to translate is payed(openai/google/etc) - trying to find a free open source way to translate english-slovak jp/sk-en
+https://libretranslate.com/
+https://github.com/argosopentech/argos-translate
+https://github.com/niedev/RTranslator
+
+Argos Translate - is free, runs locally, and is open source - Libre Translate is free, but an API (requires internet) and built on Argos translate - trying to install - sudo pacman won't work
+https://aur.archlinux.org/packages/argos-translate-git
+git clone https://aur.archlinux.org/argos-translate-git.git #installs the directory from above, trying the pacman workaround by using makepkg
+cd argos-translate-git #go into newly creaed directory
+makepkg -si #trying to install with makepkg, missing dependancies : 'python-pyqt5' 'python-stanza' 'python-sentencepiece-git' 'ctranslate2-git'
+sudo pacman -S python-pyqt5 #worked
+sudo pacman -S python-stanza #didn't work
+sudo pacman -S python-sentencepiece-git #didn't work
+sudo pacman -S ctranslate2-git #didn't work 
+Going to need to think about this before moving forward, 3/4 dependancies aren't installing with sudo pacman - Do I need to do the work around for each of them and THEIR OWN dependancies?
+After doing the work around for each dependancy, worked out well, only problem is with ctranslate-2 - 2 versions? which one - and the first one is 5 Gigs! 
+https://aur.archlinux.org/packages/python-ctranslate2 #updated 2024, 5 gigs, massive. 
+https://aur.archlinux.org/packages/python-ctranslate2-git # hasn't been updated since 2022~ version recomended by makepkg, if I don't have it will it still work? 
+going to go with the 2024 updated model, if it doesn't work - how to remove? not using pacman - doing workaround
+
+error: Partition / too full: 1289755 blocks needed, 1120704 blocks free
+error: not enough free disk space
+error: failed to commit transaction (not enough free disk space)
+Errors occurred, no packages were upgraded.
+Having problems with installing ctranslate2 and its dependancy cuda, I knew I was going to run out of space, here is how to mount /usr on a seperate drive (replace /opt/var/home):
+mkdir /mnt/extra
+mount /dev/sda6 /mnt/extra
+mkdir /mnt/extra/opt
+mkdir /mnt/extra/var
+mkdir /mnt/extra/home
+mount --bind /mnt/extra/opt /opt
+mount --bind /mnt/extra/var /var
+mount --bind /mnt/extra/home /home
+https://wiki.archlinux.org/index.php/Btrfs#Subvolumes
+https://wiki.archlinux.org/index.php/LVM
+I still don't want to mess around with /usr after finally getting arch linux up and running after 3 days of trying to fix the drives, 
+I don't actually need translate with STT - if it saves it as a .csv and a .txt, I can just copy and paste the .txt into google translate - use the .csv/.srt for reading/watching/timestamps
+It was more of a nice to have, take one audio of slovak - transcribe slovak text and english to a csv, also having an option for english/slovak .srt subtitles, would of been nice-can do w/o
+Going to clean cache, try to remove all the recently installed packages, just wasted last hour(s?) trying to get translation to work, would of been cool - can do without
+https://wiki.archlinux.org/title/Pacman#Cleaning_the_package_cache
+
+Resize Root Partition :
+https://bbs.archlinux.org/viewtopic.php?id=232408
+Use GParted bootable usb(don't have any extra USB's - last time my laptop broke down it took 9 months to get this one. F=-F)
+Figured out a fix, make a multi boot bootable usb (Arch linx, gparted (ubuntu?), Kali, etc) because I don't want to lose Arch linux, just in case I break something, again. 
+https://www.geeksforgeeks.org/create-a-multi-iso-bootable-usb-drive/
+https://wiki.archlinux.org/title/Ventoy
+https://aur.archlinux.org/packages/ventoy-bin
+https://kb.adamsdesk.com/application/ventoy/
+ventoy -i /dev/sd #after downloading and installing 'ventoy-bin' from AUR, use this to install to USB, after installed, simply move all .iso's to the new 'Ventoy' USB 
+Creating a new bootable USB with : Arch(Btw), Ubuntu, Tails OS, Kali, Gparted - All on one USB, added some other stuff below that are tools that can be used during boot, future sean problem 
+Other Misc Tools:
+https://www.nirsoft.net/
+https://www.hiren.info/pages/bootcd
+
+Just realized that there is no Japanese kanji/hiragana characters - will need to fix that first before building a STT script - 
+https://wiki.archlinux.org/title/Localization/Japanese
+https://unix.stackexchange.com/questions/356084/how-can-i-get-japanese-characters-to-show-properly-in-firefox-on-arch
+https://bbs.archlinux.org/viewtopic.php?id=275690
+Tried to read the transcription from OpenAI-Whispper... without the fonts - All these square hieroglyphs? where are the moon runes, I know my Japanese isn't that bad 
+sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts # installs A Japanese capable font
+yay -S ttf-freefont ttf-ms-fonts ttf-linux-libertine ttf-dejavu ttf-inconsolata ttf-ubuntu-font-family #also recomended, installed with yay
+
+Anki :
+https://wiki.archlinux.org/title/Anki
+git clone https://aur.archlinux.org/anki.git #the drill
+Installed succesfully, just need to import all the cards I saved before wiping old ubuntu system - 
+TTS still isn't working (without a venv) if I need to make more, will need to install TTS with a venv, 
+I'm taking notes on every program I needed to install, so if I do need to wipe arch linux(again), to expand '/root', it won't take me 3 days to get up and running, again..
+I'm running dangerously low on '/root' >5 gigs left, and I still need to install voice models, really could of used a larger partition, but when I did it manually, they didn't mount correct
+sudo pacman -S mpv #audio from flashcards won't work without mpv
+After wasting hours last night trying to get audio to work on flashcards the problem is 'mpv 0.38' isn't compatible with Anki, it's been an issue since at least April - that's 4 months.
+  So who knows when there is going to be a fix? I'm just going to save the .csv's so when it does get fixed, it will only take me a day to get everything back, also might reinstall Arch OS
+
+Need to get back to coding for a bit(scripting languages doesn't count - Does it?) - Installing React/NPM/Node:
+https://www.atlantic.net/dedicated-server-hosting/how-to-install-react-js-with-nginx-on-arch-linux/
+sudo pacman -S nodejs npm
+npm install -g create-react-app
+cd <directory> # change directory to whatever project being worked on
+npm install #will install all missing packages
+
+Ricing - Went with Breeze AlphaBlack and Html Wallpaper to get that matrix rain aesthetiks, we glitching the matrix with this one!:( - JS AnimASeans doesn't work with the html addon :
+https://kde.org/plasma-desktop/
+https://wiki.archlinux.org/title/KDE
+https://www.youtube.com/watch?v=AL88UNqiInc
+https://peterpf.dev/posts/ricing-arch-linux/
+https://github.com/p31d3ng/arch-auto-rice
+https://store.kde.org/browse/
+https://store.kde.org/p/1084931
+https://store.kde.org/p/2134960
+https://store.kde.org/p/1294174
+https://store.kde.org/browse?cat=423&ord=latest
+https://store.kde.org/browse?cat=380&ord=rating
+https://store.kde.org/browse?cat=423&ord=rating
+Plasma Applets/Themes/AppAddons/Widgets/Extensions(calender/monitoring/menus/etc)/Wallpaper Plugins/ColorSchemes(konsole/NVim(Chad)/Files/Apps)
+https://store.kde.org/p/1372674
+https://store.kde.org/p/998464
+https://store.kde.org/p/1081236
+https://store.kde.org/p/998901
+https://store.kde.org/p/2130967
+https://store.kde.org/p/2137308
+Music Lyrics: https://store.kde.org/p/2166807
+Nvidia or Intel Graphics Display : https://store.kde.org/p/2138473
+ZSh (Zoomer Shell - Syntax Highlighting - https://en.wikipedia.org/wiki/List_of_Generation_Z_slang):
+https://wiki.archlinux.org/title/Zsh
+https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
+https://www.youtube.com/watch?v=eLEo4OQ-cuQ
+https://gist.github.com/LukeSmithxyz/e62f26e55ea8b0ed41a65912fbebbe52
+https://aur.archlinux.org/packages/zsh-syntax-highlighting-git
+NeoVim(Chad) :
+https://github.com/rockerBOO/awesome-neovim
+https://dotfyle.com/neovim/plugins/trending
+https://nvchad.com/
+https://github.com/NvChad/NvChad
+https://github.com/neovim/neovim/blob/master/INSTALL.md #follow the install methods here, had to reinstall and then export new path to ~/.zshrc and ~/.bashrc, added colors, finally, 
+sudo pacman -S xclip #to fix the copy and paste, you need to isntall one of these, I forget which fixed it 'gvim' or 'xclip'
+
+KDE Connect(Pair old Iphone with laptop, browser ) :
+https://wiki.archlinux.org/title/KDE#KDE_Connect
+https://userbase.kde.org/KDEConnect#Installation
+https://community.kde.org/Plasma/Browser_Integration
+sudo pacman -S kdeconnect
+sudo pacman -S xdg-desktop-portal
+Download 'KDE Connect' from iOS App Store
+Can I run scripts from KDE connect? like tell have a script 'open-wine-HS' 'run-HS-bot.py' 'force-reconnect.py' or get something to run and text a json object like
+Centralized Calendar?
+Plasma Home Assistant: 
+https://store.kde.org/p/2131364
+
+Signal :
+https://archlinux.org/packages/extra/x86_64/signal-desktop/
+https://signal.org/
+
+Command Line Tools:
+Atuin : Alternative to 'up scrolling' with search feature, list feature
+ChezMoi : Shares your .config files among other devices, encrypts
+PowerTop : Intel Tool to monitor power usage - auto settings for low power usage
+Dust : Shows What files are taking up space on PC (or remote server) uses ascii bars and colors, shows what is taking up HD
+Grub-Reboot : For Dual Booting
+Bat (replacement for cat) : colored highlingting/syntax highlighting for cat(reading a file)
+
+HomeBrew : 
+https://docs.brew.sh/Homebrew-on-Linux
+https://brew.sh/
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" #will install homebrew
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)" #next 3 lines add to path
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc 
+
+fzf (Fuzzy Files) :
+sudo pacman -S fzf
+fzf -q <Search File> #search for files on your system/git commits/etc, will return any file/string that matches <Search Terms> you used, use -e flag for 'exact' match, $ '.mov$' to find files that end with .mov
+
+Btop (Similar to 'top' or 'htop' for resource monitoring-looks way cleaner for disk usage/gpu/ram usage/battery life - terminal process monitor):
+https://archlinux.org/packages/extra/x86_64/btop/
+sudo pacman -S btop
+
+Eza (colourful ls):
+https://archlinux.org/packages/extra/x86_64/eza/
+
+TLDR (shortened man pages) :
+https://archlinux.org/packages/extra/any/tldr/
+
+ZelliJ (Similar to Tmux Tiling window management for terminals / workspace) - After installing theres a learning curve (Alt+H to move a pane, most functionality already built in ) :
+https://zellij.dev/
+https://archlinux.org/packages/extra/x86_64/zellij/
+sudo pacman -R zellij
+
+Tmux (terminal windows):
+https://github.com/tmux/tmux/wiki
+https://www.youtube.com/watch?v=DzNmUNvnB04
+sudo pacman -S tmux
+~/.tmux.conf
+set -g @plugin 'christoomey/vim-tmux-navigator'
+set -g @plugin 'catpuccin/tmux'
+set -g @plugin 'tmux-plugins/tmux-yank'
+set -g mouse on
+set -g base-index 1
+set -g pane-base-index 1
+set-window-option -g pane-base-index 1
+set-option -g renumber-windows on
+set-window-option -g mode-keys vi
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi C-v send-keys -X rectangle-toggle
+bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
+bind '"' split-window -v -c '#{pane_current_path}'
+bind % split-window -h -c '#{pane_current_path}'
+
+Tmux Plugin Manager(TPM):
+https://github.com/tmux-plugins/tpm
+https://github.com/christoomey/vim-tmux-navigator #will allow you to navigate TMUX with 'Ctrl" + H/J/K/L keys similar to NVim 
+
+Crisis: Danger or opportunity? - Apparently I royally broke something, by trying to recursively fix permissions from root to ArchSean - Going to take this 'opportunity' to fix root, since I'm going to need to install again anyways
+Broke trying to install mpd, was trying to rice my CLI with tmux, audio, and video player in the terminal - but something broke - time for a reinstall, need to fix root partition to minimum 40 / 50 gigs - there goes a few days
+sudo chown -R ArchSean:ArchSean /var /etc /usr /var/lib /var/log #never recursively do permissions again
+sudo: /etc/sudo.conf is owned by uid 1000, should be 0
+│sudo: /usr/bin/sudo must be owned by uid 0 and have the setuid bit set
+https://askubuntu.com/questions/452860/usr-bin-sudo-must-be-owned-by-uid-0-and-have-the-setuid-bit-set
+
+Reinstalled Arch, future sean will never again recursively add permissions, expanded root with gparted, up to 40 gigs, can install multiple models now for TTS and STT (each one is 5+ gigs on root)
+Forgot to backup home, need to reinstall all packages again, at least I took notes..
+Mounted HDD's, changed the mnt point to /dev/sdX instead, should write the correct name into the fstab file, so no phunky named drives this time around, great success? still need to install every other package though
+
+Got everything up and running in a day, except the TTS and STT models, but actually have the space to store them in '/root' now, so a pyrrhic victory. 
+Working on getting mpd/ncmpcpp(?) installed, never doing recursive chown again, that broke everything - 'learning experience' - continue ricing arch linux, having tmux + nvim terminals = aesthetiks 
+
+mpd is a terminal run music player, where you can add visualizeASeans, you can also download apps on your phone to control the main machine, you can control it over the network once you get the configs right,
+ncmpcpp is a client for running MPD in the terminal (looks aesthetik AF) - I can run over a network my entire media - music - languages - videos - from the terminal, in ascii, we burning the rice with this one boyz
+'/etc/mpd.conf' '~/.mpd/mpd.conf' and '~/.ncmpcpp/config' are where the configs are located. I keep getting this error, I've been working on this since last night:
+  server_socket: bind to '0.0.0.0:6600' failed (continuing anyway, because binding to '[::]:6600' succeeded): Failed to bind socket: Address already in use
+  output: No 'audio_output' defined in config file
+  ALSA lib dlmisc.c:339:(snd_dlobj_cache_get0) Cannot open shared library libasound_module_pcm_pipewire.so (/home/linuxbrew/.linuxbrew/Cellar/alsa-lib/1.2.12/lib/alsa-lib/libasound_module_pcm_pipewire.so:
+  cannot open shared object file: No such file or directory)
+  alsa_output: Error opening default ALSA device: No such device or address
+  output: Successfully detected a pulse audio device
+I just need to fix the config files, going to leave all resources/links here for future sean to figure out a fix, Welcome to the ricefields MF'er : https://www.youtube.com/watch?v=i8a3gjt_Ar0
+https://www.musicpd.org/
+https://mpd.readthedocs.io/en/stable/user.html
+https://rybczak.net/ncmpcpp/
+https://rybczak.net/ncmpcpp/installation/
+Commented out everything in '/etc/mpd.conf' so the config files don't clash, after reading docs, they recomended '/etc/mpd.conf' so commented out other file, they also used another locASean '~/.config/mpd/mpd.conf'
+'music_directory "~/Music"' #use absolute file directories, when running as root '~/' won't run as '/home/ArchSean/...' it will run as '/' (relative path)
+Going to set up brand new folders on one of my spare partitions on HDD, 250 gigs for music videos and languages should be enough, created new directories, added dummy files(empty) with 'touch' command 
+systemctl --user start mpd #ran this instead of 'mpd' and I didn't get the error?
+systemctl --user enable mpd #To auto-start MPD upon login, typed this
+#The “music directory” is where you store your music files. MPD stores all relevant meta information about all songs in its “database”. 
+#Whenever you add, modify or remove songs in the music directory, you have to update the database, for example with mpc:
+mpc update
+#MPD has various storage plugins of which multiple instances can be “mounted” into the music directory. This way, you can use local music, file servers and USB sticks at the same time. Example:
+mpc mount foo nfs://192.168.1.4/export/mp3
+mpc mount usbstick udisks://by-uuid-2F2B-D136
+mpc unmount usbstick
+#MPD’s neighbor plugins can be helpful with finding mountable storages:
+mpc listneighbors
+sudo ncmpcpp #seems to resolve the connection problem, I still can't see any media, 
+https://wiki.archcraft.io/blog/01-post-mpd/
+ncmpcpp CheatSheet :
+https://pkgbuild.com/~jelle/ncmpcpp/
+mpd --verbose --stdout --no-daemon #used to debug for error messages
+Downloading some albums to test, only had one song downloaded from youtube with no metadata, that might be it
+
+Graphics card wasn't working, tried to fix, installed packages that installed on boot, ran out of space (again), opened in gparted, 
+in gparted, manually added more space to boot, reformatted to fat32(for boot) and I accidently reformatted the entire boot drive, now I can't boot, reinstalling arch, againß
+Manually partitioned drives 2Gig = Boot (was 200mb) 45GB = Root (was 20) and rest can go to  /home - this should theoretically be the last time, getting graphics working before I start installing packages again
+so If something does break, again, I won't have sunk a day/night/morning into it before something critical broke 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Ok, I am downloading the files, and moving them when they are completed off the SSD, should fix the download issue, without messing with the disks/mounting
 
