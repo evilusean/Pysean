@@ -456,3 +456,5 @@ sudo: /etc/sudo.conf is owned by uid 1000, should be 0
 │sudo: /usr/bin/sudo must be owned by uid 0 and have the setuid bit set
 https://askubuntu.com/questions/452860/usr-bin-sudo-must-be-owned-by-uid-0-and-have-the-setuid-bit-set
 
+Reinstalled Arch, future sean will never again recursively add permissions, expanded root with gparted, up to 40 gigs, can install multiple models now for TTS and STT (each one is 5+ gigs on root)
+Forgot to backup home, need to reinstall all packages again, at least I took notes..
