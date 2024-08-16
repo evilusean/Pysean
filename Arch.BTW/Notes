@@ -448,4 +448,11 @@ bind % split-window -h -c '#{pane_current_path}'
 Tmux Plugin Manager(TPM):
 https://github.com/tmux-plugins/tpm
 https://github.com/christoomey/vim-tmux-navigator #will allow you to navigate TMUX with 'Ctrl" + H/J/K/L keys similar to NVim 
-  
+
+Crisis: Danger or opportunity? - Apparently I royally broke something, by trying to recursively fix permissions from root to ArchSean - Going to take this 'opportunity' to fix root, since I'm going to need to install again anyways
+Broke trying to install mpd, was trying to rice my CLI with tmux, audio, and video player in the terminal - but something broke - time for a reinstall, need to fix root partition to minimum 40 / 50 gigs - there goes a few days
+sudo chown -R ArchSean:ArchSean /var /etc /usr /var/lib /var/log #never recursively do permissions again
+sudo: /etc/sudo.conf is owned by uid 1000, should be 0
+│sudo: /usr/bin/sudo must be owned by uid 0 and have the setuid bit set
+https://askubuntu.com/questions/452860/usr-bin-sudo-must-be-owned-by-uid-0-and-have-the-setuid-bit-set
+
