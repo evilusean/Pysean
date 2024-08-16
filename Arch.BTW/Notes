@@ -481,13 +481,19 @@ Commented out everything in '/etc/mpd.conf' so the config files don't clash, aft
 'music_directory "~/Music"' #use absolute file directories, when running as root '~/' won't run as '/home/ArchSean/...' it will run as '/' (relative path)
 Going to set up brand new folders on one of my spare partitions on HDD, 250 gigs for music videos and languages should be enough, created new directories, added dummy files(empty) with 'touch' command 
 systemctl --user start mpd #ran this instead of 'mpd' and I didn't get the error?
-
-
-
-
-
-
-
+systemctl --user enable mpd #To auto-start MPD upon login, typed this
+#The “music directory” is where you store your music files. MPD stores all relevant meta information about all songs in its “database”. 
+#Whenever you add, modify or remove songs in the music directory, you have to update the database, for example with mpc:
+mpc update
+#MPD has various storage plugins of which multiple instances can be “mounted” into the music directory. This way, you can use local music, file servers and USB sticks at the same time. Example:
+mpc mount foo nfs://192.168.1.4/export/mp3
+mpc mount usbstick udisks://by-uuid-2F2B-D136
+mpc unmount usbstick
+#MPD’s neighbor plugins can be helpful with finding mountable storages:
+mpc listneighbors
+sudo ncmpcpp #seems to resolve the connection problem, I still can't see any media, 
+https://wiki.archcraft.io/blog/01-post-mpd/
+https://pkgbuild.com/~jelle/ncmpcpp/
 
 
 
