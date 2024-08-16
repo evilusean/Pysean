@@ -493,9 +493,10 @@ mpc unmount usbstick
 mpc listneighbors
 sudo ncmpcpp #seems to resolve the connection problem, I still can't see any media, 
 https://wiki.archcraft.io/blog/01-post-mpd/
+ncmpcpp CheatSheet :
 https://pkgbuild.com/~jelle/ncmpcpp/
-
-
+mpd --verbose --stdout --no-daemon #used to debug for error messages
+Downloading some albums to test, only had one song downloaded from youtube with no metadata, that might be it
 
 
 
