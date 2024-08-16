@@ -462,3 +462,14 @@ Mounted HDD's, changed the mnt point to /dev/sdX instead, should write the corre
 
 Got everything up and running in a day, except the TTS and STT models, but actually have the space to store them in '/root' now, so a pyrrhic victory. 
 Working on getting mpd/ncmpcpp(?) installed, never doing recursive chown again, that broke everything - 'learning experience' - continue ricing arch linux, having tmux + nvim terminals = aesthetiks 
+
+mpd is a terminal run music player, where you can add visualizeASeans, you can also download apps on your phone to control the main machine, you can control it over the network once you get the configs right,
+ncmpcpp is a client for running MPD in the terminal (looks aesthetik AF) - I can run over a network my entire media - music - languages - videos - from the terminal, in ascii, we burning the rice with this one boyz
+'/etc/mpd.conf' '~/.mpd/mpd.conf' and '~/.ncmpcpp/config' are where the configs are located. I keep getting this error, I've been working on this since last night:
+  server_socket: bind to '0.0.0.0:6600' failed (continuing anyway, because binding to '[::]:6600' succeeded): Failed to bind socket: Address already in use
+  output: No 'audio_output' defined in config file
+  ALSA lib dlmisc.c:339:(snd_dlobj_cache_get0) Cannot open shared library libasound_module_pcm_pipewire.so (/home/linuxbrew/.linuxbrew/Cellar/alsa-lib/1.2.12/lib/alsa-lib/libasound_module_pcm_pipewire.so:
+  cannot open shared object file: No such file or directory)
+  alsa_output: Error opening default ALSA device: No such device or address
+  output: Successfully detected a pulse audio device
+I just need to fix the config files, going to leave all resources/links here for future sean to figure out a fix, 
