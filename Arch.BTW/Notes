@@ -477,8 +477,10 @@ https://www.musicpd.org/
 https://mpd.readthedocs.io/en/stable/user.html
 https://rybczak.net/ncmpcpp/
 https://rybczak.net/ncmpcpp/installation/
-Commented out everything in '/etc/mpd.conf' so the config files don't clash,   
-
+Commented out everything in '/etc/mpd.conf' so the config files don't clash, after reading docs, they recomended '/etc/mpd.conf' so commented out other file, they also used another locASean '~/.config/mpd/mpd.conf'
+'music_directory "~/Music"' #use absolute file directories, when running as root '~/' won't run as '/home/ArchSean/...' it will run as '/' (relative path)
+Going to set up brand new folders on one of my spare partitions on HDD, 250 gigs for music videos and languages should be enough, created new directories, added dummy files(empty) with 'touch' command 
+systemctl --user start mpd #ran this instead of 'mpd' and I didn't get the error?
 
 
 
