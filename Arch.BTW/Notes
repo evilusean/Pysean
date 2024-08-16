@@ -109,6 +109,11 @@ lspci -k | grep -A 2 -E "(VGA | 3D)" #command for checking GPU
 01:00.0 3D controller: NVIDIA Corporation GP107M [GeForce GTX 1050 Mobile] (rev a1)
         Subsystem: ASUSTeK Computer Inc. Device 15e0
         Kernel driver in use: nouveau
+https://wiki.archlinux.org/title/NVIDIA_Optimus#Use_NVIDIA_graphics_only
+https://wiki.archlinux.org/title/NVIDIA
+https://www.reddit.com/r/archlinux/comments/1buwng1/how_well_does_nvidia_work_on_arch_linux/
+https://wiki.archlinux.org/title/Kernel_parameters#Parameter_list
+https://github.com/korvahannu/arch-nvidia-drivers-installation-guide
 
 Ok, I am downloading the files, and moving them when they are completed off the SSD, should fix the download issue, without messing with the disks/mounting
 
