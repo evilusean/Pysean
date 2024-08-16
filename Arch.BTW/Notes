@@ -459,3 +459,6 @@ https://askubuntu.com/questions/452860/usr-bin-sudo-must-be-owned-by-uid-0-and-h
 Reinstalled Arch, future sean will never again recursively add permissions, expanded root with gparted, up to 40 gigs, can install multiple models now for TTS and STT (each one is 5+ gigs on root)
 Forgot to backup home, need to reinstall all packages again, at least I took notes..
 Mounted HDD's, changed the mnt point to /dev/sdX instead, should write the correct name into the fstab file, so no phunky named drives this time around, great success? still need to install every other package though
+
+Got everything up and running in a day, except the TTS and STT models, but actually have the space to store them in '/root' now, so a pyrrhic victory. 
+Working on getting mpd/ncmpcpp(?) installed, never doing recursive chown again, that broke everything - 'learning experience' - continue ricing arch linux, having tmux + nvim terminals = aesthetiks 
