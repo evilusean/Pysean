@@ -1,0 +1,24 @@
+Having a lot of trouble with my graphics card not running on 2 different OS' and using this to take notes. 
+NVIDIA GPU RESOURCES (why I started this entire eneavour to begin with):
+https://rtfm.co.ua/en/arch-linux-nvidia-driver-installation-for-geforce-gtx-1050-ti/
+https://wiki.archlinux.org/title/NVIDIA
+lspci -k | grep -A 2 -E "(VGA | 3D)" #command for checking GPU 
+01:00.0 3D controller: NVIDIA Corporation GP107M [GeForce GTX 1050 Mobile] (rev a1)
+        Subsystem: ASUSTeK Computer Inc. Device 15e0
+        Kernel driver in use: nouveau
+https://wiki.archlinux.org/title/NVIDIA_Optimus#Use_NVIDIA_graphics_only
+https://wiki.archlinux.org/title/NVIDIA
+https://www.reddit.com/r/archlinux/comments/1buwng1/how_well_does_nvidia_work_on_arch_linux/
+https://wiki.archlinux.org/title/Kernel_parameters#Parameter_list
+https://github.com/korvahannu/arch-nvidia-drivers-installation-guide
+https://bbs.archlinux.org/viewtopic.php?id=293588
+sudo pacman -S nvidia-dkms nvidia-utils nvidia-settings nvidia-prime opencl-nvidia switcheroo-control nvidia
+https://wiki.archlinux.org/title/PRIME#PRIME_render_offload
+prime-run glxinfo | grep "OpenGL renderer"
+prime-run vulkaninfo 
+cat /sys/bus/pci/devices/0000:01:00.0/power/runtime_status #to check if nvidia card is on
+https://wiki.archlinux.org/title/External_GPU#Xorg_rendered_on_iGPU,_PRIME_render_offload_to_eGPU
+#below seems to be the fix for getting a wine/lutris game to run:
+https://www.reddit.com/r/linux_gaming/comments/s4lung/lutris_ignores_primerun/?rdt=44354
+https://github.com/Askannz/optimus-manager
+https://aur.archlinux.org/packages/optimus-manager-git
