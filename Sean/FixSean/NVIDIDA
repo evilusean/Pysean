@@ -22,3 +22,20 @@ https://wiki.archlinux.org/title/External_GPU#Xorg_rendered_on_iGPU,_PRIME_rende
 https://www.reddit.com/r/linux_gaming/comments/s4lung/lutris_ignores_primerun/?rdt=44354
 https://github.com/Askannz/optimus-manager
 https://aur.archlinux.org/packages/optimus-manager-git
+FIXED! -Night and day difference, instead of a 5 minute load time, it's less than 30 seconds, get vulkan to work with lutris and you win:
+https://bbs.archlinux.org/viewtopic.php?id=265351
+https://wiki.archlinux.org/title/Vulkan
+https://www.reddit.com/r/linux_gaming/comments/s4lung/lutris_ignores_primerun/?rdt=44354
+These are the steps that got it working in my case:
+        Configuration (in lutris, for the game specific)
+        System option tab
+        Show advanced options
+        "Enable NVIDIA prime refer offload" = on / Set to NVIDIA GPU
+        Vulkan ICD loader = Nvidia proprietary / Install Vulkan on Arch, this took some work, but once I got it, changed everything
+I forget exactly which sudo pacman -S vulkan package did it, but it was one of them, pretty sure top one wasn't it, use the bottom one
+[root@ArchSean ArchSean]# export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json 
+[root@ArchSean ArchSean]# export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/nvidia_icd.json
+
+
+
+
