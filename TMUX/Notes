@@ -1,0 +1,23 @@
+Tmux (terminal windows):
+https://github.com/tmux/tmux/wiki
+https://www.youtube.com/watch?v=DzNmUNvnB04
+sudo pacman -S tmux
+~/.tmux.conf
+set -g @plugin 'christoomey/vim-tmux-navigator'
+set -g @plugin 'catpuccin/tmux'
+set -g @plugin 'tmux-plugins/tmux-yank'
+set -g mouse on
+set -g base-index 1
+set -g pane-base-index 1
+set-window-option -g pane-base-index 1
+set-option -g renumber-windows on
+set-window-option -g mode-keys vi
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi C-v send-keys -X rectangle-toggle
+bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
+bind '"' split-window -v -c '#{pane_current_path}'
+bind % split-window -h -c '#{pane_current_path}'
+
+Tmux Plugin Manager(TPM):
+https://github.com/tmux-plugins/tpm
+https://github.com/christoomey/vim-tmux-navigator #will allow you to navigate TMUX with 'Ctrl" + H/J/K/L keys similar to NVim 
