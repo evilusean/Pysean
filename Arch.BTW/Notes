@@ -922,8 +922,8 @@ Graphics card wasn't working, tried to fix, installed packages that installed on
 in gparted, manually added more space to boot, reformatted to fat32(for boot) and I accidently reformatted the entire boot drive, now I can't boot, reinstalling arch, againß
 Manually partitioned drives 2Gig = Boot (was 200mb) 45GB = Root (was 20) and rest can go to  /home - this should theoretically be the last time, getting graphics working before I start installing packages again
 so If something does break, again, I won't have sunk a day/night/morning into it before something critical broke 
-
-
+Fixed GPU! That probably wasn't working for at least 2 years? since I installed ubuntu at the very least, problem was vulkan, fix below :
+https://github.com/evilusean/Pysean/blob/main/Sean/FixSean/NVIDIDA
 
 
 
