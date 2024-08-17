@@ -10,10 +10,27 @@ NCMPCPP (NCurses Music Player Client Plus Plus) :
 https://wiki.archlinux.org/title/Ncmpcpp
 https://rybczak.net/ncmpcpp/
 https://rybczak.net/ncmpcpp/installation/
+https://strugglers.net/posts/2023/ncmpcpp-a-modernish-text-based-music-setup-on-linux/
+https://github.com/grifferz/ncmpcpp-setup
+https://gist.github.com/lirenlin/f92c8e849530ebf66604
+https://gist.github.com/johand/66b4c229447c2d879f0d
+https://wiki.archlinux.org/title/Ncmpcpp
+
+My Conf Files:
+/etc/mpd.conf
+~/.ncmpcpp/config
 
 systemctl --user enable --now mpd.service
 systemctl --user start mpd #ran this instead of 'mpd' and I didn't get the error?
 systemctl --user enable mpd #To auto-start MPD upon login, typed this
+sudo service mpd stop #if you got the following message: Failed to bind to '[::]:6600': Address already in use
+
+mpc update #   This re-scans your music directory and creates a database of stored tracks. 
+mpc seekthrough +00:00:10 # Seek the current playing track 10s forward
+mpc next : Skip to the next track
+mpc prev : Play the previous track
+mpc toggle : Play queue if paused, and pause if playing
+mpc volume +2 : Raise volume by 2%. Use a different value or use minus instead of plus to reduce volume
 
 mpd is a terminal run music player, where you can add visualizeASeans, you can also download apps on your phone to control the main machine, you can control it over the network once you get the configs right,
 ncmpcpp is a client for running MPD in the terminal (looks aesthetik AF) - I can run over a network my entire media - music - languages - videos - from the terminal, in ascii, we burning the rice with this one boyz
