@@ -28,6 +28,9 @@ https://www.youtube.com/watch?v=m8C0Cq9Uv9o
 I Read the Entire Neovim User Manual :
 https://www.youtube.com/watch?v=rT-fbLFOCy0
 
+NeoTree Show Hidden Files LUA:
+https://github.com/nvim-neo-tree/neo-tree.nvim/discussions/353
+
 Personalize Theme: <space> + T + H
 Find Files Menu: <space> + F + F
 Find Open Files in buffers: <space> + F + B  / tab to go forward / shift + tab to go backwards / close : <space> + x
