@@ -49,6 +49,7 @@ https://github.com/erikdubois/arcolinux-nemesis
 '/usr/share/doc/mpd/mpdconf.example' #where example conf is 
 '/etc/mpd.conf' #where to place your conf
 
+Error! :
 systemctl --user enable --now mpd.service
 Created symlink '/home/ArchSean/.config/systemd/user/default.target.wants/mpd.service' → '/usr/lib/systemd/user/mpd.service'.
 Job for mpd.service failed because the control process exited with error code.
@@ -56,8 +57,17 @@ See "systemctl --user status mpd.service" and "journalctl --user -xeu mpd.servic
 systemctl --user start mpd
 Job for mpd.service failed because the control process exited with error code.
 See "systemctl --user status mpd.service" and "journalctl --user -xeu mpd.service" for details.
-
-
+Aug 17 08:04:54 ArchSean systemd[637]: Starting Music Player Daemon...
+Aug 17 08:04:54 ArchSean mpd[23515]: Ignoring the 'pid_file' setting in systemd mode
+Aug 17 08:04:54 ArchSean mpd[23515]: Aug 17 08:04 : decoder: Decoder plugin 'wildmidi' is unavailable: configuration file does not exist: /etc/timidity/timidity.cfg
+Aug 17 08:04:54 ArchSean mpd[23515]: Aug 17 08:04 : exception: Failed to read from /mnt/sdb2/Media/mpd/database: Is a directory
+Aug 17 08:04:54 ArchSean mpd[23515]: Aug 17 08:04 : exception: Failed to open database plugin; db file "/mnt/sdb2/Media/mpd/database" is not a regular file
+Aug 17 08:04:54 ArchSean systemd[637]: mpd.service: Main process exited, code=exited, status=1/FAILURE
+Aug 17 08:04:54 ArchSean systemd[637]: mpd.service: Failed with result 'exit-code'.
+Aug 17 08:04:54 ArchSean systemd[637]: Failed to start Music Player Daemon.
+Fix : Will update the conf with correct settings, had to fix, comment out below, and next line changed directory + create a file:
+#sticker_file "/mnt/sdb2/Media/mdb/sticker.sql"
+db_file "/mnt/sdb2/Media/mpd/mpd.db"
 
 
 
