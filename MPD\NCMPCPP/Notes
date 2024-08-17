@@ -3,6 +3,8 @@ https://wiki.archlinux.org/title/Music_Player_Daemon
 NCMPCPP (NCurses Music Player Client Plus Plus) :
 https://wiki.archlinux.org/title/Ncmpcpp
 
+systemctl --user enable --now mpd.service
+
 mpd is a terminal run music player, where you can add visualizeASeans, you can also download apps on your phone to control the main machine, you can control it over the network once you get the configs right,
 ncmpcpp is a client for running MPD in the terminal (looks aesthetik AF) - I can run over a network my entire media - music - languages - videos - from the terminal, in ascii, we burning the rice with this one boyz
 '/etc/mpd.conf' '~/.mpd/mpd.conf' and '~/.ncmpcpp/config' are where the configs are located. I keep getting this error, I've been working on this since last night:
