@@ -3,6 +3,40 @@ https://wiki.archlinux.org/title/Music_Player_Daemon
 NCMPCPP (NCurses Music Player Client Plus Plus) :
 https://wiki.archlinux.org/title/Ncmpcpp
 
+mpd is a terminal run music player, where you can add visualizeASeans, you can also download apps on your phone to control the main machine, you can control it over the network once you get the configs right,
+ncmpcpp is a client for running MPD in the terminal (looks aesthetik AF) - I can run over a network my entire media - music - languages - videos - from the terminal, in ascii, we burning the rice with this one boyz
+'/etc/mpd.conf' '~/.mpd/mpd.conf' and '~/.ncmpcpp/config' are where the configs are located. I keep getting this error, I've been working on this since last night:
+  server_socket: bind to '0.0.0.0:6600' failed (continuing anyway, because binding to '[::]:6600' succeeded): Failed to bind socket: Address already in use
+  output: No 'audio_output' defined in config file
+  ALSA lib dlmisc.c:339:(snd_dlobj_cache_get0) Cannot open shared library libasound_module_pcm_pipewire.so (/home/linuxbrew/.linuxbrew/Cellar/alsa-lib/1.2.12/lib/alsa-lib/libasound_module_pcm_pipewire.so:
+  cannot open shared object file: No such file or directory)
+  alsa_output: Error opening default ALSA device: No such device or address
+  output: Successfully detected a pulse audio device
+I just need to fix the config files, going to leave all resources/links here for future sean to figure out a fix, Welcome to the ricefields MF'er : https://www.youtube.com/watch?v=i8a3gjt_Ar0
+https://www.musicpd.org/
+https://mpd.readthedocs.io/en/stable/user.html
+https://rybczak.net/ncmpcpp/
+https://rybczak.net/ncmpcpp/installation/
+Commented out everything in '/etc/mpd.conf' so the config files don't clash, after reading docs, they recomended '/etc/mpd.conf' so commented out other file, they also used another locASean '~/.config/mpd/mpd.conf'
+'music_directory "~/Music"' #use absolute file directories, when running as root '~/' won't run as '/home/ArchSean/...' it will run as '/' (relative path)
+Going to set up brand new folders on one of my spare partitions on HDD, 250 gigs for music videos and languages should be enough, created new directories, added dummy files(empty) with 'touch' command 
+systemctl --user start mpd #ran this instead of 'mpd' and I didn't get the error?
+systemctl --user enable mpd #To auto-start MPD upon login, typed this
+#The “music directory” is where you store your music files. MPD stores all relevant meta information about all songs in its “database”. 
+#Whenever you add, modify or remove songs in the music directory, you have to update the database, for example with mpc:
+mpc update
+#MPD has various storage plugins of which multiple instances can be “mounted” into the music directory. This way, you can use local music, file servers and USB sticks at the same time. Example:
+mpc mount foo nfs://192.168.1.4/export/mp3
+mpc mount usbstick udisks://by-uuid-2F2B-D136
+mpc unmount usbstick
+#MPD’s neighbor plugins can be helpful with finding mountable storages:
+mpc listneighbors
+sudo ncmpcpp #seems to resolve the connection problem, I still can't see any media, 
+https://wiki.archcraft.io/blog/01-post-mpd/
+ncmpcpp CheatSheet :
+https://pkgbuild.com/~jelle/ncmpcpp/
+mpd --verbose --stdout --no-daemon #used to debug for error messages
+Downloading some albums to test, only had one song downloaded from youtube with no metadata, that might be it
 Arco Install (Same script can be used for Arch, btw): 
 https://www.youtube.com/watch?v=m231VFWeDRA
 https://arcolinux.com/how-to-install-mpd-and-ncmpcpp-on-any-arcolinux-desktop/
