@@ -4,6 +4,10 @@ https://github.com/NvChad/NvChad
 One Liner:
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
+NeoVimChad New Setup(2024) Vs Breaking Change:
+https://www.youtube.com/watch?v=TNRFegMqbWA
+https://github.com/ProgrammingRainbow/NvChad-2.5
+
 Undo Tree (Shows a tree of undos - not with NVChad):
 https://github.com/mbbill/undotree
 
