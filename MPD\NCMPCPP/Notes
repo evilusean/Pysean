@@ -44,6 +44,8 @@ https://www.youtube.com/watch?v=m231VFWeDRA
 https://arcolinux.com/how-to-install-mpd-and-ncmpcpp-on-any-arcolinux-desktop/
 https://github.com/erikdubois/arcolinux-nemesis
 
+'/usr/share/doc/mpd/mpdconf.example' #where example conf is 
+'/etc/mpd.conf' #where to place your conf
 
 
 
