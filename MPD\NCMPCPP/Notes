@@ -1,7 +1,15 @@
 MPD (Music Player Daemon):
+https://www.musicpd.org/
+https://mpd.readthedocs.io/en/stable/user.html
 https://wiki.archlinux.org/title/Music_Player_Daemon
+https://wiki.archlinux.org/title/Music_Player_Daemon/Tips_and_tricks
+https://man.archlinux.org/man/mpd.conf.5.en
+https://forum.endeavouros.com/t/beginner-s-guide-to-setting-up-and-using-mpd/16831
+
 NCMPCPP (NCurses Music Player Client Plus Plus) :
 https://wiki.archlinux.org/title/Ncmpcpp
+https://rybczak.net/ncmpcpp/
+https://rybczak.net/ncmpcpp/installation/
 
 systemctl --user enable --now mpd.service
 systemctl --user start mpd #ran this instead of 'mpd' and I didn't get the error?
