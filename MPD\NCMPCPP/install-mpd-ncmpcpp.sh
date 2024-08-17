@@ -2,6 +2,8 @@
     #it will scan for music and server music to its clients
     #https://wiki.archlinux.org/index.php/Music_Player_Daemon
 
+    #OLD SCRIPT, 2 YEARS SINCE UPDATE, DOESN'T WORK ANYMORE
+
     sudo pacman -S mpd --noconfirm --needed
     sudo pacman -S mpc --noconfirm --needed
 
