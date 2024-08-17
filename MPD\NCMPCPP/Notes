@@ -24,6 +24,7 @@ systemctl --user enable --now mpd.service
 systemctl --user start mpd #ran this instead of 'mpd' and I didn't get the error?
 systemctl --user enable mpd #To auto-start MPD upon login, typed this
 sudo service mpd stop #if you got the following message: Failed to bind to '[::]:6600': Address already in use
+mpd --verbose --stdout --no-daemon #run this to watch it update DB and debug
 
 mpc update #   This re-scans your music directory and creates a database of stored tracks. 
 mpc seekthrough +00:00:10 # Seek the current playing track 10s forward
