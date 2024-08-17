@@ -896,6 +896,7 @@ ncmpcpp CheatSheet :
 https://pkgbuild.com/~jelle/ncmpcpp/
 mpd --verbose --stdout --no-daemon #used to debug for error messages
 Downloading some albums to test, only had one song downloaded from youtube with no metadata, that might be it
+Got it working, only took one OS reinstall, and 2 days? Worth. very quick even with 100's of gigs of music, flac, audio works, configs are set, now that it works, I can customize, aesthetik AF
 
 Graphics card wasn't working, tried to fix, installed packages that installed on boot, ran out of space (again), opened in gparted, 
 in gparted, manually added more space to boot, reformatted to fat32(for boot) and I accidently reformatted the entire boot drive, now I can't boot, reinstalling arch, againß
