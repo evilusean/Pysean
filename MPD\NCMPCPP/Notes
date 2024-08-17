@@ -4,6 +4,8 @@ NCMPCPP (NCurses Music Player Client Plus Plus) :
 https://wiki.archlinux.org/title/Ncmpcpp
 
 systemctl --user enable --now mpd.service
+systemctl --user start mpd #ran this instead of 'mpd' and I didn't get the error?
+systemctl --user enable mpd #To auto-start MPD upon login, typed this
 
 mpd is a terminal run music player, where you can add visualizeASeans, you can also download apps on your phone to control the main machine, you can control it over the network once you get the configs right,
 ncmpcpp is a client for running MPD in the terminal (looks aesthetik AF) - I can run over a network my entire media - music - languages - videos - from the terminal, in ascii, we burning the rice with this one boyz
@@ -47,6 +49,13 @@ https://github.com/erikdubois/arcolinux-nemesis
 '/usr/share/doc/mpd/mpdconf.example' #where example conf is 
 '/etc/mpd.conf' #where to place your conf
 
+systemctl --user enable --now mpd.service
+Created symlink '/home/ArchSean/.config/systemd/user/default.target.wants/mpd.service' → '/usr/lib/systemd/user/mpd.service'.
+Job for mpd.service failed because the control process exited with error code.
+See "systemctl --user status mpd.service" and "journalctl --user -xeu mpd.service" for details.
+systemctl --user start mpd
+Job for mpd.service failed because the control process exited with error code.
+See "systemctl --user status mpd.service" and "journalctl --user -xeu mpd.service" for details.
 
 
 
