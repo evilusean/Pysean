@@ -133,9 +133,11 @@ https://github.com/evilusean/Pysean/blob/main/MPD%5CNCMPCPP/AlbumArtAuto.sh
 sudo chmod +x AlbumArt.sh
 cd /mnt/sdb2/Media/mpd/
 ./AlbumArt.sh
-
-
-
+Future Sean : Make sure to add this to the config, in order to update kunst/terminal window - every time a song is played it will refresh -
+#~/.ncmpcpp/config
+execute_on_song_change = "/mnt/sdb2/Media/mpd/AlbumArt.sh"
+I'm still missing a tonne of embeds, even with exfiltool, and a custom script, like ~25% of the !YT downloads have their embedded album art
+So either I fix it or just add a default (I Should probably do this anyway) - been working on this since I woke up
 
 
 
