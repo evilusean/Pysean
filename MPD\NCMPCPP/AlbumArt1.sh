@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# Requires mpc and exiftool
+#this script, isn't checking, would need to update either mpd.conf or ncmpcpp.config to run on change
+# Requires mpc, kitty and exiftool
 
 # Set the directory where your music is stored
-MUSIC_DIR=$HOME/documents/music
+MUSIC_DIR=$HOME/docum 
 
 # Set the temporary file for the extracted album art
 COVER=/tmp/cover.jpg
