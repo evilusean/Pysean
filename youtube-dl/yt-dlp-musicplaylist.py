@@ -1,6 +1,7 @@
 import os
 import yt_dlp
 import re
+import datetime
 
 def download_playlist(playlist_url, output_folder, subfolder_name):
     """Downloads a YouTube playlist and saves metadata and cover art.
@@ -8,7 +9,7 @@ def download_playlist(playlist_url, output_folder, subfolder_name):
     Args:
         playlist_url (str): The URL of the YouTube playlist.
         output_folder (str): The main folder to save the downloaded files and metadata.
-        subfolder_name (str): The name of the subfolder within the main folder.
+        subfolder_name (str): The name of the subfolder within the main folder.     
     """
 
     # Create the output folder if it doesn't exist
@@ -32,6 +33,8 @@ def download_playlist(playlist_url, output_folder, subfolder_name):
                 title = entry['title']
                 artist, song_name = extract_artist_song(title)
                 thumbnail = entry['thumbnails'][0]['url'] if 'thumbnails' in entry else None
+                upload_date_str = entry['upload_date']
+                upload_date = datetime.datetime.strptime(upload_date_str, '%Y%m%d').strftime('%Y-%m-%d')
 
                 # Create a file for metadata
                 metadata_file = os.path.join(output_folder, subfolder_name, f"{title} - {song_name}.txt")
@@ -39,7 +42,7 @@ def download_playlist(playlist_url, output_folder, subfolder_name):
                     f.write(f"Title: {title}\n")
                     f.write(f"Artist: {artist}\n")
                     f.write(f"Song Name: {song_name}\n")
-                    f.write(f"Album: Youtube\n")  # Add the album "Youtube" to the metadata
+                    f.write(f"Album: Youtube - Uploaded: {upload_date}\n")  # Add the album "Youtube" to the metadata
 
                 # Save the thumbnail
                 if thumbnail:
