@@ -10,8 +10,10 @@ temp_files=()
 
 # Get the list of videos from the channel
 yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video_id; do
-  # Download the video with metadata
-  yt-dlp -o "$output_folder/$subfolder_name/%(title)s - %(id)s.%(ext)s" \
+  # Download the MP3 directly
+  yt-dlp -o "$output_folder/$subfolder_name/%(id)s.mp3" \
+    --extract-audio \
+    --audio-format mp3 \
     --embed-thumbnail \
     --add-metadata \
     --write-info-json \
@@ -42,12 +44,8 @@ yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video
   # Store the temporary file name in the array
   temp_files+=("$output_folder/$subfolder_name/${video_id}.info.json.tmp")
 
-  # Convert to MP3
-  ffmpeg -i "$output_folder/$subfolder_name/${video_id}.%(ext)s" \
-    -vn -acodec libmp3lame -ab 192k \
-    "$output_folder/$subfolder_name/${video_id}.mp3"
-
   # Embed metadata and thumbnail into the MP3 file
+  # Use the video ID for the MP3 filename to avoid issues with spaces
   ffmpeg -i "$output_folder/$subfolder_name/${video_id}.mp3" \
     -metadata title="$title" \
     -metadata artist="$artist" \
@@ -56,8 +54,6 @@ yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video
     -map 0:a -map 1:v -c:v copy -c:a copy \
     "$output_folder/$subfolder_name/${video_id}.mp3"
 
-  # Remove the original video file
-  rm "$output_folder/$subfolder_name/${video_id}.%(ext)s"
 done
 
 # Delete all temporary files after the loop
