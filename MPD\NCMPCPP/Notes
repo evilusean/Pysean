@@ -98,6 +98,9 @@ Fix : Will update the conf with correct settings, had to fix, comment out below,
 #sticker_file "/mnt/sdb2/Media/mdb/sticker.sql"
 db_file "/mnt/sdb2/Media/mpd/mpd.db"
 
+I got everything up and running, added scripts to grab music from youtube, downloaded some discogs, now I want to add some aesthetics : ToDo's:
+How to add embeded image to NCMPCPP window? and view currently played file, already have visualIzeASeans working, how to get album
+fix metadata from youtube scripts, it's downloading and embedding the title name correctly, but not the Album timestamp(for checking new music), Artist, Songname, etc, also not deleting temp files correctly
 
 
 
