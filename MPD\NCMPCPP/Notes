@@ -113,19 +113,26 @@ Kunst doesn't display in terminal, but you can force it 'keep above others' and 
 Ok, figured it out, Kunst only works with external images, so for discographys where they are in the same folder as the song, not embedded artwork from playlist downloads.
 kunst --size 400x400 #use this command to open a new album art window of kunst, then right click select 'keep above others'
 
+Aftter Testing, this script, does the same thing kunst, but requires more work to set up, I want the script to read the embeded image in the .mp3, not the one in the folder :
+sudo pacman -S rxvt-unicode
+https://marcocheung.wordpress.com/2015/08/09/showing-album-cover-in-ncmpcpp/
+https://gist.github.com/vlevit/4588882/
+
 Going to try another method to load embedded files in a terminal :
 https://askubuntu.com/questions/97542/how-do-i-make-my-terminal-display-graphical-pictures
 https://mpd.readthedocs.io/en/stable/protocol.html#the-music-database
-https://gist.github.com/vlevit/4588882/
-https://marcocheung.wordpress.com/2015/08/09/showing-album-cover-in-ncmpcpp/
+https://github.com/kovidgoyal/kitty/issues/598
+https://sw.kovidgoyal.net/kitty/kittens/icat/
+https://radumirea.com/blog/ncmpcpp-with-album-art
 
-
-
-
-
-
-
-
+Exiftool (Used to get embedded album art from .mp3):
+https://exiftool.org/install.html
+https://exiftool.org/index.html
+https://archlinux.org/packages/extra/any/perl-image-exiftool/ 
+https://github.com/evilusean/Pysean/blob/main/MPD%5CNCMPCPP/AlbumArtAuto.sh
+sudo chmod +x AlbumArt.sh
+cd /mnt/sdb2/Media/mpd/
+./AlbumArt.sh
 
 
 
