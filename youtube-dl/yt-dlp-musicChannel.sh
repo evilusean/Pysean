@@ -33,11 +33,11 @@ yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video
     continue  # Skip to the next video
   fi
 
+  # --- START OF REPEATABLE BLOCK ---
   # Extract upload date from the info.json file
   upload_date=$(jq -r '.upload_date' "$output_folder/$subfolder_name/${video_id}.info.json")
   upload_date=$(date -r "$upload_date" +"%Y-%m-%d")
 
-  # --- START OF REPEATABLE BLOCK ---
   # Extract artist and song name from the title
   title=$(jq -r '.title' "$output_folder/$subfolder_name/${video_id}.info.json")
   artist=$(echo "$title" | awk -F' - ' '{print $1}')
@@ -67,10 +67,7 @@ yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video
   # Store the image file name in the array
   image_files+=("$output_folder/$subfolder_name/${video_id}.jpg")
 
-done
-
-# Embed metadata and thumbnail into the MP3 file
-for video_id in "${!temp_files[@]}"; do
+  # Embed metadata and thumbnail into the MP3 file
   # Use the video ID for the MP3 filename to avoid issues with spaces
   ffmpeg -i "$output_folder/$subfolder_name/${video_id}.mp3" \
     -metadata title="$title" \
@@ -79,6 +76,8 @@ for video_id in "${!temp_files[@]}"; do
     -i "$output_folder/$subfolder_name/${video_id}.jpg" \
     -map 0:a -map 1:v -c:v copy -c:a copy \
     "$output_folder/$subfolder_name/${video_id}.mp3"
+  # --- END OF REPEATABLE BLOCK ---
+
 done
 
 # Delete all temporary files after the loop
