@@ -11,6 +11,12 @@ image_files=()
 
 # Get the list of videos from the channel
 yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video_id; do
+  # Check if the MP3 file already exists
+  if [ -f "$output_folder/$subfolder_name/${video_id}.mp3" ]; then
+    echo "Skipping video ID: $video_id (MP3 file already exists)"
+    continue  # Skip to the next video
+  fi
+
   # Download the MP3 directly with higher quality
   yt-dlp -o "$output_folder/$subfolder_name/%(id)s.mp3" \
     --extract-audio \
