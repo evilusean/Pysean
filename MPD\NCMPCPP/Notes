@@ -104,16 +104,20 @@ fix metadata from youtube scripts, it's downloading and embedding the title name
 Figure out how to symlink to other HDD's for language stuff, 250GB partiSean almost full
 Figure out how to play it over multiple audio channels and a network, also practice setting up a NAS/Homelab/serverrack for large storage
 
-Embeded Image display in terminal:
+Kunst : Embeded Image display in terminal:
 https://github.com/sdushantha/kunst
 https://github.com/nsxiv/nsxiv
 sudo pacman -S imagemagick #install this to get kunst to work
+export KUNST_MUSIC_DIR="/mnt/sdb2/Media/Music"
+Kunst doesn't display in terminal, but you can force it 'keep above others' and have terminal player below, ghetto, but works. 
+Ok, figured it out, Kunst only works with external images, so for discographys where they are in the same folder as the song, not embedded artwork from playlist downloads.
+kunst --size 400x400 #use this command to open a new album art window of kunst, then right click select 'keep above others'
 
-
-
-
-
-
+Going to try another method to load embedded files in a terminal :
+https://askubuntu.com/questions/97542/how-do-i-make-my-terminal-display-graphical-pictures
+https://mpd.readthedocs.io/en/stable/protocol.html#the-music-database
+https://gist.github.com/vlevit/4588882/
+https://marcocheung.wordpress.com/2015/08/09/showing-album-cover-in-ncmpcpp/
 
 
 
