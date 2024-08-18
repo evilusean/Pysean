@@ -7,6 +7,7 @@ subfolder_name="IrvingForce"
 
 # Create an array to store the temporary file names
 temp_files=()
+image_files=()
 
 # Get the list of videos from the channel
 yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video_id; do
@@ -23,6 +24,7 @@ yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video
   upload_date=$(jq -r '.upload_date' "$output_folder/$subfolder_name/${video_id}.info.json")
   upload_date=$(date -r "$upload_date" +"%Y-%m-%d")
 
+  # --- START OF REPEATABLE BLOCK ---
   # Extract artist and song name from the title
   title=$(jq -r '.title' "$output_folder/$subfolder_name/${video_id}.info.json")
   artist=$(echo "$title" | awk -F' - ' '{print $1}')
@@ -34,6 +36,10 @@ yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video
     artist=""
   fi
 
+  # Create a consistent filename
+  filename="${artist} - ${song_name}.mp3"
+  filename=$(echo "$filename" | sed 's/[^a-zA-Z0-9\-_\.]//g')  # Remove invalid characters
+
   # Update the album metadata in the info.json file
   jq --arg album "Youtube - Uploaded: $upload_date" '.album = $album' \
     "$output_folder/$subfolder_name/${video_id}.info.json" > \
@@ -44,7 +50,13 @@ yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video
   # Store the temporary file name in the array
   temp_files+=("$output_folder/$subfolder_name/${video_id}.info.json.tmp")
 
-  # Embed metadata and thumbnail into the MP3 file
+  # Store the image file name in the array
+  image_files+=("$output_folder/$subfolder_name/${video_id}.jpg")
+
+done
+
+# Embed metadata and thumbnail into the MP3 file
+for video_id in "${!temp_files[@]}"; do
   # Use the video ID for the MP3 filename to avoid issues with spaces
   ffmpeg -i "$output_folder/$subfolder_name/${video_id}.mp3" \
     -metadata title="$title" \
@@ -53,10 +65,14 @@ yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video
     -i "$output_folder/$subfolder_name/${video_id}.jpg" \
     -map 0:a -map 1:v -c:v copy -c:a copy \
     "$output_folder/$subfolder_name/${video_id}.mp3"
-
 done
 
 # Delete all temporary files after the loop
 for temp_file in "${temp_files[@]}"; do
   rm "$temp_file"
+done
+
+# Delete all image files after the loop
+for image_file in "${image_files[@]}"; do
+  rm "$image_file"
 done
