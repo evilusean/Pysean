@@ -3,7 +3,7 @@
 # Requires mpc, kitty and exiftool
 
 # Set the directory where your music is stored
-MUSIC_DIR=$HOME/documents/music
+MUSIC_DIR="/mnt/sdb2/Media/Music/1Youtube"
 
 # Set the temporary file for the extracted album art
 COVER=/tmp/cover.jpg
@@ -60,12 +60,24 @@ function update_album_art {
   fi
 }
 
+# Function to refresh kunst
+function refresh_kunst {
+  # Send a SIGUSR1 signal to kunst to refresh
+  pkill -USR1 kunst
+}
+
 # Run the update_album_art function when a song changes
 mpc | while read line; do
   if [[ "$line" =~ "Playing" ]]; then
-    update_album_art
+    # Run the update_album_art function in the background
+    update_album_art &
+    # Refresh kunst
+    refresh_kunst &
   fi
 done
 
 # Reset the terminal background when the script exits
 reset_background
+Explanation:
+
+refresh_kunst Fun

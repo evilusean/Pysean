@@ -7,7 +7,7 @@ subfolder_name="IdleGlance"
 
 # Create an array to store the temporary file names
 temp_files=()
-image_files=()
+image_files=()  
 
 # Get the list of videos from the channel
 yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video_id; do
