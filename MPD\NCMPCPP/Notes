@@ -99,13 +99,15 @@ Fix : Will update the conf with correct settings, had to fix, comment out below,
 db_file "/mnt/sdb2/Media/mpd/mpd.db"
 
 I got everything up and running, added scripts to grab music from youtube, downloaded some discogs, now I want to add some aesthetics : ToDo's:
-How to add embeded image to NCMPCPP window? and view currently played file, already have visualIzeASeans working, how to get album
+How to add embeded image to NCMPCPP window? and view currently played file, already have visualIzeASeans working, how to get album timestamp label correct 
 fix metadata from youtube scripts, it's downloading and embedding the title name correctly, but not the Album timestamp(for checking new music), Artist, Songname, etc, also not deleting temp files correctly
+Figure out how to symlink to other HDD's for language stuff, 250GB partiSean almost full
+Figure out how to play it over multiple audio channels and a network, also practice setting up a NAS/Homelab/serverrack for large storage
 
-
-
-
-
+Embeded Image display in terminal:
+https://github.com/sdushantha/kunst
+https://github.com/nsxiv/nsxiv
+sudo pacman -S imagemagick #install this to get kunst to work
 
 
 
