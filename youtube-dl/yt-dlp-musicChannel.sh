@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Replace these placeholders with your actual values
-channel_url="https://www.youtube.com/@irvingforce/videos"
+channel_url="https://www.youtube.com/@idleglance/videos"
 output_folder="/mnt/sdb2/Media/Music/1Youtube/"
-subfolder_name="IrvingForce"
+subfolder_name="IdleGlance"
 
 # Create an array to store the temporary file names
 temp_files=()
@@ -11,14 +11,21 @@ image_files=()
 
 # Get the list of videos from the channel
 yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video_id; do
-  # Download the MP3 directly
+  # Download the MP3 directly with higher quality
   yt-dlp -o "$output_folder/$subfolder_name/%(id)s.mp3" \
     --extract-audio \
     --audio-format mp3 \
+    --audio-quality 0 \
     --embed-thumbnail \
     --add-metadata \
     --write-info-json \
     "$video_id"
+
+  # Check if the info.json file exists
+  if [ ! -f "$output_folder/$subfolder_name/${video_id}.info.json" ]; then
+    echo "Error: Could not download metadata for video ID: $video_id"
+    continue  # Skip to the next video
+  fi
 
   # Extract upload date from the info.json file
   upload_date=$(jq -r '.upload_date' "$output_folder/$subfolder_name/${video_id}.info.json")
@@ -49,6 +56,7 @@ yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video
 
   # Store the temporary file name in the array
   temp_files+=("$output_folder/$subfolder_name/${video_id}.info.json.tmp")
+  temp_files+=("$output_folder/$subfolder_name/${video_id}.info.json") # Add the original .info.json file
 
   # Store the image file name in the array
   image_files+=("$output_folder/$subfolder_name/${video_id}.jpg")
