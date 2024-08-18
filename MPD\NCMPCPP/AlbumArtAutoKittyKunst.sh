@@ -78,6 +78,3 @@ done
 
 # Reset the terminal background when the script exits
 reset_background
-Explanation:
-
-refresh_kunst Fun
