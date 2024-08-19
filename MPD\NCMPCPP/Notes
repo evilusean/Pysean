@@ -139,6 +139,14 @@ execute_on_song_change = "/mnt/sdb2/Media/mpd/AlbumArt.sh"
 I'm still missing a tonne of embeds, even with exfiltool, and a custom script, like ~25% of the !YT downloads have their embedded album art
 So either I fix it or just add a default (I Should probably do this anyway) - been working on this since I woke up
 
+ToDO: 
+Create global hotkeys for next song/pause/etc
+https://bbs.archlinux.org/viewtopic.php?id=112963
+https://www.reddit.com/r/musichoarder/comments/10z1qvs/might_be_a_bit_off_topic_but_does_anyone_know_how/
+https://www.musicpd.org/doc/mpc/html/
+Fix custom colors / change visualizer again
+Add sym link files that point to other partitions, 250gigs goes fast
+Fix image script - this is purely aesthetic, already put a day into this, not sure if worth, adds 0 funcSeanality to it, just looks nice - already installed like 5 packages and 2 custom scripts
 
 
 
