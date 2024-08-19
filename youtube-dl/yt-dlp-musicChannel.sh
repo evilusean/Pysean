@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Replace these placeholders with your actual values
-channel_url="https://www.youtube.com/@officialRezz/videos"
+channel_url="https://www.youtube.com/@The80sGuy/videos"
 output_folder="/mnt/sdb2/Media/Music/1Youtube" #removed final '/' slash, was causing issues with metadata
-subfolder_name="Rezz"
+subfolder_name="80sGuy"
 
 # Create an array to store the temporary file names
 temp_files=()

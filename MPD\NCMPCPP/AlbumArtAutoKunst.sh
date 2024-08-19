@@ -66,4 +66,4 @@ mpc | while read line; do
 done
 
 # Reset the terminal background when the script exits
-reset_background
+reset_background    

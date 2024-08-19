@@ -1,10 +1,12 @@
 #!/bin/bash
 
 #this script, isn't checking, would need to update either mpd.conf or ncmpcpp.config to run on change
+#~/.ncmpcpp/config
+#execute_on_song_change = "/mnt/sdb2/Media/mpd/AlbumArt.sh"   
 # Requires mpc, kitty and exiftool
 
 # Set the directory where your music is stored
-MUSIC_DIR=$HOME/docum 
+MUSIC_DIR=/mnt/sdb2/Media/Music
 
 # Set the temporary file for the extracted album art
 COVER=/tmp/cover.jpg
