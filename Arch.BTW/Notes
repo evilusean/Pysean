@@ -905,9 +905,11 @@ so If something does break, again, I won't have sunk a day/night/morning into it
 Fixed GPU! That probably wasn't working for at least 2 years? since I installed ubuntu at the very least, problem was vulkan, fix below :
 https://github.com/evilusean/Pysean/blob/main/Sean/FixSean/NVIDIDA
 
-
-
-
+Play Ascii Videos in terminal : 
+https://www.ubuntubuzz.com/2012/04/play-movies-in-ascii-art-using-mplayer.html
+sudo mplayer -vo caca Ricefields-Furanku-Chan.mp4
+env CACA_DRIVER=ncurses mpv -quiet -vo=caca "<Video url goes here>"
+mpv --vo=drm file.mp4
 
 
 
