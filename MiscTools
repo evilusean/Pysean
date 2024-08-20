@@ -262,7 +262,11 @@ promptfoo.dev #automatically test prompts for other LLMS - proompt engineering -
 Cursor IDE (built in AI, like copilot ++, inline generation, select code then write in natural language the changes needed - referencing multiple files, directories, or entire codebase or external documentation)
 JetBrains - IntelliJ - Good for autocomplete
 Aider - Will indicate files that require editing and then making changes itself asking for confirmation at each stage
-
+Imagen 3 - Google
+Grok 2  
+Flux.1 - Blackforest labs - Uncensored(unlobotimized) hyperrealistic images - free and opensource, can be run locally : https://www.youtube.com/watch?v=QYVucud3ptc
+https://github.com/black-forest-labs/flux
+CIVITAI + LORA(Low Rank Adaptations - fine tune model) + Stablie Diffusion + Your own pics, can train model with your face
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
