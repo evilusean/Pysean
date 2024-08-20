@@ -1,26 +1,15 @@
 NVChad Features:
 https://nvchad.com/docs/features/
-
-<Space> + c + h = CheatSheet, shows nvim commands(including the plugin installs)
-Personalize Theme: <space> + T + H
-Find Files Menu: <space> + F + F
-Find Open Files in buffers: <space> + F + B  / tab to go forward / shift + tab to go backwards / close : <space> + x
-NVIM Tree Shows a file tree: <Ctrl> + N
-Rename: R
-Copy: C
-Paste: P
-Delete: D
-Mark: M
-Vertical split: :VSP
-Horizontal Split: :SP
-To Navigate: Ctrl + HJKL = Ctrl +K (up) / Ctrl+ H (Down) 
-CheatSheet : <space> + C + H
 https://www.youtube.com/watch?v=yW3ovyQCwpw&ab_channel=MentalOutlaw
 https://www.youtube.com/watch?v=Mtgo-nP_r8Y&ab_channel=DreamsofCode
-# Linux / Macos (unix) Uninstall:
-rm -rf ~/.config/nvim
-rm -rf ~/.local/share/nvim
-:help local-additions #shows all plugins/addons in NeoVim(Chad)
+
+<Space> + c + h = CheatSheet, shows nvim commands(including the plugin installs)
+Personalize Theme: <space> + t + h
+<space> + v = Vertical split: :VSP
+<space> + h = Horizontal Split: :SP
+<space> + x = close a pane :q
+To Navigate: Ctrl + HJKL = Ctrl +K (up) / Ctrl+ H (Down) 
+<space> + n = Toggles line numbers
 
 TreeSitter :
 Official Docs:
@@ -38,6 +27,7 @@ Ctrl + N = Open the tree (shows directories)
 Switch from the explorer window to the editor window and vice versa with the combinations 'Ctrl + h' to move left and 'Ctrl + l' to move right.
 'H' = Shows hidden folders 
 'E' = Expands All
+'m' = Marks a file (for reuse later)
 R = (refresh) to perform a reread of the files contained in the project
 H = (hide) to hide/display hidden files and folders (beginning with a dot .)
 E = (expand_all) to expand the entire file tree starting from the root folder (workspace)
@@ -67,19 +57,18 @@ c (copy) = like the previous command this copies the file to the clipboard but k
 p (paste) = to paste the contents of the clipboard to the current location
 y = to copy only the file name to the clipboard, there are also two variants which are Y to copy the relative path and 'g + y' to copy the absolute path
 
-Telescope : 
+Telescope (allows you to search for files in your project, ensure you are in directory before starting this) : 
+<space> + f + f = Find Files Menu: will allow you to search for files in your current project folder
+<space> + f + b = will search files already opened(in tabs) Find Open Files in buffers / tab to go forward / shift + tab to go backwards / close : <space> + x
 
+Tabbufline (NVChad Tab Buffer Bars) :
+<Tab> = Cycle through tabs
+<Shift> + <Tab> = Cycle Backwards
+<space> + x = close a tab
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Linux / Macos (unix) Uninstall - if you royally mess up a lua file(already happened), just reinstall :
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+:help local-additions #shows all plugins/addons in NeoVim(Chad)
+chadrc.lua #used for overriding the default config, if you want to change NVchad plugins or options, use this
+init.lua #used for overriding neovim options and commands, if you want to change to typical neovim or vim configs, use this
