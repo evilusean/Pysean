@@ -1,10 +1,9 @@
 #!/bin/bash
 
 # Replace these placeholders with your actual values
-channel_url="https://www.youtube.com/@mordfustangofficial/videos"  # This is the "Videos" URL
-channel_url_releases="https://www.youtube.com/@mordfustangofficial/releases"  # This is the "Releases" URL
+channel_url_releases="https://www.youtube.com/@NOISIA/releases"  # This is the "Releases" URL
 output_folder="/mnt/sdb2/Media/Music/1Youtube"
-subfolder_name="MordFustang"
+subfolder_name="Noisia"
 
 # Create an array to store the temporary file names
 temp_files=()
@@ -66,24 +65,6 @@ download_and_embed_metadata() {
     "$output_folder/$subfolder_name/${video_id}.mp3"
 }
 
-# Download videos from the "Videos" section
-yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video_id; do
-  # Extract upload date and title
-  upload_date=$(jq -r '.upload_date' "$output_folder/$subfolder_name/${video_id}.info.json")
-  upload_date=$(date -r "$upload_date" +"%Y-%m-%d")
-  title=$(jq -r '.title' "$output_folder/$subfolder_name/${video_id}.info.json")
-  artist=$(echo "$title" | awk -F' - ' '{print $1}')
-  song_name=$(echo "$title" | awk -F' - ' '{print $2}')
-
-  # If no dash found, use the entire title as the song name
-  if [ -z "$song_name" ]; then
-    song_name="$title"
-    artist=""
-  fi
-
-  download_and_embed_metadata "$video_id" "$upload_date" "$title" "$artist" "$song_name"
-done
-
 # Download videos from the "Releases" section
 yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url_releases" | while read video_id; do
   # Extract upload date and title
@@ -110,4 +91,4 @@ done
 # Delete all image files after the loop
 for image_file in "${image_files[@]}"; do
   rm "$image_file"
-done        
+done
