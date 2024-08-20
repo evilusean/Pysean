@@ -1,3 +1,7 @@
+NVChad Features:
+https://nvchad.com/docs/features/
+
+<Space> + c + h = CheatSheet, shows nvim commands(including the plugin installs)
 Personalize Theme: <space> + T + H
 Find Files Menu: <space> + F + F
 Find Open Files in buffers: <space> + F + B  / tab to go forward / shift + tab to go backwards / close : <space> + x
@@ -63,7 +67,7 @@ c (copy) = like the previous command this copies the file to the clipboard but k
 p (paste) = to paste the contents of the clipboard to the current location
 y = to copy only the file name to the clipboard, there are also two variants which are Y to copy the relative path and 'g + y' to copy the absolute path
 
-
+Telescope : 
 
 
 
