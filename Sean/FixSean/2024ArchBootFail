@@ -6,6 +6,7 @@ device wlan0 set-property Powered on
 station wlan0 scan
 station wlan0 get-networks
 station wlan0 connect
+D7ED9E936EDF
 
 mount /dev/sda1 /mnt #this is where I messed up I think, mounted here by accident, this is '/boot', not '/root'
 mount /dev/sda2 /mnt
@@ -23,3 +24,10 @@ after that messagem keyboard didn't work? wouldn't let me type
 mount /dev/sda1 /boot #received beow error message trying to remount boot
 'mount: /boot: unknown filesystem type'vfat' dmesg(1) may have more information after failed mount system call
 
+lsblk -f 
+sda1 uuid = E665-6B4F #double check uuid, 
+sudo vim /etc/fstab #everything looks correct
+going to try a reboot, fstab looks correct
+
+reinstalled the kernel, didn't work
+pacman -S linux
