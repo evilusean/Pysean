@@ -114,7 +114,32 @@ https://github.com/evilusean/Pysean/blob/main/VIM/zshrc
 # ADD ALL CONFIGS TO ABOVE - 
 chsh ArchSean #changes default shell, link to new... just use below, correct way
 chsh -s /bin/zsh #changes default shell for current user
+sudo pacman -S git -y
+sudo pacman -S xclip
+sudo pacman -S signal-desktop
+sudo pacman -S nodejs npm
+sudo npm install -g create-react-app
+sudo npm install -g create-next-app
+sudo pacman -S fzf
 
+Add a user to Sudoers:
+usermod -aG wheel ArchSean
+%wheel ALL=(ALL) ALL
+'/etc/sudoers'
+usermod -aG sudo ArchSean
+ArchSean ALL=(ALL)       ALL
 
+Install Yay :
+sudo pacman -Syu
+sudo pacman -S --needed --noconfirm base-devel git
+git clone https://aur.archlinux.org/yay-git.git
+sudo mv yay-git /opt/
+cd /opt/yay-git
+makepkg -si
 
+Install Github Desktop:
+yay -S github-desktop-bin --noconfirm
 
+Tmux Plugin Manager(TPM):
+https://github.com/tmux-plugins/tpm
+https://github.com/christoomey/vim-tmux-navigator
