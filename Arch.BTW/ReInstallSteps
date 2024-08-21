@@ -94,6 +94,14 @@ sudo pacman -S gnome-disk-utility
 search 'disks' to open gnome disk utility
 add drives, 'Edit Mount Options' -> Switch off 'User Session Defaults' -> 'Mount at system startup' -> Identify As '/dev/sdb2' + Mountpoint (Fstab will be updated)
 
+Packages :
+sudo pacman -S code #install VScode
+sudo pacman -S chromium 
+sudo pacman -S firefox
+sudo pacman -S btop
+sudo pacman -S mpd
+sudo pacman -S mpc
+sudo pacman -S ncmpcpp
 
 
 
