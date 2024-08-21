@@ -7,6 +7,19 @@ station wlan0 scan
 station wlan0 get-networks
 station wlan0 connect
 
+mount /dev/sda1 /mnt #this is where I messed up I think, mounted here by accident, this is '/boot', not '/root'
 mount /dev/sda2 /mnt
 cd /mnt
 arch-chroot /mnt
+sudo pacman -Syyu 
+exit 
+reboot
+
+'[FAILED} Failed to mount /boot'
+'You are in emergency mode. After loggin in, type "journalctl -xb" to view system logs, "systemctl reboot" to reboot, or "exit" to continue booting
+Give root password for maintenance (or press Control-D to continue):
+after that messagem keyboard didn't work? wouldn't let me type
+
+mount /dev/sda1 /boot #received beow error message trying to remount boot
+'mount: /boot: unknown filesystem type'vfat' dmesg(1) may have more information after failed mount system call
+
