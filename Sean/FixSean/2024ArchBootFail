@@ -1,5 +1,11 @@
 Woke up, Arch wouldn't boot, was stuch on a screen with '_' 
 Booted into bootable arch usb
+After considerASean, I just lost 6 hours reinstalling Arch Again, because it won't recgonize the vfat32 boot partition all because I misstyped '1' instead of '2'
+  After accidently mounting /dev/sda1 and then attempting to arch-chroot into it, I fixed it in the next command, but it still broke, because I ran 
+  pacman -Syyu which is system upgrade, which requires access to boot to update intrimafs(?), now my system is a different version than the boot, because when I 
+  accidently mounted it, it also unmounted it as boot, and therefore did not upgrade with the rest of system, I could spend another 2 hours + trying to get it to 
+  recgonize, or just do what I know how to do and reinstall Arch (Again, Btw.) which is lesss than an hour, it's reinstalling every single package/Nvidia GPU which sucks
+
 iwctl
 device wlan0 set-property Powered off
 device wlan0 set-property Powered on
