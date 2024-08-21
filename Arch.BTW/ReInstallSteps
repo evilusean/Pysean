@@ -1,5 +1,6 @@
 All the steps taken to get Arch Linux back up to a funcSeanall state, all packages installed, how to get nvidia GPU working again, how to install all packages
 Links\Resources\Commands for each step - Hopefully this will be the last time I have to do this, can't mount boot this time, need to repartition drives 
+https://wiki.archlinux.org/title/Installation_guide
 
 Step 1 : Bootable USB + Wifi - 
 Restart -> Press (F2) + (F12) -> F8 -> Boot from USB -> Arch Linux
@@ -11,3 +12,30 @@ station wlan0 scan
 station wlan0 get-networks
 station wlan0 connect
 D7ED9E936EDF
+
+Step 2 : Partition the disks 
+fdisk -l #lists all partitions in detail
+cfdisk #tool to partition disks with GUI
+  /boot partition = b W95 FAT32 = 2Gigs
+  / partiton(root) = 83 Linux = 45Gigs
+  /home partition = 83 Linux = Whatever is left off SSD
+
+Step 2.5 : Make Filesystems :
+  mkfs.fat -F 32 /dev/sda1
+  mkfs.ext4 /dev/sda2
+  mkfs.ext4 /dev/sda3
+
+Step 3: Mount Partitions :
+  mount /dev/sda1 /boot
+  mount /dev/sda2 /
+  mount /dev/sda3 /home
+  swapon /dev/sdb1 
+    Unmount(accidents happen) : umount /dev/sda2
+
+Step 4: Archinstall
+  
+
+
+
+
+
