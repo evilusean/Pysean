@@ -100,10 +100,20 @@ sudo pacman -S chromium
 sudo pacman -S firefox
 sudo pacman -S btop
 sudo pacman -S mpd
+https://github.com/evilusean/Pysean/blob/main/MPD%5CNCMPCPP/mpd.conf
 sudo pacman -S mpc
 sudo pacman -S ncmpcpp
-
-
+https://github.com/evilusean/Pysean/blob/main/MPD%5CNCMPCPP/.ncmpcpp.config
+https://archlinux.org/packages/extra/x86_64/signal-desktop/
+https://nvchad.com/docs/quickstart/install/#pre-requisites
+https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
+sudo pacman -S tmux
+https://github.com/evilusean/Pysean/blob/main/TMUX/tmux.conf
+sudo pacman -S zsh
+https://github.com/evilusean/Pysean/blob/main/VIM/zshrc
+# ADD ALL CONFIGS TO ABOVE - 
+chsh ArchSean #changes default shell, link to new... just use below, correct way
+chsh -s /bin/zsh #changes default shell for current user
 
 
 
