@@ -105,7 +105,6 @@ sudo pacman -S mpc
 sudo pacman -S ncmpcpp
 https://github.com/evilusean/Pysean/blob/main/MPD%5CNCMPCPP/.ncmpcpp.config
 https://archlinux.org/packages/extra/x86_64/signal-desktop/
-https://nvchad.com/docs/quickstart/install/#pre-requisites
 https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
 sudo pacman -S tmux
 https://github.com/evilusean/Pysean/blob/main/TMUX/tmux.conf
@@ -155,3 +154,17 @@ cd ..; rm -rf fonts
 Test New Fonts:
 fc-list | cut -d: -f2 | sort | uniq
 
+NVChad - Install Fonts Above - There was a breaking change, added a new one-liner below:
+https://nvchad.com/docs/quickstart/install/#pre-requisites
+https://github.com/ProgrammingRainbow/NvChad-2.5
+sudo pacman -S neovim
+sudo pacman -S xclip
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+#Original One Liner, if below doesn't work, 
+git clone https://github.com/ProgrammingRainbow/NvChad-2.5 ~/.config/nvim && nvim
+#Better config than the original NVChad script, maybe changes next time I need to reinstall, future sean take note - I tried this script 2 days ago, worked, today didn't. 
+
+Uninstall NVim + configs (if you mess up):
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
