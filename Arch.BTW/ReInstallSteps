@@ -26,16 +26,24 @@ Step 2.5 : Make Filesystems :
   mkfs.ext4 /dev/sda3
 
 Step 3: Mount Partitions :
-  mount /dev/sda1 /boot
-  mount /dev/sda2 /
-  mount /dev/sda3 /home
-  swapon /dev/sdb1 
-    Unmount(accidents happen) : umount /dev/sda2
+mount /dev/sda2 /mnt # 'mount /dev/sda2 /' for root, I messed this up even after doing it 4 times in > 2 weeks, it's 'mount /dev/sda2 /mnt'
+mount /dev/sda1 /mnt/boot # 'mount /dev/sda1 /boot' for boot 
+mount /dev/sda3 /mnt/home # 'mount /dev/sda3 /home' for home
+swapon /dev/sdb1 
 
-Step 4: Archinstall
-  
-
-
-
-
-
+Step 3.5 : archinstall
+  Go through the installer to ignore above section, easier this way, you can set mount points afrer step 2, 2.5 (you still need manual partititon and filesystems)
+Assign mountpoints : 
+  '/boot' -> sda1 (2Gigs)
+  '/' -> sda2 -> 45Gigs
+  '/home' -> sda3 -> whatever is left
+BootLoader : Limine
+HostName : ArchSean
+Root Password :
+User Account : (Set up in chroot)
+Type -> Desktop -> KDE Plasma / Greeter : sddm / Graphics : All open source(install after)
+Audio : Pulseaudio
+Kernel : linux
+Network Configuration : Use NetworkManager
+TimeZone : 
+Optional Repositories : multilib
