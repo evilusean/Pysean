@@ -1,0 +1,13 @@
+All the steps taken to get Arch Linux back up to a funcSeanall state, all packages installed, how to get nvidia GPU working again, how to install all packages
+Links\Resources\Commands for each step - Hopefully this will be the last time I have to do this, can't mount boot this time, need to repartition drives 
+
+Step 1 : Bootable USB + Wifi - 
+Restart -> Press (F2) + (F12) -> F8 -> Boot from USB -> Arch Linux
+
+iwctl
+device wlan0 set-property Powered off
+device wlan0 set-property Powered on
+station wlan0 scan
+station wlan0 get-networks
+station wlan0 connect
+D7ED9E936EDF
