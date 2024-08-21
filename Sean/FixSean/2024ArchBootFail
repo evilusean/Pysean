@@ -1,0 +1,12 @@
+Woke up, Arch wouldn't boot, was stuch on a screen with '_' 
+Booted into bootable arch usb
+iwctl
+device wlan0 set-property Powered off
+device wlan0 set-property Powered on
+station wlan0 scan
+station wlan0 get-networks
+station wlan0 connect
+
+mount /dev/sda2 /mnt
+cd /mnt
+arch-chroot /mnt
