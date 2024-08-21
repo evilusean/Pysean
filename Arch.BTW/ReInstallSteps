@@ -25,7 +25,7 @@ Step 2.5 : Make Filesystems :
   mkfs.ext4 /dev/sda2
   mkfs.ext4 /dev/sda3
 
-Step 3: Mount Partitions :
+Step 3: Mount Partitions (skip this step, use 'archinstall', easier):
 mount /dev/sda2 /mnt # 'mount /dev/sda2 /' for root, I messed this up even after doing it 4 times in > 2 weeks, it's 'mount /dev/sda2 /mnt'
 mount /dev/sda1 /mnt/boot # 'mount /dev/sda1 /boot' for boot 
 mount /dev/sda3 /mnt/home # 'mount /dev/sda3 /home' for home
@@ -47,3 +47,56 @@ Kernel : linux
 Network Configuration : Use NetworkManager
 TimeZone : 
 Optional Repositories : multilib
+
+Step 4 : Create a user in arch-chroot
+useradd -m -G wheel ArchSean
+passwd ArchSean 
+
+Step 5 : Install Graphics
+https://github.com/evilusean/Pysean/blob/main/Sean/FixSean/NVIDIDA
+Use Network Manager, Sign in to WIFI.
+Ctrl + Alt + T #new terminal
+su #log in as superuser, until you update 'sudoers'
+sudo pacman -S sudo #sudo install sudo
+
+Nvidia :
+sudo pacman -S nvidia-dkms nvidia-utils nvidia-settings nvidia-prime opencl-nvidia switcheroo-control nvidia
+https://wiki.archlinux.org/title/NVIDIA_Optimus#Use_NVIDIA_graphics_only
+/usr/share/sddm/scripts/Xsetup
+'xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto' # add everything in '' to the file '/usr/share/sddm/scripts/Xsetup'
+
+Vulkan Drivers (I don't know which one of these fixes it, but it is one of them) :
+https://wiki.archlinux.org/title/Vulkan
+sudo pacman -S vulkan-icd-loader package
+sudo pacman -S lib32-vulkan-icd-loader
+sudo pacman -S vulkan-intel
+sudo pacman -S lib32-vulkan-intel
+sudo pacman -S nvidia-utils
+sudo pacman -S lib32-nvidia-utils
+sudo pacman -S vulkan-nouveau
+sudo pacman -S lib32-vulkan-nouveau
+export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/nvidia_icd.json #type in terminal 
+
+Wine (ensure multilib is enabled, if not follow guide below): 
+https://wine.htmlvalidator.com/install-wine-on-arch-linux.html
+sudo pacman -S wine wine-mono wine-gecko
+sudo pacman -S lutris
+Add external Drives/partitions with gnome-disk-utility -
+Open Lutris -> '+' 'Install a Windows Game from an executable' -> Add external drive/partition with game folder -> add Executable in that directory
+Right click installed game -> Configure -> Runner Options -> Enable DXVK / Enable VKD3D Vulkan 
+
+Optimus-Manager (for using AI models and CUDA - which you can't use lutris or prime-run on, for future seanm above fix works for getting GPU/games working) :
+https://github.com/Askannz/optimus-manager
+
+Mount Drives :
+sudo pacman -S gnome-disk-utility
+search 'disks' to open gnome disk utility
+add drives, 'Edit Mount Options' -> Switch off 'User Session Defaults' -> 'Mount at system startup' -> Identify As '/dev/sdb2' + Mountpoint (Fstab will be updated)
+
+
+
+
+
+
+
