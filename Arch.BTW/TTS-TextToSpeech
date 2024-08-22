@@ -2,6 +2,7 @@ A repo for all TTS for arch linux, need to get this figured out for audiobooks/l
 OpSeans = Coqui-AI / OpenAI-Whisper(STT+TTS) / Piper TTS / Festival / gTTS(Google Text To Speech) / ChromeVox / Firefox Reader TTS
 https://support.google.com/chromebook/answer/7031755
 https://www.semantix.com/resources/blog/text-to-speech-software-guide/text-to-speech-firefox
+https://addons.mozilla.org/en-CA/firefox/addon/read-aloud/    
 
 Going to try Festival - Doesn't require a venv + Can be done through pacman - no python scripts - just requires conf setup :
 https://wiki.archlinux.org/title/Speech_dispatcher
