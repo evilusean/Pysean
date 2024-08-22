@@ -1,11 +1,17 @@
 A repo for all TTS for arch linux, need to get this figured out for audiobooks/languages study work - so I can play in background as I do other work - 
-OpSeans = Coqui-AI / OpenAI-Whisper(STT+TTS) / Piper TTS / Festival / gTTS(Google Text To Speech) / ChromeVox 
+OpSeans = Coqui-AI / OpenAI-Whisper(STT+TTS) / Piper TTS / Festival / gTTS(Google Text To Speech) / ChromeVox / Firefox Reader TTS
 https://support.google.com/chromebook/answer/7031755
+https://www.semantix.com/resources/blog/text-to-speech-software-guide/text-to-speech-firefox
 
 Going to try Festival - Doesn't require a venv + Can be done through pacman - no python scripts - just requires conf setup :
 https://wiki.archlinux.org/title/Speech_dispatcher
 https://wiki.archlinux.org/title/Festival
 https://aur.archlinux.org/packages/festival-freebsoft-utils
+sudo pacman -S speech-dispatcher
+sudo pacman -S festival-us
+git clone https://aur.archlinux.org/festival-freebsoft-utils.git
+cd festival-freebsoft-utils
+makepkg -si
 
 ======TTS Models - Use Python - To work on Linux, you need a VENV, pain to set up/use every time you just want to translate a sentence - But here they are =================================
 Coqui-AI:
