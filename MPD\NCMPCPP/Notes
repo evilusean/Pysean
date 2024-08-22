@@ -139,6 +139,9 @@ execute_on_song_change = "/mnt/sdb2/Media/mpd/AlbumArt.sh"
 I'm still missing a tonne of embeds, even with exfiltool, and a custom script, like ~25% of the !YT downloads have their embedded album art
 So either I fix it or just add a default (I Should probably do this anyway) - been working on this since I woke up
 
+Create Symlinks :
+https://phoenixnap.com/kb/symbolic-link-linux
+
 ToDO: 
 Create global hotkeys for next song/pause/etc
 https://bbs.archlinux.org/viewtopic.php?id=112963
