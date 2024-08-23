@@ -1,5 +1,6 @@
 A repo for all TTS for arch linux, need to get this figured out for audiobooks/languages study work - so I can play in background as I do other work - 
-OpSeans = Coqui-AI / OpenAI-Whisper(STT+TTS) / Piper TTS / Festival / gTTS(Google Text To Speech) / ChromeVox / Firefox Reader TTS
+OpSeans = Coqui-AI / OpenAI-Whisper(STT+TTS) / Piper TTS / Festival / Mimic / Espeak_ng / Swift / gTTS(Google Text To Speech) / ChromeVox / Firefox Reader TTS
+https://wiki.archlinux.org/title/List_of_applications#Speech_synthesizers
 https://support.google.com/chromebook/answer/7031755
 https://www.semantix.com/resources/blog/text-to-speech-software-guide/text-to-speech-firefox
 https://addons.mozilla.org/en-CA/firefox/addon/read-aloud/    
@@ -13,6 +14,11 @@ sudo pacman -S festival-us
 git clone https://aur.archlinux.org/festival-freebsoft-utils.git
 cd festival-freebsoft-utils
 makepkg -si
+
+Espeak-ng - Add a keybinding that will speak the highlighted text with a script when pressed, Could just highlight a chapter, press the button, let it run, or translate a sentence, press :
+https://zenquest.co/team/eben-farnworth/rabbitwhole/text-speech-tts-linux
+Settings ->  Keyboard » Customise Shortcuts » Custom Shortcuts » +
+sudo pacman -S espeak-ng
 
 ======TTS Models - Use Python - To work on Linux, you need a VENV, pain to set up/use every time you just want to translate a sentence - But here they are =================================
 Coqui-AI:
