@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Replace these placeholders with your actual values
-channel_url="https://www.youtube.com/@UKFDrumandBass/videos"
+channel_url="https://www.youtube.com/@WAKAAN/videos"
 output_folder="/mnt/sdb2/Media/Music/1Youtube"
-subfolder_name="UKFDNB"
+subfolder_name="WAKAAN"
 
 # Create an array to store the temporary file names
 temp_files=()
