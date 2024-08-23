@@ -1,0 +1,4 @@
+A central file for remembering where all my custom keybindings and scripts are (in the very unlikely event I need to reinstall Arch, again, Btw) :
+Settings ->  Keyboard » Customise Shortcuts » Custom Shortcuts » +
+'Ctrl' + ';' = xsel > /tmp/speak.txt | festival --tts /tmp/speak.txt | pkill xsel #one liner for macro keybind 'Ctrl + ';'
+'Ctrl' + ''' = pkill audsp #one liner to stop festival 'Ctrl' + ''' 
