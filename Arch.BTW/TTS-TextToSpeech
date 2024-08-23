@@ -18,6 +18,20 @@ makepkg -si
 festival --tts ~/Downloads/Metaphysics_Of_Power.txt #works, try not to download pdfs, weird formats mess it up, can find text files on archive 'https://archive.org/details/metaphysics-of-power/mode/2up'
 xsel | festival --tts #To read a selection you highlighted with the cursor:
 text2wave text_file | lame - text.mp3 #Convert a text file to an mp3 audio:
+festival > (voice.list) # type 'festival'  type (voice.list) to see the list of voices you have installed.
+festival> (voice_us2_mbrola) # You can test out the voices by selecting it in the festival prompt, copy the voice you want to try from the above command and add ‘voice_’ to the front of it like this:
+festival> (SayText "Hello from Arch Linux") #Now use the ‘SayText’ command to try out the voice you selected above:
+(set! voice_default 'voice_nitech_us_rms_arctic_hts') #Once you have found a voice you like, you can set it as the default festival voice like this:
+Changing the speaking speed:
+edit the file of the voice you want to change the speech speed, on my system this is the file for the Kal voice:
+/usr/share/festival/voices/english/kal_diphone/festvox/kal_diphone.scm
+sudo nano /usr/share/festival/voices/english/kal_diphone/festvox/kal_diphone.scm
+Then look for the section ‘Duration prediction’. On my system for the kal voice this is on line: 216. Then change the number 1.1 to a higher or lower number:
+(Parameter.set 'Duration_Stretch 1.1)
+Change it to a hire or lower number and save the file (Control+E » y » Enter). Restart festival and repeat until you have the speed you like.
+xsel > /tmp/speak.txt | festival --tts /tmp/speak.txt | pkill xsel #one liner for macro keybind 'Ctrl + ';'
+pkill audsp #one liner to stop 'Ctrl' + ''' 
+
 
 Espeak-ng - Add a keybinding that will speak the highlighted text with a script when pressed, Could just highlight a chapter, press the button, let it run, or translate a sentence, press :
 https://zenquest.co/team/eben-farnworth/rabbitwhole/text-speech-tts-linux
