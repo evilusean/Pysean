@@ -15,6 +15,7 @@ sudo pacman -S festival-us
 git clone https://aur.archlinux.org/festival-freebsoft-utils.git
 cd festival-freebsoft-utils
 makepkg -si
+festival --tts ~/Downloads/Metaphysics_Of_Power.txt #works, try not to download pdfs, weird formats mess it up, can find text files on archive 'https://archive.org/details/metaphysics-of-power/mode/2up'
 
 Espeak-ng - Add a keybinding that will speak the highlighted text with a script when pressed, Could just highlight a chapter, press the button, let it run, or translate a sentence, press :
 https://zenquest.co/team/eben-farnworth/rabbitwhole/text-speech-tts-linux
@@ -22,6 +23,11 @@ Settings ->  Keyboard » Customise Shortcuts » Custom Shortcuts » +
 sudo pacman -S espeak-ng
 
 Okular TTS :
+https://wiki.archlinux.org/title/Speech_dispatcher
+spd-conf #will let you create a configurations file
+User configuration created in /home/ArchSean/.config/speech-dispatcher
+Default output module [espeak-ng] :        
+$EDITOR ~/.config/speech-dispatcher/speechd.conf #use for adding festival to speech dispatcher, less robotic voice
 
 ======TTS Models - Use Python - To work on Linux, you need a VENV, pain to set up/use every time you just want to translate a sentence - But here they are =================================
 Coqui-AI:
