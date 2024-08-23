@@ -16,6 +16,8 @@ git clone https://aur.archlinux.org/festival-freebsoft-utils.git
 cd festival-freebsoft-utils
 makepkg -si
 festival --tts ~/Downloads/Metaphysics_Of_Power.txt #works, try not to download pdfs, weird formats mess it up, can find text files on archive 'https://archive.org/details/metaphysics-of-power/mode/2up'
+xsel | festival --tts #To read a selection you highlighted with the cursor:
+text2wave text_file | lame - text.mp3 #Convert a text file to an mp3 audio:
 
 Espeak-ng - Add a keybinding that will speak the highlighted text with a script when pressed, Could just highlight a chapter, press the button, let it run, or translate a sentence, press :
 https://zenquest.co/team/eben-farnworth/rabbitwhole/text-speech-tts-linux
