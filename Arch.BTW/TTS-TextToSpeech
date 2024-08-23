@@ -1,0 +1,150 @@
+A repo for all TTS for arch linux, need to get this figured out for audiobooks/languages study work - so I can play in background as I do other work - 
+OpSeans = Coqui-AI / OpenAI-Whisper(STT+TTS) / Piper TTS / Festival / Mimic / Espeak_ng / Swift / gTTS(Google Text To Speech) / ChromeVox / Firefox Reader TTS / Okular
+https://wiki.archlinux.org/title/List_of_applications#Speech_synthesizers
+https://support.google.com/chromebook/answer/7031755
+https://www.semantix.com/resources/blog/text-to-speech-software-guide/text-to-speech-firefox
+https://addons.mozilla.org/en-CA/firefox/addon/read-aloud/    
+
+Going to try Festival - Doesn't require a venv + Can be done through pacman - no python scripts - just requires conf setup :
+https://wiki.archlinux.org/title/Speech_dispatcher
+https://wiki.archlinux.org/title/Festival
+https://aur.archlinux.org/packages/festival-freebsoft-utils
+https://www.youtube.com/watch?v=cloONmLZo4o&t=147s
+sudo pacman -S speech-dispatcher
+sudo pacman -S festival-us
+git clone https://aur.archlinux.org/festival-freebsoft-utils.git
+cd festival-freebsoft-utils
+makepkg -si
+festival --tts ~/Downloads/Metaphysics_Of_Power.txt #works, try not to download pdfs, weird formats mess it up, can find text files on archive 'https://archive.org/details/metaphysics-of-power/mode/2up'
+xsel | festival --tts #To read a selection you highlighted with the cursor:
+text2wave text_file | lame - text.mp3 #Convert a text file to an mp3 audio:
+
+Espeak-ng - Add a keybinding that will speak the highlighted text with a script when pressed, Could just highlight a chapter, press the button, let it run, or translate a sentence, press :
+https://zenquest.co/team/eben-farnworth/rabbitwhole/text-speech-tts-linux
+Settings ->  Keyboard » Customise Shortcuts » Custom Shortcuts » +
+sudo pacman -S espeak-ng
+
+Okular TTS :
+https://wiki.archlinux.org/title/Speech_dispatcher
+spd-conf #will let you create a configurations file
+User configuration created in /home/ArchSean/.config/speech-dispatcher
+Default output module [espeak-ng] :        
+$EDITOR ~/.config/speech-dispatcher/speechd.conf #use for adding festival to speech dispatcher, less robotic voice
+
+======TTS Models - Use Python - To work on Linux, you need a VENV, pain to set up/use every time you just want to translate a sentence - But here they are =================================
+Coqui-AI:
+pip install tts #got below error message, in VScode, computer is yelling at me, maybe pip is a bad idea
+error: externally-managed-environment
+× This environment is externally managed
+╰─> To install Python packages system-wide, try 'pacman -S
+    python-xyz', where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Arch-packaged Python package,
+    create a virtual environment using 'python -m venv path/to/venv'.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip.
+    
+    If you wish to install a non-Arch packaged Python application,
+    it may be easiest to use 'pipx install xyz', which will manage a
+    virtual environment for you. Make sure you have python-pipx
+    installed via pacman.
+pacman -S python-<packagename> # use this syntax to install via pacman
+I tried with pacman(file not found), without(big mad warning), now going to try with a venv to get around the warning -
+https://wiki.archlinux.org/title/Python/Virtual_environment
+python -m venv <envname>
+python -m venv TranslaSean #created it in my 'PySean' repo that auto uploads to github, added a .gitignore to ignore it. Should be able to DL with pip now
+python virtualenv envname
+python virtualenv TranslaSean # command didn't work, maybe already in? thought it was like 'cd' for when creating new dirs
+https://wiki.archlinux.org/title/Python/Virtual_environment#Activation
+source envname/bin/activate
+source TranslaSean/bin/activate # nm, disregard last, this works to 'turn on' the venv - type this command to 'use' the venv, use it from the 'Pysean' directory
+deactivate # type this to leave venv
+tried to install using the command given from 'https://github.com/coqui-ai/TTS/tree/dev#installation' - 'pip install TTS' -  still won't work even after installing venv and updating pip
+from docs: 'python >= 3.9, < 3.12..' - my python --version is 3.12.4 - is that it? just need to create a new venv with  reduced version of python?
+https://gist.github.com/beci/53a08cb73ec8539b895a64bebbd49734
+sudo pacman -S python3.9 #installing 3.9 with pacman - didn't work?
+yay -S python39 #this works, had to lookup 
+python    3.9 -m venv TranslaSean3.9 #creating the python 3.9 venv
+source TranslaSean3.9/bin/activate #go into newly created venv
+pip install TTS #works!
+pip -m uninstall [packagename] #going to need to uninstall when TTS get's updated to work with newest version of python, each time I download - multiple gigs off of /root gone for each model
+sudo pacman -S python-TTS # run this command every morning until it updates, if it doesn't after a week(2?) - you can use the venv method, tedious, but works - if it does DL = remove venv
+
+CoquiAI - TTS : Pacman Workaround
+https://aur.archlinux.org/packages/python-tts
+git clone https://aur.archlinux.org/python-tts.git # tried to install, missing like 10 dependancies, need to install each one manually to even test if this worked
+==> ERROR: 'pacman' failed to install missing dependencies.
+==> Missing dependencies:
+  -> cython0  #installed with workaround
+  -> python-torchaudio #installed with workaround
+    -> python-soundfile #installed with workaround
+  -> python-librosa #installed with workaround
+  -> python-inflect #installed with pacman
+  -> python-anyascii #installed with pacman
+  -> python-fsspec #installed with pacman
+  -> python-aiohttp  #installed with pacman
+  -> python-flask #installed with pacman
+  -> python-pysbd #installed with workaround
+Now when installing 'python-librosa':
+==> Making package: python-librosa 0.10.2.post1-1 (Sat 10 Aug 2024 01:55:13 PM ADT)
+==> Checking runtime dependencies...
+==> Installing missing dependencies...
+error: target not found: python-audioread
+error: target not found: python-lazy-loader
+error: target not found: python-resampy
+error: target not found: python-soxr
+==> ERROR: 'pacman' failed to install missing dependencies.
+==> Missing dependencies:
+  -> python-audioread  #installed with workaround
+  -> python-decorator #installed with pacman
+  -> python-joblib #installed with pacman
+  -> python-lazy-loader #installed with pacman
+  -> python-resampy #installed with workaround
+  -> python-scikit-learn #installed with pacman
+  -> python-soxr #installed dependancies and soxr with workaround
+==> Checking buildtime dependencies...
+Need to install all these before I can do the workaround with librosa
+After installing all 20+ dependancies, by hand, I get greeted with this error when trying to install 'python-TTS', the entire reason I did the workaround was to avoid running a venv everytime
+RuntimeError: TTS requires python >= 3.9 and < 3.12 but your Python version is 3.12.4 (main, Jun  7 2024, 06:33:07) [GCC 14.1.1 20240522]
+ERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel
+==> ERROR: A failure occurred in build().
+    Aborting...
+
+OpenAI Whisper : 
+https://github.com/openai/whisper
+https://aur.archlinux.org/packages/whisper-git
+Sudo pacman didn't work, use below method:
+git clone https://aur.archlinux.org/whisper-git.git #copied from above directory
+cd whisper-git #change directory
+makepkg -si #installs
+sudo pacman -S python-tiktoken #missing some dependancies, can be installed through pacman
+sudo pacman -S python-numba #dependancy
+sudo pacman -S python-pytorch 
+sudo pacman -S python-tqdm
+#After install, time to download model to an external HDD - 
+import whisper
+model = whisper.load_model('medium', download_root='/mnt/4e1c82f2-2f37-4698-9019-ee96f71a51ca/Lang/OpenAI-Whisper')
+#model actually loaded, no error messages, no audio to test it with - legit fresh install - no files remained, but at least it loaded without an error message - and no graphics card warning
+https://platform.openai.com/docs/guides/speech-to-text/quickstart
+sudo pacman -S python-unidecode #allows for OpenAI-Whisper to use romaji(english characters) when translating Japanese
+to switch from slovak/english japanese 
+
+LibreTranslate : while messing around with OpenAI-Whisper, every single API to translate is payed(openai/google/etc) - trying to find a free open source way to translate english-slovak jp/sk-en
+https://libretranslate.com/
+https://github.com/argosopentech/argos-translate
+https://github.com/niedev/RTranslator
+
+Argos Translate - is free, runs locally, and is open source - Libre Translate is free, but an API (requires internet) and built on Argos translate - trying to install - sudo pacman won't work
+https://aur.archlinux.org/packages/argos-translate-git
+git clone https://aur.archlinux.org/argos-translate-git.git #installs the directory from above, trying the pacman workaround by using makepkg
+cd argos-translate-git #go into newly creaed directory
+makepkg -si #trying to install with makepkg, missing dependancies : 'python-pyqt5' 'python-stanza' 'python-sentencepiece-git' 'ctranslate2-git'
+sudo pacman -S python-pyqt5 #worked
+sudo pacman -S python-stanza #didn't work
+sudo pacman -S python-sentencepiece-git #didn't work
+sudo pacman -S ctranslate2-git #didn't work 
+Going to need to think about this before moving forward, 3/4 dependancies aren't installing with sudo pacman - Do I need to do the work around for each of them and THEIR OWN dependancies?
+After doing the work around for each dependancy, worked out well, only problem is with ctranslate-2 - 2 versions? which one - and the first one is 5 Gigs! 
+https://aur.archlinux.org/packages/python-ctranslate2 #updated 2024, 5 gigs, massive. 
+https://aur.archlinux.org/packages/python-ctranslate2-git # hasn't been updated since 2022~ version recomended by makepkg, if I don't have it will it still work? 
+going to go with the 2024 updated model, if it doesn't work - how to remove? not using pacman - doing workaround
