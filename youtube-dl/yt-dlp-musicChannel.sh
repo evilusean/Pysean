@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Replace these placeholders with your actual values
-channel_url="https://www.youtube.com/@NewRetroWave/videos"
+channel_url="https://www.youtube.com/@RAIZHELLOFFICIAL/videos"
 output_folder="/mnt/sdb2/Media/Music/1Youtube"
-subfolder_name="NewRetroWave"
+subfolder_name="RaizHell"
 
 # Create an array to store the temporary file names
 temp_files=()
@@ -15,7 +15,7 @@ yt-dlp --flat-playlist --yes-playlist --get-id "$channel_url" | while read video
   if [ -f "$output_folder/$subfolder_name/${video_id}.mp3" ]; then
     echo "Skipping video ID: $video_id (MP3 file already exists)"
     continue  # Skip to the next video
-  fi  
+  fi
 
   # Download the MP3 directly with higher quality
   yt-dlp -o "$output_folder/$subfolder_name/%(id)s.mp3" \
