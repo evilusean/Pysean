@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Replace these placeholders with your actual values
-channel_url="https://www.youtube.com/@witchouse40k/videos"  # This is the "Videos" URL
-channel_url_releases="https://www.youtube.com/@witchouse40k/releases"  # This is the "Releases" URL
+channel_url="https://www.youtube.com/@GesaffelsteinChannel/videos"  # This is the "Videos" URL
+channel_url_releases="https://www.youtube.com/@GesaffelsteinChannel/releases"  # This is the "Releases" URL
 output_folder="/mnt/sdb2/Media/Music/1Youtube"
-subfolder_name="WitchHouse40k"
+subfolder_name="Gessaffelstein"
 
 # Create an array to store the temporary file names
 temp_files=()
