@@ -19,6 +19,10 @@ https://gist.github.com/lirenlin/f92c8e849530ebf66604
 https://gist.github.com/johand/66b4c229447c2d879f0d
 https://wiki.archlinux.org/title/Ncmpcpp
 
+MPC Docs (Can create custom keybindings from the commands for mpd/ncmpcpp):
+https://www.musicpd.org/doc/mpc/html/
+https://github.com/evilusean/Pysean/edit/main/Arch.BTW/CustomKeyBindings
+
 My Conf Files:
 /etc/mpd.conf
 ~/.ncmpcpp/config

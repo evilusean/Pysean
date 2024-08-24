@@ -2,3 +2,6 @@ A central file for remembering where all my custom keybindings and scripts are (
 Settings ->  Keyboard » Customise Shortcuts » Custom Shortcuts » +
 'Ctrl' + ';' = xsel > /tmp/speak.txt | festival --tts /tmp/speak.txt | pkill xsel #one liner for macro keybind 'Ctrl + ';'
 'Ctrl' + ''' = pkill audsp #one liner to stop festival 'Ctrl' + ''' 
+'Ctrl' + ',' = mpc prev #ncmpcpp default previous song is 'Shift' + '<' - this is similar
+'Ctrl' + '.' = mpc next #ncmpcpp default next song is 'Shift' + '>' - this is similar
+'Ctrl' + '/' = mpc toggle #pause/play ncmpcpp
