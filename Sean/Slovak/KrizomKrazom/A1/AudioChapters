@@ -46,6 +46,10 @@ Future Sean, try not to use ',' commas so you can just run it through a replace 
     Čaute = Hello/Goodbye
   24 - Pekný deň Zuzka = Good day Zuzka
     Aj tebe Robo = You too Robo
+  25 - Ano = Yes
+    Nie = No
+  26 - Ruzimiete po slovensky = You speak Slovak
+
 
 Á, Ä, Č, Ď, DŽ, É, Í, Ĺ, Ľ, Ň, Ó, Ô, Ŕ, Š, Ť, Ú, Ý, Ž
 á, ä, č, ď, dž, é, í, ĺ, ľ, ň, ó, ô, ŕ, š, ť, ú, ý, ž
