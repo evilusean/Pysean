@@ -66,6 +66,11 @@ Tabbufline (NVChad Tab Buffer Bars) :
 <Shift> + <Tab> = Cycle Backwards
 <space> + x = close a tab
 
+Find and Replace:
+https://aaronbos.dev/posts/find-and-replace-neovim
+:%s/Waldo/Wizard Whitebeard/g
+:[range]s/<string-to-find>/<string-to-replace>/[flags]
+
 # Linux / Macos (unix) Uninstall - if you royally mess up a lua file(already happened), just reinstall :
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
