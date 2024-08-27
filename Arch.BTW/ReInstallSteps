@@ -120,6 +120,7 @@ sudo pacman -S nodejs npm
 sudo npm install -g create-react-app
 sudo npm install -g create-next-app
 sudo pacman -S fzf
+sudo pacman -S libreoffice
 
 Add a user to Sudoers:
 usermod -aG wheel ArchSean
