@@ -336,6 +336,9 @@ I'm running dangerously low on '/root' >5 gigs left, and I still need to install
 sudo pacman -S mpv #audio from flashcards won't work without mpv
 After wasting hours last night trying to get audio to work on flashcards the problem is 'mpv 0.38' isn't compatible with Anki, it's been an issue since at least April - that's 4 months.
   So who knows when there is going to be a fix? I'm just going to save the .csv's so when it does get fixed, it will only take me a day to get everything back, also might reinstall Arch OS
+Fixed Anki! the problem was the .csv's, audio worked when I tried it with another deck, my .csv's were referenced on the old linux and when I exported/imported the decks, the directories were changed
+  [sound:file:///mnt/sdb4/Lang/Slovake/Coqui-AI/Slovak/Adjectives/Slovak/0001.wav] # was wrong, this directory worked on ubuntu
+  [sound:/mnt/sdb4/Lang/Slovake/Coqui-AI/Slovak/Adjectives/Slovak/0001.wav] #new directory that works on Arch Linux, Btw.
 
 Need to get back to coding for a bit(scripting languages doesn't count - Does it?) - Installing React/NPM/Node:
 https://www.atlantic.net/dedicated-server-hosting/how-to-install-react-js-with-nginx-on-arch-linux/
