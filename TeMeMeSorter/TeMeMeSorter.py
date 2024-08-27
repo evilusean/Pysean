@@ -8,5 +8,6 @@
 #then take the images one by one to display in the GUI, take the mapping and then sort to correct folder
 #afer being sorted, delete the old image from the unsorted folder and move the new image to correct folder
 #add an undo button, I will inevitably press the wrong key
+#'Next/Skip' Button
 #if feeling ambitious, add a gif sort function that auto takes all gifs to 'gifs' folder
 #if feeling very ambitious, create a hashing algo that checks for dups(I know there is a ton) - future sean problem
