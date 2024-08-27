@@ -339,6 +339,12 @@ After wasting hours last night trying to get audio to work on flashcards the pro
 Fixed Anki! the problem was the .csv's, audio worked when I tried it with another deck, my .csv's were referenced on the old linux and when I exported/imported the decks, the directories were changed
   [sound:file:///mnt/sdb4/Lang/Slovake/Coqui-AI/Slovak/Adjectives/Slovak/0001.wav] # was wrong, this directory worked on ubuntu
   [sound:/mnt/sdb4/Lang/Slovake/Coqui-AI/Slovak/Adjectives/Slovak/0001.wav] #new directory that works on Arch Linux, Btw.
+I just assumed that when I exported the decks, it would also attach the audio files to the new '.pkg' like every other deck I imported had the audio files included in the '.pkg' unlike my custom ones
+The directory didn't change, so I just ASSuMe'd that it would work
+So, to fix you need to open in libre office, 'Ctrl + H' = Find and replace - replace below with second row (remove the 'file:///'):
+  [sound:file:///mnt/sdb4/Lang/Slovake/Coqui-AI/Slovak/
+  [sound:/mnt/sdb4/Lang/Slovake/Coqui-AI/Slovak/
+Future Sean, don't forget to update scripts when making new files
 
 Need to get back to coding for a bit(scripting languages doesn't count - Does it?) - Installing React/NPM/Node:
 https://www.atlantic.net/dedicated-server-hosting/how-to-install-react-js-with-nginx-on-arch-linux/
