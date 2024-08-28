@@ -1,7 +1,8 @@
 #!/bin/bash
+#sudo chmod +x WhiteSpaceRemover.sh
 
 # Set the directory containing the files you want to rename
-directory="/mnt/sdb4/Lang/Slovake/KrizomKrazom/Audio/KK_A1_1" 
+directory="/mnt/sdb4/Lang/Slovake/KrizomKrazom/Audio/KK_A1_2" 
 
 # Loop through each file in the directory
 for filename in "$directory"/*; do
