@@ -121,6 +121,8 @@ sudo npm install -g create-react-app
 sudo npm install -g create-next-app
 sudo pacman -S fzf
 sudo pacman -S libreoffice
+sudo pacman -S gimp
+sudo pacman -S blender
 
 Add a user to Sudoers:
 usermod -aG wheel ArchSean
