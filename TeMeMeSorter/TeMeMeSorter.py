@@ -23,3 +23,4 @@
 #instead of click tab -> right click -> save image as -> save Vs click tab -> press button (save into unsorted folder)
 #Maybe use GoLang? - Next Language, then AWS - Finish A2/B1 Slovak - Create Anki Decks - Then Go - Then Apply
     # Then I can start applying for devops/web developer/data analyst/astronaut/doctor/scientist+pastor/pilot
+#Maybe build in Go? - I need a GUI for images - speed doesn't really matter, one at a time Vs concuritSean
