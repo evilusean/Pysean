@@ -33,6 +33,13 @@ https://docs.rockylinux.org/books/nvchad/nvchad_ui/nvimtree/
 NeoTree Show Hidden Files LUA:
 https://github.com/nvim-neo-tree/neo-tree.nvim/discussions/353
 
+Vimium : Chrome Extension, that allows you to have VIM-like commands to control chrome web-browser :
+  https://github.com/philc/vimium
+  https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl
+
+VSCode has a a VIM extension :
+    https://github.com/VSCodeVim/Vim
+
 List Treesitter installed languages.
 :TSInstallInfo
 Install fish for treesitter.  
