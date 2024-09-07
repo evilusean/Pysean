@@ -15,9 +15,14 @@ mpv --no-config --vo=tct /home/ArchSean/Downloads/LearnSlovakWhileYouSleep8Hours
 mpv --vo=drm file.mp4
 Just use ffmpeg and output to acscii in the console. #future sean project, take in a youtube url and convert it to an ascii video to play in terminal
 
-Audio (Media) Player for terminal? :
+Audio (Media) Player for terminal? Vs mpd/ncmpcpp :
 https://archlinux.org/packages/extra/x86_64/audacious/
 https://audacious-media-player.org/
+
+Terminal Browser : 
+https://lynx.invisible-island.net/
+https://www.youtube.com/watch?v=6h9sjYm9vTE&ab_channel=NetworkChuck
+sudo pacman -S lynx
 
 https://bbs.archlinux.org/viewtopic.php?id=50475
 CLI Softwares

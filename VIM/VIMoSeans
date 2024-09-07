@@ -1,0 +1,217 @@
+Recomended Cheat Sheet : https://hamwaves.com/vim.tutorial/en/index.html
+Motion Commands : Are shortcuts triggered in Normal mode that allow you to quickly move around your document with preceision
+  '<#>g' = go to line number <#>
+  'w' = go to start of next word
+  'b' = move backward a word
+Operator Commands: can be used with motion commands:
+  'c' = change
+  'd' = delete
+  'y' = yank (copy)
+  '~' = swap case (only if 'tildeop' is set
+  'g~' = swap case
+  'gu' = make lowercase
+  'gq' = text formatting
+  '>' = shift right
+  '<' = shift left
+Examples:
+  'd' + 'w' = delete the current word
+  'c' + '3" + 'w' = change three words
+Directional Motions: 
+  'h' = right
+  'j' = down 
+  'k' = up
+  'l' = right
+Examples: 
+  '10' + 'h' = move 10 characters left
+  '25' + 'j' = move down 25 lines
+
+GoTo Motions : Will go to a specific line
+  'gg' = go to first line
+  'G' = go to the last line
+  '22' + 'gg' = go to the 22nd line from the top
+  '22' + 'G' = same as above, will go to line 22, using shift 'G' instead of 'gg'
+  'gt' = go one tab up
+  'gT' = go down one tab
+
+Word Motions : 
+  'w' = move to the start of the next word
+  'e' = move to the end of the word (will next if already there)
+  'b' = moves to the start of the last word
+Join Lines: 
+  'J' = will join the bottom line with the current line
+  '10' + 'J' = Will join the bottom ten lines with the current line
+Start or End of Line : (Similar to RegEx with '$' and '^')
+  '$' = go to end of line, will remain on the end of line when moving with 'hjkl' movement - sticky positioning
+  '^' = go to start of line , will remain on the start of line when moving with 'hjkl' movement - default positioning
+Replace Command : Allows you to write overtop of existing characters
+  'r' = replace a single character
+  'R' = enter Replace Mode, everything typed will replace current text
+Undo and Redo Commands : 
+  'u' = will undo a text change
+  'U' = undo an entire line,
+  'Ctrl' + 'r' = Redo - will redo something
+Change Command : A way of selecting and then deleting an amount of text based on word motions, will put you in insert mode after deleting
+  'c' = change
+  'C' = change to end of line (COL), will remove everything from where you are to end of line and put you in insert mode
+  'c' + 'w" = change to end of word
+  'c' + 'e' = change to end of last word
+  'C' + 'gg' = change from here to the first line
+  'c' + '2' + 'e' = c2e - will change the next 2 words, will remove everything from where you are and next 2 words and put you in insert mode
+  'c' + '5' + 'j" = c5j - will change the next 5 lines from where you are, remove everything and put you in insert mode
+Delete Command : Whatever you delete will be placed into the clipboard(unnamed register), so whenever you paste, it will paste what was deleted
+  'd' + 'w' = delete from the current cursor to the start of the next word
+  'd' + 5 + 'w' = delete the next 5 words
+  2 + 'd' + 'w' = delete from the current cursor to start of the next word
+  'dd' = delete the current line
+  'D' = Delete to end of line (EOL)
+  5 + 'dd' = delete five lines
+  'x' = delete currently selected character
+  4 + 'x' = delete next 4 characters
+  'Shift' + P = Paste what is in clipboard(different than control+shift+V)
+Yank and Paste Commands : 
+  'y' = Will Copy text into the unnamed register(different than 'Ctrl' + 'Shift' + 'V'
+  'yw' = yank current word
+  'yy' = yank a line
+  'Y' = yank current line
+  'p' = Paste before(below)
+  'P' = Paste after(above)
+Insert and Append Commands :
+  'i' = will enter insert mode, to the left of the cursor box, allowing you to add text to the document
+  'I' = will enter Insert mode, at the start of the line
+  'a' = append, will enter insert mode to the right of the cursor
+  'A' = Append, at the end of the line, will enter insert mode at end of line
+Line Insert Command : Allows you to quickly create a new line above or below the current line and enter insert mode
+  'o' = create the new line below and enter insert mode
+  'O' = create the new line above and enter insert mode 
+Find Command : lets you quickly find and move to a search result (regular expressions work)
+  '/' = '/hello' would search forward for the first instance of the word 'hello' in your code
+  '?' = '?hello' search backward from the current posiition for word 'hello'
+  'n' = next match
+  'N' = previous match
+  '/hello/s-2' = places the cursor 2 characters before the start of match
+  '/hello/e' = places cursor at end of match
+  '/hello/e+4' = places cursor at four characters after end of match 
+  '/hello/+3' = offsets by 3 lines
+Substitute Command : lets you replace text in a file using a regular expression 
+  ':.s/hello/world/' = '.' is for current line, will tell you to find all instances of 'hello' and 's' subistitute/replace it with 'world'
+  ':2s/hello/world/i' = '2' on line 2 replace all instances of 'hello' and substitute it for 'world' 'i' and ignore casing
+  ':2,5s/hello/world/g' = '2,5' for lines 2 to 5, reokace all occurences of 'hello' for 'world' 'g' global means all
+  ':1,$s/hello/world/g' = '1,$' from line 1 to the end of document, substitute all instances of the word hello for world 'g' globally all occurences
+  '%s/hello/world/g' = short cut for above 
+'\' Leader Key : default is '\', used for triggering user or plugin defined shortcuts
+  '\cc' = NerdCommenter Plugin, used for commenting out currently selected line(depends on what plugins/scripts you have installed)
+  'nnoremap <Leader>b :buffers<CR>:buffer<Space>' = change the 'vimrc' file to remap leader key(or any), in this example to space
+Visual Mode - Allows you to select text through either yanking, deleting, or manipulation
+  'v' = visual mode will allow you to select multiple characters - press 'v' and then any motion afterwards to select from where your cursor was
+  'V' = visual Line Mode =  allows you to select whole line at a time - just move up or down
+  'CtrL' + 'v' = visual block mode - allows you to select vertically and by line - press 'c' ('a'/'i' doesnt work) after selecting - so you can add multi line comments or delete multi line
+  'c' = c to change(delete currently selected then go to insert mode)
+  'y' = yank to unnamed register 
+  'p' = to paste from unnamed register
+  'gv' = grab last visual mode(if you missclick or lose your last visual mode - will allow you to undo)
+Indentation Command : The Leading Whitespace can be adjusted based on tab size(indentation)
+  '>' = indent line outward(to the right)
+  '<' = indent line inward (to the left)
+    You can use count modified for number of indents - Useful to use visual mode to select your line
+Window Splitting : allows you to have multiple windows open on the screen at once 
+  'Ctrl' + 'ws' = split horizontally
+  'Ctrl' + 'wv' = split vertically
+  'Ctrl' + 'wc' = close window
+  ':close' = close window
+  'Ctrl' + 'w' + <direction> = ('Ctrl' + 'w' + 'h'/'j'/'k'/'l') move to the open buffer window 
+Buffers : in the context of vim, it is a temporary memory being utilized for an open file 'buffer stack' only deallocated when you completely close vim
+  ':ls' = see a list of all buffers
+  ':buffers' = see a list of all buffers
+  'buffer <#>' = make the buffer at the designated number(or specifying the filename) the active buffer
+  ':bnext' = get next buffer
+  ':bprev' = get previous buffer
+  ':bfirst' = get first buffer
+  ':blast' = get last buffer
+  'bufdo %s/hello/goodbye/g | update' = run command for all buffers - will substitute 'hello' for 'goodbye' in every file in the buffer stack
+Mark : 
+  'm' + <letter> = Mark a spot
+  ''' + <letter> = single quotation mark + <letter> will jump to the same line
+  '~' + <letter> = Will jump to the exact marked letter/character 
+
+Vim Modes : 
+  Normal Mode = Default Mode, you can always return to default mode by pressing 'esc', 
+  Command Line Mode : 
+    ':' any time you type a colon it will be followed by a command
+    '/' = Search forwards, will search the rest of your code
+    '?' = Search Backwards, will search previous code for what follows '?'
+  Insert Mode :
+    'i' = will insert at cursor
+    'I' = will insert at start of line
+    'a' = insert at after current character
+    'A' = Insert at end of Line
+    'o' = open below
+    'O' = Open above
+    'c' = change*
+    'C' = change at end of the line
+    'c' + 'w' = change word
+  Visual Mode : 'V' has two modes, visual line mode and visual mode
+    'V' = Visual Mode
+    'V' = Visual Line Mode
+    'Ctrl' + 'V' = Visual Block Mode - A way of selecting text and doing something with that text
+  Replace Mode : 
+    'r' = replace a character(exits mode immediately)
+    'R' = Replace mode, but will stay in it as you replace multiple characters
+
+File Commands : Most file commands are entered via the command line and start with ':'
+  ':w' = write file(save) 
+  ':w <filename>' = write file at this <filename> path (save new file)
+  ':w!' = attempt to force the file to save(useful for read-only files)
+  ':wa' = save all files
+  ':q' = quit
+  ':q!' = quit force - quit without saving changes
+  'qa' = quit all open files
+  'Z' = quit(can be used without colon or command line mode)
+
+
+Switching Tabs(useful for VS code extension/vimium for chromium/neovim and vim)
+  'g' + 't' = move forward 1 tab
+  'g' + 'T' = move backwards 1 tab
+    If you have a lot of tabs open and want to switch between them quickly, you can use the gt and gT commands. 
+    The gt command will move the cursor to the next tab in the list, while the gT command will move the cursor to the previous tab.
+    You can also use a number before the gt or gT command to move to a specific tab. For example, 2gt will move the cursor to the second tab in the list.
+  'x' = Will close current tab
+  'Shift' + 'Z' (x2) = Tap Twice, will close current tab in vscode (x doesn't work in VSCode)
+  ':tabnext'To switch to the next tab in Vim, press the :tabnext command. This will move the cursor to the next tab in the list.
+  ':tabn <number>' If you want to switch to a specific tab, you can press :tabn [number], where [number] is the number of the tab you want to switch to. 
+    For example, you would press :tabn 3 to switch to the third tab.
+  ':tabmove' = Another way to switch tabs in Vim is to use the :tabmove command. This command allows you to move a tab to a different position in the tab list. 
+    For example, to move the current tab to the third position, you would press :tabmove 3.
+  'Ctrl' + 'e' = in VSCode, this will allow you to search files in your project directory, very quick if you know what to look for (or 'ctrl' + 'p' OR 'ctrl' + 'shift' + F) 
+
+Vimium : Chrome Extension, that allows you to have VIM-like commands to control chrome web-browser
+  ?       show the help dialog for a list of all available keys
+  h       scroll left
+  j       scroll down
+  k       scroll up
+  l       scroll right
+  gg      scroll to top of the page
+  G       scroll to bottom of the page
+  d       scroll down half a page
+  u       scroll up half a page
+  f       open a link in the current tab
+  F       open a link in a new tab
+  r       reload
+  gs      view source
+  i       enter insert mode -- all commands will be ignored until you hit Esc to exit
+  yy      copy the current url to the clipboard
+  yf      copy a link url to the clipboard
+  gf      cycle forward to the next frame
+  gF      focus the main/top frame
+Vimium Tabs:
+  J, gT   go one tab left
+  K, gt   go one tab right
+  g0      go to the first tab. Use ng0 to go to n-th tab
+  g$      go to the last tab
+  ^       visit the previously-visited tab
+  t       create tab
+  yt      duplicate current tab
+  x       close current tab
+  X       restore closed tab (i.e. unwind the 'x' command)
+  T       search through your open tabs
+  W       move current tab to new window
+  <a-p>   pin/unpin current tab
