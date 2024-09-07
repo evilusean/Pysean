@@ -4,6 +4,12 @@ import os
 import shutil
 import csv
 
+#TODO:
+#Add CSV with keybindings
+#Make Image box Larger
+#default image folder wasn't working, need to fix - still asks on startup
+
+
 # Set the path to your CSV file containing key mappings
 key_mapping_file = "/home/ArchSean/Downloads/Unsorted/MeMeLocaSeans.csv"  # Replace with the actual path if needed
 
@@ -60,6 +66,18 @@ class MemeSorter:
         # Key bindings
         master.bind("<Key>", self.sort_image)
 
+        self.sort_gifs_button = tk.Button(master, text="Sort GIFs", command=self.sort_all_gifs)
+        self.sort_gifs_button.grid(row=5, column=0, columnspan=2)
+
+        # Display key bindings below the image
+        self.key_bindings_label = tk.Label(master, text="")
+        self.key_bindings_label.grid(row=6, column=0, columnspan=2)
+        self.update_key_bindings_display()
+
+        # Store last moved image info for undo
+        self.last_moved_image = None
+        self.last_moved_from = None
+
     def select_folder(self):
         """Prompts the user to select an image folder and loads key mappings."""
         self.image_folder = filedialog.askdirectory()
@@ -105,7 +123,13 @@ class MemeSorter:
             destination_folder = os.path.join(self.sorted_folder, self.key_mapping[key])
             os.makedirs(destination_folder, exist_ok=True)
             try:
+                # Move the image (not delete)
                 shutil.move(self.current_image, destination_folder)
+
+                # Store info for undo
+                self.last_moved_image = os.path.join(destination_folder, os.path.basename(self.current_image))
+                self.last_moved_from = self.image_folder
+
                 self.undo_button.config(state=tk.NORMAL)
                 self.load_next_image()
             except Exception as e:
@@ -117,9 +141,35 @@ class MemeSorter:
 
     def undo_move(self):
         """Moves the last sorted image back to the original folder."""
-        # (Implementation for moving the last sorted image back)
-        # You'll need to keep track of the last moved image and its source folder
-        pass
+        if self.last_moved_image and self.last_moved_from:
+            try:
+                shutil.move(self.last_moved_image, self.last_moved_from)
+                self.last_moved_image = None
+                self.last_moved_from = None
+                self.undo_button.config(state=tk.DISABLED)
+                self.load_next_image()  # Reload to show the image back
+            except Exception as e:
+                messagebox.showerror("Error", f"Failed to undo move: {e}")
+
+    def sort_all_gifs(self):
+        """Moves all GIF images to the specified 'GIFs' folder."""
+        gifs_folder = "/mnt/sdb3/MEmes/GIFs"  # Set your desired GIF folder path here
+        os.makedirs(gifs_folder, exist_ok=True)
+
+        for filename in os.listdir(self.image_folder):
+            if filename.lower().endswith('.gif'):
+                source_path = os.path.join(self.image_folder, filename)
+                dest_path = os.path.join(gifs_folder, filename)
+                try:
+                    shutil.move(source_path, dest_path)
+                except Exception as e:
+                    messagebox.showerror("Error", f"Failed to move GIF: {e}")
+        self.load_next_image()  # Refresh the image display
+
+    def update_key_bindings_display(self):
+        """Updates the label to display key bindings."""
+        bindings_text = "\n".join([f"{key}: {folder}" for key, folder in self.key_mapping.items()])
+        self.key_bindings_label.config(text=bindings_text)
 
 root = tk.Tk()
 app = MemeSorter(root)
