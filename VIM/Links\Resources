@@ -17,7 +17,7 @@ https://www.youtube.com/watch?v=fFHlfbKVi30&ab_channel=devaslife
 Vim Adventures(Gameified VIM Text Game):
 https://vim-adventures.com/
 
-FCC - VIM Essentials Course for Beginners:
+*FCC - VIM Essentials Course for Beginners:
 https://www.youtube.com/watch?v=JYNA9j8SXs4&ab_channel=freeCodeCamp.org
 
 FS - 100+ Linux Things you Need to Know:
@@ -39,6 +39,12 @@ Vimium : Chrome Extension, that allows you to have VIM-like commands to control 
 
 VSCode has a a VIM extension :
     https://github.com/VSCodeVim/Vim
+
+Install the perfect NeoVimChad Setup for working with Node/JS/TS - With Code completion/Autosuggestions/Linting with static analysis/autoformatting on save/debugging capabilities :
+https://www.youtube.com/watch?v=CVCBHHFXWNE
+
+GoLang Neovim Setup :
+https://www.youtube.com/watch?v=i04sSQjd-qo&ab_channel=DreamsofCode
 
 List Treesitter installed languages.
 :TSInstallInfo
