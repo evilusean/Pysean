@@ -4,17 +4,11 @@ import os
 import shutil
 import csv
 
-#TODO:
-#Add CSV with keybindings
-#Make Image box Larger
-#default image folder wasn't working, need to fix - still asks on startup
-
-
 # Set the path to your CSV file containing key mappings
-key_mapping_file = "/home/ArchSean/Downloads/Unsorted/MeMeLocaSeans.csv"  # Replace with the actual path if needed
+key_mapping_file = "/home/ArchSean/Downloads/Unsorted/MeMeLocaSeans.csv"
 
 # Set the folder containing the images to sort
-image_folder = "/home/ArchSean/Downloads/Unsorted"  # Replace with the actual path
+default_image_folder = "/home/ArchSean/Downloads/Unsorted"
 
 # Load key mappings from the CSV file
 key_mapping = {}
@@ -25,10 +19,6 @@ try:
 except FileNotFoundError:
     print(f"Error: Key mapping file not found: {key_mapping_file}")
 
-# Get the first image from the folder (you'll likely loop through all images later)
-image_files = [f for f in os.listdir(image_folder) if os.path.isfile(os.path.join(image_folder, f))]
-current_image = os.path.join(image_folder, image_files[0]) if image_files else None
-
 
 class MemeSorter:
     def __init__(self, master):
@@ -36,14 +26,14 @@ class MemeSorter:
         master.title("TeMeMeSorter")
 
         # Variables
-        self.image_folder = ""
-        self.key_mapping = {}
-        self.current_image = None
-        self.sorted_folder = ""
+        self.image_folder = default_image_folder
+        self.key_mapping = key_mapping  # Store key mapping in the instance
 
-        # GUI elements
-        self.folder_label = tk.Label(master, text="Image Folder:")
+        # GUI elements 
+        self.folder_label = tk.Label(master, text="Image Folder:") 
         self.folder_label.grid(row=0, column=0)
+
+        self.folder_label.config(text=f"Image Folder: {self.image_folder}")
 
         self.folder_button = tk.Button(master, text="Select Folder", command=self.select_folder)
         self.folder_button.grid(row=0, column=1)
@@ -69,21 +59,25 @@ class MemeSorter:
         self.sort_gifs_button = tk.Button(master, text="Sort GIFs", command=self.sort_all_gifs)
         self.sort_gifs_button.grid(row=5, column=0, columnspan=2)
 
-        # Display key bindings below the image
+        # Display key bindings below the image - Define BEFORE using
         self.key_bindings_label = tk.Label(master, text="")
         self.key_bindings_label.grid(row=6, column=0, columnspan=2)
-        self.update_key_bindings_display()
+
+        self.update_key_bindings_display()  # Display initial mappings
 
         # Store last moved image info for undo
         self.last_moved_image = None
         self.last_moved_from = None
+
+        self.create_sorted_folder()
+        self.load_next_image()
 
     def select_folder(self):
         """Prompts the user to select an image folder and loads key mappings."""
         self.image_folder = filedialog.askdirectory()
         if self.image_folder:
             self.folder_label.config(text=f"Image Folder: {self.image_folder}")
-            self.load_key_mapping()
+            self.load_key_mapping()  # Reload mappings if a new folder is selected
             self.create_sorted_folder()
             self.load_next_image()
 
@@ -94,9 +88,7 @@ class MemeSorter:
             with open(mapping_file, 'r') as f:
                 reader = csv.reader(f)
                 self.key_mapping = {row[0].lower(): row[1] for row in reader}
-            self.mapping_text.delete("1.0", tk.END)
-            for key, folder in self.key_mapping.items():
-                self.mapping_text.insert(tk.END, f"{key}: {folder}\n")
+            self.update_key_bindings_display()  # Update display after loading
         except FileNotFoundError:
             messagebox.showerror("Error", f"Key mapping file not found: {mapping_file}")
 
@@ -123,10 +115,8 @@ class MemeSorter:
             destination_folder = os.path.join(self.sorted_folder, self.key_mapping[key])
             os.makedirs(destination_folder, exist_ok=True)
             try:
-                # Move the image (not delete)
                 shutil.move(self.current_image, destination_folder)
 
-                # Store info for undo
                 self.last_moved_image = os.path.join(destination_folder, os.path.basename(self.current_image))
                 self.last_moved_from = self.image_folder
 
@@ -147,13 +137,13 @@ class MemeSorter:
                 self.last_moved_image = None
                 self.last_moved_from = None
                 self.undo_button.config(state=tk.DISABLED)
-                self.load_next_image()  # Reload to show the image back
+                self.load_next_image()
             except Exception as e:
                 messagebox.showerror("Error", f"Failed to undo move: {e}")
 
     def sort_all_gifs(self):
         """Moves all GIF images to the specified 'GIFs' folder."""
-        gifs_folder = "/mnt/sdb3/MEmes/GIFs"  # Set your desired GIF folder path here
+        gifs_folder = "/mnt/sdb3/MEmes/GIFs"
         os.makedirs(gifs_folder, exist_ok=True)
 
         for filename in os.listdir(self.image_folder):
@@ -164,16 +154,20 @@ class MemeSorter:
                     shutil.move(source_path, dest_path)
                 except Exception as e:
                     messagebox.showerror("Error", f"Failed to move GIF: {e}")
-        self.load_next_image()  # Refresh the image display
+        self.load_next_image()
 
     def update_key_bindings_display(self):
         """Updates the label to display key bindings."""
         bindings_text = "\n".join([f"{key}: {folder}" for key, folder in self.key_mapping.items()])
         self.key_bindings_label.config(text=bindings_text)
+        self.mapping_text.delete("1.0", tk.END)  # Clear existing content
+        self.mapping_text.insert(tk.END, bindings_text)  # Insert updated bindings
+
 
 root = tk.Tk()
 app = MemeSorter(root)
 root.mainloop()
+
 
 
 #create a python script for sorting memes from one folder into many folders(25) 
