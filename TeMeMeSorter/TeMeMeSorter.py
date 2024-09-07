@@ -5,6 +5,12 @@ import shutil
 import csv
 from PIL import Image, ImageTk
 
+#TODO:
+#Image still isn't being displayed, added in a bunch of code, still not working
+#Changed permissions for 'Unsorted' Folder, still won't show images
+#Remove the top row of csv 
+#will just move the unsorted folder to memes folder/external HD - future sean problem
+
 # Set the path to your CSV file containing key mappings
 key_mapping_file = "/home/ArchSean/Downloads/Unsorted/MeMeLocaSeans.csv"
 
@@ -30,6 +36,7 @@ class MemeSorter:
         self.image_folder = default_image_folder
         self.key_mapping = key_mapping
         self.current_image = None  # Store the current image path
+        self.photo = None  # Initialize self.photo here
 
         # GUI elements
         self.folder_label = tk.Label(master, text="Image Folder:")
@@ -117,18 +124,23 @@ class MemeSorter:
 
     def display_image(self, image_path):
         """Displays the image on the canvas."""
-        img = Image.open(image_path)
+        try:
+            img = Image.open(image_path)
 
-        # Update the canvas size based on the image BEFORE resizing
-        self.image_canvas.config(width=img.width, height=img.height)
+            # Update the canvas size based on the image BEFORE resizing
+            self.image_canvas.config(width=img.width, height=img.height)
 
-        # Resize the image to fit the canvas while preserving aspect ratio
-        canvas_width = self.image_canvas.winfo_width()
-        canvas_height = self.image_canvas.winfo_height()
-        img.thumbnail((canvas_width, canvas_height))
+            # Resize the image to fit the canvas while preserving aspect ratio
+            canvas_width = self.image_canvas.winfo_width()
+            canvas_height = self.image_canvas.winfo_height()
+            img.thumbnail((canvas_width, canvas_height))
 
-        self.photo = ImageTk.PhotoImage(img)
-        self.image_canvas.create_image(canvas_width // 2, canvas_height // 2, anchor=tk.CENTER, image=self.photo)
+            # Assign the PhotoImage to the instance variable
+            self.photo = ImageTk.PhotoImage(img)
+
+            self.image_canvas.create_image(canvas_width // 2, canvas_height // 2, anchor=tk.CENTER, image=self.photo)
+        except Exception as e:
+            print(f"Error loading image: {e}")
 
     def sort_image(self, event):
         """Moves the current image to the folder associated with the pressed key."""
@@ -190,6 +202,8 @@ class MemeSorter:
 root = tk.Tk()
 app = MemeSorter(root)
 root.mainloop()
+
+
 
 
 
