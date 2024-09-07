@@ -4,6 +4,26 @@ import os
 import shutil
 import csv
 
+# Set the path to your CSV file containing key mappings
+key_mapping_file = "/home/ArchSean/Downloads/Unsorted/MeMeLocaSeans.csv"  # Replace with the actual path if needed
+
+# Set the folder containing the images to sort
+image_folder = "/home/ArchSean/Downloads/Unsorted"  # Replace with the actual path
+
+# Load key mappings from the CSV file
+key_mapping = {}
+try:
+    with open(key_mapping_file, 'r') as f:
+        reader = csv.reader(f)
+        key_mapping = {row[0].lower(): row[1] for row in reader}
+except FileNotFoundError:
+    print(f"Error: Key mapping file not found: {key_mapping_file}")
+
+# Get the first image from the folder (you'll likely loop through all images later)
+image_files = [f for f in os.listdir(image_folder) if os.path.isfile(os.path.join(image_folder, f))]
+current_image = os.path.join(image_folder, image_files[0]) if image_files else None
+
+
 class MemeSorter:
     def __init__(self, master):
         self.master = master
