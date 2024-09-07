@@ -3,6 +3,7 @@ from tkinter import filedialog, messagebox
 import os
 import shutil
 import csv
+from PIL import Image, ImageTk
 
 # Set the path to your CSV file containing key mappings
 key_mapping_file = "/home/ArchSean/Downloads/Unsorted/MeMeLocaSeans.csv"
@@ -27,10 +28,11 @@ class MemeSorter:
 
         # Variables
         self.image_folder = default_image_folder
-        self.key_mapping = key_mapping  # Store key mapping in the instance
+        self.key_mapping = key_mapping
+        self.current_image = None  # Store the current image path
 
-        # GUI elements 
-        self.folder_label = tk.Label(master, text="Image Folder:") 
+        # GUI elements
+        self.folder_label = tk.Label(master, text="Image Folder:")
         self.folder_label.grid(row=0, column=0)
 
         self.folder_label.config(text=f"Image Folder: {self.image_folder}")
@@ -42,28 +44,28 @@ class MemeSorter:
         self.mapping_label.grid(row=1, column=0)
 
         self.mapping_text = tk.Text(master, height=10, width=50)
-        self.mapping_text.grid(row=2, column=0, columnspan=2)
+        self.mapping_text.grid(row=1, column=1)
+
+        # Create a canvas for image display
+        self.image_canvas = tk.Canvas(master, width=500, height=500)  # Adjust size as needed
+        self.image_canvas.grid(row=2, column=0, columnspan=2)
 
         self.image_label = tk.Label(master, text="No image loaded")
         self.image_label.grid(row=3, column=0, columnspan=2)
 
+        # Display key bindings below the image
+        self.key_bindings_label = tk.Label(master, text="")
+        self.key_bindings_label.grid(row=4, column=0, columnspan=2)
+        self.update_key_bindings_display()
+
         self.next_button = tk.Button(master, text="Next/Skip", command=self.next_image, state=tk.DISABLED)
-        self.next_button.grid(row=4, column=0)
+        self.next_button.grid(row=5, column=0)
 
         self.undo_button = tk.Button(master, text="Undo", command=self.undo_move, state=tk.DISABLED)
-        self.undo_button.grid(row=4, column=1)
-
-        # Key bindings
-        master.bind("<Key>", self.sort_image)
+        self.undo_button.grid(row=5, column=1)
 
         self.sort_gifs_button = tk.Button(master, text="Sort GIFs", command=self.sort_all_gifs)
-        self.sort_gifs_button.grid(row=5, column=0, columnspan=2)
-
-        # Display key bindings below the image - Define BEFORE using
-        self.key_bindings_label = tk.Label(master, text="")
-        self.key_bindings_label.grid(row=6, column=0, columnspan=2)
-
-        self.update_key_bindings_display()  # Display initial mappings
+        self.sort_gifs_button.grid(row=6, column=0, columnspan=2)
 
         # Store last moved image info for undo
         self.last_moved_image = None
@@ -98,32 +100,53 @@ class MemeSorter:
         os.makedirs(self.sorted_folder, exist_ok=True)
 
     def load_next_image(self):
-        """Loads the next image from the image folder."""
+        """Loads the next image from the image folder and displays it."""
         for filename in os.listdir(self.image_folder):
             if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
                 self.current_image = os.path.join(self.image_folder, filename)
                 self.image_label.config(text=f"Current Image: {filename}")
                 self.next_button.config(state=tk.NORMAL)
+
+                # Load and display the image
+                self.display_image(self.current_image)
                 return
+
         self.image_label.config(text="No more images to sort!")
         self.next_button.config(state=tk.DISABLED)
+        self.image_canvas.delete("all")  # Clear the canvas if no images
+
+    def display_image(self, image_path):
+        """Displays the image on the canvas."""
+        img = Image.open(image_path)
+
+        # Update the canvas size based on the image BEFORE resizing
+        self.image_canvas.config(width=img.width, height=img.height)
+
+        # Resize the image to fit the canvas while preserving aspect ratio
+        canvas_width = self.image_canvas.winfo_width()
+        canvas_height = self.image_canvas.winfo_height()
+        img.thumbnail((canvas_width, canvas_height))
+
+        self.photo = ImageTk.PhotoImage(img)
+        self.image_canvas.create_image(canvas_width // 2, canvas_height // 2, anchor=tk.CENTER, image=self.photo)
 
     def sort_image(self, event):
         """Moves the current image to the folder associated with the pressed key."""
-        key = event.keysym.lower()
-        if key in self.key_mapping:
-            destination_folder = os.path.join(self.sorted_folder, self.key_mapping[key])
-            os.makedirs(destination_folder, exist_ok=True)
-            try:
-                shutil.move(self.current_image, destination_folder)
+        if self.current_image:  # Only sort if an image is loaded
+            key = event.keysym.lower()
+            if key in self.key_mapping:
+                destination_folder = os.path.join(self.sorted_folder, self.key_mapping[key])
+                os.makedirs(destination_folder, exist_ok=True)
+                try:
+                    shutil.move(self.current_image, destination_folder)
 
-                self.last_moved_image = os.path.join(destination_folder, os.path.basename(self.current_image))
-                self.last_moved_from = self.image_folder
+                    self.last_moved_image = os.path.join(destination_folder, os.path.basename(self.current_image))
+                    self.last_moved_from = self.image_folder
 
-                self.undo_button.config(state=tk.NORMAL)
-                self.load_next_image()
-            except Exception as e:
-                messagebox.showerror("Error", f"Failed to move file: {e}")
+                    self.undo_button.config(state=tk.NORMAL)
+                    self.load_next_image()
+                except Exception as e:
+                    messagebox.showerror("Error", f"Failed to move file: {e}")
 
     def next_image(self):
         """Skips the current image and loads the next one."""
@@ -167,6 +190,7 @@ class MemeSorter:
 root = tk.Tk()
 app = MemeSorter(root)
 root.mainloop()
+
 
 
 
