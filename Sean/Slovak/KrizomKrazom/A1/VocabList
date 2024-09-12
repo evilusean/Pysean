@@ -108,7 +108,22 @@ tmavy =  dark -
 svetly =  lights -
 rodina = family -
 
+rodic = parent - 
+mama = mother  - 
+otec = father -
+pozri = see - 
+znamka = stamp - 
+list = letter - 
+obalka = envelope - 
+poladnica = receipt -
 
+-Zit = Live
+Zijem = I live -
+Zijes = You live -
+Zije = He lives -
+Zijeme = We live -
+Zijete = You live - 
+Ziju = I live
 
 
 
