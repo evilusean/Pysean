@@ -125,8 +125,23 @@ Zijeme = We live -
 Zijete = You live - 
 Ziju = I live
 
-
-
+-mesto = Town(city) -
+Dedina = Village 
+- Olubeny = Favorites -
+Moj Favorit = my favorite - 
+-Trolejbus = Trolleybus - 
+Autobus = Bus - 
+Eletricka = Electric - 
+Metro = Metro - 
+Kostol = Church - 
+Dom = House - 
+Namestie = Square - 
+Hrad = Castle
+Restauracia = Restaurant -
+Divadlo = Theater -
+Hotel = Hotel - 
+Kaviaren = Cafe -
+Kino = Cinema 
 
 
 
