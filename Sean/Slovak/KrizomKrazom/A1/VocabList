@@ -157,7 +157,32 @@ Vpravo/Doprava = Right -
 Chod/Chodte = Walk -
 Kam? = Where? 
 
-
+-Mesto = Town -
+Veza = Bridge -
+Kostol/Dom = Church/House -
+Posta = Post Office -
+Restauracia = Restaurant -
+Nemocnica = Hospital -
+Kaviaren = Cafe -
+Socha = Statue -
+Divadlo = Theater -
+Banka = Bank -
+Univerzita = University -
+Policia = Police - 
+Kino = Cinema - 
+Muzeum = Museum - 
+Park = Park - 
+Obchodny dom = Department store - 
+Auto = Car - 
+Autobus = Bus -
+Lavicka = Bench 
+fontana = fountain - 
+namestie = square -
+Hotel = Hotel - 
+lod = boat -  
+rieka = river - 
+strom = tree - 
+cesta = road - 
 
 
 
