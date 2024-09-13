@@ -184,7 +184,25 @@ rieka = river -
 strom = tree - 
 cesta = road - 
 
-
+-Profesie = Profession - 
+Kuchar = Cook - 
+Model = Model - 
+Lekar = Doctor - 
+Technik = Technician -
+Polica = Police - 
+Predavac = Salesman -
+Casnik = Cashier -
+fotograf = photographer -
+sofer = driver -
+hudobnik = musician -
+novinar = journalist - 
+ucitel = teacher - 
+sudca = judge - 
+kadernik = hairdresser - 
+asistent = assistant - 
+spevak = singer -
+manazer = manager -
+dochodca = retiree
 
 
 
