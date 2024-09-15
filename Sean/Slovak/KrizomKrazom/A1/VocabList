@@ -253,7 +253,20 @@ dzus = Juice -
 vino = wine - 
 narodeniny = birthday - 
 
-
+-Hodina = 60 minutes(hour) - 
+Svetly = Lights(color) - 
+Tmavy = Darks(color) - 
+Cerveny = Reds - 
+Zeleny = Greens - 
+Zlty = Yellows - 
+-Sprchovaci gel = Shower gel - 
+sampon = shampoo - 
+sviecka = candle - 
+servtky = napkins - 
+mydlo = soap - 
+zubna pasta = toothpaste - 
+torta = cake - 
+akcia = promotion - 
 
 
 
