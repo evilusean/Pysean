@@ -12,6 +12,8 @@ https://en.wikipedia.org/wiki/Stingray_phone_tracker
 SOLID:
 https://codefinity.com/blog/The%20SOLID%20Principles%20in%20Software%20Development
 Naming Conventions
+DNS Vs Phishing - create an exact duplicate clone of a website(FB/Gram/etc) that saves whatever inputs the user puts in for login and saves, will then put in actual website <input form> 
+  change their DNS record for whenever they go to 'the official' site it will instead redirect to yours, once they succesfully logged in, send them to the actual site
 
 Awesome Robotics(curated page):
 https://github.com/ahundt/awesome-robotics
