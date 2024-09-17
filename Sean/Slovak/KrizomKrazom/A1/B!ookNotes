@@ -609,9 +609,9 @@ mineralka = mineral drink - pivo = beer - kava = coffee - dzus = Juice - vino = 
 zelenina = vegetables - hrach = peas - paprika = pepper - uhorka = cucumber - zemiak = potato - kukurica = corn - oliva = olive - paradajka = tomato - redkovka = radish - cibula = onion - mkrkva = carrot - 
 11: Odpovedajte = Please answer(correct conjugations -ovy vs -ove vs -ova) :
 12: Doplnte = Fill in the blanks(correct conjugations -ovy vs -ove vs -ova) :
-
-
-
+-Hneda = Brown - Ruzova = Pink - Cierna = Black - Zelena = Green - Modra = Blue - Fialova = Purple - Siva = Grey - Biela = White - Zlta = Yellow - Oranzova = Orange - Cervena = Red
+-Svetly+o+modry(when combining light(svetly) with a color(change the 'y' to 'o') SvetloModra = Light Blue - Tmavomodra = Dark Blue
+-Also for combining colors use the above rule - cierno-biely televizor = grey white television - bielo-modro-cervena vlajka = white blue red flag 
 
 
 
