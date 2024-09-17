@@ -393,7 +393,21 @@ redkovka = radish -
 cibula = onion - 
 mkrkva = carrot - 
 
-
+-Hneda = Brown - 
+Ruzova = Pink - 
+Cierna = Black -
+Zelena = Green - 
+Modra = Blue -
+Fialova = Purple -
+Siva = Grey - 
+Biela = White -
+Zlta = Yellow -
+Oranzova = Orange -
+Cervena = Red
+SvetloModra = Light Blue -
+Tmavomodra = Dark Blue
+cierno-biely televizor = grey white television -
+bielo-modro-cervena vlajka = white blue red flag 
 
 
 
