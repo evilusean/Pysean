@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the directory containing the WMA files
-wma_directory="/mnt/sdb4/Lang/Slovake/KrizomKrazom/Audio/KK_A2_2"
+wma_directory="/mnt/sdb4/Lang/Slovake/KrizomKrazom/Audio/KK_A1_2"
 
 # Set the output directory for MP3 files (optional, will use WMA directory if not set)
 mp3_directory="${wma_directory}"
