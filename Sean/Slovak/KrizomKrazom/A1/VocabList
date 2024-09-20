@@ -518,7 +518,48 @@ pstruh = trout -
 losos = salmon - 
 haring = herring - 
 
-
+-Prilohy = Side dishes - 
+opekane zemiaky = fried potatoes - 
+varene zemiaky = boiled potatoes - 
+hranolky = french fries - 
+ryza = rice - 
+knedla = dumplings - 
+zemiakova kasa = potato mash - 
+halusky = halusky
+-Vegeterianske jedla = Vegetarian dishes - 
+vyprazany syr = fried cheese -
+brokolica = broccoli -
+bryndzove halusky = bryndza halusky - 
+sampenony = sampenones -
+sampinony =  sampenones
+-cestoviny = pasta - 
+spagety = spaghetti -
+makarony = macaroni -
+penne = penne - 
+lasagne = lasagna - 
+-salaty = salads - 
+zemiakovy = potato -
+grecky = Greek - 
+tuniakovy = tuna - 
+paradajkovy = tomato - 
+uhorkovy = cucumber -
+miesany = mixed - 
+-ake je jedlo? = what is the food like? - 
+varene = boiled - 
+pecene = baked - 
+vyprazane = fried - 
+opekane = fried - 
+sladke = sweet -
+slane = salty - 
+horke = bitter - 
+kysle = sour - 
+-Chut = Taste - 
+mastne = fatty -
+horuce = hot - 
+teple = warm - 
+studene = cold - 
+chude = lean -
+chladene = chilled - 
 
 
 
