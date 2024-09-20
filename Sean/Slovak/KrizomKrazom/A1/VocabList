@@ -502,7 +502,21 @@ cesnakova polievka = garlic soup -
 kuracia polievka = chicken soup -
 paradajkova polievka = tomato soup - 
 
-
+-Maso = Meat - 
+bravcove maso(prasa) = pork - 
+hovadzie maso(krava) = beef (cow) -
+telacie maso(tela) = veal -
+baranie maso(baran) = mutton - 
+-Hydina = Poultry - 
+kuracie maso(kurca) = chicken meat (chicken) - 
+kacacie maso(kacka) = duck meat (duck) -
+morcacie maso(morka) = turkey meat (turkey) -
+husacie maso(hus) = goose meat (goose) -
+-Ryby = Fish - 
+kapor = carp - 
+pstruh = trout - 
+losos = salmon - 
+haring = herring - 
 
 
 
