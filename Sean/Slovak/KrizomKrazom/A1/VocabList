@@ -8,6 +8,11 @@ Vcavo = Back
 Vprazvo = Right
 Vzadu = Back
 Vpredu = Front 
+nad = above - 
+pod = below - 
+pred = before -
+za = behind -
+medzi = between -
 
 zapnuty = on -
 vypnuty = off - 
