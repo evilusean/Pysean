@@ -1,1 +1,48 @@
-
+0 = Nula - nulty
+1 = jeden / jedna / jedno - prvy
+2 = dva / dve - druhy
+3 = tri - treti
+4 = styri - stvrty
+5 = pat - piaty
+6 = sest - sesty
+7 = sedem - siedmy
+8 = osem - osmy
+9 = devat - deviaty
+10 = desat - desiaty
+11 = jedenast - jedenasty
+12 = dvanast - dvanasty
+13 = trinast - trinasty
+14 = strnast - starnasty
+15 = patnast - patnasty
+16 = sestnast - sestnasty
+17 = sedemnast - sedmanasty
+18 = osemnast - osemnasty
+19 = devatnast - devatnasty
+20 = dvadsat - dvadsiaty
+21 = dvadsatjeden - dvadsiaty prvy
+22 = dvadsatdva - dvadsiaty druhy
+23 = dvadsattri - dvadsiaty treti 
+24 = dvadsatstyri - dvadsiaty stvrty
+25 = dvadsatpat - dvadsiaty piaty
+30 = tridsat - tridsiaty
+40 = styridsat - styridsiaty
+50 = patdesiat - patdesiaty
+60 = sestdesiat - sesdesiaty
+70 = sedemdesiat - sedemdesiaty
+80 = osemdesiat - osemdesiaty
+90 = devatdesiat - devatdesiaty
+100 = sto - sty
+101 = stojeden - sto prvy
+200 = dvesto - dvesty
+300 = tristo - tristy
+900 = devatsto - devatsty
+1000 = tusuc - tisici
+2000 = dvetisic dvetisici
+5000 = pattisic - pattisici
+1,000,000 = milion - milionty
+20: Citajte A doplnte = Read and complete : 
+1) 185 + 24 = sto osemdesiat päť plus dvadsať štyri = dvestodeväť
+2) 3333 - 77 = tritisíc tristo tridsaťtri - sedemdesiat sedem = tritisíc dvesto šesťdesiatšesť
+3) 956 + 43 = deväťstopäťdesiatšesť + štyridsať tri = deväťstodeväťdesiatdeväť
+4) 110 - 61 = stodesať - šesťdesiatjeden = štyridsať deväť
+5) 1234 + 4321 = tisícdvestotridsaťštyri + štyri tisíce tristo dvadsaťjeden = päťtisíc päťsto päťdesiat päť
