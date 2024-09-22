@@ -11,6 +11,6 @@ for filename in "$directory"/*; do
 
   # Rename the file
   mv "$filename" "$new_filename"
-done
+done  
 
 echo "Files renamed successfully!"
