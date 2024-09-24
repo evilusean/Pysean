@@ -802,10 +802,10 @@ citatelsky preukaz = reader's card - knihy = books - vratit knihy(vratene knihy)
 11: Pravda Alebo Nepravda = True or false? :
 12: Odpovedajte =  Answer :
 13: Vyberte spravnu odpoved = Choose the correct answer :
-
-
-
-
+-Poslucharen = Auditorium - Prednaskova sala = Lecture hall - Trieda = Classroom - ucebna = Classroom - pracovna = office - kancelaria = office -studijne oddelenie = study department -
+-Skola = School - Zakladna skola = Elementary school - ziak/ziacka = student - stredna skola = secondary school - student/studentka = student - vysoka skola = college - univerzita = university - 
+-ucitel = teacher - profersor = professor - doktorand = doctoral student - assistant = assistant -
+-Hodiny = Hours - uradnik = official - uradne hodiny = office hours - rozvrh hodin = class schedule - konzultacne hodiny = consultation hours - vyucovacia hodina = teaching hour
 
 
 
