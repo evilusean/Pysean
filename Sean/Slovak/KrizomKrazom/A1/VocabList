@@ -704,8 +704,19 @@ rozvrh hodin = class schedule -
 konzultacne hodiny = consultation hours - 
 vyucovacia hodina = teaching hour
 
-
-
+Doplnte Digitalny cas = Add Digital time 
+Je pol druhej = It's half past two - 
+Je tristvrte na dvanast = It's quarter to twelve -
+su dve hodiny = it's two o'clock - 
+je pat hodin a desat minut = it's five past ten minutes -
+-Fazy Dna = Time Phases - 
+Kedy? = When? - 
+Rano = Morning - 
+doobeda predpoludnim <12:00 = morning before noon 
+- naobed napoludnie 12:00 = lunchtime noon - 
+poobede popoludni >12:00 = afternoon - 
+vecer = evening - 
+v noci = at night -
 
 
 
