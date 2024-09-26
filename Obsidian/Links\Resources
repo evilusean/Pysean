@@ -1,2 +1,9 @@
 Obsidian Official Docs :
 https://help.obsidian.md/Home
+
+Other Opseans for schizoboarding(System Design Diagram) :
+draw.io
+https://www.lucidchart.com/
+Python Libraries:
+Graphviz: Good for programmatically generating diagrams.
+NetworkX with Matplotlib: Useful for network-like diagrams.
