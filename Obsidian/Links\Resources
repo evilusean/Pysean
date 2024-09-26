@@ -14,6 +14,9 @@ Plugins:
 Obsidian Git (save vaults on Github) :
 https://github.com/Vinzent03/obsidian-git
 https://forum.obsidian.md/t/the-easiest-way-to-setup-obsidian-git-to-backup-notes/51429
+DailyNotes:
+https://help.obsidian.md/Plugins/Daily+notes
+https://dannb.org/blog/2022/obsidian-daily-note-template/
 
 Use DropBox or ICloud / GoogleDrive to sync between devices - Obsidian Sync is a Payed feature :
 https://www.dropbox.com/
@@ -34,7 +37,7 @@ Python Libraries:
 Graphviz: Good for programmatically generating diagrams.
 NetworkX with Matplotlib: Useful for network-like diagrams.
 
-KanBan Board
+KanBan Board 
 Scheduling : Use Google Calendar (for reminders or iOS)
 
 Notion(Similar to Obsidian):
