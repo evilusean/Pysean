@@ -1,9 +1,28 @@
 Obsidian Official Docs :
 https://help.obsidian.md/Home
 
+Use DropBox or ICloud to sync between devices - Obsidian Sync is a Payed feature :
+https://www.dropbox.com/
+https://syncthing.net/
+https://workingcopy.app/
+For Syncing PC and iOS(Iphone):
+https://carteakey.dev/setup-obsidian-sync-with-ios-and-pc/
+https://www.reddit.com/r/linux4noobs/comments/q8qco9/mount_icloud_drive/
+  Couldn’t you theoretically use SyncThing? Point to a folder on your Linux system then point to an iCloud folder on your Mac to make those two folders sync with SyncThing? 
+  In theory it should work but I’ll need to test for sure. Edit: This completely works. Just install SyncThing to your Linux Machine and Mac then create a Vault in iCloud. 
+  From there share that folder in SyncThing on Mac and share to your Linux machine. When it asks if you want to receive say yes then add the folder to your Linux machine and open from Obsidian on Linux. Violá.
+  You have a link that works both ways. You’ll see any updates you make on Linux show up instantly on all your Apple devices that have the vault attached to it.
+
 Other Opseans for schizoboarding(System Design Diagram) :
 draw.io
 https://www.lucidchart.com/
 Python Libraries:
 Graphviz: Good for programmatically generating diagrams.
 NetworkX with Matplotlib: Useful for network-like diagrams.
+
+KanBan Board
+Scheduling : Use Google Calendar (for reminders or iOS)
+
+Notion(Similar to Obsidian):
+https://www.notion.so/
+
