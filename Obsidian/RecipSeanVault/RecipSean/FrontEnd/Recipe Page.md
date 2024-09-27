@@ -1,0 +1,1 @@
+[[Schema]] gives the data for the page

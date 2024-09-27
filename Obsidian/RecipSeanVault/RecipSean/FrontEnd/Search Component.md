@@ -1,0 +1,1 @@
+[[Schema]] searches and connects to the [[Recipe Page]] 
