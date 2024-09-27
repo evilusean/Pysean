@@ -11,3 +11,5 @@ English + Slovak + Japanese? how will that work?
 
 Do I want most frequently clicked? this would require a dynamic count which means DB
 or it won't work on vercel - Could just add a 'Favorites' option in the schema
+
+I think I'm just going to go with JSON objects stored in the project directory, I shouldn't have more than a few hundred, it doesn't need to scale, and it's easier if I keep all the pieces together, and I don't have to mess around with MongoDB again, if I can get the schema working, this should be fine, realistically all I need is a main page with search functionality, and then a recipe page with multiple languages when clicked

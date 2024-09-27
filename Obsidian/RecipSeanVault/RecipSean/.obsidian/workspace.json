@@ -6,7 +6,7 @@
       {
         "id": "c7d51e3f71a57969",
         "type": "tabs",
-        "dimension": 36.99664429530201,
+        "dimension": 22.421524663677133,
         "children": [
           {
             "id": "c0c157b6c5010296",
@@ -38,7 +38,7 @@
       {
         "id": "4c1708892f94e23d",
         "type": "tabs",
-        "dimension": 63.00335570469798,
+        "dimension": 77.57847533632287,
         "children": [
           {
             "id": "7b2fc9483799617e",
@@ -179,7 +179,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,14 +195,16 @@
   "active": "9192b216d253d42b",
   "lastOpenFiles": [
     "Notes.md",
+    "FrontEnd/Main Page.md",
+    "Prompts/Prompto.md",
+    "BackEnd/Schema.md",
+    "Prompts",
+    "Prompts.md",
     "FrontEnd/Search Component.md",
     "FrontEnd/Front End.md",
-    "FrontEnd/Main Page.md",
     "FrontEnd/Recipe Page.md",
-    "BackEnd/Schema.md",
     "BackEnd/Back End.md",
     "Welcome.md",
-    "Prompts.md",
     "BackEnd",
     "FrontEnd"
   ]
