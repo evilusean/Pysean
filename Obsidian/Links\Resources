@@ -29,6 +29,7 @@ https://www.reddit.com/r/linux4noobs/comments/q8qco9/mount_icloud_drive/
   In theory it should work but I’ll need to test for sure. Edit: This completely works. Just install SyncThing to your Linux Machine and Mac then create a Vault in iCloud. 
   From there share that folder in SyncThing on Mac and share to your Linux machine. When it asks if you want to receive say yes then add the folder to your Linux machine and open from Obsidian on Linux. Violá.
   You have a link that works both ways. You’ll see any updates you make on Linux show up instantly on all your Apple devices that have the vault attached to it.
+You can just create a vault in a github repo on PC and then upload it to github - it's just markdown - nothing fancy(fanSean) - and then push it to that repo for a backup - can save project ideas that way
 
 Other Opseans for schizoboarding(System Design Diagram) :
 draw.io
