@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prompts.md",
+                "file": "Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prompts.md",
+                "file": "Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Prompts.md",
+                "file": "Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prompts.md"
+                "file": "Notes.md"
               }
             }
           }
@@ -187,9 +187,9 @@
   },
   "active": "aece6263ce64d5ed",
   "lastOpenFiles": [
-    "Notes.md",
-    "Welcome.md",
     "Prompts.md",
+    "Welcome.md",
+    "Notes.md",
     "BackEnd",
     "FrontEnd"
   ]

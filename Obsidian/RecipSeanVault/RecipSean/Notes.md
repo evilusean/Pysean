@@ -5,7 +5,7 @@ Should I get an API to just populate the DB? or build from scratch?
 
 What does each recipe need? ID / Core Ingredients / Embellishments / Utensils /  times in bold / Multiple languages dropdown instructions - how will I get the app to view these correctly / Pictures? 
 
-Search Feature - Ingreidents list
+Search Feature - Ingredients list
 
 English + Slovak + Japanese? how will that work?
 
