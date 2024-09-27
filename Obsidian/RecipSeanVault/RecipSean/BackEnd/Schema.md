@@ -133,13 +133,13 @@ I'm creating a recipe app, but I need a schema for inputting and outputting data
 
 },
 
-"favorite": {
-
-"type": "boolean",
-
-"default": false,
-
-"description": "Whether this recipe is a favorite"
+		"favorite": {
+		
+		"type": "boolean",
+		
+		"default": false,
+		
+		"description": "Whether this recipe is a favorite"
 
 },
 
