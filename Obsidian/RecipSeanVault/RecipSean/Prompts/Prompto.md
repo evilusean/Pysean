@@ -1,2 +1,5 @@
 Where to save all the prompts like :
 "I'm building a recipe app using typescript, tailwindcss, and shadcn - here is the schema I'm using - I need this component/page built - please create _____"
+- - - 
+### First Prompt:
+I am building a recipe app with tailwindCSS, typescript, and shadCN with NextJS, the recipe schema will contain 3 languages(english, japanese and slovak) - I want to create a main page with a search function, when you click a recipe it will take you to the recipe page with the 3 languages in dropdown menus for each language (don't make these required, only english recipe will be with every one) - I want the time to be in bold, and seperate each instruction and bold the main ingredient for each instruction, I want you to give me the code in multiple parts - the main page, recipe page, and search component - here is the schema I've been using, I have a fresh install of npm create next app :

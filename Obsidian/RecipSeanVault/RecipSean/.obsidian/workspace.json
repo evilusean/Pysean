@@ -58,7 +58,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BackEnd/Schema.md",
+                "file": "Prompts/Prompto.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BackEnd/Schema.md",
+                "file": "Prompts/Prompto.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BackEnd/Schema.md",
+                "file": "Prompts/Prompto.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BackEnd/Schema.md"
+                "file": "Prompts/Prompto.md"
               }
             }
           }
@@ -194,10 +194,10 @@
   },
   "active": "9192b216d253d42b",
   "lastOpenFiles": [
+    "BackEnd/Schema.md",
     "Notes.md",
     "FrontEnd/Main Page.md",
     "Prompts/Prompto.md",
-    "BackEnd/Schema.md",
     "Prompts",
     "Prompts.md",
     "FrontEnd/Search Component.md",
