@@ -24,8 +24,12 @@ https://github.com/YukiGasai/obsidian-google-calendar
 https://www.reddit.com/r/ObsidianMD/comments/11rc908/how_do_i_list_todays_events_from_google_calendar/
 DataView:
 https://github.com/blacksmithgu/obsidian-dataview
-Templater:
+Templater(can run JS in your vault):
 https://github.com/SilentVoid13/Templater
+Obsidian Syntax Highlighting(Code):
+https://github.com/deathau/cm-editor-syntax-highlight-obsidian
+KanBan Board:
+https://github.com/mgmeyers/obsidian-kanban
 
 Use DropBox or ICloud / GoogleDrive to sync between devices - Obsidian Sync is a Payed feature :
 https://www.dropbox.com/
@@ -47,7 +51,6 @@ Python Libraries:
 Graphviz: Good for programmatically generating diagrams.
 NetworkX with Matplotlib: Useful for network-like diagrams.
 
-KanBan Board 
 Scheduling : Use Google Calendar (for reminders or iOS)
 
 Notion(Similar to Obsidian):
