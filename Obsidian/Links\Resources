@@ -44,6 +44,11 @@ https://www.reddit.com/r/linux4noobs/comments/q8qco9/mount_icloud_drive/
   You have a link that works both ways. You’ll see any updates you make on Linux show up instantly on all your Apple devices that have the vault attached to it.
 You can just create a vault in a github repo on PC and then upload it to github - it's just markdown - nothing fancy(fanSean) - and then push it to that repo for a backup - can save project ideas that way
 
+Syncthing:
+https://docs.syncthing.net/intro/getting-started.html
+https://wiki.archlinux.org/title/Syncthing
+https://ipv6.rs/tutorial/Arch_Linux/Syncthing/
+
 Other Opseans for schizoboarding(System Design Diagram) :
 draw.io
 https://www.lucidchart.com/
