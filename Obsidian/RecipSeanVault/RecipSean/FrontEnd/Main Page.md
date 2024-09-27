@@ -1,1 +1,1 @@
-[[Search Component]]
+[[Search Component]] [[Front End]]

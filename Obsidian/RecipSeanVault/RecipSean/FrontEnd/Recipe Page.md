@@ -1,1 +1,1 @@
-[[Schema]] gives the data for the page
+[[Schema]] gives the data for the page [[Front End]]

@@ -1,0 +1,201 @@
+[[Back End]]
+
+- - - 
+-Schema Query Using Claude :
+I'm creating a recipe app, but I need a schema for inputting and outputting data, I want to create it using json objects in each individual folders, I want it to have a recipe name, ingredients list, utensils required, cooking time, prep time, I want it to be optional 3 languages(slovak, english, and japanese) if one is missing it won't break the code, I want it to have each instruction as a bullet point with time it takes to complete each action, and a favorite boolean for the best recipes - can you create a json schema that I can use for this? I want to seperate it as well by nationality, so indian recipes in indian folder, japanese in japanese folder as json objects, etc
+- - -
+### Result :
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the recipe"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the recipe"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of ingredients"
+    },
+    "utensils": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of required utensils"
+    },
+    "cookingTime": {
+      "type": "integer",
+      "description": "Total cooking time in minutes"
+    },
+    "prepTime": {
+      "type": "integer",
+      "description": "Preparation time in minutes"
+    },
+    "instructions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "integer",
+            "description": "Time for this step in minutes"
+          },
+          "en": {
+            "type": "string",
+            "description": "Instruction step in English"
+          },
+          "sk": {
+            "type": "string",
+            "description": "Instruction step in Slovak"
+          },
+          "ja": {
+            "type": "string",
+            "description": "Instruction step in Japanese"
+          },
+          "primaryIngredient": {
+            "type": "string",
+            "description": "Primary ingredient for this step"
+          }
+        },
+        "required": ["time", "en"]
+      },
+      "description": "List of instruction steps with translations"
+    },
+    "favorite": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this recipe is a favorite"
+    },
+    "nationality": {
+      "type": "string",
+      "description": "The nationality or cuisine type of the recipe"
+    }
+  },
+  "required": ["id", "name", "ingredients", "instructions", "nationality"]
+}
+- - -
+#### Example JSON:
+{
+
+"id": "pasta_001",
+
+"name": "Simple Pasta",
+
+"ingredients": [
+
+"200g pasta",
+
+"2L water",
+
+"1 tsp salt"
+
+],
+
+"utensils": [
+
+"Large pot",
+
+"Colander"
+
+],
+
+"cookingTime": 20,
+
+"prepTime": 5,
+
+"instructions": [
+
+{
+
+"time": 5,
+
+"en": "Boil water in a large pot",
+
+"sk": "Priveďte vodu do varu vo veľkom hrnci",
+
+"ja": "大きな鍋で水を沸騰させる",
+
+"primaryIngredient": "water"
+
+},
+
+{
+
+"time": 10,
+
+"en": "Add pasta and cook",
+
+"sk": "Pridajte cestoviny a varte",
+
+"ja": "パスタを加えて茹でる",
+
+"primaryIngredient": "pasta"
+
+},
+
+{
+
+"time": 5,
+
+"en": "Drain pasta and let it cool",
+
+"primaryIngredient": "pasta"
+
+}
+
+],
+
+"favorite": true,
+
+"nationality": "italian"
+
+}
+- - - 
+#### Display Function :
+def format_instruction(instruction):
+
+time = f"**{instruction['time']} min:**"
+
+text = instruction['en']
+
+if 'primaryIngredient' in instruction:
+
+primary = instruction['primaryIngredient']
+
+text = text.replace(primary, f"**{primary}**")
+
+return f"{time} {text}"
+
+###### Usage:
+
+for step in recipe['instructions']:
+
+print(format_instruction(step))
+
+##### Appearance:
+**5 min:** Boil **water** in a large pot
+**10 min:** Add **pasta** and cook
+**5 min:** Drain **pasta** and let it cool
+- - - 
+### Schema Explained :
+Key points:
+
+1. The time field is now first in each instruction object.
+
+- Only the time and en (English) fields are required for each instruction step.
+
+- The primaryIngredient field is optional and can be used to highlight the main ingredient in each step.
+
+- If a step doesn't have Slovak or Japanese translations, it won't break the code.
+
+- The formatting function adds bold markdown to the time and primary ingredient.
+
+This structure allows for flexibility in adding instructions with or without translations, always includes the time, and provides a way to highlight the primary ingredient in each step.

@@ -44,11 +44,28 @@
             "id": "7b2fc9483799617e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "FrontEnd/Main Page.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9192b216d253d42b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BackEnd/Schema.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,6 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "BackEnd/Schema.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,6 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "BackEnd/Schema.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +170,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "BackEnd/Schema.md"
+              }
             }
           }
         ]
@@ -170,14 +191,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7b2fc9483799617e",
+  "active": "9192b216d253d42b",
   "lastOpenFiles": [
+    "Notes.md",
+    "FrontEnd/Search Component.md",
+    "FrontEnd/Front End.md",
+    "FrontEnd/Main Page.md",
     "FrontEnd/Recipe Page.md",
     "BackEnd/Schema.md",
-    "FrontEnd/Main Page.md",
-    "FrontEnd/Search Component.md",
+    "BackEnd/Back End.md",
     "Welcome.md",
-    "Notes.md",
     "Prompts.md",
     "BackEnd",
     "FrontEnd"
