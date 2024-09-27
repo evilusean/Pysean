@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c0c157b6c5010296",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aece6263ce64d5ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Prompts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "4c1708892f94e23d",
@@ -99,6 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Prompts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,6 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Prompts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +163,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Prompts.md"
+              }
             }
           }
         ]
@@ -156,8 +185,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7b2fc9483799617e",
+  "active": "aece6263ce64d5ed",
   "lastOpenFiles": [
-    "Welcome.md"
+    "Notes.md",
+    "Welcome.md",
+    "Prompts.md",
+    "BackEnd",
+    "FrontEnd"
   ]
 }
