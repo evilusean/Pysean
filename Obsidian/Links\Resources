@@ -76,5 +76,10 @@ Scheduling : Use Google Calendar (for reminders or iOS)
 'Full Calendar' Plugin works for Google Calendar, but date time is bugged, ghetto fix is to just change it to a repeating event that ends that day - something about UTC timezone not working - forgot links explanASean
   You can still get notified on your phone, but it's read only, that just means you have to set the event on your phone and can view it in obsidian - which is fine - cheap fix, but works
 
+Password Protect Notes:
+https://github.com/triumphantomato/cryptsidian
+https://github.com/meld-cp/obsidian-encrypt
+https://www.reddit.com/r/ObsidianMD/comments/stt4n5/how_do_you_guys_keep_certain_notes_password/
+
 Notion(Similar to Obsidian):
 https://www.notion.so/
