@@ -62,6 +62,9 @@ https://docs.syncthing.net/intro/getting-started.html
 https://wiki.archlinux.org/title/Syncthing
 https://ipv6.rs/tutorial/Arch_Linux/Syncthing/
 
+Use Symlinks for backing up obsidian notes (like drop box folder or github) if you don't want to backup/publicize your entire obsidian notes - just select folders like project notes:
+https://www.reddit.com/r/ObsidianMD/comments/12r0qat/lifehack_you_can_keep_your_notes_in_two_places_at/
+
 Other Opseans for schizoboarding(System Design Diagram) :
 draw.io
 https://www.lucidchart.com/
@@ -70,7 +73,8 @@ Graphviz: Good for programmatically generating diagrams.
 NetworkX with Matplotlib: Useful for network-like diagrams.
 
 Scheduling : Use Google Calendar (for reminders or iOS)
+'Full Calendar' Plugin works for Google Calendar, but date time is bugged, ghetto fix is to just change it to a repeating event that ends that day - something about UTC timezone not working - forgot links explanASean
+  You can still get notified on your phone, but it's read only, that just means you have to set the event on your phone and can view it in obsidian - which is fine - cheap fix, but works
 
 Notion(Similar to Obsidian):
 https://www.notion.so/
-
