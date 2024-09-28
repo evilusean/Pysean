@@ -62,7 +62,8 @@ https://docs.syncthing.net/intro/getting-started.html
 https://wiki.archlinux.org/title/Syncthing
 https://ipv6.rs/tutorial/Arch_Linux/Syncthing/
 
-Use Symlinks for backing up obsidian notes (like drop box folder or github) :
+Use Symlinks for backing up obsidian notes (like drop box folder or github) if you don't want to backup/publicize your entire obsidian notes - just select folders like project notes:
+https://www.reddit.com/r/ObsidianMD/comments/12r0qat/lifehack_you_can_keep_your_notes_in_two_places_at/
 
 Other Opseans for schizoboarding(System Design Diagram) :
 draw.io
