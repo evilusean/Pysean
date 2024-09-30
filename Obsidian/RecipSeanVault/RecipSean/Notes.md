@@ -101,3 +101,6 @@ However, keep in mind:
 To optimize performance and reduce API calls, you could also implement a caching mechanism to store image URLs for recipes you've already fetched.
 
 Remember to always attribute Unsplash and the photographers as per their guidelines when using their images in your application.
+
+- - -
+Thought of a cool way to implement random - pseud or 'pseudo random' = there is no true randomness - since I don't want to reload my app and get shown the same sequence of recipes over and over again, added in a new way to create a seed for randomness using current datetime(not as cool as the lavalamp idea, but works) - since the datetime can never be the same, we will always have a new seed for randomness. 
