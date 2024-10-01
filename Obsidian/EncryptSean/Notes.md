@@ -1,0 +1,2 @@
+Testing a symlink that uploads automatically to github, so I can work out of my main obsidian vault, and don't need 2 vaults open, save any queries, 
+What I want is an end 2 end encryptSean app that uses nextJS tailwind and typescript, can be run locally or on vercel(free tier) - ideally text, images, and sending files would be required, videos and voice would be a nice to have but not neccesary, basically I want my own signal app with similar levels of encryption, that doesn't require a phone # to set up
