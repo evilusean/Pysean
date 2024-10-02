@@ -1,2 +1,5 @@
 Testing a symlink that uploads automatically to github, so I can work out of my main obsidian vault, and don't need 2 vaults open, save any queries, 
 What I want is an end 2 end encryptSean app that uses nextJS tailwind and typescript, can be run locally or on vercel(free tier) - ideally text, images, and sending files would be required, videos and voice would be a nice to have but not neccesary, basically I want my own signal app with similar levels of encryption, that doesn't require a phone # to set up
+
+Send a QR Code to join a room/group chat(start with 1 on 1-easiest) that you can scan in app to open the room - totally anonymous - exchange the public key - Pick your own username - the only people using this will be me and those I give it to - more of an experiment to see what encryptSean needs - onion server?(simplex) - tokens? - 
+PGP? I need wayyyyyyyyy more research to make this work - I just want a way to send files and messages securely - Telegram got arrested and cucked out - Signal is still good(requires phone #, isn't saved... allegedly) - SimpleX is good (No phone #, No IP Address)- 
