@@ -749,6 +749,29 @@ jedalen = dining room -
 hlavna budova = main building - 
 centrala bratislava = central Bratislava -
 
+-Den = Day - 
+Mesiac = Month - 
+Rok = Year - 
+tyzdne = weeks - 
+dni = days - 
+den = day - 
+hodin = hours - 
+minut = minutes - 
+sekund = seconds - 
+-rok = 12 mesiacov - mesiac = 4 tyzdne - tyzden = 7 dni - den = 24 hodin - hodina = 60 minut - minuta = 60 sekund / 
+  year = 12 months - month = 4 weeks - week = 7 days - day = 24 hours - hour = 60 minutes - minute = 60 seconds
+-janur = January - v januari = in January - januarovy = January -
+-februar = February - vo februari = in February - februarovy = February - 
+-marec = March - v marci = in March - marcovy = March - 
+-april = April - v aprili = in April - aprilovy = April -
+-maj = May - v maji = in May - majovy = May -
+-jun = June - v juni = in June - junovy = June - 
+-jul = July - v juli = in July - juliovy = July's - 
+-august = August - v auguste = in August - augustovy = August's - 
+-september = September - v septembri = in September - septembrovy = September - 
+-oktober = oktober - v oktober = v oktober -  otobrovy = otobrovy - 
+-november = November - v novembri = in November - novembrovy = November - 
+-december = December - v decembri = in December - decembrovy = December's -
 
 
 
