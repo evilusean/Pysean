@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Input YouTube video URL
-video_url="https://www.youtube.com/watch?v=TIDj1fHyvOA&ab_channel=AURORA"
+video_url="https://www.youtube.com/watch?v=6-2jNiVK86A&ab_channel=dylan37373"
 
 # Output folder
 output_folder="/mnt/sdb2/Media/Music/1S1ngles"
