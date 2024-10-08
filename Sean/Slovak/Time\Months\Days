@@ -70,3 +70,60 @@ dvadsiateho marca = the twentieth of March -
 tridsiateho prveho maja = the thirty-first of May - 
 od dvadsiateho stvrteho maja do tretieho juna = from the twenty-fourth of May to the third of June - 
 
+What is the time?	Koľko je hodín?
+It is..	Je../Sú..
+o'clock	hodina/hodiny/hodín
+Do you have time today?	Máš dnes čas?
+Yes, I have time today.	Áno, mám dnes čas.
+How late is it?	Ako neskoro je?
+half	pol
+quarter	štvrť
+5 minutes to 12 (11:55)	o 5 minút 12 hodín
+5 past 12 (12:05)	12 hodín a 5 minút
+"in 5 minutes 12" (11:55)	"o 5 minút 12"
+It is one o'clock.	Je jedna hodina.
+It is two/three/four o'clock.	Sú dve, tri, štyri hodiny.
+It is five/six/... twelve o'clock.	Je päť, šesť,... dvanásť hodín.
+
+00:30	half past midnight	pol jednej
+01:30	half past one	pol druhej
+02:30	half past two	pol tretej
+03:30	half past three	pol štvrtej
+04:30	half past four	pol piatej
+05:30	half past five	pol šiestej
+06:30	half past six	pol siedmej
+07:30	half past seven	pol ôsmej
+08:30	half past eight	pol deviatej
+09:30	half past nine	pol desiatej
+10:30	half past ten	pol jedenástej
+11:30	half past eleven	pol dvanástej
+12:30	half past twelve	pol jednej 
+
+00:15	quarter past midnight	štvrť na jeden
+01:15	quarter past one	štvrť na dva
+02:15	quarter past two	štvrť na tri
+03:15	quarter past three	štvrť na štyri
+04:15	quarter past four	štvrť na päť
+05:15	quarter past five	štvrť na šesť
+06:15	quarter past six	štvrť na sedem
+07:15	quarter past seven	štvrť na osem
+08:15	quarter past eight	štvrť na deväť
+09:15	quarter past nine	štvrť na desať
+10:15	quarter past ten	štvrť na jedenásť
+11:15	quarter past eleven	štvrť na dvanásť
+12:15	quarter past twelve	štvrť na jeden
+
+00:45	quarter to one	tri štvrte na jeden
+01:45	quarter to two	tri štvrte na dva
+02:45	quarter to three	tri štvrte na tri
+03:45	quarter to four	tri štvrte na štyri
+04:45	quarter to five	tri štvrte na päť
+05:45	quarter to six	tri štvrte na šesť
+06:45	quarter to seven	tri štvrte na sedem
+07:45	quarter to eight	tri štvrte na osem
+08:45	quarter to nine	tri štvrte na deväť
+09:45	quarter to ten 	tri štvrte na desať
+10:45	quarter to eleven	tri štvrte na jedenásť
+11:45	quarter to twelve	tri štvrte na dvanásť
+12:45	quarter to one	tri štvrte na jeden
+
