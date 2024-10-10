@@ -283,7 +283,9 @@ CIVITAI + LORA(Low Rank Adaptations - fine tune model) + Stablie Diffusion + You
 OpenAI 01(o1?) (best coding benchmarks) 'reasoning tokens' 'chain of thought'
 V0(Vercel+ShadCN): https://v0.dev/chat
 Claude : https://claude.ai/
+Bolt.net : from stackblitz browser AI coding tool - similar to v0.dev
 Cursor AI(Ctrl + Shift  + 'L' = Open AI dialog) : https://www.cursor.com/ 
+Cursor Vs Canvas(OpenAI+GPT4.0)
   https://dev.to/mhbaando/how-to-install-cursor-the-ai-editor-on-linux-41dm
 V0 + Claude + Cursor AI : https://www.youtube.com/watch?v=grc0YSEdUQY&ab_channel=RasMic
 
