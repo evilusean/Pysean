@@ -71,6 +71,8 @@ https://www.lucidchart.com/
 Python Libraries:
 Graphviz: Good for programmatically generating diagrams.
 NetworkX with Matplotlib: Useful for network-like diagrams.
+Figma FigJam :
+https://www.figma.com/templates/flow-chart-template/
 
 Scheduling : Use Google Calendar (for reminders or iOS)
 'Full Calendar' Plugin works for Google Calendar, but date time is bugged, ghetto fix is to just change it to a repeating event that ends that day - something about UTC timezone not working - forgot links explanASean
