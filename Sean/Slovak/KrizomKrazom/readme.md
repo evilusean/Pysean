@@ -3,5 +3,9 @@ until I can start applying for jobs and Step 1) Escape canada. </br>
 
 A1: </br>
 [Self-study course A1](https://www.e-slovak.sk/course/view.php?id=22) </br>
+Start: </br>
+End: </br>
+
+Krizom Krazom Textbook dates:
 Start: 12August2024 </br>
 End: 14October2024 </br>
