@@ -179,3 +179,7 @@ Optimus Manager
 https://github.com/Askannz/optimus-manager
 Wallpapers : 
 https://www.peakpx.com/en/hd-wallpaper-desktop-vlqfo/download/1920x1080
+
+Spotify (for languages) :
+https://wiki.archlinux.org/title/Spotify
+sudo pacman -S spotify-launcher # requires a different pacman package, not spotify, will work from this link
