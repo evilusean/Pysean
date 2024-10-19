@@ -1,0 +1,4 @@
+All Commands will be for Linux - It's a fork of VSCode, so very similar, I am also using VIM hotkeys extension, btw:
+CTRL + SHIFT + L = Open SideBar Menu(can provide context, use '@' mention to search web, or give it an image, or get it to read documentation before results)
+CTRL + Shift + I = Composer Mode(full screen query mode with file selector-easier than sidebar-will allow you to edit multiple files-good for building starter app)
+Ctrl + K = Inline Editor (will allow you to edit selected code, without adding context besides selecting)
