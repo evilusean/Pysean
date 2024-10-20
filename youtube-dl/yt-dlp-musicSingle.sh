@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Input YouTube video URL
-video_url="https://www.youtube.com/watch?v=TWRe7moqBQQ&ab_channel=OzzyOsbourneVEVO"
+video_url="https://www.youtube.com/watch?v=rA1hBL_-oZc&ab_channel=RoyalBlood"
 
 # Output folder
 output_folder="/mnt/sdb2/Media/Music/1S1ngles"
