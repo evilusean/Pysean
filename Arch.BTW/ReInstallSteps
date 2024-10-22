@@ -187,3 +187,7 @@ sudo pacman -S spotify-launcher # requires a different pacman package, not spoti
 Get PS4 Dualshock controller working:
 https://bbs.archlinux.org/viewtopic.php?id=292399
 '/etc/bluetooth/input.conf' change 'ClassicBondedOnly=false'
+#it looks, you will need to manually restart the service to connect via bluetooth as well:
+sudo systemctl stop bluetooth.service 
+sudo systemctl start bluetooth.service 
+sudo systemctl status bluetooth.service
