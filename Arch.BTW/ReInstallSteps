@@ -183,3 +183,7 @@ https://www.peakpx.com/en/hd-wallpaper-desktop-vlqfo/download/1920x1080
 Spotify (for languages) :
 https://wiki.archlinux.org/title/Spotify
 sudo pacman -S spotify-launcher # requires a different pacman package, not spotify, will work from this link
+
+Get PS4 Dualshock controller working:
+https://bbs.archlinux.org/viewtopic.php?id=292399
+'/etc/bluetooth/input.conf' change 'ClassicBondedOnly=false'
