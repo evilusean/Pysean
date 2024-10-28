@@ -3,3 +3,5 @@ What I want is an end 2 end encryptSean app that uses nextJS tailwind and typesc
 
 Send a QR Code to join a room/group chat(start with 1 on 1-easiest) that you can scan in app to open the room - totally anonymous - exchange the public key - Pick your own username - the only people using this will be me and those I give it to - more of an experiment to see what encryptSean needs - onion server?(simplex) - tokens? - 
 PGP? I need wayyyyyyyyy more research to make this work - I just want a way to send files and messages securely - Telegram got arrested and cucked out - Signal is still good(requires phone #, isn't saved... allegedly) - SimpleX is good (No phone #, No IP Address)- 
+
+Create a message board that uses a PGP key to sign your username - instead of using an email/phone number - generate a new PGP key, use that as your ID - if you want to vote on something, use your PGP key, true democracy, if you vote on something you pay for it, if you want to send money, use your PGP key - see where this is going? PGP key > ID 
