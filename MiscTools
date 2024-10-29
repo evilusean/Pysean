@@ -293,8 +293,8 @@ V0 + Claude + Cursor AI : https://www.youtube.com/watch?v=grc0YSEdUQY&ab_channel
 CLINE (CLI aNd Editor) : https://github.com/clinebot/cline
 Replit : https://replit.com/
 LMStudio.ai : https://lmstudio.ai/
-
-
+Claude unsandboxed(can use your PC locally, takes a screenshot, webscraping, click, open files, etc) : https://www.youtube.com/watch?v=DVRg0daTads&ab_channel=Fireship
+  Claude Docker Sandbox: https://github.com/anthropics/anthropic-quickstarts/blob/main/computer-use-demo/README.md
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
