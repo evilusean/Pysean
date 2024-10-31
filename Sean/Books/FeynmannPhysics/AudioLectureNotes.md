@@ -29,4 +29,9 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - DNA is the blueprint for the enzymes - able to reproduce itself and instruct the proteins - pair of chains '2 ChainZ', twisted, series of sugars and phosphate groups, -Adenine Thiamine Guanine Cytosine - complementary
 - mitosis - grow bigger, divide in half 
 - microsomes - where proteins are made -from pieces of DNA
-- 
+- astronomy predates physics - motion of the planets and stars was the beginning of physics - the same thing found in the stars can be found on earth
+- geology - how the surface of the earth got the way it was - techtonic plates - earthquakes/volcanoes aren't understood - 'currents inside the earth' - 'we know less about the earth than we do the planets'
+- @44:30 - 'psychoanalysis is not a science, it's a medical business, it's like witchdoctory, it has a theory as to what causes disease, lots of different spirits... ' - Based, and psycho-the-rapist pilled. 'when you get sick, you should still go to the witchdoctor, because he knows the most about the sickness' 'it has not been checked by experiment carefully..'
+- if an animal learns something, he can do something different, where is he different inside? we do not know where to look or what changes when a fact is learned, this has not been solved at all
+- limitations of physics : the HQ? The historical question, how did it get that way? the unmoved mover, the prime mover, initial conditions, astronomical history, formation of stars/elements - how did the laws of physics get that way? are they changing with time? was the sun always yellow? white? etc - over 100 years, noone has been able to figure out = the analysis of circulating/turbulant fluids -> convection, we can figure out X, but can't figure out the weather - first principles - how much pressure to push a fluid out of a pipe
+- 'the whole universe is in a glass of wine' - some poet, likely an alcoholic - all life is fermentASean
