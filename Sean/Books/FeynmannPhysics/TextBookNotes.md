@@ -2,7 +2,6 @@
 #### VOL I - Authors 
 Richard P Feynmann- Princeton - Born 1918 - Died February 1988 - Lectures from 1961Caltech (largely the stuff we are STILL being taught to this day - 60+ years of the same eduksean) - Nobel Prize Winner
 Robert Leighton - born 1919 Detroit - Died 1971 / Matthew Sands - 1919 - 2014
-
 - - - 
 #### Preface+Foreward 
 "I think the system is a failure... there isn't any solution to the problem of education... It's impossible to learn very much by simply sitting in a lecture..."
