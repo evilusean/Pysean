@@ -41,5 +41,37 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - energy can neither be created nor be destroyed but can only be converted from one form to another
 - Perpetual motion does not exist - weight machines
 - Potential Energy / Gravitational Potential energy / Electrical Potential Energy = general principle is that the Force x Distance(F times D) that it is moved is the change in energy 
+- Gravitational Potential Energy = (weight) * (height)
+- Change in ergu = (force) * (distance force acts through)
+- ###### For below image and after, I clicked and dragged the SVG from 'https://www.feynmanlectures.caltech.edu/I_04.html' - but I don't actually see a SVG file in obsidian, and when I save it to github, it gives me an empty link and not a SVG file, I can see the SVG files now, currently, but no idea where they are being saved locally if they are at all, so I have no idea how the image SVG's are being referenced, so if they disapear, I got them from the website, future sean. 
 - ![[f04-01_tc_big.svg]]
 - How much weight is required to move the 1 pound weight and balance it on the (3,4,5 triangle)? 
+- ![[f04-03_tc_big_b.svg]]
+-  In high school we learned a lot of laws about pulleys and levers used in different ways. We can now see that these “laws” are _all the same thing_, and that we did not have to memorize 75 rules to figure it out.
+- Energy is Sum of Several "Forms" (or ways of calculating)(or ways of calculating).
+- principle of virtual work - in order to do the work, you had to imagine the work and small amounts of motion to figure it out
+- ![[f04-05_tc_big.svg]]
+- Kinetic Energy
+- ![[f04-07_tc_big.svg]]
+- conversion of gravitational energy into some other form 
+- velocity: K.E.=WH (kinetic energy = weight * height)
+- K.E.=WV2/2g (Kinetic energy = Weight * Velocity squared / 2) = This is the formula for figuring out the height an object with velocity can go to then do the weight * height calculation - both of these formulas are approximate and relativistic 
+- gravitational constant = squared '/2'
+- Elastic energy. = If we pull down on a spring, we must do some work, for when we have it down, we can lift weights with it. Therefore in its stretched condition it has a possibility of doing some work. If we were to evaluate the sums of weights times heights, it would not check out—we must add something else to account for the fact that the spring is under tension. Elastic energy is the formula for a spring when it is stretched. How much energy is it? If we let go, the elastic energy, as the spring passes through the equilibrium point, is converted to kinetic energy and it goes back and forth between compressing or stretching the spring and kinetic energy of motion.
+- heat energy = t, the spring or the lever is _warmer_, and that there is really an increase of kinetic energy by a definite amount. We call this form of energy _heat energy_, but we know that it is not really a new form, it is just kinetic energy—internal motion. (One of the difficulties with all these experiments with matter that we do on a large scale is that we cannot really demonstrate the conservation of energy and we cannot really make our reversible machines, because every time we move a large clump of stuff, the atoms do not remain absolutely undisturbed, and so a certain amount of random motion goes into the atomic system. We cannot see it, but we can measure it with thermometers - Entropy - Prigogine
+- electrical energy = which has to do with pushing and pulling by electric charges.
+- radiant energy = the energy of light, which we know is a form of electrical energy because light can be represented as wigglings in the electromagnetic field.
+- chemical energy = the energy which is released in chemical reactions.
+- elastic energy is, to a certain extent, like chemical energy, because chemical energy is the energy of the attraction of the atoms, one for the other, and so is elastic energy
+- nuclear energy = the energy which is involved with the arrangement of particles inside the nucleus
+- conservation of linear momentum. = associated in quantum mechanics with the proposition that it makes no difference where you do the experiment, the results will always be the same.
+- conservation of angular momentum. = 
+- You may have heard that photons come out in blobs and that the energy of a photon is - Planck’s constant times the frequency. That is true, but since the frequency of light can be anything, there is no law that says that energy has to be a certain definite amount
+- Conservation of charge =  and that merely means that you count how many positive, minus how many negative electrical charges you have, and the number is never changed. You may get rid of a positive with a negative, but you do not create any net excess of positives over negatives.
+- conservation of baryons = There are a number of strange particles, a neutron and a proton are examples, which are called baryons. In any reaction whatever in nature, if we count how many baryons are coming into a process, the number of baryon
+- conservation of leptons =We can say that the group of particles called leptons are: electron, muon, and neutrino. There is an antielectron which is a positron, that is, a −1 lepton. Counting the total number of leptons in a reaction reveals that the number in and out never changes, at least so far as we know at present.
+- These are the six conservation laws, three of them subtle, involving space and time, and three of them simple, in the sense of counting something.
+-  The laws which govern how much energy is available are called the laws of thermodynamics and involve a concept called entropy for irreversible thermodynamic processes.
+- . Our supplies of energy are from the sun, rain, coal, uranium, and hydrogen. The sun makes the rain, and the coal also, so that all these are from the sun.
+-  If it can be controlled in thermonuclear reactions, it turns out that the energy that can be obtained from 10 quarts of water per second is equal to all of the electrical power generated in the United States. With 150 gallons of running water a minute, you have enough fuel to supply all the energy which is used in the United States today! Therefore it is up to the physicist to figure out how to liberate us from the need for having energy. It can be done.
+#### 5:Time and Distance-
