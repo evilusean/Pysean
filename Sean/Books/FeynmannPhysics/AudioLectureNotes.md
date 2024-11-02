@@ -35,7 +35,11 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - if an animal learns something, he can do something different, where is he different inside? we do not know where to look or what changes when a fact is learned, this has not been solved at all
 - limitations of physics : the HQ? The historical question, how did it get that way? the unmoved mover, the prime mover, initial conditions, astronomical history, formation of stars/elements - how did the laws of physics get that way? are they changing with time? was the sun always yellow? white? etc - over 100 years, noone has been able to figure out = the analysis of circulating/turbulant fluids -> convection, we can figure out X, but can't figure out the weather - first principles - how much pressure to push a fluid out of a pipe
 - 'the whole universe is in a glass of wine' - some poet, likely an alcoholic - all life is fermentASean
-#### 4:Conservation of Energy-
+#### 4:Conservation of Energy-2024-11-02
 - RefractSean: without breaking the law of conservation of energy, how does light slow down and then speed up again when changing mediums? (from air -> water -> air :) who is giving muh photons the energy to speed up, again, without breaking the law of conservation of energy, does zombie einstein roll out of his shallow grave to push every particle back up to full speed again? Vs wave particle duality - we don't even kNOw what we don't know - PerturbASean
 - there is no exception to this law 'there is a certain quantity of energy, that doesn't change in the manifold nature change that it undergoes' - a mathematical principle - the quantity doesn't change' - if they can't add it all together and find the missing energy they just create another variable, '"ah yes, that's where it went, to X, balance in all things"'
 - energy can neither be created nor be destroyed but can only be converted from one form to another
+- Perpetual motion does not exist - weight machines
+- Potential Energy / Gravitational Potential energy / Electrical Potential Energy = general principle is that the Force x Distance(F times D) that it is moved is the change in energy 
+- ![[f04-01_tc_big.svg]]
+- How much weight is required to move the 1 pound weight and balance it on the (3,4,5 triangle)? 
