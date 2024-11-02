@@ -47,7 +47,7 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - ![[f04-01_tc_big.svg]]
 - How much weight is required to move the 1 pound weight and balance it on the (3,4,5 triangle)? 
 - ![[f04-03_tc_big_b.svg]]
--  In high school we learned a lot of laws about pulleys and levers used in different ways. We can now see that these “laws” are _all the same thing_, and that we did not have to memorize 75 rules to figure it out.
+-  In high school we learned a lot of laws about pulleys and levers used in different ways. We can now see that these “laws” are all the same thing, and that we did not have to memorize 75 rules to figure it out.
 - Energy is Sum of Several "Forms" (or ways of calculating)(or ways of calculating).
 - principle of virtual work - in order to do the work, you had to imagine the work and small amounts of motion to figure it out
 - ![[f04-05_tc_big.svg]]
