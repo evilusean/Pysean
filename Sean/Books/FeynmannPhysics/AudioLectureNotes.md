@@ -101,4 +101,6 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - In Chapter [5](https://www.feynmanlectures.caltech.edu/I_05.html) we described the size of a nucleus in terms of its apparent area, or “cross section.” When we did so we were really talking about probabilities. When we shoot a high-energy particle at a thin slab of material, there is some chance that it will pass right through and some chance that it will hit a nucleus.
 - Raisin Bun model 'Bohr Rutherford'
 - higgs boson gives me a hadron
-- 
+- The number of “ways” to any point on the diagram is just the number of different “paths” (sequences of heads and tails) which can be taken from the starting point. The vertical position gives us the total number of heads thrown. The set of numbers which appears in such a diagram is known as _Pascal’s triangle_ Vs Wager. The numbers are also known as the _binomial coefficients_
+- brownian motion = motion of atoms - the motion of a molecule, or of any particle, in a gas is like a random walk. Suppose we open a bottle of an organic compound and let some of its vapor escape into the air. If there are air currents, so that the air is circulating, the currents will also carry the vapor with them. But even in _perfectly still air_, the vapor will gradually spread out—will diffuse—until it has penetrated throughout the room.
+- [Δx]⋅[Δv]≥ℏ/2m = This equation is a statement of the _Heisenberg uncertainty principle_ that we mentioned earlier.
