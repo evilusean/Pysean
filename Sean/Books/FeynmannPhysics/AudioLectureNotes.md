@@ -97,4 +97,4 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - By _chance_, we mean something like a guess. Why do we make guesses? We make guesses when we wish to make a judgment but have incomplete information or uncertain knowledge.
 -  Any physical theory is a kind of guesswork. There are good guesses and there are bad guesses. The theory of probability is a system for making better guesses.
 - We speak of probability only for observations that we contemplate being made in the future. _By the “probability” of a particular outcome of an observation we mean our estimate for the most likely fraction of a number of repeated observations that will yield that particular outcome_.
-- 
+- In probability theory, the law of large numbers (LLN) is a mathematical law that states that the average of the results obtained from a large number of independent random samples converges to the true value, if it exists. More formally, the LLN states that given a sample of independent and identically distributed values, the sample mean converges to the true mean. - the more times you do something, the more likely it is going to be closer to the probability 
