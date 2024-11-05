@@ -94,3 +94,7 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - atoms are 99.9999999999996% empty space - 
 - Measurements of distance and of time give results which depend on the observer. Two observers moving with respect to each other will not measure the same distances and times when measuring what appear to be the same things. Distances and time intervals have different magnitudes, depending on the coordinate system (or “frame of reference”) used for making the measurements. 
 #### 6:Probability-2024-11-05
+- By _chance_, we mean something like a guess. Why do we make guesses? We make guesses when we wish to make a judgment but have incomplete information or uncertain knowledge.
+-  Any physical theory is a kind of guesswork. There are good guesses and there are bad guesses. The theory of probability is a system for making better guesses.
+- We speak of probability only for observations that we contemplate being made in the future. _By the “probability” of a particular outcome of an observation we mean our estimate for the most likely fraction of a number of repeated observations that will yield that particular outcome_.
+- 
