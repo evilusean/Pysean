@@ -107,3 +107,6 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - Einstein was quite worried about this problem. He used to shake his head and say, “But, surely God does not throw dice in determining how electrons should go!”
 - our best “picture” of a hydrogen atom is a nucleus surrounded by an “electron cloud” (although we _really_ mean a “probability cloud”). The electron is there somewhere, but nature permits us to know only the _chance_ of finding it at any particular place.
 - In its efforts to learn as much as possible about nature, modern physics has found that certain things can never be “known” with certainty. Much of our knowledge must always remain uncertain. The _most_ we can know is in terms of probabilities.
+#### 7:The Theory of Gravitation-
+
+
