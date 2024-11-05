@@ -93,4 +93,4 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - ![[t05-02_tc_big.svg]]
 - atoms are 99.9999999999996% empty space - 
 - Measurements of distance and of time give results which depend on the observer. Two observers moving with respect to each other will not measure the same distances and times when measuring what appear to be the same things. Distances and time intervals have different magnitudes, depending on the coordinate system (or “frame of reference”) used for making the measurements. 
-#### 6:Probability-
+#### 6:Probability-2024-11-05
