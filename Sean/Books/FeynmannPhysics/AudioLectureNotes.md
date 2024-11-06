@@ -108,5 +108,8 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - our best “picture” of a hydrogen atom is a nucleus surrounded by an “electron cloud” (although we _really_ mean a “probability cloud”). The electron is there somewhere, but nature permits us to know only the _chance_ of finding it at any particular place.
 - In its efforts to learn as much as possible about nature, modern physics has found that certain things can never be “known” with certainty. Much of our knowledge must always remain uncertain. The _most_ we can know is in terms of probabilities.
 #### 7:The Theory of Gravitation-2024-11-06
+- In this chapter we shall discuss one of the most far-reaching generalizations of the human mind. While we are admiring the human mind, we should take some time off to stand in awe of a _nature_ that could follow with such completeness and generality such an elegantly simple principle as the law of gravitation. What is this law of gravitation? It is that every object in the universe attracts every other object with a force which for any two bodies is proportional to the mass of each and varies inversely as the square of the distance between them. This statement can be expressed mathematically by the equation
+- F=G(mm)/r(2 exponent)
+- 
 
 
