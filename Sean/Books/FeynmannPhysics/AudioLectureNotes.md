@@ -139,4 +139,7 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - ![[f07-13_tc_big.svg]]
 - A simplified diagram of the apparatus used by Cavendish to verify the law of universal gravitation for small objects and to measure the gravitational constant G.
 - This first demonstrated the direct force between two large, fixed balls of lead and two smaller balls of lead on the ends of an arm supported by a very fine fiber, called a torsion fiber. By measuring how much the fiber gets twisted, one can measure the strength of the force, verify that it is inversely proportional to the square of the distance, and determine how strong it is. Thus, one may accurately determine the coefficient G in the formula
+-  By knowing G from this experiment and by knowing how strongly the earth attracts, we can indirectly learn how great is the mass of the earth! This experiment has been called *“weighing the earth”* by some people, and it can be used to determine the *coefficient G of the gravity law.* This is the only way in which the mass of the earth can be determined. G turns out to be:
+- $6.670×{10}^{−11} newton⋅{m}^{2}/{kg}^{2}$
+-  fact that all the moons and planets and stars have such a _simple rule_ to govern them, and further that man could _understand_ it and deduce how the planets should move! This is the reason for the success of the sciences in following years, for it gave hope that the other phenomena of the world might also have such beautifully simple laws.
 - 
