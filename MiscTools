@@ -430,6 +430,9 @@ https://www.qualys.com/forms/freescan/
 pingsweep or portscan
 HIBP :
 https://haveibeenpwned.com/
+TruffleHog (checks for credentials/configs/secrets exposed)
+GitLeaks (same as above)
+Emerald Whale Tools = MEZR V2 + SEYZO V2 : https://www.youtube.com/watch?v=xzdoo5M0KZ0&ab_channel=MentalOutlaw
 
 PoC(proof of concept) repos vs Metasploits
 Internet of things search engine:
