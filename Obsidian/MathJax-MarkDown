@@ -4,6 +4,7 @@ https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-qu
 https://docs.mathjax.org/en/latest/input/tex/macros/index.html
 https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm
 Draw a symbol and receive tex symbols that match (or screenshot+AI):https://detexify.kirelabs.org/classify.html
+Can also be used in Anki, for making flashcards, for future Sean : https://docs.ankiweb.net/math.html#:~:text=customize%20some%20settings.-,LaTeX,display%20the%20generated%20image%20instead.
 
 '$' #use for inline 
 '$$' #use for multiline formula
