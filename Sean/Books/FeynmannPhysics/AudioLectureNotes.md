@@ -119,7 +119,10 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - Kepler’s three laws are:
 1.  Each planet moves around the sun in an ellipse, with the sun at one focus.
 2. The radius vector from the sun to the planet sweeps out equal areas in equal intervals of time.
-3. The squares of the periods of any two planets are proportional to the cubes of the semimajor axes of their respective orbits: T∝a3/2T∝a3/2.
-
-
+3. The squares of the periods of any two planets are proportional to the cubes of the semimajor axes of their respective orbits: T∝a3/2
+- While Kepler was discovering these laws, Galileo was studying the laws of motion. The problem was, what makes the planets go around? (In those days, one of the theories proposed was that the planets went around because behind them were invisible angels, beating their wings and driving the planets forward.
+-  Galileo discovered a very remarkable fact about motion, which was essential for understanding these laws. That is the principle of _inertia_—if something is moving, with nothing touching it and completely undisturbed, it will go on forever, coasting at a uniform speed in a straight line. (_Why_ does it keep on coasting? We do not know, but that is the way it is.)
+- Newton modified this idea, saying that the only way to change the motion of a body is to use _force_. If the body speeds up, a force has been applied _in the direction of motion_. On the other hand, if its motion is changed to a new _direction_, a force has been applied _sideways_. Newton thus added the idea that a force is needed to change the speed _or the direction_ of motion of a body.
+- the law is that the acceleration produced by the force is inversely proportional to the mass, or the force is proportional to the mass times the acceleration. The more massive a thing is, the stronger the force required to produce a given acceleration.F= M\*V
+-  because of the principle of inertia, the force needed to control the motion of a planet around the sun is not a force _around_ the sun but _toward_ the sun.
 
