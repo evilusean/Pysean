@@ -1,5 +1,7 @@
 Obsidian Official Docs :
 https://help.obsidian.md/Home
+Official Docs MarkDown :
+https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax
 
 Obsidian Markdown CheatSheet :
 https://github.com/ieshreya/Obsidian-Cheat-Sheet
@@ -46,6 +48,8 @@ Obsidian Advanced Tables Vs DataView:
 https://github.com/tgrosinger/advanced-tables-obsidian
 Obsidian Projects :
 https://github.com/marcusolsson/obsidian-projects
+MathJax (Mathematical XeLatex) for Obsidian(JS Based) - Wrap it in '$' like '$f(x)$' or '$$' for a code block/longer formulas - actually pretty cool - no longer need xelatex in markdown :
+https://docs.mathjax.org/en/latest/basic/mathjax.html
 
 Use DropBox or ICloud / GoogleDrive to sync between devices - Obsidian Sync is a Payed feature :
 https://www.dropbox.com/
