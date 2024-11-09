@@ -14,3 +14,6 @@ Radical Sign / Square Root = '\sqrt{x^3}' or '\sqrt[3]{\frac xy}' #this one will
 Escape Character = '\' used for '\[' or '\(' where you want to display the parenthesis without breaking the code
 Delta = \Delta
 Lim (as limit approaches 0) = '\lim' or '\lim_{x\to 0}'
+>= Great than Equal too  = \geq
+<= Less than equal too = \leq
+Infinity = \infty
