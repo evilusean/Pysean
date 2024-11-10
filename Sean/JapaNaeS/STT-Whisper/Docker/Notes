@@ -171,3 +171,4 @@ https://hub.docker.com/r/nvidia/cuda
 https://docs.docker.com/engine/containers/resource_constraints/#gpu
 https://github.com/blakeblackshear/frigate/discussions/5536
 https://github.com/NVIDIA/nvidia-docker/issues/1682
+#Fixed the error, 'docker use context default' #I think it was this? Idk, I tried alot, and reinstalled, cleared cache, reinstalled again, ran out of space, reinstalled, rebuilt again, and it worked
