@@ -167,3 +167,7 @@ docker: Error response from daemon: could not select device driver "" with capab
 
 Docker isn't detecting GPU Drivers - I already put a day into this project, and spent last 2 hours attempting to debug, same error, 2 hours later, putting this down for now
 I got too much other stuff on my plate atm to spend days debugging
+https://hub.docker.com/r/nvidia/cuda
+https://docs.docker.com/engine/containers/resource_constraints/#gpu
+https://github.com/blakeblackshear/frigate/discussions/5536
+https://github.com/NVIDIA/nvidia-docker/issues/1682
