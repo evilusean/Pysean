@@ -1,0 +1,31 @@
+# First, ensure you are in the right directory
+cd /mnt/sdb4/Code/Pysean/Sean/JapaNaeS/STT-Whisper/Docker
+#build the container
+docker compose build
+#Run the container
+docker compose up -d
+#verify container is running
+docker ps
+#test GPU access of container
+docker compose exec whisper nvidia-smi
+#check logs
+docker compose logs -f whisper
+#execute commands inside container
+docker compose exec whisper bash
+#stop container
+docker compose down
+#Common troubleshooting commands:
+# Check if container has GPU access
+docker compose exec whisper python3 -c "import torch; print('GPU available:', torch.cuda.is_available())"
+
+# Check container status
+docker compose ps
+
+# Rebuild and restart (if you make changes)
+docker compose down
+docker compose build
+docker compose up -d
+
+
+
+
