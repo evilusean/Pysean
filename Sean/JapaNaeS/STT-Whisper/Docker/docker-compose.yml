@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  whisper:
+    build: .
+    container_name: whisper-jp
+    volumes:
+      - ./src:/app/src
+      - ./data/audio:/app/data/audio
+      - ./data/output:/app/data/output
+      - /dev/snd:/dev/snd  # For host audio access
+    devices:
+      - /dev/snd:/dev/snd  # For host audio access
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    environment:
+      - PYTHONUNBUFFERED=1
+      - NVIDIA_VISIBLE_DEVICES=all

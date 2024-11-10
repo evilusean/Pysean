@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -32,10 +31,14 @@ ENV/
 *.swo
 
 # Project specific
-recordings/*
-!recordings/.gitkeep
-output/*
-!output/.gitkeep
+data/audio/temp/*
+data/audio/saved/*
+data/output/transcripts/*
+data/output/translations/*
+!data/audio/temp/.gitkeep
+!data/audio/saved/.gitkeep
+!data/output/transcripts/.gitkeep
+!data/output/translations/.gitkeep
 
 # Environment variables
 .env

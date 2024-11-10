@@ -15,13 +15,7 @@ pip-delete-this-directory.txt
 .coverage
 .coverage.*
 .cache
-nosetests.xml
-coverage.xml
-*.cover
 *.log
 .pytest_cache/
 .env
 .venv
-recordings/*
-output/*
-*.log
