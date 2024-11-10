@@ -3,6 +3,10 @@ FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
 # Set working directory
 WORKDIR /app
 
+# Set NVIDIA environment variables
+ENV NVIDIA_VISIBLE_DEVICES=all
+ENV NVIDIA_DRIVER_CAPABILITIES=compute,video,utility
+
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     python3.9 \
@@ -14,6 +18,7 @@ RUN apt-get update && apt-get install -y \
     python3-pyaudio \
     git \
     wget \
+    build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python packages
