@@ -1,0 +1,14 @@
+#this is the prompt I'm going to use with Claude, if it doesn't work, I'll try OpenAI
+
+DockerFile :
+I want to create a dockerfile that runs OpenAI's whisper model TTS for Japanese translation. It will need to have access to my host machines GPU. 
+I will need to install all dependancies, and use an appropriate python version for the Whisper Model - 
+I want to be able to use it from the command line so a command like 'docker whisper container start record' and 'docker whisper container stop record' and 
+then translate the saved recording after transcribing the japanese to a text file, I will want time stamps, romaji, hiragana, and the english translation - you can worry about the code later, 
+right now I just want all of the files and dependancies installed for accomplishing that task in the 'dockerfile' 
+the dependancies I can think of would be python 3.9, ffmpeg, pip, torch, torchaudio, cuda, openai-whisper, and add on any others you will think I need to the dockerfile for transcribing and translating
+again, make sure all the dependancies are the right version, as python will be downgraded to run openAI's whisper model for Japanese,
+ensure I have the correct docker image pulled initially from dockerhub
+ensure that the dockerfile can use my host machine graphics card for cuda, I don't know how to set this up, please let me know.
+also let me know if there is anything I need to install on my host machine outside of the dockerfile and container, I would also like the container to read code outside of the container
+so I can develop easier, and simply change code on my host machine that will then be able to be read in the docker container without rebuilding, by creating a volume that is also accessible by the container
