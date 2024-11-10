@@ -13,3 +13,7 @@ ensure that the dockerfile can use my host machine graphics card for cuda, I don
 also let me know if there is anything I need to install on my host machine outside of the dockerfile and container, I would also like the container to read code outside of the container
 so I can develop easier, and simply change code on my host machine that will then be able to be read in the docker container without rebuilding, by creating a volume that is also accessible by the container
 Also, create for me a '.gitignore' file and a '.dockerignore' file so that I don't upload anything outside of the volume code I'm using to develop to github
+I want the audio files, and text files from the docker container that are translated, as well as raw files that are saved to be stored on my host computer, but the container has access to them
+Also I will be using my host machines audio, not the container, I will want real time translation if I can, but it will be getting audio from the host machine
+So all the files I want on the host machine that can be accessed by docker will be : the python code that OpenAI will use for the model, the saved audio files, the text files from transcribing and translation
+What should my host machines file layout be like? my current directory for this project is '/mnt/sdb4/Code/Pysean/Sean/JapaNaeS/STT-Whisper/Docker' please use that for referencing the code and audio files
