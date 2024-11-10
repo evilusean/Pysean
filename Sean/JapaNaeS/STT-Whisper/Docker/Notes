@@ -12,3 +12,5 @@ Maybe I should start with the Coqui-AI-Model TTS - would be easier to work with,
 On second thought, although it is nice, the Japanese STT model is way nicer to have, and get's me closer to being a samurai in animeland - although I can get citizenship by descent in slovakia-I can also do that later
 
 Will need to create a prompt - mention dockerfile, all dependancies, openAI whisper, what model of python I need, and access to GPU
+
+TO DO: Create a 'Dockerfile' '.dockerignore' '.gitignore' - don't want to upload a multi gig model to github accidently
