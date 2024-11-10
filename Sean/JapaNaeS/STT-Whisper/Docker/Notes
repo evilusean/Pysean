@@ -35,3 +35,162 @@ sudo apt-get update
 sudo apt-get install -y nvidia-docker2
 # Restart Docker daemon
 sudo systemctl restart docker
+
+!ERROR! : Ran above command, and got this :
+sudo: apt-key: command not found
+tee: /etc/apt/sources.list.d/nvidia-docker.list: No such file or directory - Will fix later, my nvidia drivers work for steam/lutris, might work already
+# Unsupported distribution!
+# Check https://nvidia.github.io/nvidia-docker
+zsh: command not found: #
+sudo: apt-get: command not found
+sudo: apt-get: command not found
+zsh: command not found: #
+
+2. Project Structure
+whisper-jp/
+├── src/                    # Your source code directory
+├── recordings/             # Directory for audio recordings
+├── output/                 # Directory for transcriptions
+├── Dockerfile
+├── .dockerignore
+├── .gitignore
+└── docker-compose.yml      # For easier container management
+
+3. Dockerfile 
+# Use NVIDIA CUDA base image
+FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    python3.9 \
+    python3.9-distutils \
+    python3-pip \
+    ffmpeg \
+    git \
+    wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python packages
+RUN pip3 install --no-cache-dir \
+    torch==2.0.1 \
+    torchaudio==2.0.2 \
+    numpy==1.24.3 \
+    openai-whisper==20230918 \
+    pykakasi==2.2.1 \
+    transformers==4.31.0 \
+    sentencepiece==0.1.99 \
+    fugashi==1.2.1 \
+    ipadic==1.0.0 \
+    unidic-lite==1.0.8
+
+# Create necessary directories
+RUN mkdir -p /app/recordings /app/output
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app/src
+
+# Volume mounting points
+VOLUME ["/app/src", "/app/recordings", "/app/output"]
+
+# Default command (can be overridden)
+CMD ["python3", "-u", "/app/src/main.py"]
+
+4. Docker Compose
+version: '3.8'
+
+services:
+  whisper:
+    build: .
+    container_name: whisper-jp
+    volumes:
+      - ./src:/app/src
+      - ./recordings:/app/recordings
+      - ./output:/app/output
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+5. .dockerignore
+.git
+.gitignore
+.env
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+.env
+.venv
+recordings/*
+output/*
+
+6. .gitignore
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+recordings/*
+!recordings/.gitkeep
+output/*
+!output/.gitkeep
+
+# Environment variables
+.env
+
+# Docker
+.docker/
+
+# Logs
+*.log
