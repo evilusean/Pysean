@@ -18,7 +18,8 @@ TO DO:
   '.dockerignore' 
   '.gitignore' - don't want to upload a multi gig model to github accidently
 -Make sure all dependancies are installed
--Ensure everything on host machine to allow docker container to access GPU/Cuda is installed
+-Ensure everything on host machine to allow docker container to access GPU/Cuda is installed - and all dependancies to record and share audios and code volumes
+-Create a 'Commands' that will detail commands to launch and use the docker container/'docker-compose.yml'
 
 1. Host Machine Requirements
 First, install these on your host machine:
@@ -57,48 +58,6 @@ whisper-jp/
 └── docker-compose.yml      # For easier container management
 
 3. Dockerfile 
-# Use NVIDIA CUDA base image
-FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
-
-# Set working directory
-WORKDIR /app
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    python3.9 \
-    python3.9-distutils \
-    python3-pip \
-    ffmpeg \
-    git \
-    wget \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install Python packages
-RUN pip3 install --no-cache-dir \
-    torch==2.0.1 \
-    torchaudio==2.0.2 \
-    numpy==1.24.3 \
-    openai-whisper==20230918 \
-    pykakasi==2.2.1 \
-    transformers==4.31.0 \
-    sentencepiece==0.1.99 \
-    fugashi==1.2.1 \
-    ipadic==1.0.0 \
-    unidic-lite==1.0.8
-
-# Create necessary directories
-RUN mkdir -p /app/recordings /app/output
-
-# Set environment variables
-ENV PYTHONUNBUFFERED=1
-ENV PYTHONPATH=/app/src
-
-# Volume mounting points
-VOLUME ["/app/src", "/app/recordings", "/app/output"]
-
-# Default command (can be overridden)
-CMD ["python3", "-u", "/app/src/main.py"]
-
 4. Docker Compose
 version: '3.8'
 
@@ -119,78 +78,26 @@ services:
               capabilities: [gpu]
 
 5. .dockerignore
-.git
-.gitignore
-.env
-__pycache__
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.pytest_cache/
-.env
-.venv
-recordings/*
-output/*
-
 6. .gitignore
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 
-# Virtual Environment
-venv/
-ENV/
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# Project specific
-recordings/*
-!recordings/.gitkeep
-output/*
-!output/.gitkeep
-
-# Environment variables
-.env
-
-# Docker
-.docker/
-
-# Logs
-*.log
+2nd Prompt Results =======================================================================================================================================================================================
+# I saved everything for the 'Dockerfile' '.gitignore' and '.dockerignore' from my previous prompt, the volumes and file structure was wrong, so trying again
+/mnt/sdb4/Code/Pysean/Sean/JapaNaeS/STT-Whisper/Docker/
+├── src/                    # Source code directory
+│   ├── __init__.py
+│   ├── main.py            # Main application code
+│   ├── audio_handler.py   # Audio recording/processing
+│   └── translator.py      # Translation logic
+├── data/
+│   ├── audio/            # Raw audio recordings
+│   │   ├── temp/        # For real-time recording
+│   │   └── saved/       # For saved recordings
+│   └── output/          # Translated text files
+│       ├── transcripts/ # Japanese transcripts
+│       └── translations/ # English translations
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── .dockerignore
+└── .gitignore
+#changed 'Dockerfile', added 'docker-compose.yml' 'requirements.txt'
