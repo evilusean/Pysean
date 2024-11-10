@@ -3,10 +3,12 @@ So what I want to do, is create a dockerfile that can run in the background, eve
 Ideally it would be able to real time translaSeans and 'chunk' the audio in sections, then translate that, and save to a text file with timestamps - that's alot of moving parts 
 worst case ontario, get it to take an audio file and translate that to a text document with timestamps would be the MVP
 Also I want a hotkey that I can press like 'ctrl + [' to start recording and 'ctrl + ]' to stop recording and then translate everything within and print it out to a text file,
-  do I want to save these files, or just have temporary ones? If I use temporary, would make the code way easier to write, less moving parts, if save, I would have records for future Sean - then more clutter to work on
+  do I want to save these files, or just have temporary ones? If I use temporary, would make the code way easier to write, less moving parts, if save, I would have records for future Sean - 
 So if I have an interview/meeting, just start and stop recording when they are talking, and It will also double as a record of the convo, in case there is some Japanese I don't understand, can review later.
 Since I previously had trouble with cuda, I would need to figure out how to give it access to the graphics card - model won't run without cuda, cuda won't run without a graphics card
 I'm going to use AI to save time, as I'm currently studying math-precalc-EE-slovak-Japanese-coding-etc and I don't have weeks to sink into this, just spent weeks learning docker, the sooner I do this, the better
 Probably use claude, as I've had really good success with it in the past, although OpenAI-Whisper is the model I will be putting in docker, would their proprietary AI be better at coding their own AI STT model? idk
 Maybe I should start with the Coqui-AI-Model TTS - would be easier to work with, I've had that running pretty succesfully to create anki cards with speech in the past, already have half code written just need docker
-On second thought, although it is nice, the Japanese STT model is way nicer to have, and get's me closer to being a samurai in animeland - although I can get citizenship by descent in slovakia - I can also do that later
+On second thought, although it is nice, the Japanese STT model is way nicer to have, and get's me closer to being a samurai in animeland - although I can get citizenship by descent in slovakia-I can also do that later
+
+Will need to create a prompt - mention dockerfile, all dependancies, openAI whisper, what model of python I need, and access to GPU
