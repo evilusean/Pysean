@@ -6,8 +6,9 @@ WORKDIR /app
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     python3.9 \
-    python3.9-distutils \
+    python3-distutils \
     python3-pip \
+    python3-dev \
     ffmpeg \
     portaudio19-dev \
     python3-pyaudio \
