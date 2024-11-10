@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   whisper:
     build: .
@@ -8,9 +6,15 @@ services:
       - ./src:/app/src
       - ./data/audio:/app/data/audio
       - ./data/output:/app/data/output
-      - /dev/snd:/dev/snd  # For host audio access
-    devices:
-      - /dev/snd:/dev/snd  # For host audio access
+      - ${XDG_RUNTIME_DIR}/pipewire-0:/run/user/1000/pipewire-0
+      - ${XDG_RUNTIME_DIR}/pulse:/run/user/1000/pulse
+    group_add:
+      - audio
+    environment:
+      - PYTHONUNBUFFERED=1
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
+      - PIPEWIRE_RUNTIME_DIR=/run/user/1000
     deploy:
       resources:
         reservations:
@@ -18,6 +22,3 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
-    environment:
-      - PYTHONUNBUFFERED=1
-      - NVIDIA_VISIBLE_DEVICES=all
