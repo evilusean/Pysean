@@ -161,3 +161,9 @@ docker run --rm --gpus all nvidia/cuda:11.8.0-base-ubuntu22.04 nvidia-smi
 #Build and Run Container :
 docker-compose build
 docker-compose up -d
+
+!Error! docker run --rm --gpus all nvidia/cuda:11.8.0-base-ubuntu22.04 nvidia-smi
+docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]].
+
+Docker isn't detecting GPU Drivers - I already put a day into this project, and spent last 2 hours attempting to debug, same error, 2 hours later, putting this down for now
+I got too much other stuff on my plate atm to spend days debugging
