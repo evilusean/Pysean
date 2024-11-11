@@ -5,3 +5,6 @@ Settings ->  Keyboard » Customise Shortcuts » Custom Shortcuts » +
 'Ctrl' + ',' = mpc prev #ncmpcpp default previous song is 'Shift' + '<' - this is similar
 'Ctrl' + '.' = mpc next #ncmpcpp default next song is 'Shift' + '>' - this is similar
 'Ctrl' + '/' = mpc toggle #pause/play ncmpcpp
+'Ctrl' + '[' = start recording audio 'sudo pacman -S alsa-utils' #lets you record audio - I created a script for my STT - so I can record audio, and translate in real time(ghetto work around)
+'Ctrl' + ']' = stop recording audio
+
