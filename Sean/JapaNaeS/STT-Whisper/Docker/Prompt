@@ -17,3 +17,25 @@ I want the audio files, and text files from the docker container that are transl
 Also I will be using my host machines audio, not the container, I will want real time translation if I can, but it will be getting audio from the host machine
 So all the files I want on the host machine that can be accessed by docker will be : the python code that OpenAI will use for the model, the saved audio files, the text files from transcribing and translation
 What should my host machines file layout be like? my current directory for this project is '/mnt/sdb4/Code/Pysean/Sean/JapaNaeS/STT-Whisper/Docker' please use that for referencing the code and audio files
+
+Main Program(s) + bash file with tags:
+Now I want to expand the program, so I can run it from any terminal, I also want it to do youtube videos, with playlist support, (if I flag '-p' before the URL it will go through a playlist)
+I want the bash script to default to '-jp', if I flag '-yt' I want it to default to a single video, only if I add the '-p' flag then do a playlist, 
+when saving the audio from a playlist, save it as the video name and not the URL, use yt-dlp, because youtube-dl library has stopped working
+I want to add 2 files for realtime translation, I want one for mic ('-m' flag) and one for taking audio from the host pc ('-l' for local or default) 
+I want it to default from taking audio the host PC stream (not mic - it should capture whatever I am playing on the PC and translate it) so 'translasean -jp -rt' will default to that 
+and 'translasean -jp -rt -m' will do the mic, I will rarely use this, so don't make it the default, obviously everywhere I have the '-jp' flag I want the same functionality for '-sk' -slovak flag
+I also want it to create another transcribed audio with each english and japanese sentence combined, I created a file in the same directory as 'transcripts' and 'translated' as 'transcribed-translated' for new files
+  - for this text file, you will need only one time stamp, I want both the hiragana and romaji transcribed for the japanese, and then followed by english for each sentence that is translated
+  I also want you to add a flag following each transcription as either '-jp' or '-sk' for each language in the filename title
+So I will need multiple files, I will list them and what they do, with their flags, please give them to me all at once sequentially, and update the bash script I've linked for context:
+'main.py' #this is the default program similar to what I already have, 'translasean -jp' will wait to see a file in the temp folder, transcribe it, translate it, combine those 2 into a third file and move the audio
+'realtime-stream.py' #this will take the audio stream from my host pc and translate it in realtime, I want the bash script flags to be 'translasean -jp -rt'
+'realtime-mic.py' #this will take the audio from my mic and translate it in real time, I want the bash script flags to be 'translasean -jp -rt -m', also make sure all of these work for '-sk' slovak as well
+'youtube-single.py' #will download the audio from a single youtube video, transcribe, translate, and combine it, then save the audio, 
+  I want this to be the default flag for the bash script 'translasean -jp -yt <URL>' where URL is the youtube URL I copied without it being surrounded in ' quote marks
+'youtube-playlist.py' #this will download an entire playlist one by one, transcribe, translate, and combine, then save the audio as well I want this to be the '-p' flag 'translasean -jp -yt -p <URL>'
+Here is the context to the current 'main.py' 'realtime.py' and 'translasean.sh', please make all the changes, and give them to me as all the files at once with their names, 
+Everytime I spin up the container currently it has to download a 150mb base model, is there any way you can make that persist in the container volume? here is the 'Dockerfile'
+I want all audio files that are downloaded from youtube or saved from streaming to be mp3's - when saving the text don't forget to add the flags '-jp' or '-sk' at the end of filename
+give me all 5 new '.py' files at once, as complete files, and the new bashscript I can use to access them from any terminal, and try to correct the 'Dockerfile' so that the base model persists inbetween uses
