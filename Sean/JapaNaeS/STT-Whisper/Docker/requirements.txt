@@ -15,8 +15,7 @@ romkan==0.2.1
 # Audio Input/Output
 pyaudio==0.2.13
 sounddevice==0.4.6
-python-sounddevice==0.4.6
-portaudio19==19.6.0
+
 
 # Audio Processing
 scipy==1.10.1
