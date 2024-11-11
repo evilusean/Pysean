@@ -3,8 +3,17 @@ import torch
 import os
 import time
 from datetime import datetime
+import sys
 
-def process_audio(model, audio_file):
+def format_timestamp(seconds):
+    """Convert seconds to HH:MM:SS format"""
+    hours = int(seconds // 3600)
+    minutes = int((seconds % 3600) // 60)
+    seconds = int(seconds % 60)
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+
+def process_audio(model, audio_file, source_lang="ja"):
     # Get file name without extension
     base_name = os.path.splitext(os.path.basename(audio_file))[0]
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -16,23 +25,37 @@ def process_audio(model, audio_file):
     
     print(f"\nProcessing: {audio_file}")
     
-    # Transcribe (Japanese to Japanese)
-    print("Transcribing to Japanese...")
-    result = model.transcribe(audio_path, language="ja")
-    with open(transcription_path, "w", encoding="utf-8") as f:
-        f.write(result["text"])
-    print(f"Transcription saved to: {transcription_path}")
-    print("\nTranscription:")
-    print(result["text"])
+    # Transcribe with timestamps
+    print(f"Transcribing to {source_lang}...")
+    result = model.transcribe(audio_path, language=source_lang)
     
-    # Translate (Japanese to English)
+    # Write transcription with timestamps
+    with open(transcription_path, "w", encoding="utf-8") as f:
+        for segment in result["segments"]:
+            start_time = format_timestamp(segment["start"])
+            f.write(f"[{start_time}] {segment['text']}\n")
+    
+    print(f"Transcription saved to: {transcription_path}")
+    print("\nTranscription with timestamps:")
+    for segment in result["segments"]:
+        start_time = format_timestamp(segment["start"])
+        print(f"[{start_time}] {segment['text']}")
+    
+    # Translate to English with timestamps
     print("\nTranslating to English...")
-    result = model.transcribe(audio_path, language="ja", task="translate")
+    result = model.transcribe(audio_path, language=source_lang, task="translate")
+    
+    # Write translation with timestamps
     with open(translation_path, "w", encoding="utf-8") as f:
-        f.write(result["text"])
+        for segment in result["segments"]:
+            start_time = format_timestamp(segment["start"])
+            f.write(f"[{start_time}] {segment['text']}\n")
+    
     print(f"Translation saved to: {translation_path}")
-    print("\nTranslation:")
-    print(result["text"])
+    print("\nTranslation with timestamps:")
+    for segment in result["segments"]:
+        start_time = format_timestamp(segment["start"])
+        print(f"[{start_time}] {segment['text']}")
     
     # Move processed file to saved directory
     os.rename(audio_path, f"/app/data/audio/saved/{audio_file}")
@@ -44,6 +67,10 @@ def watch_directory():
     
     print("\nModel loaded. Watching for audio files...")
     print("Place your audio files in the /app/data/audio/temp directory")
+    
+    # Get language from environment variable or default to Japanese
+    source_lang = os.getenv('WHISPER_LANG', 'ja')
+    print(f"\nUsing language: {'Japanese' if source_lang == 'ja' else 'Slovak'}")
     
     while True:
         try:
@@ -58,7 +85,7 @@ def watch_directory():
                 
                 # Process each file
                 for file in files:
-                    process_audio(model, file)
+                    process_audio(model, file, source_lang)
             
             time.sleep(5)
             

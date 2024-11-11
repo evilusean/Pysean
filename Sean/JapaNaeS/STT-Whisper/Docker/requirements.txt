@@ -1,11 +1,30 @@
+# Core ML/Audio
 torch==2.0.1
 torchaudio==2.0.2
 numpy==1.24.3
 openai-whisper==20230918
+
+# Japanese Language Support
 pykakasi==2.2.1
 transformers==4.31.0
 sentencepiece==0.1.99
 fugashi==1.3.3
 ipadic==1.0.0
+romkan==0.2.1
+
+# Audio Input/Output
 pyaudio==0.2.13
 sounddevice==0.4.6
+python-sounddevice==0.4.6
+portaudio19==19.6.0
+
+# Audio Processing
+scipy==1.10.1
+librosa==0.10.1
+
+# YouTube Support
+yt-dlp==2023.12.30
+ffmpeg-python==0.2.0
+
+# System Audio Support
+soundcard==0.4.2

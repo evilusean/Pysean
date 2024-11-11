@@ -16,6 +16,10 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     portaudio19-dev \
     python3-pyaudio \
+    pipewire \
+    libspa-0.2-modules \
+    wireplumber \
+    alsa-utils \
     git \
     wget \
     build-essential \
