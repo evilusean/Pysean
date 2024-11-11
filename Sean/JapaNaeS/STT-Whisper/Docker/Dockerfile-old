@@ -33,8 +33,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 RUN mkdir -p /app/data/audio/temp \
     /app/data/audio/saved \
     /app/data/output/transcripts \
-    /app/data/output/translations \
-    /app/data/output/transcribed-translated
+    /app/data/output/translations
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
