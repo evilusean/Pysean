@@ -1,4 +1,4 @@
-'docker compose up' from this directory, will take all files in the 'data/audio/temp' and first transcribe them, translate them, and then combine them in this format:
+'docker compose up' from this directory, will take all files in the 'data/audio/temp' and first transcribe them, translate them, and then combine them in this format:</br>
 [TimeStamp] - Hiragana/Kanji(Japanese Letters) - Romaji(romanized Japanese) - English Translation</br>
 I also created a bash script that will allow you to launch it from any terminal, it will upload the translations as soon as they are done to the terminal as well. You can run it with the command :</br>
 'translasean -jp -rt -m' #will run the file '/src/realtime-mic.py' and translate in real time, from the computer microphone  </br>
