@@ -35,10 +35,12 @@ data/audio/temp/*
 data/audio/saved/*
 data/output/transcripts/*
 data/output/translations/*
+data/output/transcribed-translated/*
 !data/audio/temp/.gitkeep
 !data/audio/saved/.gitkeep
 !data/output/transcripts/.gitkeep
 !data/output/translations/.gitkeep
+!data/output/transcribed-translated/.gitkeep
 
 # Environment variables
 .env
