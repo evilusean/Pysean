@@ -1,8 +1,8 @@
 import os
 import whisper
 import numpy as np
-import subprocess
 from datetime import datetime
+import romkan  # Make sure to install romkan if you haven't already
 
 def format_timestamp(seconds):
     """Convert seconds to HH:MM:SS format"""
@@ -28,10 +28,18 @@ def process_audio(model, audio_file, source_lang="ja"):
     result = model.transcribe(audio_path, language=source_lang)
     
     # Write transcription with timestamps
+    hiragana_segments = []
+    for segment in result["segments"]:
+        start_time = format_timestamp(segment["start"])
+        hiragana_text = segment['text']
+        romaji_text = romkan.to_roma(hiragana_text)  # Convert Hiragana to Romaji
+        hiragana_segments.append((start_time, hiragana_text, romaji_text))
+    
+    # Save Hiragana transcription
     with open(transcription_path, "w", encoding="utf-8") as f:
-        for segment in result["segments"]:
-            start_time = format_timestamp(segment["start"])
-            f.write(f"[{start_time}] {segment['text']}\n")
+        for start_time, hiragana_text, romaji_text in hiragana_segments:
+            f.write(f"[{start_time}] {hiragana_text} - {romaji_text}\n")
+            print(f"[{start_time}] {hiragana_text} - {romaji_text}")  # Print to terminal
     
     print(f"Transcription saved to: {transcription_path}")
     
@@ -41,16 +49,21 @@ def process_audio(model, audio_file, source_lang="ja"):
     
     # Write translation with timestamps
     with open(translation_path, "w", encoding="utf-8") as f:
-        for segment in result["segments"]:
+        for i, segment in enumerate(result["segments"]):
             start_time = format_timestamp(segment["start"])
-            f.write(f"[{start_time}] {segment['text']}\n")
+            english_text = segment['text']
+            f.write(f"[{start_time}] {english_text}\n")
+            print(f"[{start_time}] {english_text}")  # Print to terminal
     
     print(f"Translation saved to: {translation_path}")
     
     # Combine transcriptions and translations
     with open(combined_path, "w", encoding="utf-8") as f:
         for i in range(len(result["segments"])):
-            f.write(f"{result['segments'][i]['text']} (Translation: {result['segments'][i]['text']})\n")
+            hiragana_text = hiragana_segments[i][1]  # Get Hiragana text
+            romaji_text = hiragana_segments[i][2]    # Get Romaji text
+            english_text = result["segments"][i]['text']  # Get English translation
+            f.write(f"{hiragana_text} - {romaji_text} - {english_text}\n")
     
     print(f"Combined transcription and translation saved to: {combined_path}")
     
