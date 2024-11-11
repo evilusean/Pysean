@@ -25,9 +25,12 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Python packages
+# Copy requirements file and install Python packages
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
+
+# Copy the source code into the container
+COPY src/ /app/src/  
 
 # Create necessary directories
 RUN mkdir -p /app/data/audio/temp \
