@@ -202,3 +202,8 @@ Ran out of tokens for cursor AI/Claude, I don't even have enough 4 food(again) a
 Treat others how they treated you. F = -F. Step 1) Escape. Remember all those times where she didn't buy food for 2 months? It got so bad so often, I had to start taking notes, the 'Grievance List' will outlive her.
 Oh, figured it out, you only get 50 free uses of the 'premium models' which claude AI is one a month, I can use up to 200 'cursor small' queries a month, so I should be able to finsih this - maybe
 claude is pretty good, but gonna try anyways. It's hard to worry about coding, when I'm wondering where my next meal is going to come from, thank god I live in geriatric gynocentric vaxcattle failed state of canada.
+
+Ok, it works, sorta, need to figure out why realtime stream is so laggy, that is what I really want, a background translator for interviews/meetings, just so I can get context on unknown words
+What does work though is if you add an mp3 to 'data/audio/temp' and then 'docker compose up' it will go through each mp3 in that file transcribe it, translate it, and combine it, then move the audio file
+So I've got half usability, realtime translation on a terminal while I sit in a meeting would be ideal, instead of recording the audio, then reviewing it later, I lose the real time context
+The mic I did on the first iteraSean worked, so it might be the streaming, idk, I've got like 50 tabs in chrome open, an editor, obsidian open, could just be that. 
