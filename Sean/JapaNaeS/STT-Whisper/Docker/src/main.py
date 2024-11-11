@@ -19,7 +19,7 @@ def process_audio(model, audio_file, source_lang="ja"):
     audio_path = f"/app/data/audio/temp/{audio_file}"
     transcription_path = f"/app/data/output/transcripts/{base_name}_{timestamp}-transcription-{source_lang}.txt"
     translation_path = f"/app/data/output/translations/{base_name}_{timestamp}-translation-{source_lang}.txt"
-    combined_path = f"/app/data/output/transcribed-translated/{base_name}_{timestamp}-combined-{source_lang}.txt"
+    combined_path = f"/app/data/output/transcribed-translated/{base_name}_{timestamp}-combined-{source_lang}.txt"  # Ensure this is defined here
     
     print(f"\nProcessing: {audio_file}")
     
@@ -31,15 +31,15 @@ def process_audio(model, audio_file, source_lang="ja"):
     hiragana_segments = []
     for segment in result["segments"]:
         start_time = format_timestamp(segment["start"])
-        hiragana_text = segment['text']
-        romaji_text = romkan.to_roma(hiragana_text)  # Convert Hiragana to Romaji
-        hiragana_segments.append((start_time, hiragana_text, romaji_text))
+        original_text = segment['text']  # Capture the original text (which may include Kanji)
+        romaji_text = romkan.to_roma(original_text)  # Convert original text to Romaji
+        hiragana_segments.append((start_time, original_text, romaji_text))
     
     # Save Hiragana transcription
     with open(transcription_path, "w", encoding="utf-8") as f:
-        for start_time, hiragana_text, romaji_text in hiragana_segments:
-            f.write(f"[{start_time}] {hiragana_text} - {romaji_text}\n")
-            print(f"[{start_time}] {hiragana_text} - {romaji_text}")  # Print to terminal
+        for start_time, original_text, romaji_text in hiragana_segments:
+            f.write(f"[{start_time}] {original_text} - {romaji_text}\n")
+            print(f"[{start_time}] {original_text} - {romaji_text}")  # Print to terminal
     
     print(f"Transcription saved to: {transcription_path}")
     
@@ -59,11 +59,13 @@ def process_audio(model, audio_file, source_lang="ja"):
     
     # Combine transcriptions and translations
     with open(combined_path, "w", encoding="utf-8") as f:
-        for i in range(len(result["segments"])):
-            hiragana_text = hiragana_segments[i][1]  # Get Hiragana text
+        # Use the minimum length of both segments
+        min_length = min(len(hiragana_segments), len(result["segments"]))
+        for i in range(min_length):
+            original_text = hiragana_segments[i][1]  # Get original text (Hiragana/Kanji)
             romaji_text = hiragana_segments[i][2]    # Get Romaji text
             english_text = result["segments"][i]['text']  # Get English translation
-            f.write(f"{hiragana_text} - {romaji_text} - {english_text}\n")
+            f.write(f"{original_text} - {romaji_text} - {english_text}\n")
     
     print(f"Combined transcription and translation saved to: {combined_path}")
     
