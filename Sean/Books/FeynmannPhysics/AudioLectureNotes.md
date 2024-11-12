@@ -185,4 +185,12 @@ $$v=\lim_{Δt\to0}\frac{Δs}{Δt}$$
 - The quantity `ds/dt` which we found above is called the “derivative of s with respect to t” the complicated process of finding it is called finding a derivative, or differentiating. The ds’s and dt’s which appear separately are called _differentials_.
 - There are many rules or formulas for differentiating various types of functions. These can be memorized, or can be found in tables. A short list is found in Table [8–3](https://www.feynmanlectures.caltech.edu/I_08.html#Ch8-T3). 
 ##### 8–4Distance as an integral
+Table 8–4 Velocity of a Falling Ball 
 
+| t (sec) | v (ft/sec) |
+| ------- | ---------- |
+| 0       | 0          |
+| 1       | 32         |
+| 2       | 64         |
+| 3       | 96         |
+| 4       | 128        |
