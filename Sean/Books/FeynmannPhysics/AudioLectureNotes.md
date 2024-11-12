@@ -185,7 +185,7 @@ $$v=\lim_{Δt\to0}\frac{Δs}{Δt}$$
 - The quantity `ds/dt` which we found above is called the “derivative of s with respect to t” the complicated process of finding it is called finding a derivative, or differentiating. The ds’s and dt’s which appear separately are called _differentials_.
 - There are many rules or formulas for differentiating various types of functions. These can be memorized, or can be found in tables. A short list is found in Table [8–3](https://www.feynmanlectures.caltech.edu/I_08.html#Ch8-T3). 
 ##### 8–4Distance as an integral
-Table 8–4 Velocity of a Falling Ball 
+Table 8–4 Velocity of a Falling Ball - $v=32{t}$
 
 | t (sec) | v (ft/sec) |
 | ------- | ---------- |
@@ -194,3 +194,12 @@ Table 8–4 Velocity of a Falling Ball
 | 2       | 64         |
 | 3       | 96         |
 | 4       | 128        |
+- “In the first second her speed was such and such, and from the formula `Δs=vΔt` we can calculate how far the car went the first second at that speed.” Now in the next second her speed is nearly the same, but slightly different; we can calculate how far she went in the next second by taking the new speed times the time. We proceed similarly for each second, to the end of the run. We now have a number of little distances, and the total distance will be the sum of all these little pieces. That is, the distance will be the sum of the velocities times the times, or $s=\sum v\,\Delta t$ where the Greek letter ∑ (sigma) is used to denote addition. To be more precise, it is the sum of the velocity at a certain time, let us say the i-th time, multiplied by Δt
+- $$s=\sum_iv(t_i)\,\Delta t$$
+- The rule for the times is that `ti+1=ti+Δt` However, the distance we obtain by this method will not be correct, because the velocity changes during the time interval `Δt`. If we take the times short enough, the sum is precise, so we take them smaller and smaller until we obtain the desired accuracy. The true `s` is
+- $$s=\lim_{\Delta t\to0}\sum_iv(t_i)\,\Delta t$$
+- The mathematicians have invented a symbol for this limit, analogous to the symbol for the differential. The `Δ` turns into a `d` to remind us that the time is as small as it can be; the velocity is then called `v` at the time `t`, and the addition is written as a sum with a great “s,” `∫` (from the Latin _summa_), which has become distorted and is now unfortunately just called an integral sign.
+- $$s=\int v(t)\,dt$$
+- This process of adding all these terms together is called integration, and it is the opposite process to differentiation. The derivative of this integral is vv, so one operator (dd) undoes the other (∫∫). One can get formulas for integrals by taking the formulas for derivatives and running them backwards, because they are related to each other inversely. Thus one can work out his own table of integrals by differentiating all sorts of functions. For every formula with a differential, we get an integral formula if we turn it around.
+- Every function can be differentiated analytically, i.e., the process can be carried out algebraically, and leads to a definite function.
+
