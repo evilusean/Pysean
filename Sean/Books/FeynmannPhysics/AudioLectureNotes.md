@@ -203,4 +203,12 @@ Table 8–4 Velocity of a Falling Ball - $v=32{t}$
 - This process of adding all these terms together is called integration, and it is the opposite process to differentiation. The derivative of this integral is `v`, so one operator (`d`) undoes the other (`∫`). One can get formulas for integrals by taking the formulas for derivatives and running them backwards, because they are related to each other inversely. Thus one can work out his own table of integrals by differentiating all sorts of functions. For every formula with a differential, we get an integral formula if we turn it around.
 - Every function can be differentiated analytically, i.e., the process can be carried out algebraically, and leads to a definite function.
 #####  8–5Acceleration
-
+-  he next step in developing the equations of motion is to introduce another idea which goes beyond the concept of velocity to that of _change_ of velocity, and we now ask, “How does the velocity _change?_”
+- Acceleration is defined as the time rate of change of velocity. From the preceding discussion we know enough already to write the acceleration as the derivative `dv/dt`, in the same way that the velocity is the derivative of the distance.
+$$ a=\frac{dv}{dt}=32$$
+- This means that the velocity of a falling body is changing by 32 feet per second, per second always. We also see from Table [8–4](https://www.feynmanlectures.caltech.edu/I_08.html#Ch8-T4) that the velocity increases by 32 ft/sec in each second. This is a very simple case, for accelerations are usually not constant.
+- For reference, we state two very useful formulas, which can be obtained by integration. If a body starts from rest and moves with a constant acceleration, `g`, its velocity `v` at any time `t` is given by $v = gt$
+- The distance it covers in the same time is $s=\tfrac{1}{2}gt^2$
+- Various mathematical notations are used in writing derivatives. Since velocity is ds/dtds/dt and acceleration is the time derivative of the velocity, we can also write : which are common ways of writing a second derivative.
+- $$a=\frac{d}{dt}(\frac{ds}{dt}\biggr)=\frac{d^2s}{dt^2}$$
+- 
