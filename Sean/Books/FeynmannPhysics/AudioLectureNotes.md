@@ -176,3 +176,4 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - $v = x/ϵ$
 - an approximation that becomes better and better as the `ϵ` is taken smaller and smaller. If a mathematical expression is desired, we can say that the velocity equals the limit as the `ϵ` is made to go smaller and smaller in the expression `x/ϵ`
 $$v=\lim_{\epsilon\to0}\frac{x}{\epsilon}$$
+##### 8–3Speed as a derivative
