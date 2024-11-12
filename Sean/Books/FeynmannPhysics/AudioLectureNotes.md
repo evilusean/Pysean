@@ -218,4 +218,4 @@ $$ a=\frac{dv}{dt}=32$$
 - $$\Delta s\approx\sqrt{(\Delta x)^2+(\Delta y)^2}$$
 - $$v=\frac{ds}{dt}=\sqrt{(dx/dt)^2+(dy/dt)^2}$$$$=\sqrt{v_x^2+v_y^2}$$
 - $$v=\sqrt{v_x^2+v_y^2+v_z^2}$$
-- 
+- Any object that is shot out - will be a parabola -
