@@ -200,6 +200,7 @@ Table 8–4 Velocity of a Falling Ball - $v=32{t}$
 - $$s=\lim_{\Delta t\to0}\sum_iv(t_i)\,\Delta t$$
 - The mathematicians have invented a symbol for this limit, analogous to the symbol for the differential. The `Δ` turns into a `d` to remind us that the time is as small as it can be; the velocity is then called `v` at the time `t`, and the addition is written as a sum with a great “s,” `∫` (from the Latin _summa_), which has become distorted and is now unfortunately just called an integral sign.
 - $$s=\int v(t)\,dt$$
-- This process of adding all these terms together is called integration, and it is the opposite process to differentiation. The derivative of this integral is vv, so one operator (dd) undoes the other (∫∫). One can get formulas for integrals by taking the formulas for derivatives and running them backwards, because they are related to each other inversely. Thus one can work out his own table of integrals by differentiating all sorts of functions. For every formula with a differential, we get an integral formula if we turn it around.
+- This process of adding all these terms together is called integration, and it is the opposite process to differentiation. The derivative of this integral is `v`, so one operator (`d`) undoes the other (`∫`). One can get formulas for integrals by taking the formulas for derivatives and running them backwards, because they are related to each other inversely. Thus one can work out his own table of integrals by differentiating all sorts of functions. For every formula with a differential, we get an integral formula if we turn it around.
 - Every function can be differentiated analytically, i.e., the process can be carried out algebraically, and leads to a definite function.
+#####  8–5Acceleration
 
