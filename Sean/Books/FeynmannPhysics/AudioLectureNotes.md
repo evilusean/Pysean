@@ -211,4 +211,11 @@ $$ a=\frac{dv}{dt}=32$$
 - The distance it covers in the same time is $s=\tfrac{1}{2}gt^2$
 - Various mathematical notations are used in writing derivatives. Since velocity is ds/dtds/dt and acceleration is the time derivative of the velocity, we can also write : which are common ways of writing a second derivative.
 - $$a=\frac{d}{dt}(\frac{ds}{dt}\biggr)=\frac{d^2s}{dt^2}$$
+- We have another law that the velocity is equal to the integral of the acceleration. This is just the opposite of `a=dv/dt`; we have already seen that distance is the integral of the velocity, so distance can be found by twice integrating the acceleration.
+- Having constructed a table with xx- and yy-distances, how can we determine the velocity? We first find the components of velocity in each direction. The horizontal part of the velocity, or xx-component, is the derivative of the xx-distance with respect to the time, or $v_x =dx/dt$ and y: $v_y =dy/dt$ and z: $v_z =dz/dt$
+- $t_2-t_1=\Delta t$
+- In the time Δt the particle moves horizontally a distance $Δx≈v_xΔt$ and vertically a distance $Δy≈v_yΔt$. (The symbol “`≈`” is read “is approximately.”) The actual distance moved is approximately
+- $$\Delta s\approx\sqrt{(\Delta x)^2+(\Delta y)^2}$$
+- $$v=\frac{ds}{dt}=\sqrt{(dx/dt)^2+(dy/dt)^2}$$$$=\sqrt{v_x^2+v_y^2}$$
+- $$v=\sqrt{v_x^2+v_y^2+v_z^2}$$
 - 
