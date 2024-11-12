@@ -180,6 +180,9 @@ $$v=\lim_{\epsilon\to0}\frac{x}{\epsilon}$$
 $$v=\lim_{Δt\to0}\frac{Δs}{Δt}$$
 - This Δt means “an extra bit of t,” and carries an implication that it can be made smaller. defines a time increment, and reminds us of its special character. ΔsΔs has an analogous meaning for the distance ss. Since Δ is not a factor, it cannot be cancelled in the ratio Δs/Δt to give s/t
 - showing that something is changing, and it keeps track of what is changing.
-- Physicists like to write it ds=v dt, because by dtdt they mean Δt in circumstances in which it is very small; with this understanding, the expression is valid to a close approximation. If Δt is too long, the velocity might change during the interval, and the approximation would become less accurate.
+- Physicists like to write it `ds=v dt`, because by dtdt they mean Δt in circumstances in which it is very small; with this understanding, the expression is valid to a close approximation. If Δt is too long, the velocity might change during the interval, and the approximation would become less accurate.
 - $$v=\lim_{\Delta t\to0}\frac{\Delta s}{\Delta t}=\frac {ds}{dt}$$
-- 
+- The quantity `ds/dt` which we found above is called the “derivative of s with respect to t” the complicated process of finding it is called finding a derivative, or differentiating. The ds’s and dt’s which appear separately are called _differentials_.
+- There are many rules or formulas for differentiating various types of functions. These can be memorized, or can be found in tables. A short list is found in Table [8–3](https://www.feynmanlectures.caltech.edu/I_08.html#Ch8-T3). 
+
+
