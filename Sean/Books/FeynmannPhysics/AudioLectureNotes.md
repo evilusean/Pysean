@@ -177,3 +177,9 @@ Remember, this is where we were at in the 1960's, when the lectures were given, 
 - an approximation that becomes better and better as the `ϵ` is taken smaller and smaller. If a mathematical expression is desired, we can say that the velocity equals the limit as the `ϵ` is made to go smaller and smaller in the expression `x/ϵ`
 $$v=\lim_{\epsilon\to0}\frac{x}{\epsilon}$$
 ##### 8–3Speed as a derivative
+$$v=\lim_{Δt\to0}\frac{Δs}{Δt}$$
+- This Δt means “an extra bit of t,” and carries an implication that it can be made smaller. defines a time increment, and reminds us of its special character. ΔsΔs has an analogous meaning for the distance ss. Since Δ is not a factor, it cannot be cancelled in the ratio Δs/Δt to give s/t
+- showing that something is changing, and it keeps track of what is changing.
+- Physicists like to write it ds=v dt, because by dtdt they mean Δt in circumstances in which it is very small; with this understanding, the expression is valid to a close approximation. If Δt is too long, the velocity might change during the interval, and the approximation would become less accurate.
+- $$v=\lim_{\Delta t\to0}\frac{\Delta s}{\Delta t}=\frac {ds}{dt}$$
+- 
