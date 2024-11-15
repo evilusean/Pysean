@@ -12,11 +12,11 @@ Some Slovak letters have so-called diacritical marks. These are special signs th
 ### 3:Syllable-forming consonants r, ŕ, l, ĺ-2024-11-15
 In Slovak each syllable must contain a vowel or a diphthong
 Besides vowels and diphthongs, the consonants r, ŕ, l, and ĺ can be "syllable-forming"
-zamrznutý = frozen
-vlhký = moist
-plný = full
-hlboký = deep
-Pohár nie je prázdny, je  plný = The cup is not empty, it is full
-Tanier nie je plytký, je  hlboký = The plate is not shallow, it is deep
-Uterák nie je suchý, je  vlhký = The towel is not dry, it is wet
-Na chodníku je ľad, chodník je  zamrznutý = There is ice on the pavement, the pavement is  frozen
+- zamrznutý = frozen
+- vlhký = moist
+- plný = full
+- hlboký = deep
+- Pohár nie je prázdny, je  plný = The cup is not empty, it is full
+- Tanier nie je plytký, je  hlboký = The plate is not shallow, it is deep
+- Uterák nie je suchý, je  vlhký = The towel is not dry, it is wet
+- Na chodníku je ľad, chodník je  zamrznutý = There is ice on the pavement, the pavement is  frozen
