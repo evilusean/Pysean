@@ -220,3 +220,16 @@ $$ a=\frac{dv}{dt}=32$$
 - $$v=\sqrt{v_x^2+v_y^2+v_z^2}$$
 - Any object that is shot out - will be a parabola -
 #### 9:Newton's Laws of Dynamics-2024-11-16
+The discovery of the laws of dynamics, or the laws of motion, was a dramatic moment in the history of science. Before Newton’s time, the motions of things like the planets were a mystery, but after Newton there was complete understanding. Even the slight deviations from Kepler’s laws, due to the perturbations of the planets, were computable.
+- We can calculate the perturbations on the planet Uranus due to Jupiter and Saturn. After this chapter we _will_ be able to compute not only the motion of the oscillating mass, but also the perturbations on the planet Uranus produced by Jupiter and Saturn!
+- Galileo made a great advance in the understanding of motion when he discovered the _principle of inertia_: if an object is left alone, is not disturbed, it continues to move with a constant velocity in a straight line if it was originally moving, or it continues to stand still if it was just standing still. Of course this never appears to be the case in nature, for if we slide a block across a table it stops, but that is because it is _not_ left to itself—it is rubbing against the table. It required a certain imagination to find the right rule, and that imagination was supplied by Galileo.
+- the next thing which is needed is a rule for finding how an object _changes_ its speed if something _is_ affecting it. That is, the contribution of Newton. Newton wrote down three laws:
+1) The First Law was a mere restatement of the Galilean principle of inertia just described.
+2)  The Second Law gave a specific way of determining how the velocity changes under different influences called _forces_.
+3) The Third Law describes the forces to some extent, and we shall discuss that at another time.
+- Here we shall discuss only the Second Law, which asserts that the motion of an object is changed by forces in this way: _the time-rate-of-change of a quantity called momentum is proportional to the force_.
+- _Momentum_ is not the same as _velocity_. A lot of words are used in physics, and they all have precise meanings in physics - we must change the words from “light” and “heavy” to _less massive_ and _more massive_,
+- Weight and inertia are _proportional_, and on the earth’s surface are often taken to be numerically equal, which causes a certain confusion to the student. On Mars, weights would be different but the amount of force needed to overcome inertia would be the same.
+- We use the term _mass_ as a quantitative measure of inertia,find a certain quantity of mass for every object. Now the _momentum_ of an object is a product of two parts: its _mass_ and its _velocity_
+- $F=\frac{d}{dt}(mv)$
+- 
