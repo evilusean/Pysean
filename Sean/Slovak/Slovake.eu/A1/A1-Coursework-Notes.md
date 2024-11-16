@@ -66,3 +66,16 @@ zelený= green
 biely= white
 modrý= blue
 žltý= yellow
+
+kto= who
+čo= what
+aký, aká, aké= what, which
+ten, tá, to= that, the, the one that
+tento, táto, toto= this
+nejaký, nejaká, nejaké= a, an, some, any
+je= is
+veľmi= very
+tam= there, in that place
+tu= here
+a= and
+alebo= or
