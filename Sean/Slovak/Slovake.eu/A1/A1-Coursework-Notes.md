@@ -21,4 +21,4 @@ Besides vowels and diphthongs, the consonants r, ŕ, l, and ĺ can be "syllable-
 - Uterák nie je suchý, je  vlhký = The towel is not dry, it is wet
 - Na chodníku je ľad, chodník je  zamrznutý = There is ice on the pavement, the pavement is  frozen
 
-### 4: Soft pronunciation of de, te, ne, di, ti, ni
+### 4: Soft pronunciation of de, te, ne, di, ti, ni-2024-11-16
