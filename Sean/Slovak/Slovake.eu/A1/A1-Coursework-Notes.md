@@ -23,3 +23,4 @@ Besides vowels and diphthongs, the consonants r, ŕ, l, and ĺ can be "syllable-
 
 ### 4: Soft pronunciation of de, te, ne, di, ti, ni-2024-11-16
 ### 5: Kvantita-2024-11-16
+### 6: Accent-2024-11-16
