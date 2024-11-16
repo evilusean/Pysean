@@ -29,3 +29,23 @@ Besides vowels and diphthongs, the consonants r, ŕ, l, and ĺ can be "syllable-
 - Stressed syllables are not marked in Slovak words.
 ## Who is it? What is it? :
 ### 1: New Words-2024-11-16
+auto= car
+dedko= grandfather
+dieťa= child
+dom= house
+doma= at home
+futbalista= footballer
+kniha= book
+kosť= bone
+kvet= flower
+lekáreň= chemist
+mačka= cat
+múzeum= museum
+muž= man
+námestie= square
+pes= dog
+posteľ= bed
+ruža= rose
+srdce= heart
+šteňa= puppy
+žena= woman
