@@ -27,4 +27,4 @@ Besides vowels and diphthongs, the consonants r, ŕ, l, and ĺ can be "syllable-
 - The accent in Slovak is always on the first syllable.
 - NOTE: The acute accent (diacritical mark in letters á, é, í, ó, ú, ý, ĺ and ŕ) does not indicate a stressed syllable! The acute accent indicates that the syllable should be pronounced twice as long as a short syllable.
 - Stressed syllables are not marked in Slovak words.
-- 
+## Who is it? What is it? :
