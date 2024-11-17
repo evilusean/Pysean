@@ -108,3 +108,4 @@ KTORÁ? (tá alebo táto?)= WHICH? (this or that?) – feminine gender
 KTORÉ? (to alebo toto?)= WHICH? (this or that?) – neuter gender
 - tento, táto, toto - nearby objects
 - tamten, tamtá, tamto - distant objects
+### 5: Rhythmic Rule-2024-11-17
