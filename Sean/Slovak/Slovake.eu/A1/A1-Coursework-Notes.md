@@ -88,4 +88,4 @@ alebo= or
 	|**Masculine: TEN**|To je nejak**ý** muž. **Ten** muž je vysoký.|
 	|**Feminine: TÁ**|To je nejak**á** kniha. **Tá** kniha je veľmi dobrá.|
 	|**Neuter: TO**|To je nejak**é** auto. **To** auto je nové.|
-- 
+### 3: Definite and Indefinite Article-2024-11-17
