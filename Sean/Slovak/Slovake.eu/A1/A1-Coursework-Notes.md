@@ -49,7 +49,6 @@ ruža= rose
 srdce= heart
 šteňa= puppy
 žena= woman
-
 vysoký= high
 nízky= low
 veľký= large, great
@@ -66,7 +65,6 @@ zelený= green
 biely= white
 modrý= blue
 žltý= yellow
-
 kto= who
 čo= what
 aký, aká, aké= what, which
@@ -79,3 +77,4 @@ tam= there, in that place
 tu= here
 a= and
 alebo= or
+### 2:Grammatical Genders-2024-11-17
