@@ -93,4 +93,4 @@ alebo= or
 	|Masculine|To je nejak**ý** muž. **Ten** muž je vysoký.|
 	|Feminine|To je nejak**á** kniha. **Tá** kniha je veľmi dobrá.|
 	|Neuter|To je nejak**é** auto. **To** auto je nové.|
-### 4:
+### 4: Pronouns-2024-11-17
