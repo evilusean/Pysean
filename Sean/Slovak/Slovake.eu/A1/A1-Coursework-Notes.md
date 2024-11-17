@@ -89,3 +89,8 @@ alebo= or
 	|**Feminine: TÁ**|To je nejak**á** kniha. **Tá** kniha je veľmi dobrá.|
 	|**Neuter: TO**|To je nejak**é** auto. **To** auto je nové.|
 ### 3: Definite and Indefinite Article-2024-11-17
+- Slovak does not have articles; neither definite nor indefinite articles exist in the language. However, the demonstrative pronouns ten, tá, and to can be used in the function of a definite article, if necessary. Similarly, the indefinite pronouns nejaký, nejaká, and nejaké can be used as indefinite articles.
+	|Masculine|To je nejak**ý** muž. **Ten** muž je vysoký.|
+	|Feminine|To je nejak**á** kniha. **Tá** kniha je veľmi dobrá.|
+	|Neuter|To je nejak**é** auto. **To** auto je nové.|
+### 4:
