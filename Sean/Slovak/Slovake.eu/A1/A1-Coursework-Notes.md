@@ -78,3 +78,14 @@ tu= here
 a= and
 alebo= or
 ### 2:Grammatical Genders-2024-11-17
+- There are three genders in Slovak: masculine, feminine, and neuter. They are used not only for people, but also for objects, animals, plants, etc. To use a noun correctly, you need to know its gender.
+- The gender of a noun is determined by its ending.
+- Adjectives always agree in gender with the noun they describe. If a noun is masculine, then the accompanying adjective must be in the masculine form.
+	|Masculine|suffix **-ý**|vysok**ý** muž|
+	|Feminine|suffix **-á**|pekn**á** žena|
+	|Neuter|suffix **-é**|mal**é** dieťa|
+- This is also true for demonstrative pronouns that point to a noun:
+	|**Masculine: TEN**|To je nejak**ý** muž. **Ten** muž je vysoký.|
+	|**Feminine: TÁ**|To je nejak**á** kniha. **Tá** kniha je veľmi dobrá.|
+	|**Neuter: TO**|To je nejak**é** auto. **To** auto je nové.|
+- 
