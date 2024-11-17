@@ -94,3 +94,17 @@ alebo= or
 	|Feminine|To je nejak**á** kniha. **Tá** kniha je veľmi dobrá.|
 	|Neuter|To je nejak**é** auto. **To** auto je nové.|
 ### 4: Pronouns-2024-11-17
+- Adjectives answer the question //aký/aká/aké// (what, what kind of). Adjective endings are different for each gender:
+	|Masculine|Feminine|Neuter|
+	|Ak**ý** je dom?|Ak**á** je ruža?|Ak**é** je srdce?|
+	|Dom je vysok**ý**.|Ruža je pekn**á**.|Srdce je červen**é**.|
+- Adjectives and their endings in nominative singular:
+- For masculine we use the ending **-ý**.
+- For feminine we use the ending **-á**.
+- For neuter we use the ending **-é**.
+- The demonstrative pronouns “ten”, “tá” and “to” answer the question “ktorý/ktorá/ktoré”. The demonstrative pronouns have different forms depending on the gender:
+KTORÝ? (ten alebo tento?)= WHICH? (this or that?) – masculine gender
+KTORÁ? (tá alebo táto?)= WHICH? (this or that?) – feminine gender
+KTORÉ? (to alebo toto?)= WHICH? (this or that?) – neuter gender
+- tento, táto, toto - nearby objects
+- tamten, tamtá, tamto - distant objects
