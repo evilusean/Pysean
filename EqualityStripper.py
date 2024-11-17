@@ -71,7 +71,7 @@ new_symbol = ','
 comma_replacement = '.' 
 
 # Convert the input string to CSV format
-csv_output = convert_to_csv_format(input_string, old_symbol, new_symbol)
+csv_output = convert_to_csv_format(input_string, old_symbol, new_symbol, comma_replacement)
 
 # Print the output
 print(csv_output)
