@@ -109,3 +109,7 @@ KTORÉ? (to alebo toto?)= WHICH? (this or that?) – neuter gender
 - tento, táto, toto - nearby objects
 - tamten, tamtá, tamto - distant objects
 ### 5: Rhythmic Rule-2024-11-17
+- We have the sentence, //Tá ruža je krásna// (The rose is beautiful). How is it possible that the rose is //krásna//, instead of *//krásná// (with a long //á// at the end of the word), like for other adjectives? The reason is found in the rhythmic rule: in Slovak, a syllable with a long vowel sound cannot be followed by another syllable with a long vowel sound.
+- Long syllables are syllables containing a long vowel (á, é, í, ó, ú), a long consonant capable of forming a syllable (ŕ, ĺ), or a diphthong (ia, ie, iu, ô).
+- Adjectives are declined according to several patterns. This section only contains adjectives that are declined like the model word //pekný//. The ending is long (//pekn-ý//). A syllable with a long vowel sound cannot be followed by another syllable with a long vowel sound. Since the root of the word //krásn-// is long, the ending //-ý, -á, -é// must be shortened: //krásny, krásna, krásne//. Roots such as //pekn-, mal-//, etc. are short, so the ending may remain long (//pekný, malý//).
+- There are many exceptions to the rhythmic rule.
