@@ -262,3 +262,11 @@ $ds/dt=|v|=\sqrt{v_x^2+v_y^2+v_z^2}$
 - where F is the magnitude of the force and (x,F) represents the angle between the x-axis and the direction of F, etc.
 - motions in the x-, y-, and z-directions are independent if the _forces_ are not connected.
 ##### 9-4 What is the force?-2024-11-18
+- If an object is accelerating, some agency is at work; find it. Our program for the future of dynamics must be to _find the laws for the force_.
+- what are the forces on objects near the earth’s surface? Near the earth’s surface, the force in the vertical direction due to gravity is proportional to the mass of the object and is nearly independent of height for heights small compared with the earth’s radius
+- $R: F= GmM/{R}^{2} = mg$ , where $g=GM/R^{2}$ is called the _acceleration of gravity_
+-  Thus the law of gravity tells us that weight is proportional to mass; the force is in the vertical direction and is the mass times gg. Again we find that the motion in the horizontal direction is at constant velocity. The interesting motion is in the vertical direction, and Newton’s Second Law tells us
+- $mg=m(d^{2}x/dt^{2})$ 
+- Cancelling the mm’s, we find that the acceleration in the x-direction is constant and equal to g. This is of course the well known law of free fall under gravity, which leads to the equations
+$v_x=v_0+gt$,
+$x = x_0 + v_0t +\frac{1}{2}gt^2$
