@@ -270,3 +270,5 @@ $ds/dt=|v|=\sqrt{v_x^2+v_y^2+v_z^2}$
 - Cancelling the mm’s, we find that the acceleration in the x-direction is constant and equal to g. This is of course the well known law of free fall under gravity, which leads to the equations
 $v_x=v_0+gt$,
 $x = x_0 + v_0t +\frac{1}{2}gt^2$
+- As another example, let us suppose that we have been able to build a gadget (Fig. [9–3](https://www.feynmanlectures.caltech.edu/I_09.html#Ch9-F3)) which applies a force proportional to the distance and directed oppositely—a spring.
+##### 9-5 Meaning of the dynamical equations-2024-11-18
