@@ -238,3 +238,10 @@ The discovery of the laws of dynamics, or the laws of motion, was a dramatic mom
 - $F=m\frac{d}{dt}=ma$
 - The acceleration aa is the rate of change of the velocity, and Newton’s Second Law says more than that the effect of a given force varies inversely as the mass; it says also that the _direction_ of the change in the velocity and the _direction_ of the force are the same. Thus we must understand that a change in a velocity, or an acceleration, has a wider meaning than in common language: The velocity of a moving object can change by its speeding up, slowing down (when it slows down, we say it accelerates with a negative acceleration)
 ##### 9-2 Speed and velocity
+- In order to make our language more precise, we shall make one further definition in our use of the words _speed_ and _velocity_. Ordinarily we think of speed and velocity as being the same, and in ordinary language they are the same. But in physics we have taken advantage of the fact that there _are_ two words and have chosen to use them to distinguish two ideas. We carefully distinguish velocity, which has both magnitude and direction, from speed, which we choose to mean the magnitude of the velocity, but which does not include the direction. We can formulate this more precisely by describing how the x-, y-, and z-coordinates of an object change with time.
+- Suppose, for example, that at a certain instant an object is moving as shown in Fig. [9–1](https://www.feynmanlectures.caltech.edu/I_09.html#Ch9-F1). In a given small interval of time `Δt` it will move a certain distance `Δx` in the x-direction, `Δy` in the y-direction, and `Δz` in the z-direction. The total effect of these three coordinate changes is a displacement `Δs`
+	$\Delta x=v_x\,\Delta t,$
+	$\Delta y=v_y\,\Delta t,$
+	$\Delta z=v_z\,\Delta t.$
+- ![[f09-01_tc_big.svg]]
+- 
