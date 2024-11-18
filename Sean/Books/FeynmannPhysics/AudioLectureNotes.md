@@ -251,4 +251,13 @@ The discovery of the laws of dynamics, or the laws of motion, was a dramatic mom
 	$v_z=dz/dt.$
 - On the other hand, the speed of the object is :
 $ds/dt=|v|=\sqrt{v_x^2+v_y^2+v_z^2}$
-
+- Fig. [9–2](https://www.feynmanlectures.caltech.edu/I_09.html#Ch9-F2). We can analyze this apparently complex situation rather simply if we evaluate the changes in the x-, y-, and z-components of velocity. The change in the component of the velocity in the x-direction in a time Δt is $Δvx=axΔt$ where ax is what we call the x-component of the acceleration. Similarly, we see that $Δvy=ayΔt$ and $Δvz=azΔt$ In these terms, we see that Newton’s Second Law, in saying that the force is in the same direction as the acceleration, is really three laws, in the sense that the component of the force in the x-, y-, or z-direction is equal to the mass times the rate of change of the corresponding component of velocity:
+	$F_x=m(dv_x/dt)=m(d^2x/dt^2)=ma_x$
+	$F_y=m(dv_y/dt)=m(d^2y/dt^2)=ma_y$
+	$F_z=m(dv_z/dt)=m(d^2z/dt^2)=ma_z$
+- Just as the velocity and acceleration have been resolved into components by projecting a line segment representing the quantity, and its direction onto three coordinate axes, so, in the same way, a force in a given direction is represented by certain components in the x-, y-, and z-directions:
+	$F_x=F\cos\,(x,F),$
+	$F_y=F\cos\,(y,F),$
+	$F_z=F\cos\,(z,F)$
+- where F is the magnitude of the force and (x,F) represents the angle between the x-axis and the direction of F, etc.
+- motions in the x-, y-, and z-directions are independent if the _forces_ are not connected.
