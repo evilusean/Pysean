@@ -245,3 +245,10 @@ The discovery of the laws of dynamics, or the laws of motion, was a dramatic mom
 	$\Delta z=v_z\,\Delta t.$
 - ![[f09-01_tc_big.svg]]
 ##### 9–3Components of velocity, acceleration, and force
+- In Eq. ([9.4](https://www.feynmanlectures.caltech.edu/I_09.html#mjx-eqn-EqI94)) _we have resolved the velocity into components_ by telling how fast the object is moving in the x-direction, the y-direction, and the z-direction. The velocity is completely specified, both as to magnitude and direction, if we give the numerical values of its three rectangular components:
+	$v_x=dx/dt,$
+	$v_y=dy/dt,$
+	$v_z=dz/dt.$
+- On the other hand, the speed of the object is :
+$ds/dt=|v|=\sqrt{v_x^2+v_y^2+v_z^2}$
+
