@@ -272,3 +272,10 @@ $v_x=v_0+gt$,
 $x = x_0 + v_0t +\frac{1}{2}gt^2$
 - As another example, let us suppose that we have been able to build a gadget (Fig. [9–3](https://www.feynmanlectures.caltech.edu/I_09.html#Ch9-F3)) which applies a force proportional to the distance and directed oppositely—a spring.
 ##### 9-5 Meaning of the dynamical equations-2024-11-18
+- Suppose that at a given time tt the object has a certain velocity vxvx and position xx. What is the velocity and what is the position at a slightly later time t+ϵt+ϵ? If we can answer this question our problem is solved
+-  Now at any time tt, if ϵ is very small, we may express the position at time t+ϵ in terms of the position at time t and the velocity at time tt to a very good approximation as
+- $x(t+\epsilon)=x(t)+\epsilon v_x(t)$
+- The smaller the ϵ, the more accurate this expression
+- In order to get the velocity later, the velocity at the time t+ϵ, we need to know how the velocity changes, the _acceleration_. And how are we going to find the acceleration? That is where the law of dynamics comes in. The law of dynamics tells us what the acceleration is. It says the acceleration is −x
+	$v_x(t+\epsilon)=v_x(t)+\epsilon a_x(t)$
+	$=v_x(t)-\epsilon x(t)$
