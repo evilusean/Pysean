@@ -280,4 +280,18 @@ $x = x_0 + v_0t +\frac{1}{2}gt^2$
 	$v_x(t+\epsilon)=v_x(t)+\epsilon a_x(t)$
 	$=v_x(t)-\epsilon x(t)$
 - Equation ([9.14](https://www.feynmanlectures.caltech.edu/I_09.html#mjx-eqn-EqI914)) is merely kinematics; it says that a velocity changes because of the presence of acceleration. But Eq. ([9.15](https://www.feynmanlectures.caltech.edu/I_09.html#mjx-eqn-EqI915)) is _dynamics_, because it relates the acceleration to the force; it says that at this particular time for this particular problem, you can replace the acceleration by −x(t)−x(t). Therefore, if we know both the xx and vv at a given time, we know the acceleration, which tells us the new velocity, and we know the new position—this is how the machinery works. The velocity changes a little bit because of the force, and the position changes a little bit because of the velocity.
-##### 9–6 Numerical solution of the equations :
+##### 9–6 Numerical solution of the equations-2024-11-21 :
+- Suppose that we take ϵ=0.100 sec. After we do all the work if we find that this is not small enough we may have to go back and do it again with ϵ=0.010 sec. Starting with our initial value x(0)=1.00, what is x(0.1)? It is the old position x(0) plus the velocity (which is zero) times 0.10 sec. Thus x(0.1) is still 1.00 because it has not yet started to move. But the new velocity at 0.10 sec will be the old velocity v(0)=0 plus ϵ times the acceleration. The acceleration is −x(0)=−1.00.
+	$v(0.1) =0.00-0.10\times1.00=-0.10$
+- Now at 0.20 sec
+	$x(0.2) =x(0.1)+\epsilon v(0.1)$
+	$=1.00-0.10\times0.10=0.99$
+- and 
+	$x(0.2) =x(0.1)+\epsilon v(0.1)$
+	$=1.00-0.10\times0.10=0.99$
+- Notice that the new position is the old position plus the time interval ϵϵ times the velocity. But the velocity _when?_ The velocity at the beginning of the time interval is one velocity and the velocity at the end of the time interval is another velocity. Our improvement is to use the velocity _halfway between_.
+-  the position later is equal to the position before plus ϵϵ times the velocity _at the time in the middle of the interval_. Similarly, the velocity at this halfway point is the velocity at a time ϵϵ before (which is in the middle of the previous interval) plus ϵϵ times the acceleration at the time tt. That is, we use the equations: 
+	$x(t+\epsilon)=x(t)+\epsilon v(t+\epsilon/2)$
+	$v(t+\epsilon/2)=v(t-\epsilon/2)+\epsilon a(t)$
+	$a(t)=-x(t)$
+##### 9-7 Planetary Motions-2024-11-21
