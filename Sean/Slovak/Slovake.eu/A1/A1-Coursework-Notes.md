@@ -133,3 +133,4 @@ In all sentences, we have used the verb byť in the third person singular. In th
 [Audio Practice Link](https://slovake.eu/courses/a1/2/8/1)
 ### 9: What have we learned?-2024-11-22
 We now know that Slovak has three grammatical genders: masculine, feminine, and neuter. To be able to use nouns correctly, we need to know their genders. We can use the pronouns //nejaký, nejaká//, and //nejaké//, and //ten, tá//, and //to// as indefinite or definite articles. We also have learnt about the rhythmic rule, so we understand why certain endings must be shortened. We've also learnt how to use the adjective endings //-ý, -á//, and //-é// correctly, and how to form simple sentences.
+### 10: Final Test
