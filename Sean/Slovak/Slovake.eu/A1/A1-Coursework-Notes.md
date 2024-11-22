@@ -113,3 +113,4 @@ KTORÉ? (to alebo toto?)= WHICH? (this or that?) – neuter gender
 - Long syllables are syllables containing a long vowel (á, é, í, ó, ú), a long consonant capable of forming a syllable (ŕ, ĺ), or a diphthong (ia, ie, iu, ô).
 - Adjectives are declined according to several patterns. This section only contains adjectives that are declined like the model word //pekný//. The ending is long (//pekn-ý//). A syllable with a long vowel sound cannot be followed by another syllable with a long vowel sound. Since the root of the word //krásn-// is long, the ending //-ý, -á, -é// must be shortened: //krásny, krásna, krásne//. Roots such as //pekn-, mal-//, etc. are short, so the ending may remain long (//pekný, malý//).
 - There are many exceptions to the rhythmic rule.
+### 6: The verb byť (to be)-2024-11-22
