@@ -130,3 +130,4 @@ In all sentences, we have used the verb byť in the third person singular. In th
 ### 7: Situtational Communication and Exercise-2024-11-22
 [Audio Dialogue-Daughter Mother Motorcycle-Plane-Scooter](https://slovake.eu/courses/a1/2/7/1)
 ### 8:Practice your Pronunciation-2024-11-22
+[Audio Practice Link](https://slovake.eu/courses/a1/2/8/1)
