@@ -145,3 +145,19 @@ Tu je  - nízky červené malá  dom a  - pekný nové stará
 Toto auto je staré, tamto auto je  - nové modré malé .
 Táto žena je vysoká, tamtá žena je  - pekná dobrá nízka .
 ## Getting Acquainted
+### 1: New Words-2024-11-23
+jazyk=language
+rok= year
+Slovensko=Slovakia
+Poľsko= Poland
+Nemecko= Germany
+Litva= Lithuania
+Anglicko= England
+mesto= city
+hlavné mesto= capital city
+študent, študentka= male student, female student
+ráno= morning
+večer= evening
+internát= dormitory
+list= letter
+univerzita= university
