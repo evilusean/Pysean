@@ -14,63 +14,15 @@ def convert_to_csv_format(input_string, old_symbol='=', new_symbol=',', comma_re
     return output_string
 
 # Example input string (you can replace this with your actual long string)
-input_string = """ja= I
-ty= you (singular)
-on= he
-ona= she
-ono= it
-my= we
-vy= you (plural)
-oni= they (masculine or mixed)
-ony= they (feminine)
-byť= to be
-bývať= to live
-volať sa= to be called
-mať= to have
-hovoriť= to speak, to talk
-mať sa= to fare, to be [doing]
-čítať= to read
-písať= to write
-česať sa= to tease
-piť= to drink
-ísť= to go
-robiť= to do
-ahoj!, čau!= hello! Hi!
-dobré ráno= good morning
-dobrý deň= good afternoon, good day
-dobrý večer= good evening
-dovidenia!, dovi!= goodbye! bye!
-dobrú noc= good night
-zbohom= farewell
-Teší ma.= Pleased to meet you.
-Ako sa máš?= How are you?
-ďakujem= thank you
-po slovensky= in Slovak
-po poľsky= in Polish
-po nemecky= in German
-po litovsky= in Lithuanian
-po anglicky= in English
-ako= how
-odkiaľ= from where, whence
-kde= where
-koľko= how much
-ktorý= which
-devätnásť= nineteen
-dvadsať= twenty
-dvadsaťdva= twenty-two
-dvadsaťtri= twenty-three
-dvadsaťpäť= twenty-five
-dobre= ok, fine, good
-zle= badly, poorly, not well
-tiež, aj= also, too
-áno= yes
-nie= no
-ostatní= other
-trochu= a little bit
-na, v, vo= on, in, to
-z, zo= of, from
-teraz= now
-potom= then"""
+input_string = """Ako sa voláš? = What's your name?
+Volám sa Kristína. Teší ma. = My name is Kristina. It makes me happy(to meet you)
+Si študentka? = Are you a student?
+Odkiaľ si, Kristína? = Where are you from, Kristina?
+Ja som zo Slovenska, z Bratislavy. Kde bývaš? V ktorom meste? = I am from Slovakia, from Bratislava. Where do you live? In which city?
+Bývam vo Vilniuse. =  live in Vilnius.
+Akými jazykmi hovoríš? = What languages ​​do you speak?
+Hovorím po litovsky, po anglicky a trochu po slovensky. = I speak Lithuanian, English and a little Slovak
+Koľko máš rokov? Ja mám dvadsať (20) rokov. A ty? =  How old are you? I am twenty (20) years old. And you?"""
 
 # Specify the symbols for replacement
 old_symbol = '='

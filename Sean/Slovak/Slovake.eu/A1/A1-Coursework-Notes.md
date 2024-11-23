@@ -224,3 +224,13 @@ teraz= now
 potom= then
 ### 2: Introducing Yourself-2024-11-23
 [Video Dialogue](https://slovake.eu/courses/a1/3/2/1)
+Ako sa voláš? = What's your name?
+Volám sa Kristína. Teší ma. = My name is Kristina. It makes me happy(to meet you)
+Si študentka? = Are you a student?
+Odkiaľ si, Kristína? = Where are you from, Kristina?
+Ja som zo Slovenska, z Bratislavy. Kde bývaš? V ktorom meste? = I am from Slovakia, from Bratislava. Where do you live? In which city?
+Bývam vo Vilniuse. =  live in Vilnius.
+Akými jazykmi hovoríš? = What languages ​​do you speak?
+Hovorím po litovsky, po anglicky a trochu po slovensky. = I speak Lithuanian, English and a little Slovak
+Koľko máš rokov? Ja mám dvadsať (20) rokov. A ty? =  How old are you? I am twenty (20) years old. And you?
+
