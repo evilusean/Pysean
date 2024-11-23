@@ -222,3 +222,5 @@ na, v, vo= on, in, to
 z, zo= of, from
 teraz= now
 potom= then
+### 2: Introducing Yourself-2024-11-23
+[Video Dialogue](https://slovake.eu/courses/a1/3/2/1)
