@@ -14,56 +14,63 @@ def convert_to_csv_format(input_string, old_symbol='=', new_symbol=',', comma_re
     return output_string
 
 # Example input string (you can replace this with your actual long string)
-input_string = """auto= car
-dedko= grandfather
-dieťa= child
-dom= house
-doma= at home
-futbalista= footballer
-kniha= book
-kosť= bone
-kvet= flower
-lekáreň= chemist
-mačka= cat
-múzeum= museum
-muž= man
-námestie= square
-pes= dog
-posteľ= bed
-ruža= rose
-srdce= heart
-šteňa= puppy
-žena= woman
-
-vysoký= high
-nízky= low
-veľký= large, great
-malý= small
-pekný= nice
-krásny= beautiful
-dobrý= good
-nový= new
-starý= old
-moderný= modern
-červený= red
-zelený= green
-čierny= black
-biely= white
-modrý= blue
-žltý= yellow
-
-kto= who
-čo= what
-aký, aká, aké= what, which
-ten, tá, to= that, the, the one that
-tento, táto, toto= this
-nejaký, nejaká, nejaké= a, an, some, any
-je= is
-veľmi= very
-tam= there, in that place
-tu= here
-a= and
-alebo= or"""
+input_string = """ja= I
+ty= you (singular)
+on= he
+ona= she
+ono= it
+my= we
+vy= you (plural)
+oni= they (masculine or mixed)
+ony= they (feminine)
+byť= to be
+bývať= to live
+volať sa= to be called
+mať= to have
+hovoriť= to speak, to talk
+mať sa= to fare, to be [doing]
+čítať= to read
+písať= to write
+česať sa= to tease
+piť= to drink
+ísť= to go
+robiť= to do
+ahoj!, čau!= hello! Hi!
+dobré ráno= good morning
+dobrý deň= good afternoon, good day
+dobrý večer= good evening
+dovidenia!, dovi!= goodbye! bye!
+dobrú noc= good night
+zbohom= farewell
+Teší ma.= Pleased to meet you.
+Ako sa máš?= How are you?
+ďakujem= thank you
+po slovensky= in Slovak
+po poľsky= in Polish
+po nemecky= in German
+po litovsky= in Lithuanian
+po anglicky= in English
+ako= how
+odkiaľ= from where, whence
+kde= where
+koľko= how much
+ktorý= which
+devätnásť= nineteen
+dvadsať= twenty
+dvadsaťdva= twenty-two
+dvadsaťtri= twenty-three
+dvadsaťpäť= twenty-five
+dobre= ok, fine, good
+zle= badly, poorly, not well
+tiež, aj= also, too
+áno= yes
+nie= no
+ostatní= other
+trochu= a little bit
+na, v, vo= on, in, to
+z, zo= of, from
+teraz= now
+potom= then"""
 
 # Specify the symbols for replacement
 old_symbol = '='
