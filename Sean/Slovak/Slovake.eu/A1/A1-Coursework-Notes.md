@@ -133,7 +133,7 @@ In all sentences, we have used the verb byť in the third person singular. In th
 [Audio Practice Link](https://slovake.eu/courses/a1/2/8/1)
 ### 9: What have we learned?-2024-11-22
 We now know that Slovak has three grammatical genders: masculine, feminine, and neuter. To be able to use nouns correctly, we need to know their genders. We can use the pronouns //nejaký, nejaká//, and //nejaké//, and //ten, tá//, and //to// as indefinite or definite articles. We also have learnt about the rhythmic rule, so we understand why certain endings must be shortened. We've also learnt how to use the adjective endings //-ý, -á//, and //-é// correctly, and how to form simple sentences.
-### 10: Final Test
+### 10: Final Test-2024-11-22
 To je  - nejaký nejaká nejaké  dom.  - Ten Tá To  dom je vysoký.
 To je  - nejaké nejaký nejaká  dieťa.  - Ten Tá To  dieťa je malé.
 To je  - nejaké nejaká nejaký  mačka.  - Tá To Ten  mačka je čierna.
@@ -144,3 +144,4 @@ Tento kvet je  - žltý žlté žltá .
 Tu je  - nízky červené malá  dom a  - pekný nové stará  auto.
 Toto auto je staré, tamto auto je  - nové modré malé .
 Táto žena je vysoká, tamtá žena je  - pekná dobrá nízka .
+## Getting Acquainted
