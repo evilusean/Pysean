@@ -146,6 +146,7 @@ Toto auto je staré, tamto auto je  - nové modré malé .
 Táto žena je vysoká, tamtá žena je  - pekná dobrá nízka .
 ## Getting Acquainted
 ### 1: New Words-2024-11-23
+#### Nouns:
 jazyk=language
 rok= year
 Slovensko=Slovakia
@@ -161,3 +162,26 @@ večer= evening
 internát= dormitory
 list= letter
 univerzita= university
+#### Pronouns:
+ja= I
+ty= you (singular)
+on= he
+ona= she
+ono= it
+my= we
+vy= you (plural)
+oni= they (masculine or mixed)
+ony= they (feminine)
+#### Verbs:
+byť= to be
+bývať= to live
+volať sa= to be called
+mať= to have
+hovoriť= to speak, to talk
+mať sa= to fare, to be [doing]
+čítať= to read
+písať= to write
+česať sa= to tease
+piť= to drink
+ísť= to go
+robiť= to do
