@@ -233,4 +233,15 @@ Bývam vo Vilniuse. =  live in Vilnius.
 Akými jazykmi hovoríš? = What languages ​​do you speak?
 Hovorím po litovsky, po anglicky a trochu po slovensky. = I speak Lithuanian, English and a little Slovak
 Koľko máš rokov? Ja mám dvadsať (20) rokov. A ty? =  How old are you? I am twenty (20) years old. And you?
+### 3: Greetings-2024-11-24
+In Slovak, there are two ways of addressing others:
+- tykanie (informal form of address) - the "ty" form is used to speak to friends, children, family members, other students at school, etc.
+- vykanie (formal form of address) – the "vy" form, a polite mode of address, is used to talk to adult strangers, by children addressing adults or students addressing teachers, at offices, in shops, etc.
+- Kto **ste** (vy)? = Who are you (you)?
+- Odkiaľ **ste**? = where are you from
+- Ako sa má**te**? = how are you
+- Ako sa volá**te** = what is your name
+- Zbohom. = Goodbye
+- Dovidenia./Dovi. = Goodbye
+
 
