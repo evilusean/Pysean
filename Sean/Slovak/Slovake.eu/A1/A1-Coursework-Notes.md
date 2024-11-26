@@ -243,5 +243,8 @@ In Slovak, there are two ways of addressing others:
 - Ako sa volá**te** = what is your name
 - Zbohom. = Goodbye
 - Dovidenia./Dovi. = Goodbye
-
-
+### 4: Inflexion of Words-2024-11-25
+- The Slovak language belongs to the Slavic family of languages, which are rich in inflection (different endings are used to modify the function of a word in a sentence). This system of inflection is called "declension" for nouns, adjectives, pronouns, and numerals, and "conjugation" for verbs.
+- [Verb Conjugation Lesson Link-Detailed](https://slovake.eu/grammar/classes/verbs)
+-  Conjugation of verbs : Verbs have different endings for each person, for singular and plural forms. Not all verbs are conjugated in the same way; there are several conjugation models that a verb may follow. That is, there are several groups of verbs, and within a single group, all verbs will follow the same conjugation pattern. We will learn these patterns gradually. We'll learn some basic, common verbs first, so that we can introduce ourselves to others. [Here](https://slovake.eu/grammar/classes/verbs) is an overview of them.
+- In the basic form, the infinitive, all verbs end in -ť.
