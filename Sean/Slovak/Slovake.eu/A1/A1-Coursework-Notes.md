@@ -248,3 +248,31 @@ In Slovak, there are two ways of addressing others:
 - [Verb Conjugation Lesson Link-Detailed](https://slovake.eu/grammar/classes/verbs)
 -  Conjugation of verbs : Verbs have different endings for each person, for singular and plural forms. Not all verbs are conjugated in the same way; there are several conjugation models that a verb may follow. That is, there are several groups of verbs, and within a single group, all verbs will follow the same conjugation pattern. We will learn these patterns gradually. We'll learn some basic, common verbs first, so that we can introduce ourselves to others. [Here](https://slovake.eu/grammar/classes/verbs) is an overview of them.
 - In the basic form, the infinitive, all verbs end in -ť.
+-  How do you know which pattern to use for a verb? :
+  The verbs are conjugated differently depending on the class they belong to. There are three main groups of verbs with different endings: **A verbs**, **I verbs** and **E verbs**.
+  - **A verbs** (//čítať, mať, bývať…//)
+
+| Singular | Plural  |     |
+| -------- | ------- | --- |
+| čít-am   | čít-ame |     |
+| čít-aš   | čít-ate |     |
+| čít-a    | čít-ajú |     |
+-  **I verbs** (//robiť, hovoriť…//)
+
+|Singular|Plural|
+|---|---|
+|rob-ím|rob-íme|
+|rob-íš|rob-íte|
+|rob-í|rob-ia|
+-  **E verbs** (//písať, česať, študovať…//)
+
+|Singular|Plural|
+|---|---|
+|píš-em|píš-eme|
+|píš-eš|píš-ete|
+|píš-e|píš-u|
+- There is also a group of verbs which don't belong to any of these groups. These are **irregular verbs**, which have unpredictable conjugated forms. Apart from the verb //byť//, which you already know, they include the following verbs:
+- **jesť** (jem, ješ, je, jeme, jete, jedia)
+- **ísť** (idem, ideš, ide, ideme, idete, idú)
+- **stáť** (stojím, stojíš, stojí, stojíme, stojíte, stoja)
+- **piť** (pijem, piješ, pije, pijeme, pijete, pijú)
