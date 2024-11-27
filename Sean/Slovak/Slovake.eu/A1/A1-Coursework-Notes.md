@@ -306,3 +306,17 @@ Questions like these cannot be answered with: áno – nie (yes–no); instead, 
 - Koľko máš rokov?
 - Ako sa voláš?
 - Kde bývaš?
+Personal pronouns answer the questions **Kto?** (who) / **Čo?** (what).
+- To je **muž**. - **Kto** je to?
+- To je **kniha**. - **Čo** je to?
+Adjectives answer the question **Aký? Aká? Aké?** (what, what kind of).
+- To je **vysoký** muž. - **Aký** je muž?
+You can ask about actions with the question **Čo robí?** (What is he doing?).
+- Muž **číta**. - **Čo** **robí** muž?
+You can ask about places with the questions **Kde? / Odkiaľ?** (where / from where).
+- Bývam **v** **Nemecku**. - **Kde** bývaš?
+- Sme **z** **Nemecka**. - **Odkiaľ** ste?
+You can ask about quantities with the question **Koľko?** (how much, how many).
+- Jana má **devätnásť** rokov. - **Koľko** rokov má Jana?
+You can ask about the manner with the question **Ako?** (how).
+- Študent hovorí **po** **nemecky**. - **Ako** hovorí študent?
