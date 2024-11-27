@@ -320,3 +320,4 @@ You can ask about quantities with the question **Koľko?** (how much, how many).
 - Jana má **devätnásť** rokov. - **Koľko** rokov má Jana?
 You can ask about the manner with the question **Ako?** (how).
 - Študent hovorí **po** **nemecky**. - **Ako** hovorí študent?
+### Ja, Ty (I, You)-2024-11-27
