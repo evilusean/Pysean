@@ -289,3 +289,20 @@ Katka : Ako **sa** máš, Peter?
 Peter : Mám **sa** dobre. Ty sa máš ako?
 Katka : Ďakujem. Ja **sa** mám tiež dobre.
 ### 6:Forming Questions-2024-11-27
+If you want to communicate effectively in Slovak, you need to learn how to ask questions about any word in a sentence.
+How do you form a question in Slovak? A sentence must have: a subject and an object. For example:
+- **(Ja)** mám devätnásť rokov.
+- **Zuzana** má dvadsať rokov.
+To make a statement into a question, we simply reverse the order:
+- Máš **(ty)** dvadsať rokov? Nie, ja nemám dvadsať rokov.
+- Má **Zuzka** dvadsať rokov? Áno, Zuzka má dvadsať rokov.
+These questions can be answered with áno (yes) or nie (no). These are referred to as "decision questions", and they are asked with a rising tone, like in English:
+- Máš dvadsať rokov?
+- Voláš sa Kristína?
+- Máš sa dobre?
+- Koľko máš **(ty)** rokov?
+- Koľko má **Zuzka** rokov?
+Questions like these cannot be answered with: áno – nie (yes–no); instead, we have to provide the missing information in the sentence. These questions are usually asked with wh- words in English (who, what, why, etc). They start with an interrogative pronoun (e.g. kto, čo, koľko, kde... /who, what, how many, where...) and have a descending tone.
+- Koľko máš rokov?
+- Ako sa voláš?
+- Kde bývaš?
