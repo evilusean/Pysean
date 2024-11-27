@@ -321,3 +321,20 @@ You can ask about quantities with the question **Koľko?** (how much, how many).
 You can ask about the manner with the question **Ako?** (how).
 - Študent hovorí **po** **nemecky**. - **Ako** hovorí študent?
 ### Ja, Ty (I, You)-2024-11-27
+#### First person singular - JA
+We covered the first and second person singular in the dialogue at the beginning of the lesson.
+The first person singular (JA) has the ending -m.
+- hovori**ť** - JA hovorí**m**
+- číta**ť** - JA číta**m**
+- ma**ť** - JA má**m**
+As you'll see, in addition to different endings, minor changes may occur in the word root (i -> í, a -> á and others).
+In the Slovak language, the subject (if expressed by a pronoun) may or may not be expressed:
+- Som Zuzana. - Ja som Zuzana.
+- Bývaš v Bratislave. - Ty bývaš v Bratislave.
+Both options are correct. The second option is often used to emphasise the subject:
+- JA bývam v Bratislave, TY v Trnave.
+#### Second person singular - TY
+With the exception of the verb byť (which is irregular in many languages, as it is in Slovak) all verbs in the second person singular (TY) have the ending -š.
+- hovori**ť** - TY hovorí**š**
+- číta**ť** - TY číta**š**
+- ma**ť** - TY má**š**
