@@ -276,3 +276,15 @@ In Slovak, there are two ways of addressing others:
 - **ísť** (idem, ideš, ide, ideme, idete, idú)
 - **stáť** (stojím, stojíš, stojí, stojíme, stojíte, stoja)
 - **piť** (pijem, piješ, pije, pijeme, pijete, pijú)
+### Reflexive pronoun //sa//-2024-11-27
+The reflexive pronoun //sa// may be used with a verb that is not reflexive in English, and vice versa: volam sa
+Fortunately, when reflexive verbs are conjugated, the reflexive pronoun doesn't change!
+Peter : Ako **sa** voláš?
+Kristína : Volám **sa** Kristína.
+- The reflexive pronoun is always the second element in a sentence.
+Peter : Ako **sa** voláš?
+Katka : Volám **sa** Katka. A ty?
+Peter : Ja **sa** volám Peter.
+Katka : Ako **sa** máš, Peter?
+Peter : Mám **sa** dobre. Ty sa máš ako?
+Katka : Ďakujem. Ja **sa** mám tiež dobre.
