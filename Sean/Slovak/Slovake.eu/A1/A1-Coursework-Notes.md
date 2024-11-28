@@ -339,3 +339,5 @@ With the exception of the verb byť (which is irregular in many languages, as it
 - číta**ť** - TY číta**š**
 - ma**ť** - TY má**š**
 ### On/Ona/Ono (He/She/It)-2024-11-28
+- Verbs in the third person singular have the same form for all genders, in the present tense.
+- The first person singular ends in -m and the second person ends in -š. For the third person, there are several options – the ending depends on the group to which the verb belongs. 
