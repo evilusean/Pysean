@@ -338,3 +338,4 @@ With the exception of the verb byť (which is irregular in many languages, as it
 - hovori**ť** - TY hovorí**š**
 - číta**ť** - TY číta**š**
 - ma**ť** - TY má**š**
+### On/Ona/Ono (He/She/It)-2024-11-28
