@@ -342,3 +342,26 @@ With the exception of the verb byť (which is irregular in many languages, as it
 - Verbs in the third person singular have the same form for all genders, in the present tense.
 - The first person singular ends in -m and the second person ends in -š. For the third person, there are several options – the ending depends on the group to which the verb belongs. 
 ### My(We)-2024-12-1
+First person plural – MY
+Kristína a Tom = Ahoj! My **sme** tiež študenti.
+Kristína a Tom = **Voláme sa** Kristína a Tom.
+Kristína a Tom = Teraz **bývame** v Bratislave.
+Kristína a Tom = **Hovoríme** po litovsky, po anglicky a po slovensky.
+Kristína a Tom = **Máme** devätnásť (19) a dvadsaťtri (23) rokov.
+Kristína a Tom = **Máme sa** dobre.
+
+In the first person plural (MY) all verbs end in -me.
+Bývam na Slovensku. A vy?–My tiež bývame na Slovensku.
+Študujem slovenský jazyk. A vy?– My tiež študujeme slovenský jazyk.
+Mám sa dobre. A vy?– My sa tiež máme dobre.
+Píšem list. A vy?– My tiež píšeme list.
+Bývam na internáte. A vy?– My tiež bývame na internáte.
+Idem na univerzitu. A vy?– My tiež ideme na univerzitu.
+Čítam knihu. A vy?– My tiež čítame knihu.
+
+My  sme (byť) tiež študenti.
+ Voláme sa (volať sa) Kristína a Tom.
+Teraz  bývame (bývať) v Bratislave.
+ Hovoríme (hovoriť) po litovsky, po anglicky a po slovensky.
+ Máme (mať) devätnásť (19) a dvadsaťtri (23) rokov.
+ Máme sa (mať sa) dobre.
