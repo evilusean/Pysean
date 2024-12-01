@@ -349,8 +349,8 @@ Kristína a Tom = Teraz **bývame** v Bratislave.
 Kristína a Tom = **Hovoríme** po litovsky, po anglicky a po slovensky.
 Kristína a Tom = **Máme** devätnásť (19) a dvadsaťtri (23) rokov.
 Kristína a Tom = **Máme sa** dobre.
-
-In the first person plural (MY) all verbs end in -me.
+- In the first person plural (MY) all verbs end in -me.
+#### Test 1:
 Bývam na Slovensku. A vy?–My tiež bývame na Slovensku.
 Študujem slovenský jazyk. A vy?– My tiež študujeme slovenský jazyk.
 Mám sa dobre. A vy?– My sa tiež máme dobre.
@@ -358,7 +358,7 @@ Píšem list. A vy?– My tiež píšeme list.
 Bývam na internáte. A vy?– My tiež bývame na internáte.
 Idem na univerzitu. A vy?– My tiež ideme na univerzitu.
 Čítam knihu. A vy?– My tiež čítame knihu.
-
+#### Test 2:
 My  sme (byť) tiež študenti.
  Voláme sa (volať sa) Kristína a Tom.
 Teraz  bývame (bývať) v Bratislave.
