@@ -300,6 +300,8 @@ LMStudio.ai : https://lmstudio.ai/
 Claude unsandboxed(can use your PC locally, takes a screenshot, webscraping, click, open files, etc) : https://www.youtube.com/watch?v=DVRg0daTads&ab_channel=Fireship
   Claude Docker Sandbox: https://github.com/anthropics/anthropic-quickstarts/blob/main/computer-use-demo/README.md
 Github Spark - Editor, similar to Cursor: https://githubnext.com/projects/github-spark
+Gemini 2.0 (Project Mariner = controls browser + Jules write and ships code) 
+Devin (500$, interact with it primarily via slack, writes it's own code, and reprompts itself, like a junior dev, but faster) 
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
