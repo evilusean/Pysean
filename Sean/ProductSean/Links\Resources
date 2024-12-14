@@ -14,8 +14,10 @@ The Trial Version only lets you save, not open, so after docker, I might try, cr
 2024-12-14 : I tried to install FL-Studio through lutris, wouldn't work, debating whether to use a docker container or VM with Virtual box
 sudo pacman -Syu virtualbox virtualbox-host-modules-arch #installs virtualbox on arch linux, system update, need to reboot
 sudo modprobe vboxdrv #load VirtualBox kernel modules, not found, just going to reboot
-virtual box installed, search menu, 'new', windows 11(ptuh), ram = 8gigs, HD = 20gigs, 
 Download the ISO first, it doesn't work like docker with an image hub, working on that now
+virtual box installed, search menu, 'new', windows 11(ptuh), ram = 8gigs, HD = 20gigs, After that go to settings
+ Settings : Under "Storage," click on the 'empty' optical drive and choose the Windows ISO you downloaded. -> 'Finish' -> Start VM -> Install Windows -> Download FL Studio -> Install 
+You can 'save state' before you shut down the VM, maybe keep the DAW in an open state so don't run out of trial version? - idk, still have to play around with it
 
 Linux Plugins:
 https://github.com/robbert-vdh/yabridge
