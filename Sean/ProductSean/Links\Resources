@@ -14,6 +14,7 @@ The Trial Version only lets you save, not open, so after docker, I might try, cr
 2024-12-14 : I tried to install FL-Studio through lutris, wouldn't work, debating whether to use a docker container or VM with Virtual box
 sudo pacman -Syu virtualbox virtualbox-host-modules-arch #installs virtualbox on arch linux, system update, need to reboot
 sudo modprobe vboxdrv #load VirtualBox kernel modules, not found, just going to reboot
+virtual box installed, search menu, 'new', windows 11(ptuh), ram = 8gigs, HD = 20gigs, 
 
 
 Linux Plugins:
