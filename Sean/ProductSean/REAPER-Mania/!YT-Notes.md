@@ -18,5 +18,5 @@ Free. Open Source. Based. >150MB DL. Works on Linux.
 - Screen Sense = allows you to switch views with a hotkey
 - Subprojects = I heard you like projects
 - Render Qeue = Add to qeue, render later
-
-# 
+# First Settings to Adjust in Reaper I-2024-12-15
+[Video](https://www.youtube.com/watch?v=mL1aUJuODt8&list=PLM0xHqxaiT68QXHwmlkQgbJc7OpWaNTS-&ab_channel=REAPERMania)
