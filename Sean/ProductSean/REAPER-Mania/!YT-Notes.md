@@ -37,4 +37,5 @@ Free. Open Source. Based. >150MB DL. Works on Linux.
 - Track/Send Defaults = Raise/Lower volume on tracks default - Start in Record Mode(good for midi) - Record Configs - Arm on Select(Record)
 # First Settings to Adjust in Reaper III-2024-12-15
 [Video](https://www.youtube.com/watch?v=azIbd6Jnz8w&list=PLM0xHqxaiT68QXHwmlkQgbJc7OpWaNTS-&index=3&ab_channel=REAPERMania)
-- 
+- Item Fade Defaults = 'Fade in/Fade Out Sizes' 'CrossFade Size' Defaults 10 ms - 'Fade Shapes' - auto crossfade button
+- Item Loop Defaults = Will loop items by default when you drag them out
