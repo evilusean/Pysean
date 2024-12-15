@@ -30,3 +30,8 @@ Free. Open Source. Based. >150MB DL. Works on Linux.
 -  'File' -> 'Project Settings' -> 'Media' Tab = Let's you change what filetype audio format is saved as 'Wav - 24bit' is default
 - Reaper 7 has a new feature that every audio file/track you create will be saved in a relative file/subfolder of that project you saved = click 2 boxes when saving 'Create subdirectory for project' and 'Copy all media into project directory' - better for backups
 # First Settings to Adjust in Reaper II-2024-12-15
+[Video](https://www.youtube.com/watch?v=3WEsAiop89w&list=PLM0xHqxaiT68QXHwmlkQgbJc7OpWaNTS-&index=2&ab_channel=REAPERMania)
+- 'CTRL' + 'P' = Hotkey to open 'Preferences'
+- New Project Template = 'Project' Tab -> 'Project Settings' -> Template File
+- Backups = Will save last 50 saves by default, can add source control to projects
+- Track/Send Defaults = Raise/Lower volume on tracks default - Start in Record Mode(good for midi) - Record Configs - Arm on Select(Record)
