@@ -20,3 +20,12 @@ Free. Open Source. Based. >150MB DL. Works on Linux.
 - Render Qeue = Add to qeue, render later
 # First Settings to Adjust in Reaper I-2024-12-15
 [Video](https://www.youtube.com/watch?v=mL1aUJuODt8&list=PLM0xHqxaiT68QXHwmlkQgbJc7OpWaNTS-&ab_channel=REAPERMania)
+- After first install, change some settings, most of the defaults 
+- 'View' in top dropdown to hide menus/objects - most have their own hotkeys
+- 'Float' Mixer = right click -> 'Dock Mixer in Docker' -> unselect to float
+- Create a track = 'double click' on the track control panel
+- tracks by default have very little detail press 'O' (recored mode) to bring up the menu, You can change the input type from 'mono'/'stereo'/'MIDI' from the 'Triangle' dropdown on this menu
+- To change the Default appearance of tracks = 'View' -> 'ScreenSets/Layouts' 'Layouts' Tab -> 'Track Panel' -> Change Size % and Layout (A vs B vs C) 'B' shows everything for tracks
+- Project Sample Rate/BPM = By Default turned off - 'File' -> 'Project Settings' -> 'Project Sample Rate' (Hz) - All samples you import will stretch or shrink to match this tempo
+-  'File' -> 'Project Settings' -> 'Media' Tab = Let's you change what filetype audio format is saved as 'Wav - 24bit' is default
+- Reaper 7 has a new feature that every audio file/track you create will be saved in a relative file/subfolder of that project you saved = click 2 boxes when saving 'Create subdirectory for project' and 'Copy all media into project directory' - better for backups
