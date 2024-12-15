@@ -36,5 +36,5 @@ Free. Open Source. Based. >150MB DL. Works on Linux.
 - Backups = Will save last 50 saves by default, can add source control to projects
 - Track/Send Defaults = Raise/Lower volume on tracks default - Start in Record Mode(good for midi) - Record Configs - Arm on Select(Record)
 # First Settings to Adjust in Reaper III-2024-12-15
-(Video)[https://www.youtube.com/watch?v=azIbd6Jnz8w&list=PLM0xHqxaiT68QXHwmlkQgbJc7OpWaNTS-&index=3&ab_channel=REAPERMania]
+[Video](https://www.youtube.com/watch?v=azIbd6Jnz8w&list=PLM0xHqxaiT68QXHwmlkQgbJc7OpWaNTS-&index=3&ab_channel=REAPERMania)
 - 
