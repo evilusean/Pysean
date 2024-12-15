@@ -12,6 +12,7 @@ FruityLoops On Linux :
 https://zizicaca.notion.site/How-to-run-FL-Studio-and-plugins-on-Linux-15db0918501842adb21e4614b8f234ec
 The Trial Version only lets you save, not open, so after docker, I might try, create a docker container/VM and then keep FL studio open on that - or just use a linux based one - Reaper was pretty overwhelming
 2024-12-14 : I tried to install FL-Studio through lutris, wouldn't work, debating whether to use a docker container or VM with Virtual box
+ERROR: I tried with virtual box, downloaded the ISO, I get pretty far in the install(it's also slowwwww) then get a crash and restart, it says I need an update, but I'm alraedy connected, might try on old mac
 sudo pacman -Syu virtualbox virtualbox-host-modules-arch #installs virtualbox on arch linux, system update, need to reboot
 sudo modprobe vboxdrv #load VirtualBox kernel modules, not found, just going to reboot
 Download the ISO first, it doesn't work like docker with an image hub, working on that now
