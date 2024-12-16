@@ -36,3 +36,6 @@
 - Record
 - Loop
 - Stop
+# Starting a New Project-2024-12-16
+[Video](https://www.youtube.com/watch?v=hLB83sOxVfs&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=2&ab_channel=REAPERMania)
+- 
