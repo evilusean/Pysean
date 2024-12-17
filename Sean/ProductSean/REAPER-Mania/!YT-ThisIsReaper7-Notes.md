@@ -30,6 +30,9 @@
 - 'Ctrl' + 'T' = Add a new track
 - 'Input' = Select input device, if you have one, Mono(guitar/etc), Stereo, or MIDI
 - 'Ctrl' + 'R' = Record = to record a device to a track
+- 'Mouse Scroll Up/Down' = Zoom In/Out
+- 'Ctrl' + 'Alt' + 'Mouse Scroll Up/Down' = Scroll Tracks Up/Down Vertically
+- 'Shift' + 'Mouse Scroll Up/Down' = Scroll Tracks Up/Down Horizontally
 ##### Tool Bar(top left above tracks) :
 - 'Lock' = Top left toolbar = locks items, so you won't accidently change them
 - 'Razor Edits' = Razor blade in top left = Will allow you to cut sections from a track/multiple tracks 
