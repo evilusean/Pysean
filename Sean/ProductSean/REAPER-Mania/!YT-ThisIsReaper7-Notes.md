@@ -48,3 +48,5 @@
 - You can auto backup files every set time amount(every 15 minutes), I haven't had reaper crash(YET) - and I compulsively 'CTRL' + 'S' PUSH ON SAVE
 - 'Save as default project settings' - Set up BPM/tempo/time signature/whatever, and in bottom right 'save as default project settings'
 - in 'Project Settings' = There is a tab for 'Media' 'Video' 'Advanced' 'Notes' (take notes for future sean)
+# The Tracks -2024-12-17
+[Video](https://www.youtube.com/watch?v=L5E1enayMQY&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=3&ab_channel=REAPERMania)
