@@ -25,7 +25,8 @@
 - Mixer = Contains Faders to work with for volume, can multi track select
 - 'BPM' = Beats per minute = Type in what you want to increase/decrease the tempo - Default is 120 BPM
 - 'Playback Rate' = Same area of BPM = increase speed by a factor 1.5 = 150% - also affects the pitch (slower = lower) (faster=higher)
-- 'Alt' + 'Enter' = Open 'Project Settings' = Change Timebase for items/envelopes/markers - allow you to change to BPM or Time playback rate to increase tempo - I had a project already open and it wasn't working with BPM, spent wayyyy too loong trying to figure that out - present sean problem, now won't be future seans problem
+- 'Alt' + 'Enter' = Open 'Project Settings' = Change Timebase for items/envelopes/markers - allow you to change to BPM or Time playback rate to increase tempo - 'Advanced Settings' = You can also change the project settings so that pitch isn't preserved with tempo, can be changed in project settings
+- 'CTRL' + 'ALT' + 'M' -> Click on top to toggle 'Playrate Envelope Visible' ->'SHIFT' + 'Click' on parts of song to speed up or slow down the entire track at select(SHIFT) points in song = 'Master Track' = Will allow you to change the speed of points in the song, or entire song
 - 'Ctrl' + 'T' = Add a new track
 ##### Tool Bar(top left above tracks) :
 - 'Lock' = Top left toolbar = locks items, so you won't accidently change them
