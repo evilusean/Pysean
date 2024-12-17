@@ -28,6 +28,8 @@
 - 'Alt' + 'Enter' = Open 'Project Settings' = Change Timebase for items/envelopes/markers - allow you to change to BPM or Time playback rate to increase tempo - 'Advanced Settings' = You can also change the project settings so that pitch isn't preserved with tempo, can be changed in project settings
 - 'CTRL' + 'ALT' + 'M' -> Click on top to toggle 'Playrate Envelope Visible' ->'SHIFT' + 'Click' on parts of song to speed up or slow down the entire track at select(SHIFT) points in song = 'Master Track' = Will allow you to change the speed of points in the song, or entire song
 - 'Ctrl' + 'T' = Add a new track
+- 'Input' = Select input device, if you have one, Mono(guitar/etc), Stereo, or MIDI
+- 'Ctrl' + 'R' = Record = to record a device to a track
 ##### Tool Bar(top left above tracks) :
 - 'Lock' = Top left toolbar = locks items, so you won't accidently change them
 - 'Razor Edits' = Razor blade in top left = Will allow you to cut sections from a track/multiple tracks 
@@ -42,4 +44,7 @@
 - 'Audio Interface' = top right corner drowndown menu/or under 'Preferences(CTRL + P)' -> scroll to 'Audio' -> 'Device' = choose whichever audio interface is plugged into your computer - default is system audio 
 - 'Sample Rate' = Also set in 'Audio' Settings = 47kHz(kilohertz) = 48000 hertz default 
 - 'Block Size' = Also set in 'Audio' Settings = Buffer size = 128 default
-- 
+- When you save a Reaper project, you will have 3 files, '.RPP' which is the reaper file, 'Audio Files' which contains all recorded audio from project, and 'Backups' redundant
+- You can auto backup files every set time amount(every 15 minutes), I haven't had reaper crash(YET) - and I compulsively 'CTRL' + 'S' PUSH ON SAVE
+- 'Save as default project settings' - Set up BPM/tempo/time signature/whatever, and in bottom right 'save as default project settings'
+- in 'Project Settings' = There is a tab for 'Media' 'Video' 'Advanced' 'Notes' (take notes for future sean)
