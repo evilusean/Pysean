@@ -45,3 +45,18 @@ Free. Open Source. Based. >150MB DL. Works on Linux.
 - https://stash.reaper.fm/tag/Key-Maps 
 # Best Settings for REAPER7(2024)-2024-12-17
 [Video](https://www.youtube.com/watch?v=1WhAblK8z2U&ab_channel=Reapertips%7CAlejandro)
+[PDF Tips](https://www.reapertips.com/resources/the-perfect-setup)
+'Ctrl' + 'P' = Preferences
+- Remove Auto Fades = Preferences -> Project -> Item Fade Defaults -> Uncheck 'Imported Media items' 'Recorded Media Items' 'Split Media Items'
+ - 'SWS: Set item fades to default length' = '?' -> set a keybind(future sean problem)
+ - Use Middle Mouse for Hand Scroll to navigate(like blender) =  Preferences -> Mouse Modifiers -> Arrange View(found in top dropdown 'Context:') -> 'Middle Click' (found beside the context dropdown) -> Default Action -> Hand Scroll
+ - Change Mouse Scroll Wheel to scroll up/down from zoom in/out =  '?' -> Search 'View: scroll vertically (MIDI CC relative/mousewheel)' -> 'Add' -> 'Special Key' -> *scroll on mouse wheel*
+ - Zoom in/out with old keybinding replaced by above = '?' -> 'View: Zoom horizontally (MIDI CC relative/mousewheel)' -> 'Special Key' -> 'Ctrl' + 'Alt' + *scroll on mouse wheel* (old shortcut replaced)
+ - Zoom Center (will zoom on mouse cursor instead of tab-more intuitive) = 'Preferences' -> 'Zoom/Scroll/Offset' -> 'Horizontal Zoom Center' -> 'Mouse Cursor' 
+   Also do Vertical  = 'Vertical Zoom Center' -> 'Track Under Mouse'
+ - Initial fade on play press = 'Preferences' -> 'Playback' -> deselect 'Tiny fade on playback start'
+ - Disable Item Loops (will automatically create an item loop instead of extending) = Right click the track item -> 'Item Settings' -> Uncheck 'Loop item source' = Globally = 'Preferences' -> 'Item Loop Defaults' -> Uncheck all
+ - to fix infinite extension of items(items will snap to end)  = 'Preferences' -> 'Mouse Modifiers' -> 'Media Item Edge (in Context: dropdown)' -> Check 'Minit edits to source media content for unlooped media items'
+ - Keep Playing forever (metronome) = 'Preferences' -> 'Playback' -> Uncheck 'Stop/Repeat playback at end of project'
+ - Insert Midi Notes in one click(default is click and drag) = 'Preferences' -> 'Mouse Modifiers' -> 'MIDI Piano Roll (in Context: dropdown)' -> 'Left Click(next to Context:)' -> 'Default Action' -> 'Insert Note' = After above change to 'Unselect Notes' = Simply 'Shift' + 'Click' anywhere = You can change pitch/velocity afterwards instead of clicking and dragging
+ - Collapse Folder Options = 'Preferences' -> 'Track Control Panel' -> 'Folder Collapse Buttons Cycles Tracks Heights' -> 'Normal, small, hidden'
