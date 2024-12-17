@@ -37,6 +37,9 @@
 - Record
 - Loop
 - Stop
-# Starting a New Project-2024-12-16
+# Starting a New Project-2024-12-17
 [Video](https://www.youtube.com/watch?v=hLB83sOxVfs&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=2&ab_channel=REAPERMania)
+- 'Audio Interface' = top right corner drowndown menu/or under 'Preferences(CTRL + P)' -> scroll to 'Audio' -> 'Device' = choose whichever audio interface is plugged into your computer - default is system audio 
+- 'Sample Rate' = Also set in 'Audio' Settings = 47kHz(kilohertz) = 48000 hertz default 
+- 'Block Size' = Also set in 'Audio' Settings = Buffer size = 128 default
 - 
