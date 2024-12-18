@@ -1,5 +1,6 @@
 # Why Reaper?-2024-12-15
 [Video](https://www.youtube.com/watch?v=PJrN23efnbw&ab_channel=REAPERMania)
+- **Go to Preferences > General > Select "Export Configuration”**. A checklist will appear. If you check all items, REAPER will export everything, giving you an exact replica of your current REAPER when you import this file into another instance. - for future sean, save a template somewhere and back it up, so I don't have to sink days into redoing the settings/configs again
 ##### What Reaper Does :
 Free. Open Source. Based. >150MB DL. Works on Linux.
 'sudo pacman -S reaper' That's it, no VM's, no docker containers, installed.
@@ -62,4 +63,3 @@ Free. Open Source. Based. >150MB DL. Works on Linux.
  - Collapse Folder Options = 'Preferences' -> 'Track Control Panel' -> 'Folder Collapse Buttons Cycles Tracks Heights' -> 'Normal, small, hidden'
 # Best MIDI settings for REAPER-2024-12-18
 [Video](https://www.youtube.com/watch?v=bc58K9a_kW4&ab_channel=Reapertips%7CAlejandro)
-- **Go to Preferences > General > Select "Export Configuration”**. A checklist will appear. If you check all items, REAPER will export everything, giving you an exact replica of your current REAPER when you import this file into another instance. - for future sean, save a template somewhere and back it up, so I don't have to sink days into redoing the settings/configs again
