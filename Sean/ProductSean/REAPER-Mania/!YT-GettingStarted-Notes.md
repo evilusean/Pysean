@@ -63,3 +63,21 @@ Free. Open Source. Based. >150MB DL. Works on Linux.
  - Collapse Folder Options = 'Preferences' -> 'Track Control Panel' -> 'Folder Collapse Buttons Cycles Tracks Heights' -> 'Normal, small, hidden'
 # Best MIDI settings for REAPER-2024-12-18
 [Video](https://www.youtube.com/watch?v=bc58K9a_kW4&ab_channel=Reapertips%7CAlejandro)
+[Article](https://seventhsam.com/guides/blog/6791049/how-to-set-up-reaper-s-midi-editor-for-better-workflow)
+'Ctrl' + 'Left Click' on Tracks = Open MIDI editor
+##### Midi Editor :
+- 'Options' -> 'Settings' -> Midi Editor 
+- Remove Floating Windows when Opening new Midi Editor = 'one midi editor per : project'
+- Enable 'Active MIDI item follows selection change in arrange view'
+- Allow you to switch MIDI editors by clicking on them = Check 'Selection is linked to visibility' + 'Selection is linked to editability'
+- Uncheck 'Close editor when the active item is deleted in the arrange view'
+- Opacity set to '3'
+##### Midi Dock :
+- how to dock the editor in bottom section of midi editor
+- When you open MIDI editor ('Ctrl' + 'Left Click' on Tracks = Open MIDI editor) - in the toolbar click 'DOCK' button - it will dock it on bottom of screen, click on tracks to change the midi editor
+- Each midi editor will be attached to a different instrument (Guitars/Drums/Bass)
+##### Edit Multiple MIDI tracks at once
+- Select First(Main edit) and second tracks to edit
+- then right click MIDI keyboard -> CC events in multiple media items -> Draw and edit on all tracks
+- Add a custom action to toolbar = 'Right Click' Tool bar -> 'Customize Tool Bar' ->'Add' -> "Options: Avoid automatically setting IDI items from other tracks editable" = will allow you to enable/disable single track edit mode from toolbar
+- Color Notes by Track = 'Right Click' Midi Keyboard -> 'Color notes by track' 
