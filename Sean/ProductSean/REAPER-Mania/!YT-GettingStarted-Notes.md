@@ -45,7 +45,7 @@ Free. Open Source. Based. >150MB DL. Works on Linux.
 - https://stash.reaper.fm/tag/Key-Maps 
 # Best Settings for REAPER7(2024)-2024-12-17
 [Video](https://www.youtube.com/watch?v=1WhAblK8z2U&ab_channel=Reapertips%7CAlejandro)
-[PDF Tips](https://www.reapertips.com/resources/the-perfect-setup)
+[PDF Tip-80 pagess](https://www.reapertips.com/resources/the-perfect-setup)
 'Ctrl' + 'P' = Preferences
 - Remove Auto Fades = Preferences -> Project -> Item Fade Defaults -> Uncheck 'Imported Media items' 'Recorded Media Items' 'Split Media Items'
  - 'SWS: Set item fades to default length' = '?' -> set a keybind(future sean problem)
@@ -60,3 +60,6 @@ Free. Open Source. Based. >150MB DL. Works on Linux.
  - Keep Playing forever (metronome) = 'Preferences' -> 'Playback' -> Uncheck 'Stop/Repeat playback at end of project'
  - Insert Midi Notes in one click(default is click and drag) = 'Preferences' -> 'Mouse Modifiers' -> 'MIDI Piano Roll (in Context: dropdown)' -> 'Left Click(next to Context:)' -> 'Default Action' -> 'Insert Note' = After above change to 'Unselect Notes' = Simply 'Shift' + 'Click' anywhere = You can change pitch/velocity afterwards instead of clicking and dragging
  - Collapse Folder Options = 'Preferences' -> 'Track Control Panel' -> 'Folder Collapse Buttons Cycles Tracks Heights' -> 'Normal, small, hidden'
+# Best MIDI settings for REAPER-2024-12-18
+[Video](https://www.youtube.com/watch?v=bc58K9a_kW4&ab_channel=Reapertips%7CAlejandro)
+- **Go to Preferences > General > Select "Export Configuration”**. A checklist will appear. If you check all items, REAPER will export everything, giving you an exact replica of your current REAPER when you import this file into another instance. - for future sean, save a template somewhere and back it up, so I don't have to sink days into redoing the settings/configs again
