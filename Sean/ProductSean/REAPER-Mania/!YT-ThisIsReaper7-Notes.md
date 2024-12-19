@@ -53,3 +53,21 @@
 - in 'Project Settings' = There is a tab for 'Media' 'Video' 'Advanced' 'Notes' (take notes for future sean)
 # The Tracks -2024-12-19
 [Video](https://www.youtube.com/watch?v=L5E1enayMQY&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=3&ab_channel=REAPERMania)
+- TCP = Track Control Panel
+- 'Ctrl' + 'T' (or double click TCP) = Create new track
+- 'Right Click' (on a track) -> 'Duplicate Track' = Duplicates Track
+- 'Del' + Track Selected = Delete that track
+- 'Double Click' (bar next to record button) = Rename Track
+- Top Drop Down Menu 'Insert' -> Multiple Tracks (or right click TCP) = Will allow you to insert multiple tracks
+- Top Drop Down Menu 'Track' -> 'Track Color' -> 'Set Tracks to Custom Color' = Color Track
+-  Top Drop Down Menu 'Track' -> 'Track Icon' = Set a Track Icon
+- Select Multiple Tracks 'Right Click' -> Visual Spacer = Will seperate tracks, so you can see what each one is (seperate by purpose)
+- 'M' in TCP = Mute
+- 'S' in TCP = Solo
+- You can click and drag over record/mute/solo to enable on multiple tracks
+- 'Route' in TCP = used to create sends or busses 
+- 'FX' in TCP = add FX to tracks from plugins
+- 'V' with track selected = Edit volume on a chart 
+- 'Shift' + 'G' With multiple tracks selected -> 'All' (in dialogue) = 'Group' Tracks, change one, change them all - Override the grouping by 'Holding SHIFT' to select or change just one
+- Temporary Group = Just select multiple tracks - Override the grouping by 'Holding SHIFT' to select or change just one
+- 
