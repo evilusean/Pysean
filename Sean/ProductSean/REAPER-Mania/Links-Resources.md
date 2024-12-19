@@ -7,3 +7,5 @@ Serato Sampler Plugin(fabfilter bundle, serum and steal shit from splice with ob
 https://serato.com/sample
 Piano Music Theory - Octaves - Chords :
 https://www.youtube.com/watch?v=OtBqDgOsW1c&ab_channel=NoMad
+Music Theory for Producers :
+https://www.youtube.com/watch?v=CluuHrr7HG4&t=190s&ab_channel=TAETRO
