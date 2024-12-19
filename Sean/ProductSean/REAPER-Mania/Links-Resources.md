@@ -9,3 +9,5 @@ Piano Music Theory - Octaves - Chords :
 https://www.youtube.com/watch?v=OtBqDgOsW1c&ab_channel=NoMad
 Music Theory for Producers :
 https://www.youtube.com/watch?v=CluuHrr7HG4&t=190s&ab_channel=TAETRO
+Map Synth to Hands + 3D Camera = Instruments? I am the instrument. Pretty Cool. :
+https://www.youtube.com/watch?v=Mcod5uOVl9Q&ab_channel=Bishu
