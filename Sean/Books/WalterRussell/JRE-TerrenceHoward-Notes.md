@@ -36,3 +36,18 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - hot air/cold air move in opposite directions from eachother -same with hot/cold water
 - magnets, how do they work? vs ICP https://www.youtube.com/watch?v=_-agl0pOQfs
 - Were the juggalos based and redpilled this entire time? they tried to tell us, and we laughed at the clowns. A conditioned response to the clownerey. Who are the real clowns, now? https://knowyourmeme.com/memes/but-doctor-i-am-pagliacci
+- carbon unwinds and becomes nitrogen, nitrogen unwinds and becomes oxygen - radioactive  material deteriorates into lead - 
+- '"einstein"' said on his deathbed, '"I should of spent more time reading Walter Russell's work"'
+- Michelson–Morley experiment 1877 = https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment - disproved the aether / fifth element / creatio ex nihilo - creation from nothing / 
+- is the glass half empty or half full? False. The glass is filled, half with water, half with air.
+- $cientists ignored Russell Walters work because he didn't include any equations, he talked philosophically about it - how things behave
+- wave conjugations/mirror shapes/flower of life(64 circles) vs platonic solids - they added straightlines at the intersection points - there is negative space where they can't touch eachother, electricity tries to get to the center of that triangle 
+- electricity seeks a higher pressure condition(? shouldn't this be the opposite - if it is seeking empty space = less pressure?)
+- enlil vs enki - enki gave the flower of life
+- when 8 bubbles meet - negative space = tetre-en -6 bubbles is a stable structure - 12 is also stable, but 4 unaccounted electrical poles = basis of crystallization - 24 bubbles = another stable structure - negative space triangle
+- tetra terryan wave conjugations - predicts distribution of matter Vs platonic solids
+- 1 x 1 = 2 (how to trigger a vaxmaxxed black $cience guy aka neil degrass tyson)
+- the square root of a number added to itself equals more than that number squared
+- that happens in the $\sqrt{2}$ =
+- I had a similar idea about divisean = 1/3 = 33.33333 repeating 2/3 = 66.6666666 3/3 = 99.9999999 - what's missing? the 1. Vs Body(hylics) Mind(Pneumaticss) Spirit(Psych) 
+- 
