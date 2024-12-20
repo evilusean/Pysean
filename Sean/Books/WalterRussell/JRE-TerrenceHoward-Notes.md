@@ -68,4 +68,9 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 -  mercury can't expand, like hydrogen - highest pressure possible
 - periodic table = these things happen periodically, same substance,  change motion and pressure conditions = changes crystallization, different element but same substance
 - our planet doesn't have a solid core, hollow earth, bubble vs CERN - planet popping -speculation
+- every sun gives birth to it's own planets - allegedly
+- dark matter is a larp to explain galaxy spin
+- gravity is an effect of electricity - 
+- 1:05:00 - talking about jibby jab side effects - 300% Cancer/All cause mortality 40%/Pulmonary embolisms 500%/Spikes/BRCA-1 Gene/Ovaries/Lymphs/Bone Marrow/Ace2/ - Never, not once, did I regret not taking it. 
+- Bizarre state of human psychology
 - 
