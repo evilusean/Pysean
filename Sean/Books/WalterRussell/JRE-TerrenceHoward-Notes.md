@@ -20,4 +20,19 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - Florine -1
 - Florine and Lithium are 'mates' the minute that florine is introduced, if they are bonded with any other element, they will violently seperate/break all bonds - same with beryllium and oxygen - 
 - if you want to break water into its component parts - all you need to do is introduce beryllium or the sound of beryllium and oxygen will break away, even hydrogen - this can all be done without electrolysis, without using heat, just through frequency
-- Sodium vs Chlorine = equal and opposite mates - chlorine in pool, add some salt to turn into oil
+- Sodium vs Chlorine = equal and opposite mates - chlorine in pool, add some salt to turn into oil - neutralizes eachother - everything has an equal and opposite mate
+- sodium becomes potassium in the next octave
+- 'Alphanon' 'Betanon' 'Omeganon' - anons, rise up!
+- Arsenic(-3) un-alives us, is because DNA has nitrogen and phosphorous
+- Isotypes are not true elements -  full tones/spheres vs ellipticals
+- Wave conjugations allow us to unravel it - angles of incidence to open these things up
+- platonic solids were averages and approximations - show me a real straight line in nature
+- everything is in motion, expressed in waves, curved, every action has an equal and opposite reaction - the greater the action, the greater the reaction, the greater the resistance, the greater the curvature - nature is based on equanimity (balance of good and bad) - 
+- gravity was caused by electric force, electricity is always seeking a higher pressure condition, next electric wave is coming, gets pushed out through the vortices, 4 magnetic waves that hit eachother at 120 degree angles, reconvert to the electric field, and back to the source, 
+- electric returns to source, magnetism expands out at the equator - (?)it's why we get shorter/hunchback as we get older(Psoas) the electric force is pushing in and condensing 
+- electron fields are just discharged electricity/refuse/waste product from the sun, hits our magnetic field, then becomes electricity, and pushes itself out at the equator
+- '"ein*stein*"' combined both magnetism and electricity
+- electricity = contraction/inhale vs magnetism = radiates/exhale
+- hot air/cold air move in opposite directions from eachother -same with hot/cold water
+- magnets, how do they work? vs ICP https://www.youtube.com/watch?v=_-agl0pOQfs
+- Were the juggalos based and redpilled this entire time? they tried to tell us, and we laughed at the clowns. A conditioned response to the clownerey. Who are the real clowns, now? https://knowyourmeme.com/memes/but-doctor-i-am-pagliacci
