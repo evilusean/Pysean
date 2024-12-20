@@ -70,4 +70,3 @@
 - 'V' with track selected = Edit volume on a chart 
 - 'Shift' + 'G' With multiple tracks selected -> 'All' (in dialogue) = 'Group' Tracks, change one, change them all - Override the grouping by 'Holding SHIFT' to select or change just one
 - Temporary Group = Just select multiple tracks - Override the grouping by 'Holding SHIFT' to select or change just one
-- 
