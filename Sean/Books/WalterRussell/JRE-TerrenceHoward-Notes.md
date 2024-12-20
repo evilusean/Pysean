@@ -62,4 +62,10 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - Schrodingers Cat Tat
 - Heisenberg uncertainty principle
 - ElectroMagnetic wave needs a medium - can not be the cause of it's own action - an effect can never be the cause - chicken came before the egg
-- Giordono Bruno = Grand Unified Field Equation 
+- Giordono Bruno = Grand Unified Field Equation - unalived by the catholic church - straight lines - hung upside down and set on fire. 
+- Larmore -> Thomas Young -> Frenel Lense = Moving Aether with opposing vortices
+- earth is drifting away from the sun at 0.6 inches/1.5cm a year = 93 million miles from earth to sun = 9,820,800,000,000 years for earth to get here - mars = 147 million miles away = 15 trillion - theorizes that mars was once where earth is now 'goldilocks zone' and venus is next - asteroid belt was once a planet - 
+-  mercury can't expand, like hydrogen - highest pressure possible
+- periodic table = these things happen periodically, same substance,  change motion and pressure conditions = changes crystallization, different element but same substance
+- our planet doesn't have a solid core, hollow earth, bubble vs CERN - planet popping -speculation
+- 
