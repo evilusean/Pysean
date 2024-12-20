@@ -46,13 +46,20 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - enlil vs enki - enki gave the flower of life
 - when 8 bubbles meet - negative space = tetre-en -6 bubbles is a stable structure - 12 is also stable, but 4 unaccounted electrical poles = basis of crystallization - 24 bubbles = another stable structure - negative space triangle
 - tetra terryan wave conjugations - predicts distribution of matter Vs platonic solids
-- 1 x 1 = 2 (how to trigger a vaxmaxxed black $cience guy aka neil degrass tyson)
+- 1 x 1 = 2 (how to trigger a vaxmaxxed black $cience guy aka neil degrass tyson to the point he goes no contact, lol, lmao - Carl Sagan did it better.)
 - the square root of a number added to itself equals more than that number squared
 - that happens in the $\sqrt{2}$ =
-- I had a similar idea about divisean = 1/3 = 33.33333 repeating 2/3 = 66.6666666 3/3 = 99.9999999 - what's missing? the 1. Vs Body(hylics) Mind(Pneumaticss) Spirit(Psych) 
+- I had a similar idea about divisean = 1/3 = 33.33333 repeating 2/3 = 66.6666666 3/3 = 99.9999999 - what's missing? the 1. Vs Body(hylics) Mind(Pneumatics) Spirit(Psych) 
 - he's parasite pilled, oil of oregano detox vs wormwood - intermittant fasting 
 - https://www.youtube.com/watch?v=Y45oADjAAuQ&ab_channel=SystemOfADown-Topic
 - Alan watts had misstresses 
 - humans are flawed creatures with vices - he smokes
 - flowers don't grow unless you throw some sh!t on it
-- 
+- treat em like mushrooms, feed em poop, and keep them in the dark.
+- Tesla was never respected, he died in poverty, for '"some reason"', AKA '"bankers"'
+- https://www.youtube.com/watch?v=lS7aYL-1Cv4&ab_channel=LXSTCXNTURY
+- We've had this tech for >100 years, but lost it, for '"some reason"'
+- Schrodingers Cat Tat
+- Heisenberg uncertainty principle
+- ElectroMagnetic wave needs a medium - can not be the cause of it's own action - an effect can never be the cause - chicken came before the egg
+- Giordono Bruno = Grand Unified Field Equation 
