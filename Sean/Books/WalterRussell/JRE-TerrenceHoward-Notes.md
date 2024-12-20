@@ -50,4 +50,9 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - the square root of a number added to itself equals more than that number squared
 - that happens in the $\sqrt{2}$ =
 - I had a similar idea about divisean = 1/3 = 33.33333 repeating 2/3 = 66.6666666 3/3 = 99.9999999 - what's missing? the 1. Vs Body(hylics) Mind(Pneumaticss) Spirit(Psych) 
+- he's parasite pilled, oil of oregano detox vs wormwood - intermittant fasting 
+- https://www.youtube.com/watch?v=Y45oADjAAuQ&ab_channel=SystemOfADown-Topic
+- Alan watts had misstresses 
+- humans are flawed creatures with vices - he smokes
+- flowers don't grow unless you throw some sh!t on it
 - 
