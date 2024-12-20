@@ -73,4 +73,10 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - gravity is an effect of electricity - 
 - 1:05:00 - talking about jibby jab side effects - 300% Cancer/All cause mortality 40%/Pulmonary embolisms 500%/Spikes/BRCA-1 Gene/Ovaries/Lymphs/Bone Marrow/Ace2/ - Never, not once, did I regret not taking it. 
 - Bizarre state of human psychology
-- 
+- they don't have to release any negative studies - 
+- ivermectin - dendrites/axioms - nodes - parasite paralysis - interrupts the potassium chloride cycle - SHUT. IT. DOWN.
+- how many people(normie vaxcattle) went along with it, and we're angry at the people(not normiecattle) who didn't go along with it - ya'll kicked us out of school, jobs, and wanted to put us in camps, and now they want to gaslight the sentient people that it never happened(Lol, Lmao) - Still haven't received a single f'ing apology, btw. 
+- tuskegee/thalidomide - 1920's - syphilis - 60years untreated - when did it become cool to trust for profit big pharma companies/corrupt governments?
+- Fundamentals are wrong, 'forgive them, lord, for they know not what they do' 
+- 'we are about to unalive gravity, their god gravity' 'maybe you dropped your computer' - Lol, Lmao. 
+- linchpin configuration 120 degrees radially, tilit 109.5 degrees,  2 vortices, saturn hexagon, with a ring - all physics simulated, not pre recorded. 
