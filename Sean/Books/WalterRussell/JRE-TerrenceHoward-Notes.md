@@ -86,4 +86,17 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - gravity = greater mass = greater attaction vs Balloon + Static electrictity - electricity 137x stronger than gravity - angles of incidence 120 degrees
 - the planet is alive and trying to unalive humans, for '"some reason"'
 - Terrence DaShon Howard Vs Le SeanDa - Lol, Lmao
-- rotation - centripdoal spin creates an electric field called gravity
+- rotation - centripodal spin creates an electric field called gravity
+- Theres only 2 directions NorthEast=Right=Electric(going in) and SouthWest=Left=Magnetic(goes out)
+- Contracts in 5ths, Expands in 6es
+- Tangental Flight - spins around own center of mass
+- he had my daisy chain drone idea - sorta - his group up
+- hydrogen fuel cells
+- less pressure in atmo = expanded nitrogen = 'the bends'
+- radioactive decay is higher closer to the sun - pressure conditions
+- propulsion projecticle - angles of incidence + electricity - converts water to plasma
+- things are heavier at the poles, lighter at equator - plonk scale
+- intellectual phase locking - average instead of fluctuations
+- galileo - IO(moon) going around jupiter - change in light
+- renormalization Vs Dyson Vs Feynmann - ya'll just making sh!t up
+- 
