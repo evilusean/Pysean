@@ -117,3 +117,4 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - Backengineering gravity propulsion systems - bob lazar -element 115 - gravity wave - no heat signature - 
 - discordian tone will push away 432Hz - opposite of that - propulsion/decoupling
 - frequency of earth - opposite of that 
+- I will not eat zee bugz, joe. 
