@@ -40,14 +40,14 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - '"einstein"' said on his deathbed, '"I should of spent more time reading Walter Russell's work"'
 - Michelson–Morley experiment 1877 = https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment - disproved the aether / fifth element / creatio ex nihilo - creation from nothing / 
 - is the glass half empty or half full? False. The glass is filled, half with water, half with air.
-- $cientists ignored Russell Walters work because he didn't include any equations, he talked philosophically about it - how things behave
+- $cientists ignored Russell Walters work because he didn't include any equations, he talked philosophically about it - how things behave - can't mathturbate? DENIED, DISREGARDED, DISCARDED
 - wave conjugations/mirror shapes/flower of life(64 circles) vs platonic solids - they added straightlines at the intersection points - there is negative space where they can't touch eachother, electricity tries to get to the center of that triangle 
 - electricity seeks a higher pressure condition(? shouldn't this be the opposite - if it is seeking empty space = less pressure?)
 - enlil vs enki - enki gave the flower of life
 - when 8 bubbles meet - negative space = tetre-en -6 bubbles is a stable structure - 12 is also stable, but 4 unaccounted electrical poles = basis of crystallization - 24 bubbles = another stable structure - negative space triangle
 - tetra terryan wave conjugations - predicts distribution of matter Vs platonic solids
 - 1 x 1 = 2 (how to trigger a vaxmaxxed black $cience guy aka neil degrass tyson to the point he goes no contact, lol, lmao - Carl Sagan did it better.)
-- the square root of a number added to itself equals more than that number squared
+- the square root of a number added to itself equals more than that number squared - the whole is worth more than the sum of its parts(? is this where he was going with that)
 - that happens in the $\sqrt{2}$ =
 - I had a similar idea about divisean = 1/3 = 33.33333 repeating 2/3 = 66.6666666 3/3 = 99.9999999 - what's missing? the 1. Vs Body(hylics) Mind(Pneumatics) Spirit(Psych) 
 - he's parasite pilled, oil of oregano detox vs wormwood - intermittant fasting 
@@ -70,7 +70,7 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - our planet doesn't have a solid core, hollow earth, bubble vs CERN - planet popping -speculation
 - every sun gives birth to it's own planets - allegedly
 - dark matter is a larp to explain galaxy spin
-- gravity is an effect of electricity - 
+- gravity is an effect of electricity - electric universe?
 - 1:05:00 - talking about jibby jab side effects - 300% Cancer/All cause mortality 40%/Pulmonary embolisms 500%/Spikes/BRCA-1 Gene/Ovaries/Lymphs/Bone Marrow/Ace2/ - Never, not once, did I regret not taking it. 
 - Bizarre state of human psychology
 - they don't have to release any negative studies - 
@@ -79,4 +79,11 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - tuskegee/thalidomide - 1920's - syphilis - 60years untreated - when did it become cool to trust for profit big pharma companies/corrupt governments?
 - Fundamentals are wrong, 'forgive them, lord, for they know not what they do' 
 - 'we are about to unalive gravity, their god gravity' 'maybe you dropped your computer' - Lol, Lmao. 
-- linchpin configuration 120 degrees radially, tilit 109.5 degrees,  2 vortices, saturn hexagon, with a ring - all physics simulated, not pre recorded. 
+- linchpin configuration 120 degrees radially, tilit 109.5 degrees,  2 vortices, saturn hexagon, with a ring - all physics simulated, not pre recorded.  - external pressures being applied from the outside in, not the standard model of internal fission reaction with iron cores - universe is not infinite, but finite - shapes is from the wave bouncing on an edge and coming back
+- the sun poops, and we get planets. coronal mass ejection - instead of muh big bang
+- he's talking about the 100th monkey/jungs theory on collective consciousness, where it's siloed to species - where only a few people need to know something for everyone else to 'get it'/rats in NYC know something from rats in UK - dimorphic resonance
+- the secret life of plants - appear static 
+- gravity = greater mass = greater attaction vs Balloon + Static electrictity - electricity 137x stronger than gravity - angles of incidence 120 degrees
+- the planet is alive and trying to unalive humans, for '"some reason"'
+- Terrence DaShon Howard Vs Le SeanDa - Lol, Lmao
+- rotation - centripdoal spin creates an electric field called gravity
