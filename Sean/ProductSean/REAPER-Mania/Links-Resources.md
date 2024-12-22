@@ -20,3 +20,4 @@ https://reapack.com/user-guide
 https://raw.githubusercontent.com/JoepVanlier/JSFX/master/index.xml
 DeadMau5 on Reaper DAW: 
 https://www.youtube.com/watch?v=0mpQdI4eMfI&ab_channel=ZigZagProductionStudio
+https://www.youtube.com/watch?v=yEvwgNDXjJA&ab_channel=asQme
