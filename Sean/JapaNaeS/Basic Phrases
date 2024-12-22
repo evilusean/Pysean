@@ -1,4 +1,30 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Basic Phrases
+https://www.youtube.com/watch?v=6I_6P9TFtSk&ab_channel=WilliaminJapan
+開発 = Kaihatsu = Developer
+仕様書 = Shousho = Specification Document
+開発環境 = かいはつかんきょう = kaihatsukankyō = Developer environment
+単体テスト = Tantai tesuto = unit test
+更新 = koushin = update
+運用 = unyou = operate
+保守 = hoshu = maintenance
+プロジェクト管理 = purojekuto kanri = project management
+バージョン管理 = ba-jon kanri = version control
+仮想化 = かそうか = virtualization
+暗号化 = angouka = encryption
+seite kika = optimzation
+izonkankei = dependancies
+keishou = inheritance 
+tataisei = polymorphism
+tantai = standalone
+hairetsu = array
+reigai = exception
+reigai shori = error handling
+hidoukishori = asynchronous processing
+heiretsushori = parallel processing
+kamkyou hensuu = envrionment variables
+po-to bangou = port number
+
+
 1年間のWeb開発者 = ichi-Nenkan no u~ebu kaihatsu-sha = web developer for 1 year
 3年間のコンピュータサイエンス = 3年間のコンピュータサイエンス = 3-Nenkan no konpyūtasaiensu = computer sciences for 3 years
 救急救命士 = きゅうきゅうきゅうめいし = kyuukyuukyuumeishi = paramedic ; emergency medical technician
