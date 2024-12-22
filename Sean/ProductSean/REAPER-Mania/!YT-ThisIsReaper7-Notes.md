@@ -86,3 +86,5 @@
 - select the wanted take 'Right Click' -> Take -> Crop to active take = To use a take and delete the other one
 - 'Options' top dropdown -> New recording that overlaps existing media items -> 'Trim existing items' = will change from 'Split existing items and add takes(default)' - it will just punch in to the selected section and add over the previous audio
 - you can edit the punches by dragging the sides over old recording - or add crossfades
+# Recording Audio 2-2024-12-22
+[Video](https://www.youtube.com/watch?v=U0Tv1waD1sY&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=5&ab_channel=REAPERMania)
