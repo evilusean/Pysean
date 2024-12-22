@@ -72,3 +72,11 @@
 - Temporary Group = Just select multiple tracks - Override the grouping by 'Holding SHIFT' to select or change just one
 # Recording Audio-2024-12-22
 [Video](https://www.youtube.com/watch?v=CKHWK3oTj-A&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=4&ab_channel=REAPERMania)
+- -12 to -18db is a good level for recording = you want some headroom so you don't clip if you go ham
+- 'O' press circle to begin recording 
+- audio interface is what you plug into - you can have a digital version to change the volume 
+- he has a guitar, set it to 89BPM and turned on the metronome
+- 'CTRL' + 'R' = begin recording 
+- when you complete a record, it will prompt you to save it, you can disable this by unchecking the 'on stop' option
+- the speaker next to the record button = allows you to select 'monitoring modes' - you can turn it on or off to disable or enable instruments, it will still record, but you won't hear it. if you don't monitor it, you won't hear it while recording.
+- 
