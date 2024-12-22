@@ -78,5 +78,11 @@
 - he has a guitar, set it to 89BPM and turned on the metronome
 - 'CTRL' + 'R' = begin recording 
 - when you complete a record, it will prompt you to save it, you can disable this by unchecking the 'on stop' option
-- the speaker next to the record button = allows you to select 'monitoring modes' - you can turn it on or off to disable or enable instruments, it will still record, but you won't hear it. if you don't monitor it, you won't hear it while recording.
-- 
+- the speaker next to the record button = allows you to select 'monitoring modes' - you can turn it on or off to disable or enable instruments, it will still record, but you won't hear it. if you don't monitor it, you won't hear it while recording. 
+- you can 'direct monitor' from your audio interface which will reduce latency
+- you can 'punch in' and 'punch out' on a recorded track to only replace small sections of an already recorded track - 
+- when you punch in, you create a new 'take', to select which take to hear just click it
+- 'T' = switch takes based on the section where mouse is placed
+- select the wanted take 'Right Click' -> Take -> Crop to active take = To use a take and delete the other one
+- 'Options' top dropdown -> New recording that overlaps existing media items -> 'Trim existing items' = will change from 'Split existing items and add takes(default)' - it will just punch in to the selected section and add over the previous audio
+- you can edit the punches by dragging the sides over old recording - or add crossfades
