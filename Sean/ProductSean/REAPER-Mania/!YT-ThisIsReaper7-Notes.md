@@ -71,3 +71,4 @@
 - 'Shift' + 'G' With multiple tracks selected -> 'All' (in dialogue) = 'Group' Tracks, change one, change them all - Override the grouping by 'Holding SHIFT' to select or change just one
 - Temporary Group = Just select multiple tracks - Override the grouping by 'Holding SHIFT' to select or change just one
 # Recording Audio-2024-12-22
+[Video](https://www.youtube.com/watch?v=CKHWK3oTj-A&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=4&ab_channel=REAPERMania)
