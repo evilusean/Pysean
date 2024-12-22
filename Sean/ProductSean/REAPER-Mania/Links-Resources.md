@@ -9,6 +9,8 @@ Piano Music Theory - Octaves - Chords :
 https://www.youtube.com/watch?v=OtBqDgOsW1c&ab_channel=NoMad
 Music Theory for Producers :
 https://www.youtube.com/watch?v=CluuHrr7HG4&t=190s&ab_channel=TAETRO
+Music Theory for Producers 2:
+https://www.youtube.com/watch?v=KlAqx_8_7vU&ab_channel=EthanDavis
 Map Synth to Hands + 3D Camera = Instruments? I am the instrument. Pretty Cool. (future Sean project, use openCV, create a Reaper plugin, infinite sounds, tweakable with hands):
 https://www.youtube.com/watch?v=Mcod5uOVl9Q&ab_channel=Bishu
 ReaPack (Thousands of Free Plugins for Reaper) :
@@ -16,3 +18,5 @@ https://www.youtube.com/watch?v=2W8gbpfxwiM&ab_channel=SpectreSoundStudios
 https://reapack.com/
 https://reapack.com/user-guide
 https://raw.githubusercontent.com/JoepVanlier/JSFX/master/index.xml
+DeadMau5 on Reaper DAW: 
+https://www.youtube.com/watch?v=0mpQdI4eMfI&ab_channel=ZigZagProductionStudio
