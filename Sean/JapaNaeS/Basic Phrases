@@ -23,7 +23,53 @@ hidoukishori = asynchronous processing
 heiretsushori = parallel processing
 kamkyou hensuu = envrionment variables
 po-to bangou = port number
-
+ninshou = Authentication
+ninka = Authorization
+bunsenshi sutemu = distributed system
+fukabunsan = load distribution
+jouchousei = redundancy
+atai = value(of a variable)
+hensuu = variable
+puroguramingu = programming
+ko-do = code
+sofutouea = software
+sofuto = software(shortened)
+deba-gu = debug
+bagu = bug
+da-tabe-su = database
+arugorizumu = algorithim
+fure-muwa-ku = framework
+tesuto = test
+ririr-su = release
+ba-kuendo = back end
+ba-ku = backend (shortened)
+furontoendo = front end
+furonto = front end(shortened)
+UI = u-ai = User interface
+sukuramu = scrum
+ripojitori = repository
+ripo = repository(shortened)
+komi-to = commit
+puru rikuesuto = pull request
+puru riku = pull request(shortened)
+kuraudo = Cloud
+セキュリティ = sekuriti = security
+gokansei = compatibility
+shinraisei = reliability
+kayoysei = availability
+kouritsusei = efficiency
+saiki = recover
+saikidou = restart(e.g a computer)
+heiretsusei = parallelism
+プロトタイプ = purototaipu = prototype
+de-ta seigousei = data consistency
+aikurosa-basu = microservice
+kadokusei = readability
+sairiyousei = reusability
+ro-ruba-ku = rollback
+kakuchousei = scalability
+sei nou tesuto = performance testing
+gata = type
 
 1年間のWeb開発者 = ichi-Nenkan no u~ebu kaihatsu-sha = web developer for 1 year
 3年間のコンピュータサイエンス = 3年間のコンピュータサイエンス = 3-Nenkan no konpyūtasaiensu = computer sciences for 3 years
