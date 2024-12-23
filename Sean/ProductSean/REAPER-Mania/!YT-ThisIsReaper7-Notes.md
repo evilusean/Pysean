@@ -89,6 +89,14 @@
 # Recording Audio 2-2024-12-23
 [Video](https://www.youtube.com/watch?v=U0Tv1waD1sY&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=5&ab_channel=REAPERMania)
 - 'AutoPunching' = Switch recording modes 'Options'(top dropdown) -> 'Record Mode: time selection auto punch' - you need to add your time selection with the 'ruler' above your track  - after that it will punch in and out automatically
-- 'Options'(top dropdown) -> 'Record Mode: autp punch selected items' = Allows you to auto punch multiple points in the track = to do this, you need to split a track, 'Select' a part on the track press 'S' (for split) to punch in, then select a second part, press 'S' again, and that will be your punch out point - repeat for however many sections you need to punch in/out on - 
+- 'Options'(top dropdown) -> 'Record Mode: autp punch selected items' = Allows you to auto punch multiple points in the track = to do this, you need to split a track, 'Select' a part on the track press 'S' (for split) to punch in, then select a second part, press 'S' again, and that will be your punch out point - repeat for however many sections you need to punch in/out on - you can adjust size of punches after new recording
 - 'Ctrl' + 'Click' (on a split track) = will allow you to select/deselect multiple split parts in the track
-- 
+- 'Right Click' (bottom left record button) = fast way to change mode instead of through 'options' dropdown - when you change modes, it will also change the appearance of the record button
+- 'Options' -> 'New recording theat overlaps existing media items' -> 'Add Lanes' = now if you record over your current track, it will record a seperate lane - you can select the best parts of each and combine into one - or choose the lane you prefer and delete the other lanes - Serial Experiment Lain
+- When playing back each lane, you can press the 'S' solo button to only hear that lane
+- to keep a lane, 'Right Click' -> 'Delete all other Lanes'
+- to disable lanes, 'Right Click' (top left corner of the track in between the TCP) -> disable lanes = if you disable lanes before deleting them, you will still have them, just can't see them and it will behave like a normal track
+- Comping = choosing the best parts of multiple lanes into one
+- 'Right Click' (on a lane) -> 'Comping' -> 'Comp into new empty lane' = creates a new lane with a highlight, to get back into 'Comping Mode' = simply 'double click' a lane - you can then select which lane to use for each split part of the Track
+- 'Right Click' (on the comped lane) -> 'Delete Lanes' -> 'Delete Lanes that are not playing' = to keep your current selection of lanes, will delete all other lanes - you can also disable lanes and keep your current selection and old lanes
+- you can add crossfades inbetween each split lane
