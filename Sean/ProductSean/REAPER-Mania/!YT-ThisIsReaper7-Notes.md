@@ -88,3 +88,5 @@
 - you can edit the punches by dragging the sides over old recording - or add crossfades
 # Recording Audio 2-2024-12-23
 [Video](https://www.youtube.com/watch?v=U0Tv1waD1sY&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=5&ab_channel=REAPERMania)
+- 'AutoPunching' = Switch recording modes 'Options'(top dropdown) -> 'Record Mode: time selection auto punch' - you need to add your time selection with the 'ruler' above your track  - after that it will punch in and out automatically
+- 
