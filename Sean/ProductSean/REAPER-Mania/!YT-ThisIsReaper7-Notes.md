@@ -89,4 +89,6 @@
 # Recording Audio 2-2024-12-23
 [Video](https://www.youtube.com/watch?v=U0Tv1waD1sY&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=5&ab_channel=REAPERMania)
 - 'AutoPunching' = Switch recording modes 'Options'(top dropdown) -> 'Record Mode: time selection auto punch' - you need to add your time selection with the 'ruler' above your track  - after that it will punch in and out automatically
+- 'Options'(top dropdown) -> 'Record Mode: autp punch selected items' = Allows you to auto punch multiple points in the track = to do this, you need to split a track, 'Select' a part on the track press 'S' (for split) to punch in, then select a second part, press 'S' again, and that will be your punch out point - repeat for however many sections you need to punch in/out on - 
+- 'Ctrl' + 'Click' (on a split track) = will allow you to select/deselect multiple split parts in the track
 - 
