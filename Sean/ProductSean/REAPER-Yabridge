@@ -1,5 +1,5 @@
 Trying to get VST's (Virtual Studio Technology) to work on my Arch Linx(btw) with Reaper setup. Creating this for notes for future Sean.
 'sudo pacman -S wine' #install wine to run windows programs
--Configure Reaper to Search for plugins in the Wine installation directory
+-Configure Reaper to Search for plugins in the Wine installation directory = By default wine will install VST's in the home directory, '.wine' is hidden by default '~/.wine/drive_c/Program Files/VSTPlugins' 
 'sudo pacman -S yabridge' #acts as a bridge between windows VST's running in wine from windows to linux to reaper
 -Configure Reaper to scan for plugins in the yabridge managed directories
