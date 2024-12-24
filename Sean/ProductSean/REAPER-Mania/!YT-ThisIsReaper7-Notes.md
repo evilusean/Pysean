@@ -102,3 +102,5 @@
 - you can add crossfades inbetween each split lane
 # Recording MIDI-2024-12-24
 [Video](https://www.youtube.com/watch?v=HOcJ31SIj68&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=6&ab_channel=REAPERMania)
+Iota Mini : https://www.angelicvibes.com/iota-mini/
+
