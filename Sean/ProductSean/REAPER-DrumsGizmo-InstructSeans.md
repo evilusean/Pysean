@@ -8,4 +8,6 @@ DrumGizmo (works on linux, can be downloaded through AUR) :
  https://drumgizmo.org/wiki/doku.php?id=kits:drskit #download a drumkit
  Extract Drumkit
  Open Reaper -> Load DrumGizmo Plugin on a MIDI track -> After you load, it will open a popup that will allow you to locate the extracted folder -> look for 'DRSkit2_1.xml' and load that, 
-   
+   MidiMap should match and be the same name as the '.xml' file for drumkit, 
+
+After adding the drumkit, and midimap, I noticed it's unlabeled, trying to fix, it works but everything is labeled generically as 'Out1-18'
