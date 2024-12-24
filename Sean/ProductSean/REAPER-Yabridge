@@ -7,3 +7,6 @@ Trying to get VST's (Virtual Studio Technology) to work on my Arch Linx(btw) wit
 "yabridgectl add '/home/ArchSean/.wine/drive_c/Program Files/VstPlugin/'" #also notice the single quotes because of the space, this should add the wine directory to the VST list
 'yabridgectl sync' #after adding the new plugins to the list, you need to resync in yabridgectl and then rescan in reaper
 Finally got it, Sometimes when you install, they install to their own directory in 'Program Files' - you need to add that aswell, then resync, but now you can use windows plugins on linux
+https://github.com/robbert-vdh/yabridge#troubleshooting-common-issues
+'sudo pacman -S realtime-privileges' #won't run certain plugins without realtime, this will fix it
+'sudo gpasswd -a "$USER" realtime' #add your user to the realtime group, should fix, need to reboot
