@@ -91,10 +91,12 @@ DrumGizmo (works on linux, can be downloaded through AUR) :
  sudo pacman -S drumgizmo #worked, it was only 2 megs, you need to download the drumkits seperately, future sean problem, at least I found something that will work
 Addictive Drums 2(Linux) :
 
-Samples :
+Samples - Need free stuff that works on linux, before I can build, I need bricks, before I have bricks, I need clay :
 https://www.samplelogic.com/
 https://www.loopmasters.com/
 https://www.adsrsounds.com/
+https://www.kvraudio.com/forum/ #this seems like a good place for free samples/kits
+https://gearspace.com/
 
 DAWS:
 *Reaper
