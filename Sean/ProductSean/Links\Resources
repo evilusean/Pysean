@@ -18,6 +18,7 @@ ReEQ
 Yabridge
 Drumkits/SamplePacks
 CockOS - ReaSynth
+CockOS -ReaSampleMatic
 
 Linux Plugins:
 Yabridge (use this to load windows VST plugins - will run with wine if you use yabridge) :
