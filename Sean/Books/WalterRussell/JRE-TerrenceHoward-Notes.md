@@ -99,6 +99,7 @@ Started reading/listening to Walter Russell's B!'The Universal One' - Heard Terr
 - intellectual phase locking - average instead of fluctuations
 - galileo - IO(moon) going around jupiter - change in light
 - renormalization Vs Dyson Vs Feynmann - ya'll just making sh!t up
+- Calculations don't add up? Add a hypothetical '"dark number"' to account for inaccuracy - '"Physics"', the only '"true science"', I TRUST THE $CIENCE, BROS!! 
 - rupert sheldrake - got pushed out for going against norms
 - wahmen blackmailing using gynocentric courts/media/society '"beLIEve ALL"' - let me just flash all your old phones drives to my PC, pretend to delete them, then hold them over your head for whenever it is convenient for me to use them, trust no1
 - louis armstrong recorded everything he did, every interaction - pence rule ++
