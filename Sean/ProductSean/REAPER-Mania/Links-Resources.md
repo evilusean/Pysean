@@ -25,3 +25,5 @@ https://www.youtube.com/watch?v=yEvwgNDXjJA&ab_channel=asQme
 https://www.youtube.com/shorts/9jvYSfYPRNo
 Frequency Ranges =Sub-Low-Low/Mid-Mid-High/Mid-High-Air Vs 55hz^Fundamental-HarmoniousOvertones-Disharmonious-UnMusical :
 https://www.youtube.com/watch?v=L9kuxISxOVo&ab_channel=SageAudio
+Balance-EQ-Dynamics-Ambience (BEDA MALE) :
+https://www.youtube.com/watch?v=QSvdhuu2orQ&ab_channel=AudioUniversity
