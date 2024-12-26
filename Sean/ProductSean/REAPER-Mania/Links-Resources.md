@@ -21,3 +21,5 @@ https://raw.githubusercontent.com/JoepVanlier/JSFX/master/index.xml
 DeadMau5 on Reaper DAW: 
 https://www.youtube.com/watch?v=0mpQdI4eMfI&ab_channel=ZigZagProductionStudio
 https://www.youtube.com/watch?v=yEvwgNDXjJA&ab_channel=asQme
+60 second tips (things I wish I knew)-record own sounds add FX-Silence is an instrument-good with vocals-Volume graph to create cool effects-ambient sounds to fill melodies - add pitch slice to melodies  :
+https://www.youtube.com/shorts/9jvYSfYPRNo
