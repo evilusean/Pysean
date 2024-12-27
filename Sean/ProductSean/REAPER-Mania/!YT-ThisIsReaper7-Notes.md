@@ -100,7 +100,7 @@
 - 'Right Click' (on a lane) -> 'Comping' -> 'Comp into new empty lane' = creates a new lane with a highlight, to get back into 'Comping Mode' = simply 'double click' a lane - you can then select which lane to use for each split part of the Track
 - 'Right Click' (on the comped lane) -> 'Delete Lanes' -> 'Delete Lanes that are not playing' = to keep your current selection of lanes, will delete all other lanes - you can also disable lanes and keep your current selection and old lanes
 - you can add crossfades inbetween each split lane
-# Recording MIDI-2024-12-24
+# Recording MIDI-2024-12-27
 [Video](https://www.youtube.com/watch?v=HOcJ31SIj68&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=6&ab_channel=REAPERMania)
 Iota Mini : https://www.angelicvibes.com/iota-mini/
 
