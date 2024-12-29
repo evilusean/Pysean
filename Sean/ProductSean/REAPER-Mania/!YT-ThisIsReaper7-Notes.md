@@ -103,4 +103,7 @@
 # Recording MIDI-2024-12-29
 [Video](https://www.youtube.com/watch?v=HOcJ31SIj68&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=6&ab_channel=REAPERMania)
 Iota Mini : https://www.angelicvibes.com/iota-mini/
-
+- even with yabridge, 'iota mini' doesn't work on linux 
+- to use a midi controller in reaper, first download any drivers, then plug in USB - double check it works with arch linux before buying a MIDI controller, AFTER escaping canada 
+- 'Ctrl' + 'P' = Preferences -> Audio -> Device -> MIDI Devuces = set up MIDI controller hooked up to your computer - you can set up inputs after double clicking on the device
+- 'Ctrl' + 'P' = Preferences -> Audio -> Device -> Audio Device = set up where audio interface is plugged in
