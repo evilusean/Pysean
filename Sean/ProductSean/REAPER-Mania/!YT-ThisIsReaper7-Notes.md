@@ -111,3 +111,9 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 - Add a track -> press record -> go to 'Inputs' to select 'Virtual MIDI keyboard' -> 'All Channels' = Will allow you to use a virtual midi keyboard from reaper to produce some beats
 - Add a track -> press record -> go to 'Inputs' to select 'All MIDI inputs: All channels' -> 'All Channels' = will let you use any input (physical or virtual) for creating some beats
 - 'Alt' + 'B' = or 'View' -> 'Virtual MIDI Keyboard' = Allows you to use the virtual MIDI keyboard
+- to hear sound, you need to trigger a sound source when you play the MIDI keyboard
+- VST = Virtual Instrument Plugin
+- click and drag the ruler next to TCP(track control panel) from left to right to create a time selection - turn on looping in bottom left to make it repeat the same time selection - press record to begin recording over that time selection
+- 'Right Click' on 'In' on TCP on Track -> 'Record: MIDI overdub' = will allow you to record a track and keep your last recording - it won't erase the previous pass when you record a new pass every time you go over the same track with repeat
+- Metronome = Top left menu - will help you keep time - right click to change settings 'run metronome during recording' 'create a counting before recording'
+- 'Double Click' on a recording - it will open up the MIDI editor, any recorded sounds, you can now edit their timing and placement by hand instead of getting a perfect playing placement each time - delete by double clicking the notes - insert by clicking
