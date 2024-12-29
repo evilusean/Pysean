@@ -107,3 +107,7 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 - to use a midi controller in reaper, first download any drivers, then plug in USB - double check it works with arch linux before buying a MIDI controller, AFTER escaping canada 
 - 'Ctrl' + 'P' = Preferences -> Audio -> Device -> MIDI Devuces = set up MIDI controller hooked up to your computer - you can set up inputs after double clicking on the device
 - 'Ctrl' + 'P' = Preferences -> Audio -> Device -> Audio Device = set up where audio interface is plugged in
+- Add a track -> press record -> go to 'Inputs' to select your MIDI keyboard -> 'All Channels' = allows you to use MIDI keyboard on that track 
+- Add a track -> press record -> go to 'Inputs' to select 'Virtual MIDI keyboard' -> 'All Channels' = Will allow you to use a virtual midi keyboard from reaper to produce some beats
+- Add a track -> press record -> go to 'Inputs' to select 'All MIDI inputs: All channels' -> 'All Channels' = will let you use any input (physical or virtual) for creating some beats
+- 'Alt' + 'B' = or 'View' -> 'Virtual MIDI Keyboard' = Allows you to use the virtual MIDI keyboard
