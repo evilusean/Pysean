@@ -28,4 +28,6 @@ Frequency Ranges =Sub-Low-Low/Mid-Mid-High/Mid-High-Air Vs 55hz^Fundamental-Harm
 https://www.youtube.com/watch?v=L9kuxISxOVo&ab_channel=SageAudio
 Balance-EQ-Dynamics-Ambience (BEDA MALE) :
 https://www.youtube.com/watch?v=QSvdhuu2orQ&ab_channel=AudioUniversity
-
+time signatures 1/1, 2/2, 3/4, 4/4, 5/4, 6/8, 7/4, 8/8, 9/8, 10/4, 11/2, 12/8, 13/16 & 14/8 -intro images. dark. he nose. :
+https://www.youtube.com/watch?v=P45jlDNTf5Q&ab_channel=CobbtheDrummer
+https://www.youtube.com/watch?v=0g00Pd8Xfu4&ab_channel=CadenceHira
