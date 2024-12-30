@@ -12,4 +12,10 @@
 - get the beat in first before equalizers or compression - crawl - walk - run (Based. Lol, Lmao. bassed? bass'd?)
 - Silence is an instrument 
 - Get the Balance right(faders) - accentuate what the main part of the song is
+- Audio Fatigue = same sound repeated creates fatigue in the listener
+- Layer sounds - instead of just one kick drum, create 3 with slight differences, in pitch or tempo, different midi or wav files - you can use JS plugins/macros in Reaper to select every odd or even note and then change the velocity/pitch/length on each 
+- Create/select sounds first, then create the song, so you aren't busy making sounds in the middle of a mix, here are the ingredients(instruments) for my soup, here is my soup(song) - tweak with FX(spice) after getting the main beat down - clay = bricks = house analogy
+- get a base sound/sample, add FX to create unique sounds 
+- Aphex(FX? Effects? Affects? Apex? was that intentional?) Chad Unique Samples : https://www.youtube.com/watch?v=5wIOBBodoic&ab_channel=BennJordan
+- Aphex is a brand of audio signal processing equipment. Aphex Systems was founded in 1975 in Massachusetts. The name is shorthand for "**Audio Perception Heterodyne Exciter**"
 - 
