@@ -1,0 +1,1 @@
+- pick a genre/artist/track you love - copy it - learn by doing what the best have already done - immitateSean is the highest form of flattery
