@@ -1,1 +1,15 @@
-- pick a genre/artist/track you love - copy it - learn by doing what the best have already done - immitateSean is the highest form of flattery
+- pick a genre/artist/track you love - copy/recreate/replicate it - learn by doing what the best have already done - immitateSean is the highest form of flattery - use it as a template - learn the techniques - the skills you learn replicating a track can be taken and used for every other track you create
+- Download high quality of tracks(not youtube) - Beatport - bring it into DAW - make sure project tempo matches tempo of song
+- Trap BPM = 130-150 BPMs.
+- Electrohouse BPM = 125–135 beats per minute
+- Dubstep BPM = 132–142 beats per minute
+- DNB/Drum and Bass BPM = between 160 and 180 beats per minute
+- House BPM = 115–130
+- https://www.youtube.com/watch?v=21dG8cw4dUQ&ab_channel=EDMTips
+- Focus on the drum beat first = 4-4 kick drum by Avicii(RIP)/Deadmau5 most common - a kick on every 4 beats - inbetween those beats an open hat or a closed hat - and on every other kick(2nd and 4th kick) add a clap or snare
+- Add a bassline = Long sustained bassline Vs Bass between kicks Vs Syncopated bass line = split into 1/16ths
+- add Choords third
+- get the beat in first before equalizers or compression - crawl - walk - run (Based. Lol, Lmao. bassed? bass'd?)
+- Silence is an instrument 
+- Get the Balance right(faders) - accentuate what the main part of the song is
+- 
