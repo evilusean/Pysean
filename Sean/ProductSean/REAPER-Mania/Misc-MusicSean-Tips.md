@@ -1,4 +1,4 @@
-- pick a genre/artist/track you love - copy/recreate/replicate it - learn by doing what the best have already done - immitateSean is the highest form of flattery - use it as a template - learn the techniques - the skills you learn replicating a track can be taken and used for every other track you create
+- pick a genre/artist/track you love - copy/recreate/replicate it - learn by doing what the best have already done - immitateSean is the most sincere form of flattery - use it as a template - learn the techniques - the skills you learn replicating a track can be taken and used for every other track you create
 - Download high quality of tracks(not youtube) - Beatport - bring it into DAW - make sure project tempo matches tempo of song
 - Trap BPM = 130-150 BPMs.
 - Electrohouse BPM = 125–135 beats per minute
