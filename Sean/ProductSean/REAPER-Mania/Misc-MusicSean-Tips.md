@@ -14,6 +14,7 @@
 - Get the Balance right(faders) - accentuate what the main part of the song is
 - Audio Fatigue = same sound repeated creates fatigue in the listener
 - Layer sounds - instead of just one kick drum, create 3 with slight differences, in pitch or tempo, different midi or wav files - you can use JS plugins/macros in Reaper to select every odd or even note and then change the velocity/pitch/length on each 
+- Don't tune your kick - you autismo - 1/8 is a good size for decent soundsystems - https://www.youtube.com/watch?v=5Bzu8xNp5X4&ab_channel=SolState - this contradicts the last dude I listened to yesterday - who do you trust more? some dude on youtube or Deadmau5?
 - Create/select sounds first, then create the song, so you aren't busy making sounds in the middle of a mix, here are the ingredients(instruments) for my soup, here is my soup(song) - tweak with FX(spice) after getting the main beat down - clay = bricks = house analogy
 - get a base sound/sample/preset, add FX to create unique sounds 
 - Aphex(FX? Effects? Affects? Apex? was that intentional?) Chad Unique Samples : https://www.youtube.com/watch?v=5wIOBBodoic&ab_channel=BennJordan
