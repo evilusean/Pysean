@@ -56,6 +56,8 @@ WaniKani Kanji :
 仕 = shi = do (cross)
 平 = hei = flat (lines in middle)
 半 = han = half (lines on top)
+色 = iro = color (rounded x2 squares)
+角 = kaku = corner/angle (sharper x4 squares)
 
 ToDo:
 *Need to export decks 'with scheduling information' before adding to anki deck to preserve progress inbetween laptop and mac*
