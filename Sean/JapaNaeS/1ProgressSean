@@ -58,6 +58,10 @@ WaniKani Kanji :
 半 = han = half (lines on top)
 色 = iro = color (rounded x2 squares)
 角 = kaku = corner/angle (sharper x4 squares)
+学 = gaku = study (3 horns)
+字 = ji = letter (1 horn)
+子 = ko = child (no hat)
+了 = ryo = finish (no arms)
 
 ToDo:
 *Need to export decks 'with scheduling information' before adding to anki deck to preserve progress inbetween laptop and mac*
