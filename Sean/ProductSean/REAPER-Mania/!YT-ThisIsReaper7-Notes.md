@@ -122,3 +122,5 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 - 'Change Velocity' = 'Ctrl' + 'A'(Select All) = Select all notes you want to change and drag them up/down on the velocity chart - move all up to max volume all notes
 - Change All Note Length = 'Ctrl' + 'A' (select all) -> 'Right Click' -> 'Event Properties' -> Adjust note length to whatever you need
 # Basic Audio Editing-2024-1-1
+[Video](https://www.youtube.com/watch?v=EGL54WGa85A&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=9&ab_channel=REAPERMania)
+- 
