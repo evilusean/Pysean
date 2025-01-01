@@ -302,6 +302,7 @@ Claude unsandboxed(can use your PC locally, takes a screenshot, webscraping, cli
 Github Spark - Editor, similar to Cursor: https://githubnext.com/projects/github-spark
 Gemini 2.0 (Project Mariner = controls browser + Jules write and ships code) 
 Devin (500$, interact with it primarily via slack, writes it's own code, and reprompts itself, like a junior dev, but faster) 
+DeepSeek - Chyna ChatGPT -
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
