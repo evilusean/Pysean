@@ -121,4 +121,4 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 - You can also 'Q'uantize as you are playing = 'Right Click' (Track in TCP, next to 'In'put) -> 'Track Recording Settings( Input, Quantize, Format, etc..)' -> 'Quantize Track MIDI Recording' (check this) -> 'Quantize To: 1/4' (or whatever size you want your notes)
 - 'Change Velocity' = 'Ctrl' + 'A'(Select All) = Select all notes you want to change and drag them up/down on the velocity chart - move all up to max volume all notes
 - Change All Note Length = 'Ctrl' + 'A' (select all) -> 'Right Click' -> 'Event Properties' -> Adjust note length to whatever you need
-# Basic Audio Editing-2024-12-31
+# Basic Audio Editing-2024-1-1
