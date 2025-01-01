@@ -123,4 +123,8 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 - Change All Note Length = 'Ctrl' + 'A' (select all) -> 'Right Click' -> 'Event Properties' -> Adjust note length to whatever you need
 # Basic Audio Editing-2024-1-1
 [Video](https://www.youtube.com/watch?v=EGL54WGa85A&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=9&ab_channel=REAPERMania)
+- You can click and drag audio files, no need to search through 5 harddrives and 20 directories - 
+- 'HOLD SHIFT' (while dragging a track) = temporarily disable track placement snapping = by default, tracks will snap to grid, disable snapping by clicking the 'Snap' in top left above TCP - right clicking this button will allow to open settings for snapping, you can adjust size of grid and snap sensivity
+- You can copy and paste tracks to duplicate - or click and drag
+- click and drag can also trim - this is also affected by snapping to grid (hold SHIFT to disable)
 - 
