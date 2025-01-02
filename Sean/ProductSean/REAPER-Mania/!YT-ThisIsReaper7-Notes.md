@@ -127,4 +127,8 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 - 'HOLD SHIFT' (while dragging a track) = temporarily disable track placement snapping = by default, tracks will snap to grid, disable snapping by clicking the 'Snap' in top left above TCP - right clicking this button will allow to open settings for snapping, you can adjust size of grid and snap sensivity
 - You can copy and paste tracks to duplicate - or click and drag
 - click and drag can also trim - this is also affected by snapping to grid (hold SHIFT to disable)
+- Fade in/out - place the cursor in the upper left/right corner of the track - to adjust the curve, right click the newly created fade
+- 'ALT' + 'Left Click' (on track to drag item) =  it will not change the size/location of item, just the contents (the track media items contain more than what you can see/what you sliced out)
+- 'ALT' + 'Left Click' (on track, center side) = will allow you to click and drag to 'STRETCH/SHRINK' the item to fit a certain size - the shorter an item is, the faster it will play, longer = slower
+- 'S' + Hover Cursor(on track) = Splits track, on where you your cursor is, can be deleted to isolate, or whatever - to heal the splits - select all -> right click -> 'Heal splits in items'
 - 
