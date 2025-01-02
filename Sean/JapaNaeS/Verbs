@@ -1,4 +1,5 @@
 """
+If a word consists of kanji with hiragana attached. Because the hiragana ends with an う sound, you know this word is a verb.
 You have the stem of the verb, and you change the ending based on your meaning
 there are about 10 – 14 base verb conjugations, and about 150 ways to conjugate the verbs from there.
 There are only two irregular verbs in Japanese
