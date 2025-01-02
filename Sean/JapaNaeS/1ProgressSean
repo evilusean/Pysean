@@ -62,6 +62,9 @@ WaniKani Kanji :
 字 = ji = letter (1 horn)
 子 = ko = child (no hat)
 了 = ryo = finish (no arms)
+上 = ue/a/no = above/up
+止 = to = stop (2 middle lines)
+正 = shou = correct (2 middle lines, has a hat)
 
 ToDo:
 *Need to export decks 'with scheduling information' before adding to anki deck to preserve progress inbetween laptop and mac*
