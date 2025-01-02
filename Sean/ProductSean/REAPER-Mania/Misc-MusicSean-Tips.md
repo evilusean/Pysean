@@ -1,5 +1,6 @@
 - pick a genre/artist/track you love - copy/recreate/replicate it - learn by doing what the best have already done - immitateSean is the most sincere form of flattery - use it as a template - learn the techniques - the skills you learn replicating a track can be taken and used for every other track you create
 - https://www.youtube.com/watch?v=vHXi__0HQrk&ab_channel=CaptainPikant
+- https://www.youtube.com/watch?v=0lIVeeEtJ3I&ab_channel=HollowGroundProductions
 - Download high quality of tracks(not youtube) - Beatport - bring it into DAW - make sure project tempo matches tempo of song
 - Trap BPM = 130-150 BPMs.
 - Electrohouse BPM = 125–135 beats per minute
@@ -21,4 +22,4 @@
 - Aphex(FX? Effects? Affects? Apex? was that intentional?) Chad Unique Samples : https://www.youtube.com/watch?v=5wIOBBodoic&ab_channel=BennJordan
 - Aphex is a brand of audio signal processing equipment. Aphex Systems was founded in 1975 in Massachusetts. The name is shorthand for "**Audio Perception Heterodyne Exciter**"
 - MetaSynth 'Painting Music' - FrequenSean - Math Song :$ΔMi−1 = −∂Σn=1NDi[n][Σj∈C{i}Fji[n − 1] + Fexti[[n−1]]$ : https://www.youtube.com/watch?v=wSYAZnQmffg&ab_channel=Maxdamantus
-- 'Found Sounds' = music found in the real world used for your mixes - be the change, you want to sean in the world - be the autist chasing down the monk with the taiko drum/shamisen(shawnIsean - it was destined) with a high quality mic - some poor dudes at a garage just trying to work off a hangover as some autist comes after them for their highly coveted lug wrench sounds and industrial metal on metal - The feds and 'big sound INC TM(native instruments)' don't want you to know this, but you can just go to the park and pick up sounds, they are free. Sounds aren't real. They are just perturbASeans in a medium. Media. My Canvas: . My Paintbrush: . My Paint: .
+- 'Found Sounds' = music found in the real world used for your mixes - be the change, you want to sean in the world - be the autist chasing down the monk with the taiko drum/shamisen(shawnIsean - it was destined) with a high quality mic - some poor dudes at a garage just trying to work off a hangover as some autist comes after them for their highly coveted lug wrench sounds and industrial metal on metal - The feds and 'big sound INC TM(native instruments)' don't want you to know this, but you can just go to the park and pick up sounds, they are free. Sounds aren't real. They are just perturbASeans in a medium. MEdia. My Canvas: . My Paintbrush: . My Paint: .
