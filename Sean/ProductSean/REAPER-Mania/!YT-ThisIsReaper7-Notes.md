@@ -131,4 +131,8 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 - 'ALT' + 'Left Click' (on track to drag item) =  it will not change the size/location of item, just the contents (the track media items contain more than what you can see/what you sliced out)
 - 'ALT' + 'Left Click' (on track, center side) = will allow you to click and drag to 'STRETCH/SHRINK' the item to fit a certain size - the shorter an item is, the faster it will play, longer = slower
 - 'S' + Hover Cursor(on track) = Splits track, on where you your cursor is, can be deleted to isolate, or whatever - to heal the splits - select all -> right click -> 'Heal splits in items'
+- 'Ctrl' + 'Left Click' (middle of track) + drag = will duplicate an item and allow you to place it
+- 'Option' (top dropdown) -> 'Trim content behind items when editing' = when you click and drag an item over another, it will trim what it was placed over instead of fading
+- 'Right Click' (lasso tool) = multi select = or 'SHIFT' + 'Left Click' = multi select lets you edit multiple files at the same time - Or 'Radar Button' in top left menu
+- 'Razor' (top left menu) = Allows you to razor edit multiple tracks at the same time with click and drag - when you razor something, it splits it - 'Alt' + 'Shift' + 'Click'(razor edit on tracks) = allows you to razor edit multiple tracks in different spots - if you want to delete multiple areas at once - press 'ALT' + 'Click' to deselect one of the multiple razor edits
 - 
