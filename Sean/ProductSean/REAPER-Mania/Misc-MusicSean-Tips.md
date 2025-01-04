@@ -26,3 +26,7 @@
 - 'Found Sounds' = music found in the real world used for your mixes - be the change, you want to sean in the world - be the autist chasing down the monk with the taiko drum/shamisen(shawnIsean - it was destined) with a high quality mic - some poor dudes at a garage just trying to work off a hangover as some autist comes after them for their highly coveted lug wrench sounds and industrial metal on metal - The feds and 'big sound INC TM(native instruments)' don't want you to know this, but you can just go to the park and pick up sounds, they are free. Sounds aren't real. They are just perturbASeans in a medium. MEdia. My Canvas: . My Paintbrush: . My Paint: .
 - Vital Synth Basics - What do I do with all these buttons? : https://www.youtube.com/watch?v=y4w_mNuhxmw&ab_channel=nightiger
 - Surge XT Basics : https://www.youtube.com/watch?v=oeamVu1qY-g&ab_channel=MusicRadarTech
+- Synth Basics (generic/Alchemy) : https://www.youtube.com/watch?v=XmI33zP51Us&ab_channel=Mastering%E2%80%A4com
+> 4 things make up all Synths:
+> 1) Oscillators - 2) Filters - 3) LFOs - 4)ADSR/Amplitude Envelope
+> 1) Oscillators = The Part of the synth that makes the sound - Creates/Shapes the waveform
