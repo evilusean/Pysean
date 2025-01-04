@@ -41,3 +41,5 @@
 > - 'Decay' = How long the first peak takes to fade away 
 > - 'Sustain' = Secondary Peak after the decay - how it is after the initial attack
 > - 'Release' = final decay of sound - long release sounds like a natural reverb - short is an abrupt end
+> you can automate the LFO to come in over time, so it can add an effect 
+> Use this all as a check list for making own sounds
