@@ -26,7 +26,7 @@
 - 'Found Sounds' = music found in the real world used for your mixes - be the change, you want to sean in the world - be the autist chasing down the monk with the taiko drum/shamisen(shawnIsean - it was destined) with a high quality mic - some poor dudes at a garage just trying to work off a hangover as some autist comes after them for their highly coveted lug wrench sounds and industrial metal on metal - The feds and 'big sound INC TM(native instruments)' don't want you to know this, but you can just go to the park and pick up sounds, they are free. Sounds aren't real. They are just perturbASeans in a medium. MEdia. My Canvas: . My Paintbrush: . My Paint: .
 - Vital Synth Basics - What do I do with all these buttons? : https://www.youtube.com/watch?v=y4w_mNuhxmw&ab_channel=nightiger
 - Surge XT Basics : https://www.youtube.com/watch?v=oeamVu1qY-g&ab_channel=MusicRadarTech
-- Synth Basics (generic/Alchemy) : https://www.youtube.com/watch?v=XmI33zP51Us&ab_channel=Mastering%E2%80%A4com
+- Synth Basics (generic) : https://www.youtube.com/watch?v=XmI33zP51Us&ab_channel=Mastering%E2%80%A4com
 > 4 things make up all Synths (foundation/base-frame-bricks-roof):
 > 1) Oscillators - 2) Filters - 3) LFOs - 4)ADSR/Amplitude Envelope
 > 1) Oscillators = The Part of the synth that makes the sound - Creates/Shapes the waveform - Different Wave forms sound like how they look - cartesian space, map the coords(sine wave creates a circle) 
@@ -34,4 +34,5 @@
 > - Saw Wave(Jagged/Rough-Sharp)
 > - Square Wave(Inbetween a Saw Wave and and a Sine Wave-Sharp Sine)
 > Many Synths have more than one oscillator which will allow you to layer sounds and create more interesting and complex sounds - put different wave forms together = fuller sound - adding octaves is a great way to fill up space in your tracks - 
-> 2) Filters = 
+> 2) Filters = Similar to EQ - Can turn frequencies up or down - can filter out parts of the frequency spectrum - (HP)High Pass = Lower Limit(removes low frequency content) / (LP)Low Pass = Upper Limit(removes higher frequency content) -  the HP/LP names are inverted High removes low, named after what you are trying to keep, not what you are trying to remove - You can also raise or lower the frequencies if they are... too low or high - dB = the higher the number, the more it will affect the frequencies - move the cut off up or down, anything after the cutoff will be removed - resonance = is a spike in the frequency spectrum within the filter 
+> 3) LFO = 
