@@ -27,6 +27,11 @@
 - Vital Synth Basics - What do I do with all these buttons? : https://www.youtube.com/watch?v=y4w_mNuhxmw&ab_channel=nightiger
 - Surge XT Basics : https://www.youtube.com/watch?v=oeamVu1qY-g&ab_channel=MusicRadarTech
 - Synth Basics (generic/Alchemy) : https://www.youtube.com/watch?v=XmI33zP51Us&ab_channel=Mastering%E2%80%A4com
-> 4 things make up all Synths:
+> 4 things make up all Synths (foundation/base-frame-bricks-roof):
 > 1) Oscillators - 2) Filters - 3) LFOs - 4)ADSR/Amplitude Envelope
-> 1) Oscillators = The Part of the synth that makes the sound - Creates/Shapes the waveform
+> 1) Oscillators = The Part of the synth that makes the sound - Creates/Shapes the waveform - Different Wave forms sound like how they look - cartesian space, map the coords(sine wave creates a circle) 
+> - Sine Waves(most basic type of sound wave-Round)
+> - Saw Wave(Jagged/Rough-Sharp)
+> - Square Wave(Inbetween a Saw Wave and and a Sine Wave-Sharp Sine)
+> Many Synths have more than one oscillator which will allow you to layer sounds and create more interesting and complex sounds - put different wave forms together = fuller sound - adding octaves is a great way to fill up space in your tracks - 
+> 2) Filters = 
