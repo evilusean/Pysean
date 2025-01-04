@@ -36,4 +36,8 @@
 > Many Synths have more than one oscillator which will allow you to layer sounds and create more interesting and complex sounds - put different wave forms together = fuller sound - adding octaves is a great way to fill up space in your tracks - 
 > 2) Filters = Similar to EQ - Can turn frequencies up or down - can filter out parts of the frequency spectrum - (HP)High Pass = Lower Limit(removes low frequency content) / (LP)Low Pass = Upper Limit(removes higher frequency content) -  the HP/LP names are inverted High removes low, named after what you are trying to keep, not what you are trying to remove - You can also raise or lower the frequencies if they are... too low or high - dB = the higher the number, the more it will affect the frequencies - move the cut off up or down, anything after the cutoff will be removed - resonance = is a spike in the frequency spectrum within the filter 
 > 3) LFO(Low Frequency Oscillator) = Will change the speed of your sound - Different than oscillators, by itself the LFO doesn't do anything - You can even change the LFO to match the beat of your track with the ratio = 1/4 notes 1/8 notes 1/16, whatever speed you need for tempo - Amplitude/Intensity/Depth(synonymous) = How 'tall' the waveform of the LFO is, turning it up makes it stronger Ups and Downs/Peaks and valleys, turning it down decreases the variaSeans 
-> 4) ADSR/Amplitude Envelope = 
+> 4) ADSR(Attack, Decay, Sustain, Release) /Amplitude Envelope = Finishing touch on sound - important - the 'shape' of the sound, how long it takes to reach full volume, and drop off - the 'timing' of the synth - he protec, he attac, he decay - 
+> - 'Attack' = How long it takes for the synth to reach full volume (first peak)
+> - 'Decay' = How long the first peak takes to fade away 
+> - 'Sustain' = Secondary Peak after the decay - how it is after the initial attack
+> - 'Release' = final decay of sound - long release sounds like a natural reverb - short is an abrupt end
