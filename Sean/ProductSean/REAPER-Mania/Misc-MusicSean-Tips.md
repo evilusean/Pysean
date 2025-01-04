@@ -43,3 +43,5 @@
 > - 'Release' = final decay of sound - long release sounds like a natural reverb - short is an abrupt end
 > you can automate the LFO to come in over time, so it can add an effect 
 > Use this all as a check list for making own sounds
+- trust the $cience, chud, music ediSean - Stanford Study - AI machine learning predicts if a song will be a hit song (spotify API) : https://cs229.stanford.edu/proj2015/012_report.pdf https://ccrma.stanford.edu/~egeorgie/documents/HitPredict_Final.pdf 
+- 
