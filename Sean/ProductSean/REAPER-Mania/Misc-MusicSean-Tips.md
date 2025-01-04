@@ -20,6 +20,7 @@
 - 'PsychoAcoustic' = Create the effect of something being larger than it is, without actually being large and dominating the low frequencies - Assert Dominance through Reverb before on the kicks, then as bassline hits, shorten the kick so you have more room on the lower frequenSeans to play with - Pre-prep the mind - Sir? are the kicks in the room with us right now? Most kicks will bounce around the room, on walls, etc, so a 1/8 note can turn into a 1/4
 - Create/select sounds first, then create the song, so you aren't busy making sounds in the middle of a mix, here are the ingredients(instruments) for my soup, here is my soup(song) - tweak with FX(spice) after getting the main beat down - clay = bricks = house analogy
 - get a base sound/sample/preset, add FX to create unique sounds 
+- trust the $cience, chud, music ediSean - Stanford Study - AI machine learning predicts if a song will be a hit song (spotify API) : https://cs229.stanford.edu/proj2015/012_report.pdf https://ccrma.stanford.edu/~egeorgie/documents/HitPredict_Final.pdf 
 - Aphex(FX? Effects? Affects? Apex? was that intentional?) Chad Unique Samples : https://www.youtube.com/watch?v=5wIOBBodoic&ab_channel=BennJordan
 - Aphex is a brand of audio signal processing equipment. Aphex Systems was founded in 1975 in Massachusetts. The name is shorthand for "**Audio Perception Heterodyne Exciter**"
 - MetaSynth 'Painting Music' - FrequenSean - Math Song :$ΔMi−1 = −∂Σn=1NDi[n][Σj∈C{i}Fji[n − 1] + Fexti[[n−1]]$ : https://www.youtube.com/watch?v=wSYAZnQmffg&ab_channel=Maxdamantus
@@ -43,5 +44,4 @@
 > - 'Release' = final decay of sound - long release sounds like a natural reverb - short is an abrupt end
 > you can automate the LFO to come in over time, so it can add an effect 
 > Use this all as a check list for making own sounds
-- trust the $cience, chud, music ediSean - Stanford Study - AI machine learning predicts if a song will be a hit song (spotify API) : https://cs229.stanford.edu/proj2015/012_report.pdf https://ccrma.stanford.edu/~egeorgie/documents/HitPredict_Final.pdf 
 - 
