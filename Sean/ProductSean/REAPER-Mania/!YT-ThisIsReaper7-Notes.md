@@ -137,3 +137,7 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 - 'Razor' (top left menu) = Allows you to razor edit multiple tracks at the same time with click and drag - when you razor something, it splits it - 'Alt' + 'Shift' + 'Click'(razor edit on tracks) = allows you to razor edit multiple tracks in different spots - if you want to delete multiple areas at once - press 'ALT' + 'Click' to deselect one of the multiple razor edits
 # The Actions List-2025-1-5
 [Video](https://www.youtube.com/watch?v=p6PrKmhYlxY&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=8&ab_channel=REAPERMania)
+- In REAPER, just about everything you do is triggered by an action, you can hotkey these actions
+- '?' = 'Action' (top drop down) -> 'Action List' = where you can see every Action in Reaper and change their settings/hotkeys - You can also see what each key does - There is a 'Search' feature for each action, so if you know what you need, just look for it - or 'Find Shortcut' to find what action is assigned for each hotkey
+- '1' = Goes to marker '1' (create a marker first, good for jumping around project) '2' will go to marker '2'... etc
+- 'M' = Insert Marker = will insert a marker at your current position placement
