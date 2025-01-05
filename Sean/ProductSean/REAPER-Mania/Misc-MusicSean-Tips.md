@@ -21,6 +21,8 @@
 - Create/select sounds first, then create the song, so you aren't busy making sounds in the middle of a mix, here are the ingredients(instruments) for my soup, here is my soup(song) - tweak with FX(spice) after getting the main beat down - clay = bricks = house analogy
 - get a base sound/sample/preset, add FX to create unique sounds 
 - trust the $cience, chud, music ediSean - Stanford Study - AI machine learning predicts if a song will be a hit song (spotify API) : https://cs229.stanford.edu/proj2015/012_report.pdf https://ccrma.stanford.edu/~egeorgie/documents/HitPredict_Final.pdf 
+- Do not feed the Egregore Vs Synchronicity Vs weird coincidences 'Did I do that??' - HemiSync - GateWay 5-30Hz - 8-13Hz = Alpha - 13-30Hz = Beta - The 432 Hz vs 440Hz Theory/SchizHole - 440 Hz is the standard tuning for popular music, while 432 Hz is a tuning that some believe is more harmonious and in tune with nature - 
+- A hertz (Hz) is a unit of measurement that represents the number of cycles or oscillations that occur in one second - 1Hz = 1 time per second - Human visual 'framerate' = 8-13Hz(8-13times per second - 15FPS Vs 30FPS Vs 60 FPS(frames per second)=very little difference - when you look at your monitor, 3D is an illusean, movement is an illusean) - Audio FPS/Hz frequenSean = between 20 Hz and 20,000 Hz
 - Aphex(FX? Effects? Affects? Apex? was that intentional?) Chad Unique Samples : https://www.youtube.com/watch?v=5wIOBBodoic&ab_channel=BennJordan
 - Aphex is a brand of audio signal processing equipment. Aphex Systems was founded in 1975 in Massachusetts. The name is shorthand for "**Audio Perception Heterodyne Exciter**"
 - MetaSynth 'Painting Music' - FrequenSean - Math Song :$ΔMi−1 = −∂Σn=1NDi[n][Σj∈C{i}Fji[n − 1] + Fexti[[n−1]]$ : https://www.youtube.com/watch?v=wSYAZnQmffg&ab_channel=Maxdamantus
@@ -44,4 +46,3 @@
 > - 'Release' = final decay of sound - long release sounds like a natural reverb - short is an abrupt end
 > you can automate the LFO to come in over time, so it can add an effect 
 > Use this all as a check list for making own sounds
-- 
