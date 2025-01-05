@@ -136,3 +136,4 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 - 'Right Click' (lasso tool) = multi select = or 'SHIFT' + 'Left Click' = multi select lets you edit multiple files at the same time - Or 'Radar Button' in top left menu
 - 'Razor' (top left menu) = Allows you to razor edit multiple tracks at the same time with click and drag - when you razor something, it splits it - 'Alt' + 'Shift' + 'Click'(razor edit on tracks) = allows you to razor edit multiple tracks in different spots - if you want to delete multiple areas at once - press 'ALT' + 'Click' to deselect one of the multiple razor edits
 # The Actions List-2025-1-5
+[Video](https://www.youtube.com/watch?v=p6PrKmhYlxY&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=8&ab_channel=REAPERMania)
