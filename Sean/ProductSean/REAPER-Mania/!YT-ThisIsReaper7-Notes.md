@@ -143,5 +143,8 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 - 'Enter' (while in the 'Action List') or 'Double Click' = will perform whatever action you currently have highlighted/selected
 -  'Options' (in the 'Action List') ->  'Close after action on doubleclick/enter' (disable) = to keep action list open when you do an action
 - 'Section' (in the 'Action List') = Will allow you to change the section where each action is attached to 'Main' / 'Alt' / 'MIDI' / 'Media Explorer' / Etc - You can also have different shortcuts bound to different sections if you use any of the alts 1-16
+- 'New Action' (in the 'Action List') -> New/Load ReaScript/Custom Action = Create a custom action/macro that can do multiple actions, trigger multiple actions at once from a single shortcut - it will be based on the original action that you edit(created a custom action from) - assign the new custom action to a hotkey
+- 'Menu Editor' (in the 'Action List') = Will allow you to edit/customize menus instead of using keyboard shortcuts, you can add them to menus 
+- 'Key map ...' (in the 'Action List') = Export shortcuts/custom actions for all sections = create a downloadable file for future Sean that saves configs/keybindings - can be all or one
 - '1' = Goes to marker '1' (create a marker first, good for jumping around project) '2' will go to marker '2'... etc
 - 'M' = Insert Marker = will insert a marker at your current position placement
