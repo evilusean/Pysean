@@ -139,5 +139,7 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 [Video](https://www.youtube.com/watch?v=p6PrKmhYlxY&list=PLM0xHqxaiT68FiOXjVG4t2WKltKYioIxC&index=8&ab_channel=REAPERMania)
 - In REAPER, just about everything you do is triggered by an action, you can hotkey these actions
 - '?' = 'Action' (top drop down) -> 'Action List' = where you can see every Action in Reaper and change their settings/hotkeys - You can also see what each key does - There is a 'Search' feature for each action, so if you know what you need, just look for it - or 'Find Shortcut' to find what action is assigned for each hotkey
+- 'Options' (in the 'Action List') -> 'Remember last action filter' = when you close the 'Action List' it will remember what you had in the search filter (this is good for saving an action without explicitly hotkeying it)
+- 'Enter' (while in the 'Action List') = will perform whatever action you currently have highlighted/selected
 - '1' = Goes to marker '1' (create a marker first, good for jumping around project) '2' will go to marker '2'... etc
 - 'M' = Insert Marker = will insert a marker at your current position placement
