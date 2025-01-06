@@ -1,0 +1,1 @@
+Starting a repo for all links and resources related to [DaVinSean Resolve](https://www.blackmagicdesign.com/event/davinciresolvedownload)
