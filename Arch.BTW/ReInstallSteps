@@ -12,6 +12,7 @@ station wlan0 scan
 station wlan0 get-networks
 station wlan0 connect
 D7ED9E936EDF
+'quit' 
 
 Step 2 : Partition the disks 
 fdisk -l #lists all partitions in detail
