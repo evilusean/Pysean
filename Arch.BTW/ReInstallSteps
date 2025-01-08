@@ -152,6 +152,8 @@ makepkg -si
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
 
+yay -S anki
+
 cursor.com #download app image, update paths so you can search for it
 
 Tmux Plugin Manager(TPM):
