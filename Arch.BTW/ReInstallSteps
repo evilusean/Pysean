@@ -56,6 +56,13 @@ Step 4 : Create a user in arch-chroot
 'exit'
 'reboot'
 
+Add a user to Sudoers:
+usermod -aG wheel ArchSean
+%wheel ALL=(ALL) ALL
+'/etc/sudoers'
+usermod -aG sudo ArchSean
+ArchSean ALL=(ALL)       ALL
+
 Step 5 : Install Graphics
 https://github.com/evilusean/Pysean/blob/main/Sean/FixSean/NVIDIDA
 Use Network Manager, Sign in to WIFI.
@@ -130,13 +137,6 @@ sudo pacman -S libreoffice
 sudo pacman -S gimp
 sudo pacman -S blender
 sudo pacman -S reaper
-
-Add a user to Sudoers:
-usermod -aG wheel ArchSean
-%wheel ALL=(ALL) ALL
-'/etc/sudoers'
-usermod -aG sudo ArchSean
-ArchSean ALL=(ALL)       ALL
 
 Install Yay :
 sudo pacman -Syu
