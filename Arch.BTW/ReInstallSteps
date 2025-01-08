@@ -154,7 +154,7 @@ yay -S github-desktop-bin --noconfirm
 
 yay -S anki
 
-cursor.com #download app image, update paths so you can search for it
+cursor.com #download app image, update paths so you can search for it = add to '/usr/share/applications/cursor.desktop'
 
 Tmux Plugin Manager(TPM):
 https://github.com/tmux-plugins/tpm
