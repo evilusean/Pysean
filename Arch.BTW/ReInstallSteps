@@ -38,7 +38,7 @@ Assign mountpoints (manual partition) :
   '/boot' -> sda1 (2Gigs)
   '/' -> sda2 -> 45Gigs
   '/home' -> sda3 -> whatever is left
-BootLoader : Limine (systemd is better)
+BootLoader : Limine (systemd is better-nm, use limine, broke the install)
 HostName : ArchSean
 Root Password :
 User Account : (Set up in chroot)
@@ -48,6 +48,7 @@ Kernel : linux
 Network Configuration : Use NetworkManager
 TimeZone : 
 Optional Repositories : multilib
+ERROR : if you get an error from packages (future sean) clear the cache, exit arch install type 'pacman -Scc' 
 
 Step 4 : Create a user in arch-chroot
 useradd -m -G wheel ArchSean
