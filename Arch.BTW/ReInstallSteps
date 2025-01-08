@@ -129,6 +129,7 @@ sudo pacman -S fzf
 sudo pacman -S libreoffice
 sudo pacman -S gimp
 sudo pacman -S blender
+sudo pacman -S reaper
 
 Add a user to Sudoers:
 usermod -aG wheel ArchSean
@@ -145,8 +146,12 @@ sudo mv yay-git /opt/
 cd /opt/yay-git
 makepkg -si
 
+'yay -S davinci-resolve-studio' # install on arch linux with yay package manager
+
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
+
+cursor.com #download app image, update paths so you can search for it
 
 Tmux Plugin Manager(TPM):
 https://github.com/tmux-plugins/tpm
