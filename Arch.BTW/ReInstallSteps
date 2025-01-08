@@ -51,8 +51,10 @@ Optional Repositories : multilib
 ERROR : if you get an error from packages (future sean) clear the cache, exit arch install type 'pacman -Scc' 
 
 Step 4 : Create a user in arch-chroot
-useradd -m -G wheel ArchSean
-passwd ArchSean 
+'useradd -m -G wheel ArchSean'
+'passwd ArchSean'
+'exit'
+'reboot'
 
 Step 5 : Install Graphics
 https://github.com/evilusean/Pysean/blob/main/Sean/FixSean/NVIDIDA
