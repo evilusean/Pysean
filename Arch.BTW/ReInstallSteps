@@ -151,7 +151,11 @@ makepkg -si
 
 'yay -S davinci-resolve' # install on arch linux with yay package manager
 https://wiki.archlinux.org/title/DaVinci_Resolve#Installation
-https://github.com/Ashark/davinci-resolve-checker
+https://github.com/Ashark/davinci-resolve-checker #'git clone ..' the repo 'prime-run ./davinci-resolve-checker.py' to check 
+sudo pacman -S mesa 
+sudo pacman -S opencl-nvidia 
+sudo pacman -S rocm-opencl-runtime
+sudo pacman -S intel-compute-runtime 
 
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
