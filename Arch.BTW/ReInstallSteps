@@ -150,6 +150,8 @@ cd /opt/yay-git
 makepkg -si
 
 'yay -S davinci-resolve' # install on arch linux with yay package manager
+https://wiki.archlinux.org/title/DaVinci_Resolve#Installation
+https://github.com/Ashark/davinci-resolve-checker
 
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
