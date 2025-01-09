@@ -7,6 +7,7 @@ Da Vinci(VinSean) Resolve (uses Nodes like blender) - Those who can Sean, Those 
 Tutorials :
 https://www.blackmagicdesign.com/products/davinciresolve/training
 https://www.youtube.com/watch?v=x5mi55JPIQU
+https://www.youtube.com/watch?v=qDHnCFMZ9HA
 
 Media(Movie) ProductSean : 
 B-Roll (Get a NAS+Storage before collecting High Def B-Roll, External Archives/Libraries):
