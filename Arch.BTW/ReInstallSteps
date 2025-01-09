@@ -184,6 +184,8 @@ git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 git clone https://github.com/ProgrammingRainbow/NvChad-2.5 ~/.config/nvim && nvim
 #Better config than the original NVChad script, maybe changes next time I need to reinstall, future sean take note - I tried this script 2 days ago, worked, today didn't. 
 
+https://github.com/gorhill/uBlock #not even a day into a fresh install, and already getting Ad-gry, it's where you get angry from ads.
+
 Uninstall NVim + configs (if you mess up):
 rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
