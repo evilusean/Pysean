@@ -156,6 +156,7 @@ sudo pacman -S mesa
 sudo pacman -S opencl-nvidia 
 sudo pacman -S rocm-opencl-runtime
 sudo pacman -S intel-compute-runtime 
+sudo pacman -S cuda
 
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
