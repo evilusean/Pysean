@@ -149,7 +149,7 @@ sudo mv yay-git /opt/
 cd /opt/yay-git
 makepkg -si
 
-'yay -S davinci-resolve-studio' # install on arch linux with yay package manager
+'yay -S davinci-resolve' # install on arch linux with yay package manager
 
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
