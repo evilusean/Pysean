@@ -12,6 +12,9 @@ sudo pacman -S opencl-nvidia
 sudo pacman -S rocm-opencl-runtime
 sudo pacman -S intel-compute-runtime 
 sudo pacman -S cuda
+https://wiki.archlinux.org/title/NVIDIA_Optimus
+https://wiki.archlinux.org/title/NVIDIA_Optimus#Using_optimus-manager
+https://bbs.archlinux.org/viewtopic.php?pid=2126194#p2126194
 
 Tutorials :
 https://www.blackmagicdesign.com/products/davinciresolve/training
