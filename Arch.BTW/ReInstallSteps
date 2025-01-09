@@ -118,7 +118,7 @@ sudo pacman -S mpc
 sudo pacman -S ncmpcpp
 https://github.com/evilusean/Pysean/blob/main/MPD%5CNCMPCPP/.ncmpcpp.config
 https://archlinux.org/packages/extra/x86_64/signal-desktop/
-https://www.tecmint.com/install-skype-in-arch-linux/
+https://itsfoss.com/install-skype-arch-linux/
 https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
 sudo pacman -S tmux
 https://github.com/evilusean/Pysean/blob/main/TMUX/tmux.conf
