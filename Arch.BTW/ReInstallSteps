@@ -155,6 +155,7 @@ Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
 
 yay -S anki
+sudo pacman -S mpv #will be required for audio 
 
 cursor.com #download app image, update paths so you can search for it = add to '/usr/share/applications/cursor.desktop'
 
