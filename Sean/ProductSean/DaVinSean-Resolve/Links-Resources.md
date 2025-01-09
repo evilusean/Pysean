@@ -3,7 +3,9 @@ https://wiki.archlinux.org/title/DaVinci_Resolve
 DaVinciResolve : https://www.blackmagicdesign.com/products/davinciresolve/
 Da Vinci(VinSean) Resolve (uses Nodes like blender) - Those who can Sean, Those who can not Sean, Those who can be Shawn. : https://www.youtube.com/watch?v=lm51xZHZI6g&ab_channel=JamesLee%28Animation%29
 'yay -S davinci-resolve-studio' # install on arch linux with yay package manager, there is an aur, but it doesn't work for some reason - running crazy low on SSD space, but can fit this in for next project(s)
-- I just realized, since I am already crushed for storage, downloading a bunch of high def videos probably isn't the greatest plan, I can still mess around till I 'Step 1) Escape canada' and then get a NAS for storage, I am not setting up an LLC or monetizeASean while I am in the ....(save myself a few minutes here, and not stringing together PEJORATIVES while talking about how bad this economic zone slave/open air prison colony is).... of canada - Decades of abuse. Not one apology. Return the Favor. F=-F.
-- Hit my limit on SSD while installing DaVinci, going to reinstall Arch Linux(Again, btw). I installed a bunch of Docker/VM/ML/AI models and stuff that I don't need anymore(the TTS + translasean model was cool though) that take up crazy amounts of space, it's a pain to remove them and all their dependancies, without breaking something and having to reinstall anyways. I would rather clean it before I leave canada than while I am working full time - that's a lost weekend. Need to back up everything, then reinstall Arch OS tommorrow, next few days will just be installing all my stuff again, sans the bloat - keep it minimal - only what I need. Not downloading 20 gig models for one project or 5 gig instruments that don't work.
 
 Media(Movie) ProductSean : 
+B-Roll (Get a NAS+Storage before collecting High Def B-Roll, External Archives/Libraries):
+Pixabay : https://pixabay.com/videos/
+https://www.studiobinder.com/blog/free-b-roll-footage/
+https://swarmify.com/blog/best-free-b-roll-websites/
