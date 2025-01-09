@@ -139,7 +139,7 @@ sudo pacman -S gimp
 sudo pacman -S blender
 sudo pacman -S reaper
 sudo pacman -S obsidian
-qbittorrent
+sudo pacman -S qbittorrent
 
 Install Yay :
 sudo pacman -Syu
