@@ -155,6 +155,8 @@ yay -S github-desktop-bin --noconfirm
 yay -S anki
 sudo pacman -S mpv #will be required for audio 
 
+https://code.visualstudio.com/
+https://aur.archlinux.org/packages/visual-studio-code-bin
 yay -S visual-studio-code-bin #install this version instead of pacman, can't get copilot on the 'pacman -S code' for whatever reason
 
 cursor.com #download app image, update paths so you can search for it = add to '/usr/share/applications/cursor.desktop'
