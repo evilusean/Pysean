@@ -148,3 +148,4 @@ Iota Mini : https://www.angelicvibes.com/iota-mini/
 - 'Key map ...' (in the 'Action List') = Export shortcuts/custom actions for all sections = create a downloadable file for future Sean that saves configs/keybindings - can be all or one
 - '1' = Goes to marker '1' (create a marker first, good for jumping around project) '2' will go to marker '2'... etc
 - 'M' = Insert Marker = will insert a marker at your current position placement
+- Hold 'Alt' + Click a track (on side) + Drag = will allow you to speed up/slow down a track
