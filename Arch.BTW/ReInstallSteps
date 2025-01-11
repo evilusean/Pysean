@@ -201,6 +201,13 @@ https://github.com/Askannz/optimus-manager
 Wallpapers : 
 https://www.peakpx.com/en/hd-wallpaper-desktop-vlqfo/download/1920x1080
 
+Fix Keyboard Backlight (Fn + F4) :
+yay -S asusctl supergfxctl
+sudo systemctl enable asusd
+sudo systemctl start asusd
+asusctl -k #check backlight
+asusctl -k <level> #sets level
+
 Spotify (for languages) :
 https://wiki.archlinux.org/title/Spotify
 sudo pacman -S spotify-launcher # requires a different pacman package, not spotify, will work from this link
