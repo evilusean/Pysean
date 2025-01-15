@@ -305,6 +305,7 @@ Gemini 2.0 (Project Mariner = controls browser + Jules write and ships code)
 Devin (500$, interact with it primarily via slack, writes it's own code, and reprompts itself, like a junior dev, but faster) 
 DeepSeek - Chyna ChatGPT -
 HackerGPT : https://github.com/xibangura/HackerGPT
+Cline(Self Debug Code - Claude GPT) : https://github.com/cline/cline
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
