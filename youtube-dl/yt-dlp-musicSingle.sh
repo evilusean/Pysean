@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Input YouTube video URL
-video_url="https://www.youtube.com/watch?v=nTp5GOCMIzA&ab_channel=IDLEGLANCE"
+video_url="https://www.youtube.com/watch?v=y29kmnhjtc8&t"
 
 # Output folder
 output_folder="/mnt/sdb2/Media/Music/1S1ngles"
