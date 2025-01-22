@@ -304,6 +304,7 @@ Github Spark - Editor, similar to Cursor: https://githubnext.com/projects/github
 Gemini 2.0 (Project Mariner = controls browser + Jules write and ships code) 
 Devin (500$, interact with it primarily via slack, writes it's own code, and reprompts itself, like a junior dev, but faster) 
 DeepSeek - Chyna ChatGPT -
+DeepSeek R1 - Chain of thought model
 HackerGPT : https://github.com/xibangura/HackerGPT
 Cline(Self Debug Code - Claude GPT) : https://github.com/cline/cline
 OpenAI o3 : https://en.wikipedia.org/wiki/OpenAI_o3
