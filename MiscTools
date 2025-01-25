@@ -305,7 +305,7 @@ HackerGPT : https://github.com/xibangura/HackerGPT
 Cline(Self Debug Code - Claude GPT) : https://github.com/cline/cline
 Gemini 2.0 (Project Mariner = controls browser + Jules write and ships code) 
 Devin (500$, interact with it primarily via slack, writes it's own code, and reprompts itself, like a junior dev, but faster) 
-DeepSeek - Chyna ChatGPT (OpenSource, Local, better benchmarks, cost 5.5 million to make vs SG-500billion USD, Lol, Lmao) - https://huggingface.co/deepseek-ai/DeepSeek-R1
+DeepSeek - Chyna ChatGPT (OpenSource, Local, *FREE*, better benchmarks, cost 5.5 million to make vs SG-500billion USD, Lol, Lmao) - https://huggingface.co/deepseek-ai/DeepSeek-R1
 DeepSeek R1 - Chain of thought model/reinforcement learning (local install with ollama- aka free) : https://ollama.com/library/deepseek-r1:1.5b
 OpenAI - StarGate-SG1 = 500 Billion : https://www.cia.gov/readingroom/docs/CIA-RDP96-00789R002800180001-2.pdf 
 OpenAI o3 : https://en.wikipedia.org/wiki/OpenAI_o3
