@@ -228,3 +228,4 @@ asdf plugin add protonge
 asdf install protonge latest
 sudo pacman -S nvidia-prime
 prime-run
+sudo pacman -S lib32-nvidia-utils lib32-mesa-libgl vulkan-icd-loader lib32-vulkan-icd-loader
