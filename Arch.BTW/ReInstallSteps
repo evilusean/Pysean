@@ -221,3 +221,9 @@ sudo systemctl start bluetooth.service
 sudo systemctl status bluetooth.service
 #you also need to disable 'steam overlay' it's in the settings somewhere, only needs to be done once.
 press top left 'SHARE' and middle 'Playstation' button to sync, after enabling bluetooth, should work
+
+#for proton GE(glorious eggroll proton - for steam overwatch) :
+yay -S asdf-vm 
+asdf plugin add protonge
+asdf install protonge latest
+
