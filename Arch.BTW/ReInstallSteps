@@ -226,4 +226,5 @@ press top left 'SHARE' and middle 'Playstation' button to sync, after enabling b
 yay -S asdf-vm 
 asdf plugin add protonge
 asdf install protonge latest
-
+sudo pacman -S nvidia-prime
+prime-run
