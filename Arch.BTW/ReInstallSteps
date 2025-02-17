@@ -155,6 +155,8 @@ yay -S github-desktop-bin --noconfirm
 
 yay -S anki
 sudo pacman -S mpv #will be required for audio 
+by default, anki will save all progress on the main SSD '~/.local/share/Anki2/' - so if you delete the SSD(as I have, 3 times...) you will lose everything. make sure to 'switch profiles' to an external HD. 
+cp -r ~/.local/share/Anki2/ 
 
 https://code.visualstudio.com/
 https://aur.archlinux.org/packages/visual-studio-code-bin
