@@ -1,0 +1,3 @@
+iwctl wasn't working, had a crash from graphics, black screen on reboot, still trying to fix, saving this for future sean
+so use this next time,
+nmcli dev wifi connect BELL216 --ask
