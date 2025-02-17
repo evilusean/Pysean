@@ -1,3 +1,4 @@
 iwctl wasn't working, had a crash from graphics, black screen on reboot, still trying to fix, saving this for future sean
 so use this next time,
 nmcli dev wifi connect BELL216 --ask
+-ended up reinstalling arch, gonna lose a day reinstalling packages - but for future Sean, that is how you internet in terminal
