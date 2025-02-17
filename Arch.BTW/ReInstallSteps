@@ -156,7 +156,8 @@ yay -S github-desktop-bin --noconfirm
 yay -S anki
 sudo pacman -S mpv #will be required for audio 
 by default, anki will save all progress on the main SSD '~/.local/share/Anki2/' - so if you delete the SSD(as I have, 3 times...) you will lose everything. make sure to 'switch profiles' to an external HD. 
-cp -r ~/.local/share/Anki2/ 
+cp -r ~/.local/share/Anki2/ #create a symlink, so now it will update the backup instead of the one that's on the maindrive(that's been wiped, with all backups, 3 times...)
+ln -s #again, create a symlink to the main drive, so if I need to reinstall arch from boot, I don't have to do 100's of cards a day to get caught up on >1+ year of anki work
 
 https://code.visualstudio.com/
 https://aur.archlinux.org/packages/visual-studio-code-bin
