@@ -77,6 +77,7 @@ https://wiki.archlinux.org/title/NVIDIA_Optimus#Use_NVIDIA_graphics_only
 'xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto' # add everything in '' to the file '/usr/share/sddm/scripts/Xsetup'
 
+First enable 'multilib' - 'sudo nano /etc/pacman.conf' uncomment '#[multilib] #Include = /etc/pacman.d/mirrorlist'
 Vulkan Drivers (I don't know which one of these fixes it, but it is one of them) :
 https://wiki.archlinux.org/title/Vulkan
 sudo pacman -S vulkan-icd-loader package
