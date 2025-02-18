@@ -1,8 +1,8 @@
 function getImageUrls() {
     const images = document.querySelectorAll('img[src*=".jpg"], img[src*=".png"]');
     return Array.from(images)
-      .filter(img => !img.closest('.postContainer')) // Adjust the selector based on the actual structure of 4chan posts
-      .map(img => img.src);
+      .map(img => img.src)
+      .filter(url => url.startsWith('https://i.4cdn.org/')); // Only include image URLs
   }
   
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
