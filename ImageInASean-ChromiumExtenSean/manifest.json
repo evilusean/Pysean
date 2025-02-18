@@ -6,6 +6,10 @@
       "activeTab",
       "downloads"
     ],
+    "host_permissions": [
+      "*://boards.4chan.org/*",
+      "*://i.4cdn.org/*"
+    ],
     "background": {
       "service_worker": "background.js"
     },
