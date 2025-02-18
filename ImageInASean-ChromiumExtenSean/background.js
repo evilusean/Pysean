@@ -4,7 +4,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         const filename = url.split('/').pop(); // Extract the filename from the URL
         chrome.downloads.download({
           url: url,
-          filename: `4chan_images/${filename}` // Save to a folder named '4chan_images'
+          filename: `/mnt/sdb4/MEmes/4Chan-Unsorted/${filename}` // Save to the specified folder
         });
       });
     }
