@@ -14,12 +14,9 @@ function getImageUrls() {
 /*
 TODO : Inspect 4chan post elements, so we aren't saving every image of currently
   ongoing posts, and we are ONLY saving images I've opened in seperate tabs
-In this code, the getImageUrls function filters out images that are inside 
-    elements with the class postContainer. You may need to adjust the selector 
-    .postContainer based on the actual structure of 4chan posts. 
-    Inspect the HTML structure of a 4chan post to find the appropriate class or
-     element to use in the closest method.
+This script will now only include image URLs that start with https://i.4cdn.org/, 
+// effectively filtering out any URLs that contain /thread/.
 
-With this change, the popup.js code you provided will now only download 
-images that are not part of posts.
+To save the images to a folder, you can modify the background.js script to specify a 
+filename and directory for each download. Here's an updated version of background.js
   */
