@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('saveImages').addEventListener('click', () => {
+  const saveImagesButton = document.getElementById('saveImages');
+  if (saveImagesButton) {
+    saveImagesButton.addEventListener('click', () => {
       chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         chrome.tabs.sendMessage(tabs[0].id, { action: "getImages" }, (response) => {
           console.log("Received image URLs from content script:", response.urls);
@@ -7,4 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     });
-  });
+  } else {
+    console.error("Button with ID 'saveImages' not found.");
+  }
+});
