@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(`Downloading image: ${filename}`);
             chrome.runtime.sendMessage({
               action: "downloadImages",
-              urls: [tab.url]  // Send the direct image URL
+              urls: [tab.url],
+              tabId: tab.id  // Add the tab ID
             });
           } catch (error) {
             console.error(`Error processing tab ${tab.id}:`, error.message);
