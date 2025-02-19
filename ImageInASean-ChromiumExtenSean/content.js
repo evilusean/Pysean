@@ -52,13 +52,18 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   console.log("Message received in content script:", request);
   
   if (request.action === "getImages") {
-    const images = document.querySelectorAll('img[src*=".jpg"], img[src*=".png"]');
-    const urls = Array.from(images)
-      .map(img => img.src)
-      .filter(url => url.startsWith('https://i.4cdn.org/'));
-    
-    console.log(`Found ${urls.length} images`);
-    sendResponse({ urls: urls });
+    try {
+      const images = document.querySelectorAll('img[src*=".jpg"], img[src*=".png"]');
+      const urls = Array.from(images)
+        .map(img => img.src)
+        .filter(url => url.startsWith('https://i.4cdn.org/'));
+      
+      console.log(`Found ${urls.length} images`);
+      sendResponse({ urls: urls });
+    } catch (error) {
+      console.error('Error in content script:', error);
+      sendResponse({ error: error.message });
+    }
     return true;  // Keep the message port open
   }
 });
