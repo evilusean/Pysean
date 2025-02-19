@@ -45,6 +45,20 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error("Button with ID 'saveImages' not found.");
   }
 });
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.action === "getImages") {
+    console.log("Content script received getImages message");
+    const images = document.querySelectorAll('img[src*=".jpg"], img[src*=".png"]');
+    const urls = Array.from(images)
+      .map(img => img.src)
+      .filter(url => url.startsWith('https://i.4cdn.org/'));
+    console.log("Found URLs:", urls);
+    sendResponse({ urls: urls });
+    return true; // Keep the message channel open for the async response
+  }
+});
+
 /*
 TODO : Inspect 4chan post elements, so we aren't saving every image of currently
   ongoing posts, and we are ONLY saving images I've opened in seperate tabs
