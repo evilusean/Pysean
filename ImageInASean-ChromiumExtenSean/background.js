@@ -3,11 +3,10 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     console.log("Received downloadImages message with URLs:", message.urls);
     message.urls.forEach(url => {
       const filename = url.split('/').pop();
-      console.log("Attempting download for:", url, "as", filename);
+      console.log("Downloading image:", url, "as", filename);
       chrome.downloads.download({
         url: url,
-        filename: `4Chan-Unsorted/${filename}`,
-        conflictAction: 'uniquify'
+        filename: `4Chan-Unsorted/${filename}`
       }, (downloadId) => {
         if (chrome.runtime.lastError) {
           console.error("Download failed:", chrome.runtime.lastError.message);
