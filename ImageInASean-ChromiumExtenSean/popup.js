@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log("Save Images button found.");
     saveImagesButton.addEventListener('click', () => {
       console.log("Save Images button clicked.");
-      // Get all tabs in current window
+      // Get all tabs in the current window
       chrome.tabs.query({ currentWindow: true }, (tabs) => {
-        // Find the active tab first
+        // Get the active tab
         chrome.tabs.query({ active: true, currentWindow: true }, (activeTabs) => {
           if (activeTabs.length === 0) {
             console.error("No active tab found.");
@@ -16,19 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
           const activeIndex = activeTabs[0].index;
           console.log("Active tab index:", activeIndex);
           
-          // Filter tabs to process: only those that are on boards.4chan.org and to the right of (or equal to) the active tab
+          // Filter tabs: only those with an index >= active tab and URL containing "boards.4chan.org"
           const tabsToProcess = tabs.filter(tab => {
             return tab.index >= activeIndex && tab.url && tab.url.includes("boards.4chan.org");
           });
           console.log("Tabs to process:", tabsToProcess);
   
-          // Iterate over each valid tab and send a message to the content script
+          // Iterate over each filtered tab and send a message to its content script
           tabsToProcess.forEach(tab => {
             console.log(`Sending getImages message to tab id ${tab.id} with URL: ${tab.url}`);
             chrome.tabs.sendMessage(tab.id, { action: "getImages" }, (response) => {
               if (chrome.runtime.lastError) {
                 console.error(`Error sending message to tab ${tab.id}:`, chrome.runtime.lastError.message);
-              } else if (response) {
+              } else if (response && response.urls) {
                 console.log(`Received image URLs from tab ${tab.id}:`, response.urls);
                 chrome.runtime.sendMessage({ action: "downloadImages", urls: response.urls });
               } else {

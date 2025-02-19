@@ -1,25 +1,25 @@
 {
-    "manifest_version": 3,
-    "name": "4chan Image Saver",
-    "version": "1.0",
-    "permissions": [
-      "activeTab",
-      "downloads"
-    ],
-    "host_permissions": [
-      "*://boards.4chan.org/*",
-      "*://i.4cdn.org/*"
-    ],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["*://boards.4chan.org/*"],
-        "js": ["content.js"]
-      }
-    ],
-    "action": {
-      "default_popup": "popup.html"
+  "manifest_version": 3,
+  "name": "4chan Image Saver",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ],
+  "host_permissions": [
+    "*://boards.4chan.org/*",
+    "*://i.4cdn.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://boards.4chan.org/*"],
+      "js": ["content.js"]
     }
+  ],
+  "action": {
+    "default_popup": "popup.html"
   }
+}
