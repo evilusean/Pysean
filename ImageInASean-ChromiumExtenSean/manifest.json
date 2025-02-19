@@ -19,7 +19,7 @@
     {
       "matches": ["*://boards.4chan.org/*"],
       "js": ["content.js"],
-      "run_at": "document_idle"
+      "run_at": "document_end"
     }
   ],
   "action": {
