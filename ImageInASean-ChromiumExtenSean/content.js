@@ -46,16 +46,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+console.log("Content script loaded");
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  console.log("Message received in content script:", request);
+  
   if (request.action === "getImages") {
-    console.log("Content script received getImages message");
     const images = document.querySelectorAll('img[src*=".jpg"], img[src*=".png"]');
     const urls = Array.from(images)
       .map(img => img.src)
       .filter(url => url.startsWith('https://i.4cdn.org/'));
-    console.log("Found URLs:", urls);
+    
+    console.log(`Found ${urls.length} images`);
     sendResponse({ urls: urls });
-    return true;  // Keep the message port open for async response
+    return true;  // Keep the message port open
   }
 });
 
