@@ -1,15 +1,12 @@
 const downloadedFiles = new Set();
-const DOWNLOAD_PATH = '/mnt/sdb4/MEmes/4Chan-Unsorted';
+const DOWNLOAD_PATH = '4Chan-Unsorted'; // Chrome requires relative paths for downloads
 
-// Helper function to check if file exists in download folder
 async function checkFileExists(filename) {
   try {
-    // Check both the Set and the actual folder
     if (downloadedFiles.has(filename)) return true;
     
-    // Check if file exists in the download folder
-    const response = await fetch(`file://${DOWNLOAD_PATH}/${filename}`);
-    return response.ok;
+    // Check the Set only since we can't access the filesystem directly
+    return false;
   } catch (error) {
     console.log(`Error checking file existence: ${error.message}`);
     return false;
@@ -27,7 +24,6 @@ function closeImageTabs() {
       .map(tab => tab.id);
     
     if (imageTabIds.length > 0) {
-      // Close tabs one by one to handle errors gracefully
       imageTabIds.forEach(tabId => {
         chrome.tabs.remove(tabId, () => {
           if (chrome.runtime.lastError) {
@@ -47,12 +43,10 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     let downloadCount = 0;
     const totalDownloads = message.urls.length;
     
-    message.urls.forEach(async url => {
+    message.urls.forEach(url => {
       const filename = url.split('/').pop();
       
-      // Check for duplicates in both Set and folder
-      const fileExists = await checkFileExists(filename);
-      if (fileExists) {
+      if (downloadedFiles.has(filename)) {
         console.log(`Skipping duplicate image: ${filename}`);
         downloadCount++;
         if (downloadCount === totalDownloads) {
