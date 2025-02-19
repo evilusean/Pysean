@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (saveImagesButton) {
     saveImagesButton.addEventListener('click', async () => {
       try {
-        // Get all tabs and find active tab
         const tabs = await chrome.tabs.query({ currentWindow: true });
         const [activeTab] = await chrome.tabs.query({ active: true, currentWindow: true });
         
@@ -13,48 +12,26 @@ document.addEventListener('DOMContentLoaded', () => {
           return;
         }
 
-        // Filter tabs to process
+        // Filter tabs: only those with direct image URLs
         const tabsToProcess = tabs.filter(tab => 
           tab.index >= activeTab.index && 
           tab.url && 
-          tab.url.includes("boards.4chan.org")
+          tab.url.startsWith('https://i.4cdn.org/') &&
+          (tab.url.endsWith('.jpg') || tab.url.endsWith('.png'))
         );
 
-        console.log(`Found ${tabsToProcess.length} tabs to process`);
+        console.log(`Found ${tabsToProcess.length} image tabs to process`);
         
-        // Process each tab
+        // Process each image tab
         for (const tab of tabsToProcess) {
-          console.log(`Processing tab ${tab.id}: ${tab.url}`);
-          
+          console.log(`Processing image tab: ${tab.url}`);
           try {
-            // Ensure content script is injected
-            await chrome.scripting.executeScript({
-              target: { tabId: tab.id },
-              files: ['content.js']
+            const filename = tab.url.split('/').pop();
+            console.log(`Downloading image: ${filename}`);
+            chrome.runtime.sendMessage({
+              action: "downloadImages",
+              urls: [tab.url]  // Send the direct image URL
             });
-            
-            // Get images from tab
-            const response = await new Promise((resolve, reject) => {
-              chrome.tabs.sendMessage(tab.id, { action: "getImages" }, response => {
-                if (chrome.runtime.lastError) {
-                  reject(new Error(chrome.runtime.lastError.message));
-                } else if (response.error) {
-                  reject(new Error(response.error));
-                } else {
-                  resolve(response);
-                }
-              });
-            });
-
-            if (response?.urls?.length > 0) {
-              console.log(`Found ${response.urls.length} images in tab ${tab.id}`);
-              await chrome.runtime.sendMessage({
-                action: "downloadImages",
-                urls: response.urls
-              });
-            } else {
-              console.log(`No images found in tab ${tab.id}`);
-            }
           } catch (error) {
             console.error(`Error processing tab ${tab.id}:`, error.message);
           }
