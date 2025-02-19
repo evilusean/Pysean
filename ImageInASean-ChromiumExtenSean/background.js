@@ -1,17 +1,6 @@
 const downloadedFiles = new Set();
-const DOWNLOAD_PATH = '4Chan-Unsorted'; // Chrome requires relative paths for downloads
-
-async function checkFileExists(filename) {
-  try {
-    if (downloadedFiles.has(filename)) return true;
-    
-    // Check the Set only since we can't access the filesystem directly
-    return false;
-  } catch (error) {
-    console.log(`Error checking file existence: ${error.message}`);
-    return false;
-  }
-}
+const DOWNLOAD_PATH = '4Chan-Unsorted';
+const VALID_EXTENSIONS = ['.jpg', '.png', '.gif', '.webm', '.mp4'];
 
 function closeImageTabs() {
   chrome.tabs.query({ currentWindow: true }, (tabs) => {
@@ -19,7 +8,7 @@ function closeImageTabs() {
       .filter(tab => 
         tab.url && 
         tab.url.startsWith('https://i.4cdn.org/') && 
-        (tab.url.endsWith('.jpg') || tab.url.endsWith('.png'))
+        VALID_EXTENSIONS.some(ext => tab.url.endsWith(ext))
       )
       .map(tab => tab.id);
     
@@ -58,7 +47,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       console.log("Downloading image:", url, "as", filename);
       chrome.downloads.download({
         url: url,
-        filename: `${DOWNLOAD_PATH}/${filename}`,
+        filename: `${DOWNLOAD_PATH}/${filename}`,  // Save to 4Chan-Unsorted subfolder
         conflictAction: 'uniquify'
       }, (downloadId) => {
         if (chrome.runtime.lastError) {
