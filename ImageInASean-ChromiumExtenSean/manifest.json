@@ -4,7 +4,8 @@
   "version": "1.0",
   "permissions": [
     "activeTab",
-    "downloads"
+    "downloads",
+    "tabs"
   ],
   "host_permissions": [
     "*://boards.4chan.org/*",

@@ -9,7 +9,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         filename: `/mnt/sdb4/MEmes/4Chan-Unsorted/${filename}` // Save to the specified folder
       }, (downloadId) => {
         if (chrome.runtime.lastError) {
-          console.error("Download failed:", chrome.runtime.lastError.message);
+          console.error("Download failed:", chrome.runtime.lastError);
         } else {
           console.log("Download started with ID:", downloadId);
         }
