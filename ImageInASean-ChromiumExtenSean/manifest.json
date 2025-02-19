@@ -5,7 +5,8 @@
   "permissions": [
     "activeTab",
     "downloads",
-    "tabs"
+    "tabs",
+    "scripting"
   ],
   "host_permissions": [
     "*://boards.4chan.org/*",
@@ -17,7 +18,8 @@
   "content_scripts": [
     {
       "matches": ["*://boards.4chan.org/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "run_at": "document_end"
     }
   ],
   "action": {
