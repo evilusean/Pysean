@@ -26,23 +26,20 @@ document.addEventListener('DOMContentLoaded', () => {
         for (const tab of tabsToProcess) {
           console.log(`Processing tab ${tab.id}: ${tab.url}`);
           
-          // Inject content script if needed
           try {
+            // Ensure content script is injected
             await chrome.scripting.executeScript({
               target: { tabId: tab.id },
               files: ['content.js']
             });
-          } catch (err) {
-            console.log(`Content script already injected in tab ${tab.id}`);
-          }
-
-          // Get images from tab
-          try {
+            
+            // Get images from tab
             const response = await new Promise((resolve, reject) => {
               chrome.tabs.sendMessage(tab.id, { action: "getImages" }, response => {
                 if (chrome.runtime.lastError) {
-                  console.error(`Tab ${tab.id} error:`, chrome.runtime.lastError);
-                  reject(chrome.runtime.lastError);
+                  reject(new Error(chrome.runtime.lastError.message));
+                } else if (response.error) {
+                  reject(new Error(response.error));
                 } else {
                   resolve(response);
                 }
@@ -51,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (response?.urls?.length > 0) {
               console.log(`Found ${response.urls.length} images in tab ${tab.id}`);
-              chrome.runtime.sendMessage({
+              await chrome.runtime.sendMessage({
                 action: "downloadImages",
                 urls: response.urls
               });
@@ -59,11 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
               console.log(`No images found in tab ${tab.id}`);
             }
           } catch (error) {
-            console.error(`Error processing tab ${tab.id}:`, error);
+            console.error(`Error processing tab ${tab.id}:`, error.message);
           }
         }
       } catch (error) {
-        console.error("Error:", error);
+        console.error("Error:", error.message);
       }
     });
   }
