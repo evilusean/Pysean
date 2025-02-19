@@ -1,15 +1,32 @@
 const downloadedFiles = new Set();
+const DOWNLOAD_PATH = '/mnt/sdb4/MEmes/4Chan-Unsorted';
+
+// Helper function to check if file exists in download folder
+async function checkFileExists(filename) {
+  try {
+    // Check both the Set and the actual folder
+    if (downloadedFiles.has(filename)) return true;
+    
+    // Check if file exists in the download folder
+    const response = await fetch(`file://${DOWNLOAD_PATH}/${filename}`);
+    return response.ok;
+  } catch (error) {
+    console.log(`Error checking file existence: ${error.message}`);
+    return false;
+  }
+}
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === "downloadImages") {
     console.log("Received downloadImages message with URLs:", message.urls);
     const tabsToClose = new Set();
     
-    message.urls.forEach(url => {
+    message.urls.forEach(async url => {
       const filename = url.split('/').pop();
       
-      // Check for duplicates
-      if (downloadedFiles.has(filename)) {
+      // Check for duplicates in both Set and folder
+      const fileExists = await checkFileExists(filename);
+      if (fileExists) {
         console.log(`Skipping duplicate image: ${filename}`);
         if (message.tabId) {
           tabsToClose.add(message.tabId);
@@ -20,7 +37,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       console.log("Downloading image:", url, "as", filename);
       chrome.downloads.download({
         url: url,
-        filename: `4Chan-Unsorted/${filename}`
+        filename: `${DOWNLOAD_PATH}/${filename}`,
+        conflictAction: 'uniquify'
       }, (downloadId) => {
         if (chrome.runtime.lastError) {
           console.error("Download failed:", chrome.runtime.lastError.message);
