@@ -3,8 +3,6 @@ I'm trying to create an extension to change from 'click tab' 'right click image'
 # InstallASean Guide for ImageInASean Chromium 4Chan ExtenSean : </br>
 'git clone https://github.com/evilusean/Pysean/edit/main/ImageInASean-ChromiumExtenSean.git'</br>
 'cd ImageInASean-ChromiumExtenSean'</br>
-
-## Usage :</br>
 Install in Chrome/Chromium</br>
 Open Chrome/Chromium</br>
 Go to 'chrome://extensions/'</br>
@@ -13,6 +11,7 @@ Click "Load unpacked"</br>
 Navigate to the cloned repository folder</br>
 Select the folder and click "Open"</br>
 
+## Usage :</br>
 Open 4chan image links in new tabs</br>
 Click the extension icon</br>
 Click "Save Images" button</br>
