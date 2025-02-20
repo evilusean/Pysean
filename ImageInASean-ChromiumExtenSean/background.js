@@ -1,6 +1,7 @@
 const downloadedFiles = new Set();
 const DOWNLOAD_PATH = '4Chan-Unsorted';
 const VALID_EXTENSIONS = ['.jpg', '.png', '.gif', '.webm', '.mp4'];
+// webm/mp4 doesn't work, future sean problem, I'm happy with this, for now
 
 function closeImageTabs() {
   chrome.tabs.query({ currentWindow: true }, (tabs) => {
