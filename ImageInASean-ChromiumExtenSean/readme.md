@@ -1,6 +1,6 @@
 I'm trying to create an extension to change from 'click tab' 'right click image' 'save as' 'enter' 'close tab' 'next tab' .....repeat x amount of times daily....  and instead change that to 'one click save all images' and keep all the posts open, but save the images in one click so I can save hours, but keep collecting my memes, I am but a humble meme farmer, tending to my own gardens something something voltaire - I wish I made this over a decade ago, would of saved accumulated months 
 
-# InstallASean Guide for ImageInASean Chromium 4Chan Extensean : </br>
+# InstallASean Guide for ImageInASean Chromium 4Chan ExtenSean : </br>
 'git clone https://github.com/evilusean/Pysean/edit/main/ImageInASean-ChromiumExtenSean.git'</br>
 'cd ImageInASean-ChromiumExtenSean'</br>
 
