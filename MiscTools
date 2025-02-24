@@ -615,12 +615,16 @@ PGP(Pretty Good Privacy)
 ECH(Encrypted Client Hello-Encryption):https://support.mozilla.org/en-US/kb/understand-encrypted-client-hello
 OpenSSL
 Bitlocker
-7Zip
+7Zip (encrypt a file, should be zipped twice, then can be sent/uploaded)
 VeraCrypt
 DiskCrypter
+GnuPG (ships with gnu linux)
+LUKS (Linux Unified Key Setup) = Full disk encryption
+Cryptomator = Crypto Vault = FOSS program = works on every OS = vault with cloud storage, get's encrypted before being placed in cloud - encrypt googledrive
 Even the glowies say you should probably be using encryptSean - GlowOps Backdoors are a feature, not a bug : 
 https://www.youtube.com/watch?v=tRATnT577Aw&ab_channel=LowLevel
 https://www.youtube.com/watch?v=Gsr9s0fmJZs&ab_channel=PandaandTheGecko
+Apple Advanced Data ProtectSean vs 'investigatory powers act' UK, the country with no gold, infinite guilts, 5 PM's in 4 years, failed state, to remove End2End encryptSean - Pegasus Software
 
 Meshtastic(Create your own network-No ISP) + End 2 End EncryptSean:
 https://meshtastic.org/
