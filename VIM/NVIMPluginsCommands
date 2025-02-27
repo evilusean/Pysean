@@ -3,6 +3,26 @@ https://nvchad.com/docs/features/
 https://www.youtube.com/watch?v=yW3ovyQCwpw&ab_channel=MentalOutlaw
 https://www.youtube.com/watch?v=Mtgo-nP_r8Y&ab_channel=DreamsofCode
 
+# Github Copilot on NVim :
+https://www.youtube.com/watch?v=B8BoPkga-_E
+https://github.com/CopilotC-Nvim/CopilotChat.nvim
+#create a new lua file in '~/.config/nvim/lua/plugins/copilotchat.lua' with the code from above
+:Lazy sync
+:Lazy load copilot.vim #load new plugin
+:Copilot setup #sign in through browser with code
+:CopilotChat <input>?	#Open chat with optional input
+:CopilotChatOpen	#Open chat window
+:CopilotChatClose	#Close chat window
+:CopilotChatToggle	#Toggle chat window
+:CopilotChatStop	#Stop current output
+:CopilotChatReset	#Reset chat window
+:CopilotChatSave <name>?	#Save chat history
+:CopilotChatLoad <name>?	#Load chat history
+:CopilotChatPrompts	#View/select prompt templates
+:CopilotChatModels	#View/select available models
+:CopilotChatAgents	#View/select available agents
+:CopilotChat<PromptName>	#Use specific prompt template
+
 <Space> + c + h = CheatSheet, shows nvim commands(including the plugin installs)
 Personalize Theme: <space> + t + h
 <space> + v = Vertical split: :VSP
