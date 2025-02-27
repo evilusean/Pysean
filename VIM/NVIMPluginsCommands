@@ -23,6 +23,8 @@ https://github.com/CopilotC-Nvim/CopilotChat.nvim
 :CopilotChatModels	#View/select available models
 :CopilotChatAgents	#View/select available agents
 :CopilotChat<PromptName>	#Use specific prompt template
+$ #when you want to use a certain model from a prompt use '$' and tab to the model you want to use
+'Ctrl' + 'y' #accept a change recomended by copilot
 
 <Space> + c + h = CheatSheet, shows nvim commands(including the plugin installs)
 Personalize Theme: <space> + t + h
