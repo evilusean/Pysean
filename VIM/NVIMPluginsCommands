@@ -9,6 +9,7 @@ https://github.com/CopilotC-Nvim/CopilotChat.nvim
 #create a new lua file in '~/.config/nvim/lua/plugins/copilotchat.lua' with the code from above
 :Lazy sync
 :Lazy load copilot.vim #load new plugin
+:Lazy load CopilotChat.nvim #load this one to open chats, for some reason my new install of nvim needs me to manually load the plugins? 
 :Copilot setup #sign in through browser with code
 :CopilotChat <input>?	#Open chat with optional input
 :CopilotChatOpen	#Open chat window
