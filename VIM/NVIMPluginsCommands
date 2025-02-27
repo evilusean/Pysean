@@ -3,6 +3,8 @@ https://nvchad.com/docs/features/
 https://www.youtube.com/watch?v=yW3ovyQCwpw&ab_channel=MentalOutlaw
 https://www.youtube.com/watch?v=Mtgo-nP_r8Y&ab_channel=DreamsofCode
 
+:Lazy load all #future Sean, if you are having problems with a plugin, it's probably this - forces NVim to load all plugins, which it doesn't do automatically for whatever reason
+
 # Github Copilot on NVim :
 https://www.youtube.com/watch?v=B8BoPkga-_E
 https://github.com/CopilotC-Nvim/CopilotChat.nvim
