@@ -26,6 +26,22 @@ https://github.com/CopilotC-Nvim/CopilotChat.nvim
 $ #when you want to use a certain model from a prompt use '$' and tab to the model you want to use
 'Ctrl' + 'y' #accept a change recomended by copilot
 
+#Copilot Chat Window Hotkeys ('C' = Ctrl) :
+<Tab>	#<Tab>	Trigger/accept completion menu for tokens
+<C-c>	q	#Close the chat window
+<C-l>	<C-l>	#Reset and clear the chat window
+<C-s>	<CR>	#Submit the current prompt
+-	gr	Toggle sticky prompt for line under cursor
+<C-y>	<C-y>	Accept nearest diff (best with COPILOT_GENERATE)
+-	gj	Jump to section of nearest diff
+-	gqa	Add all answers from chat to quickfix list
+-	gqd	Add all diffs from chat to quickfix list
+-	gy	Yank nearest diff to register
+-	gd	Show diff between source and nearest diff
+-	gi	Show info about current chat
+-	gc	Show current chat context
+-	gh	Show help message
+
 <Space> + c + h = CheatSheet, shows nvim commands(including the plugin installs)
 Personalize Theme: <space> + t + h
 <space> + v = Vertical split: :VSP
