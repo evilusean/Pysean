@@ -111,7 +111,7 @@ add drives, 'Edit Mount Options' -> Switch off 'User Session Defaults' -> 'Mount
 Packages :
 sudo pacman -S code #install VScode
 sudo pacman -S chromium 
-sudo pacman -S firefox
+sudo pacman -S firefox #don't use firefox, use librewolf 'yay -S librewolf'
 sudo pacman -S btop
 sudo pacman -S mpd
 https://github.com/evilusean/Pysean/blob/main/MPD%5CNCMPCPP/mpd.conf
@@ -153,6 +153,7 @@ makepkg -si
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
 
+yay -S librewolf
 yay -S anki
 sudo pacman -S mpv #will be required for audio 
 by default, anki will save all progress on the main SSD '~/.local/share/Anki2/' - so if you delete the SSD(as I have, 3 times...) you will lose everything. make sure to 'switch profiles' to an external HD. 
