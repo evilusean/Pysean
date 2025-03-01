@@ -239,3 +239,4 @@ sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils nvidia-settings
 unset GDK_SCALE
 unset QT_SCALE_FACTOR
 prime-run steam
+#in order to fix overwatch 2, install the 80gigs on a slow HD, move the 'shadercache' with a sym link to the SSD, and it should be playable after that
