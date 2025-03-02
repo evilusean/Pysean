@@ -153,7 +153,9 @@ makepkg -si
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
 
+yay -S ungoogled-chromium
 yay -S librewolf
+
 yay -S anki
 sudo pacman -S mpv #will be required for audio 
 by default, anki will save all progress on the main SSD '~/.local/share/Anki2/' - so if you delete the SSD(as I have, 3 times...) you will lose everything. make sure to 'switch profiles' to an external HD. 
