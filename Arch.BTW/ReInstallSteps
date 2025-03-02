@@ -153,6 +153,7 @@ makepkg -si
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
 
+#check these to see if there is a 'bin' version, I know there is one for librewolf, I've been installing ungoogled-chromium for over an hour,builld from scratch Vs 'bin' speeds it up,
 yay -S ungoogled-chromium
 yay -S librewolf
 
