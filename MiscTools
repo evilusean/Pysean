@@ -104,6 +104,9 @@ https://www.youtube.com/watch?v=FNp0TRDG0BQ&ab_channel=MentalOutlaw
 
 Google Adblocker - You Vwill watch zee adz, and you vwill consume zee productz, Google Pushes Unpopular Chrome Update - What to do!(Use Firefox for Youtube):
 https://www.youtube.com/watch?v=M3rGDpCG5FQ&ab_channel=Siriusmart
+LibreWolf - firefox fork with less tracking 'yay -S librewolf' : https://librewolf.net/
+
+WebDev Arena AI Leaderboard : https://web.lmarena.ai/leaderboard
 
 AI ART:
 Stable Diffusion:2 gig Art 'AI'/Machine Learning(offline) can play starcraft
@@ -350,6 +353,9 @@ https://www.readtheirlips.com/
 Project DIGITS supercomputer (3,000$ - Nvidia) - remember when GPU's weren't considered a '"luxury good"'? :
 https://www.nvidia.com/en-us/project-digits/
 https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/ #32GB onboard memory, my current is a 1050 with 2GB, better for AI/editing/everything - step 1) escape step 2) upgrade
+
+AI Chip Design :
+https://www.livescience.com/technology/computing/humans-cannot-really-understand-them-weird-ai-designed-chip-is-unlike-any-other-made-by-humans-and-performs-much-better
 
 Using Python in Excel:
 https://www.youtube.com/watch?v=8ofsE7xiGho&ab_channel=Fireship
@@ -612,12 +618,16 @@ PGP(Pretty Good Privacy)
 ECH(Encrypted Client Hello-Encryption):https://support.mozilla.org/en-US/kb/understand-encrypted-client-hello
 OpenSSL
 Bitlocker
-7Zip
+7Zip (encrypt a file, should be zipped twice, then can be sent/uploaded)
 VeraCrypt
 DiskCrypter
+GnuPG (ships with gnu linux)
+LUKS (Linux Unified Key Setup) = Full disk encryption
+Cryptomator = Crypto Vault = FOSS program = works on every OS = vault with cloud storage, get's encrypted before being placed in cloud - encrypt googledrive
 Even the glowies say you should probably be using encryptSean - GlowOps Backdoors are a feature, not a bug : 
 https://www.youtube.com/watch?v=tRATnT577Aw&ab_channel=LowLevel
 https://www.youtube.com/watch?v=Gsr9s0fmJZs&ab_channel=PandaandTheGecko
+Apple Advanced Data ProtectSean vs 'investigatory powers act' UK, the country with no gold, infinite guilts, 5 PM's in 4 years, failed state, to remove End2End encryptSean - Pegasus Software
 
 Meshtastic(Create your own network-No ISP) + End 2 End EncryptSean:
 https://meshtastic.org/

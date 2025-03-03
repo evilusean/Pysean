@@ -111,7 +111,7 @@ add drives, 'Edit Mount Options' -> Switch off 'User Session Defaults' -> 'Mount
 Packages :
 sudo pacman -S code #install VScode
 sudo pacman -S chromium 
-sudo pacman -S firefox
+sudo pacman -S firefox #don't use firefox, use librewolf 'yay -S librewolf'
 sudo pacman -S btop
 sudo pacman -S mpd
 https://github.com/evilusean/Pysean/blob/main/MPD%5CNCMPCPP/mpd.conf
@@ -152,6 +152,10 @@ makepkg -si
 
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
+
+#check these to see if there is a 'bin' version, I know there is one for librewolf, I've been installing ungoogled-chromium for over an hour,builld from scratch Vs 'bin' speeds it up,
+yay -S ungoogled-chromium
+yay -S librewolf
 
 yay -S anki
 sudo pacman -S mpv #will be required for audio 
@@ -238,3 +242,4 @@ sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils nvidia-settings
 unset GDK_SCALE
 unset QT_SCALE_FACTOR
 prime-run steam
+#in order to fix overwatch 2, install the 80gigs on a slow HD, move the 'shadercache' with a sym link to the SSD, and it should be playable after that

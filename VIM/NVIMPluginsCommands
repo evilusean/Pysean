@@ -3,6 +3,47 @@ https://nvchad.com/docs/features/
 https://www.youtube.com/watch?v=yW3ovyQCwpw&ab_channel=MentalOutlaw
 https://www.youtube.com/watch?v=Mtgo-nP_r8Y&ab_channel=DreamsofCode
 
+:Lazy load all #future Sean, if you are having problems with a plugin, it's probably this - forces NVim to load all plugins, which it doesn't do automatically for whatever reason
+
+# Github Copilot on NVim :
+https://www.youtube.com/watch?v=B8BoPkga-_E
+https://github.com/CopilotC-Nvim/CopilotChat.nvim
+#create a new lua file in '~/.config/nvim/lua/plugins/copilotchat.lua' with the code from above
+:Lazy sync
+:Lazy load copilot.vim #load new plugin
+:Lazy load CopilotChat.nvim #load this one to open chats, for some reason my new install of nvim needs me to manually load the plugins? 
+:Copilot setup #sign in through browser with code
+:CopilotChat <input>?	#Open chat with optional input
+:CopilotChatOpen	#Open chat window
+:CopilotChatClose	#Close chat window
+:CopilotChatToggle	#Toggle chat window
+:CopilotChatStop	#Stop current output
+:CopilotChatReset	#Reset chat window
+:CopilotChatSave <name>?	#Save chat history
+:CopilotChatLoad <name>?	#Load chat history
+:CopilotChatPrompts	#View/select prompt templates
+:CopilotChatModels	#View/select available models
+:CopilotChatAgents	#View/select available agents
+:CopilotChat<PromptName>	#Use specific prompt template
+$ #when you want to use a certain model from a prompt use '$' and tab to the model you want to use
+'Ctrl' + 'y' #accept a change recomended by copilot
+
+#Copilot Chat Window Hotkeys ('C' = Ctrl) :
+<Tab>	#<Tab>	Trigger/accept completion menu for tokens
+<C-c>	q	#Close the chat window
+<C-l>	<C-l>	#Reset and clear the chat window
+<C-s>	<CR>	#Submit the current prompt
+-	gr	Toggle sticky prompt for line under cursor
+<C-y>	<C-y>	Accept nearest diff (best with COPILOT_GENERATE)
+-	gj	Jump to section of nearest diff
+-	gqa	Add all answers from chat to quickfix list
+-	gqd	Add all diffs from chat to quickfix list
+-	gy	Yank nearest diff to register
+-	gd	Show diff between source and nearest diff
+-	gi	Show info about current chat
+-	gc	Show current chat context
+-	gh	Show help message
+
 <Space> + c + h = CheatSheet, shows nvim commands(including the plugin installs)
 Personalize Theme: <space> + t + h
 <space> + v = Vertical split: :VSP
