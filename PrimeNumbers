@@ -3,6 +3,7 @@ Calculates prime numbers, which are numbers that are only evenly
 divisible by one and themselves. They are used in a variety of practical
 applications.
 More info at: https://en.wikipedia.org/wiki/Prime_number
+Sort of related, but not, prime numbers python code using radius distance and radians as measurement, cool spiral/rays aeffect : https://www.youtube.com/watch?v=EK32jo7i5LQ
 """
 
 import math, sys
