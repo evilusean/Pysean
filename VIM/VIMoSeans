@@ -1,4 +1,12 @@
 Recomended Cheat Sheet : https://hamwaves.com/vim.tutorial/en/index.html
+Most Used(/forgotten) :
+  'yy' = yank current line (will select the current line)
+  'p' = paste the yanked line
+  'v' + 'hjkl' = select what text you want (then press 'y' to yank)
+  '"+y' = add the selected text to the system clipboard 
+  '"+yy' = add the current selected line to the system keyboard
+  '"+p' = paste from the system keyboard
+
 Motion Commands : Are shortcuts triggered in Normal mode that allow you to quickly move around your document with preceision
   '<#>g' = go to line number <#>
   'w' = go to start of next word
