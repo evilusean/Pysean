@@ -6,6 +6,7 @@ Most Used(/forgotten) :
   '"+y' = add the selected text to the system clipboard 
   '"+yy' = add the current selected line to the system keyboard
   '"+p' = paste from the system keyboard
+  'shift' + 'insert'('0' by the arrows) = paste from the keyboard, another way
 
 Motion Commands : Are shortcuts triggered in Normal mode that allow you to quickly move around your document with preceision
   '<#>g' = go to line number <#>
