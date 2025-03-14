@@ -7,6 +7,7 @@ import json
 Created a script to pull out all the data I will need to make Kanji Drop 
 from the Remembering the Kanji Anki deck. - Heisig's RTK 6th Edition, Found at :
 Remembering_the_Kanji_1_6th_Edition_2200_Kanji.apkg
+https://ankiweb.net/shared/info/1654787298
 Since '.apkg' files are similar to SQLite databases,
  I will extract the data from the database and save it to a JSON file.
 I want future Sean to create another game that flashes the kanji on the screen briefly
