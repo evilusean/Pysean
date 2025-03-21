@@ -201,6 +201,10 @@ rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
 
+Gimp 3.0 :
+sudo pacman -S flatpak
+flatpak install --user https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+
 Change Settings :
 Breeze - Dark - RED #FF0000
 Rice KDE (MPD/NCMPCPP configs)
