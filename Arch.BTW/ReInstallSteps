@@ -204,6 +204,9 @@ rm -rf ~/.local/share/nvim
 Gimp 3.0 :
 sudo pacman -S flatpak
 flatpak install --user https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+flatpak list #I couldn't find it in the program search or run in terminal, just got released, the pacman version was 2.1, future Sean, just use pacman so it can be found in terminal/programs
+flatpak run org.gimp.GIMP #will run gimp, temporary fix until pacman works
+flatpak uninstall org.gimp.GIMP #will uninstall, this is for future Sean after pacman get's updated
 
 Change Settings :
 Breeze - Dark - RED #FF0000
