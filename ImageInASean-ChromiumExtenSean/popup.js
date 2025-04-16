@@ -15,44 +15,23 @@ document.addEventListener('DOMContentLoaded', () => {
         // Valid extensions for images
         const validExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webm', '.mp4'];
         
-        // Regular expression patterns for matching valid image URLs
-        const validPatterns = [
-          /^https?:\/\/i\.4cdn\.org\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i,
-          /^https?:\/\/nerv\.8kun\.top\/file_store\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i,
-          /^https?:\/\/media\.8kun\.top\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i,
-          /^https?:\/\/.+\.8kun\.top\/file_store\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i
-        ];
-        
         // Filter tabs: only those with direct image URLs from 4chan or 8kun
         const tabsToProcess = tabs.filter(tab => {
-          // Check if URL exists
-          if (!tab.url) return false;
+          if (!tab.url || tab.index < activeTab.index) return false;
           
-          // Check if tab index is valid
-          if (tab.index < activeTab.index) return false;
+          // Check for 4chan image URLs
+          const is4ChanImage = tab.url.startsWith('https://i.4cdn.org/') && 
+                               validExtensions.some(ext => tab.url.toLowerCase().endsWith(ext));
           
-          // Use regex patterns for precise matching
-          const matchesPattern = validPatterns.some(pattern => pattern.test(tab.url));
-          if (matchesPattern) {
-            console.log(`Tab URL matches pattern: ${tab.url}`);
-            return true;
-          }
+          // Check for 8kun image URLs
+          const is8KunImage = tab.url.includes('8kun.top') && 
+                              tab.url.includes('file_store') && 
+                              validExtensions.some(ext => tab.url.toLowerCase().endsWith(ext));
           
-          // Fallback to the old method for backward compatibility
-          const is4ChanImage = tab.url.startsWith('https://i.4cdn.org/');
-          const is8KunImage = (
-            tab.url.includes('8kun.top/') || 
-            tab.url.includes('nerv.8kun.top/') || 
-            tab.url.includes('file_store/')
-          );
-          const hasValidExtension = validExtensions.some(ext => 
-            tab.url.toLowerCase().endsWith(ext)
-          );
+          // Log for debugging
+          console.log(`Tab URL: ${tab.url}, is4Chan: ${is4ChanImage}, is8kun: ${is8KunImage}`);
           
-          // Log each tab evaluation for debugging
-          console.log(`Tab URL: ${tab.url}, is4ChanImage: ${is4ChanImage}, is8KunImage: ${is8KunImage}, hasValidExtension: ${hasValidExtension}`);
-          
-          return (is4ChanImage || is8KunImage) && hasValidExtension;
+          return is4ChanImage || is8KunImage;
         });
 
         console.log(`Found ${tabsToProcess.length} image tabs to process:`, tabsToProcess.map(t => t.url));

@@ -12,119 +12,133 @@ const VALID_PATTERNS = [
   /^https?:\/\/.+\.8kun\.top\/file_store\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i
 ];
 
-function closeImageTabs() {
-  console.log("Attempting to close image tabs...");
-  chrome.tabs.query({ currentWindow: true }, (tabs) => {
-    const imageTabIds = tabs
-      .filter(tab => {
-        const isValid = tab.url && isValidImageUrl(tab.url);
-        console.log(`Tab URL: ${tab.url}, isValid: ${isValid}`);
-        return isValid;
-      })
-      .map(tab => tab.id);
-    
-    console.log(`Found ${imageTabIds.length} image tabs to close:`, imageTabIds);
-    
-    if (imageTabIds.length > 0) {
-      imageTabIds.forEach(tabId => {
-        chrome.tabs.remove(tabId, () => {
-          if (chrome.runtime.lastError) {
-            console.log(`Tab ${tabId} already closed or doesn't exist: ${chrome.runtime.lastError.message}`);
-          } else {
-            console.log(`Closed tab ${tabId}`);
-          }
-        });
-      });
-    }
-  });
-}
-
+// Use a direct approach to check 8kun URLs
 function isValidImageUrl(url) {
   if (!url) return false;
   
-  // Use regex patterns for more precise matching
-  const matchesPattern = VALID_PATTERNS.some(pattern => pattern.test(url));
-  console.log(`URL: ${url}, matchesPattern: ${matchesPattern}`);
-  
-  if (matchesPattern) {
+  // Check for 4chan URLs
+  if (url.startsWith('https://i.4cdn.org/') && 
+      VALID_EXTENSIONS.some(ext => url.toLowerCase().endsWith(ext))) {
     return true;
   }
   
-  // Fallback to the old method if pattern matching fails
-  const hasValidHost = VALID_HOSTS.some(host => url.includes(host));
-  const hasValidExtension = VALID_EXTENSIONS.some(ext => url.toLowerCase().endsWith(ext));
+  // Check for 8kun/file_store URLs with detailed logging
+  if (url.includes('8kun.top') && url.includes('file_store') && 
+      VALID_EXTENSIONS.some(ext => url.toLowerCase().endsWith(ext))) {
+    console.log(`Found valid 8kun image URL: ${url}`);
+    return true;
+  }
   
-  console.log(`URL: ${url}, hasValidHost: ${hasValidHost}, hasValidExtension: ${hasValidExtension}`);
-  
-  return hasValidHost && hasValidExtension;
+  return false;
 }
 
+// Function to close all image tabs
+function closeImageTabs() {
+  console.log("Attempting to close all image tabs...");
+  
+  chrome.tabs.query({ currentWindow: true }, (tabs) => {
+    // Find all tabs with image URLs
+    const imageTabs = tabs.filter(tab => tab.url && isValidImageUrl(tab.url));
+    console.log(`Found ${imageTabs.length} image tabs to close:`, imageTabs.map(t => t.url));
+    
+    // Close each image tab
+    imageTabs.forEach(tab => {
+      chrome.tabs.remove(tab.id, () => {
+        if (chrome.runtime.lastError) {
+          console.error(`Error closing tab ${tab.id}:`, chrome.runtime.lastError);
+        } else {
+          console.log(`Successfully closed tab ${tab.id}`);
+        }
+      });
+    });
+  });
+}
+
+// Process download message
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === "downloadImages") {
-    console.log("Received downloadImages message with URLs:", message.urls);
+    console.log("Received downloadImages message:", message);
+    
+    // Extract the URLs and tab ID
+    const urls = message.urls || [];
+    const tabId = message.tabId;
+    
+    console.log(`Processing ${urls.length} URLs, tab ID: ${tabId}`);
+    
+    if (urls.length === 0) {
+      console.log("No URLs to download");
+      return true;
+    }
+    
     let downloadCount = 0;
-    const totalDownloads = message.urls.length;
     
-    // If a specific tab ID is provided, store it for closing later
-    const tabIdsToClose = message.tabId ? [message.tabId] : [];
-    
-    message.urls.forEach(url => {
+    // Download each URL
+    urls.forEach(url => {
       const filename = url.split('/').pop();
       
+      // Skip duplicates
       if (downloadedFiles.has(filename)) {
-        console.log(`Skipping duplicate image: ${filename}`);
+        console.log(`Skipping duplicate: ${filename}`);
         downloadCount++;
-        if (downloadCount === totalDownloads) {
+        
+        // If all downloads are complete, close tabs
+        if (downloadCount === urls.length) {
           setTimeout(() => {
-            if (tabIdsToClose.length > 0) {
-              closeSpecificTabs(tabIdsToClose);
+            if (tabId) {
+              console.log(`Closing specific tab: ${tabId}`);
+              chrome.tabs.remove(tabId, () => {
+                if (chrome.runtime.lastError) {
+                  console.error(`Error closing tab ${tabId}:`, chrome.runtime.lastError);
+                } else {
+                  console.log(`Successfully closed tab ${tabId}`);
+                }
+              });
             } else {
               closeImageTabs();
             }
-          }, 1000);
+          }, 1500); // Longer delay to ensure download completes
         }
         return;
       }
       
-      console.log("Downloading image:", url, "as", filename);
+      // Download the file
+      console.log(`Downloading: ${url} as ${filename}`);
       chrome.downloads.download({
         url: url,
-        filename: `${DOWNLOAD_PATH}/${filename}`,  // Save to 4Chan-Unsorted subfolder
+        filename: `${DOWNLOAD_PATH}/${filename}`,
         conflictAction: 'uniquify'
       }, (downloadId) => {
+        // Check for errors
         if (chrome.runtime.lastError) {
-          console.error("Download failed:", chrome.runtime.lastError.message);
+          console.error(`Download failed:`, chrome.runtime.lastError);
         } else {
-          console.log("Download started with ID:", downloadId);
+          console.log(`Download started with ID: ${downloadId}`);
           downloadedFiles.add(filename);
         }
         
+        // Increment counter and check if we're done
         downloadCount++;
-        if (downloadCount === totalDownloads) {
-          // Wait a bit longer before closing tabs
+        console.log(`Completed ${downloadCount} of ${urls.length} downloads`);
+        
+        // If all downloads are complete, close tabs
+        if (downloadCount === urls.length) {
           setTimeout(() => {
-            if (tabIdsToClose.length > 0) {
-              closeSpecificTabs(tabIdsToClose);
+            if (tabId) {
+              console.log(`Closing specific tab: ${tabId}`);
+              chrome.tabs.remove(tabId, () => {
+                if (chrome.runtime.lastError) {
+                  console.error(`Error closing tab ${tabId}:`, chrome.runtime.lastError);
+                } else {
+                  console.log(`Successfully closed tab ${tabId}`);
+                }
+              });
             } else {
               closeImageTabs();
             }
-          }, 1000);
+          }, 1500); // Longer delay to ensure download completes
         }
       });
     });
   }
   return true;
 });
-
-function closeSpecificTabs(tabIds) {
-  console.log(`Closing specific tabs: ${tabIds}`);
-  tabIds.forEach(tabId => {
-    chrome.tabs.remove(tabId, () => {
-      if (chrome.runtime.lastError) {
-        console.log(`Tab ${tabId} already closed or doesn't exist: ${chrome.runtime.lastError.message}`);
-      } else {
-        console.log(`Closed tab ${tabId}`);
-      }
-    });
-  });
-}
