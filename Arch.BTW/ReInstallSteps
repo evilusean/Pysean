@@ -201,6 +201,14 @@ rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
 
+Gimp 3.0 :
+sudo pacman -S gimp
+sudo pacman -S flatpak #temporary work around past sean did to mess around with the new software, future Sean, if you see this delete below lines, this is suboptimal, programs can't find it
+flatpak install --user https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+flatpak list #I couldn't find it in the program search or run in terminal, just got released, the pacman version was 2.1, future Sean, just use pacman so it can be found in terminal/programs
+flatpak run org.gimp.GIMP #will run gimp, temporary fix until pacman works
+flatpak uninstall org.gimp.GIMP #will uninstall, this is for future Sean after pacman get's updated
+
 Change Settings :
 Breeze - Dark - RED #FF0000
 Rice KDE (MPD/NCMPCPP configs)
