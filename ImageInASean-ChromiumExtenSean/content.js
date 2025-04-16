@@ -18,9 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
           console.log("Active tab index:", activeIndex);
 
           // Filter tabs whose index is equal to or greater than the active tab index,
-          // and also ensure they are 4chan boards pages.
+          // and also ensure they are 4chan or 8kun boards pages.
           const tabsToProcess = tabs.filter(tab => {
-            return tab.index >= activeIndex && tab.url && tab.url.includes("boards.4chan.org");
+            return tab.index >= activeIndex && 
+                  tab.url && 
+                  (tab.url.includes("boards.4chan.org") || 
+                   tab.url.includes("8kun.top"));
           });
           console.log("Tabs to process:", tabsToProcess);
 
@@ -53,10 +56,14 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   
   if (request.action === "getImages") {
     try {
-      const images = document.querySelectorAll('img[src*=".jpg"], img[src*=".png"]');
+      const images = document.querySelectorAll('img[src*=".jpg"], img[src*=".png"], img[src*=".jpeg"], img[src*=".gif"]');
       const urls = Array.from(images)
         .map(img => img.src)
-        .filter(url => url.startsWith('https://i.4cdn.org/'));
+        .filter(url => 
+          url.startsWith('https://i.4cdn.org/') || 
+          url.includes('8kun.top/') ||
+          url.includes('file_store/')
+        );
       
       console.log(`Found ${urls.length} images`);
       sendResponse({ urls: urls });

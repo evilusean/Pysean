@@ -12,12 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
           return;
         }
 
-        // Filter tabs: only those with direct image URLs
+        // Valid extensions for images
+        const validExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webm', '.mp4'];
+        
+        // Filter tabs: only those with direct image URLs from 4chan or 8kun
         const tabsToProcess = tabs.filter(tab => 
           tab.index >= activeTab.index && 
           tab.url && 
-          tab.url.startsWith('https://i.4cdn.org/') &&
-          (tab.url.endsWith('.jpg') || tab.url.endsWith('.png'))
+          ((tab.url.startsWith('https://i.4cdn.org/') || 
+            tab.url.includes('8kun.top/') ||
+            tab.url.includes('file_store/')) &&
+           validExtensions.some(ext => tab.url.toLowerCase().endsWith(ext)))
         );
 
         console.log(`Found ${tabsToProcess.length} image tabs to process`);

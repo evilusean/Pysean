@@ -1,15 +1,17 @@
 const downloadedFiles = new Set();
 const DOWNLOAD_PATH = '4Chan-Unsorted';
-const VALID_EXTENSIONS = ['.jpg', '.png', '.gif', '.webm', '.mp4'];
+const VALID_EXTENSIONS = ['.jpg', '.png', '.gif', '.webm', '.mp4', '.jpeg'];
 // webm/mp4 doesn't work, future sean problem, I'm happy with this, for now
+
+// Valid image hosts
+const VALID_HOSTS = ['i.4cdn.org', 'nerv.8kun.top', 'media.8kun.top', 'file_store', '8kun.top'];
 
 function closeImageTabs() {
   chrome.tabs.query({ currentWindow: true }, (tabs) => {
     const imageTabIds = tabs
       .filter(tab => 
         tab.url && 
-        tab.url.startsWith('https://i.4cdn.org/') && 
-        VALID_EXTENSIONS.some(ext => tab.url.endsWith(ext))
+        (isValidImageUrl(tab.url))
       )
       .map(tab => tab.id);
     
@@ -25,6 +27,14 @@ function closeImageTabs() {
       });
     }
   });
+}
+
+function isValidImageUrl(url) {
+  // Check if URL is from 4chan or 8kun and has a valid extension
+  return (
+    (VALID_HOSTS.some(host => url.includes(host)) && 
+    VALID_EXTENSIONS.some(ext => url.toLowerCase().endsWith(ext)))
+  );
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
