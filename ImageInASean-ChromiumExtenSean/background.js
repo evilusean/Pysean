@@ -3,8 +3,14 @@ const DOWNLOAD_PATH = '4Chan-Unsorted';
 const VALID_EXTENSIONS = ['.jpg', '.png', '.gif', '.webm', '.mp4', '.jpeg'];
 // webm/mp4 doesn't work, future sean problem, I'm happy with this, for now
 
-// Valid image hosts
-const VALID_HOSTS = ['i.4cdn.org', 'nerv.8kun.top', 'media.8kun.top', 'file_store', '8kun.top'];
+// Valid image hosts and patterns
+const VALID_HOSTS = ['i.4cdn.org'];
+const VALID_PATTERNS = [
+  /^https?:\/\/i\.4cdn\.org\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i,
+  /^https?:\/\/nerv\.8kun\.top\/file_store\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i,
+  /^https?:\/\/media\.8kun\.top\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i,
+  /^https?:\/\/.+\.8kun\.top\/file_store\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i
+];
 
 function closeImageTabs() {
   console.log("Attempting to close image tabs...");
@@ -34,7 +40,17 @@ function closeImageTabs() {
 }
 
 function isValidImageUrl(url) {
-  // Check if URL is from 4chan or 8kun and has a valid extension
+  if (!url) return false;
+  
+  // Use regex patterns for more precise matching
+  const matchesPattern = VALID_PATTERNS.some(pattern => pattern.test(url));
+  console.log(`URL: ${url}, matchesPattern: ${matchesPattern}`);
+  
+  if (matchesPattern) {
+    return true;
+  }
+  
+  // Fallback to the old method if pattern matching fails
   const hasValidHost = VALID_HOSTS.some(host => url.includes(host));
   const hasValidExtension = VALID_EXTENSIONS.some(ext => url.toLowerCase().endsWith(ext));
   
@@ -59,7 +75,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         console.log(`Skipping duplicate image: ${filename}`);
         downloadCount++;
         if (downloadCount === totalDownloads) {
-          setTimeout(closeImageTabs, 500);
+          setTimeout(() => {
+            if (tabIdsToClose.length > 0) {
+              closeSpecificTabs(tabIdsToClose);
+            } else {
+              closeImageTabs();
+            }
+          }, 1000);
         }
         return;
       }
@@ -79,25 +101,30 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         
         downloadCount++;
         if (downloadCount === totalDownloads) {
-          // If we have specific tab IDs to close, close them directly
-          if (tabIdsToClose.length > 0) {
-            console.log(`Closing specific tabs: ${tabIdsToClose}`);
-            tabIdsToClose.forEach(tabId => {
-              chrome.tabs.remove(tabId, () => {
-                if (chrome.runtime.lastError) {
-                  console.log(`Tab ${tabId} already closed or doesn't exist: ${chrome.runtime.lastError.message}`);
-                } else {
-                  console.log(`Closed tab ${tabId}`);
-                }
-              });
-            });
-          } else {
-            // Otherwise use the general closing function
-            setTimeout(closeImageTabs, 500);
-          }
+          // Wait a bit longer before closing tabs
+          setTimeout(() => {
+            if (tabIdsToClose.length > 0) {
+              closeSpecificTabs(tabIdsToClose);
+            } else {
+              closeImageTabs();
+            }
+          }, 1000);
         }
       });
     });
   }
   return true;
 });
+
+function closeSpecificTabs(tabIds) {
+  console.log(`Closing specific tabs: ${tabIds}`);
+  tabIds.forEach(tabId => {
+    chrome.tabs.remove(tabId, () => {
+      if (chrome.runtime.lastError) {
+        console.log(`Tab ${tabId} already closed or doesn't exist: ${chrome.runtime.lastError.message}`);
+      } else {
+        console.log(`Closed tab ${tabId}`);
+      }
+    });
+  });
+}
