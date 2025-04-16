@@ -7,19 +7,23 @@ const VALID_EXTENSIONS = ['.jpg', '.png', '.gif', '.webm', '.mp4', '.jpeg'];
 const VALID_HOSTS = ['i.4cdn.org', 'nerv.8kun.top', 'media.8kun.top', 'file_store', '8kun.top'];
 
 function closeImageTabs() {
+  console.log("Attempting to close image tabs...");
   chrome.tabs.query({ currentWindow: true }, (tabs) => {
     const imageTabIds = tabs
-      .filter(tab => 
-        tab.url && 
-        (isValidImageUrl(tab.url))
-      )
+      .filter(tab => {
+        const isValid = tab.url && isValidImageUrl(tab.url);
+        console.log(`Tab URL: ${tab.url}, isValid: ${isValid}`);
+        return isValid;
+      })
       .map(tab => tab.id);
+    
+    console.log(`Found ${imageTabIds.length} image tabs to close:`, imageTabIds);
     
     if (imageTabIds.length > 0) {
       imageTabIds.forEach(tabId => {
         chrome.tabs.remove(tabId, () => {
           if (chrome.runtime.lastError) {
-            console.log(`Tab ${tabId} already closed or doesn't exist`);
+            console.log(`Tab ${tabId} already closed or doesn't exist: ${chrome.runtime.lastError.message}`);
           } else {
             console.log(`Closed tab ${tabId}`);
           }
@@ -31,10 +35,12 @@ function closeImageTabs() {
 
 function isValidImageUrl(url) {
   // Check if URL is from 4chan or 8kun and has a valid extension
-  return (
-    (VALID_HOSTS.some(host => url.includes(host)) && 
-    VALID_EXTENSIONS.some(ext => url.toLowerCase().endsWith(ext)))
-  );
+  const hasValidHost = VALID_HOSTS.some(host => url.includes(host));
+  const hasValidExtension = VALID_EXTENSIONS.some(ext => url.toLowerCase().endsWith(ext));
+  
+  console.log(`URL: ${url}, hasValidHost: ${hasValidHost}, hasValidExtension: ${hasValidExtension}`);
+  
+  return hasValidHost && hasValidExtension;
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
@@ -42,6 +48,9 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     console.log("Received downloadImages message with URLs:", message.urls);
     let downloadCount = 0;
     const totalDownloads = message.urls.length;
+    
+    // If a specific tab ID is provided, store it for closing later
+    const tabIdsToClose = message.tabId ? [message.tabId] : [];
     
     message.urls.forEach(url => {
       const filename = url.split('/').pop();
@@ -70,7 +79,22 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         
         downloadCount++;
         if (downloadCount === totalDownloads) {
-          setTimeout(closeImageTabs, 500);
+          // If we have specific tab IDs to close, close them directly
+          if (tabIdsToClose.length > 0) {
+            console.log(`Closing specific tabs: ${tabIdsToClose}`);
+            tabIdsToClose.forEach(tabId => {
+              chrome.tabs.remove(tabId, () => {
+                if (chrome.runtime.lastError) {
+                  console.log(`Tab ${tabId} already closed or doesn't exist: ${chrome.runtime.lastError.message}`);
+                } else {
+                  console.log(`Closed tab ${tabId}`);
+                }
+              });
+            });
+          } else {
+            // Otherwise use the general closing function
+            setTimeout(closeImageTabs, 500);
+          }
         }
       });
     });
