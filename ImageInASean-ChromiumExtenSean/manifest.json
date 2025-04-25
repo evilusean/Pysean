@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "4chan & 8kun Image Saver",
+  "name": "4chan Image Saver",
   "version": "1.0",
   "permissions": [
     "activeTab",
