@@ -13,7 +13,8 @@ https://www.youtube.com/watch?v=VDFRpjQVaME
 
 Future Sean Problem/Project = Build an ASCII GUI that can view a browser/desktop/whatever, take a picture, convert to ascii, and then display in terminal - video to ASCII 
 
-
+I want a way to transfer my current opened tabs from chromium on my arch linux machine and email them to my apple laptop so I can play them in the background,
+  is there a way to save them as a CSV with this format 'youtube_video_title, youtube_URL' - best way is either a python script or chromium extension
 
 
 
