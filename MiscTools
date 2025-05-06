@@ -311,6 +311,7 @@ Replit : https://replit.com/
 LMStudio.ai : https://lmstudio.ai/
 Claude unsandboxed(can use your PC locally, takes a screenshot, webscraping, click, open files, etc) : https://www.youtube.com/watch?v=DVRg0daTads&ab_channel=Fireship
   Claude Docker Sandbox: https://github.com/anthropics/anthropic-quickstarts/blob/main/computer-use-demo/README.md
+  Claude Pre-Query System Prompts (allegedly, >1000 lines of preamble before telling user how to make an apple pie or w/e) leaks : https://github.com/asgeirtj/system_prompts_leaks/blob/main/claude.txt
 Github Spark - Editor, similar to Cursor: https://githubnext.com/projects/github-spark
 HackerGPT : https://github.com/xibangura/HackerGPT
 Cline(Self Debug Code - Claude GPT) : https://github.com/cline/cline
