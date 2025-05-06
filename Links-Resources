@@ -1,4 +1,6 @@
 I can't believe that one of my oldest repos doesn't have this for saving future project ideas/links
+When you let the electronics raise your kids :
+https://www.youtube.com/watch?v=MXNnWWaOqo4
 
 TWT - How to Build a Discord Bot With Python - Full Tutorial 2025+ (41 minutes) :
 https://www.youtube.com/watch?v=YD_N6Ffoojw
@@ -9,9 +11,10 @@ https://www.youtube.com/watch?v=wqBlmAWqa6A
 College Calculus – Full Course with Python Code (2025 - 7 hours) :
 https://www.youtube.com/watch?v=VDFRpjQVaME
 
+Future Sean Problem/Project = Build an ASCII GUI that can view a browser/desktop/whatever, take a picture, convert to ascii, and then display in terminal - video to ASCII 
 
-
-
+I want a way to transfer my current opened tabs from chromium on my arch linux machine and email them to my apple laptop so I can play them in the background,
+  is there a way to save them as a CSV with this format 'youtube_video_title, youtube_URL' - best way is either a python script or chromium extension
 
 
 
