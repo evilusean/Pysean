@@ -30,8 +30,10 @@ pip install yt-dlp
 Run the script without arguments to use interactive mode:
 
 ```bash
-python substack_audio_downloader.py
+substack_video2audio.py
 ```
+
+Or, Right click the script in VSCode 'Run Python File in Terminal'
 
 The script will prompt you for:
 - The Substack URL containing the video
