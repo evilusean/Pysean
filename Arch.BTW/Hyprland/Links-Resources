@@ -2,3 +2,4 @@ DotFile/Install Script for my first attempt at using Hyprland :
 https://github.com/end-4/dots-hyprland
 - To fix the lock screen for this config - go to the '.config/hypr/hypridle.conf' and change the MS there
 - To remove the weeb sidebar stuff '.config/ags/config.js' or '.config/ags/services' 
+- Future Sean can also add his own tools to the siderbar in that config.js
