@@ -22,3 +22,6 @@ wvkbd #launches an onscreen wayland keybord that works with hyprland and arch
 
 sudo pacman -S fcitx5 fcitx5-mozc fcitx5-gtk fcitx5-qt fcitx5-configtool
 yay -S wvkbd
+
+Future Sean : If you ever get stuck on Japanese keys and can't type, or enter passwords, or save nvim, It's :
+'CTRL' + 'Space' hotkey for fcitxl
