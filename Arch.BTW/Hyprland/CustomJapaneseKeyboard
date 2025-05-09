@@ -16,3 +16,6 @@ Using Shift to toggle between hiragana and katakana characters
 - Ok, I originally tried to rewrite the keyboard from english to Japanese after finding the JS files, 
   I wasted like 3 hours doing that, trying to write my own custom Japanese keyboard - but I found an easier way
 
+Use :
+fcitx5 #can change keyboard layout, swap between japanese and english with a hotkey
+wvkbd #launches an onscreen wayland keybord that works with hyprland and arch
