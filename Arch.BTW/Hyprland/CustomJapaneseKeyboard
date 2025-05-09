@@ -1,0 +1,15 @@
+'./config/ags/modules/onscreenkeyboard' 
+A Japanese keyboard layout in your on-screen keyboard (accessible by clicking the layout button)
+System-wide Japanese input support through IBus
+The ability to switch between US and Japanese layouts using Alt+Shift
+To use the Japanese input:
+Press Alt+Shift to switch to Japanese input
+Type in romaji (e.g., "konnichiwa")
+Press Space to convert to hiragana
+Press Space again to cycle through conversion options (hiragana → katakana → kanji)
+Press Enter to confirm the conversion
+You can also use the on-screen keyboard's Japanese layout by:
+Opening the on-screen keyboard
+Clicking the layout button (which shows "US" or "DE")
+Selecting "JP" to switch to the Japanese layout
+Using Shift to toggle between hiragana and katakana characters
