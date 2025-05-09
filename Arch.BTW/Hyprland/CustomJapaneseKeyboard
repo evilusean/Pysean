@@ -19,3 +19,6 @@ Using Shift to toggle between hiragana and katakana characters
 Use :
 fcitx5 #can change keyboard layout, swap between japanese and english with a hotkey
 wvkbd #launches an onscreen wayland keybord that works with hyprland and arch
+
+sudo pacman -S fcitx5 fcitx5-mozc fcitx5-gtk fcitx5-qt fcitx5-configtool
+yay -S wvkbd
