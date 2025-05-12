@@ -23,6 +23,9 @@ OCR - create an OCR that can read book titles on a shelf - I don't want to type 
 
 OpenCV - Create another OpenCV project for a security system, doesn't have to be phenomenal, when I escape canada, I can finally afford to build cool stuff, 
   I want to have a security camera set up with facial id + tracking + timestamps + notificASeans - just get it working, I haven't built an OpenCV Project yet
+  I'm paranoid enough to not want a third party app have access to me walking around in my gitch - gitching the matrix - basically I don't want it phoning home, so I build my own
+  Will probably need a frontend/backend streaming(websockets? idk) - eventually want it to scale multiple cameras with commands that can be sent to a smart(ish) house to interact 
+  can add more functionality like save last 24 hours - and then clip parts of it for future sean - or rewind, or whatever - how to store? idk, future sean problem 
 
 OpenCV - Create a bot for whatever, been using the same hearthstone bot for years, could upgrade it to git gud and not just randomly throw down cards
 
