@@ -16,7 +16,8 @@ Future Sean Problem/Project = Build an ASCII GUI that can view a browser/desktop
 I want a way to transfer my current opened tabs from chromium on my arch linux machine and email them to my apple laptop so I can play them in the background,
   is there a way to save them as a CSV with this format 'youtube_video_title, youtube_URL' - best way is either a python script or chromium extension
 
-
+Build a way to beat the ATS, create a python script that will take the job description, and all the buzzwords, add them to 0-1 point white font at the bottom of resume
+  I have to rewrite my resume anyways, might as well do it right - play stupid games, win stupid prizes 
 
 
 
