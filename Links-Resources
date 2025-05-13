@@ -17,9 +17,16 @@ I want a way to transfer my current opened tabs from chromium on my arch linux m
   is there a way to save them as a CSV with this format 'youtube_video_title, youtube_URL' - best way is either a python script or chromium extension
 
 Build a way to beat the ATS, create a python script that will take the job description, and all the buzzwords, add them to 0-1 point white font at the bottom of resume
-  I have to rewrite my resume anyways, might as well do it right - play stupid games, win stupid prizes - 
+  I have to rewrite my resume anyways, might as well do it right - play stupid games, win stupid prizes - Mine their job description and that pRedditor post for their magic special words
   https://www.reddit.com/r/codingbootcamp/comments/1jhitoc/recruiter_accidently_emailed_me_her_secret/ 
-
+  'University Graduates with a Bachelors or Masters of Computer Science from a top CS program' 'Massachusetts Institute of Technology (MIT)' 'Stanford University' 'Carnegie Mellon University' 
+  'University of California, Berkeley (UC Berkeley)' 'California Institute of Technology (CalTech)' 'University of Illinois Urbana-Champaign (UIUC)' 'University of Waterloo' '4.0 GPA' 
+  '4-10 Years Software development experience' 'Expertise in Modern JavaScript (TypeScript, NodeJS, ReactJS), and sometimes modern tech like Kotlin, and knowledge of AI/LLMs'
+  'Longevity in Roles(No Job hoppers) LOok for an average of 2 years + per role' 
+  'Significant experience at notable startups, such as those backed by Y combinator, Sequoia Caoutak, etc (our clients will not hire anyone who worked at a large companies only, even
+    if the large company was GOogle or Facebook if large companies are all they have, they will be rekected)'
+  'Diversity hires are a BONUS (e.g. female, black, etc)'  'Bonus points for founding engineer or founder experience'
+  'US Citizens. US Permanent Residents (green card holders), and canadian Citizens or oermanent residents, absolutely no visa sponsorships'
 
 OCR - create an OCR that can read book titles on a shelf - I don't want to type out 100's of lines manually - my books aren't coming with me when I Step 1) Escape canada
 
