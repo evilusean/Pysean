@@ -4,14 +4,11 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 import os
+import glob
 
 class BookScanner:
     def __init__(self):
-        # Initialize the camera
-        self.camera = cv2.VideoCapture(0)
-        # Set camera resolution
-        self.camera.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-        self.camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+        pass
         
     def preprocess_image(self, image):
         # Convert to grayscale
@@ -41,37 +38,49 @@ class BookScanner:
         
         return title, author
 
-    def capture_and_process(self):
-        print("Press SPACE to capture an image, ESC to quit")
+    def process_image(self, image_path):
+        # Read the image
+        image = cv2.imread(image_path)
+        if image is None:
+            print(f"Failed to read image: {image_path}")
+            return None
+            
+        # Extract text from the image
+        text = self.extract_text(image)
+        title, author = self.process_text(text)
         
+        if title:
+            return {
+                'Title': title,
+                'Author': author,
+                'Image': os.path.basename(image_path),
+                'Date_Scanned': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            }
+        return None
+
+    def process_directory(self, directory_path):
+        # Get all image files in the directory
+        image_extensions = ('*.jpg', '*.jpeg', '*.png', '*.bmp')
+        image_files = []
+        for ext in image_extensions:
+            image_files.extend(glob.glob(os.path.join(directory_path, ext)))
+        
+        if not image_files:
+            print(f"No image files found in {directory_path}")
+            return
+        
+        print(f"Found {len(image_files)} images to process")
         books_data = []
         
-        while True:
-            ret, frame = self.camera.read()
-            if not ret:
-                print("Failed to grab frame")
-                break
-                
-            # Display the frame
-            cv2.imshow('Book Scanner', frame)
-            
-            key = cv2.waitKey(1)
-            if key == 27:  # ESC key
-                break
-            elif key == 32:  # SPACE key
-                # Extract text from the captured frame
-                text = self.extract_text(frame)
-                title, author = self.process_text(text)
-                
-                if title:
-                    books_data.append({
-                        'Title': title,
-                        'Author': author,
-                        'Date_Scanned': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                    })
-                    print(f"Captured: {title} by {author}")
-                else:
-                    print("No text detected. Try adjusting the camera position.")
+        # Process each image
+        for image_path in image_files:
+            print(f"\nProcessing: {image_path}")
+            result = self.process_image(image_path)
+            if result:
+                books_data.append(result)
+                print(f"Captured: {result['Title']} by {result['Author']}")
+            else:
+                print("No text detected in this image")
 
         # Save to CSV
         if books_data:
@@ -79,11 +88,19 @@ class BookScanner:
             filename = f'books_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
             df.to_csv(filename, index=False)
             print(f"\nSaved {len(books_data)} books to {filename}")
-        
-        # Cleanup
-        self.camera.release()
-        cv2.destroyAllWindows()
+        else:
+            print("\nNo books were successfully processed")
 
 if __name__ == "__main__":
     scanner = BookScanner()
-    scanner.capture_and_process() 
+    
+    # Get the directory path from user input
+    directory_path = input("Enter the directory path containing book images: ").strip()
+    
+    # Remove quotes if present
+    directory_path = directory_path.strip('"').strip("'")
+    
+    if os.path.isdir(directory_path):
+        scanner.process_directory(directory_path)
+    else:
+        print(f"Invalid directory path: {directory_path}") 

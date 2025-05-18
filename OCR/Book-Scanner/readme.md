@@ -1,6 +1,6 @@
 # Book Scanner OCR
 
-A Python application that uses OCR to scan book titles and authors from your bookshelf and save them to a CSV file.
+A Python application that uses OCR to scan book titles and authors from images of book spines and save them to a CSV file.
 
 ## Prerequisites
 
@@ -25,26 +25,31 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Run the script:
+1. Take photos of your book spines and save them in a directory
+2. Run the script:
 ```bash
 python book_scanner.py
 ```
+3. When prompted, enter the full path to the directory containing your book images
+4. The script will process all images and save the results to a CSV file
 
-2. Point your camera at a book spine
-3. Press SPACE to capture and process the image
-4. Press ESC to quit and save the results to a CSV file
+## Supported Image Formats
+- JPG/JPEG
+- PNG
+- BMP
 
 ## Tips for Best Results
 
-- Ensure good lighting conditions
+- Ensure good lighting conditions when taking photos
 - Hold the camera steady and parallel to the book spine
 - Make sure the text is clearly visible and not blurry
-- Adjust the camera distance to get the best focus
 - The first line detected will be considered the title, and the second line will be considered the author
+- Try to capture one book spine per image for best results
 
 ## Output
 
 The program will create a CSV file named `books_YYYYMMDD_HHMMSS.csv` containing:
 - Title
 - Author
-- Date and time of scanning
+- Image filename
+- Date and time of processing
