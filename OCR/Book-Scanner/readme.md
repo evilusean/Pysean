@@ -25,13 +25,34 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Basic Usage
+
 1. Take photos of your bookshelves (you can include multiple books in each photo)
-2. Run the script:
+2. Run the script in one of these ways:
+
 ```bash
+# Method 1: Specify directory as argument
+python book_scanner.py /path/to/images
+
+# Method 2: Let the script prompt for directory
 python book_scanner.py
 ```
-3. When prompted, enter the full path to the directory containing your book images
-4. The script will process all images and save the results to a text file
+
+### Command Line Options
+
+The script supports the following command-line options:
+
+```bash
+# Force 90-degree rotation of images (useful for sideways book spines)
+python book_scanner.py -r /path/to/images
+
+# Show help message
+python book_scanner.py --help
+```
+
+Options:
+- `-r, --rotate`: Force 90-degree rotation of images
+- `--help`: Show help message and exit
 
 ## Supported Image Formats
 - JPG/JPEG
@@ -46,6 +67,7 @@ python book_scanner.py
 - Make sure there's some contrast between book spines
 - The script will automatically detect and process each book spine
 - Each book will be saved in the format "Title - Author"
+- If your book spines are sideways, use the `-r` flag to rotate the images
 
 ## Output
 
@@ -60,3 +82,11 @@ Book Title - Author Name
 2. It processes each detected spine to extract the text
 3. It attempts to separate title and author using common indicators (by, -, etc.)
 4. All books are saved to a single text file, one per line
+
+## Troubleshooting
+
+If the script isn't detecting book spines correctly:
+1. Try using the `-r` flag if your book spines are sideways
+2. Ensure good lighting and contrast in your photos
+3. Make sure the book spines are clearly visible and not obscured
+4. Try taking photos of smaller sections of your bookshelf if detection is poor

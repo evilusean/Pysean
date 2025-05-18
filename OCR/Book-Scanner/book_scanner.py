@@ -289,4 +289,4 @@ def main():
         print(f"Invalid directory path: {directory_path}")
 
 if __name__ == "__main__":
-    main() 
+    main()
