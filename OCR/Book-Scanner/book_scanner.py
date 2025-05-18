@@ -5,39 +5,88 @@ import pandas as pd
 from datetime import datetime
 import os
 import glob
+from PIL import Image
+import re
 
 class BookScanner:
     def __init__(self):
-        pass
+        # Configure Tesseract parameters
+        self.custom_config = r'--oem 3 --psm 6 -c tessedit_char_whitelist="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:!?()[]{}-\'\" "'
         
     def preprocess_image(self, image):
         # Convert to grayscale
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        # Apply thresholding to get better text
-        _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-        # Apply dilation to connect text components
-        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3,3))
-        dilated = cv2.dilate(thresh, kernel, iterations=1)
-        return dilated
+        
+        # Apply adaptive thresholding
+        thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, 
+                                     cv2.THRESH_BINARY, 11, 2)
+        
+        # Denoise
+        denoised = cv2.fastNlMeansDenoising(thresh)
+        
+        # Increase contrast
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
+        enhanced = clahe.apply(gray)
+        
+        # Combine the results
+        final = cv2.bitwise_and(denoised, enhanced)
+        
+        return final
 
-    def detect_book_spines(self, image):
+    def detect_rotation(self, image):
         # Convert to grayscale
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         
         # Apply edge detection
         edges = cv2.Canny(gray, 50, 150)
         
+        # Find lines
+        lines = cv2.HoughLinesP(edges, 1, np.pi/180, threshold=100, minLineLength=100, maxLineGap=10)
+        
+        if lines is not None:
+            angles = []
+            for line in lines:
+                x1, y1, x2, y2 = line[0]
+                if x2 - x1 != 0:  # Avoid division by zero
+                    angle = np.arctan((y2 - y1) / (x2 - x1)) * 180 / np.pi
+                    angles.append(angle)
+            
+            if angles:
+                # Use the most common angle
+                angle = np.median(angles)
+                return angle
+        
+        return 0
+
+    def detect_book_spines(self, image):
+        # Convert to grayscale
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        
+        # Apply edge detection with adjusted parameters
+        edges = cv2.Canny(gray, 30, 200)
+        
+        # Dilate edges to connect components
+        kernel = np.ones((3,3), np.uint8)
+        dilated = cv2.dilate(edges, kernel, iterations=1)
+        
         # Find contours
-        contours, _ = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        contours, _ = cv2.findContours(dilated, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         
         # Filter contours based on aspect ratio and size
         book_spines = []
+        min_height = image.shape[0] * 0.2  # Reduced minimum height
+        max_width = image.shape[1] * 0.3   # Maximum width
+        
         for contour in contours:
             x, y, w, h = cv2.boundingRect(contour)
             aspect_ratio = h / w if w > 0 else 0
             
-            # Book spines are typically tall and narrow
-            if aspect_ratio > 2 and h > image.shape[0] * 0.3:  # Adjust these thresholds as needed
+            # More lenient conditions for book spines
+            if (aspect_ratio > 1.5 and  # Reduced aspect ratio requirement
+                h > min_height and 
+                w < max_width and
+                w > 10 and  # Minimum width
+                h > 50):    # Minimum height
                 book_spines.append((x, y, w, h))
         
         # Sort book spines from left to right
@@ -45,42 +94,63 @@ class BookScanner:
         
         return book_spines
 
+    def clean_text(self, text):
+        # Remove special characters and extra whitespace
+        text = re.sub(r'[^\w\s.,;:!?()\[\]{}-\'\" ]', '', text)
+        text = re.sub(r'\s+', ' ', text)
+        text = text.strip()
+        return text
+
     def extract_text(self, image):
         # Preprocess the image
         processed_image = self.preprocess_image(image)
-        # Extract text using Tesseract with custom configuration
-        custom_config = r'--oem 3 --psm 6'  # Assume uniform text block
-        text = pytesseract.image_to_string(processed_image, config=custom_config)
-        return text
+        
+        # Try different PSM modes
+        psm_modes = [6, 4, 3]  # Try different page segmentation modes
+        best_text = ""
+        
+        for psm in psm_modes:
+            config = f'--oem 3 --psm {psm} {self.custom_config}'
+            text = pytesseract.image_to_string(processed_image, config=config)
+            text = self.clean_text(text)
+            
+            if len(text) > len(best_text):
+                best_text = text
+        
+        return best_text
 
     def process_text(self, text):
-        # Split text into lines and clean up
-        lines = [line.strip() for line in text.split('\n') if line.strip()]
-        
-        if not lines:
+        if not text:
             return None
             
-        # Try to identify title and author
-        # Look for common author indicators
-        author_indicators = ['by', 'BY', 'By', '-', '–', '—']
+        # Clean the text
+        text = self.clean_text(text)
         
-        # Combine all lines into one string
-        full_text = ' '.join(lines)
+        # Try to identify title and author
+        author_indicators = ['by', 'BY', 'By', '-', '–', '—']
         
         # Try to split on author indicators
         for indicator in author_indicators:
-            if indicator in full_text:
-                parts = full_text.split(indicator, 1)
+            if indicator in text:
+                parts = text.split(indicator, 1)
                 if len(parts) == 2:
                     title = parts[0].strip()
                     author = parts[1].strip()
-                    return f"{title} - {author}"
+                    if title and author:  # Only return if both parts are non-empty
+                        return f"{title} - {author}"
         
-        # If no author indicator found, use first line as title and second as author
-        if len(lines) >= 2:
-            return f"{lines[0]} - {lines[1]}"
-        else:
-            return lines[0]
+        # If no author indicator found, try to split on the last comma or period
+        for separator in [',', '.']:
+            if separator in text:
+                parts = text.rsplit(separator, 1)
+                if len(parts) == 2:
+                    title = parts[0].strip()
+                    author = parts[1].strip()
+                    if title and author:  # Only return if both parts are non-empty
+                        return f"{title} - {author}"
+        
+        # If all else fails, return the cleaned text
+        return text if len(text) > 3 else None
 
     def process_image(self, image_path):
         # Read the image
@@ -88,6 +158,14 @@ class BookScanner:
         if image is None:
             print(f"Failed to read image: {image_path}")
             return []
+            
+        # Detect and correct rotation
+        angle = self.detect_rotation(image)
+        if abs(angle) > 5:  # Only rotate if angle is significant
+            height, width = image.shape[:2]
+            center = (width // 2, height // 2)
+            rotation_matrix = cv2.getRotationMatrix2D(center, angle, 1.0)
+            image = cv2.warpAffine(image, rotation_matrix, (width, height))
             
         # Detect book spines
         book_spines = self.detect_book_spines(image)
@@ -101,8 +179,13 @@ class BookScanner:
         
         # Process each book spine
         for i, (x, y, w, h) in enumerate(book_spines):
-            # Extract the book spine region
-            book_region = image[y:y+h, x:x+w]
+            # Extract the book spine region with padding
+            padding = 5
+            x1 = max(0, x - padding)
+            y1 = max(0, y - padding)
+            x2 = min(image.shape[1], x + w + padding)
+            y2 = min(image.shape[0], y + h + padding)
+            book_region = image[y1:y2, x1:x2]
             
             # Extract text from the book spine
             text = self.extract_text(book_region)
