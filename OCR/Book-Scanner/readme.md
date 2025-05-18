@@ -1,6 +1,6 @@
 # Book Scanner OCR
 
-A Python application that uses OCR to scan book titles and authors from images of book spines and save them to a CSV file.
+A Python application that uses OCR to scan multiple book titles and authors from a single image of a bookshelf and save them to a text file.
 
 ## Prerequisites
 
@@ -25,13 +25,13 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Take photos of your book spines and save them in a directory
+1. Take photos of your bookshelves (you can include multiple books in each photo)
 2. Run the script:
 ```bash
 python book_scanner.py
 ```
 3. When prompted, enter the full path to the directory containing your book images
-4. The script will process all images and save the results to a CSV file
+4. The script will process all images and save the results to a text file
 
 ## Supported Image Formats
 - JPG/JPEG
@@ -40,16 +40,23 @@ python book_scanner.py
 
 ## Tips for Best Results
 
-- Ensure good lighting conditions when taking photos
-- Hold the camera steady and parallel to the book spine
-- Make sure the text is clearly visible and not blurry
-- The first line detected will be considered the title, and the second line will be considered the author
-- Try to capture one book spine per image for best results
+- Take photos of your entire bookshelf or a section of it
+- Ensure good lighting conditions
+- Try to capture the books straight-on, with spines clearly visible
+- Make sure there's some contrast between book spines
+- The script will automatically detect and process each book spine
+- Each book will be saved in the format "Title - Author"
 
 ## Output
 
-The program will create a CSV file named `books_YYYYMMDD_HHMMSS.csv` containing:
-- Title
-- Author
-- Image filename
-- Date and time of processing
+The program will create a text file named `books_YYYYMMDD_HHMMSS.txt` containing one book per line in the format:
+```
+Book Title - Author Name
+```
+
+## How It Works
+
+1. The script detects individual book spines in each image using edge detection
+2. It processes each detected spine to extract the text
+3. It attempts to separate title and author using common indicators (by, -, etc.)
+4. All books are saved to a single text file, one per line

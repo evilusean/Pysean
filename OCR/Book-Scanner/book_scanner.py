@@ -20,43 +20,99 @@ class BookScanner:
         dilated = cv2.dilate(thresh, kernel, iterations=1)
         return dilated
 
+    def detect_book_spines(self, image):
+        # Convert to grayscale
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        
+        # Apply edge detection
+        edges = cv2.Canny(gray, 50, 150)
+        
+        # Find contours
+        contours, _ = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        
+        # Filter contours based on aspect ratio and size
+        book_spines = []
+        for contour in contours:
+            x, y, w, h = cv2.boundingRect(contour)
+            aspect_ratio = h / w if w > 0 else 0
+            
+            # Book spines are typically tall and narrow
+            if aspect_ratio > 2 and h > image.shape[0] * 0.3:  # Adjust these thresholds as needed
+                book_spines.append((x, y, w, h))
+        
+        # Sort book spines from left to right
+        book_spines.sort(key=lambda x: x[0])
+        
+        return book_spines
+
     def extract_text(self, image):
         # Preprocess the image
         processed_image = self.preprocess_image(image)
-        # Extract text using Tesseract
-        text = pytesseract.image_to_string(processed_image)
+        # Extract text using Tesseract with custom configuration
+        custom_config = r'--oem 3 --psm 6'  # Assume uniform text block
+        text = pytesseract.image_to_string(processed_image, config=custom_config)
         return text
 
     def process_text(self, text):
         # Split text into lines and clean up
         lines = [line.strip() for line in text.split('\n') if line.strip()]
         
+        if not lines:
+            return None
+            
         # Try to identify title and author
-        # This is a simple heuristic - you might need to adjust based on your books
-        title = lines[0] if lines else ""
-        author = lines[1] if len(lines) > 1 else ""
+        # Look for common author indicators
+        author_indicators = ['by', 'BY', 'By', '-', '–', '—']
         
-        return title, author
+        # Combine all lines into one string
+        full_text = ' '.join(lines)
+        
+        # Try to split on author indicators
+        for indicator in author_indicators:
+            if indicator in full_text:
+                parts = full_text.split(indicator, 1)
+                if len(parts) == 2:
+                    title = parts[0].strip()
+                    author = parts[1].strip()
+                    return f"{title} - {author}"
+        
+        # If no author indicator found, use first line as title and second as author
+        if len(lines) >= 2:
+            return f"{lines[0]} - {lines[1]}"
+        else:
+            return lines[0]
 
     def process_image(self, image_path):
         # Read the image
         image = cv2.imread(image_path)
         if image is None:
             print(f"Failed to read image: {image_path}")
-            return None
+            return []
             
-        # Extract text from the image
-        text = self.extract_text(image)
-        title, author = self.process_text(text)
+        # Detect book spines
+        book_spines = self.detect_book_spines(image)
         
-        if title:
-            return {
-                'Title': title,
-                'Author': author,
-                'Image': os.path.basename(image_path),
-                'Date_Scanned': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            }
-        return None
+        if not book_spines:
+            print(f"No book spines detected in {image_path}")
+            return []
+            
+        print(f"Found {len(book_spines)} potential book spines")
+        books = []
+        
+        # Process each book spine
+        for i, (x, y, w, h) in enumerate(book_spines):
+            # Extract the book spine region
+            book_region = image[y:y+h, x:x+w]
+            
+            # Extract text from the book spine
+            text = self.extract_text(book_region)
+            result = self.process_text(text)
+            
+            if result:
+                books.append(result)
+                print(f"Processed book {i+1}: {result}")
+            
+        return books
 
     def process_directory(self, directory_path):
         # Get all image files in the directory
@@ -70,24 +126,21 @@ class BookScanner:
             return
         
         print(f"Found {len(image_files)} images to process")
-        books_data = []
+        all_books = []
         
         # Process each image
         for image_path in image_files:
             print(f"\nProcessing: {image_path}")
-            result = self.process_image(image_path)
-            if result:
-                books_data.append(result)
-                print(f"Captured: {result['Title']} by {result['Author']}")
-            else:
-                print("No text detected in this image")
+            books = self.process_image(image_path)
+            all_books.extend(books)
 
-        # Save to CSV
-        if books_data:
-            df = pd.DataFrame(books_data)
-            filename = f'books_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
-            df.to_csv(filename, index=False)
-            print(f"\nSaved {len(books_data)} books to {filename}")
+        # Save to text file
+        if all_books:
+            filename = f'books_{datetime.now().strftime("%Y%m%d_%H%M%S")}.txt'
+            with open(filename, 'w', encoding='utf-8') as f:
+                for book in all_books:
+                    f.write(f"{book}\n")
+            print(f"\nSaved {len(all_books)} books to {filename}")
         else:
             print("\nNo books were successfully processed")
 
