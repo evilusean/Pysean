@@ -102,8 +102,9 @@ def extract_anki_db(apkg_path, start_range=None, end_range=None):
     return kanji_data
 
 def main():
-    # Get the apkg file path
-    apkg_file = input("Enter the path to your .apkg file: ")
+    # Hardcoded path to the .apkg file
+    apkg_file = "/home/ArchSean/Downloads/books/Wanikani_Ultimate_3_Tokyo_Drift.apkg"
+    
     
     # Get the range
     range_input = input("Enter the range (e.g., '1-100' or press Enter for all): ")
