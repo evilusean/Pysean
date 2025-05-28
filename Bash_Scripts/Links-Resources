@@ -1,5 +1,13 @@
 Bash Commands ('date', 'cal', 'df -h','ls -lh', 'du -h', 'ps', 'man ps', 'ps -axc | less' or 'ps | grep <process', 'pidof chrome', 'pgrep', 'top', 'ip addr' 'ping') :  
 https://www.youtube.com/watch?v=Gl4DKyicKKg
 
+37 INSANE Linux Commands you NEED to Know in 2025  (ncdu, duf, ripgrep, mosh, lshw, mtr,fd,fzf,ranger,zoxide or z,exa,glances,iotop,stat,dstack,watch,
+  ,progress,dig,dog, tcpdump,tshark,termshark,lsof,ipcalc,wormhole,systemd-analyze blame,systemd-analyze critical-chain,ps,procs,lazydocker,rsync,
+  rm,shred,moreutils,ts,errno,ifdata,vidir,vip,unp,jq,taskwarrior,asciinema or asc,fabric,ollama) : 
+https://www.youtube.com/watch?v=6P-vjgPx9ww
+
+FS - 100+ Linux Things you Need to Know :
+https://www.youtube.com/watch?v=LKCVKw9CzFo
+
 Create a bookmarking script that saves locally and to mongodb/supabase (in case future Sean has to reinstall Arch(btw) again) :
 https://www.youtube.com/watch?v=d_11QaTlf1I
