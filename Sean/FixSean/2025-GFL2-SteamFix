@@ -1,0 +1,103 @@
+Attempted to install a new game to learn Japanese, kept crashing on phone, spent a few hours on steam and got it working, many steps though using GE-proton and webview2
+
+Part 1: Install Necessary Tools
+
+Install git, base-devel, wine, winetricks:
+
+Bash
+
+sudo pacman -S --needed git base-devel wine winetricks
+Install yay (AUR Helper) if you don't have it:
+
+Bash
+
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+Install protonup-qt using yay:
+
+Bash
+
+yay -S protonup-qt
+Install protontricks using yay:
+
+Bash
+
+yay -S protontricks
+Part 2: Setup GE-Proton for GFL2
+
+Launch ProtonUp-Qt: (From your applications menu or protonup-qt in terminal)
+
+Click "Add version".
+Select "GE-Proton" as the release type.
+Choose the latest GE-Proton version from the list (e.g., GE-Proton9-27).
+Click "Install".
+Close ProtonUp-Qt after installation.
+Restart Steam.
+
+Configure GFL2 in Steam:
+
+In Steam Library, right-click Girls' Frontline 2: Exilium > Properties.
+Go to Compatibility. Check "Force the use of a specific Steam Play compatibility tool" and select the GE-Proton version you just installed.
+Go to General. In "Launch Options", add:
+UMU_ID=0 %command%
+Close properties.
+Part 3: Install & Configure WebView2 (Crucial for Launcher)
+
+Before starting this part, ensure Steam is CLOSED COMPLETELY!
+
+Get your GFL2 Proton Prefix Path:
+
+The path will be: /home/YOUR_USERNAME/.steam/steam/steamapps/compatdata/3308670/pfx
+For commands, it's useful to set it as a variable (replace YOUR_USERNAME and 3308670 if different):
+Bash
+
+GFL2_PREFIX_PATH="/home/YOUR_USERNAME/.steam/steam/steamapps/compatdata/3308670/pfx"
+Update winetricks: (Important for webview2 verb detection)
+
+Bash
+
+sudo winetricks --self-update
+Install WebView2 Runtime (Choose ONE method - try A first):
+
+Method A: Using winetricks webview2 (Preferred if it works):
+
+Bash
+
+WINEPREFIX="$GFL2_PREFIX_PATH" winetricks webview2
+Follow any prompts in the terminal or pop-up windows.
+If you get "unknown arg webview2", this method failed. Proceed to Method B.
+Method B: Manual Installation of Evergreen WebView2 Runtime (Fallback if Method A fails):
+
+Download the Evergreen Standalone Installer (x64) from the official Microsoft WebView2 Runtime website. Save it (e.g., in ~/Downloads).
+Open terminal and cd to the directory where you saved the .exe:
+Bash
+
+cd ~/Downloads
+Run the installer within the GFL2 prefix (replace MicrosoftEdgeWebView2RuntimeInstallerX64.exe with your actual downloaded filename):
+Bash
+
+WINEPREFIX="$GFL2_PREFIX_PATH" wine ./MicrosoftEdgeWebView2RuntimeInstallerX64.exe
+Follow the graphical installer prompts. Ensure it completes successfully.
+Configure WebView2 in Winecfg (CRITICAL!):
+
+Launch protontricks (select GFL2, then "Select the default wineprefix").
+Choose "Run winecfg".
+Go to the "Applications" tab.
+Click "Add application...".
+Navigate to and select the WebView2 executable within your GFL2 prefix's drive_c:
+Option 1 (most common after successful install): $GFL2_PREFIX_PATH/drive_c/Program Files (x86)/Microsoft/EdgeWebView/Application/<version_number>/msedgewebview2.exe (Replace <version_number> with the actual folder, e.g., 109.0.1518.78).
+Option 2 (if msedgewebview2.exe is not found): $GFL2_PREFIX_PATH/drive_c/Program Files (x86)/Microsoft/EdgeUpdate/MicrosoftEdgeUpdate.exe
+With the correct executable highlighted in the list, change its specific "Windows Version" dropdown (at the bottom) to "Windows 7".
+Click Apply, then OK. Close winecfg.
+Apply renderer=gdi setting:
+
+Launch protontricks (select GFL2, then "Select the default wineprefix").
+Choose "Change settings" (or "Run winetricks" then "Change settings").
+Check the renderer=gdi option.
+Click OK.
+Part 4: Launch Girls' Frontline 2
+
+Restart Steam.
+Launch Girls' Frontline 2: Exilium from your Steam library.
