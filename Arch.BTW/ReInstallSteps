@@ -64,6 +64,10 @@ usermod -aG wheel ArchSean
 usermod -aG sudo ArchSean
 ArchSean ALL=(ALL)       ALL
 
+Hyprland Install Script : 
+https://github.com/end-4/dots-hyprland
+bash <(curl -s "https://end-4.github.io/dots-hyprland-wiki/setup.sh")
+
 Step 5 : Install Graphics
 https://github.com/evilusean/Pysean/blob/main/Sean/FixSean/NVIDIDA
 Use Network Manager, Sign in to WIFI.
