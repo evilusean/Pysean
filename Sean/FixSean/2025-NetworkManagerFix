@@ -1,0 +1,51 @@
+Internet was interittantly bad, did a bunch of work last night to fix it, I think it's good now, saving what I did for future Sean or in case I need to undo anything
+
+Brief Description and Summary of the wpa_supplicant Issue for Notes:
+What is wpa_supplicant?
+wpa_supplicant is a crucial daemon (a background program) on Linux systems that handles Wi-Fi security protocols like WPA, WPA2, and WPA3. It's responsible for the authentication process when your device connects to a secure Wi-Fi network, ensuring your data is encrypted and secure. Think of it as the "security guard" for your Wi-Fi connections.
+The Issue: Conflict with NetworkManager
+The problem arises when you have two independent entities trying to manage the same Wi-Fi interface simultaneously.
+* NetworkManager is a high-level network management service. It aims to simplify network setup and roaming, and it often uses wpa_supplicant as a backend to handle the low-level Wi-Fi authentication.
+* If wpa_supplicant is also running as a separate, enabled systemd service (i.e., wpa_supplicant.service is active and independently configured), it can directly conflict with NetworkManager.
+This conflict can lead to:
+* Frequent disconnections: Both services fight for control of the Wi-Fi adapter.
+* Difficulty connecting: The interface might get stuck in an "activating" or "disconnected" state.
+* Unexpected behavior: Network settings might not persist or act erratically.
+Summary for Notes:
+"WPA Supplicant is the Wi-Fi security daemon. When using NetworkManager, it should be managed by NetworkManager, not as a separate, enabled systemd service. An independent wpa_supplicant.service can cause conflicts, leading to Wi-Fi disconnects and instability. The fix involves ensuring NetworkManager is the sole manager of Wi-Fi interfaces by stopping, disabling, and masking the standalone wpa_supplicant.service."
+
+Steps to Fix the wpa_supplicant Issue:
+Here are the precise steps to ensure NetworkManager is the sole manager of wpa_supplicant and prevent conflicts:
+Goal: Ensure NetworkManager controls wpa_supplicant and that no independent wpa_supplicant.service is running.
+Step 1: Check the Current Status of wpa_supplicant
+Open your terminal and run:
+Bash
+
+systemctl status wpa_supplicant.service
+What to look for in the output:
+* If you see Active: active (running) and the output indicates it's being managed by NetworkManager (e.g., "Started WPA supplicant daemon.", "wpa_supplicant.service - WPA supplicant (managed by NetworkManager)"), then it's likely not the source of conflict, and you don't need to proceed with disabling/masking it. NetworkManager is using it correctly.
+* If you see Active: active (running) but there's no mention of NetworkManager, or it seems to be running independently, then this is the conflict you need to resolve. Proceed to Step 2.
+* If you see Active: inactive (dead) or Loaded: masked, then wpa_supplicant is not independently running, and this isn't your issue. You can stop here regarding wpa_supplicant and move on to other NetworkManager troubleshooting steps (like Wi-Fi power saving, etc.).
+Step 2: Stop, Disable, and Mask the Conflicting wpa_supplicant.service
+ONLY perform this step if you identified an independently running wpa_supplicant.service in Step 1.
+These commands ensure that the standalone wpa_supplicant service is stopped immediately and prevented from starting again, even if other services try to pull it in.
+Bash
+
+sudo systemctl stop wpa_supplicant.service
+sudo systemctl disable wpa_supplicant.service
+sudo systemctl mask wpa_supplicant.service
+* sudo systemctl stop wpa_supplicant.service: This command immediately terminates any running instance of the wpa_supplicant service.
+* sudo systemctl disable wpa_supplicant.service: This command removes the symlinks that would cause the service to start automatically during boot.
+* sudo systemctl mask wpa_supplicant.service: This is a stronger form of disabling. It creates a symlink from the service unit file to /dev/null. This prevents any other service from starting wpa_supplicant.service as a dependency, ensuring NetworkManager has full, exclusive control.
+Step 3: Restart NetworkManager
+After making changes to wpa_supplicant, restart NetworkManager to ensure it picks up the correct state and manages your Wi-Fi interface properly.
+Bash
+
+sudo systemctl restart NetworkManager.service
+Step 4: Verify NetworkManager is Now in Control
+After restarting, you can re-run the status check for wpa_supplicant:
+Bash
+
+systemctl status wpa_supplicant.service
+You should now see Active: inactive (dead) or Loaded: masked. This confirms that the independent service is no longer running. NetworkManager will internally start and manage wpa_supplicant processes as needed for your Wi-Fi connections, but not as a separate systemd service.
+Important Note: If you ever wanted to revert and use wpa_supplicant directly again (without NetworkManager), you would need to sudo systemctl unmask wpa_supplicant.service before you could enable or start it again. However, for a user running Hyprland with NetworkManager, masking it is generally the correct approach for stability.
