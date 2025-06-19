@@ -133,8 +133,8 @@ add drives, 'Edit Mount Options' -> Switch off 'User Session Defaults' -> 'Mount
 Packages :
 sudo pacman -S code #install VScode
 sudo pacman -S chromium # use below 2, better than chromium
-yay -S ungoogled-chromium
-yay -S librewolf
+yay -S ungoogled-chromium-bin
+yay -S librewolf-bin
 sudo pacman -S firefox #don't use firefox, use librewolf 'yay -S librewolf'
 sudo pacman -S btop
 sudo pacman -S mpd
@@ -178,8 +178,8 @@ Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
 
 #check these to see if there is a 'bin' version, I know there is one for librewolf, I've been installing ungoogled-chromium for over an hour,builld from scratch Vs 'bin' speeds it up,
-yay -S ungoogled-chromium
-yay -S librewolf
+yay -S ungoogled-chromium-bin
+yay -S librewolf-bin
 
 yay -S anki
 sudo pacman -S mpv #will be required for audio 
