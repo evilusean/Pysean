@@ -115,8 +115,9 @@ Wine (ensure multilib is enabled, if not follow guide below):
 https://wine.htmlvalidator.com/install-wine-on-arch-linux.html
 'cat /etc/pacman.conf | grep -i multilib' #check if they are commented, if yes, remove '#'
 'sudo nano /etc/pacman.conf'
-sudo pacman -S wine wine-mono wine-gecko
+sudo pacman -S wine wine-mono wine-gecko winetricks
 sudo pacman -S lutris
+sudo pacman -S steam
 Add external Drives/partitions with gnome-disk-utility -
 Open Lutris -> '+' 'Install a Windows Game from an executable' -> Add external drive/partition with game folder -> add Executable in that directory
 Right click installed game -> Configure -> Runner Options -> Enable DXVK / Enable VKD3D Vulkan 
