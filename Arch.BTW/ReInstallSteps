@@ -43,7 +43,7 @@ BootLoader : Grub (default)
 HostName : ArchSean
 Root Password :
 User Account : (Set up in chroot)
-Type -> Desktop -> KDE Plasma / Greeter : sddm / Graphics : All open source(install after)
+Type -> Desktop -> KDE Plasma / Greeter : sddm / Graphics : All open source(install after) - Error here, used 'Intel (open-source)'
 Audio : Pulseaudio (pipewire is better)
 Kernel : linux-hardened
 Network Configuration : Use NetworkManager
