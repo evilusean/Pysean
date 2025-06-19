@@ -80,6 +80,9 @@ Verify IP Address: 'ip a'
 Hyprland Install Script (run script to get a good looking hyprland up and running with one line, 'n' for autorun, add own dotfile after) : 
 https://github.com/end-4/dots-hyprland
 bash <(curl -s "https://end-4.github.io/dots-hyprland-wiki/setup.sh")
+https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/keybinds.conf
+'Ctrl + H' # show hidden files 
+'/home/ArchSean/.config/hypr/hyprland/keybinds.conf'
 
 Step 5 : Install Graphics
 https://github.com/evilusean/Pysean/blob/main/Sean/FixSean/NVIDIDA
