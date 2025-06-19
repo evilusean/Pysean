@@ -61,7 +61,7 @@ Add a user to Sudoers:
 'su' #log in as a superuser
 usermod -aG wheel ArchSean
 %wheel ALL=(ALL) ALL
-'/etc/sudoers'
+'/etc/sudoers' #after adding user to 'wheel' uncomment above line on around line 90 of the sudoers file, or add below as new grp
 usermod -aG sudo ArchSean
 ArchSean ALL=(ALL)       ALL
 
