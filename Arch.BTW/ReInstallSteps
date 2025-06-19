@@ -38,13 +38,14 @@ Assign mountpoints (manual partition) :
   '/boot' -> sda1 (2Gigs)
   '/' -> sda2 -> 45Gigs
   '/home' -> sda3 -> whatever is left
-BootLoader : Limine (systemd is better-nm, use limine, broke the install)
+Disk Encryption : LUKS 
+BootLoader : Grub (default)
 HostName : ArchSean
 Root Password :
 User Account : (Set up in chroot)
 Type -> Desktop -> KDE Plasma / Greeter : sddm / Graphics : All open source(install after)
 Audio : Pulseaudio (pipewire is better)
-Kernel : linux
+Kernel : linux-hardened
 Network Configuration : Use NetworkManager
 TimeZone : 
 Optional Repositories : multilib
