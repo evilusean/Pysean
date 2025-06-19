@@ -49,3 +49,85 @@ Bash
 systemctl status wpa_supplicant.service
 You should now see Active: inactive (dead) or Loaded: masked. This confirms that the independent service is no longer running. NetworkManager will internally start and manage wpa_supplicant processes as needed for your Wi-Fi connections, but not as a separate systemd service.
 Important Note: If you ever wanted to revert and use wpa_supplicant directly again (without NetworkManager), you would need to sudo systemctl unmask wpa_supplicant.service before you could enable or start it again. However, for a user running Hyprland with NetworkManager, masking it is generally the correct approach for stability.
+
+
+===================================================================================================================================================================================
+Wasnt fixed with above, did below
+===================================================================================================================================================================================
+Wi-Fi Connection Dropping Issue - Troubleshooting Notes
+1. Summary of the Problem
+My Arch Linux PC, running Hyprland, experienced intermittent Wi-Fi connection drops. The connection would work fine after a reboot but would degrade and become unreliable after about an hour. My laptop and phone on the same network had stable connections, indicating the issue was specific to the Arch PC. NetworkManager was being used for network management.
+
+2. Description of the Troubleshooting Process
+The troubleshooting process focused on systematically identifying and resolving common network issues on Arch Linux, especially those affecting wireless adapters. Initial checks confirmed NetworkManager was the sole network service. Further investigation revealed the specific wireless card, a Realtek RTL8723BE, known for stability issues on Linux. The primary solution involved configuring kernel module options to disable power saving features of this Realtek chip and potentially specifying the correct antenna, as these are common fixes for this particular hardware.
+
+3. All Steps Taken (Chronological Order)
+Here are the diagnostic steps, checks, and fixes applied:
+
+Initial Problem Description & System Info Gathering:
+
+Symptom: Wi-Fi connection drops intermittently on Arch Linux PC with Hyprland.
+Temporary fix: Rebooting temporarily resolves the issue for about an hour.
+Context: Laptop and phone connections are stable on the same network.
+Network Manager: Confirmed to be in use.
+Identified Network Interfaces (ip a output):
+
+Command: ip a
+Output Analysis: Confirmed wlan0 as the active wireless interface, enp3s0 as the inactive Ethernet, and lo as the loopback. This focused troubleshooting on wlan0.
+Checked for Conflicting Network Services:
+
+Command: systemctl list-unit-files | grep enabled | grep -E "dhcpcd|netctl|iwd|NetworkManager"
+Output Analysis: Confirmed that only NetworkManager.service, NetworkManager-dispatcher.service, and NetworkManager-wait-online.service were enabled. Crucially, dhcpcd, netctl, and iwd were not enabled, ruling out common service conflicts.
+Identified Wireless Card and Driver:
+
+Command: lspci -knn | grep -i net
+Output Analysis: Identified the wireless card as Realtek Semiconductor Co., Ltd. RTL8723BE PCIe Wireless Network Adapter [10ec:b723] using the rtl8723be kernel driver. This was a critical discovery, as this chipset is notoriously problematic on Linux.
+Applied Kernel Module Options for rtl8723be (Power Saving Fix - CRITICAL STEP):
+
+Action: Created/edited /etc/modprobe.d/rtl8723be.conf.
+Content Added: options rtl8723be fwlps=0 ips=0
+fwlps=0: Disables firmware-controlled power saving.
+ips=0: Disables "In-Power Save" mode.
+Reasoning: These parameters are highly recommended for stabilizing the RTL8723BE chip on Linux and are known to fix intermittent disconnects.
+Unloaded and Reloaded rtl8723be Module:
+
+Command:
+Bash
+
+sudo modprobe -r rtl8723be
+sudo modprobe rtl8723be
+Purpose: To immediately apply the new kernel module options from the .conf file without requiring a full system reboot. (Alternatively, a reboot would achieve the same effect).
+Verified Kernel Module Parameters Applied:
+
+Command:
+Bash
+
+cat /sys/module/rtl8723be/parameters/fwlps
+cat /sys/module/rtl8723be/parameters/ips
+Expected Output: 0 (This confirms the power-saving features are disabled).
+Initial Output Issue: N (meaning "No" or not set), which indicated the modprobe commands were necessary or a reboot. The subsequent modprobe commands (Step 6) addressed this.
+Planned Future Steps (if issue persists):
+
+Experiment with Antenna Selection (ant_sel):
+Test ant_sel=1 and ant_sel=2 in /etc/modprobe.d/rtl8723be.conf.
+Example: options rtl8723be fwlps=0 ips=0 ant_sel=1
+Consider Software Encryption (swenc=1):
+Add swenc=1 to /etc/modprobe.d/rtl8723be.conf if other solutions fail.
+Example: options rtl8723be fwlps=0 ips=0 ant_sel=X swenc=1
+Ensure NetworkManager Power Save is set (redundant but good to confirm):
+Create/edit /etc/NetworkManager/conf.d/wifi-powersave.conf
+Add: [connection] followed by wifi.powersave = 2
+Restart NetworkManager: sudo systemctl restart NetworkManager
+Disable MAC Address Randomization (less likely, but a known factor):
+Create/edit /etc/NetworkManager/conf.d/disable-mac-randomization.conf
+Add: [device] followed by wifi.scan-rand-mac-address=no
+Restart NetworkManager: sudo systemctl restart NetworkManager
+Monitor Logs (Crucial for any remaining issues):
+dmesg -T | tail -n 50 (for kernel messages)
+journalctl -xeu NetworkManager --since "1 hour ago" (for NetworkManager specific logs)
+This detailed record should serve you well if you encounter similar network instability in the future!
+
+
+
+
+
