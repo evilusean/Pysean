@@ -58,6 +58,7 @@ Step 4 : Create a user in arch-chroot
 'reboot'
 
 Add a user to Sudoers:
+'su' #log in as a superuser
 usermod -aG wheel ArchSean
 %wheel ALL=(ALL) ALL
 '/etc/sudoers'
