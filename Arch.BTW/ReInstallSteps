@@ -77,7 +77,7 @@ Connect to Wi-Fi Network:
 nmcli device wifi connect <YOUR_WIFI_SSID> password <YOUR_WIFI_PASSWORD>
 Verify IP Address: 'ip a'
 
-Hyprland Install Script : 
+Hyprland Install Script (run script to get a good looking hyprland up and running with one line, 'n' for autorun, add own dotfile after) : 
 https://github.com/end-4/dots-hyprland
 bash <(curl -s "https://end-4.github.io/dots-hyprland-wiki/setup.sh")
 
