@@ -131,7 +131,9 @@ add drives, 'Edit Mount Options' -> Switch off 'User Session Defaults' -> 'Mount
 
 Packages :
 sudo pacman -S code #install VScode
-sudo pacman -S chromium 
+sudo pacman -S chromium # use below 2, better than chromium
+yay -S ungoogled-chromium
+yay -S librewolf
 sudo pacman -S firefox #don't use firefox, use librewolf 'yay -S librewolf'
 sudo pacman -S btop
 sudo pacman -S mpd
