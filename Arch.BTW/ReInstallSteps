@@ -98,6 +98,31 @@ https://wiki.archlinux.org/title/NVIDIA_Optimus#Use_NVIDIA_graphics_only
 'xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto' # add everything in '' to the file '/usr/share/sddm/scripts/Xsetup'
 
+# Getting NVIDIA drivers to work on hardened linux kernel : 
+# 1. Enable the multilib repository (if not already done)
+#    - Open /etc/pacman.conf and uncomment [multilib] and its Include line.
+#    - Then run:
+sudo pacman -Syyu
+# 2. Install essential 32-bit graphics and system libraries
+sudo pacman -S lib32-libxtst lib32-libxrandr lib32-libxrender lib32-libxi lib32-gtk2 lib32-libpulse lib32-gdk-pixbuf2 lib32-libvdpau lib32-openal lib32-libsm lib32-libice
+# 3. Install linux-hardened-headers for your kernel
+#    - This ensures nvidia-dkms can build its module for your specific kernel.
+sudo pacman -S linux-hardened-headers
+# 4. Install NVIDIA drivers (for dkms, utils, and settings)
+sudo pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings
+# 5. Add nvidia-drm.modeset=1 to your kernel parameters for proper driver loading
+#    - Edit /etc/default/grub, add 'nvidia-drm.modeset=1' inside GRUB_CMDLINE_LINUX_DEFAULT=""
+sudo nano /etc/default/grub
+# (Add 'nvidia-drm.modeset=1' inside quotes, save, exit)
+# 6. Update GRUB configuration
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+# 7. Blacklist the open-source Nouveau driver to prevent conflicts
+echo -e "blacklist nouveau\noptions nouveau modeset=0" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
+# 8. Regenerate initramfs to apply kernel module changes
+sudo mkinitcpio -P
+# 9. Reboot your system to apply all changes
+reboot
+
 First enable 'multilib' - 'sudo nano /etc/pacman.conf' uncomment '#[multilib] #Include = /etc/pacman.d/mirrorlist'
 Vulkan Drivers (I don't know which one of these fixes it, but it is one of them) :
 https://wiki.archlinux.org/title/Vulkan
