@@ -65,6 +65,18 @@ usermod -aG wheel ArchSean
 usermod -aG sudo ArchSean
 ArchSean ALL=(ALL)       ALL
 
+Log into Internet With Hyprland on first install :
+Open Terminal in Hyprland:
+Super + Return (or Super + Enter) (or Super + flail hail mary)
+Check NetworkManager Status:
+'sudo systemctl status NetworkManager'
+(If not active, enable and start: sudo systemctl enable --now NetworkManager)
+Scan for Wi-Fi Networks:
+'nmcli device wifi list'
+Connect to Wi-Fi Network:
+nmcli device wifi connect <YOUR_WIFI_SSID> password <YOUR_WIFI_PASSWORD>
+Verify IP Address: 'ip a'
+
 Hyprland Install Script : 
 https://github.com/end-4/dots-hyprland
 bash <(curl -s "https://end-4.github.io/dots-hyprland-wiki/setup.sh")
