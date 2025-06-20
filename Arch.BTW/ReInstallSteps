@@ -190,6 +190,7 @@ sudo pacman -S blender
 sudo pacman -S reaper
 sudo pacman -S obsidian
 sudo pacman -S qbittorrent
+sudo pacman -S kdenlive
 
 Install Yay :
 sudo pacman -Syu
