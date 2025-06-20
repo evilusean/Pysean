@@ -230,9 +230,17 @@ Download a nerdfont, run this in the terminal from the directory the zip was dow
 'unzip "*.zip" -d ~/.local/share/fonts
 fc-cache -fv
 cd ..; rm -rf fonts' # everything within the ''s one liner-ish
-#Japanese onscreen keyboard
+
+#Japanese onscreen keyboard / 'Ctrl + Space' to switch between english and Japanese, need to selet mozc
 sudo pacman -S fcitx5 fcitx5-mozc fcitx5-gtk fcitx5-qt fcitx5-configtool 
 yay -S wvkbd
+'fcitx5-configtool' #after install, run this, add mozc from the 
+Go to the "Input Method" tab.
+At the bottom left, uncheck "Only Show Current Language". This is crucial, as Mozc is Japanese and your system might be set to English.
+In the left pane (Available Input Methods), search for "Mozc".
+Select "Mozc" and click the + button (or the right arrow icon) to move it to the "Active Input Methods" list on the right.
+You can drag "Mozc" up or down in the "Active Input Methods" list to set its priority.
+It's common to have "Keyboard - English (US)" (or your primary keyboard layout) as the first item, and "Mozc" as the second.
 
 Test New Fonts:
 fc-list | cut -d: -f2 | sort | uniq
@@ -253,14 +261,6 @@ Uninstall NVim + configs (if you mess up):
 rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
-
-Gimp 3.0 :
-sudo pacman -S gimp
-sudo pacman -S flatpak #temporary work around past sean did to mess around with the new software, future Sean, if you see this delete below lines, this is suboptimal, programs can't find it
-flatpak install --user https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
-flatpak list #I couldn't find it in the program search or run in terminal, just got released, the pacman version was 2.1, future Sean, just use pacman so it can be found in terminal/programs
-flatpak run org.gimp.GIMP #will run gimp, temporary fix until pacman works
-flatpak uninstall org.gimp.GIMP #will uninstall, this is for future Sean after pacman get's updated
 
 Change Settings :
 Breeze - Dark - RED #FF0000
