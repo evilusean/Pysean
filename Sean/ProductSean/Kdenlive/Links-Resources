@@ -15,7 +15,43 @@ https://www.youtube.com/watch?v=zYD0b8LpiQA
 https://www.youtube.com/playlist?list=PLnJFu6D59R6I0vAn-om1oA0OJF1evYH5B
 https://www.youtube.com/@victorianodejesus/videos
 
+Advanced Kdenlive Tutorial Topics (AKA Future Sean Problems) :
+Advanced Cutting & Workflow:
+J-cuts and L-cuts: How to have audio or video lead before the visual or vice-versa, creating smoother transitions between shots.
+Ripple Editing: Mastering how to trim a clip and have all subsequent clips on the timeline automatically shift to fill the gap or extend.
+Lift, Extract, and Overwrite: More sophisticated ways of managing clips on the timeline without disrupting sync on other tracks.
+Keyboard Shortcuts and Customization: Learning to use and customize shortcuts to speed up your editing
 
+Audio Mixing and Sweetening:
+Audio Ducking: Automatically lowering background music when someone speaks. This is crucial for monologues.
+Compressors and Limiters: Understanding and applying these effects to make your voice sound consistent and professional.
+Noise Reduction: More advanced techniques for cleaning up background noise beyond simple filters.
+EQ (Equalization): Fine-tuning the frequencies of your voice or music for clarity and warmth.
+Audio Keyframing: Precisely controlling volume changes over time.
+
+Visual Effects and Compositing:
+Green Screen (Chroma Keying): Removing a green or blue background to superimpose yourself onto other footage. This is great for creative meme insertions.
+Search for: "Kdenlive Chroma Key Basic vs. Advanced"
+Masking: Creating shapes to reveal or hide parts of a video layer, often used for split-screens, text reveals, or isolating effects to specific areas.
+Blending Modes: How different video layers interact visually (e.g., screen, multiply, overlay).
+Motion Tracking: Attaching text, images, or effects to a moving object in your video. (e.g., having text follow your head as you move).
+Search for: "Kdenlive Motion Tracker"
+Keyframing Effects: Applying effects and animating their parameters over time (e.g., gradually zooming in, changing color saturation).
+
+Color Correction and Grading:
+Scopes (Vectorscope, Waveform): Understanding how to use these tools to professionally analyze and correct your video's color and exposure.
+Primary Color Correction: Adjusting white balance, exposure, contrast, and saturation.
+Secondary Color Grading: Targeting specific colors (e.g., making your skin tone look better, changing the color of a specific object).
+LUTs (Look Up Tables): Applying pre-made color looks to your footage.
+
+Titles and Graphics:
+Advanced Title Editor: Exploring all the options in Kdenlive's title tool for sophisticated text, shapes, and animations.
+Motion Graphics (using external tools): While Kdenlive can do some, learning basic animation in Blender or Synfig Studio and importing them can significantly enhance your videos.
+
+Optimizing Performance and Workflow:
+Proxy Editing: Working with lower-resolution copies of your high-res footage to improve editing performance, especially on slower machines.
+Render Profiles and Optimization: Customizing export settings for different platforms (YouTube, TikTok, Twitter) to get the best quality and smallest file size.
+Project Archiving: How to properly back up and move your Kdenlive projects with all their media.
 
 
 
