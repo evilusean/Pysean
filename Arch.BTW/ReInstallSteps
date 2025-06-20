@@ -291,6 +291,7 @@ https://bbs.archlinux.org/viewtopic.php?id=292399
 sudo systemctl stop bluetooth.service 
 sudo systemctl start bluetooth.service 
 sudo systemctl status bluetooth.service
+sudo systemctl enable bluetooth.service #won't have to keep starting and stopping 'enable' starts the process automatically
 #you also need to disable 'steam overlay' it's in the settings somewhere, only needs to be done once.
 press top left 'SHARE' and middle 'Playstation' button to sync, after enabling bluetooth, should work
 
