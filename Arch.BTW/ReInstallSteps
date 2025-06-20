@@ -208,7 +208,7 @@ yay -S github-desktop-bin --noconfirm
 yay -S ungoogled-chromium-bin
 yay -S librewolf-bin
 
-yay -S anki
+yay -S anki-bin
 sudo pacman -S mpv #will be required for audio 
 by default, anki will save all progress on the main SSD '~/.local/share/Anki2/' - so if you delete the SSD(as I have, 3 times...) you will lose everything. make sure to 'switch profiles' to an external HD. 
 cp -r ~/.local/share/Anki2/ #create a symlink, so now it will update the backup instead of the one that's on the maindrive(that's been wiped, with all backups, 3 times...)
@@ -263,7 +263,7 @@ rm -rf ~/.local/share/nvim
 
 https://github.com/gorhill/uBlock #not even a day into a fresh install, and already getting Ad-gry, it's where you get angry from ads.
 
-Change Settings :
+Change Settings (switch to dark mode, on everything, on fresh install the first thing I notice is everything is brighter than 1,000 suns, and then ads) :
 Breeze - Dark - RED #FF0000
 Rice KDE (MPD/NCMPCPP configs)
 Optimus Manager
@@ -278,6 +278,7 @@ sudo systemctl start asusd
 asusctl -k #check backlight
 asusctl -k <level> #sets level
 asusctl -k high
+exec-once = asusctl -k high # add this to hyprland 'execs.conf' it will turn on the keyboard at start
 
 Spotify (for languages) :
 https://wiki.archlinux.org/title/Spotify
