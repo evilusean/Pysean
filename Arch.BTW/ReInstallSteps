@@ -261,8 +261,6 @@ rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
 
-https://github.com/gorhill/uBlock #not even a day into a fresh install, and already getting Ad-gry, it's where you get angry from ads.
-
 Change Settings (switch to dark mode, on everything, on fresh install the first thing I notice is everything is brighter than 1,000 suns, and then ads) :
 Breeze - Dark - RED #FF0000
 Rice KDE (MPD/NCMPCPP configs)
@@ -315,7 +313,7 @@ Ungoogled Chromium Extensions ('chrome://extensions/' -> extract zip / crv (rena
 https://avoidthehack.com/manually-install-extensions-ungoogled-chromium
 https://github.com/NeverDecaf/chromium-web-store/releases
 https://ublockorigin.com/
-
+https://github.com/gorhill/uBlock #not even a day into a fresh install, and already getting Ad-gry, it's where you get angry from ads.
 
 
 
