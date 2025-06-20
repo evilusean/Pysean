@@ -227,9 +227,12 @@ Install Fonts :
 sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts # installs A Japanese capable font
 yay -S ttf-freefont ttf-ms-fonts ttf-linux-libertine ttf-dejavu ttf-inconsolata ttf-ubuntu-font-family
 Download a nerdfont, run this in the terminal from the directory the zip was downloaded as one command - Use JetBrainsMono, it has all the icons you need for NVChad:
-unzip "*.zip" -d ~/.local/share/fonts
+'unzip "*.zip" -d ~/.local/share/fonts
 fc-cache -fv
-cd ..; rm -rf fonts
+cd ..; rm -rf fonts' # everything within the ''s one liner-ish
+#Japanese onscreen keyboard
+sudo pacman -S fcitx5 fcitx5-mozc fcitx5-gtk fcitx5-qt fcitx5-configtool 
+yay -S wvkbd
 
 Test New Fonts:
 fc-list | cut -d: -f2 | sort | uniq
