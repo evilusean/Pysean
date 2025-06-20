@@ -272,6 +272,7 @@ sudo systemctl enable asusd
 sudo systemctl start asusd
 asusctl -k #check backlight
 asusctl -k <level> #sets level
+asusctl -k high
 
 Spotify (for languages) :
 https://wiki.archlinux.org/title/Spotify
