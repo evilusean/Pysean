@@ -231,6 +231,9 @@ Download a nerdfont, run this in the terminal from the directory the zip was dow
 fc-cache -fv
 cd ..; rm -rf fonts' # everything within the ''s one liner-ish
 
+Test New Fonts:
+fc-list | cut -d: -f2 | sort | uniq
+
 #Japanese onscreen keyboard / 'Ctrl + Space' to switch between english and Japanese, need to selet mozc
 sudo pacman -S fcitx5 fcitx5-mozc fcitx5-gtk fcitx5-qt fcitx5-configtool 
 yay -S wvkbd
@@ -242,9 +245,6 @@ Select "Mozc" and click the + button (or the right arrow icon) to move it to the
 You can drag "Mozc" up or down in the "Active Input Methods" list to set its priority.
 It's common to have "Keyboard - English (US)" (or your primary keyboard layout) as the first item, and "Mozc" as the second.
 
-Test New Fonts:
-fc-list | cut -d: -f2 | sort | uniq
-
 NVChad - Install Fonts Above - There was a breaking change, added a new one-liner below:
 https://nvchad.com/docs/quickstart/install/#pre-requisites
 https://github.com/ProgrammingRainbow/NvChad-2.5
@@ -255,12 +255,12 @@ git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 git clone https://github.com/ProgrammingRainbow/NvChad-2.5 ~/.config/nvim && nvim
 #Better config than the original NVChad script, maybe changes next time I need to reinstall, future sean take note - I tried this script 2 days ago, worked, today didn't. 
 
-https://github.com/gorhill/uBlock #not even a day into a fresh install, and already getting Ad-gry, it's where you get angry from ads.
-
 Uninstall NVim + configs (if you mess up):
 rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
+
+https://github.com/gorhill/uBlock #not even a day into a fresh install, and already getting Ad-gry, it's where you get angry from ads.
 
 Change Settings :
 Breeze - Dark - RED #FF0000
