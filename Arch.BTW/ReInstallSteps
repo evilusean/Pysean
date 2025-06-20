@@ -155,6 +155,14 @@ sudo pacman -S gnome-disk-utility
 search 'disks' to open gnome disk utility
 add drives, 'Edit Mount Options' -> Switch off 'User Session Defaults' -> 'Mount at system startup' -> Identify As '/dev/sdb2' + Mountpoint (Fstab will be updated)
 
+Install Yay :
+sudo pacman -Syu
+sudo pacman -S --needed --noconfirm base-devel git
+git clone https://aur.archlinux.org/yay-git.git
+sudo mv yay-git /opt/
+cd /opt/yay-git
+makepkg -si
+
 Packages :
 yay -S visual-studio-code-bin #use this one
 sudo pacman -S code #install VScode - don't use this one, no copilot
@@ -192,14 +200,6 @@ sudo pacman -S reaper
 sudo pacman -S obsidian
 sudo pacman -S qbittorrent
 sudo pacman -S kdenlive
-
-Install Yay :
-sudo pacman -Syu
-sudo pacman -S --needed --noconfirm base-devel git
-git clone https://aur.archlinux.org/yay-git.git
-sudo mv yay-git /opt/
-cd /opt/yay-git
-makepkg -si
 
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
