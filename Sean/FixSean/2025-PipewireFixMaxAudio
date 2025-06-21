@@ -1,0 +1,40 @@
+### How to Increase Maximum Volume in PipeWire (Arch Linux)
+I had a problem with the volume being capped at 90% on my new hyprland install, this is the fix
+
+This method involves creating a custom PipeWire configuration file to override the default maximum volume limit.
+
+**1. Create the PipeWire User Configuration Directory:** This command creates the necessary directory structure for user-specific PipeWire configuration files.
+
+Bash
+
+```
+mkdir -p ~/.config/pipewire/pipewire.conf.d/
+```
+
+**2. Create and Edit the Custom Volume Configuration File:** This command opens a new file named `99-custom-volume.conf` in the created directory using the `nano` text editor. The `99-` prefix ensures this file is loaded _after_ most other configuration files, allowing it to override default settings.
+
+Bash
+
+```
+nano ~/.config/pipewire/pipewire.conf.d/99-custom-volume.conf
+```
+
+**3. Add the Configuration Content:** Paste the following lines into the `nano` editor. This tells PipeWire to allow a maximum linear volume of `3.0`, which corresponds to 300%. You can change `3.0` to `2.0` for 200%, or any other desired maximum.
+
+Ini, TOML
+
+```
+context.properties = {
+    # Set the maximum linear volume for all audio sources/sinks
+    audio.volume.max = 3.0
+}
+```
+
+- **To Save in `nano`:** Press `Ctrl + X`, then `Y` (for Yes to save), then `Enter`.
+
+**4. Restart PipeWire Services:** These commands restart the PipeWire and PipeWire PulseAudio compatibility services. This is crucial for the new configuration to take effect without needing a full system reboot.
+
+Bash
+
+```
+systemctl --user restart pipewire pipewire-pulse
