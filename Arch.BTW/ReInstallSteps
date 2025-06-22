@@ -292,6 +292,10 @@ sudo systemctl status bluetooth.service
 sudo systemctl enable bluetooth.service #won't have to keep starting and stopping 'enable' starts the process automatically
 #you also need to disable 'steam overlay' it's in the settings somewhere, only needs to be done once.
 press top left 'SHARE' and middle 'Playstation' button to sync, after enabling bluetooth, should work
+sudo pacman -S joystick evtest
+- Go to Steam -> Settings -> Controller -> General Controller Settings.
+- Enable "PlayStation Configuration Support."
+- Even if ZZZ isn't launched through Steam, sometimes having Steam Input enabled can help with controller recognition system-wide
 
 #for proton GE(glorious eggroll proton - for steam overwatch) :
 yay -S asdf-vm  #old method, use below 'protonup-qt' easier
