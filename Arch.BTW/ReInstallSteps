@@ -310,6 +310,7 @@ Changed joystick.device.device.fn to joystick.device.device.path on line 84.
 Step 4: Running ds4drv and Launching ZZZ
 Start ds4drv in a terminal (will need to do every time to run ZZZ with sleepy launcher) :
 ds4drv --hidraw --emulate-xpad
+ds4drv --hidraw --emulate-xpad & #add a '&' command so you can keep the terminal open and use lutris in your next command 
 
 #for proton GE(glorious eggroll proton - for steam overwatch) :
 yay -S asdf-vm  #old method, use below 'protonup-qt' easier
