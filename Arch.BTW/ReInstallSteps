@@ -296,7 +296,9 @@ sudo pacman -S joystick evtest
 - Go to Steam -> Settings -> Controller -> General Controller Settings.
 - Enable "PlayStation Configuration Support."
 - Even if ZZZ isn't launched through Steam, sometimes having Steam Input enabled can help with controller recognition system-wide
-yay -S ds4drv
+yay -S ds4drv #xbox controller support, do the bottom 2 to reload after install
+sudo udevadm control --reload-rules
+sudo udevadm trigger
 
 #for proton GE(glorious eggroll proton - for steam overwatch) :
 yay -S asdf-vm  #old method, use below 'protonup-qt' easier
