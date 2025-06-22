@@ -5,14 +5,20 @@
   "permissions": [
     "activeTab",
     "downloads",
+    "downloads.shelf",
+    "downloads.open",
+    "storage",
     "tabs",
-    "scripting"
+    "scripting",
+    "unlimitedStorage"
   ],
   "host_permissions": [
     "*://boards.4chan.org/*",
     "*://i.4cdn.org/*",
     "*://8kun.top/*",
-    "*://*.8kun.top/*"
+    "*://*.8kun.top/*",
+    "*://nerv.8kun.top/*",
+    "*://media.8kun.top/*"
   ],
   "background": {
     "service_worker": "background.js"
@@ -22,7 +28,10 @@
       "matches": [
         "*://boards.4chan.org/*",
         "*://8kun.top/*",
-        "*://*.8kun.top/*"
+        "*://*.8kun.top/*",
+        "*://i.4cdn.org/*",
+        "*://nerv.8kun.top/*",
+        "*://media.8kun.top/*"
       ],
       "js": ["content.js"],
       "run_at": "document_end"

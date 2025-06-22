@@ -1,16 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
+  console.log("Popup DOM loaded");
   const saveImagesButton = document.getElementById('saveImages');
   
   if (saveImagesButton) {
+    console.log("Save Images button found, adding click listener");
     saveImagesButton.addEventListener('click', async () => {
+      console.log("Save Images button clicked - starting process");
+      
       try {
         const tabs = await chrome.tabs.query({ currentWindow: true });
+        console.log(`Found ${tabs.length} total tabs`);
+        
         const [activeTab] = await chrome.tabs.query({ active: true, currentWindow: true });
         
         if (!activeTab) {
           console.error("No active tab found");
           return;
         }
+        
+        console.log("Active tab:", activeTab.url);
 
         // Valid extensions for images
         const validExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webm', '.mp4'];
@@ -36,24 +44,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log(`Found ${tabsToProcess.length} image tabs to process:`, tabsToProcess.map(t => t.url));
         
-        // Process each image tab
-        for (const tab of tabsToProcess) {
-          console.log(`Processing image tab ${tab.id}: ${tab.url}`);
-          try {
-            const filename = tab.url.split('/').pop();
-            console.log(`Downloading image: ${filename}`);
-            chrome.runtime.sendMessage({
-              action: "downloadImages",
-              urls: [tab.url],
-              tabId: tab.id  // Pass the tab ID for closing
-            });
-          } catch (error) {
-            console.error(`Error processing tab ${tab.id}:`, error.message);
-          }
+        if (tabsToProcess.length === 0) {
+          console.log("No image tabs found to process");
+          return;
         }
+        
+        // Collect all URLs for batch processing
+        const allUrls = tabsToProcess.map(tab => tab.url);
+        const tabIds = tabsToProcess.map(tab => tab.id);
+        
+        console.log(`Preparing to download ${allUrls.length} images in batch`);
+        
+        // Send all URLs to background script for batch download
+        console.log("Sending batch download request to background script...");
+        await chrome.runtime.sendMessage({
+          action: "downloadImages",
+          urls: allUrls,
+          tabIds: tabIds
+        });
+        
+        console.log("Batch download request sent successfully");
       } catch (error) {
-        console.error("Error:", error.message);
+        console.error("Error in main process:", error.message);
       }
     });
+  } else {
+    console.error("Save Images button not found");
   }
 });

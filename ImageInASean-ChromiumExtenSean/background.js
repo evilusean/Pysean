@@ -1,16 +1,27 @@
+// Service worker initialization
+console.log("4chan Image Saver background script initialized");
+
 const downloadedFiles = new Set();
 const DOWNLOAD_PATH = '4Chan-Unsorted';
 const VALID_EXTENSIONS = ['.jpg', '.png', '.gif', '.webm', '.mp4', '.jpeg'];
-// webm/mp4 doesn't work, future sean problem, I'm happy with this, for now
 
-// Valid image hosts and patterns
-const VALID_HOSTS = ['i.4cdn.org'];
-const VALID_PATTERNS = [
-  /^https?:\/\/i\.4cdn\.org\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i,
-  /^https?:\/\/nerv\.8kun\.top\/file_store\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i,
-  /^https?:\/\/media\.8kun\.top\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i,
-  /^https?:\/\/.+\.8kun\.top\/file_store\/.+\.(jpg|jpeg|png|gif|webm|mp4)$/i
-];
+// Try to configure download behavior for Ungoogled Chromium
+async function configureDownloads() {
+  try {
+    // Try to set download preferences
+    await chrome.storage.local.set({
+      downloadPath: DOWNLOAD_PATH,
+      autoDownload: true,
+      skipConfirmation: true
+    });
+    console.log("Download preferences configured");
+  } catch (error) {
+    console.log("Could not configure download preferences:", error);
+  }
+}
+
+// Initialize download configuration
+configureDownloads();
 
 // Use a direct approach to check 8kun URLs
 function isValidImageUrl(url) {
@@ -22,7 +33,7 @@ function isValidImageUrl(url) {
     return true;
   }
   
-  // Check for 8kun/file_store URLs with detailed logging
+  // Check for 8kun/file_store URLs
   if (url.includes('8kun.top') && url.includes('file_store') && 
       VALID_EXTENSIONS.some(ext => url.toLowerCase().endsWith(ext))) {
     console.log(`Found valid 8kun image URL: ${url}`);
@@ -32,38 +43,72 @@ function isValidImageUrl(url) {
   return false;
 }
 
-// Function to close all image tabs
-function closeImageTabs() {
-  console.log("Attempting to close all image tabs...");
+// Function to close specific tabs
+function closeTabs(tabIds) {
+  console.log("Attempting to close tabs:", tabIds);
   
-  chrome.tabs.query({ currentWindow: true }, (tabs) => {
-    // Find all tabs with image URLs
-    const imageTabs = tabs.filter(tab => tab.url && isValidImageUrl(tab.url));
-    console.log(`Found ${imageTabs.length} image tabs to close:`, imageTabs.map(t => t.url));
-    
-    // Close each image tab
-    imageTabs.forEach(tab => {
-      chrome.tabs.remove(tab.id, () => {
-        if (chrome.runtime.lastError) {
-          console.error(`Error closing tab ${tab.id}:`, chrome.runtime.lastError);
-        } else {
-          console.log(`Successfully closed tab ${tab.id}`);
-        }
-      });
+  tabIds.forEach(tabId => {
+    chrome.tabs.remove(tabId, () => {
+      if (chrome.runtime.lastError) {
+        console.error(`Error closing tab ${tabId}:`, chrome.runtime.lastError);
+      } else {
+        console.log(`Successfully closed tab ${tabId}`);
+      }
     });
+  });
+}
+
+// Simple download function with retry logic
+function downloadFile(url, filename, onComplete, retryCount = 0) {
+  console.log(`Downloading: ${url} as ${filename} (attempt ${retryCount + 1})`);
+  
+  // Skip duplicates
+  if (downloadedFiles.has(filename)) {
+    console.log(`Skipping duplicate: ${filename}`);
+    onComplete();
+    return;
+  }
+  
+  // Simple direct download approach
+  chrome.downloads.download({
+    url: url,
+    filename: `${DOWNLOAD_PATH}/${filename}`,
+    conflictAction: 'uniquify',
+    saveAs: false
+  }, (downloadId) => {
+    if (chrome.runtime.lastError) {
+      console.error(`Download failed for ${url}:`, chrome.runtime.lastError);
+      
+      // Retry up to 2 times with a delay
+      if (retryCount < 2) {
+        console.log(`Retrying download for ${filename} in 1 second...`);
+        setTimeout(() => {
+          downloadFile(url, filename, onComplete, retryCount + 1);
+        }, 1000);
+      } else {
+        console.error(`Failed to download ${filename} after ${retryCount + 1} attempts`);
+        onComplete();
+      }
+    } else {
+      console.log(`Download started with ID: ${downloadId}`);
+      downloadedFiles.add(filename);
+      onComplete();
+    }
   });
 }
 
 // Process download message
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  console.log("Message received in background script:", message);
+  
   if (message.action === "downloadImages") {
     console.log("Received downloadImages message:", message);
     
-    // Extract the URLs and tab ID
+    // Extract the URLs and tab IDs
     const urls = message.urls || [];
-    const tabId = message.tabId;
+    const tabIds = message.tabIds || [];
     
-    console.log(`Processing ${urls.length} URLs, tab ID: ${tabId}`);
+    console.log(`Processing ${urls.length} URLs, tab IDs: ${tabIds}`);
     
     if (urls.length === 0) {
       console.log("No URLs to download");
@@ -76,46 +121,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     urls.forEach(url => {
       const filename = url.split('/').pop();
       
-      // Skip duplicates
-      if (downloadedFiles.has(filename)) {
-        console.log(`Skipping duplicate: ${filename}`);
-        downloadCount++;
-        
-        // If all downloads are complete, close tabs
-        if (downloadCount === urls.length) {
-          setTimeout(() => {
-            if (tabId) {
-              console.log(`Closing specific tab: ${tabId}`);
-              chrome.tabs.remove(tabId, () => {
-                if (chrome.runtime.lastError) {
-                  console.error(`Error closing tab ${tabId}:`, chrome.runtime.lastError);
-                } else {
-                  console.log(`Successfully closed tab ${tabId}`);
-                }
-              });
-            } else {
-              closeImageTabs();
-            }
-          }, 1500); // Longer delay to ensure download completes
-        }
-        return;
-      }
-      
-      // Download the file
-      console.log(`Downloading: ${url} as ${filename}`);
-      chrome.downloads.download({
-        url: url,
-        filename: `${DOWNLOAD_PATH}/${filename}`,
-        conflictAction: 'uniquify'
-      }, (downloadId) => {
-        // Check for errors
-        if (chrome.runtime.lastError) {
-          console.error(`Download failed:`, chrome.runtime.lastError);
-        } else {
-          console.log(`Download started with ID: ${downloadId}`);
-          downloadedFiles.add(filename);
-        }
-        
+      downloadFile(url, filename, () => {
         // Increment counter and check if we're done
         downloadCount++;
         console.log(`Completed ${downloadCount} of ${urls.length} downloads`);
@@ -123,22 +129,31 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         // If all downloads are complete, close tabs
         if (downloadCount === urls.length) {
           setTimeout(() => {
-            if (tabId) {
-              console.log(`Closing specific tab: ${tabId}`);
-              chrome.tabs.remove(tabId, () => {
-                if (chrome.runtime.lastError) {
-                  console.error(`Error closing tab ${tabId}:`, chrome.runtime.lastError);
-                } else {
-                  console.log(`Successfully closed tab ${tabId}`);
-                }
-              });
-            } else {
-              closeImageTabs();
+            if (tabIds.length > 0) {
+              console.log(`Closing ${tabIds.length} tabs after batch download`);
+              closeTabs(tabIds);
             }
-          }, 1500); // Longer delay to ensure download completes
+          }, 1500);
         }
       });
     });
   }
   return true;
+});
+
+// Monitor download progress
+chrome.downloads.onChanged.addListener((downloadDelta) => {
+  if (downloadDelta.state) {
+    console.log(`Download ${downloadDelta.id} state changed to: ${downloadDelta.state.current}`);
+    
+    if (downloadDelta.state.current === 'complete') {
+      console.log(`Download ${downloadDelta.id} completed successfully`);
+    } else if (downloadDelta.state.current === 'interrupted') {
+      console.error(`Download ${downloadDelta.id} was interrupted`);
+    }
+  }
+  
+  if (downloadDelta.error) {
+    console.error(`Download ${downloadDelta.id} error:`, downloadDelta.error.current);
+  }
 });
