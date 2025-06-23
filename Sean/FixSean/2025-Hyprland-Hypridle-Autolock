@@ -1,0 +1,15 @@
+Open your hypridle.conf file:
+You can do this using a text editor in your terminal:
+
+Bash
+
+nano ~/.config/hypr/hypridle.conf
+# Or your preferred text editor like vim, micro, etc.
+Replace its contents:
+Copy the entire updated configuration from the Canvas ("Updated Hypridle Configuration for 8-Hour Screen Lock" document) and 
+paste it into your ~/.config/hypr/hypridle.conf file, overwriting the existing content.
+
+Save the file.
+
+Log out and log back in:
+For the changes to take effect, you need to restart your Hyprland session. The most reliable way to do this is to log out of your current session and then log back in.
