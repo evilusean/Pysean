@@ -1,0 +1,30 @@
+2025-ZZZ-Lutris-WineTricks-Winecfg-GE-Proton-Fix
+I finally got ZZZ working : To fix ZZZ in the future, First, 
+Download ZZZ through Lutris (Not sleepyloader, the original hoyo one)
+Use Proton (System 10.9-This should be the default) for this install
+Next, Download ZZZ through the launcher
+Then, Create a Second game in lutris, this one will use GE-Proton10-4, use the wine prefix of the install directory, and use the downloaded game exe to be run by wine, you also need to figure 
+  out how to get GE-Proton again, but that's future Sean's problem
+I don't know why the launcher and game require 2 different protons, but they do
+Next, right click the 'ZZZ' one go to 'Winetricks' and install - 
+**Always Install First (Crucial):**
+- `vcrun2022`: Microsoft Visual C++ Redistributable 2022. Essential for almost all modern Windows games.
+- `arial`: Microsoft Arial font. Prevents text display issues in launchers or game UI.
+- I also dide corefonts
+**Avoid (Unless Specific Error Explicitly Demands It):**
+- `dxvk`: **DO NOT install via Winetricks if using a GE-Proton runner.** GE-Proton versions (like GE-Proton10-4) already include and manage their own optimized DXVK.
+  Installing it separately can cause conflicts or downgrades. - Future Sean, I installed it anyways, so it might work
+- `dotnet` versions (e.g., `dotnet48`, `dotnet6`, `dotnet8`): Only install if a _specific error message_ clearly indicates a missing .NET Framework version is the problem. 
+  These can sometimes complicate the Wine prefix. `dotnet 40` `dotnet48` `dotnet9`
+- `dxcompiler47`
+- `d3xd9_43`
+In Lutris: Right-click the game -> `Winecfg`.
+- In the "Applications" tab, ensure "Default Settings" is selected.
+- In the "Windows Version" dropdown at the bottom, select **"Windows 11"**.
+- Click "Apply" then "OK".
+After that, you need to download Webview2 from Microsoft to get past the 2FA (requires you to enter a code that is sent to your email, 
+  the game doesn't have a built in browser, so you need to download one) :
+`https://developer.microsoft.com/en-us/microsoft-edge/webview2/` and then attempt to run it within the Wine prefix via Lutris's "Run EXE inside Wine prefix" option 
+After that you should, in theory, be able to log in, spent almost an entire day trying to fix this - 
+  I don't want to have to figure out which version goes where again for future Sean, it was tedious trial and error,
+  and I finally figured out that each different version needs a different runner(?), idk why, but it works. 
