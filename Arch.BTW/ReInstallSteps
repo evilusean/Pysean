@@ -292,26 +292,11 @@ sudo systemctl status bluetooth.service
 sudo systemctl enable bluetooth.service #won't have to keep starting and stopping 'enable' starts the process automatically
 #you also need to disable 'steam overlay' it's in the settings somewhere, only needs to be done once.
 press top left 'SHARE' and middle 'Playstation' button to sync, after enabling bluetooth, should work
-sudo pacman -S joystick evtest
+sudo pacman -S joystick evtest ds4drv
 - Go to Steam -> Settings -> Controller -> General Controller Settings.
 - Enable "PlayStation Configuration Support."
 - Even if ZZZ isn't launched through Steam, sometimes having Steam Input enabled can help with controller recognition system-wide
-yay -S ds4drv #xbox controller support, do the bottom 2 to reload after install
-sudo udevadm control --reload-rules
-sudo udevadm trigger
-Patch ds4drv for Python 3.13 compatibility (This was the main series of errors you debugged):
-Error 1: AttributeError: module 'configparser' has no attribute 'SafeConfigParser'
-Fix: Edited /usr/lib/python3.13/site-packages/ds4drv/config.py.
-Changed all occurrences of configparser.SafeConfigParser to configparser.ConfigParser.
-(This involved multiple searches and replacements within the file).
-Error 2: AttributeError: 'InputDevice' object has no attribute 'fn'
-Fix: Edited /usr/lib/python3.13/site-packages/ds4drv/actions/input.py.
-Changed joystick.device.device.fn to joystick.device.device.path on line 84.
-Step 4: Running ds4drv and Launching ZZZ
-Start ds4drv in a terminal (will need to do every time to run ZZZ with sleepy launcher) :
-ds4drv --hidraw --emulate-xpad
-ds4drv --hidraw --emulate-xpad & #add a '&' command so you can keep the terminal open and use lutris in your next command 
-bind = CONTROL+SUPER, E, exec, ds4drv --hidraw --emulate-xpad & lutris # Lutris
+https://github.com/evilusean/Pysean/blob/main/Sean/FixSean/2025-ZZZ-Lutris-WineTricks-Winecfg-GE-Proton-Fix
 
 #for proton GE(glorious eggroll proton - for steam overwatch) :
 yay -S asdf-vm  #old method, use below 'protonup-qt' easier
