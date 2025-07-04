@@ -21,6 +21,8 @@ Copilot Chat With NeoVim :
 https://github.com/CopilotC-Nvim/CopilotChat.nvim
 avante.nvim is a Neovim plugin designed to emulate the behaviour of the Cursor AI IDE. ability to apply these recommendations directly to their source files with minimal effort. :
 https://github.com/yetone/avante.nvim
+Supermaven (Yet another AI Tool for NVim) :
+https://github.com/supermaven-inc/supermaven-nvim
 
 Undo Tree (Shows a tree of undos - not with NVChad):
 https://github.com/mbbill/undotree
