@@ -840,7 +840,9 @@ Example: 火山から黒い噴煙が上がっている。 = (Kazan kara kuroi fu
 Example: 大きな地震があった。 = (Ōkina jishin ga atta.) = There was a big earthquake.
 Example: 地震速報 (jishin sokuhō) = Earthquake early warning.
 Example: マグニチュード7の地震。= (Magunichūdo nana no jishin.) = A magnitude 7 earthquake.
-
+震度 = しんど = shindo = seismic intensity (Japanese scale) - Shindo refers to seismic intensity, specifically on the Japan Meteorological Agency (JMA) seismic intensity scale. This scale measures the degree of shaking at a specific location, rather than the total energy released (magnitude). It ranges from 0 to 7, with 7 being the strongest.
+Example: この地域では震度5弱を観測しました。 = (Kono chiiki de wa shindo go-jaku o kansoku shimashita.) = Seismic intensity of 5-minus was observed in this region.
+Example: 震度計 (shindokei) = Seismometer (for intensity).
 
 
 
