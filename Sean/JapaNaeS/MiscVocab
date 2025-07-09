@@ -843,6 +843,9 @@ Example: マグニチュード7の地震。= (Magunichūdo nana no jishin.) = A 
 震度 = しんど = shindo = seismic intensity (Japanese scale) - Shindo refers to seismic intensity, specifically on the Japan Meteorological Agency (JMA) seismic intensity scale. This scale measures the degree of shaking at a specific location, rather than the total energy released (magnitude). It ranges from 0 to 7, with 7 being the strongest.
 Example: この地域では震度5弱を観測しました。 = (Kono chiiki de wa shindo go-jaku o kansoku shimashita.) = Seismic intensity of 5-minus was observed in this region.
 Example: 震度計 (shindokei) = Seismometer (for intensity).
+マグニチュード = まぐにちゅーど = magunichūdo = magnitude (Richter scale or similar) - Magunichūdo is the Japanese loanword for "magnitude." It refers to the total energy released by an earthquake, as measured on scales like the Richter scale or moment magnitude scale. Unlike Shindo, magnitude is a single value for an entire earthquake event.
+Example: その地震はマグニチュード8.0でした。 = (Sono jishin wa magunichūdo hachi-ten-zero deshita.) = That earthquake was magnitude 8.0.
+
 
 
 
