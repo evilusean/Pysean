@@ -1,0 +1,7 @@
+Project -> Project Settings (Change FrameRate/Resolution/etc)
+Project -> Render (create a finished file for use)
+
+'Space' = Play/Pause
+'G' = Create a marker on current clip
+'Ctrl + G' = Create a group of clips where if you change one you change the others (use 'Alt' to move an individual clip)
+
