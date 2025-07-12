@@ -12,3 +12,6 @@ sudo pacman -S kdenlive
 
 The project does not start inside of the editing program, 
 Before starting a project, you need an idea, a storyboard/script, and gather your assets for the project.
+Workspaces : To change your workspace, go into 'Editing'(Upper right hand corner) or 'Audio', 'Effects', 'Color' - changes the UI
+  You can resize any panel by clicking the side of window and dragging
+Tabs : You can edit your available tabs, 'View'(top dropdown), each tab will give you a new place to 
