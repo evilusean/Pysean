@@ -20,8 +20,9 @@ Settings :
   'bind = Ctrl+Super, K, exec, prime-run kdenlive' # Kdenlive = Hyprland keybinding for launching kdenlive using GPU
 'Ctl' + 'Alt' + ',' = Configure Keybindings, also has a search function
 Project : 'Project Settings' = Where you can change your defaults (resolution, frame rate, etc) or select a 'Profile'
+'Project Bin' = Where all your assets are stored, can simply click and drag them to here
 
-
+3:30 - Editing Tutorial Starts ================================================================================================================================================
 
 
 
