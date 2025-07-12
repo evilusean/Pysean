@@ -17,6 +17,7 @@ Workspaces : To change your workspace, go into 'Editing'(Upper right hand corner
 Tabs : You can edit your available tabs, 'View'(top dropdown), each tab will give you a new place to 'Compositions', 'Effects', 'Project Bin', etc
 Settings : 
 'Settings' -> 'Run Config Wizard' = Automatically detected my nvidia drivers, will need to 'prime-run kdenlive' so it autoselects GPU
+  'bind = Ctrl+Super, K, exec, prime-run kdenlive' # Kdenlive = Hyprland keybinding for launching kdenlive using GPU
 'Ctl' + 'Alt' + ',' = Configure Keybindings, also has a search function
 
 
