@@ -201,6 +201,7 @@ sudo pacman -S obsidian
 sudo pacman -S qbittorrent
 sudo pacman -S kdenlive
 sudo pacman -S p7zip
+sudo pacman -S file-roller
 
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
