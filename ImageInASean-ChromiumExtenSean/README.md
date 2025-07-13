@@ -2,12 +2,6 @@
 
 A Chrome extension for automatically downloading images from 4chan
 
-Future Sean To DO : Add a way to download all images/mp4s/webms from a single thread and save to a file named after the thread ID, 
-so instead of downloading all of the 'EpStein missing minute AI webms' one by one, you can just click a button, save everything in the thread to a file
-and save a tonne of time not going through each one, threads also lock after a few days and disappear forever, so you generally have to download everything 
-that anons have posted in that thread ASAP - Future Sean would definitely appreciate having a one click button to download the threads resources
-I know 4plebs exists, maybe something that just saves/archives the thread there, I am super low on hard drive space and don't have much room for HD videos/50 webms for projects/lols/lmaos
-
 ## Recent Updates for Ungoogled Chromium
 
 The extension has been updated to work with Ungoogled Chromium's stricter security policies:
