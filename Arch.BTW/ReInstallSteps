@@ -322,9 +322,9 @@ https://github.com/NeverDecaf/chromium-web-store/releases
 https://ublockorigin.com/
 https://github.com/gorhill/uBlock #not even a day into a fresh install, and already getting Ad-gry, it's where you get angry from ads.
 
-
-
-
+Get Display/Preview Images for videos/images in Nautilus on Hyprland :
+sudo pacman -S ffmpegthumbnailer gst-libav gst-plugins-bad gst-plugins-ugly
+  in Nautilus click the 'hamburger dropdown' -> 'Preferences' -> 'Preview' -> 'Show Thumbnails' = 'All Files' 'Always'
 
 
 
