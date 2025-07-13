@@ -2,6 +2,8 @@
 
 A Chrome extension for automatically downloading images from 4chan
 
+In order to batch download from a thread, make sure that your adblocker is temporarily disabled, the tabs download works with it enabled.
+
 ## Recent Updates for Ungoogled Chromium
 
 The extension has been updated to work with Ungoogled Chromium's stricter security policies:
