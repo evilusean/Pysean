@@ -138,7 +138,37 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       });
     });
   }
-  return true;
+
+  // New: Download all media from a thread to a thread-specific folder
+  if (message.action === "downloadThreadMedia") {
+    const urls = message.urls || [];
+    const threadId = message.threadId;
+    if (!urls.length || !threadId) {
+      console.log("No URLs or threadId for thread media download");
+      return true;
+    }
+    let downloadCount = 0;
+    urls.forEach(url => {
+      const filename = url.split('/').pop();
+      chrome.downloads.download({
+        url: url,
+        filename: `4Chan-${threadId}/${filename}`,
+        conflictAction: 'uniquify',
+        saveAs: false
+      }, (downloadId) => {
+        if (chrome.runtime.lastError) {
+          console.error(`Thread download failed for ${url}:`, chrome.runtime.lastError);
+        } else {
+          console.log(`Thread download started with ID: ${downloadId}`);
+        }
+        downloadCount++;
+        if (downloadCount === urls.length) {
+          console.log(`All thread media downloads started for thread ${threadId}`);
+        }
+      });
+    });
+    return true;
+  }
 });
 
 // Monitor download progress

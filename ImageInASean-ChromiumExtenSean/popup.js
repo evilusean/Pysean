@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log("Popup DOM loaded");
   const saveImagesButton = document.getElementById('saveImages');
+  const saveThreadMediaButton = document.getElementById('saveThreadMedia');
   
   if (saveImagesButton) {
     console.log("Save Images button found, adding click listener");
@@ -70,5 +71,45 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   } else {
     console.error("Save Images button not found");
+  }
+
+  // New: Save Thread Media button logic
+  if (saveThreadMediaButton) {
+    saveThreadMediaButton.addEventListener('click', async () => {
+      console.log("Save Thread Media button clicked");
+      try {
+        const [activeTab] = await chrome.tabs.query({ active: true, currentWindow: true });
+        if (!activeTab) {
+          console.error("No active tab found");
+          return;
+        }
+        const threadUrl = activeTab.url;
+        // Check if it's a 4chan thread URL
+        const threadMatch = threadUrl.match(/boards\.4chan\.org\/(\w+)\/thread\/(\d+)/);
+        if (!threadMatch) {
+          alert("Not a 4chan thread page!");
+          return;
+        }
+        const board = threadMatch[1];
+        const threadId = threadMatch[2];
+        console.log(`Detected thread: /${board}/, ID: ${threadId}`);
+        // Ask content script to scrape all media URLs
+        const response = await chrome.tabs.sendMessage(activeTab.id, { action: "getThreadMedia" });
+        if (!response || !response.urls || response.urls.length === 0) {
+          alert("No media found in thread!");
+          return;
+        }
+        // Send to background for batch download to thread folder
+        await chrome.runtime.sendMessage({
+          action: "downloadThreadMedia",
+          urls: response.urls,
+          threadId: threadId
+        });
+        alert(`Started downloading ${response.urls.length} files to folder 4Chan-${threadId}`);
+      } catch (error) {
+        console.error("Error in Save Thread Media:", error);
+        alert("Failed to save thread media. See console for details.");
+      }
+    });
   }
 });

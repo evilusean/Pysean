@@ -73,6 +73,28 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     }
     return true;  // Keep the message port open
   }
+
+  // New: Scrape all media from thread
+  if (request.action === "getThreadMedia") {
+    try {
+      // Images
+      const imgUrls = Array.from(document.querySelectorAll('img[src]'))
+        .map(img => img.src)
+        .filter(url => url.match(/\.(jpg|jpeg|png|gif)$/i) && url.startsWith('https://i.4cdn.org/'));
+      // Webms/mp4s
+      const videoUrls = Array.from(document.querySelectorAll('a[href], source[src]'))
+        .map(el => el.href || el.src)
+        .filter(url => url && url.match(/\.(webm|mp4)$/i) && url.startsWith('https://i.4cdn.org/'));
+      // Combine and dedupe
+      const allUrls = Array.from(new Set([...imgUrls, ...videoUrls]));
+      console.log(`Found ${allUrls.length} media files in thread`);
+      sendResponse({ urls: allUrls });
+    } catch (error) {
+      console.error('Error scraping thread media:', error);
+      sendResponse({ error: error.message });
+    }
+    return true;
+  }
 });
 
 /*
