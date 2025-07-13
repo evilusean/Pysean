@@ -1,6 +1,6 @@
 # 4chan Image Saver Extension
 
-A Chrome extension for automatically downloading images from 4chan and 8kun boards.
+A Chrome extension for automatically downloading images from 4chan
 
 ## Recent Updates for Ungoogled Chromium
 
