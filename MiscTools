@@ -375,6 +375,8 @@ Eleven Labs - Sound Effect Generator
 DaVinciResolve : https://www.blackmagicdesign.com/products/davinciresolve/
 Da Vinci(VinSean) Resolve (uses Nodes like blender) - Those who can Sean, Those who can not Sean, Those who can be Shawn. : https://www.youtube.com/watch?v=lm51xZHZI6g&ab_channel=JamesLee%28Animation%29
 Local Voice AI - Zyphra Zono : https://github.com/Zyphra/Zonos
+Vosk Speech = Speech to text (FOSS, runs locally offline) : https://alphacephei.com/vosk/
+  https://github.com/alphacep/vosk-api
 
 See what someone is saying with AI and lip reading (upload video):
 https://www.readtheirlips.com/
