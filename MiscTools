@@ -377,6 +377,8 @@ Da Vinci(VinSean) Resolve (uses Nodes like blender) - Those who can Sean, Those 
 Local Voice AI - Zyphra Zono : https://github.com/Zyphra/Zonos
 Vosk Speech = Speech to text (FOSS, runs locally offline) : https://alphacephei.com/vosk/
   https://github.com/alphacep/vosk-api
+Whisper Speech (ClosedAI-FOSS, runs locally) : https://openai.com/index/whisper/
+  https://github.com/openai/whisper
 
 See what someone is saying with AI and lip reading (upload video):
 https://www.readtheirlips.com/
