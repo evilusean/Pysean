@@ -22,11 +22,13 @@ Settings :
 Project : 'Project Settings' = Where you can change your defaults (resolution, frame rate, etc) or select a 'Profile'
 'Project Bin' = Where all your assets are stored, can simply click and drag them to here
 
-3:30 - Editing Tutorial Starts ================================================================================================================================================
+3:30 - Editing Tutorial Starts - Assets ================================================================================================================================================
+After you import media into kdenlive it will ask if you want to change the 'Profile' of that media, this means changing the assets (like resolution, lower for slower PC's)
+Click on an object in your project bin to preview it (on the left side)
+Double Click on an object in your project bin to see it's properties
+Click and drag to 'Timeline' to add it to your project, and where you edit your video
 
-
-
-
+4:30 - Trim and Cut =====================================================================================================================================================================
 
 
 
