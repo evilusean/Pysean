@@ -68,9 +68,10 @@ You can add fade in and outs to images
 'Star' (middle above timeline) -> 'Transform' (double click or click + drag to clip) = Will add a new window to the right of timeline where you can transform your clip/image
 You can change the size of an image by changing the 'Size' option in the new transform window
 
-
-
-
+12:30 - Remove Gaps ========================================================================================================================================================================
+')' = Snap to End to playhead(timeline marker) = will cut off part of the clip to where you are currently marked with the playhead
+'(' = Snap to Start of playhead (timeline marker) = will cut off start of the clip to where you are currently marked with the playhead
+'Right Click' (on empty space in timeline) -> 'Remove Space' = After cutting you will have a large gap, you can fix this easily by 'Remove Space' or 'Remove Space in All Tracks'
 
 
 
