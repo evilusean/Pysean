@@ -42,12 +42,16 @@ Space = Pause/Play
 Another(better) way to add a clip to the timeline is to 'Select' a clip, in the preview, watch through it, use the clip monitor, where you want it to start, Then click the :
 'I' = 'Set Zone In' (found below the preview) = Will crop to where the clip monitor is set (remove everything before)
 'O' = 'Set Zone Out' (found below the preview) = Will crop to where the clip monitor is set (remove everything after)
+'Ctrl + I' = 'Insert Zone in Project Bin' = To maintain your cuts on a clip, when going over many clips zones will change, this will keep your segment for later 
+  To access your new clip, click the 'Arrow' under the parent clip, and it will be there
 After Setting the 'Set Zone In' and 'Set Zone Out' Click and drag the clip from the preview window to the timeline, and the segment will already be cropped to where you want it
 Hover Over a Clip in the project bin 'Film Strip' Vs 'Speaker' = Will import either only the video or only the audio, by default it imports both
 When you import a clip using the default mode (Audio + Video) you can delete either the audio or video by :
 'Ctrl' + 'Shift' + 'G' = Ungroup Clips = 'Right Click' (on a grouped clip in timeline) -> 'Ungroup Clip' = ungroups a clip, so you can edit/delete/cut/whatever seperately
-
-
+'Alt' + 'Click' (on a grouped clip in timeline) = Will select only one part of the grouped clips that you can edit/delete/whatever
+'Alt' + 'Arrow Keys' = Will move between clips or markers on the timeline
+When making your transitions - look at both clips where they match the most, and then edit to that 
+'Magnifying Glass' (bottom right hand corner) = 'Fit Zoom To Timeline' = Will Zoom in on your Project to fill the entire timeline with what you currently have
 
 
 
