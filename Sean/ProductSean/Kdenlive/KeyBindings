@@ -5,6 +5,7 @@ Icons/Buttons :
 'Trim' = Left click on one of the edges and drag to crop the beginning or end - it won't be deleted, you can get it back by extending the clip back to original size
 'Scissors' = 'Razor Tool' = click this to cut a clip into 2 parts, click on the clip where you want to seperate, and then delete or move or whatever
 'Magnifying Glass' (bottom right hand corner) = 'Fit Zoom To Timeline' = Will Zoom in on your Project to fill the entire timeline with what you currently have
+'Star' (middle above timeline) -> 'Transform' (double click or click + drag to clip) = Will add a new window to the right of timeline where you can transform your clip/image
 
 'Space' = Play/Pause
 'J' = Go Backwards (press multiple times to go quicker)
@@ -19,8 +20,9 @@ Icons/Buttons :
 'Alt' + 'Arrow Keys' = Will move between clips or markers on the timeline
 'Ctrl + I' = 'Insert Zone in Project Bin' = To maintain your cuts on a clip, when going over many clips zones will change, this will keep your segment for later
   To access your new clip, click the 'Arrow' under the parent clip, and it will be there
- 
-
+ ')' = Snap to End to playhead(timeline marker) = will cut off part of the clip to where you are currently marked with the playhead
+'(' = Snap to Start of playhead (timeline marker) = will cut off start of the clip to where you are currently marked with the playhead
+'Right Click' (on empty space in timeline) -> 'Remove Space' = After cutting you will have a large gap, you can fix this easily by 'Remove Space' or 'Remove Space in All Tracks'
 
 
 
