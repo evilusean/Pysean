@@ -64,8 +64,9 @@ The Tracks/Layers work like an z-index CSS (the V2 track has precedence over the
 To add a 'Fade In', click on the top left hand corner of your clip in the timeline, a new window will appear beside the timeline on the right, you can change the fade in settings there
 You can add fade in and outs to images
 
-
-
+11:50 - Transform Effects =================================================================================================================================================================
+'Star' (middle above timeline) -> 'Transform' (double click or click + drag to clip) = Will add a new window to the right of timeline where you can transform your clip/image
+You can change the size of an image by changing the 'Size' option in the new transform window
 
 
 
