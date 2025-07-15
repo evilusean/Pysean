@@ -28,8 +28,12 @@ Click on an object in your project bin to preview it (on the left side)
 Double Click on an object in your project bin to see it's properties
 Click and drag to 'Timeline' to add it to your project, and where you edit your video
 
-4:30 - Trim and Cut =====================================================================================================================================================================
-
+4:30 - Trim and Cut - Timeline ==========================================================================================================================================================
+Scroll through the timeline to get a preview of whats on the timeline (on the right side)
+Space = Pause/Play
+'J' = Go Backwards (press multiple times to go quicker)
+'K' = Stop
+'L' = To Fastforward through timeline (press multiple times to go quicker)
 
 
 
