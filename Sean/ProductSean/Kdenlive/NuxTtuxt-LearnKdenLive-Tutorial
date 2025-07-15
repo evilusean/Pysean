@@ -68,15 +68,19 @@ You can add fade in and outs to images
 'Star' (middle above timeline) -> 'Transform' (double click or click + drag to clip) = Will add a new window to the right of timeline where you can transform your clip/image
 You can change the size of an image by changing the 'Size' option in the new transform window
 
-12:30 - Remove Gaps ========================================================================================================================================================================
+12:30 - Remove Gaps =======================================================================================================================================================================
 ')' = Snap to End to playhead(timeline marker) = will cut off part of the clip to where you are currently marked with the playhead
 '(' = Snap to Start of playhead (timeline marker) = will cut off start of the clip to where you are currently marked with the playhead
 'Right Click' (on empty space in timeline) -> 'Remove Space' = After cutting you will have a large gap, you can fix this easily by 'Remove Space' or 'Remove Space in All Tracks'
 
-
-
-
-
+13:25 - Transitions =======================================================================================================================================================================
+'U' (or double click between the clips) = 'Checkerboard' (middle above timeline) = 'Mix Clips' = Will add a purple transition box inbetween the clips - Where you can control :
+  Softness / Duration / Transparency /Invert/ Reverse / Positioning
+The 'Position' is mostly which clip it affects most
+You can either use the transition box you create with 'U' or :
+Move a clip that you want to transition 'Above'  (literally, on the timeline) - by default it will just cover the clip 'below' it, until you 
+'Click' 'Bottom Left Corner' 'Drag' (of transitioned clip over the beginning clip) = will create a new transition box / composition track - 'Wipe' (change method)
+'Shift' + 'Arrow Key' = Will jump exactly one second in whichever direction you press (if you are working at 30FPS = 1 second = 30 frames redundant) 
 
 
 
