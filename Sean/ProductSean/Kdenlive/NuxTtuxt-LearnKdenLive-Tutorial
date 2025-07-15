@@ -82,5 +82,6 @@ Move a clip that you want to transition 'Above'  (literally, on the timeline) - 
 'Click' 'Bottom Left Corner' 'Drag' (of transitioned clip over the beginning clip) = will create a new transition box / composition track - 'Wipe' (change method)
 'Shift' + 'Arrow Key' = Will jump exactly one second in whichever direction you press (if you are working at 30FPS = 1 second = 30 frames redundant) 
 
+15:20 - Create Title Clip ==================================================================================================================================================================
 
 
