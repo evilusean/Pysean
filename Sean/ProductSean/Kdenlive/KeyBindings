@@ -1,14 +1,57 @@
 Project -> Project Settings (Change FrameRate/Resolution/etc)
 Project -> Render (create a finished file for use)
 
+Icons/Buttons : 
+'Trim' = Left click on one of the edges and drag to crop the beginning or end - it won't be deleted, you can get it back by extending the clip back to original size
+'Scissors' = 'Razor Tool' = click this to cut a clip into 2 parts, click on the clip where you want to seperate, and then delete or move or whatever
+'Magnifying Glass' (bottom right hand corner) = 'Fit Zoom To Timeline' = Will Zoom in on your Project to fill the entire timeline with what you currently have
+
 'Space' = Play/Pause
 'J' = Go Backwards (press multiple times to go quicker)
 'K' = Stop
 'L' = To Fastforward through timeline (press multiple times to go quicker)
-'Trim' = Left click on one of the edges and drag to crop the beginning or end - it won't be deleted, you can get it back by extending the clip back to original size
-'Scissors' = 'Razor Tool' = click this to cut a clip into 2 parts, click on the clip where you want to seperate, and then delete or move or whatever
 'I' = 'Set Zone In' (found below the preview) = Will crop to where the clip monitor is set (remove everything before)
 'O' = 'Set Zone Out' (found below the preview) = Will crop to where the clip monitor is set (remove everything after)
 'G' = Create a marker on current clip
 'Ctrl + G' = Create a group of clips where if you change one you change the others (use 'Alt' to move an individual clip)
 'Ctrl' + 'Shift' + 'G' = Ungroup Clips = 'Right Click' (on a grouped clip in timeline) -> 'Ungroup Clip' = ungroups a clip, so you can edit/delete/cut/whatever seperately
+'Alt' + 'Click' (on a grouped clip in timeline) = Will select only one part of the grouped clips that you can edit/delete/whatever
+'Alt' + 'Arrow Keys' = Will move between clips or markers on the timeline
+'Ctrl + I' = 'Insert Zone in Project Bin' = To maintain your cuts on a clip, when going over many clips zones will change, this will keep your segment for later
+  To access your new clip, click the 'Arrow' under the parent clip, and it will be there
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
