@@ -18,13 +18,14 @@ Icons/Buttons :
 'Ctrl' + 'Shift' + 'G' = Ungroup Clips = 'Right Click' (on a grouped clip in timeline) -> 'Ungroup Clip' = ungroups a clip, so you can edit/delete/cut/whatever seperately
 'Alt' + 'Click' (on a grouped clip in timeline) = Will select only one part of the grouped clips that you can edit/delete/whatever
 'Alt' + 'Arrow Keys' = Will move between clips or markers on the timeline
+'Shift' + 'Arrow Key' = Will jump exactly one second in whichever direction you press
 'Ctrl + I' = 'Insert Zone in Project Bin' = To maintain your cuts on a clip, when going over many clips zones will change, this will keep your segment for later
   To access your new clip, click the 'Arrow' under the parent clip, and it will be there
  ')' = Snap to End to playhead(timeline marker) = will cut off part of the clip to where you are currently marked with the playhead
 '(' = Snap to Start of playhead (timeline marker) = will cut off start of the clip to where you are currently marked with the playhead
 'Right Click' (on empty space in timeline) -> 'Remove Space' = After cutting you will have a large gap, you can fix this easily by 'Remove Space' or 'Remove Space in All Tracks'
-
-
+'U' (or double click between the clips) = 'Checkerboard' (middle above timeline) = 'Mix Clips' = Will add a purple transition box inbetween the clips - Where you can control :
+'Click' 'Bottom Left Corner' 'Drag' (of transitioned clip over the beginning clip on 2 tracks) = will create a new composition track inbetween 2 tracks - 'Wipe' (change method)
 
 
 
