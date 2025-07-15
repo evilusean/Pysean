@@ -34,8 +34,9 @@ Space = Pause/Play
 'J' = Go Backwards (press multiple times to go quicker)
 'K' = Stop
 'L' = To Fastforward through timeline (press multiple times to go quicker)
-
-
+'Trim' = Left click on one of the edges and drag to crop the beginning or end - it won't be deleted, you can get it back by extending the clip back to original size
+'Scissors' = 'Razor Tool' = click this to cut a clip into 2 parts, click on the clip where you want to seperate, and then delete or move or whatever
+'Pointer' = 'Selection Tool' = Self Explanatory
 
 
 
