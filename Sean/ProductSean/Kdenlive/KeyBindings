@@ -5,10 +5,11 @@ Icons/Buttons :
 'Trim' = Left click on one of the edges and drag to crop the beginning or end - it won't be deleted, you can get it back by extending the clip back to original size
 'Scissors' = 'Razor Tool' = click this to cut a clip into 2 parts, click on the clip where you want to seperate, and then delete or move or whatever
 'Magnifying Glass' (bottom right hand corner) = 'Fit Zoom To Timeline' = Will Zoom in on your Project to fill the entire timeline with what you currently have
-'Star' (middle above timeline) -> 'Transform' (double click or click + drag to clip) = Will add a new window to the right of timeline where you can transform your clip/image
+'Star' (middle above timeline) -> 'Transform' (double click or click + drag to clip) = Will add a new window to the right of timeline where you can transform your clip/image and animate
 'Play Button' (Top left above the project bin) to add more objects to your project bin 
 'Play button arrow dropdown' (Top left above the project bin) -> 'Add a Title Clip' = Will open up an editor where you can click and add text, and change the properties like font/size/color
 'Right Click' (on lefthand side of a track) -> 'Insert a Track' = Add a new track, will allow you to place it above or below and add a name
+'Show Edit Mode' (button - below Project Monitor Window) = Will allow you to add a grid, red box, a bunch of stuff
 
 'Space' = Play/Pause
 'J' = Go Backwards (press multiple times to go quicker)
