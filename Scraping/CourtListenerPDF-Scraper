@@ -6,3 +6,95 @@
 # some anon already combined all the PDFiles, and uploaded them, so I don't need to click thousands of times : https://mega.nz/folder/A64ymBqI#dTuOhKdBgFdheja4it0OyA
 # There's so much meat here, JPM and ukrainian girls, many names, we already have the black book, I personally, don't have time to go through thousands of PDFiles
 # A good alternative would be getting OCR to read the PDFiles, and feed it to an AI somehow, and get a written summary of all the names and source documents - Future Sean problem.
+# Just the data folder: https://mega.nz/file/gRQBEB6S#oxLC5mHZxs2w1VYovxARQ4oX-w2M0xaqYM7RU_I6pN8
+# Script: https://mega.nz/file/IIAH0KoD#3cghkrIC4rgue8IsozglvIQh33WRp3tcohve9NAaKdc
+
+import requests as rq
+from bs4 import BeautifulSoup
+import os
+
+if not os.path.isdir('Data'):
+    os.mkdir('Data')
+folder='Data\\'
+
+try:
+    f=open('page_source.txt','r',encoding='utf-8')
+except:
+    print('Put the page source of the Court Listener site into a file called "page_source.txt" in the same folder as the program')
+    quit()
+
+page_source=f.read()
+f.close()
+
+soup=BeautifulSoup(page_source,'lxml')
+
+# Get Rows
+
+rows1=soup.find_all('div',{'class':'row odd'})
+rows2=soup.find_all('div',{'class':'row even'})
+rows=rows1+rows2
+print(len(rows))
+
+# Get Documents
+
+pdflinks=set()
+for row in rows:
+
+    divs=row.find_all('div',recursive=False)
+
+    count=0
+    for div in divs:
+        count+=1
+
+        # Document number
+        
+        if count==1:
+            try:
+                document_number=int(div.text)
+            except:
+                pass
+
+        # Document date
+            
+        if count==2:
+            span=div.find('span')
+            if span!=None:
+                document_date=span.get('title')
+            else:
+                document_date=div.text
+
+        # Document
+        
+        if count==3:
+            description=div.find('p').text
+
+            subfolder=folder+'Document nr '+str(document_number)
+            if not os.path.isdir(subfolder):
+                os.mkdir(subfolder)
+            else:
+                clean_date=str(document_date).strip().replace(',','').replace('.','')
+                with open(subfolder+'\\'+clean_date+'.txt', 'w') as f:
+                    f.write(str(description))
+                break
+
+            with open(subfolder+'\\description.txt', 'w') as f:
+                f.write('Document date: '+str(document_date)+'\n\n\n'+str(description))
+            
+            docs=div.find_all('div',recursive=False)
+            for doc in docs:
+                parts=doc.find_all('div',recursive=False)
+                relative_name=parts[0].text.replace('-','')
+                specific_name=parts[1].text
+                link=parts[2].find('a')
+                if link!=None:
+                    
+                    name=relative_name.strip()+'-'+specific_name.strip()
+                    name=name.replace('\xad','').replace('/','').replace('\xa02','')
+
+                    href=link.get('href')
+                    response=rq.get(href)
+                    print('    ',response)
+                    with open(subfolder+'\\'+name+'.pdf', 'wb') as f:
+                        f.write(response.content)
+                        
+    print('Downloaded document nr '+str(document_number)+':',name)
