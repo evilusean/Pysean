@@ -91,9 +91,12 @@ Move a clip that you want to transition 'Above'  (literally, on the timeline) - 
 'Right Click' (on lefthand side of a track) -> 'Insert a Track' = Add a new track, will allow you to place it above or below and add a name
 
 17:25 - Animation and Keyframes =============================================================================================================================================================
-
-
-
+'Star' (above the timeline) -> 'Transform' -> Click and drag to title clip to add it to title clip
+Inside of 'Transform' you can also create 'Animations' - On the right hand side, 'Effect/Composition' Tab you can click through each frame to add movement 
+'Stopwatch' (on right hand side of transform mode with keyframes) = 'Previous Keyframe' = click this to go to the start of the clip / 'Next Keyframe' = Go to end of clip / 'Add Keyframe' 
+The 'Keyframes' will change the position based on where you start to the end of your clip, you
+'Show Edit Mode' (button - below Project Monitor Window) = Will allow you to add a grid, red box, a bunch of stuff
+'Interpolation' (button - right hand side of transform mode below keyframes) = To change it from a linear to a different rate/speed,  
 
 
 
