@@ -83,5 +83,8 @@ Move a clip that you want to transition 'Above'  (literally, on the timeline) - 
 'Shift' + 'Arrow Key' = Will jump exactly one second in whichever direction you press (if you are working at 30FPS = 1 second = 30 frames redundant) 
 
 15:20 - Create Title Clip ==================================================================================================================================================================
+'Play Button' (Top left above the project bin) to add more objects to your project bin 
+'Play button arrow dropdown' (Top left above the project bin) -> 'Add a Title Clip' = Will open up an editor where you can click and add text, and change the properties like font/size/color
+  You can change colours, or do a gradient, shadow, center, 
 
 
