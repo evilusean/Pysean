@@ -6,8 +6,13 @@
 # some anon already combined all the PDFiles, and uploaded them, so I don't need to click thousands of times : https://mega.nz/folder/A64ymBqI#dTuOhKdBgFdheja4it0OyA
 # There's so much meat here, JPM and ukrainian girls, many names, we already have the black book, I personally, don't have time to go through thousands of PDFiles
 # A good alternative would be getting OCR to read the PDFiles, and feed it to an AI somehow, and get a written summary of all the names and source documents - Future Sean problem.
+# /pol/ pole anons work :
+# There is over a gig of PDFiles, people are already sleuthing through them, but even if you find anything, who do you appeal to? '"They"' own the ju-dicial system 
 # Just the data folder: https://mega.nz/file/gRQBEB6S#oxLC5mHZxs2w1VYovxARQ4oX-w2M0xaqYM7RU_I6pN8
 # Script: https://mega.nz/file/IIAH0KoD#3cghkrIC4rgue8IsozglvIQh33WRp3tcohve9NAaKdc
+# Folder with documents: https://mega.nz/file/JJhBSZZA#NOLhhjlfdBUdydDBbbha07mTX1gTSHMDx_eq52P_WpU
+#Giant pdf: https://mega.nz/file/QBwRhDqa#zq-hwceeNm-5aCy7N762hxB_RY9zVaV4DCptYNPHODg
+
 
 import requests as rq
 from bs4 import BeautifulSoup
