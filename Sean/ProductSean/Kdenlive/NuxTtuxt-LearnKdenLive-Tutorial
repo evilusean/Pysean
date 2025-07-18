@@ -120,8 +120,10 @@ You can zoom in on the tracks and go through frame by frame to make the video ma
 'Star' (above timeline) -> 'Volume' (click and drag to audio track) = Volume Control = Will allow you to change the volume of your audio tracks, found on the right hand side of timeline
 
 22:25 - Color Grading =======================================================================================================================================================================
-
-
+'Star' (above timeline -> 'Lift/Gamma/Gain' -> Click and drag to track = Color Grading = Allows you to change the colors of clips
+'Colour Workspace' (Top right of editor) = Will make it much easier to work with colors 
+'Effects Tab' (Top Left above workspace) -> Click and drag to the track = Effects Allow you to change how a clip looks (you could spend days in here playing around)
+'Right Click' (On an effect in the 'Effects Tab') -> 'Add to Favourites' = Adds the Effect to the 'Star' for Future Sean
 
 
 
