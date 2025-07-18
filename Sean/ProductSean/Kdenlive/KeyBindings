@@ -30,8 +30,8 @@ Icons/Buttons :
 'Right Click' (on empty space in timeline) -> 'Remove Space' = After cutting you will have a large gap, you can fix this easily by 'Remove Space' or 'Remove Space in All Tracks'
 'U' (or double click between the clips) = 'Checkerboard' (middle above timeline) = 'Mix Clips' = Will add a purple transition box inbetween the clips - Where you can control :
 'Click' 'Bottom Left Corner' 'Drag' (of transitioned clip over the beginning clip on 2 tracks) = will create a new composition track inbetween 2 tracks - 'Wipe' (change method)
-
-
+'M' (above timeline) 'Left Click' = Spacer Tool = Grabs everything that is left of the cursor everything left of click will be selected
+'Ctrl' 'Left Click' (on a track in timeline) = Will grab everything on that track to the left of your cursor when you click
 
 
 
