@@ -108,8 +108,10 @@ You Click bottom left side for the transition in, and bottom right for transitio
 'Ctrl' 'Left Click' (on a track in timeline) = Will grab everything on that track to the left of your cursor when you click
 
 20:45 - Add Soundtrack ======================================================================================================================================================================
-
-
+Add music file to project bin, click and drag it to timeline, 
+Like clips you can cut the music track, remove head or tail to find the part you want.
+You can zoom in on the tracks and go through frame by frame to make the video match the audio
+'Right Click' (on track in timeline) -> 'Seperate Channels' = Change waveform to make it easier to work with
 
 
 
