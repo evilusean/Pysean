@@ -99,7 +99,9 @@ The 'Keyframes' will change the position based on where you start to the end of 
 'Interpolation' (button - right hand side of transform mode below keyframes) = To change it from a linear to a different rate/speed,  
 
 18:50 - Add Transition ======================================================================================================================================================================
-
+'Click' (On timeline, left hand corner of clip) -> 'Composition Track' (Select track from right hand side, if automatic doesn't detect)
+ 'Invert' = redundant, but instead of top to bottom, it will go bottom to top 
+You Click bottom left side for the transition in, and bottom right for transition out, seems intuitive, writing this down for future Sean
 
 
 
