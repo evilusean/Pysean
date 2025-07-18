@@ -32,7 +32,7 @@ Icons/Buttons :
 'Click' 'Bottom Left Corner' 'Drag' (of transitioned clip over the beginning clip on 2 tracks) = will create a new composition track inbetween 2 tracks - 'Wipe' (change method)
 'M' (above timeline) 'Left Click' = Spacer Tool = Grabs everything that is left of the cursor everything left of click will be selected
 'Ctrl' 'Left Click' (on a track in timeline) = Will grab everything on that track to the left of your cursor when you click
-
+'Click' (Top Left Corner of the audio track) 'Hold Click + Drag' (to change fade in timing) = Fade In (change settings on right hand side of timeline)
 
 
 
