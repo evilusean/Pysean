@@ -13,7 +13,7 @@
 # Script: https://mega.nz/file/IIAH0KoD#3cghkrIC4rgue8IsozglvIQh33WRp3tcohve9NAaKdc
 # Folder with documents: https://mega.nz/file/JJhBSZZA#NOLhhjlfdBUdydDBbbha07mTX1gTSHMDx_eq52P_WpU
 # Giant pdf: https://mega.nz/file/QBwRhDqa#zq-hwceeNm-5aCy7N762hxB_RY9zVaV4DCptYNPHODg
-
+# ScRaper, Lol, Lmao. 
 
 import requests as rq
 from bs4 import BeautifulSoup
