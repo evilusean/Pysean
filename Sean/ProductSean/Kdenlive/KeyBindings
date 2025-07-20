@@ -19,6 +19,7 @@ Icons/Buttons :
 'Show Edit Mode' (button - below Project Monitor Window) = Will allow you to add a grid, red box, a bunch of stuff
 'Star' -> 'Transform' -> 'Fit to width/height' (magnifying glass in the transform options on right hand side) - Will allow you to fit a clip to width/height (if not correct resolution)
 'Effects Tab' -> 'Chroma Key Basic' -> 'Eye dropper' (Far Right : Click on the color/greenscreen you want to replace) = Will allow you to change a greenscreen on an image/clip 
+'Lock' (on a clip/audio on the timeline) = You can click and drag move everything else and the locked clip/audio will stay in place
 
 'Space' = Play/Pause
 'J' = Go Backwards (press multiple times to go quicker)
@@ -45,7 +46,9 @@ Icons/Buttons :
 'Ctrl' + 'A' (On the timeline) = Grab All = Will select all clips in the timeline so you can work with as a group
 'Right Click' (on selected clips) -> 'Create Sequence from Selection' = Will create a sequence of all selected clips (FUTURE SEAN : SAVE BEFORE DOING THIS - can't work with individual clips)
 'Shift' + 'Drag Edge' of an object = Scale = Will keep the same resolution and scale it down/up
-
+'Right Click' (on the clip) -> 'Change Speed' = Change Speed - Higher percentage is Faster, obviously if you speed the clip up you reduce it's length
+'Ctrl' + 'Left Click' (drag left edge of clip) = Change Speed 
+'Lock' (on a clip/audio on the timeline) = You can click and drag move everything else and the locked clip/audio will stay in place
 
 
 
