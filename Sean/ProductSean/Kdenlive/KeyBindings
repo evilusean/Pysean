@@ -49,7 +49,7 @@ Icons/Buttons :
 'Right Click' (on the clip) -> 'Change Speed' = Change Speed - Higher percentage is Faster, obviously if you speed the clip up you reduce it's length
 'Ctrl' + 'Left Click' (drag left edge of clip) = Change Speed 
 'Lock' (on a clip/audio on the timeline) = You can click and drag move everything else and the locked clip/audio will stay in place
-
+'Ctrl' + 'Enter' = Render (pick your file format, definition, resolution, 'More Options')
 
 
 
