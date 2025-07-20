@@ -144,5 +144,8 @@ Next, add another transform to the sequence, scale it down to fit the screen by 
 'Ctrl' + 'Left Click' (drag left edge of clip) = Change Speed 
 
 27:20 - Render Video =========================================================================================================================================================================
-
+'Ctrl' + 'Enter' = Render (pick your file format, definition, resolution, 'More Options')
+'Project' -> 'Render' = Render
+You can choose the format/File codec - You can also do just audio (mp3/flac/etc) 
+You can continue editing or line up your next render before the render completes, it doesn't lock you out of the program when the render starts
 
