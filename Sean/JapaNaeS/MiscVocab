@@ -933,7 +933,9 @@ Example: 診断ツール (shindan tsūru) = diagnostic tool.
 故障診断 = こしょうしんだん = koshō shindan = fault diagnosis, troubleshooting, breakdown diagnosis - This term is more specific and refers to diagnosing malfunctions or breakdowns in machinery, equipment, vehicles, or electronic systems. - 故障 (koshō): breakdown, malfunction, fault. - 診断 (shindan): diagnosis. - 
 Example: 車の故障診断 (kuruma no koshō shindan) = car fault diagnosis/troubleshooting.
 Example: 故障診断システム (koshō shindan shisutemu) = fault diagnostic system.
-
+解析 = かいせき = kaiseki = analysis, parsing, detailed examination (can imply diagnostic analysis) - While primarily meaning "analysis," kaiseki can also imply a diagnostic process, especially when a deep examination is needed to understand the cause of a problem or the state of something. It's common in engineering, scientific, and data contexts.
+Example: データ解析 (dēta kaiseki) = data analysis (which often involves diagnostics to find issues).
+Example: 問題の解析 (mondai no kaiseki) = analysis of the problem (to diagnose its root cause).
 
 
 
