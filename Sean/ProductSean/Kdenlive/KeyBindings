@@ -17,6 +17,8 @@ Icons/Buttons :
 'Play button arrow dropdown' (Top left above the project bin) -> 'Add a Title Clip' = Will open up an editor where you can click and add text, and change the properties like font/size/color
 'Right Click' (on lefthand side of a track) -> 'Insert a Track' = Add a new track, will allow you to place it above or below and add a name
 'Show Edit Mode' (button - below Project Monitor Window) = Will allow you to add a grid, red box, a bunch of stuff
+'Star' -> 'Transform' -> 'Fit to width/height' (magnifying glass in the transform options on right hand side) - Will allow you to fit a clip to width/height (if not correct resolution)
+'Effects Tab' -> 'Chroma Key Basic' -> 'Eye dropper' (Far Right : Click on the color/greenscreen you want to replace) = Will allow you to change a greenscreen on an image/clip 
 
 'Space' = Play/Pause
 'J' = Go Backwards (press multiple times to go quicker)
@@ -42,7 +44,7 @@ Icons/Buttons :
 'Click' (Top Left Corner of the audio track) 'Hold Click + Drag' (to change fade in timing) = Fade In (change settings on right hand side of timeline)
 'Ctrl' + 'A' (On the timeline) = Grab All = Will select all clips in the timeline so you can work with as a group
 'Right Click' (on selected clips) -> 'Create Sequence from Selection' = Will create a sequence of all selected clips (FUTURE SEAN : SAVE BEFORE DOING THIS - can't work with individual clips)
-
+'Shift' + 'Drag Edge' of an object = Scale = Will keep the same resolution and scale it down/up
 
 
 
