@@ -132,8 +132,12 @@ After you 'Create Sequence' It will convert each selected individual audio and v
 The Sequence you just created can be found in the 'Project Bin' folder under 'Sequences'
 
 24:10 - Keying GreenScreen ==================================================================================================================================================================
-
-
+To make a video play in a screen on a monitor (a video within a video, monitor within a monitor-cept-sean) use the 'Key GreenScreen' effect
+First, add a transform to the image to make it fit to screen, 'fit to width', and 'center vertically' from the options on far right hand side transform menu
+'Star' -> 'Transform' -> 'Fit to width/height' (magnifying glass in the transform options on right hand side) - Will allow you to fit a clip to width/height (if not correct resolution)
+'Effects Tab' -> 'Chroma Key Basic' -> 'Eye dropper' (Far Right : Click on the color/greenscreen you want to replace) = Will allow you to change a greenscreen on an image/clip 
+'Shift' + 'Drag Edge' of an object = Scale = Will keep the same resolution and scale it down/up
+Next, add another transform to the sequence, scale it down to fit the screen by holding 'shift'
 
 
 
