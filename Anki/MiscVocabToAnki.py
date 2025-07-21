@@ -6,3 +6,42 @@
 # or make the script only check for the last '=' sign and put everything before it on the front and everything after it on the back
 # also remember I added some lines that have 'Example = .....' that will need to be fixed
 # my first set of misc vocab is almost at 1000 lines, I do NOT want to type that out manually creating each new anki card
+
+# Script to convert cleaned vocab list to Anki deck (CSV for import)
+# Front: Everything before the final '=' (large text)
+# Back: Everything after the final '=' (English meaning)
+import csv
+
+INPUT_FILE = 'cleaned_misc_vocab.txt'
+OUTPUT_FILE = 'anki_misc_vocab.csv'
+
+# Helper to format front of card (all non-English fields, large)
+def format_front(line):
+    # Split by last '='
+    if '=' not in line:
+        return f"<div style='font-size:2.5em;'>{line.strip()}</div>"
+    front, _ = line.rsplit('=', 1)
+    return f"<div style='font-size:2.5em;'>{front.strip()}</div>"
+
+# Helper to format back of card (English meaning)
+def format_back(line):
+    if '=' not in line:
+        return ''
+    _, back = line.rsplit('=', 1)
+    return back.strip()
+
+
+def main():
+    with open(INPUT_FILE, 'r', encoding='utf-8') as infile, open(OUTPUT_FILE, 'w', encoding='utf-8', newline='') as outfile:
+        writer = csv.writer(outfile)
+        writer.writerow(['Front', 'Back'])
+        for line in infile:
+            line = line.strip()
+            if not line:
+                continue
+            front = format_front(line)
+            back = format_back(line)
+            writer.writerow([front, back])
+
+if __name__ == '__main__':
+    main()
