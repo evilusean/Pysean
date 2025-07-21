@@ -49,7 +49,8 @@ Remove Objects From a Video (Mask = Rotoscoping Mask (Complex Shapes) / Alpha Sh
 https://www.youtube.com/watch?v=d8gj-DjdWgM
 Paper Cutout Transition :
 https://www.youtube.com/watch?v=Fh1xhOzfjBE
-
+CRT Effect (Pixelize(block size 'x' = 2, 'y' = 4) + Video Equalizer + Draw Grid + Lens Correction(keyframable)(center = 600, edges = 700)  + Transform + rgbsplitOr + Soft Glow) : 
+https://www.youtube.com/watch?v=j7YpiLPG3CA
 
 Assets : 
 Visual Effects :
