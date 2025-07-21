@@ -1,11 +1,25 @@
 Project -> Project Settings (Change FrameRate/Resolution/etc)
 Project -> Render (create a finished file for use)
+'Settings' -> 'Configure Kdenlive' -> 'Project Defaults' # Change the default project assets folder here '/home/ArchSean/Videos' to '/mnt/sdb4/ProductSean/KdenLive/' 
+'Project' (Top Dropdown) -> 'Archive Project' = Will allow you to archive a kdenlive project with all assets you used (saved for posterity, this was my first project, etc)
 
 Icons/Buttons : 
 'Trim' = Left click on one of the edges and drag to crop the beginning or end - it won't be deleted, you can get it back by extending the clip back to original size
 'Scissors' = 'Razor Tool' = click this to cut a clip into 2 parts, click on the clip where you want to seperate, and then delete or move or whatever
 'Magnifying Glass' (bottom right hand corner) = 'Fit Zoom To Timeline' = Will Zoom in on your Project to fill the entire timeline with what you currently have
-'Star' (middle above timeline) -> 'Transform' (double click or click + drag to clip) = Will add a new window to the right of timeline where you can transform your clip/image
+'Star' (middle above timeline) -> 'Transform' (double click or click + drag to clip) = Will add a new window to the right of timeline where you can transform your clip/image and animate
+'Star' (above timeline) -> 'Volume' (click and drag to audio track) = Volume Control = Will allow you to change the volume of your audio tracks, found on the right hand side of timeline
+'Star' (above timeline -> 'Lift/Gamma/Gain' -> Click and drag to track = Color Grading = Allows you to change the colors of clips
+'Colour Workspace' (Top right of editor) = Will make it much easier to work with colors 
+'Effects Tab' (Top Left above workspace) -> Click and drag to the track = Effects Allow you to change how a clip looks (you could spend days in here playing around)
+'Right Click' (On an effect in the 'Effects Tab') -> 'Add to Favourites' = Adds the Effect to the 'Star' for Future Sean
+'Play Button' (Top left above the project bin) to add more objects to your project bin 
+'Play button arrow dropdown' (Top left above the project bin) -> 'Add a Title Clip' = Will open up an editor where you can click and add text, and change the properties like font/size/color
+'Right Click' (on lefthand side of a track) -> 'Insert a Track' = Add a new track, will allow you to place it above or below and add a name
+'Show Edit Mode' (button - below Project Monitor Window) = Will allow you to add a grid, red box, a bunch of stuff
+'Star' -> 'Transform' -> 'Fit to width/height' (magnifying glass in the transform options on right hand side) - Will allow you to fit a clip to width/height (if not correct resolution)
+'Effects Tab' -> 'Chroma Key Basic' -> 'Eye dropper' (Far Right : Click on the color/greenscreen you want to replace) = Will allow you to change a greenscreen on an image/clip 
+'Lock' (on a clip/audio on the timeline) = You can click and drag move everything else and the locked clip/audio will stay in place
 
 'Space' = Play/Pause
 'J' = Go Backwards (press multiple times to go quicker)
@@ -26,13 +40,16 @@ Icons/Buttons :
 'Right Click' (on empty space in timeline) -> 'Remove Space' = After cutting you will have a large gap, you can fix this easily by 'Remove Space' or 'Remove Space in All Tracks'
 'U' (or double click between the clips) = 'Checkerboard' (middle above timeline) = 'Mix Clips' = Will add a purple transition box inbetween the clips - Where you can control :
 'Click' 'Bottom Left Corner' 'Drag' (of transitioned clip over the beginning clip on 2 tracks) = will create a new composition track inbetween 2 tracks - 'Wipe' (change method)
-
-
-
-
-
-
-
+'M' (above timeline) 'Left Click' = Spacer Tool = Grabs everything that is left of the cursor everything left of click will be selected
+'Ctrl' 'Left Click' (on a track in timeline) = Will grab everything on that track to the left of your cursor when you click
+'Click' (Top Left Corner of the audio track) 'Hold Click + Drag' (to change fade in timing) = Fade In (change settings on right hand side of timeline)
+'Ctrl' + 'A' (On the timeline) = Grab All = Will select all clips in the timeline so you can work with as a group
+'Right Click' (on selected clips) -> 'Create Sequence from Selection' = Will create a sequence of all selected clips (FUTURE SEAN : SAVE BEFORE DOING THIS - can't work with individual clips)
+'Shift' + 'Drag Edge' of an object = Scale = Will keep the same resolution and scale it down/up
+'Right Click' (on the clip) -> 'Change Speed' = Change Speed - Higher percentage is Faster, obviously if you speed the clip up you reduce it's length
+'Ctrl' + 'Left Click' (drag left edge of clip) = Change Speed 
+'Lock' (on a clip/audio on the timeline) = You can click and drag move everything else and the locked clip/audio will stay in place
+'Ctrl' + 'Enter' = Render (pick your file format, definition, resolution, 'More Options')
 
 
 

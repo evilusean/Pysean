@@ -83,5 +83,69 @@ Move a clip that you want to transition 'Above'  (literally, on the timeline) - 
 'Shift' + 'Arrow Key' = Will jump exactly one second in whichever direction you press (if you are working at 30FPS = 1 second = 30 frames redundant) 
 
 15:20 - Create Title Clip ==================================================================================================================================================================
+'Play Button' (Top left above the project bin) to add more objects to your project bin 
+'Play button arrow dropdown' (Top left above the project bin) -> 'Add a Title Clip' = Will open up an editor where you can click and add text, and change the properties like font/size/color
+  You can change colours, or do a gradient, shadow, center, 
 
+16:50 - Create a New Track ==================================================================================================================================================================
+'Right Click' (on lefthand side of a track) -> 'Insert a Track' = Add a new track, will allow you to place it above or below and add a name
+
+17:25 - Animation and Keyframes =============================================================================================================================================================
+'Star' (above the timeline) -> 'Transform' -> Click and drag to title clip to add it to title clip
+Inside of 'Transform' you can also create 'Animations' - On the right hand side, 'Effect/Composition' Tab you can click through each frame to add movement 
+'Stopwatch' (on right hand side of transform mode with keyframes) = 'Previous Keyframe' = click this to go to the start of the clip / 'Next Keyframe' = Go to end of clip / 'Add Keyframe' 
+The 'Keyframes' will change the position based on where you start to the end of your clip, you
+'Show Edit Mode' (button - below Project Monitor Window) = Will allow you to add a grid, red box, a bunch of stuff
+'Interpolation' (button - right hand side of transform mode below keyframes) = To change it from a linear to a different rate/speed,  
+
+18:50 - Add Transition ======================================================================================================================================================================
+'Click' (On timeline, left hand corner of clip) -> 'Composition Track' (Select track from right hand side, if automatic doesn't detect)
+ 'Invert' = redundant, but instead of top to bottom, it will go bottom to top 
+You Click bottom left side for the transition in, and bottom right for transition out, seems intuitive, writing this down for future Sean
+
+20:05 - Spacer Tool =========================================================================================================================================================================
+'M' (above timeline) 'Left Click' = Spacer Tool = Grabs everything that is left of the cursor everything left of click will be selected
+'Ctrl' 'Left Click' (on a track in timeline) = Will grab everything on that track to the left of your cursor when you click
+
+20:45 - Add Soundtrack ======================================================================================================================================================================
+Add music file to project bin, click and drag it to timeline, 
+Like clips you can cut the music track, remove head or tail to find the part you want.
+You can zoom in on the tracks and go through frame by frame to make the video match the audio
+'Right Click' (on track in timeline) -> 'Seperate Channels' = Change waveform to make it easier to work with
+
+21:35 - Fade in Audio =======================================================================================================================================================================
+'Click' (Top Left Corner of the audio track) 'Hold Click + Drag' (to change fade in timing) = Fade In (change settings on right hand side of timeline)
+
+22:00 - Volume Control ======================================================================================================================================================================
+'Star' (above timeline) -> 'Volume' (click and drag to audio track) = Volume Control = Will allow you to change the volume of your audio tracks, found on the right hand side of timeline
+
+22:25 - Color Grading =======================================================================================================================================================================
+'Star' (above timeline -> 'Lift/Gamma/Gain' -> Click and drag to track = Color Grading = Allows you to change the colors of clips
+'Colour Workspace' (Top right of editor) = Will make it much easier to work with colors 
+'Effects Tab' (Top Left above workspace) -> Click and drag to the track = Effects Allow you to change how a clip looks (you could spend days in here playing around)
+'Right Click' (On an effect in the 'Effects Tab') -> 'Add to Favourites' = Adds the Effect to the 'Star' for Future Sean
+
+23:25 - Create Sequence =====================================================================================================================================================================
+'Ctrl' + 'A' (On the timeline) = Grab All = Will select all clips in the timeline so you can work with as a group
+'Right Click' (on selected clips) -> 'Create Sequence from Selection' = Will create a sequence of all selected clips (FUTURE SEAN : SAVE BEFORE DOING THIS - can't work with individual clips)
+After you 'Create Sequence' It will convert each selected individual audio and video clips to a single one, so no more editing, SAVE YOUR ROUGH DRAFT BEFORE DOING THIS
+The Sequence you just created can be found in the 'Project Bin' folder under 'Sequences'
+
+24:10 - Keying GreenScreen ==================================================================================================================================================================
+To make a video play in a screen on a monitor (a video within a video, monitor within a monitor-cept-sean) use the 'Key GreenScreen' effect
+First, add a transform to the image to make it fit to screen, 'fit to width', and 'center vertically' from the options on far right hand side transform menu
+'Star' -> 'Transform' -> 'Fit to width/height' (magnifying glass in the transform options on right hand side) - Will allow you to fit a clip to width/height (if not correct resolution)
+'Effects Tab' -> 'Chroma Key Basic' -> 'Eye dropper' (Far Right : Click on the color/greenscreen you want to replace) = Will allow you to change a greenscreen on an image/clip 
+'Shift' + 'Drag Edge' of an object = Scale = Will keep the same resolution and scale it down/up
+Next, add another transform to the sequence, scale it down to fit the screen by holding 'shift'
+
+25:45 - Change Speed =========================================================================================================================================================================
+'Right Click' (on the clip) -> 'Change Speed' = Change Speed - Higher percentage is Faster, obviously if you speed the clip up you reduce it's length
+'Ctrl' + 'Left Click' (drag left edge of clip) = Change Speed 
+
+27:20 - Render Video =========================================================================================================================================================================
+'Ctrl' + 'Enter' = Render (pick your file format, definition, resolution, 'More Options')
+'Project' -> 'Render' = Render
+You can choose the format/File codec - You can also do just audio (mp3/flac/etc) 
+You can continue editing or line up your next render before the render completes, it doesn't lock you out of the program when the render starts
 
