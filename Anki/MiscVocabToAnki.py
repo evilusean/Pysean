@@ -39,8 +39,8 @@ def main():
             line = line.strip()
             if not line:
                 continue
-            front = format_front(line)
-            back = format_back(line)
+            front = format_front(line).replace(',', '.')
+            back = format_back(line).replace(',', '.')
             writer.writerow([front, back])
 
 if __name__ == '__main__':
