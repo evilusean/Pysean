@@ -2,6 +2,7 @@ Project -> Project Settings (Change FrameRate/Resolution/etc)
 Project -> Render (create a finished file for use)
 'Settings' -> 'Configure Kdenlive' -> 'Project Defaults' # Change the default project assets folder here '/home/ArchSean/Videos' to '/mnt/sdb4/ProductSean/KdenLive/' 
 'Project' (Top Dropdown) -> 'Archive Project' = Will allow you to archive a kdenlive project with all assets you used (saved for posterity, this was my first project, etc)
+"Effect/Composition Stack" -> 'Save' = Save an effects stack as a preset - So you don't need to rebuild the effects pipeline everytime you want to use it
 
 Icons/Buttons : 
 'Trim' = Left click on one of the edges and drag to crop the beginning or end - it won't be deleted, you can get it back by extending the clip back to original size
