@@ -1,0 +1,876 @@
+# Combined and cleaned (romaji was messed up and removed indexes) :
+# https://github.com/evilusean/Pysean/blob/main/Sean/JapaNaeS/N4JLPT-Vocab700
+# https://github.com/evilusean/Pysean/blob/main/Sean/JapaNaeS/N4JLPTKanji170
+======================================================================================================================================================================================
+
+会 = kai(カイ) = a(u)(あ(う)) = meeting; meet
+同 = dou(ドウ) = onaji(おな(じ)) = same, agree, equal
+事 = ji(ジ) = koto(こと) = matter, thing, fact, business, reason, possibly
+自 = ji, shi(ジ、 シ) = mizuka(ra)(みずか(ら)) = oneself
+社 = sha(シャ) = yashiro(やしろ) = company, firm, office, association, shrine
+発 = hatsu, hotsu(ハツ、 ホツ) = departure, discharge, emit, start from
+者 = sha(シャ) = mono(もの) = someone, person
+地 = chi, ji(チ、 ジ) = ground, earth
+業 = gyou(ギョウ) = waza(わざ) = business, vocation, arts, performance
+方 = hou(ホウ) = kata(かた) = direction, person, alternative
+新 = shin(シン) = atara(shii), ara(ta)(あたら(しい)、 あら(た)) = new
+場 = jou(ジョウ) = ba(ば) = location, place
+員 = in(イン) = employee, member, number, the one in charge
+立 = ritsu(リツ) = ta(tsu)(た(つ)) = stand up, rise
+開 = kai(カイ) = hira(ku), a(keru)(ひら(く)、 あ(ける)) = open, unfold, unseal
+手 = shu(シュ) = te(て) = hand
+力 = ryoku, riki(リョク、 リキ) = chikara(ちから) = power, strength, strong, strain, bear up, exert
+問 = mon(モン) = to(u)(と(う)) = question, ask, problem
+代 = dai(ダイ) = ka(wari)(か(わり)) = substitute, change, convert, replace, period
+明 = mei, myou(メイ、 ミョウ) = aka(rui)(あか(るい)) = bright, light
+動 = dou(ドウ) = ugo(ku)(うご(く)) = move, motion, change
+京 = kyou, kei, kin(キョウ、 ケイ、 キン) = miyako(みやこ) = capital
+目 = moku, boku(モク、 ボク) = me(め) = eye, class, look, insight, experience
+通 = tsuu(ツウ) = too(ru), kayo(u)(とお(る)、かよ(う)) = traffic, pass through, avenue, commute
+言 = gen, gon(ゲン、 ゴン) = i(u), koto(い（う）、 こと) = say, word
+理 = ri(リ) = logic, arrangement, reason, justice, truth
+体 = tai(タイ) = karada(からだ) = body, substance, object, reality
+田 = den(デン) = ta(た) = rice field, rice paddy
+主 = shu(シュ) = nushi, omo(ぬし、 おも) = lord, chief, master, main thing, principal
+題 = dai(ダイ) = topic, subject
+意 = i(イ) = idea, mind, heart, taste, thought
+不 = fu, bu(フ、 ブ) = negative, non-, bad
+作 = saku, sa(サク、 サ) = tsuku(ru)(つく(る)) = make, production, prepare, build
+用 = you(ヨウ) = mochi(iru)(もち(いる)) = utilize, business, service, use, employ
+度 = do, taku(ド、 タク) = tabi, ta(i)(たび、 た(い)) = degrees, occurrence, time, counter for occurrences
+強 = kyou, gou(キョウ、 ゴウ) = tsuyo(i)(つよ(い)) = strong
+公 = kou(コウ) = public, prince, official, governmental
+持 = ji(ジ) = mo(tsu)(も(つ)) = hold, have
+野 = ya(ヤ) = no(の) = plains, field, rustic, civilian life
+以 = i(イ) = mo(tte)(もっ(て)) = by means of, because, in view of, compared with
+思 = shi(シ) = omo(u)(おも(う)) = think
+家 = ka(カ) = ie, ya, uchi(いえ、 や、 うち) = house, home, family, professional, expert
+世 = sei, se(セイ、 セ) = yo(よ) = generation, world, society, public
+多 = ta(タ) = oo(i)(おお(い)) = many, frequent, much
+正 = sei, shou(セイ、 ショウ) = tada(shii), masa(ni)(ただ(しい)、 まさ(に)) = correct, justice, righteous
+安 = an(アン) = yasu(i)(やす(い)) = safe, peaceful, cheap
+院 = in(イン) = institution, temple, mansion, school
+心 = shin(シン) = kokoro(こころ) = heart, mind, spirit
+界 = kai(カイ) = world, boundary
+教 = kyou(キョウ) = oshi(eru), oso(waru)(おし(える)、 おそ(わる)) = teach, faith, doctrine
+文 = bun, mon(ブン、 モン) = fumi(ふみ) = sentence, literature, style, art
+元 = gen, gan(ゲン、 ガン) = moto(もと) = beginning, former time, origin
+重 = juu, chou(ジュウ、 チョウ) = omo(i), kasa(neru)(おも(い)、 かさ(ねる)) = heavy, important, esteem, respect
+近 = kin(キン) = chika(i)(ちか(い)) = near, early, akin, tantamount
+考 = kou(コウ) = kanga(eru)(かんが(える)) = consider, think over
+画 = ga, kaku(ガ、 カク) = kaku(suru)(かく(する)) = brush-stroke, picture
+海 = kai(カイ) = umi(うみ) = sea, ocean
+売 = bai(バイ) = u(ru)(う(る)) = sell
+知 = chi(チ) = shi(ru)(し(る)) = know, wisdom
+道 = dou(ドウ) = michi(みち) = road-way, street, district, journey, course
+集 = shuu(シュウ) = atsu(meru)(あつ(める)) = gather, meet
+別 = betsu(ベツ) = waka(reru), wa(keru)(わか(れる)、 わ(ける)) = separate, branch off, diverge
+物 = butsu, motsu(ブツ、 モツ) = mono(もの) = thing, object, matter
+使 = shi(シ) = tsuka(u)(つか(う)) = use, order, messenger, ambassador
+品 = hin(ヒン) = shina(しな) = goods, refinement, dignity, article
+計 = kei(ケイ) = haka(ru)(はか(る)) = plot, plan, scheme, measure
+死 = shi(シ) = shi(nu)(し(ぬ)) = death, die
+特 = toku(トク) = special
+私 = shi(シ) = watakushi, watashi(わたくし、 わたし) = private, I, me
+始 = shi(シ) = haji(meru)(はじ(める)) = commence, begin
+朝 = chou(チョウ) = asa(あさ) = morning
+運 = un(ウン) = hako(bu)(はこ(ぶ)) = carry, luck, destiny, fate, transport
+終 = shuu(シュウ) = o(waru)(お(わる)) = end, finish
+台 = dai, tai(ダイ、 タイ) = utena(うてな) = pedestal, a stand, counter for machines and vehicles
+広 = kou(コウ) = hiro(i)(ひろ(い)) = wide, broad, spacious
+住 = juu, chuu(ジュウ、 チュウ) = su(mu)(す(む)) = dwell, reside, live, inhabit
+無 = mu, bu(ム、 ブ) = na(i)(な(い)) = nothingness, none, ain't, nothing, nil, not
+真 = shin(シン) = ma, makoto(ま、 まこと) = true, reality, Buddhist sect
+有 = yuu, u(ユウ、 ウ) = a(ru)(あ(る)) = possess, have, exist, happen
+口 = kou(コウ) = kuchi(くち) = mouth
+少 = shou(ショウ) = suku(nai), suko(shi)(すく(ない)、 すこ(し)) = few, little
+町 = chou(チョウ) = machi(まち) = town, village, block, street
+料 = ryou(リョウ) = fee, materials
+工 = kou, ku, gu(コウ、 ク、 グ) = craft, construction
+建 = ken, kon(ケン、 コン) = ta(teru)(た(てる)) = build
+空 = kuu(クウ) = sora, kara, a(ku), su(ku), muna(shii)(そら、 から、 あ(く)、 す(く)、 むな(しい)) = empty, sky, void, vacant, vacuum
+急 = kyuu(キュウ) = iso(gu)(いそ(ぐ)) = hurry, emergency, sudden, steep
+止 = shi(シ) = to(maru), todo(maru), ya(meru), yo(su)(と(まる)、 とど(まる)、 や(める)、 よ(す)) = stop, halt
+送 = sou(ソウ) = oku(ru)(おく(る)) = escort, send
+切 = setsu, sai(セツ、 サイ) = ki(ru)(き(る)) = cut, cutoff, be sharp
+転 = ten(テン) = koro(garu)(ころ(がる)) = revolve, turn around, change
+研 = ken(ケン) = to(gu)(と(ぐ)) = polish, study of, sharpen
+足 = soku(ソク) = ashi, ta(riru)(あし、 た(りる)) = leg, foot, be sufficient
+究 = kyuu(キュウ) = research, study
+楽 = gaku, raku(ガク、 ラク) = tano(shii)(たの(しい)) = music, comfort, ease
+起 = ki(キ) = o(kiru), oko(su)(お(きる)、 おこ(す)) = wake up, get up; rouse
+着 = chaku(チャク) = ki(ru), tsu(ku)(き(る)、つ(く)) = arrive, wear, counter for suits of clothing
+店 = ten(テン) = mise(みせ) = store, shop
+病 = byou(ビョウ) = ya(mu)(や(む)) = ill, sick
+質 = shitsu, shichi(シツ、 シチ) = tachi, tada(su)(たち、 ただ(す)) = substance, quality, matter, temperament
+待 = tai(タイ) = ma(tsu)(ま(つ)) = wait, depend on
+試 = shi(シ) = kokoro(miru), tame(su)(こころ(みる)、 ため(す)) = test, try, attempt, experiment
+族 = zoku(ゾク) = tribe, family
+銀 = gin(ギン) = silver
+早 = sou, sa(ソウ、 サッ) = haya(i)(はや(い)) = early, fast
+映 = ei(エイ) = utsu(ru), ha(eru)(うつ(る)、 は(える)) = reflect, reflection, projection
+親 = shin(シン) = oya, shita(shii)(おや、 した(しい)) = parent, intimacy, relative, familiarity
+験 = ken(ケン) = verification, effect, testing
+英 = ei(エイ) = England, English, hero, outstanding
+医 = i(イ) = doctor, medicine
+仕 = shi(シ) = attend, doing, official, serve
+去 = kyo, ko(キョ、 コ) = sa(ru)(さ(る)) = gone, past, quit, leave, elapse, eliminate
+味 = mi(ミ) = aji(あじ) = flavor, taste
+写 = sha(シャ) = utsuru(うつ(る)) = copy, be photographed, describe
+字 = ji(ジ) = character, letter, word
+答 = tou(トウ) = kota(eru)(こた(える)) = solution, answer
+夜 = ya(ヤ) = yo, yoru(よ、 よる) = night, evening
+音 = on(オン) = oto, ne(おと、 ね) = sound, noise
+注 = chuu(チュウ) = soso(gu), sa(su), tsu(gu)(そそ(ぐ)、 さ(す)、 つ(ぐ)) = pour, irrigate, shed (tears), flow into, concentrate on
+帰 = ki(キ) = kae(ru), kae(su)(かえ(る)、 かえ(す)) = homecoming, arrive at, lead to, result in
+古 = ko(コ) = furu(i)(ふる(い)) = old
+歌 = ka(カ) = uta, uta(u)(うた、 うた(う)) = song, sing
+買 = bai(バイ) = ka(u)(か(う)) = buy
+悪 = aku(アク) = waru(i)(わる(い)) = bad, evil, wrong
+図 = zu, to(ズ、 ト) = haka(ru)(はか(る)) = map, drawing, plan, extraordinary
+週 = shuu(シュウ) = week
+室 = shitsu(シツ) = muro(むろ) = room, apartment, chamber, greenhouse, cellar
+歩 = ho, bu(ホ、 ブ) = aru(ku), ayu(mu)(ある(く)、 あゆ(む)) = walk, counter for steps
+風 = fuu, fu(フウ、 フ) = kaze, kaza-(かぜ、 かざ-) = wind, air, style, manner
+紙 = shi(シ) = kami(かみ) = paper
+黒 = koku(コク) = kuro(くろ) = black
+花 = ka, ke(カ、 ケ) = hana(はな) = flower
+春 = shun(シュン) = haru(はる) = spring
+赤 = seki, shaku(セキ、 シャク) = aka(i)(あか(い)) = red
+青 = sei, shou(セイ、 ショウ) = ao(i)(あお(い)) = blue
+館 = kan(カン) = yakata(やかた) = building, mansion, large building, palace
+屋 = oku(オク) = ya(や) = roof, house, shop, dealer, seller
+色 = shoku, shiki(ショク、 シキ) = iro(いろ) = color
+走 = sou(ソウ) = hashi(ru)(はし(る)) = run
+秋 = shuu(シュウ) = aki(あき) = autumn, fall
+夏 = ka, ge(カ、 ゲ) = natsu(なつ) = summer
+習 = shuu(シュウ) = nara(u)(なら(う)) = learn
+駅 = eki(エキ) = station
+洋 = you(ヨウ) = ocean, sea, foreign, Western style
+旅 = ryo(リョ) = tabi(たび) = trip, travel
+服 = fuku(フク) = clothing, admit, obey
+夕 = (none) = yuu(ゆう) = evening
+借 = shaku(シャク) = ka(riru)(か(りる)) = borrow, rent
+曜 = you(ヨウ) = weekday
+飲 = in(イン) = no(mu)(の(む)) = drink
+肉 = niku(ニク) = meat
+貸 = tai(タイ) = ka(su), kashi(か(す)、 かし) = lend
+堂 = dou(ドウ) = public chamber, hall
+鳥 = chou(チョウ) / tori(とり) = bird, chicken
+飯 = han(ハン) = meshi(めし) = meal, rice
+勉 = ben(ベン) = tsuto(meru)(つと(める)) = exertion, endeavor, effort
+冬 = tou(トウ) = fuyu(ふゆ) = winter
+昼 = chuu(チュウ) = hiru (ひる) = daytime, noon
+茶 = cha, sa(チャ、 サ) = tea
+弟 = tei, dai, de(テイ、 ダイ、 デ) = otouto(おとうと) = younger brother
+牛 = gyuu(ギュウ) = ushi(うし) = cow
+魚 = gyo(ギョ) = uo, sakana(うお、 さかな) = fish
+兄 = kyou, kei(キョウ、 ケイ) = ani(あに) = elder brother
+犬 = ken(ケン) = inu(いぬ) = dog
+妹 = mai(マイ) = imouto(いもうと) = younger sister
+姉 = shi(シ) = ane(あね) = elder sister
+漢 = kan(カン) = China
+Here's Batch 1 with the romaji double-checked:
+
+あいさつ = aisatsu = greeting
+あいさつする = aisatsusuru = to greet [Suru Verb]
+間 = あいだ = aida = space, interval
+合う = あう = au = to fit, to match [Godan Verb]
+あかちゃん = akachan = baby, infant
+上がる = あがる = agaru = to rise, to go up [Godan Verb]
+赤ん坊 = あかんぼう = akanbou = baby
+空く = あく = aku = to open, to become empty [Godan Verb]
+アクセサリー = akusesarii = accessory
+あげる = ageru = to give [Ichidan Verb]
+浅い = あさい = asai = shallow, superficial [I-adjective]
+味 = あじ = aji = flavor, taste
+アジア = ajia = Asia
+明日 = あす = asu = tomorrow
+遊び = あそび = asobi = play [noun]
+集る = あつまる = atsumaru = to gather, to collect [Godan verb]
+集める = あつめる = atsumeru = to collect, to assemble [Ichidan Verb]
+アナウンサー = anaunsaa = announcer
+アフリカ = afurika = Africa
+アメリカ = amerika = America
+謝る = あやまる = ayamaru = to apologize [Godan Verb]
+アルコール = arukooru = alcohol
+アルバイト = arubaito = part-time job
+安心 = あんしん = anshin = peace of mind, relief [Noun]
+安全 = あんぜん = anzen = safety, security [Noun]
+あんな = anna = such, like that [prenoun adjectival]
+案内 = あんない = annai = information, guidance [Noun]
+案内する = あんないする = annaisuru = to guide; to show around [Suru verb]
+以下 = いか = ika = less than, below [noun]
+以外 = いがい = igai = with the exception of, excepting [Noun]
+医学 = いがく = igaku = medical science
+生きる = いきる = ikiru = to live, to exist [Ichidan verb]
+意見 = いけん = iken = opinion, view [Noun]
+石 = いし = ishi = stone
+いじめる = ijimeru = to tease, to torment [Ichidan verb]
+以上 = いじょう = ijou = more than, this is all [Noun]
+急ぐ = いそぐ = isogu = to hurry, to rush [Godan verb]
+致す = いたす = itasu = (humble) to do [Godan Verb]
+いただく = itadaku = to receive, to take food or drink (humble) [Godan verb]
+一度 = いちど = ichido = once, one time
+一生懸命 = いっしょうけんめい = isshoukenmei = as well as one can, with utmost effort [noun]
+いっぱい = ippai = full, to the utmost [Noun]
+糸 = いと = ito = thread
+以内 = いない = inai = within, inside of
+田舎 = いなか = inaka = rural, countryside
+祈る = いのる = inoru = to pray, to wish [Godan verb]
+いらっしゃる = irassharu = (honorific) to be, to come [Godan verb-aru special class]
+~員 = ~いん = ~in = member of ~ [Noun, used as suffix]
+植える = うえる = ueru = to plant, to grow [Ichidan Verb]
+うかがう = ukagau = to visit [Godan verb]
+うかがう = ukagau = to ask [Godan verb]
+受付 = うけつけ = uketsuke = reception (desk), information
+受ける = うける = ukeru = to take (lesson, test), to undergo [Ichidan verb]
+動く = うごく = ugoku = to move [Godan verb]
+うそ = uso = lie [Noun]
+うち = uchi = within [noun]
+打つ = うつ = utsu = To hit, to strike [Godan verb]
+美しい = うつくしい = utsukushii = Beautiful, lovely [I-adjective]
+写す = うつす = utsusu = to copy, to photograph [Godan verb]
+移る = うつる = utsuru = to move, to transfer [Godan verb]
+腕 = うで = ude = arm [noun]
+うまい = umai = delicious [I-adjective]
+裏 = うら = ura = reverse side, wrong side, back [Noun]
+売り場 = うりば = uriba = place where things are sold [noun]
+うれしい = ureshii = happy, glad [I-adjective]
+運転 = うんてん = unten = driving [Noun]
+運転する = うんてんする = untensuru = to drive [Suru verb]
+運転手 = うんてんしゅ = untenshu = driver, chauffeur
+運動 = うんどう = undou = exercise [Noun]
+運動する = うんどうする = undousuru = exercise [Suru verb]
+エスカレーター = esukareetaa = escalator
+枝 = えだ = eda = branch, twig
+選ぶ = えらぶ = erabu = to choose, to select [Godan Verb]
+遠慮 = えんりょ = enryo = reserve; unobtrusiveness [Noun]
+遠慮する = えんりょする = enryosuru = to hold back; to behave with modesty [Suru verb]
+おいでになる = oideninaru = (honorific) to be, to come
+お祝い = おいわい = oiwai = congratulation, celebration [Noun]
+オートバイ = ootobai = motorcycle
+オーバー = oobaa = overcoat
+おかげ = okage = thanks or owing to [noun]
+おかしい = okashii = strange, funny [I-adjective]
+~おき = ~oki = after every ~ [noun and suffix]
+億 = おく = oku = hundred million
+屋上 = おくじょう = okujou = rooftop
+贈り物 = おくりもの = okurimono = present, gift [Noun]
+送る = おくる = okuru = to send (a thing), to dispatch [Godan verb]
+遅れる = おくれる = okureru = to be late, to be delayed [Ichidan verb]
+お子さん = おこさん = okosan = (someone else's) child
+起こす = おこす = okosu = to wake someone [Godan Verb]
+行う = おこなう = okonau = to perform, to do, to carry out [Godan verb]
+怒る = おこる = okoru = to get angry, to be angry [Godan verb]
+押し入れ = おしいれ = oshiire = closet
+お嬢さん = おじょうさん = ojousan = 1.(honorific) daughter, 2. young lady
+お宅 = おたく = otaku = (polite) your house, your home
+落ちる = おちる = ochiru = to fall, to drop [Ichidan verb]
+おっしゃる = ossharu = (honorific) to say, to speak [Godan verb-Aru special class]
+夫 = おっと = otto = husband
+おつり = otsuri = change (money), balance [Noun]
+音 = おと = oto = sound, note [noun]
+落す = おとす = otosu = to drop, to lose [Godan verb]
+踊り = おどり = odori = dance [noun]
+踊る = おどる = odoru = to dance [Godan verb]
+驚く = おどろく = odoroku = to be surprised, to be astonished [Godan verb]
+お祭り = おまつり = omatsuri = festival
+お見舞い = おみまい = omimai = calling on someone who is ill, enquiry [Noun]
+お土産 = おみやげ = omiyage = souvenir
+思い出す = おもいだす = omoidasu = to recall, to remember [Godan verb]
+思う = おもう = omou = to think, to feel [Godan verb]
+おもちゃ = omocha = toy
+表 = おもて = omote = the front, surface, exterior [noun]
+親 = おや = oya = parents
+下りる = おりる = oriru = to descend a mountain, to (descend) go down stairs [ichidan verb]
+おる = おる = oru = to be (polite version of いる) [Godan verb]
+折る = おる = oru = to break, to fold, to pick a flower [Godan verb]
+お礼 = おれい = orei = thanking, expression of gratitude [noun]
+折れる = おれる = oreru = to break, to be folded, to give in, to turn (a corner) [ichidan verb]
+終わり = おわり = owari = the end [noun]
+~おわる = ~owaru = end of ~ [Godan verb]
+~家 = ~か = ~ka = professional ~ (ex.書道家, 格闘家) [noun]
+カーテン = kaaten = curtain
+~会 = ~かい = ~kai = ~ meeting (開会、閉会) [Noun-suffix]
+海岸 = かいがん = kaigan = coast, beach
+会議 = かいぎ = kaigi = meeting, conference
+会議室 = かいぎしつ = kaigishitsu = conference room
+会場 = かいじょう = kaijou = assembly hall, meeting place, the grounds
+会話 = かいわ = kaiwa = conversation [Noun]
+帰り = かえり = kaeri = return, coming back
+変える = かえる = kaeru = to change, to alter, to vary [Ichidan verb]
+科学 = かがく = kagaku = science [Noun]
+Here's Batch 2 with the romaji double-checked:
+
+鏡 = かがみ = kagami = mirror
+学部 = がくぶ = gakubu = department of a university (ex. 医学部)
+掛ける = かける = kakeru = to hang, to put on (eg wall) [Ichidan Verb]
+かける = kakeru = to sit down [Ichidan verb]
+かける = kakeru = to begin to [Ichidan verb]
+飾る = かざる = kazaru = to decorate, to ornament, to adorn [Godan verb]
+火事 = かじ = kaji = fire
+ガス = gasu = gas
+ガソリン = gasorin = gasoline, petrol
+ガソリンスタンド = gasorin sutando = gasoline stand, gas station, petrol station
+方 = かた = kata = way of doing
+かたい = katai = solid, hard, firm
+形 = かたち = katachi = shape
+片付ける = かたづける = katazukeru = to tidy up, to put in order, to put away [Ichidan verb]
+課長 = かちょう = kachou = section manager
+勝つ = かつ = katsu = to win, to gain victory [Godan verb]
+かっこう = kakkou = appearance, manner
+家内 = かない = kanai = housewife
+悲しい = かなしい = kanashii = sad, sorrowful [I-adjective]
+必ず = かならず = kanarazu = certainly, necessarily, invariably [Adverb]
+お金持ち = かねもち/おかねもち = kanemochi/okanemochi = rich man
+彼女 = かのじょ = kanojo = she, girl-friend
+壁 = かべ = kabe = wall
+かまう = kamau = to mind, to care about
+髪 = かみ = kami = hair
+噛む = かむ = kamu = to bite, to chew [Godan verb]
+通う = かよう = kayou = (1) to go back and forth, (2) to commute [Godan verb]
+ガラス = garasu = glass, pane
+彼 = かれ = kare = he, boyfriend
+彼ら = かれら = karera = they (usually male)
+乾く = かわく = kawaku = to get dry [Godan verb]
+代わり = かわり = kawari = substitute, alternate [Noun]
+変わる = かわる = kawaru = to change, to be transformed, to vary [Godan verb]
+考える = かんがえる = kangaeru = to consider [Ichidan verb]
+関係 = かんけい = kankei = relation, connection [noun]
+看護婦 = かんごふ = kangofu = (female) nurse
+簡単 = かんたん = kantan = simple [Na-adjective]
+頑張る = がんばる = ganbaru = to try one's best, to persist [Godan verb]
+気 = き = ki = spirit, mood
+機会 = きかい = kikai = chance, opportunity
+危険 = きけん = kiken = danger, peril, hazard
+聞こえる = きこえる = kikoeru = to be heard, to be audible [Ichidan verb]
+汽車 = きしゃ = kisha = train (steam)
+技術 = ぎじゅつ = gijutsu = art, technique, technology, skill
+季節 = きせつ = kisetsu = season
+規則 = きそく = kisoku = rule, regulations
+きっと = kitto = surely, definitely [adverb]
+絹 = きぬ = kinu = silk
+厳しい = きびしい = kibishii = strict [I-adjective]
+気分 = きぶん = kibun = feeling, mood
+決る = きまる = kimaru = to be decided, to be settled [Godan verb]
+君 = きみ = kimi = You (masculine term for female)
+決める = きめる = kimeru = to decide [Ichidan verb]
+気持ち = きもち = kimochi = feeling, sensation, mood [Noun]
+着物 = きもの = kimono
+客 = きゃく = kyaku = guest, customer
+急 = きゅう = kyuu = 1. urgent, sudden, 2. steep [Na-adjective]
+急行 = きゅうこう = kyuukou = express (eg train that bypasses stations)
+教育 = きょういく = kyouiku = training, education
+教会 = きょうかい = kyoukai = church
+競争 = きょうそう = kyousou = competition, contest
+興味 = きょうみ = kyoumi = interest (in something)
+近所 = きんじょ = kinjo = neighbourhood
+区 = く = ku = district
+具合 = ぐあい = guai = condition, state, health
+空気 = くうき = kuuki = air, atmosphere [Noun]
+空港 = くうこう = kuukou = airport
+草 = くさ = kusa = grass
+くださる = kudasaru = (honorific) to give, to confer [Godan verb aru special class]
+首 = くび = kubi = neck
+雲 = くも = kumo = cloud
+比べる = くらべる = kuraberu = to compare [Ichidan verb]
+くれる = kureru = to give, to do for [Ichidan verb]
+暮れる = くれる = kureru = to get dark, to come to an end [Ichidan verb]
+~君 = ~くん = ~kun = Mr (junior) ~, master ~
+毛 = け = ke = hair; fur
+計画 = けいかく = keikaku = plan, project, schedule
+計画する = けいかくする = keikakusuru = to plan
+経験 = けいけん = keiken = experience
+経験する = けいけんする = keikensuru = to experience [Suru verb]
+経済 = けいざい = keizai = economics, finance, economy
+警察 = けいさつ = keisatsu = police
+けが = kega = injury
+けがする = kegasuru = to get injured, to get hurt [Suru verb]
+ケーキ = keeki = cake
+景色 = けしき = keshiki = scenery, scene, landscape
+消しゴム = けしゴム = keshigomu = eraser
+下宿 = げしゅく = geshuku = boarding, lodging, boarding house
+決して = けっして = kesshite = never [adverb]
+けれど/けれども = keredo/keredomo = but, however
+~軒 = ~けん = ~ken = counter for houses
+原因 = げんいん = gen'in = cause, origin, source
+けんか = kenka = quarrel
+けんかする = kenkasuru = to quarrel
+玄関 = げんかん = genkan = entrance way (in Japanese house)
+研究 = けんきゅう = kenkyuu = study, research, investigation
+研究室 = けんきゅうしつ = kenkyuushitsu = study room, laboratory
+見物 = けんぶつ = kenbutsu = a sight, an attraction
+子 = こ = ko = child
+郊外 = こうがい = kougai = suburb, outskirts
+講義 = こうぎ = kougi = lecture
+工業 = こうぎょう = kougyou = (manufacturing) industry
+高校 = こうこう = koukou = high school/senior high school
+高等学校 = こうとうがっこう = koutougakkou = high school/senior high school (very official)
+高校生 = こうこうせい = koukousei = high school student
+工場 = こうじょう = koujou = factory
+校長 = こうちょう = kouchou = principal, headmaster
+交通 = こうつう = koutsuu = traffic, transportation
+講堂 = こうどう = koudou = auditorium
+公務員 = こうむいん = koumuin = government worker, public servant
+国際 = こくさい = kokusai = international
+心 = こころ = kokoro = core, heart
+ご主人 = ごしゅじん = goshujin = your husband, her husband
+故障 = こしょう = koshou = breakdown; failure; fault
+故障する = こしょうする = koshousuru = to break-down
+ご存じ = ごぞんじ = gozonji = knowing, acquaintance
+答 = こたえ = kotae = answer, response
+ごちそう = gochisou = feast, treating (someone)
+こっち = kocchi = this direction, this side
+こと = koto = thing, matter, fact
+小鳥 = ことり = kotori = small bird
+このあいだ = kono aida = the other day, recently
+このごろ = konogoro = these days, nowadays
+細かい = こまかい = komakai = (1) small, (2) fine, minute [I-adjective]
+ごみ = gomi = rubbish, trash, garbage
+込む = こむ = komu = to be crowded [Godan verb]
+米 = こめ = kome = uncooked rice
+ごらんになる = goranninaru = (honorific) to see
+これから = korekara = after this
+怖い = こわい = kowai = scary, frightening [I-adjective]
+壊す = こわす = kowasu = to break, to break down [Godan verb]
+壊れる = こわれる = kowareru = to be broken, to break [Ichidan verb]
+コンサート = konsaato = concert
+今度 = こんど = kondo = now, next time
+コンピュータ/コンピューター = konpyuuta/konpyuutaa = computer
+今夜 = こんや = konya = this evening, tonight
+最近 = さいきん = saikin = latest, most recent, nowadays
+最後 = さいご = saigo = last, end, conclusion
+最初 = さいしょ = saisho = beginning, first [Na-adjective]
+坂 = さか = saka = slope, hill
+探す = さがす = sagasu = to search, to seek, to look for [Godan Verb]
+下る = さがる = sagaru = to get down, to descend [Godan verb]
+盛ん = さかん = sakan = popularity, prosperous [Na-adjective]
+下げる = さげる = sageru = to hang, to lower, to move back [Ichidan verb]
+差し上げる = さしあげる = sashiageru = (polite) to give, to offer [Ichidan verb]
+さっき = sakki = some time ago
+寂しい = さびしい = sabishii = lonely, lonesome [I-adjective]
+~様 = ~さま = ~sama = Mr or Mrs~
+さ来月 = さらいげつ = saraigetsu = the month after next
+さ来週 = さらいしゅう = saraishuu = the week after next
+サラダ = sarada = salad
+騒ぐ = さわぐ = sawagu = to make noise, to clamor, to be excited [Godan verb]
+触る = さわる = sawaru = to touch, to feel [Godan verb]
+産業 = さんぎょう = sangyou = industry
+サンダル = sandaru = sandal
+サンドイッチ = sandoicchi = sandwich
+残念 = ざんねん = zannen = bad luck, disappointment [Na-adjective]
+市 = し = shi = city
+字 = じ = ji = character, hand-writing
+試合 = しあい = shiai = match, game, contest
+仕方 = しかた = shikata = way, method
+しかる = shikaru = to scold [Godan verb]
+~式 = ~しき = ~shiki = ceremony (ex. 入学式, 卒業式)
+試験 = しけん = shiken = examination, test, study
+事故 = じこ = jiko = accident
+地震 = じしん = jishin = earthquake
+時代 = じだい = jidai = period, epoch, era
+下着 = したぎ = shitagi = underwear
+支度 = したく = shitaku = preparation
+支度する = したくする = shitakusuru = to prepare [Suru verb]
+しっかり = shikkari = firmly, tightly, steady [Adverb]
+失敗 = しっぱい = shippai = failure, mistake, blunder
+失礼 = しつれい = shitsurei = (1) discourtesy, impoliteness, (2) Excuse me, Goodbye
+辞典 = じてん = jiten = dictionary
+品物 = しなもの = shinamono = goods
+しばらく = shibaraku = little while [Adverb]
+島 = しま = shima = island
+市民 = しみん = shimin = citizen
+事務所 = じむしょ = jimusho = office
+社会 = しゃかい = shakai = society, public
+社長 = しゃちょう = shachou = company president, manager, director
+じゃま = jama = hindrance, intrusion [Na-adjective]
+ジャム = jamu = jam
+自由 = じゆう = jiyuu = freedom
+習慣 = しゅうかん = shuukan = custom, habit, manners
+住所 = じゅうしょ = juusho = address (eg of house), residence, domicile
+柔道 = じゅうどう = juudou = judo
+十分 = じゅうぶん = juubun = enough , sufficient [Na-adjective]
+出席 = しゅっせき = shusseki = attendance, presence
+出席する = しゅっせきする = shussekisuru = to attend [Suru verb]
+出発 = しゅっぱつ = shuppatsu = departure
+出発する = しゅっぱつする = shuppatsusuru = to depart; to leave [Suru verb]
+趣味 = しゅみ = shumi = hobby
+準備 = じゅんび = junbi = preparation
+準備する = じゅんびする = junbisuru = to prepare [Suru verb]
+紹介 = しょうかい = shoukai = introduction
+正月 = しょうがつ = shougatsu = New Year, New Year's Day
+小学校 = しょうがっこう = shougakkou = primary school, elementary school
+小説 = しょうせつ = shousetsu = novel, story
+招待 = しょうたい = shoutai = invitation
+招待する = しょうたいする = shoutaisuru = to invite [Suru verb]
+承知 = しょうち = shouchi = consent, acceptance
+承知する = しょうちする = shouchisuru = consent, acceptance [Suru verb]
+将来 = しょうらい = shourai = future, prospects
+食事 = しょくじ = shokuji = meal
+食事する = しょくじする = shokujisuru = to have a meal [Suru verb]
+食料品 = しょくりょうひん = shokuryouhin = foodstuff, groceries
+女性 = じょせい = josei = woman
+知らせる = しらせる = shiraseru = to notify, to advise [Ichidan verb]
+調べる = しらべる = shiraberu = to investigate, to check up [Ichidan verb]
+人口 = じんこう = jinkou = population
+神社 = じんじゃ = jinja = Shinto shrine
+親切 = しんせつ = shinsetsu = kindness, gentleness [Na-adjective]
+心配 = しんぱい = shinpai = worry, concern
+心配する = しんぱいする = shinpaisuru = to worry; to concern [Suru verb]
+新聞社 = しんぶんしゃ = shinbunsha = newspaper company
+水泳 = すいえい = suiei = swimming
+水道 = すいどう = suidou = water service, water supply
+ずいぶん = zuibun = extremely [adverb]
+数学 = すうがく = suugaku = mathematics, arithmetic
+スーツ = suutsu = suit
+スーツケース = suutsukeisu = suitcase
+スーパー/スーパーマーケット = suupaa/suupaamaaketto = supermarket
+過ぎる = すぎる = sugiru = to exceed, to go beyond [Ichidan verb]
+すく = suku = to become empty [Godan verb]
+すく = suku = to be less crowded [Godan verb]
+スクリーン = sukuriin = screen
+凄い = すごい = sugoi = terrific, amazing, to a great extent [I-adjective]
+進む = すすむ = susumu = to make progress, to advance, to proceed [Godan verb]
+すっかり = sukkari = all, completely, thoroughly [adverb]
+ずっと = zutto = straight, quickly, all of a sudden [adverb]
+ステーキ = suteeki = steak
+ステレオ = sutereo = stereo
+捨てる = すてる = suteru = to throw away [Ichidan verb]
+砂 = すな = suna = sand
+すばらしい = subarashii = wonderful, splendid [I-adjective]
+滑る = すべる = suberu = to slide, to slip [Godan verb]
+隅 = すみ = sumi = corner, nook
+済む = すむ = sumu = to finish, to end [Godan verb]
+すり = suri = pickpocket
+すると = suruto = and, then [conjunction]
+~製 = ~せい = ~sei = made in ~ (ex. 日本製, 中国製)
+生活 = せいかつ = seikatsu = living, life, livelihood
+生活する = せいかつする = seikatsusuru = to live [Suru verb]
+生産 = せいさん = seisan = production, manufacture
+生産する = せいさんする = seisansuru = to produce; to manufacture [Suru verb]
+政治 = せいじ = seiji = politics, government
+西洋 = せいよう = seiyou = the west, Western countries
+世界 = せかい = sekai = the world
+席 = せき = seki = seat
+説明 = せつめい = setsumei = explanation
+背中 = せなか = senaka = back (of body)
+ぜひ = zehi = certainly, without fail [adverb]
+世話 = せわ = sewa = looking after, help
+世話する = せわする = sewasuru = to look after; to help [Suru verb]
+線 = せん = sen = line, wire
+ぜんぜん = zenzen = wholly, entirely [adverb]
+戦争 = せんそう = sensou = war
+先輩 = せんぱい = senpai = senior, superior, elder
+専門 = せんもん = senmon = speciality, study major
+相談 = そうだん = soudan = consultation, discussion
+相談する = そうだんする = soudansuru = to consult; to discuss [Suru Verb]
+育てる = そだてる = sodateru = to raise, to rear, to bring up [Ichidan verb]
+卒業 = そつぎょう = sotsugyou = graduation
+卒業する = そつぎょうする = sotsugyousuru = to graduate [Suru verb]
+祖父 = そふ = sofu = grandfather
+ソフト = sofuto = soft [Na-adjective]
+祖母 = そぼ = sobo = grandmother
+それで = sorede = and, thereupon, because of that [Conjunction]
+それに = soreni = besides, moreover [Conjunction]
+それほど = sorehodo = to that degree, extent [Adverb]
+そろそろ = sorosoro = gradually, steadily, soon [Adverb]
+そんな = sonna = such, like that, that sort of [Prenoun adjective]
+そんなに = sonnani = so much, like that [Expression]
+~だい = ~代 = ~dai = ~ age/period (ex. 30代, 40代)
+退院 = たいいん = taiin = leaving hospital
+退院する = たいいんする = taiinsuru = to leave a hospital [Suru verb]
+大学生 = だいがくせい = daigakusei = college student, university student
+大事 = だいじ = daiji = important, valuable, serious matter [Na-adjective]
+大体 = だいたい = daitai = generally, substantially
+たいてい = taitei = generally, usually [Na-adjective, adverb, noun]
+タイプ = taipu = type, style
+大分 = だいぶ = daibu = considerably, greatly, a lot [Adverb]
+台風 = たいふう = taifuu = typhoon
+倒れる = たおれる = taoreru = to collapse, to break down [Ichidan verb]
+だから = dakara = so, therefore [Conjunction]
+確か = たしか = tashika = certain, sure, definite [Na-adjective]
+足す = たす = tasu = to add (numbers), to do (eg. one's business) [Godan verb]
+訪ねる = たずねる = tazuneru = to visit [Ichidan verb]
+尋ねる = たずねる = tazuneru = to ask [Ichidan verb]
+正しい = ただしい = tadashii = right, just, correct [I-adjective]
+畳 = たたみ = tatami = mat (Japanese straw mat)
+立てる = たてる = tateru = to stand (something) up, to erect (something) [Ichidan verb]
+建てる = たてる = tateru = to build, to construct [Ichidan verb]
+例えば = たとえば = tatoeba = for example, eg. [Adverb]
+棚 = たな = tana = shelves, rack
+楽む = たのしむ = tanoshimu = to enjoy oneself [Godan verb]
+楽しみ = たのしみ = tanoshimi = pleasure, joy [Noun]
+たまに = tamani = occasionally, once in a while [Adverb]
+為 = ため = tame = good, advantage, in order to [Noun]
+だめ = dame = useless, no good, hopeless [Na-adjective]
+足りる = たりる = tariru = to be sufficient, to be enough [Ichidan verb]
+男性 = だんせい = dansei = male, man
+暖房 = だんぼう = danbou = heating
+血 = ち = chi = blood
+チェック = chekku = check [Noun]
+チェックする = チェックする = chekkusuru = to check [Suru verb]
+力 = ちから = chikara = strength, power
+ちっとも = chittomo = not at all (neg. verb) [Adverb]
+~ちゃん = ~chan = suffix for familiar (female) person
+注意 = ちゅうい = chuui = caution, being careful, attention (heed)
+中学校 = ちゅうがっこう = chuugakkou = junior high school, middle school pupil
+注射 = ちゅうしゃ = chuusha = injection
+駐車場 = ちゅうしゃじょう = chuushajou = parking lot, parking place
+~町 = ~ちょう = ~chou = ~ of the town
+地理 = ちり = chiri = geography
+について = ~nitsuite = about, concerning, regarding
+捕まえる = つかまえる = tsukamaeru = to catch, to arrest, to seize [Ichidan/transitive verb]
+月 = つき = tsuki = moon; month
+点く = つく = tsuku = to be started, to be switched on [Godan verb]
+つける = tsukeru = to turn on, to attach [Ichidan verb]
+漬ける = つける = tsukeru = to soak, to moisten, to pickle [Ichidan verb]
+都合 = つごう = tsugou = circumstances, condition, convenience
+伝える = つたえる = tsutaeru = to tell, to report [Ichidan verb]
+続く = つづく = tsuzuku = to be continued [Godan verb]
+~続ける = ~つづける = ~tsuzukeru = to continue doing ~ (ex. 食べ続ける) [Ichidan verb]
+続ける = つづける = tsuzukeru = to continue, to keep up, to keep on [Ichidan verb]
+包む = つつむ = tsutsumu = wrap, pack [Godan verb]
+妻 = つま = tsuma = (hum) wife
+つもり = tsumori = intention, plan
+釣る = つる = tsuru = to fish [Godan verb]
+連れる = つれる = tsureru = to lead, to take (a person) [Ichidan verb]
+丁寧 = ていねい = teinei = polite, courteous [Na-adjective]
+テキスト = tekisuto = (1)text, (2)text book
+適当 = てきとう = tekitou = suitable; proper [Na-adjective]
+できる = dekiru = to be able to do [Ichidan verb]
+できるだけ = dekirudake = if at all possible, as much as possible [expression]
+手伝う = てつだう = tetsudau = to help, to assist, to take part in [Godan verb]
+テニス = tenisu = tennis
+手袋 = てぶくろ = tebukuro = glove
+寺 = てら = tera = temple
+点 = てん = ten = spot, mark, point, dot
+店員 = てんいん = ten'in = shop assistant, employee, clerk, salesperson
+天気予報 = てんきよほう = tenkiyohou = weather forecast, weather report
+電灯 = でんとう = dentou = electric light
+電報 = でんぽう = denpou = telegram
+展覧会 = てんらんかい = tenrankai = exhibition
+都 = と = to = metropolitan, municipal
+道具 = どうぐ = dougu = tool, means
+とうとう = toutou = finally, at last [Adverb]
+動物園 = どうぶつえん = doubutsuen = zoo
+遠く = とおく = tooku = far away, distant [Adverb]
+通り = とおり = toori = ~ Street, ~ Avenue
+通る = とおる = tooru = to pass (by), to go through [Godan verb]
+特に = とくに = tokuni = particularly, especially [Adverb]
+特別 = とくべつ = tokubetsu = special [Na-adjective]
+とこや = tokoya = barber
+途中 = とちゅう = tochuu = on the way, en route, midway
+特急 = とっきゅう = tokkyuu = limited express (train, faster than an express)
+届ける = とどける = todokeru = to deliver, to report [Ichidan verb]
+泊まる = とまる = tomaru = to stay at (eg. hotel) [Godan verb]
+止める = とめる = tomeru = to stop (something) [Ichidan verb]
+取り替える = とりかえる = torikaeru = to exchange, to replace [Ichidan verb]
+泥棒 = どろぼう = dorobou = thief, burglar, robber
+どんどん = dondon = steadily, little by little [Adverb]
+直す = なおす = naosu = to fix, to repair [Godan verb]
+直る = なおる = naoru = to be fixed, to be repaired [Godan verb]
+治る = なおる = naoru = to be cured, to heal [Godan verb]
+中々 = なかなか = nakanaka = very, considerably, quite [Adverb]
+泣く = なく = naku = to cry, to weep [Godan verb]
+無くなる = なくなる = nakunaru = to disappear, to get lost [Godan verb]
+亡くなる = なくなる = nakunaru = to die [Godan verb]
+投げる = なげる = nageru = to throw, to cast away [Ichidan verb]
+なさる = nasaru = (honorific) to do [Godan verb]
+鳴る = なる = naru = to sound, to ring, to resound [Godan verb]
+なるべく = narubeku = as much as possible [Adverb]
+なるほど = naruhodo = I see, now I understand [expression]
+慣れる = なれる = nareru = to grow accustomed to [Ichidan verb]
+におい = nioi = odour, scent, smell
+苦い = にがい = nigai = bitter [I-adjective]
+~にくい = ~nikui = difficult to do ~ (ex. 食べにくい) [I-adjective]
+逃げる = にげる = nigeru = to escape, to run away [Ichidan verb]
+日記 = にっき = nikki = diary, journal
+入院 = にゅういん = nyuuin = hospitalization [Noun]
+入院する = にゅういんする = nyuuinsuru = to get hospitalized [Suru verb]
+入学 = にゅうがく = nyuugaku = entry to a school
+入学する = にゅうがくする = nyuugakusuru = to get into a school [Suru verb]
+似る = にる = niru = to resemble, to be similar [Ichidan verb]
+人形 = にんぎょう = ningyou = doll, puppet, figure
+盗む = ぬすむ = nusumu = to steal [Godan verb]
+塗る = ぬる = nuru = to paint, to plaster [Godan verb]
+濡れる = ぬれる = nureru = to get wet [Ichidan verb]
+値段 = ねだん = nedan = price, cost
+熱 = ねつ = netsu = fever, temperature
+熱心 = ねっしん = nesshin = zeal, enthusiasm [Na-adjective]
+寝坊 = ねぼう = nebou = sleeping in late
+眠い = ねむい = nemui = sleepy, drowsy [I-adjective]
+眠る = ねむる = nemuru = to sleep [Godan verb]
+残る = のこる = nokoru = to remain, to be left [Godan verb]
+喉 = のど = nodo = throat
+乗り換える = のりかえる = norikaeru = to transfer (trains), to change (bus, train) [Ichidan verb]
+乗り物 = のりもの = norimono = vehicle
+葉 = は = ha = leaf
+場合 = ばあい = baai = case, situation
+パート = paato = part-time
+倍 = ばい = bai = twice, double
+拝見 = はいけん = haiken = seeing; viewing (polite, humble)
+拝見する = はいけんする = haikensuru = to see; to look at (polite, humble) [Suru verb]
+歯医者 = はいしゃ = haisha = dentist
+~ばかり = ~ばかり = ~bakari = just did ~, only [Particle]
+運ぶ = はこぶ = hakobu = to transport, to carry [Godan verb]
+~始める = ~はじめる = ~hajimeru = to start doing ~, the beginning of ~ [Ichidan verb]
+始める = はじめる = hajimeru = to start, to begin [Ichidan verb]
+場所 = ばしょ = basho = place, location
+はず = hazu = it should be so
+恥ずかしい = はずかしい = hazukashii = shy, ashamed, embarrassed [I-adjective]
+パソコン = pasokon = (personal) computer
+発音 = はつおん = hatsuon = pronunciation
+はっきり = hakkiri = clearly, plainly, distinctly [Adverb]
+花見 = はなみ = hanami = cherry-blossom viewing, flower viewing
+パパ = papa = papa, father
+林 = はやし = hayashi = woods, forester
+払う = はらう = harau = to pay [Godan verb]
+番組 = ばんぐみ = bangumi = program (eg. TV)
+反対 = はんたい = hantai = oppose, opposition, resistance
+ハンバーグ = hanbaagu = hamburger (meat, no bun)
+日 = ひ = hi = sun, sunshine, day
+火 = ひ = hi = fire, flame, blaze
+ピアノ = piano = piano
+冷える = ひえる = hieru = to grow cold, to get chilly, to cool down [Ichidan verb]
+光る = ひかる = hikaru = to shine, to glitter [Godan verb]
+光 = ひかり = hikari = light
+引き出し = ひきだし = hikidashi = drawer, drawing out
+ひげ = hige = beard
+飛行場 = ひこうじょう = hikoujou = airport
+久しぶり = ひさしぶり = hisashiburi = after a long time [Na-adjective]
+美術館 = びじゅつかん = bijutsukan = art gallery, art museum
+非常に = ひじょうに = hijou ni = very, extremely, exceedingly [Adverb]
+びっくりする = bikkurisuru = to be surprised [Suru verb]
+引っ越す = ひっこす = hikkosu = to move, to change residence [Godan verb]
+必要 = ひつよう = hitsuyou = necessary, essential [Na-adjective]
+ひどい = ひどい = hidoi = cruel, awful [I-adjective]
+開く = ひらく = hiraku = to open (eg. a festival) [Godan verb]
+ビル = biru = (abbr) building, bill
+昼間 = ひるま = hiruma = daytime, during the day
+昼休み = ひるやすみ = hiruyasumi = lunch break, noon recess, noon rest period
+拾う = ひろう = hirou = to pick up, to find, to gather [Godan verb]
+ファックス = fakkusu = fax
+増える = ふえる = fueru = to increase, to multiply [Ichidan verb]
+深い = ふかい = fukai = deep, profound, thick [I-adjective]
+複雑 = ふくざつ = fukuzatsu = complexity, complication
+復習 = ふくしゅう = fukushuu = review, revision
+部長 = ぶちょう = buchou = head of a section
+普通 = ふつう = futsuu = generally, ordinarily, usually [Na-adjective]
+ぶどう = budou = grapes
+太る = ふとる = futoru = to grow fat (stout, plump), to become fat [Godan verb]
+布団 = ふとん = futon = bedding (Japanese style), futon
+舟 = ふね = fune = ship, boat
+不便 = ふべん = fuben = inconvenience [Na-adjective]
+踏む = ふむ = fumu = to step on, to tread on [Godan verb]
+プレゼント = purezento = present, gift
+文化 = ぶんか = bunka = culture, civilization
+文学 = ぶんがく = bungaku = literature
+文法 = ぶんぽう = bunpou = grammar
+別 = べつ = betsu = distinction, different
+ベル = beru = bell
+変 = へん = hen = strange, odd, peculiar [Na-adjective]
+返事 = へんじ = henji = reply, answer
+貿易 = ぼうえき = boueki = trade (foreign)
+放送 = ほうそう = housou = broadcast, broadcasting
+放送する = ほうそうする = housousuru = to broadcast [Suru verb]
+法律 = ほうりつ = houritsu = law
+僕 = ぼく = boku = (male) I, manservant [Pronoun]
+星 = ほし = hoshi = star
+ほど = hodo = degree, extent
+ほとんど = hotondo = mostly, almost
+ほめる = homeru = to praise [Ichidan verb]
+翻訳 = ほんやく = honyaku = translation (written)
+参る = まいる = mairu = (1) (hum) to go, to come [Godan verb]
+負ける = まける = makeru = to lose, to be defeated [Ichidan verb]
+まじめ = majime = diligent, serious [Na-adjective]
+まず = mazu = first (of all), to start with [Adverb]
+または = matawa = or, otherwise [Conjunction]
+間違える = まちがえる = machigaeru = to err, to make a mistake [Ichidan verb]
+間に合う = まにあう = maniau = (1) to be in time for [Godan verb]
+~まま = ~mama = as it is
+周り = まわり = mawari = surroundings, circulation
+回る = まわる = mawaru = to go around, to revolve [Godan verb]
+漫画 = まんが = manga = comic, cartoon
+真中 = まんなか = mannaka = middle, centre
+見える = みえる = mieru = to be seen, to be in sight [Ichidan verb]
+湖 = みずうみ = mizuumi = lake
+味噌 = みそ = miso = miso, bean paste
+見つかる = みつかる = mitsukaru = (uk) to be found, to be discovered [Godan verb]
+見つける = みつける = mitsukeru = to discover, to find [Ichidan verb]
+皆 = みな = mina = everyone, everybody
+港 = みなと = minato = harbour, port
+迎える = むかえる = mukaeru = to go out to meet [Ichidan verb]
+向かう = むかう = mukau = to face, to go towards [Godan verb]
+昔 = むかし = mukashi = olden days, former
+虫 = むし = mushi = insect
+息子 = むすこ = musuko = (hum) son
+娘 = むすめ = musume = (hum) daughter
+無理 = むり = muri = unreasonable, impossible [Na-adjective]
+~目 = ~め = ~me = number ~ sequence, ~nd/th
+召し上がる = めしあがる = meshiagaru = (pol) to eat [Godan verb]
+珍しい = めずらしい = mezurashii = unusual, rare [I-adjective]
+申し上げる = もうしあげる = moushiageru = to say, to tell [Ichidan verb]
+申す = もうす = mousu = (humble) to be called, to say [Godan verb]
+もうすぐ = mousugu = soon, very soon
+もし = moshi = if [Adverb]
+もちろん = mochiron = certainly, of course [Adverb]
+もっとも = mottomo = most, extremely [Adverb]
+戻る = もどる = modoru = to turn back, to return [Godan verb]
+木綿 = もめん = momen = cotton
+もらう = morau = to receive [Godan verb]
+森 = もり = mori = forest
+焼く = やく = yaku = to bake, to grill [Godan verb]
+役に立つ = やくにたつ = yakunitatsu = to be helpful, to be useful [Expression]
+約束 = やくそく = yakusoku = arrangement, promise
+焼ける = やける = yakeru = to burn, to be roasted, to be sunburnt [Ichidan verb]
+優しい = やさしい = yasashii = kind, gentle [I-adjective]
+~やすい = ~yasui = easy to do ~ (ex. 食べやすい) [I-adjective]
+やせる = yaseru = to become thin, to lose weight [Ichidan verb]
+やっと = yatto = at last, at length [Adverb]
+やはり/やっぱり = yahari/yappari = as I thought, absolutely [Adverb]
+止む = やむ = yamu = to cease, to stop [Godan verb]
+止める = やめる = yameru = to end, to stop, to resign [Ichidan verb]
+やる = yaru = (col)to do [Godan verb]
+柔らかい = やわらかい = yawarakai = soft, tender [I-adjective]
+湯 = ゆ = yu = hot water
+夕飯 = ゆうはん = yuuhan = evening meal
+輸出 = ゆしゅつ = yushutsu = export
+輸出する = ゆしゅつする = yushutsusuru = to export [Suru verb]
+輸入 = ゆにゅう = yunyuu = import
+輸入する = ゆにゅうする = yunyuusuru = to import [Suru verb]
+指 = ゆび = yubi = finger
+指輪 = ゆびわ = yubiwa = (finger) ring
+夢 = ゆめ = yume = dream
+揺れる = ゆれる = yureru = to shake, to sway [Ichidan verb]
+様 = よう = you = way, manner, kind
+用 = よう = you = task, business, use
+用意 = ようい = youi = preparation
+用事 = ようじ = youji = tasks, chores
+汚れる = よごれる = yogoreru = to get dirty, to become dirty [Ichidan verb]
+予習 = よしゅう = yoshuu = preparation for a lesson
+予定 = よてい = yotei = plans, arrangement, schedule
+予約 = よやく = yoyaku = reservation, booking
+寄る = よる = yoru = to visit, to drop in [Godan verb]
+によると = ~ni yoru to = according to ~ [Expression]
+喜ぶ = よろこぶ = yorokobu = to be delighted, to be glad [Godan verb]
+よろしい = yoroshii = (hon) good, OK, all right [I-adjective]
+理由 = りゆう = riyuu = reason, pretext, motive
+利用 = りよう = riyou = use, utilization
+両方 = りょうほう = ryouhou = both sides, both parties
+旅館 = りょかん = ryokan = Japanese hotel, inn
+留守 = るす = rusu = absence, being away from home
+冷房 = れいぼう = reibou = cooling, air conditioning
+歴史 = れきし = rekishi = history
+レジ = reji = register
+レポート/リポート = repooto/ripooto = report, essay, assignment (aus)
+連絡 = れんらく = renraku = communication, contact, connection [Suru verb]
+ワープロ = waapuro = word processor
+沸かす = わかす = wakasu = to boil, to heat [Godan verb]
+別れる = わかれる = wakareru = to be divided, to part from, to separate [Ichidan verb]
+沸く = わく = waku = to boil, to grow hot, to get excited [Godan verb]
+訳 = わけ = wake = meaning, reason
+忘れ物 = わすれもの = wasuremono = lost article, something forgotten
+笑う = わらう = warau = to laugh, to smile [Godan verb]
+割合 = わりあい = wariai = rate, ratio, percentage [Adverb/Noun]
+割れる = われる = wareru = to break [Ichidan verb]
