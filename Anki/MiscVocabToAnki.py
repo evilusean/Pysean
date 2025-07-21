@@ -13,7 +13,7 @@
 import csv
 
 INPUT_FILE = 'cleaned_misc_vocab.txt'
-OUTPUT_FILE = 'anki_misc_vocab.csv'
+OUTPUT_FILE = 'N4Vocab700-Kanji170.csv'
 
 # Helper to format front of card (all non-English fields, large)
 def format_front(line):
