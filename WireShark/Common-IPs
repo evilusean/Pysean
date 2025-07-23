@@ -1,0 +1,139 @@
+8.8.8.8 = What it is: Google Public DNS primary resolver.
+Purpose: One of the most widely used and reliable public DNS servers. You'll often see traffic to this IP if your system or router is configured to use Google's DNS services.
+8.8.4.4 = 
+What it is: Google Public DNS secondary resolver.
+Purpose: The backup for 8.8.8.8. If the primary is unreachable, requests might fall back to this address.
+1.1.1.1 = What it is: Cloudflare's Public DNS primary resolver.
+Purpose: Another very popular and fast public DNS service, often chosen for privacy and speed.
+1.0.0.1 = What it is: Cloudflare's Public DNS secondary resolver.
+Purpose: The backup for 1.1.1.1.
+
+192.168.1.1 = What it is: A very common default gateway (router) IP address.
+Purpose: In many home and small office networks, this is the IP address assigned to the router, which acts as the central point for all traffic entering and leaving your local network. 
+  Your devices will send traffic to this IP to reach the internet or other parts of your local network.
+172.16.0.1 (or any IP in the 172.16.0.0 - 172.31.255.255 range) = 
+What it is: The beginning of the 172.16.0.0/12 private IP address range. 172.16.0.1 itself might be used as a gateway or a specific device's IP.
+Purpose: This range is commonly used in medium-sized networks (e.g., some corporate networks, larger home labs) where the 192.168.x.x range might be too small or conflicts with other subnets.
+10.0.0.1 (or any IP in the 10.0.0.0 - 10.255.255.255 range) = 
+What it is: The beginning of the 10.0.0.0/8 private IP address range. 10.0.0.1 itself is a common choice for a gateway or a specific device's IP.
+Purpose: This is the largest of the private IP ranges and is frequently used in large corporate networks, data centers,
+  and more complex home networks due to its vast number of available addresses.
+
+Steam :
+Steam utilizes many IP ranges and CDNs (Akamai, Valve's own networks, etc.) for game downloads, updates, and matchmaking.
+Common Ports to Monitor (TCP/UDP):
+27015-27050: Game traffic, updates, client communication.
+4380: Voice chat, P2P networking.
+3478, 4379: P2P networking.
+
+Domains to Watch For:
+steampowered.com
+steamcommunity.com
+steamcontent.com
+steamstatic.com
+akamaihd.net (a common CDN used by Steam and many others)
+
+Example Wireshark Filter:
+tcp.port >= 27015 and tcp.port <= 27050 or udp.port >= 27000 and udp.port <= 27100 (for game/client traffic)
+dns.qry.name contains "steam"
+
+Google (General Services) :
+Google owns massive IP ranges globally. Aside from their public DNS, the IPs for services like Search, Gmail, Maps, etc., 
+are constantly shifting and are delivered via their vast global infrastructure.
+
+Common IPs (Public DNS):
+8.8.8.8
+8.8.4.4
+2001:4860:4860::8888 (IPv6)
+2001:4860:4860::8844 (IPv6)
+
+Domains to Watch For:
+google.com
+googleusercontent.com
+gstatic.com
+youtube.com (see YouTube section below)
+gmail.com
+googlevideo.com
+
+Example Wireshark Filter:
+http.host contains "google.com" or dns.qry.name contains "google.com"
+ip.addr == 8.8.8.8 or ip.addr == 8.8.4.4 (for DNS traffic specifically)
+
+4chan :
+4chan is less complex than Google or Steam in terms of its underlying infrastructure, but its IPs can still change.
+
+Domains to Watch For:
+4cdn.org (for content delivery)
+i.4cdn.org
+s.4cdn.org
+boards.4chan.org
+
+Example Wireshark Filter:
+http.host contains "4chan.org" or http.host contains "4cdn.org"
+tcp.port == 80 or tcp.port == 443 (HTTP/HTTPS traffic)
+
+GitHub :
+GitHub also uses various CDNs and has a distributed infrastructure.
+
+Common IPs for GitHub Pages (examples of static IPs for specific subdomains):
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+(And their IPv6 equivalents: 2606:50c0:8000::153, etc.)
+Note: These are specifically for GitHub Pages. Core GitHub services will resolve to a wider range of IPs.
+
+Domains to Watch For:
+github.com
+githubassets.com
+github.io (for GitHub Pages)
+raw.githubusercontent.com (for raw file access)
+
+Example Wireshark Filter:
+http.host contains "github.com" or http.host contains "github.io"
+git (Wireshark has a git protocol dissector for Git-related traffic)
+
+YouTube :
+As a Google service, YouTube relies heavily on Google's global network and CDNs. IPs will be highly variable.
+
+Domains to Watch For:
+youtube.com
+googlevideo.com (where video streams are often served from)
+ytimg.com (for images and other static content)
+youtube-nocookie.com
+
+Example Wireshark Filter:
+http.host contains "youtube.com" or http.host contains "googlevideo.com"
+http.request.uri contains "videoplayback" (to find actual video stream requests)
+quic (YouTube often uses QUIC, an experimental UDP-based protocol)
+
+Blizzard (Hearthstone / Overwatch) :
+Blizzard Entertainment, including Battle.net and games like Hearthstone and Overwatch, operates its own large network (ASN AS57976) and also uses CDNs.
+You'll see connections to their core data centers and various regional servers.
+
+Example IP Ranges (these are large blocks, not single IPs, and can change):
+137.221.64.0/19
+24.105.32.0/21
+37.244.0.0/16 (a large portion of this range)
+5.42.0.0/15 (another large portion)
+
+Note: Filtering by these large ranges in Wireshark requires more specific filter syntax, like ip.addr in 137.221.64.0/19.
+
+Common Ports (TCP/UDP, can vary by game):
+1119 (Battle.net communication)
+3724 (older game ports)
+4000 (some game-related traffic)
+6112 (some game-related traffic)
+1120, 6881-6885 (P2P/Blizzard Downloader)
+
+Many games use dynamic ports within a range, so monitoring a range might be necessary.
+
+Domains to Watch For:
+battle.net
+blizzard.com
+blz-contentstack.com
+
+Example Wireshark Filter:
+dns.qry.name contains "blizzard.com" or dns.qry.name contains "battle.net"
+tcp.port == 1119 or udp.port == 1119
+
