@@ -1,6 +1,8 @@
 Official Websites :
 https://www.wireshark.org/
 https://www.wireshark.org/download.html
+Official Docs :
+https://www.wireshark.org/docs/
 
 Install on Arch Linux :
 sudo pacman -S wireshark-qt
