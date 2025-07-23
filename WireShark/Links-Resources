@@ -3,6 +3,8 @@ https://www.wireshark.org/
 https://www.wireshark.org/download.html
 Official Docs :
 https://www.wireshark.org/docs/
+Users Guide :
+https://www.wireshark.org/docs/wsug_html/
 
 Install on Arch Linux :
 sudo pacman -S wireshark-qt
