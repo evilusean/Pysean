@@ -6,6 +6,7 @@ https://www.wireshark.org/docs/
 
 Install on Arch Linux :
 sudo pacman -S wireshark-qt
+sudo gpasswd -a ArchSean wireshark #add your user to the 'wireshark' group so you can scan
 
 Windows Spying when you game? :
 https://www.youtube.com/watch?v=Gu4vmqryJJs
