@@ -463,7 +463,7 @@ Maltego:
 https://www.maltego.com/categories/osint/
 License Plate OSINT : https://www.youtube.com/watch?v=9ndzvtSqbj8
 Picture MetaData OSINT : 
-sudo pacman -S perl-image-exiftool # Install exiftool on Arch Linux
+sudo pacman -S perl-image-exiftool # Install exiftool on Arch Linux, a powerful and versatile command-line tool developed in Perl for reading, writing, and editing metadata in many file types
 sudo pacman -S digikam # Install GUI Digikam on Arch - It's designed for organizing, editing, and viewing large collections of images. It has a robust metadata editor and viewer built-in.
 
 Home Assistant(free opensource smarthome, private):
