@@ -10,19 +10,6 @@ https://docs.google.com/spreadsheets/d/1bahkZTphqq3BpgjomxRpDfPxPSwjaHq7UGeTIfGQ
 FCC - FruityLoops Studio:
 https://www.youtube.com/watch?v=UnjKWSlwZWM&ab_channel=freeCodeCamp.org
 
-JS - Strudel-agen : 
-https://www.youtube.com/watch?v=taoAAcS5PSw
-JS - Strudel Official Docs : 
-https://strudel.cc/workshop/getting-started/
-https://strudel.cc/learn/
-Studel (Web Browser) : 
-https://strudel.cc/
-Strudel (Desktop using Nateifier) :
-npm install -g nativefier #install nativefier 
-npx nativefier https://strudel.cc/ 
-Use own sounds for Strudel :
-https://strudel.cc/ -> 'Sounds' tab -> 'Import Sounds' Tab (Select a folder) 
-
 Working Plugins(For future Sean - Don't mess around with stuff that doesn't work, space is limited, adding a 5 gig instruments on a SSD for it not to work = bad) :
 Vital
 Surge XT
@@ -281,3 +268,16 @@ virtual box installed, search menu, 'new', windows 11(ptuh), ram = 8gigs, HD = 2
  Settings : Under "Storage," click on the 'empty' optical drive and choose the Windows ISO you downloaded. -> 'Finish' -> Start VM -> Install Windows -> Download FL Studio -> Install 
  No internet on Installing Windows : Settings -> Network -> Bridged Adapater -> Promiscuous Mode 'Allow VMs" -> 'Cable Connected' = https://www.youtube.com/watch?v=mk0K88ZkE34&t=123s&ab_channel=ACCAutomation
 You can 'save state' before you shut down the VM, maybe keep the DAW in an open state so don't run out of trial version? - idk, still have to play around with it
+
+JS - Strudel-agen : 
+https://www.youtube.com/watch?v=taoAAcS5PSw
+JS - Strudel Official Docs : 
+https://strudel.cc/workshop/getting-started/
+https://strudel.cc/learn/
+Studel (Web Browser) : 
+https://strudel.cc/
+Strudel (Desktop using Nateifier) :
+npm install -g nativefier #install nativefier 
+npx nativefier https://strudel.cc/ 
+Use own sounds for Strudel :
+https://strudel.cc/ -> 'Sounds' tab -> 'Import Sounds' Tab (Select a folder) 
