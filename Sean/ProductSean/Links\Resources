@@ -281,3 +281,6 @@ npm install -g nativefier #install nativefier
 npx nativefier https://strudel.cc/ 
 Use own sounds for Strudel :
 https://strudel.cc/ -> 'Sounds' tab -> 'Import Sounds' Tab (Select a folder) 
+Future Sean Problems = Since each sound sample is just a wave pattern, have it analysed, find the closest sound in strudel, and the tempo, then plug and play with different sounds
+
+
