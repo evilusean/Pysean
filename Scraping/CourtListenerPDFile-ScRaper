@@ -24,6 +24,7 @@
 # Epstein Court Documents (2016) :>https://ia600705.us.archive.org/21/items/epsteindocs/Epstein-Docs.pdf
 # Epstein “Little Black Book” (unredacted) : >https://ia600705.us.archive.org/21/items/epsteindocs/Jeffrey_Epstein39s_Little_Black_Book_unredacted.pdf
 # Epstein Flight Logs : >https://www.documentcloud.org/documents/21165424-epstein-flight-logs-released-in-usa-vs-maxwell/
+# Burisma Biden's response when asked to Apologize : https://www.youtube.com/watch?v=Fs9v0sdZixs&t=76s
 
 import requests as rq
 from bs4 import BeautifulSoup
