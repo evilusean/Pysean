@@ -1,0 +1,2 @@
+# Install The correct version of VSCode for Arch Linux :
+yay -S visual-studio-code-bin
