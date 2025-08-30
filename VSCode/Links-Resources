@@ -4,4 +4,5 @@ yay -S visual-studio-code-bin
 Exten-Seans :
 https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night # Tokyo Night -AEsthetiks
 https://marketplace.visualstudio.com/items?itemName=AtomMaterial.a-file-icon-vscode #Atom Material Icons
+  #  File > Preferences > Theme > File Icon Theme = make sure to save here, I just reopened today and all my pretty icons were gone, future Sean
 Vim Keybindings 
