@@ -1,5 +1,6 @@
 # Install The correct version of VSCode for Arch Linux :
 yay -S visual-studio-code-bin
+yay -Syu #update VSCode
 
 Exten-Seans :
 https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night # Tokyo Night -AEsthetiks
