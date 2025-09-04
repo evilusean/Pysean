@@ -165,8 +165,7 @@ makepkg -si
 
 Packages :
 yay -S visual-studio-code-bin #use this one
-sudo pacman -S code #install VScode - don't use this one, no copilot
-sudo pacman -S chromium # use below 2, better than chromium
+yay -S warp-terminal # secondary(tertiary) AI coding with a free tier, use this if you run out of VSCode + Cursor tokens
 yay -S ungoogled-chromium-bin
 yay -S librewolf-bin
 sudo pacman -S firefox #don't use firefox, use librewolf 'yay -S librewolf'
