@@ -554,6 +554,8 @@ Emerald Whale Tools = MEZR V2 + SEYZO V2 : https://www.youtube.com/watch?v=xzdoo
 
 CVE(Common Vulnerabilities and Exposures) : Realistically, all you need to do to get into most systems is to write down it's manufacturing company and year, run that through a CVE
   find the exploit online, and then use that CVE exploit, you can also download the firmware, but most people don't update their firmware after purchase ever
+Breaking The Creepy AI in Police Cameras - Benn Jordan : https://www.youtube.com/watch?v=Pp9MwZkHiMQ 
+Hikvision Exploit : https://github.com/tamim1089/HikvisionExploiter
 
 PoC(proof of concept) repos vs Metasploits
 Internet of things search engine:
