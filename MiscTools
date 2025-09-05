@@ -392,14 +392,6 @@ DaVinciResolve : https://www.blackmagicdesign.com/products/davinciresolve/
 Da Vinci(VinSean) Resolve (uses Nodes like blender) - Those who can Sean, Those who can not Sean, Those who can be Shawn. : https://www.youtube.com/watch?v=lm51xZHZI6g&ab_channel=JamesLee%28Animation%29
 Local Voice AI - Zyphra Zono : https://github.com/Zyphra/Zonos
 
-OpenCV :
-https://opencv.org/
-YOLO (You Only Look Once - Good accuracy, free - Future Sean project, build my own security/smarthome system that doesn't phone home - Unlike consent, You can't be retroactively paranoid) : 
-https://opencv-tutorial.readthedocs.io/en/latest/yolo/yolo.html
-
-See what someone is saying with AI and lip reading (upload video):
-https://www.readtheirlips.com/
-
 AI IDE's - If you ever hit your maximum monthly allowed alloted requests, just download another one. : 
 Cursor (free-ish, good models are locked behind a paywall) : https://cursor.com/en
 Github Copilot + VSCode 
@@ -407,6 +399,9 @@ Firebase Studio : https://firebase.studio/
 Windsurf : https://windsurf.com/editor
 Amazon Kiro (Claude 4.0 - Free - SDD = Spec Driven Development 'requirements.md' 'design.md' implementation details 'tasks.md' ) : https://kiro.dev/
 Warp-Terminal (Warp isn't a traditional IDE like VS Code or JetBrains; it's a terminal emulator, have one window with your IDE, and warp-terminal in another, free-tier) : https://www.warp.dev/
+
+See what someone is saying with AI and lip reading (upload video):
+https://www.readtheirlips.com/
 
 Project DIGITS supercomputer (3,000$ - Nvidia) - remember when GPU's weren't considered a '"luxury good"'? :
 https://www.nvidia.com/en-us/project-digits/
@@ -493,6 +488,11 @@ WIFI Motion Detector through WIFI signal (what I once considered a paranoid schi
 https://www.xfinity.com/hub/smart-home/wifi-motion
 https://www.theregister.com/AMP/2015/10/28/mit_wifi_see_through_walls/
 NextCloud  = Self Hosting Cloud(Google Drive With calendar/contacts/mail/kanban(deck)) personal cloud sans google : https://nextcloud.com/home-users/
+
+OpenCV :
+https://opencv.org/
+YOLO (You Only Look Once - Good accuracy, free - Future Sean project, build my own security/smarthome system that doesn't phone home - Unlike consent, You can't be retroactively paranoid) : 
+https://opencv-tutorial.readthedocs.io/en/latest/yolo/yolo.html
 
 No Bloat Tools:
 https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md
