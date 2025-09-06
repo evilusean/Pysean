@@ -22,3 +22,27 @@ There are four beats per cycle, as Strudel's default time signature is 4/4. You 
   but the cycle length remains one second. This means a quarter note (4) is equal to one beat, and a beat is 250 milliseconds long.
 
 In summary, Strudel's core is based on a one-second cycle with four beats, and you build your musical ideas by creating patterns of notes and rhythms within that repeating cycle.
+
+In music theory, when you have two different rhythmic patterns, they will only align, or "hit together," at a point that is a multiple of their Least Common Multiple (LCM).
+LCM: The smallest positive number that is a multiple of two or more numbers.
+The Rule: To find when two rhythms with different beat counts will align, you must find their LCM.
+  This number represents the number of beats that must pass before both patterns repeat simultaneously.
+Example: For a 3-beat pattern and a 4-beat pattern, the LCM is 12. This means they will hit together on beats 12, 24, 36, and so on.
+  They will not necessarily align at the end of a musical phrase unless the phrase length is a multiple of their LCM.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
