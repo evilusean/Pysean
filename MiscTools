@@ -399,6 +399,7 @@ Firebase Studio : https://firebase.studio/
 Windsurf : https://windsurf.com/editor
 Amazon Kiro (Claude 4.0 - Free - SDD = Spec Driven Development 'requirements.md' 'design.md' implementation details 'tasks.md' ) : https://kiro.dev/
 Warp-Terminal (Warp isn't a traditional IDE like VS Code or JetBrains; it's a terminal emulator, have one window with your IDE, and warp-terminal in another, free-tier) : https://www.warp.dev/
+Claude Desktop (Not exactly an IDE, but another option if you run out of monthly queries and need a good AI in a pinch) : 'yay -S claude-desktop'
 
 See what someone is saying with AI and lip reading (upload video):
 https://www.readtheirlips.com/
