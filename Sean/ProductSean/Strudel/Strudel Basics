@@ -1,0 +1,2 @@
+Strudel - First Sounds - https://strudel.cc/workshop/first-sounds/ =============================================================================================================================
+'sound("bd hh sd oh").bank("RolandTR909")' # plays the base drum, high hat, snare drum, open hihat in one cycle using the 'RolandTR909' sound bank
