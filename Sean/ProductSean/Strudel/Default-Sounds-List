@@ -20,6 +20,18 @@ tripad
 
 2. Sampled Drum Machines
 These are classic drum machine sounds. The last number in the sample name corresponds to the different variations of that sound.
+Drum Sounds :
+bd = bass drum
+sd = snare drum
+rim = rimshot
+hh = hihat
+oh = open hihat
+lt = low tom
+mt = middle tom
+ht = high tom
+rd = ride cymbal
+cr = crash cymbal
+
 ar (Roland TR-808 Drum Machine)
 ar
 arpy
@@ -64,9 +76,6 @@ jungle
 dub
 vocal
 dork
-
 hax
-
 tabla
-
 tribal
