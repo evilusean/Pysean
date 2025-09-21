@@ -32,6 +32,15 @@ ht = high tom
 rd = ride cymbal
 cr = crash cymbal
 
+'sound("bd hh sd oh").bank("RolandTR909")' # plays the base drum, high hat, snare drum, open hihat in one cycle using the 'RolandTR909' sound bank
+Other Soundbanks (replace the "RolandTR909", theres way more to play around with, future Sean problem) :
+AkaiLinn
+RhythmAce
+RolandTR808
+RolandTR707
+ViscoSpaceDrum
+
+
 ar (Roland TR-808 Drum Machine)
 ar
 arpy
