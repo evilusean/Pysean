@@ -1,0 +1,50 @@
+Strudel-agen : The Prequel :
+https://www.youtube.com/watch?v=tKHEEC-CBYY
+JS - Strudel-agen : 
+https://www.youtube.com/watch?v=taoAAcS5PSw
+JS - Strudel Official Docs : 
+https://strudel.cc/workshop/getting-started/
+https://strudel.cc/learn/
+Studel (Web Browser) : 
+https://strudel.cc/
+Strudel (Desktop using Nateifier) :
+npm install -g nativefier #install nativefier 
+npx nativefier https://strudel.cc/ 
+Use own sounds for Strudel :
+https://strudel.cc/ -> 'Sounds' tab -> 'Import Sounds' Tab (Select a folder) 
+Future Sean Problems = Since each sound sample is just a wave pattern, have it analysed, find the closest sound in strudel, and the tempo, then plug and play with different sounds
+'._scope()' to see a waveform when playing around with studel, '._pianoroll()' to show beatmap, '._punchcard()' :
+https://www.youtube.com/watch?v=HkgV_-nJOuE
+https://www.youtube.com/watch?v=sefJz9biLCY
+WORKSHOP // Coding Music With Strudel // Dan Gorelick and Viola He :
+https://www.youtube.com/watch?v=oqyAJ4WeKoU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

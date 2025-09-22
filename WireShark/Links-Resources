@@ -1,0 +1,44 @@
+Official Websites :
+https://www.wireshark.org/
+https://www.wireshark.org/download.html
+Official Docs :
+https://www.wireshark.org/docs/
+Users Guide :
+https://www.wireshark.org/docs/wsug_html/
+
+Install on Arch Linux :
+sudo pacman -S wireshark-qt
+sudo gpasswd -a ArchSean wireshark #add your user to the 'wireshark' group so you can scan
+
+Windows Spying when you game? :
+https://www.youtube.com/watch?v=Gu4vmqryJJs
+
+Tutorials :
+https://www.wireshark.org/learn
+Wireshark Tutorial for Beginners | Network Scanning Made Easy by Anson Alexander - http://www.youtube.com/watch?v=qTaOZrDnMzQ
+Mastering Wireshark: The Complete Tutorial! by Hacker Joe - http://www.youtube.com/watch?v=a_4MjV_-7Sw
+Learn Wireshark! Tutorial for BEGINNERS by Chris Greer - http://www.youtube.com/watch?v=OU-A2EmVrKQ
+Learn Wireshark in 10 minutes - Wireshark Tutorial for Beginners by Vinsloev Academy - http://www.youtube.com/watch?v=lb1Dw0elw0Q
+Wireshark Full Course 🦈| Wireshark Tutorial Beginner to Advance 🔆 Wireshark 2023 by Alpha Brains Courses - http://www.youtube.com/watch?v=n4muxtqLhN4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -95,6 +95,21 @@ SimpleX Chat :
 https://simplex.chat/
 https://ipv6.rs/tutorial/Arch_Linux/SimpleX_Chat/
 
+WireGaurd Docker (due to literally every '"western"' goyverment acting in the exact same way trying to censor/ID the internet for '"some reason"' - and UK banning VPN's - make my own VPN ) :
+https://hub.docker.com/r/linuxserver/wireguard #get a server from AWS/Azure then just run this, bam, own private VPN, tyrants averted, glowies cope, '"they"' seethe 
+https://github.com/bepass-org/oblivion-desktop #Iran launches open-source internet browser to bypass censorship firewalls, we are less free in the '"free democratic west"' than Iranians, lol, lmao
+BetaNet (We'll just build our own internet with blackjack and h... ttp requests) :
+https://github.com/ravendevteam/betanet
+https://infosecwriteups.com/betanet-the-censorship-free-internet-that-could-change-the-web-forever-530c7294d9af
+Routing around Censorship :
+https://en.wikipedia.org/wiki/Usenet
+https://en.wikipedia.org/wiki/IRC
+Using a Raspberry Pi to hide from my ISP - Instead of asking the government to control what your kids see on the internet, git gud and reverse proxy whitelist :
+https://www.youtube.com/watch?v=w8_IBJLNo04
+Bitchat - Bluetooth, even if they shut off cells, still have coms (Nepal-babies with Discord Vs Nepo-babies, BTFO'ed the corrupt govt so hard it burned down parliment and they Saigon-ROFL-coptered:
+https://bitchat.free/
+https://github.com/permissionlesstech/bitchat
+
 I2P (Invisible Internet Protocol) Vs TOR: 
 https://geti2p.net/en/
 https://geti2p.net/en/download
@@ -194,6 +209,8 @@ Online Uncesnored Image Generation : https://preview.reve.art/app
   Prompting Guide : https://wan2.ai/hub/blog/wan-2-1-prompting-guide
   Prompt UpSampling (Stable Diffusion) : https://wandb.ai/geekyrakshit/prompt-upsampling-diffusion/reports/Prompt-upsampling-for-diffusion-models--Vmlldzo4OTc3NDc3
 Hailuo AI (Text To Video) : https://hailuoai.video/
+Google Gemini 3 - Genie - Realistic Worlds in Real time : https://www.youtube.com/watch?v=0XvOOi6g5Ok
+Google Gemini Flash 2.5 Image (Nano Banana - Change any image from a proompt) - https://www.youtube.com/watch?v=8_GgeASwHwQ
 
 Kurzweil Singularity vs chatgpt reality=glorified google search engine hype
 ChatGPT
@@ -354,6 +371,14 @@ Google Gemini CLI (FOSS, also free to use - give AI control of machine, write co
   'npm install -g @google/gemini-cli' #install google CLI, When prompted, sign in with your personal Google account. This will grant you up to 60 model requests per minute and 1,000 model requests per day
 Kimi.ai (good benchmarks, alternative to closedAI, and claude) : https://www.kimi.com/
 https://moonshotai.github.io/Kimi-K2/
+Qwen3 - Coder / CLI (Agentic Model) : https://www.youtube.com/watch?v=-w53i6Ae-YM
+ClosedAI release GPT-Oss(Apache 2 license, free open source) : https://openai.com/index/introducing-gpt-oss/
+Investing.com WarrenAI (for '"investing"' stonks green line go up questions Vs P<P+I = PonzI) : https://www.investing.com/warrenai
+SmartSolve.ai (You paid how much for your piece of paper degREEEE, and you think your better than MEEE, lol, lmao ) : https://smartsolve.ai/
+'Master Any Subject with AI-Powered Flashcards' : https://flashcards.ai/
+Abacus - Deep Agent - Can write emails, create powerpoints, write research reports, etc : https://deepagent.abacus.ai/
+Blitzy - Deep Context - Can write VERY advanced apps, where most AI's struggle >1000 lines, this can do millions... allegedly - also gives technical graphs and system maps : https://blitzy.com/
+Lovable - Good for frontend design : https://lovable.dev/
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
@@ -373,12 +398,13 @@ Suno AI(song creasean) older model free:
 https://app.suno.ai/
 https://musicmax.ai 
 Eleven Labs - Sound Effect Generator
-DaVinciResolve : https://www.blackmagicdesign.com/products/davinciresolve/
-Da Vinci(VinSean) Resolve (uses Nodes like blender) - Those who can Sean, Those who can not Sean, Those who can be Shawn. : https://www.youtube.com/watch?v=lm51xZHZI6g&ab_channel=JamesLee%28Animation%29
 Local Voice AI - Zyphra Zono : https://github.com/Zyphra/Zonos
-
-See what someone is saying with AI and lip reading (upload video):
-https://www.readtheirlips.com/
+Whispr Flow - Allows dictation (voice to text - voice integration, can code without typing) : 
+https://wisprflow.ai/
+Zapier (allows you to connect multiple AI's through 'Zaps' and create AI workflows, Voice dictation -> ChatGPT -> Email, or whatever) : 
+https://zapier.com/
+TLDV (Writes Notes and summaries of meetings ) :
+https://tldv.io/
 
 AI IDE's - If you ever hit your maximum monthly allowed alloted requests, just download another one. : 
 Cursor (free-ish, good models are locked behind a paywall) : https://cursor.com/en
@@ -386,6 +412,11 @@ Github Copilot + VSCode
 Firebase Studio : https://firebase.studio/
 Windsurf : https://windsurf.com/editor
 Amazon Kiro (Claude 4.0 - Free - SDD = Spec Driven Development 'requirements.md' 'design.md' implementation details 'tasks.md' ) : https://kiro.dev/
+Warp-Terminal (Warp isn't a traditional IDE like VS Code or JetBrains; it's a terminal emulator, have one window with your IDE, and warp-terminal in another, free-tier) : https://www.warp.dev/
+Claude Desktop (Not exactly an IDE, but another option if you run out of monthly queries and need a good AI in a pinch) : 'yay -S claude-desktop'
+
+See what someone is saying with AI and lip reading (upload video):
+https://www.readtheirlips.com/
 
 Project DIGITS supercomputer (3,000$ - Nvidia) - remember when GPU's weren't considered a '"luxury good"'? :
 https://www.nvidia.com/en-us/project-digits/
@@ -461,6 +492,9 @@ https://raw.githubusercontent.com/nayanshah/python/master/photos.py
 Maltego:
 https://www.maltego.com/categories/osint/
 License Plate OSINT : https://www.youtube.com/watch?v=9ndzvtSqbj8
+Picture MetaData OSINT : 
+sudo pacman -S perl-image-exiftool # Install exiftool on Arch Linux, a powerful and versatile command-line tool developed in Perl for reading, writing, and editing metadata in many file types
+sudo pacman -S digikam # Install GUI Digikam on Arch - It's designed for organizing, editing, and viewing large collections of images. It has a robust metadata editor and viewer built-in.
 
 Home Assistant(free opensource smarthome, private):
 https://www.home-assistant.io/
@@ -469,6 +503,11 @@ WIFI Motion Detector through WIFI signal (what I once considered a paranoid schi
 https://www.xfinity.com/hub/smart-home/wifi-motion
 https://www.theregister.com/AMP/2015/10/28/mit_wifi_see_through_walls/
 NextCloud  = Self Hosting Cloud(Google Drive With calendar/contacts/mail/kanban(deck)) personal cloud sans google : https://nextcloud.com/home-users/
+
+OpenCV :
+https://opencv.org/
+YOLO (You Only Look Once - Good accuracy, free - Future Sean project, build my own security/smarthome system that doesn't phone home - Unlike consent, You can't be retroactively paranoid) : 
+https://opencv-tutorial.readthedocs.io/en/latest/yolo/yolo.html
 
 No Bloat Tools:
 https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md
@@ -483,9 +522,6 @@ https://www.hiren.info/pages/bootcd
 Kali Linux Android Mobile App(Nethunter):
 https://www.kali.org/docs/nethunter/
 L337 H4X0R Website Skills in 60 seconds - to look at a site quickly and see what it's running : https://www.youtube.com/shorts/TSqGHapvNr8
-
-Change Background:
-https://support.microsoft.com/en-us/office/change-your-background-for-a-teams-meeting-f77a2381-443a-499d-825e-509a140f4780
 
 WEP Key Recovery/Wireless Monitoring:
 Aircrack NG, Airsnort can recover a WEP key in minutes, shouldn't be used
@@ -535,6 +571,8 @@ Emerald Whale Tools = MEZR V2 + SEYZO V2 : https://www.youtube.com/watch?v=xzdoo
 
 CVE(Common Vulnerabilities and Exposures) : Realistically, all you need to do to get into most systems is to write down it's manufacturing company and year, run that through a CVE
   find the exploit online, and then use that CVE exploit, you can also download the firmware, but most people don't update their firmware after purchase ever
+Breaking The Creepy AI in Police Cameras - Benn Jordan : https://www.youtube.com/watch?v=Pp9MwZkHiMQ 
+Hikvision Exploit : https://github.com/tamim1089/HikvisionExploiter
 
 PoC(proof of concept) repos vs Metasploits
 Internet of things search engine:
@@ -548,6 +586,8 @@ Spectre + Meltdown (ALL intel chips are vulnerable) privilege escalation side ch
 https://www.youtube.com/watch?v=9j_UzNtwZHg
 VX-Underground =  VXUG, is an educational website about malware and cybersecurity. It claims to have the largest online repository of malware. :
 https://vx-underground.org/
+Breach Forums / RaidForums - Find whatever the current day incarnation of this is, future Sean problems, step 1) escape canada : 
+https://en.wikipedia.org/wiki/BreachForums 
 
 PersistenceSniper - Powershell Script:
 https://www.kitploit.com/2022/09/persistencesniper-powershell-script.html
@@ -620,6 +660,7 @@ Yopmail : Temporary Email - Free Disposable Email, Anonymous :
 https://yopmail.com/en/ 
 Roll own Linux Distro (Cubic - Custom Bootable ISO - unly UWUbuntu, ew-buntu (Arch+Hyprland FTW for custom keybindings/workflow)) :
 https://www.youtube.com/watch?v=zlInz7c83K8
+WinApp (Run exclusive windows apps from a docker container on linux) : https://github.com/winapps-org/winapps 
 
 RealPage = JBoomer Survivorship Bias Algo Vs Black Ock Vs Muh Bootstraps - Taxes + Housing + InflateSean - I will never get a PenSean, keep paying taxes though - P < P + I - I'm not a big fan of the government:
 https://www.youtube.com/watch?v=L_iU0lRHMhE&ab_channel=RagingCatfish

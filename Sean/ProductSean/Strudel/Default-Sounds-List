@@ -1,0 +1,90 @@
+Before I can build, I need bricks, before I can make bricks, I need clay
+1. Basic Synthesis Sounds
+These are generated in real-time by the software and are not pre-recorded samples.
+sine
+saw
+square
+tri (Triangle wave)
+noise
+super (Often used for classic trance and synth sounds)
+supersaw (An alias for super)
+synth
+supersynth
+pluck
+bass
+supernoise
+sinepad
+sawpad
+squarepad
+tripad
+
+2. Sampled Drum Machines
+These are classic drum machine sounds. The last number in the sample name corresponds to the different variations of that sound.
+Drum Sounds :
+bd = bass drum
+sd = snare drum
+rim = rimshot
+hh = hihat
+oh = open hihat
+lt = low tom
+mt = middle tom
+ht = high tom
+rd = ride cymbal
+cr = crash cymbal
+
+'sound("bd hh sd oh").bank("RolandTR909")' # plays the base drum, high hat, snare drum, open hihat in one cycle using the 'RolandTR909' sound bank
+Other Soundbanks (replace the "RolandTR909", theres way more to play around with, future Sean problem) :
+AkaiLinn
+RhythmAce
+RolandTR808
+RolandTR707
+ViscoSpaceDrum
+
+
+ar (Roland TR-808 Drum Machine)
+ar
+arpy
+arpy:1 through arpy:7
+
+tr (Roland TR-909 Drum Machine)
+tr
+tr:1 through tr:8
+
+bd (Assorted Bass Drums)
+bd
+bd:1 through bd:11
+
+sd (Assorted Snare Drums)
+sd
+sd:1 through sd:8
+
+hh (Assorted Hi-Hats)
+hh
+hh:1 through hh:5
+
+oc (Open Hi-Hats)
+oc
+oc:1 through oc:5
+
+cp (Assorted Claps)
+cp
+cp:1 through cp:3
+
+odx (Oberheim DX Drum Machine)
+odx
+odx:1 through odx:6
+
+3. Other Sample Libraries
+These are collections of various sounds, from acoustic drums to ambient textures and vocals.
+drum (Acoustic drum kit)
+percussion
+foley (Field recordings of everyday sounds)
+gong
+ambi (Ambient pads and textures)
+jungle
+dub
+vocal
+dork
+hax
+tabla
+tribal

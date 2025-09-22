@@ -1,0 +1,1 @@
+'yt-dlp -f 303+251 <Youtube URL>' # That will grab the 1080p vp9 video and ogg audio then merge them into one webm.

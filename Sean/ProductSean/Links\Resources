@@ -210,6 +210,16 @@ https://www.youtube.com/watch?v=aq3W3go8Bkg
 Serum 2 new Features :
 https://www.youtube.com/watch?v=Dxeti8Qw6Iw
 
+CDP(Composers Desktop Project) :
+https://www.composersdesktop.com/
+https://github.com/ComposersDesktop/CDP8
+SoundThread (GUI for Composers Desktop - Node Based Sound Design) :
+https://jphiggins.co.uk/software/
+https://bedroomproducersblog.com/2025/08/19/soundthread/
+https://github.com/j-p-higgins/SoundThread
+https://www.youtube.com/watch?v=TGczsxuAm1I
+Another free powerful tool (object orientated) is Pure Data (very similar to MaxMSP).
+
 Aphex Chad - MetaSynth - ComposersDesktop - Free:
 https://uisoftware.com/metasynth/
 https://www.youtube.com/watch?v=4-GDOIOAuU4&t=7s&ab_channel=BennJordan
@@ -268,3 +278,22 @@ virtual box installed, search menu, 'new', windows 11(ptuh), ram = 8gigs, HD = 2
  Settings : Under "Storage," click on the 'empty' optical drive and choose the Windows ISO you downloaded. -> 'Finish' -> Start VM -> Install Windows -> Download FL Studio -> Install 
  No internet on Installing Windows : Settings -> Network -> Bridged Adapater -> Promiscuous Mode 'Allow VMs" -> 'Cable Connected' = https://www.youtube.com/watch?v=mk0K88ZkE34&t=123s&ab_channel=ACCAutomation
 You can 'save state' before you shut down the VM, maybe keep the DAW in an open state so don't run out of trial version? - idk, still have to play around with it
+
+JS - Strudel-agen : 
+https://www.youtube.com/watch?v=taoAAcS5PSw
+JS - Strudel Official Docs : 
+https://strudel.cc/workshop/getting-started/
+https://strudel.cc/learn/
+Studel (Web Browser) : 
+https://strudel.cc/
+Strudel (Desktop using Nateifier) :
+npm install -g nativefier #install nativefier 
+npx nativefier https://strudel.cc/ 
+Use own sounds for Strudel :
+https://strudel.cc/ -> 'Sounds' tab -> 'Import Sounds' Tab (Select a folder) 
+Future Sean Problems = Since each sound sample is just a wave pattern, have it analysed, find the closest sound in strudel, and the tempo, then plug and play with different sounds
+'._scope()' to see a waveform when playing around with studel, '._pianoroll()' to show beatmap, '._punchcard()' :
+https://www.youtube.com/watch?v=HkgV_-nJOuE
+https://www.youtube.com/watch?v=sefJz9biLCY
+
+

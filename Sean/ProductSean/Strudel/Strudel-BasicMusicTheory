@@ -1,0 +1,73 @@
+To make music with Strudel, you'll need to understand the core concepts of rhythm, pitch, and patterns. Strudel operates on a system of cycles,
+  where each cycle has a fixed length in time and a certain number of beats.
+
+Essential Music Theory for Strudel :
+Pitch Notation: Strudel uses a standard octave and note naming system. Notes are represented by letters (c, d, e, f, g, a, b). 
+  You can specify the octave by adding a number, e.g., c4 for middle C.
+
+Rhythm (Durations): Rhythms are defined by numbers. 1 is a whole note (the length of one full cycle), 2 is a half note, 4 is a quarter note, and so on. 
+  You can use fractions for more complex rhythms, such as 3/2 for a dotted half note.
+
+Sequences and Patterns: Strudel creates music by combining sequences of pitches and rhythms. You can create a sequence by separating notes with spaces (c e g), 
+  and you can combine multiple patterns using special operators to create polyrhythms and complex phrases.
+
+Cycle Length and Beats :
+A fundamental concept in Strudel is the cycle. A cycle is the basic unit of time that your patterns repeat over.
+
+How long is a cycle?
+A cycle in Strudel is one second long.
+
+How many beats per cycle?
+There are four beats per cycle, as Strudel's default time signature is 4/4. You can change the time signature,
+  but the cycle length remains one second. This means a quarter note (4) is equal to one beat, and a beat is 250 milliseconds long.
+
+In summary, Strudel's core is based on a one-second cycle with four beats, and you build your musical ideas by creating patterns of notes and rhythms within that repeating cycle.
+
+In music theory, when you have two different rhythmic patterns, they will only align, or "hit together," at a point that is a multiple of their Least Common Multiple (LCM).
+LCM: The smallest positive number that is a multiple of two or more numbers.
+The Rule: To find when two rhythms with different beat counts will align, you must find their LCM.
+  This number represents the number of beats that must pass before both patterns repeat simultaneously.
+Example: For a 3-beat pattern and a 4-beat pattern, the LCM is 12. This means they will hit together on beats 12, 24, 36, and so on.
+  They will not necessarily align at the end of a musical phrase unless the phrase length is a multiple of their LCM.
+
+16-Beat Cycle (4 Bars)
+This is the shortest and most manageable loop. It's the perfect starting point for building a solid foundation for your track.
+Purpose: The core rhythmic idea.
+How to Build It:
+Bars 1-2: Establish your main drum groove. This could be a basic kick and snare pattern.
+Bars 3-4: Add simple rhythmic variations or a new element, such as a hi-hat or a bass note.
+Result: You have a tight, repetitive, and memorable loop.
+
+32-Beat Cycle (8 Bars)
+This is a very common loop length for a main phrase or section in a song. It gives you enough room to develop your idea without losing the listener's attention.
+Purpose: The main musical phrase.
+How to Build It:
+Bars 1-4: Start with your 16-beat core loop from above.
+Bars 5-6: Add a new melodic element or a counter-rhythm. This could be a synthesizer chord or a counter-snare pattern.
+Bars 7-8: Introduce a subtle change to build anticipation for the next loop. This could be a crash cymbal, a filter sweep, or a missing kick drum beat.
+Result: A fully developed musical phrase that feels complete but is ready for the next section.
+
+64-Beat Cycle (16 Bars)
+This is a longer phrase used for building more complex arrangements and variations. It's ideal for a full verse or chorus section.
+Purpose: A complete musical section with a sense of progression.
+How to Build It:
+Bars 1-8: Use your 32-beat phrase as the foundation.
+Bars 9-12: Introduce another new element, like an arpeggiated synth or a sub-bass line.
+Bars 13-14: Reduce the texture to create a breakdown. This could involve removing the bassline or the kick drum to give the listener a moment of space.
+Bars 15-16: Reintroduce elements to transition back into the main phrase with more impact. This is where you would build tension before the pattern starts over.
+Result: A dynamic and evolving section that tells a complete story and feels like it's moving forward.
+
+Build a rhytym that repeats ever 2/3/4/6/8/16 bars and they will all hit together during the LCM phase - You also need to consider the duration of each (1 or 2 bars vs 3, etc)
+
+
+
+
+
+
+
+
+
+
+
+
+

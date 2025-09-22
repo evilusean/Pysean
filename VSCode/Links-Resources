@@ -1,0 +1,11 @@
+# Install The correct version of VSCode for Arch Linux :
+yay -S visual-studio-code-bin
+yay -Syu #update VSCode
+
+Exten-Seans :
+https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night # Tokyo Night -AEsthetiks
+https://marketplace.visualstudio.com/items?itemName=AtomMaterial.a-file-icon-vscode #Atom Material Icons
+  #  File > Preferences > Theme > File Icon Theme = make sure to save here, I just reopened today and all my pretty icons were gone, future Sean
+Vim Keybindings 
+Intellisense - This is useful for figuring out what code does, each language has their own extension you need to install - also autocomplete makes writing easier
+  # simply hover over a keyword/function/method/whatever and it will show you what it does press 'F12' for the definition and it will show you the code

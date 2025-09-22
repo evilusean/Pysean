@@ -1,0 +1,87 @@
+Strudel - First Sounds - https://strudel.cc/workshop/first-sounds/ =============================================================================================================================
+'sound("bd hh sd oh").bank("RolandTR909")' # plays the base drum, high hat, snare drum, open hihat in one cycle using the 'RolandTR909' sound bank
+'sound("bd bd hh bd rim bd hh bd")' # The longer the sequence, the faster it runs - The content of a sequence will be squished into what’s called a cycle. A cycle is 2s long by default.
+'sound("<bd bd hh bd rim bd hh bd>")' # One per cycle with '< .. >' With these brackets, the tempo doesn’t change when we add or remove elements!
+'sound("<bd bd hh bd rim bd hh bd>*8")' # '*8'Because this is now very slow, we can speed it up again, the *8 makes it 8 times faster
+  the special thing about this notation is that the tempo won’t change when you add or remove elements
+'setcpm(90/4)' # cpm = cycles per minute - By default, the tempo is 30 cycles per minute = 120/4 = 1 cycle every 2 seconds
+  In western music terms, you could say the above are 8ths notes at 90bpm in 4/4 time. But don’t worry if you don’t know these terms, as they are not required to make music with Strudel.
+'sound("bd hh - rim - bd hh rim")' # Add a rests in a sequence with ’-’ or ’~’
+'sound("bd [hh hh] sd [hh bd] bd - [hh sd] cp")' # Sub-Sequences with [brackets] - Similar to the whole sequence, the content of a sub-sequence will be squished to its own length.
+'sound("bd hh*2 rim hh*3 bd [- hh*2] rim hh*2")' # Multiplication: Speed things up
+'sound("bd [hh rim]*2 bd [hh rim]*1.5")' # Multiplication: Speed up subsequences
+'sound("bd hh*32 rim hh*16")' # you can 'hh*32' high hat 32 times in a sounds alloted time
+'sound("bd [[rim rim] hh] bd cp")' # Sub-Sub-Sequences with [[brackets]], You can go as deep as you want!
+'sound("hh hh hh, bd casio")' # Play sequences in parallel with comma (so each 'cycle' will play 'hh hh hh' and 'bd casio' on top of each other, You can use as many commas as you want
+'sound("hh hh hh, bd [bd,casio]")' # Commas can also be used inside sub-sequences
+sound(`bd*2, - cp, 
+  - - - oh, hh*4,
+  [- casio]*2`) # '`' Multiple Lines with backticks
+'sound("jazz:0 jazz:1 [jazz:4 jazz:2] jazz:3*2")' Vs  # selecting sample numbers separately - Instead of selecting sample numbers one by one:
+  'n("0 1 [4 2] 3*2").sound("jazz")'  We can also use the 'n' function to make it shorter and more readable
+https://strudel.cc/workshop/first-sounds/#recap
+We Will, We Will, Rock You :
+  setcpm(81/2)
+  sound("bd*2 cp").bank("RolandTR707")
+14 Step Sequencer (using '`' backticks) :
+setcpm(90/4)
+  sound(`
+  [-  -  oh - ] [-  -  -  - ] [-  -  -  - ] [-  -  -  - ],
+  [hh hh -  - ] [hh -  hh - ] [hh -  hh - ] [hh -  hh - ],
+  [-  -  -  - ] [cp -  -  - ] [-  -  -  - ] [cp -  -  - ],
+  [bd -  -  - ] [-  -  -  bd] [-  -  bd - ] [-  -  -  bd]
+  `)
+Another 14 Step Sequencer :
+setcpm(88/4)
+  sound(`
+  [-  -  -  - ] [-  -  -  - ] [-  -  -  - ] [-  -  oh:1 - ],
+  [hh hh hh hh] [hh hh hh hh] [hh hh hh hh] [hh hh -  - ],
+  [-  -  -  - ] [cp -  -  - ] [-  -  -  - ] [~  cp -  - ],
+  [bd bd -  - ] [-  -  bd - ] [bd bd - bd ] [-  -  -  - ]
+  `).bank("RolandTR808")
+
+Strudel - First Notes - https://strudel.cc/workshop/first-notes/ =============================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
