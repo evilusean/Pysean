@@ -1,0 +1,10 @@
+{
+	"manifest_version": 3,
+	"name": "TabulaSean - Tab Export/Import",
+	"version": "1.0",
+	"description": "Save all open tabs to a text file and import them on any device.",
+	"permissions": ["tabs", "downloads"],
+	"action": {
+		"default_popup": "popup.html"
+	}
+}
