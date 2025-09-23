@@ -42,7 +42,24 @@ document.addEventListener('DOMContentLoaded', () => {
           alert("No posts found in thread! If this is a 4chan thread, try reloading the page after reloading the extension.");
           return;
         }
-        // Build HTML
+        // Gather all unique media URLs
+        let allMedia = [];
+        response.posts.forEach(post => {
+          if (post.media && post.media.length) {
+            post.media.forEach(url => {
+              if (!allMedia.includes(url)) allMedia.push(url);
+            });
+          }
+        });
+        // Download all media to thread folder
+        if (allMedia.length > 0) {
+          await chrome.runtime.sendMessage({
+            action: "downloadThreadMedia",
+            urls: allMedia,
+            threadId: threadId
+          });
+        }
+        // Build HTML referencing local files
         let html = `<!DOCTYPE html><html><head><meta charset='utf-8'><title>/${board}/ - ${threadId}</title><style>body{font-family:sans-serif;background:#f8f8f8;} .post{border:1px solid #ccc;background:#fff;margin:10px;padding:10px;border-radius:6px;} .media{margin:5px 0;} .postnum{color:#888;font-size:0.9em;} .reply{color:#06c;text-decoration:underline;cursor:pointer;} img,video{max-width:400px;display:block;margin:5px 0;}</style></head><body>`;
         html += `<h2>/${board}/ - Thread ${threadId}</h2>`;
         response.posts.forEach(post => {
@@ -50,10 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
           html += `<div>${post.com || ''}</div>`;
           if (post.media && post.media.length) {
             post.media.forEach(url => {
+              const filename = url.split('/').pop();
+              const localPath = `4Chan-${threadId}/${filename}`;
               if (url.match(/\.(jpg|jpeg|png|gif)$/i)) {
-                html += `<div class='media'><a href='${url}' target='_blank'><img src='${url}'></a></div>`;
+                html += `<div class='media'><a href='${localPath}' target='_blank'><img src='${localPath}'></a></div>`;
               } else if (url.match(/\.(webm|mp4)$/i)) {
-                html += `<div class='media'><a href='${url}' target='_blank'><video src='${url}' controls></video></a></div>`;
+                html += `<div class='media'><a href='${localPath}' target='_blank'><video src='${localPath}' controls></video></a></div>`;
               }
             });
           }
@@ -69,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
           filename,
           saveAs: true
         });
-        alert(`Saved thread as HTML: ${filename}`);
+        alert(`Saved thread as HTML: ${filename}\nAll media saved to 4Chan-${threadId}/`);
       } catch (error) {
         console.error("Error saving thread as HTML:", error);
         alert("Failed to save thread as HTML. See console for details.");
