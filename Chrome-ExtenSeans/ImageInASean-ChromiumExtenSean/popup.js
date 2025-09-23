@@ -51,13 +51,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
           }
         });
-        // Download all media to thread folder
+        // Download all media to thread folder (wait for at least one to start)
+        let htmlFolder = '';
         if (allMedia.length > 0) {
-          await chrome.runtime.sendMessage({
-            action: "downloadThreadMedia",
-            urls: allMedia,
-            threadId: threadId
+          await new Promise((resolve) => {
+            chrome.runtime.sendMessage({
+              action: "downloadThreadMedia",
+              urls: [allMedia[0]], // download first file to create folder
+              threadId: threadId
+            }, resolve);
           });
+          // Start the rest (non-blocking)
+          if (allMedia.length > 1) {
+            chrome.runtime.sendMessage({
+              action: "downloadThreadMedia",
+              urls: allMedia.slice(1),
+              threadId: threadId
+            });
+          }
+          htmlFolder = `4Chan-${threadId}/`;
         }
         // Build HTML referencing local files
         let html = `<!DOCTYPE html><html><head><meta charset='utf-8'><title>/${board}/ - ${threadId}</title><style>body{font-family:sans-serif;background:#f8f8f8;} .post{border:1px solid #ccc;background:#fff;margin:10px;padding:10px;border-radius:6px;} .media{margin:5px 0;} .postnum{color:#888;font-size:0.9em;} .reply{color:#06c;text-decoration:underline;cursor:pointer;} img,video{max-width:400px;display:block;margin:5px 0;}</style></head><body>`;
@@ -68,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (post.media && post.media.length) {
             post.media.forEach(url => {
               const filename = url.split('/').pop();
-              const localPath = `4Chan-${threadId}/${filename}`;
+              const localPath = `${htmlFolder}${filename}`;
               if (url.match(/\.(jpg|jpeg|png|gif)$/i)) {
                 html += `<div class='media'><a href='${localPath}' target='_blank'><img src='${localPath}'></a></div>`;
               } else if (url.match(/\.(webm|mp4)$/i)) {
@@ -81,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         html += `</body></html>`;
         // Save HTML file
         const blob = new Blob([html], {type: 'text/html'});
-        const filename = `4Chan-${threadId}/thread.html`;
+        const filename = htmlFolder ? `${htmlFolder}thread.html` : `thread.html`;
         const url = URL.createObjectURL(blob);
         chrome.downloads.download({
           url,
