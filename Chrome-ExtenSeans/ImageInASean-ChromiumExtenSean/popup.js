@@ -34,6 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
         response.posts.forEach(post => {
           html += `<div class='post'><div class='postnum'>No.${post.no} | ${post.name || ''} ${post.time || ''}</div>`;
           html += `<div>${post.com || ''}</div>`;
+          let statusDiv = document.getElementById('status');
+          if (!statusDiv) {
+            statusDiv = document.createElement('div');
+            statusDiv.id = 'status';
+            document.body.appendChild(statusDiv);
+          }
+
+          function setStatus(msg, isError) {
+            statusDiv.textContent = msg;
+            statusDiv.style.color = isError ? 'red' : 'green';
+          }
           if (post.media && post.media.length) {
             post.media.forEach(url => {
               if (url.match(/\.(jpg|jpeg|png|gif)$/i)) {
