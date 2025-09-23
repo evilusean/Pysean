@@ -1,3 +1,73 @@
+  const savePostsTextButton = document.getElementById('savePostsText');
+
+  if (savePostsTextButton) {
+    savePostsTextButton.addEventListener('click', async () => {
+      try {
+        const [activeTab] = await chrome.tabs.query({ active: true, currentWindow: true });
+        if (!activeTab) {
+          alert("No active tab found");
+          return;
+        }
+        const threadUrl = activeTab.url;
+        const threadMatch = threadUrl.match(/boards\.4chan\.org\/(\w+)\/thread\/(\d+)/);
+        if (!threadMatch) {
+          alert("Not a 4chan thread page!");
+          return;
+        }
+        const board = threadMatch[1];
+        const threadId = threadMatch[2];
+        // Ask content script for all posts
+        let response;
+        try {
+          response = await new Promise((resolve, reject) => {
+            chrome.tabs.sendMessage(activeTab.id, { action: "getThreadFull" }, (resp) => {
+              if (chrome.runtime.lastError) {
+                reject(chrome.runtime.lastError.message);
+              } else {
+                resolve(resp);
+              }
+            });
+          });
+        } catch (err) {
+          alert("Could not connect to content script. Try reloading the thread page after reloading the extension.\nError: " + err);
+          return;
+        }
+        if (!response || !response.posts || response.posts.length === 0) {
+          alert("No posts found in thread! If this is a 4chan thread, try reloading the page after reloading the extension.");
+          return;
+        }
+        // Format posts as plain text
+        let text = `/${board}/ - Thread ${threadId}\n\n`;
+        response.posts.forEach(post => {
+          text += `No.${post.no} | ${post.name || ''} ${post.time || ''}\n`;
+          // Remove HTML tags from comment
+          let com = post.com || '';
+          com = com.replace(/<br\s*\/?>(\n)?/gi, '\n');
+          com = com.replace(/<[^>]+>/g, '');
+          text += com.trim() + '\n';
+          text += '-----------------------------\n';
+        });
+        // Save as .txt file
+        const blob = new Blob([text], {type: 'text/plain'});
+        const filename = `thread-${threadId}.txt`;
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => {
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+        }, 1000);
+        alert(`Saved all posts as text: ${filename}`);
+      } catch (error) {
+        console.error("Error saving posts as text:", error);
+        alert("Failed to save posts as text. See console for details.");
+      }
+    });
+  }
 document.addEventListener('DOMContentLoaded', () => {
   console.log("Popup DOM loaded");
   const saveImagesButton = document.getElementById('saveImages');
@@ -88,17 +158,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const blob = new Blob([html], {type: 'text/html'});
         const filename = `thread-${threadId}.html`;
         const url = URL.createObjectURL(blob);
-        chrome.downloads.download({
-          url,
-          filename,
-          saveAs: true
-        }, (downloadId) => {
-          if (chrome.runtime.lastError || !downloadId) {
-            alert("Failed to save thread as HTML. Chrome error: " + (chrome.runtime.lastError ? chrome.runtime.lastError.message : "Unknown error"));
-          } else {
-            alert(`Saved thread as HTML: ${filename}\nAll media saved to 4Chan-${threadId}/\n\nTo archive, move this HTML file and the entire 4Chan-${threadId} folder together to any location. The links will always work as long as you keep them together.`);
-          }
-        });
+        // Always use anchor method for Blob download (most reliable)
+        try {
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = filename;
+          a.style.display = 'none';
+          document.body.appendChild(a);
+          a.click();
+          setTimeout(() => {
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+          }, 1000);
+          alert(`Saved thread as HTML: ${filename}\nAll media saved to 4Chan-${threadId}/\n\nIf prompted, choose a location. To archive, move this HTML file and the entire 4Chan-${threadId} folder together to any location. The links will always work as long as you keep them together.`);
+        } catch (e) {
+          alert("Failed to save thread as HTML. See console for details.");
+          console.error("Anchor download failed:", e);
+        }
       } catch (error) {
         console.error("Error saving thread as HTML:", error);
         alert("Failed to save thread as HTML. See console for details.");
