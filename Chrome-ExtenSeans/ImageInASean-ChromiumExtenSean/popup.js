@@ -23,9 +23,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const board = threadMatch[1];
         const threadId = threadMatch[2];
         // Ask content script for all posts and media
-        const response = await chrome.tabs.sendMessage(activeTab.id, { action: "getThreadFull" });
+        let response;
+        try {
+          response = await new Promise((resolve, reject) => {
+            chrome.tabs.sendMessage(activeTab.id, { action: "getThreadFull" }, (resp) => {
+              if (chrome.runtime.lastError) {
+                reject(chrome.runtime.lastError.message);
+              } else {
+                resolve(resp);
+              }
+            });
+          });
+        } catch (err) {
+          alert("Could not connect to content script. Try reloading the thread page after reloading the extension.\nError: " + err);
+          return;
+        }
         if (!response || !response.posts || response.posts.length === 0) {
-          alert("No posts found in thread!");
+          alert("No posts found in thread! If this is a 4chan thread, try reloading the page after reloading the extension.");
           return;
         }
         // Build HTML
@@ -80,9 +94,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const board = threadMatch[1];
         const threadId = threadMatch[2];
         // Ask content script to scrape all media URLs
-        const response = await chrome.tabs.sendMessage(activeTab.id, { action: "getThreadMedia" });
+        let response;
+        try {
+          response = await new Promise((resolve, reject) => {
+            chrome.tabs.sendMessage(activeTab.id, { action: "getThreadMedia" }, (resp) => {
+              if (chrome.runtime.lastError) {
+                reject(chrome.runtime.lastError.message);
+              } else {
+                resolve(resp);
+              }
+            });
+          });
+        } catch (err) {
+          alert("Could not connect to content script. Try reloading the thread page after reloading the extension.\nError: " + err);
+          return;
+        }
         if (!response || !response.urls || response.urls.length === 0) {
-          alert("No media found in thread!");
+          alert("No media found in thread! If this is a 4chan thread, try reloading the page after reloading the extension.");
           return;
         }
         // Send to background for batch download to thread folder
