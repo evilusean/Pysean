@@ -18,7 +18,8 @@
     "*://8kun.top/*",
     "*://*.8kun.top/*",
     "*://nerv.8kun.top/*",
-    "*://media.8kun.top/*"
+    "*://media.8kun.top/*",
+    "file://*/*"
   ],
   "background": {
     "service_worker": "background.js"

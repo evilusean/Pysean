@@ -1,31 +1,4 @@
-// Download HTML file from content (triggered by popup.js)
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.action === "downloadThreadHtml") {
-    try {
-      const blob = new Blob([message.htmlContent], {type: 'text/html'});
-      const url = URL.createObjectURL(blob);
-      const filename = `thread-${message.threadId}.html`;
-      chrome.downloads.download({
-        url,
-        filename,
-        saveAs: true
-      }, (downloadId) => {
-        if (chrome.runtime.lastError) {
-          console.error("Failed to download HTML:", chrome.runtime.lastError);
-          sendResponse({ success: false });
-        } else {
-          sendResponse({ success: true });
-        }
-        // Do not revoke the Blob URL immediately
-      });
-      // Required for async sendResponse
-      return true;
-    } catch (e) {
-      console.error("Exception in downloadThreadHtml:", e);
-      sendResponse({ success: false });
-    }
-  }
-});
+
 // Service worker initialization
 console.log("4chan Image Saver background script initialized");
 

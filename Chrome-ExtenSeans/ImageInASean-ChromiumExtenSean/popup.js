@@ -84,16 +84,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         html += `</body></html>`;
         // Save HTML file
-        // Send HTML content to background for download
-        chrome.runtime.sendMessage({
-          action: "downloadThreadHtml",
-          htmlContent: html,
-          threadId: threadId
-        }, (resp) => {
-          if (resp && resp.success) {
-            alert(`Saved thread as HTML: thread-${threadId}.html\nAll media saved to 4Chan-${threadId}/\n\nTo archive, move this HTML file and the entire 4Chan-${threadId} folder together to any location. The links will always work as long as you keep them together.`);
+        // Save HTML file directly from popup
+        const blob = new Blob([html], {type: 'text/html'});
+        const filename = `thread-${threadId}.html`;
+        const url = URL.createObjectURL(blob);
+        chrome.downloads.download({
+          url,
+          filename,
+          saveAs: true
+        }, (downloadId) => {
+          if (chrome.runtime.lastError || !downloadId) {
+            alert("Failed to save thread as HTML. Chrome error: " + (chrome.runtime.lastError ? chrome.runtime.lastError.message : "Unknown error"));
           } else {
-            alert("Failed to save thread as HTML. See console for details.");
+            alert(`Saved thread as HTML: ${filename}\nAll media saved to 4Chan-${threadId}/\n\nTo archive, move this HTML file and the entire 4Chan-${threadId} folder together to any location. The links will always work as long as you keep them together.`);
           }
         });
       } catch (error) {
