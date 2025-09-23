@@ -34,17 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         response.posts.forEach(post => {
           html += `<div class='post'><div class='postnum'>No.${post.no} | ${post.name || ''} ${post.time || ''}</div>`;
           html += `<div>${post.com || ''}</div>`;
-          let statusDiv = document.getElementById('status');
-          if (!statusDiv) {
-            statusDiv = document.createElement('div');
-            statusDiv.id = 'status';
-            document.body.appendChild(statusDiv);
-          }
-
-          function setStatus(msg, isError) {
-            statusDiv.textContent = msg;
-            statusDiv.style.color = isError ? 'red' : 'green';
-          }
           if (post.media && post.media.length) {
             post.media.forEach(url => {
               if (url.match(/\.(jpg|jpeg|png|gif)$/i)) {
@@ -72,7 +61,43 @@ document.addEventListener('DOMContentLoaded', () => {
         alert("Failed to save thread as HTML. See console for details.");
       }
     });
-}
+  }
+
+  if (saveThreadMediaButton) {
+    saveThreadMediaButton.addEventListener('click', async () => {
+      try {
+        const [activeTab] = await chrome.tabs.query({ active: true, currentWindow: true });
+        if (!activeTab) {
+          alert("No active tab found");
+          return;
+        }
+        const threadUrl = activeTab.url;
+        const threadMatch = threadUrl.match(/boards\.4chan\.org\/(\w+)\/thread\/(\d+)/);
+        if (!threadMatch) {
+          alert("Not a 4chan thread page!");
+          return;
+        }
+        const board = threadMatch[1];
+        const threadId = threadMatch[2];
+        // Ask content script to scrape all media URLs
+        const response = await chrome.tabs.sendMessage(activeTab.id, { action: "getThreadMedia" });
+        if (!response || !response.urls || response.urls.length === 0) {
+          alert("No media found in thread!");
+          return;
+        }
+        // Send to background for batch download to thread folder
+        await chrome.runtime.sendMessage({
+          action: "downloadThreadMedia",
+          urls: response.urls,
+          threadId: threadId
+        });
+        alert(`Started downloading ${response.urls.length} files to folder 4Chan-${threadId}`);
+      } catch (error) {
+        console.error("Error in Save Thread Media:", error);
+        alert("Failed to save thread media. See console for details.");
+      }
+    });
+  }
 
   if (saveImagesButton) {
     saveImagesButton.addEventListener('click', async () => {
@@ -110,4 +135,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   } else {
     console.error("Save Images button not found");
-  }
+  }});
