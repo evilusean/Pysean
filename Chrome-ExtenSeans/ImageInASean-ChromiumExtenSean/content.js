@@ -74,6 +74,40 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     return true;  // Keep the message port open
   }
 
+  // Collect all posts and media for HTML export
+  if (request.action === "getThreadFull") {
+    try {
+      // 4chan posts are in .postContainer or .post class
+      const postNodes = document.querySelectorAll('.post, .postContainer');
+      const posts = [];
+      postNodes.forEach(node => {
+        // Post number
+        let no = node.getAttribute('data-no') || node.id?.replace('p', '') || '';
+        // Name
+        let name = node.querySelector('.name')?.textContent || '';
+        // Time
+        let time = node.querySelector('.dateTime')?.textContent || '';
+        // Comment HTML
+        let com = node.querySelector('.postMessage')?.innerHTML || '';
+        // Media links
+        let media = [];
+        // 4chan: fileThumb for images, fileText for filename
+        node.querySelectorAll('a.fileThumb').forEach(a => {
+          let url = a.href;
+          if (url && (url.match(/\.(jpg|jpeg|png|gif|webm|mp4)$/i))) {
+            media.push(url);
+          }
+        });
+        posts.push({ no, name, time, com, media });
+      });
+      sendResponse({ posts });
+    } catch (error) {
+      console.error('Error in getThreadFull:', error);
+      sendResponse({ error: error.message });
+    }
+    return true;
+  }
+
   // New: Scrape all media from thread
   if (request.action === "getThreadMedia") {
     try {

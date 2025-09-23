@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert("Failed to save thread as HTML. See console for details.");
       }
     });
-  }
+}
 
   if (saveImagesButton) {
     saveImagesButton.addEventListener('click', async () => {
