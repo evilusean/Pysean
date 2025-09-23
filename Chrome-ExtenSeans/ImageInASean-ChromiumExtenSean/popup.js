@@ -168,11 +168,11 @@ document.addEventListener('DOMContentLoaded', () => {
         alert("Failed to save thread media. See console for details.");
       }
     });
+  } else {
+    console.error("Save Thread Media button not found");
   }
-    } else {
-      console.error("Save Thread Media button not found");
-    }
 
+  if (saveImagesButton) {
     console.log("Save Images button found, adding click listener");
     saveImagesButton.addEventListener('click', async () => {
       console.log("Save Images button clicked - starting process");
@@ -222,4 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("Error in main process:", error.message);
       }
     });
+  } else {
+    console.error("Save Images button not found");
+  }
 });
