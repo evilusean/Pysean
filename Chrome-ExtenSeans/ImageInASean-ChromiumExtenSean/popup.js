@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         html += `</body></html>`;
         // Save HTML file
         const blob = new Blob([html], {type: 'text/html'});
-        const filename = `4chan-thread-${board}-${threadId}.html`;
+        const filename = `4Chan-${threadId}/thread.html`;
         const url = URL.createObjectURL(blob);
         chrome.downloads.download({
           url,
