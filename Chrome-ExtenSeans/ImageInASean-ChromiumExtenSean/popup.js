@@ -51,25 +51,17 @@ document.addEventListener('DOMContentLoaded', () => {
             });
           }
         });
-        // Download all media to thread folder (wait for at least one to start)
+        // Download all media to thread folder, then save HTML after a short delay
         let htmlFolder = '';
         if (allMedia.length > 0) {
-          await new Promise((resolve) => {
-            chrome.runtime.sendMessage({
-              action: "downloadThreadMedia",
-              urls: [allMedia[0]], // download first file to create folder
-              threadId: threadId
-            }, resolve);
+          await chrome.runtime.sendMessage({
+            action: "downloadThreadMedia",
+            urls: allMedia,
+            threadId: threadId
           });
-          // Start the rest (non-blocking)
-          if (allMedia.length > 1) {
-            chrome.runtime.sendMessage({
-              action: "downloadThreadMedia",
-              urls: allMedia.slice(1),
-              threadId: threadId
-            });
-          }
           htmlFolder = `4Chan-${threadId}/`;
+          // Wait a moment to help ensure folder is created
+          await new Promise(res => setTimeout(res, 800));
         }
         // Build HTML referencing local files
         let html = `<!DOCTYPE html><html><head><meta charset='utf-8'><title>/${board}/ - ${threadId}</title><style>body{font-family:sans-serif;background:#f8f8f8;} .post{border:1px solid #ccc;background:#fff;margin:10px;padding:10px;border-radius:6px;} .media{margin:5px 0;} .postnum{color:#888;font-size:0.9em;} .reply{color:#06c;text-decoration:underline;cursor:pointer;} img,video{max-width:400px;display:block;margin:5px 0;}</style></head><body>`;
