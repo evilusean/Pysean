@@ -76,3 +76,7 @@ This ensures maximum compatibility with different security configurations.
 - `tabs` - Access to browser tabs
 - `scripting` - Execute scripts in tabs
 - `host_permissions` - Access to 4chan and 8kun domains 
+
+## To Do / Future Sean Problems : 
+
+Save all Media + Text / posts (some threads have links in the comments, not everyone posts the webm's, also archived links for future reference)

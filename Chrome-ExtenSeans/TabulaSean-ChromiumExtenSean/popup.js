@@ -1,5 +1,3 @@
-// ...existing code...
-
 document.addEventListener('DOMContentLoaded', () => {
 	const saveBtn = document.getElementById('saveTabs');
 	const importBtn = document.getElementById('importTabs');
