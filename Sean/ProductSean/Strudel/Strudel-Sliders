@@ -90,7 +90,57 @@ const BASSLINE_SUB = note("<d2 d3 <a2 a3> f#2 c#3>"): This line defines the musi
 
 .punchcard({ width: 608, height: 100 }): This is a non-musical command that creates a visual punchcard representation of the pattern on the screen, which helps you see the rhythm and timing.
 
+================================================================================================================================================================================================
+A list of all sliders you can use :
+1. Volume & Mix Control
+These are essential for managing the dynamics and balance of your song.
 
+gain: Controls the overall volume of a pattern or sound. The slider typically ranges from 0 to 1.
+
+pan: Controls the stereo position of a sound, moving it from left to right. A slider from 0 (full left) to 1 (full right) with 0.5 as the center is standard.
+
+crush: Reduces the bit depth of a sound, which creates a distorted, lo-fi effect.
+
+room: Adds a reverb effect to simulate a sense of space or echo. The slider controls the amount of reverb mix.
+
+delay: Adds an echo effect. The slider often controls the delay time, which can be a fractional value like 0.5 for an eighth-note delay.
+
+2. Filters
+Filters are used to shape the tone of a sound by removing or emphasizing certain frequencies.
+
+lpf (Low-Pass Filter): Cuts out frequencies above a certain point. Use this to make a sound more muffled or warm.
+
+hpf (High-Pass Filter): Cuts out frequencies below a certain point. This is useful for removing unwanted low-end "rumble."
+
+lpfq & hpfq: These control the resonance or quality (q) of the respective filters, creating a boosted or "squelchy" sound at the cutoff frequency.
+
+3. Synthesis & Tone Sliders
+These sliders directly affect the sound's envelope and character.
+
+attack: Controls the time it takes for a sound to reach its maximum volume after the note begins.
+
+decay: Controls the time it takes for a sound to fade out from its peak to its sustain level.
+
+sustain: The volume level that a note holds at after the initial attack and decay.
+
+release: The time it takes for a sound to fade out completely after the note is released.
+
+coarse: Transposes the sound's pitch up or down in semitones.
+
+struct: Modifies the synthesis structure, often used to create wavetable-like effects or change the timbre.
+
+4. Time-Based Pattern Sliders
+These sliders affect the tempo and rhythmic structure of your patterns.
+
+slow: Makes a pattern play slower. A value of 2 makes it play at half speed.
+
+fast: Makes a pattern play faster. A value of 2 makes it play at double speed.
+
+accelerate: Gradually speeds up a pattern over time.
+
+decelerate: Gradually slows down a pattern over time.
+
+swing: Adds a "swing" feel to the rhythm by delaying certain beats, which is common in jazz and electronic music.
 
 
 
