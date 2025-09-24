@@ -79,4 +79,5 @@ This ensures maximum compatibility with different security configurations.
 
 ## To Do / Future Sean Problems : 
 
-Save all Media + Text / posts (some threads have links in the comments, not everyone posts the webm's, also archived links for future reference)
+- Save all Media + Text / posts (some threads have links in the comments, not everyone posts the webm's, also archived links for future reference)
+- Save all posts as texts works, but save all posts as HTML(maybe try markdown?) isn't working, obviously saving a HTML document referencing the media would work the best for readability, but I can still read the text document and copy any links or summaries anons have left
