@@ -1,0 +1,32 @@
+This project aims to make a conversion between guitar chords/riffs and translate it into a strudel readable/playable format : 
+Hard Mode (free) : OCR with OpenCV (or similar) software that converts tabs images into standard musical notation (without the tempo or note size/duration) which then again needs to be converted into a strudel mini notation chord
+
+Easy Mode(but expensive) : GuitarPro (paid app) can convert tabs into standard musical notation then translate that again into strudels mini notation - 
+  There are free apps like 'MuseScore' or 'TuxGuitar' that can read '.gp' files - https://klang.io/guitar2tabs/
+Using Guitar Pro or similar software to work with `.gp` files is the best way to convert tabs into a format that Strudel can read because it automates the most difficult parts of the process. 
+  Instead of manually translating each note and guessing the rhythm, the software does it for you.
+
+### Why Guitar Pro is the Best Solution
+- **Rhythm and Timing are Preserved:** Guitar Pro files, unlike many plain text tabs found online, contain all the rhythmic information. The software knows if a note is a quarter note, 
+  an eighth note, a sixteenth note, and so on. This is essential for a language like Strudel, which is built on precise rhythmic patterns.
+- **Accurate Pitch Conversion:** Guitar Pro correctly identifies the pitch of each note based on its string and fret position. This saves you from having to manually figure out that, 
+for example, a "5" on the second string (B string) is an E note in the next octave up.
+    
+- **MIDI Export:** The main reason these programs are so useful is their **ability to export to MIDI**. 🎹 MIDI files are a universal language for music; 
+  they contain all the note and timing data in a structured format. Strudel can directly read and interpret MIDI information. By exporting a `.gp` file to MIDI, you get a clean,
+  digital version of the music that can be used to generate your Strudel patterns.
+    
+### The Conversion Workflow
+The general process is straightforward:
+
+1. **Open the `.gp` file** in Guitar Pro, TuxGuitar, or MuseScore.
+    
+2. **Export the file** as a MIDI file (`.mid`).
+    
+3. **Read the MIDI data** in your Strudel environment. While Strudel doesn't have a direct "import MIDI file" button, you can use JavaScript libraries or other methods to
+  parse the MIDI data and convert it into Strudel's notation.
+    
+4. **Write the Strudel code** based on the pitches and rhythms from the MIDI file. You can then use the Strudel functions like `note()` to create your patterns,
+  or even use tools that automatically convert MIDI to Strudel's specific text format.
+    
+This workflow eliminates the tedious and error-prone manual conversion from tablature, making it the most efficient and accurate method.
