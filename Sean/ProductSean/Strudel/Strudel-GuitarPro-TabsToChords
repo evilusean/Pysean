@@ -1,5 +1,6 @@
 This project aims to make a conversion between guitar chords/riffs and translate it into a strudel readable/playable format : 
-Hard Mode (free) : OCR with OpenCV (or similar) software that converts tabs images into standard musical notation (without the tempo or note size/duration) which then again needs to be converted into a strudel mini notation chord
+Hard Mode (free) : OCR with OpenCV (or similar) software that converts tabs images into standard musical notation (without the tempo or note size/duration)
+  which then again needs to be converted into a strudel mini notation chord
 
 Easy Mode(but expensive) : GuitarPro (paid app) can convert tabs into standard musical notation then translate that again into strudels mini notation - 
   There are free apps like 'MuseScore' or 'TuxGuitar' that can read '.gp' files - https://klang.io/guitar2tabs/
