@@ -1,0 +1,80 @@
+Sliders - You can name your variables, and add sliders to control each effect :
+"""
+setCps(150/60/4) //150bpm
+
+const BASS_ROLL_GAIN = slider(0.4, 0.1, 1)
+const BASS_ROLL_LPF  = slider(1200, 300, 8000)
+const BASS_ROLL_HPF  = slider(50, 20, 500)
+const BASS_ROLL_DECAY = slider(0.8, 0, 5)
+const BASS_ROLL_ROOM  = slider(0.5, 0, 1)
+const BASS_ROLL_DELAY  = slider(0.4, 0, 2)
+const BASS_ROLL_COARSE  = slider(0, -12, 12)
+
+const BASS_SUB_GAIN = slider(0.5, 0, 1)
+const BASS_SUB_LPF = slider(800, 100, 2000)
+const BASS_SUB_HPF = slider(20, 10, 200)
+const BASS_SUB_DECAY = slider(1.5, 0, 10)
+const BASS_SUB_ROOM = slider(0.2, 0, 1)
+const BASS_SUB_STRUCT = slider(0.5, 0, 1)
+
+const BASSLINE_SUB = note("<d2 d3 <a2 a3> f#2 c#3>")
+  .sound('gm_synth_bass_1')
+  .gain(BASS_SUB_GAIN)
+  .lpf(BASS_SUB_LPF)
+  .hpf(BASS_SUB_HPF)
+  .decay(BASS_SUB_DECAY)
+  .struct("<d!16>") // adds bounce and groove
+  .slow(2)
+  .room(BASS_SUB_ROOM)
+  .punchcard({ width: 608, height: 100 })
+
+const HAT_GAIN = slider(0.6, 0, 1)
+const OHAT_GAIN = slider(0.5, 0, 1)
+const SHAKE_GAIN = slider(0.5, 0, 1)
+const OHAT_GAIN = slider(0.25, 0.1, 1)
+const SHAKE_GAIN = slider(0.2, 0.1, 1)
+
+const BASSLINE_ROLLER = note("f#3 a3 c#4 dr a3 d4 f#3 a3 c#4") 
+  .sound('sawtooth')
+  .gain(BASS_ROLL_GAIN)
+  .lpf(BASS_ROLL_LPF)
+  .hpf(BASS_ROLL_HPF)
+  .decay(BASS_ROLL_DECAY)
+  .coarse(BASS_ROLL_COARSE)
+  .delay(BASS_ROLL_DELAY)
+  .struct("<d!8>")
+  .room(BASS_ROLL_ROOM)
+  .punchcard({ width: 600, height: 100})
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
