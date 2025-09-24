@@ -83,7 +83,8 @@ const BASSLINE_SUB = note("<d2 d3 <a2 a3> f#2 c#3>"): This line defines the musi
 
 .decay(BASS_SUB_DECAY) and .room(BASS_SUB_ROOM): These apply the decay and reverb effects, using the values from their sliders.
 
-.struct("<d!16>"): This is a structural pattern that adds a rhythmic bounce or a "groove" to the notes by repeating them or changing their rhythm based on the <d!16> pattern. The d likely stands for a drum-like beat, and 16 means it will repeat at the sixteenth-note level.
+.struct("<d!16>"): This is a structural pattern that adds a rhythmic bounce or a "groove" to the notes by repeating them or changing their rhythm based on the <d!16> pattern. 
+  The d likely stands for a drum-like beat, and 16 means it will repeat at the sixteenth-note level.
 
 .slow(2): This method makes the pattern play at half the speed of the overall song, or twice as slowly.
 
