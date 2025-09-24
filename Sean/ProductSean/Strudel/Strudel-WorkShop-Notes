@@ -1,7 +1,15 @@
 WORKSHOP // Coding Music With Strudel // Dan Gorelick and Viola He : https://www.youtube.com/watch?v=oqyAJ4WeKoU
-
-
-
+s("sd bd cp") # 's' is short for 'sound' 'sd' = snare drum, 'bd' = base drum, cp = clap
+s("bd hh sd hh") # in strudel only the last 'block' will play unless you add a ',' like below but it highlights what is playing so you know
+stack(
+  s("<bd bd*2> ~"),
+  s("~ sd"),
+  s("~ cp ~ cp"),
+  s("hhx8?"),
+) 
+on the right hand side tabs click the 'sounds' tab, and you can see all the built in sounds that strudel has, just click them
+  each sound will have a number like 'sound(#)' the '#' is how many sounds, so you can select through it for 'jazz(8)' has 8 sounds, so you can go through 1-8 with 'jazz:1'
+on the right hand side tabs click the 'reference' tab to get a list of all the functions you can use to alter the sounds
 
 
 
