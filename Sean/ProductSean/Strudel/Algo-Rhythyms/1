@@ -1,5 +1,5 @@
 //https://strudel.cc/#c2V0Y3BtKDEyMCkKCmxldCB2YXIxID0gIjUgNCAzIDIgLTEgMiAzIDQiCmxldCB2YXIyID0gIjcgNyA0IDRAMiAgMCAzIDUiCmxldCB2YXIzID0gIjAgMiAwIDEgMyA1IDw3IDM%2BQDIiCmxldCB2YXI0ID0gIjVAMzIiCmxldCBiMSA9ICIwIDEgMCA1IgpsZXQgYjIgPSAiMCAxIDAgWzV8MnwzXSIKbGV0IGIzID0gIjw5IDcgNSA8MyA3Pj4gMiAxIDAiCmxldCBiNCA9ICIwQDMyIgoKJDogcygiYmQgaGgiKQogIC5iYW5rKCJSb2xhbmRUUjkwOSIpLnN3aW5nQnkoMS8xNiwgMTYpLmdhaW4ocmFuZC5yYW5nZSgwLjQsMC42KSkKICAvLy5hbG1vc3ROZXZlcih4ID0%2BIHgucygiY3IiKS5nYWluKDAuMikpCgpfJDogbihiMSkuc2NhbGUoIkQyOm1pbm9yOnBlbnRhdG9uaWMiKS5zKCJnbV9zeW50aF9iYXNzXzIiKS5nYWluKDIpLnN3aW5nQnkoMS8xNiwgMTYpCiAgLy8uc2xvdyg4KQoKXyQ6IG4odmFyMS5yYXJlbHkoeCA9PiB4LmFkZCgiMCw3IikpKS5zY2FsZSgiRDQ6bWlub3I6cGVudGF0b25pYyIpCiAgLnMoImdtX3N5bnRoX2JyYXNzXzIiKS5zd2luZ0J5KDEvMTYsIDE2KS5hZHNyKCIwOi4xOjA6MCIpCiAgLnNsb3coMikKICAucm9vbSgwLjUpCgovLyAkOiBzKCJyaW0iKS5iYW5rKCJSb2xhbmRUUjkwOSIpCgovLyBhbGwoeCA9PiB4LmdhaW4oc2luZS5yYW5nZSgwLjUsMCkuc2xvdyg0OCkpKQ%3D%3D
-//Remove the '_' '//' comments to add parts of the song, change the variables 'var#' or 'b#' to switch the beat :
+//Remove the '_' '//' comments to add parts of the song, change the variables 'var#' or 'b#' to switch the beat, 'Ctrl + Enter' to play :
 setcpm(120)
 
 let var1 = "5 4 3 2 -1 2 3 4"
