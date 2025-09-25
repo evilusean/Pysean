@@ -1,8 +1,9 @@
 s("sd bd cp") # 's' is short for 'sound' 'sd' = snare drum, 'bd' = base drum, cp = clap
 '.slow(2)' # 'slow(2)' will slow down the beat by half
 '.struct' # allows you to use 1's and 0'z to show when it plays
+  's("<jazz [cp sd]>").struct("1 0 0 [0 1] 1 1 0 0").slow(2)' # you can use the '<>' and '[]' anywhere, this will play 'jazz' half the time with a clap(first part) and snaredrum(second part)
 '.mask' # new keyword that will alow you to limit when it plays 'on or off' not changing the tempo
-
+  's("cp hh sd hh").mask("<0 1>/2")' # will play 2 bars then turn off for 2 bars, if you replace '2' with 8, will do 8 cycles with and 8 without
 
 
 
