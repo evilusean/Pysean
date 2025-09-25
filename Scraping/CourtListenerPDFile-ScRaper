@@ -25,6 +25,7 @@
 # Epstein “Little Black Book” (unredacted) : >https://ia600705.us.archive.org/21/items/epsteindocs/Jeffrey_Epstein39s_Little_Black_Book_unredacted.pdf
 # Epstein Flight Logs : >https://www.documentcloud.org/documents/21165424-epstein-flight-logs-released-in-usa-vs-maxwell/
 # Burisma Biden's response when asked to Apologize : https://www.youtube.com/watch?v=Fs9v0sdZixs&t=76s
+# Using Claude Code to sleuthe through Barak's (the other one's) hebrew emails - Ian Carrol - # I TRADED GOOGLE FOR AI- and you should too : https://www.youtube.com/watch?v=E5qmrufSFRo&t=420s
 
 import requests as rq
 from bs4 import BeautifulSoup
