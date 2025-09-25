@@ -1,0 +1,50 @@
+s("sd bd cp") # 's' is short for 'sound' 'sd' = snare drum, 'bd' = base drum, cp = clap
+'.slow(2)' # 'slow(2)' will slow down the beat by half
+'.struct' # allows you to use 1's and 0'z to show when it plays
+'.mask' # new keyword that will alow you to limit when it plays 'on or off' not changing the tempo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
