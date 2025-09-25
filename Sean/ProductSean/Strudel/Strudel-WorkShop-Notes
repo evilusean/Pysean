@@ -10,8 +10,10 @@ stack(
 on the right hand side tabs click the 'sounds' tab, and you can see all the built in sounds that strudel has, just click them
   each sound will have a number like 'sound(#)' the '#' is how many sounds, so you can select through it for 'jazz(8)' has 8 sounds, so you can go through 1-8 with 'jazz:1'
 on the right hand side tabs click the 'reference' tab to get a list of all the functions you can use to alter the sounds
-
-
+stack (
+s("jazz <~ jazz> ~ <[~ jazz] ~>"),
+s("cp hh sd hh")) 
+# theres 2 types of brackets '[]' = divide a beat '<>' = a selection, if you have 2 things in the angle brackets, it will cycle through them 1 by 1 
 
 
 
