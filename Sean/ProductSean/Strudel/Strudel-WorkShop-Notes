@@ -1,20 +1,26 @@
 WORKSHOP // Coding Music With Strudel // Dan Gorelick and Viola He : https://www.youtube.com/watch?v=oqyAJ4WeKoU
 s("sd bd cp") # 's' is short for 'sound' 'sd' = snare drum, 'bd' = base drum, cp = clap
 s("bd hh sd hh") # in strudel only the last 'block' will play unless you add a ',' like below but it highlights what is playing so you know
-stack(
-  s("<bd bd*2> ~"),
-  s("~ sd"),
-  s("~ cp ~ cp"),
-  s("hhx8?"),
-) 
+  stack(
+    s("<bd bd*2> ~"),
+    s("~ sd"),
+    s("~ cp ~ cp"),
+    s("hhx8?"),
+  ) 
 on the right hand side tabs click the 'sounds' tab, and you can see all the built in sounds that strudel has, just click them
   each sound will have a number like 'sound(#)' the '#' is how many sounds, so you can select through it for 'jazz(8)' has 8 sounds, so you can go through 1-8 with 'jazz:1'
 on the right hand side tabs click the 'reference' tab to get a list of all the functions you can use to alter the sounds
-stack (
-s("jazz <~ jazz> ~ <[~ jazz] ~>"),
-s("cp hh sd hh")) 
+  stack (
+  s("jazz <~ jazz> ~ <[~ jazz] ~>"),
+  s("cp hh sd hh")) 
 # theres 2 types of brackets '[]' = divide a beat '<>' = a selection, if you have 2 things in the angle brackets, it will cycle through them 1 by 1 
-
+'.slow(2)' # 'slow(2)' will slow down the beat by half
+'.struct' # allows you to use 1's and 0'z to show when it plays
+'s("jazz").struct("1 0 0 [0 1] 1 1 0 0").slow(2)' # 'struct' is a new key word where you can use '1's and '0's instead of writing out 'jazz' for each note
+'s("<jazz [cp sd]>").struct("1 0 0 [0 1] 1 1 0 0").slow(2)' # you can use the '<>' and '[]' anywhere, this will play 'jazz' half the time with a clap(first part) and snaredrum(second part)
+'.mask' # new keyword that will alow you to limit when it plays 'on or off' not changing the tempo
+'s("cp hh sd hh").mask("<0 1>")' # will play every other cycle
+'s("cp hh sd hh").mask("<0 1>/2")' # will play 2 bars then turn off for 2 bars, if you replace '2' with 8, will do 8 cycles with and 8 without
 
 
 
