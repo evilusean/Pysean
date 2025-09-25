@@ -1,0 +1,28 @@
+//https://strudel.cc/#c2V0Y3BtKDEyMCkKCmxldCB2YXIxID0gIjUgNCAzIDIgLTEgMiAzIDQiCmxldCB2YXIyID0gIjcgNyA0IDRAMiAgMCAzIDUiCmxldCB2YXIzID0gIjAgMiAwIDEgMyA1IDw3IDM%2BQDIiCmxldCB2YXI0ID0gIjVAMzIiCmxldCBiMSA9ICIwIDEgMCA1IgpsZXQgYjIgPSAiMCAxIDAgWzV8MnwzXSIKbGV0IGIzID0gIjw5IDcgNSA8MyA3Pj4gMiAxIDAiCmxldCBiNCA9ICIwQDMyIgoKJDogcygiYmQgaGgiKQogIC5iYW5rKCJSb2xhbmRUUjkwOSIpLnN3aW5nQnkoMS8xNiwgMTYpLmdhaW4ocmFuZC5yYW5nZSgwLjQsMC42KSkKICAvLy5hbG1vc3ROZXZlcih4ID0%2BIHgucygiY3IiKS5nYWluKDAuMikpCgpfJDogbihiMSkuc2NhbGUoIkQyOm1pbm9yOnBlbnRhdG9uaWMiKS5zKCJnbV9zeW50aF9iYXNzXzIiKS5nYWluKDIpLnN3aW5nQnkoMS8xNiwgMTYpCiAgLy8uc2xvdyg4KQoKXyQ6IG4odmFyMS5yYXJlbHkoeCA9PiB4LmFkZCgiMCw3IikpKS5zY2FsZSgiRDQ6bWlub3I6cGVudGF0b25pYyIpCiAgLnMoImdtX3N5bnRoX2JyYXNzXzIiKS5zd2luZ0J5KDEvMTYsIDE2KS5hZHNyKCIwOi4xOjA6MCIpCiAgLnNsb3coMikKICAucm9vbSgwLjUpCgovLyAkOiBzKCJyaW0iKS5iYW5rKCJSb2xhbmRUUjkwOSIpCgovLyBhbGwoeCA9PiB4LmdhaW4oc2luZS5yYW5nZSgwLjUsMCkuc2xvdyg0OCkpKQ%3D%3D
+//Remove the '_' '//' comments to add parts of the song, change the variables 'var#' or 'b#' to switch the beat :
+setcpm(120)
+
+let var1 = "5 4 3 2 -1 2 3 4"
+let var2 = "7 7 4 4@2  0 3 5"
+let var3 = "0 2 0 1 3 5 <7 3>@2"
+let var4 = "5@32"
+let b1 = "0 1 0 5"
+let b2 = "0 1 0 [5|2|3]"
+let b3 = "<9 7 5 <3 7>> 2 1 0"
+let b4 = "0@32"
+
+$: s("bd hh")
+  .bank("RolandTR909").swingBy(1/16, 16).gain(rand.range(0.4,0.6))
+  //.almostNever(x => x.s("cr").gain(0.2))
+
+_$: n(b1).scale("D2:minor:pentatonic").s("gm_synth_bass_2").gain(2).swingBy(1/16, 16)
+  //.slow(8)
+
+_$: n(var1.rarely(x => x.add("0,7"))).scale("D4:minor:pentatonic")
+  .s("gm_synth_brass_2").swingBy(1/16, 16).adsr("0:.1:0:0")
+  .slow(2)
+  .room(0.5)
+
+// $: s("rim").bank("RolandTR909")
+
+// all(x => x.gain(sine.range(0.5,0).slow(48)))
