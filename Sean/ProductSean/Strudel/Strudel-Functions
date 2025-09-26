@@ -4,7 +4,16 @@ s("sd bd cp") # 's' is short for 'sound' 'sd' = snare drum, 'bd' = base drum, cp
   's("<jazz [cp sd]>").struct("1 0 0 [0 1] 1 1 0 0").slow(2)' # you can use the '<>' and '[]' anywhere, this will play 'jazz' half the time with a clap(first part) and snaredrum(second part)
 '.mask' # new keyword that will alow you to limit when it plays 'on or off' not changing the tempo
   's("cp hh sd hh").mask("<0 1>/2")' # will play 2 bars then turn off for 2 bars, if you replace '2' with 8, will do 8 cycles with and 8 without
-
+setcpm(100/4) # Sets the tempo to 100 BPM where one cycle equals one 4-beat bar.
+.lpf(500) # Applies a Low Pass Filter, cutting out frequencies above 500 Hz.
+s("hh hh hh hh").gain(0.9) # Plays the closed hi-hat four times and sets its volume to 90%.
+note("0 1 2 3").scale('c minor') # Plays notes based on the indices of the C minor scale.
+note("{0 ... 15}%4").scale('c4 minor') # Plays a 16-step pitch sequence but uses the chop operator (%4) to resolve only 4 steps per cycle.
+.sound("square") # Changes the instrument's waveform to a square wave synthesizer sound.
+.cutoff(1500) # Sets the frequency limit of the active filter to 1500 Hertz.
+"<0 1 2 3>".struct("1(3,8)") # Generates a Euclidean rhythm that plays 3 events evenly across 8 steps.
+"<0 1 2 3>".struct("1(3,8),8") # Applies the Euclidean rhythm with an offset of 8 steps, shifting the phrase's start time.
+"<0 1 2 3>".struct("1(<3 5>,8),8") # Applies the Euclidean rhythm with an alternating pulse pattern (3 then 5) across bars, plus an 8-step offset.
 
 
 
