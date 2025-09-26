@@ -1,0 +1,16 @@
+// https://strudel.cc/#c2V0Y3BzKDEwMC8xMjApCnN0YWNrKAogIHMoImJkIikubHBmKDUwMCksCiAgcygifiBzZCIpLAogIHMoImhoIGhoIGhoIGhoIikuZ2FpbigwLjUpLAogICJ7MCAxIDIgMyA0IDUgNiA3IDggOSAxIDAgMiAzIDQgNX0lNCIKICAgIC5zY2FsZSgnYzQgbWlub3InKS5ub3RlKCkuc291bmQoInNxdWFyZSIpLmN1dG9mZigxNTAwKSwKICAiezAgMSAyIDMgNCA1IDYgNyA4IDkgMSAwIDIgMyA0IH0lNCIKICAgIC5zY2FsZSgnYzMgbWlub3InKS5ub3RlKCkuc291bmQoInNxdWFyZSIpLmN1dG9mZigxNTAwKS5sZWdhdG8oMC41KSwKICAiPDAgMSAyIDM%2BIgogICAgLnN0cnVjdCgiMSg8MyA1Piw4KSw4IikKICAgIC5zY2FsZSgnYzMgbWlub3InKS5ub3RlKCkuc291bmQoInNxdWFyZSIpLmN1dG9mZigyMDAwKS5sZWdhdG8oMC41KSwKKQ%3D%3D
+// From https://github.com/evilusean/Pysean/blob/main/Sean/ProductSean/Strudel/Strudel-WorkShop-Notes
+// Covers Euclidean Rhythyms With offsets and swaps : 
+setcps(100/120)
+stack(
+  s("bd").lpf(500),
+  s("~ sd"),
+  s("hh hh hh hh").gain(0.5),
+  "{0 1 2 3 4 5 6 7 8 9 1 0 2 3 4 5}%4"
+    .scale('c4 minor').note().sound("square").cutoff(1500),
+  "{0 1 2 3 4 5 6 7 8 9 1 0 2 3 4 }%4"
+    .scale('c3 minor').note().sound("square").cutoff(1500).legato(0.5),
+  "<0 1 2 3>"
+    .struct("1(<3 5>,8),8") // this is the euclidean rhythym
+    .scale('c3 minor').note().sound("square").cutoff(2000).legato(0.5),
+)
