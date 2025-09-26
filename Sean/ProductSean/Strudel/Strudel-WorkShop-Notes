@@ -22,30 +22,35 @@ on the right hand side tabs click the 'reference' tab to get a list of all the f
 's("cp hh sd hh").mask("<0 1>")' # will play every other cycle
 's("cp hh sd hh").mask("<0 1>/2")' # will play 2 bars then turn off for 2 bars, if you replace '2' with 8, will do 8 cycles with and 8 without
 in Strudel you don't need to abide to standard musical theory like octaves, it's helpful though, you should know what all notes and chords are (c note, g minor/major, chord, etc)
-    setcps(100/120)
-    stack(
-      s("bd").lpf(500),
-      s("~ sd"),
-      s("hh hh hh hh").gain(0.5),
-      "{0 1 2 3 4 5 6 7 8 9 1 0 2 3 4 5}%4"
-        .scale('c4 minor').note().sound("square").cutoff(1500),
-      "{0 1 2 3 4 5 6 7 8 9 1 0 2 3 4 }%4"
-        .scale('c3 minor').note().sound("square").cutoff(1500).legato(0.5),
-      "<0 1 2 3>"
-        .struct("1(<3 5>,8),8")
-        .scale('c3 minor').note().sound("square").cutoff(2000).legato(0.5),
-    )
-'setcps(100/120)' # this is the bpm = beats per minute
-'.lpf(500)' # low pass filter
-s("hh hh hh hh").gain(0.9), # .gain reduces the volume
-'"0 1 2 3".scale('c minor').note()' # 
-'"{0 1 2 3 4 5 6 7 8 9 1 0 2 3 4 5}%4".scale('c4 minor')' # the '{}%4' will divide the cycle into 4 phases
-  # if you copy above and remove one of the notes, and change it to a 'c3 minor'(or whatever) it will have them slightly out of sync but similar pattern  
-'.sound("square")' #
-'.cutoff(1500) # 1500 hertz cutoff
- "<0 1 2 3>".struct("1(3,8)") # euclidean rhythyms : 
-"<0 1 2 3>".struct("1(3,8),8") # euclidean rhythyms offset : 
-"<0 1 2 3>".struct("1(<3 5>,8),8") # euclidean rhythyms offset with swap : 
+setcps(100/120) // Sets the global tempo to 100 BPM. The division by 120 sets one cycle to 1.2 seconds.
+stack( // Plays all the following patterns simultaneously (layers them).
+  // Drum Track 1: Kick Drum (The Low End)
+  s("bd").lpf(500), // Plays a Bass Drum ("bd") once per cycle and applies a Low-Pass Filter (lpf) at 500 Hz for a deep, sub-heavy sound.
+  // Drum Track 2: Snare Drum (The Backbeat)
+  s("~ sd"), // "~" is a rest for the first half of the cycle, and "sd" (snare drum) plays in the second half, creating a classic two-beat backbeat.
+  // Drum Track 3: Hi-Hats (Rhythm Texture)
+  s("hh hh hh hh").gain(0.5), // Plays a Closed Hi-Hat ("hh") four times per cycle (quarter-note rhythm). .gain(0.5) sets the volume to 50%.
+  // Melodic Track 1: High Register Lead
+  "{0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15}%4" // A 16-step pitch sequence. The chop operator (%4) plays only 4 steps per cycle, making the sequence take 4 cycles (bars) to complete.
+    .scale('c4 minor').note().sound("square").cutoff(1500), // Uses the C minor scale in the 4th octave. Tone is a square wave synth with a filter cutoff at 1500 Hz.
+  // Melodic Track 2: Lower Register Harmony
+  "{0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }%4" // A 15-step pitch sequence that will fall subtly out of sync with the 16-step lead. %4 ensures 4 steps are played per cycle.
+    .scale('c3 minor').note().sound("square").cutoff(1500).legato(0.5), // Uses the C minor scale in the 3rd octave. Same square wave tone and filter. .legato(0.5) makes the notes staccato (choppy).
+  // Melodic Track 3: Rhythmic Modulation (Euclidean)
+  "<0 1 2 3>" // The source notes for the rhythmic structure.
+    .struct("1(<3 5>,8),8") // Applies a complex Euclidean rhythm on 8 steps: 3 pulses in the first cycle, then 5 pulses in the next. The ",8" adds an 8-step offset (syncopation).
+    .scale('c3 minor').note().sound("square").cutoff(2000).legato(0.5), // C minor, 3rd octave, square wave. Brighter filter cutoff at 2000 Hz, with staccato notes.
+)
+setcpm(100/4) # Sets the tempo to 100 BPM where one cycle equals one 4-beat bar.
+.lpf(500) # Applies a Low Pass Filter, cutting out frequencies above 500 Hz.
+s("hh hh hh hh").gain(0.9) # Plays the closed hi-hat four times and sets its volume to 90%.
+note("0 1 2 3").scale('c minor') # Plays notes based on the indices of the C minor scale.
+note("{0 ... 15}%4").scale('c4 minor') # Plays a 16-step pitch sequence but uses the chop operator (%4) to resolve only 4 steps per cycle.
+.sound("square") # Changes the instrument's waveform to a square wave synthesizer sound.
+.cutoff(1500) # Sets the frequency limit of the active filter to 1500 Hertz.
+"<0 1 2 3>".struct("1(3,8)") # Generates a Euclidean rhythm that plays 3 events evenly across 8 steps.
+"<0 1 2 3>".struct("1(3,8),8") # Applies the Euclidean rhythm with an offset of 8 steps, shifting the phrase's start time.
+"<0 1 2 3>".struct("1(<3 5>,8),8") # Applies the Euclidean rhythm with an alternating pulse pattern (3 then 5) across bars, plus an 8-step offset.
 
 
 
