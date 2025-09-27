@@ -129,7 +129,11 @@ pattern.slice(1, 4) // The .slice() function divides the pattern into 4 equal se
   A value of 1 means the note lasts the full duration (legato/sustained), and a value less than 1 makes the note shorter (staccato/choppy).
 note() #It takes a numerical pattern and uses the numbers directly as MIDI note values (e.g., 60 is C4, 62 is D4), bypassing scale mapping.
 n(pattern)	#A common alias (shorthand) for the .note() function. 
-
+.dict(object)	#Applies an object of key/value pairs to a pattern, replacing values based on the keys (e.g., replaces "a" with 0 and "b" with 5), allowing for custom symbol-to-value mapping.
+.add(pattern)	#Adds a numerical pattern to the existing numerical values of another pattern (e.g., adding 12 to a note pattern to transpose it up one octave).
+.cutoff(pattern)	#Sets the frequency limit (in Hertz) for the active Low-Pass Filter (LPF), controlling the brightness or darkness of the sound.
+.decay(pattern)	#Controls the decay time (how quickly the sound fades out) of the synthesizer's ADSR envelope for each note in the pattern.
+.delay(pattern)	#Controls the amount of delay (in seconds or a fraction of the cycle) for the built-in delay effect, often used with .delaytime() and .delayfeedback().
 
 
 
