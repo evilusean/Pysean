@@ -21,11 +21,16 @@ note("{0 ... 15}%4").scale('c4 minor') # Plays a 16-step pitch sequence but uses
 .velocity(pattern)	#Sets the MIDI velocity (loudness/force) for each note in the pattern based on the provided numerical pattern.
 .echo(pattern)	#Generates a standard delay or echo effect on the sound, where the delay time is controlled by the numerical or fractional pattern.
 .clip(amount)	#Compresses the dynamic range of the pattern to prevent clipping distortion, effectively acting as a simple limiter/soft-clipper.
-  
-
-
-
-
+.slice() #temporarily divides your entire pattern into m equal segments (or "slices") and then plays only the segment specified by n
+pattern.slice(1, 4) // The .slice() function divides the pattern into 4 equal segments (slices) and plays only the 1st segment (index 1) within the current cycle.
+.begin(time)	#Specifies a delay or offset for when the pattern starts playing within its cycle. The time argument, which should be between 0 and 1,
+  determines the fractional point in the cycle where the pattern begins.
+.range(min, max)	Scales a numerical pattern so that its values fall between a new minimum (min) and maximum (max) range. 
+  Useful for mapping LFOs or filter patterns to specific musical boundaries.
+.legato(pattern)	#Controls the duration of each note as a fraction of its allotted time slot.
+  A value of 1 means the note lasts the full duration (legato/sustained), and a value less than 1 makes the note shorter (staccato/choppy).
+note() #It takes a numerical pattern and uses the numbers directly as MIDI note values (e.g., 60 is C4, 62 is D4), bypassing scale mapping.
+n(pattern)	#A common alias (shorthand) for the .note() function. 
 
 
 
