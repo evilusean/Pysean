@@ -81,6 +81,8 @@ if you don't put the beat in '<>' angle brackets for a Euclid like '"<0 1 2 3>".
 .velocity(pattern)	#Sets the MIDI velocity (loudness/force) for each note in the pattern based on the provided numerical pattern.
 .echo(pattern)	#Generates a standard delay or echo effect on the sound, where the delay time is controlled by the numerical or fractional pattern.
 .clip(amount)	#Compresses the dynamic range of the pattern to prevent clipping distortion, effectively acting as a simple limiter/soft-clipper.
+You can use functions to add transitions if you want to write a song instead of just a cycle, like below :
+https://github.com/evilusean/Pysean/blob/main/Sean/ProductSean/Strudel/Algo-Rhythyms/3
 
 
 
