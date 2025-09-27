@@ -52,7 +52,7 @@ note("{0 ... 15}%4").scale('c4 minor') # Plays a 16-step pitch sequence but uses
 "<0 1 2 3>".struct("1(3,8)") # Generates a Euclidean rhythm that plays 3 events evenly across 8 steps.
 "<0 1 2 3>".struct("1(3,8),8") # Applies the Euclidean rhythm with an offset of 8 steps, shifting the phrase's start time.
 "<0 1 2 3>".struct("1(<3 5>,8),8") # Applies the Euclidean rhythm with an alternating pulse pattern (3 then 5) across bars, plus an 8-step offset.
-Tangent : What is a Euclidean Rhythym? (not B! Elements) : 
+Tangent : What is a Euclidean Rhythym? (not B! Elements) https://en.wikipedia.org/wiki/Euclidean_rhythm: 
   A Euclidean rhythm is a musical pattern created by distributing a certain number of events (or "pulses") as equally as possible within a given total number of steps.
   This method generates rhythms found across many cultures, such as the clave patterns in Afro-Cuban music or certain traditional drum rhythms from the Middle East.
   The algorithm for generating these rhythms was discovered by computer scientist Godfried Toussaint, who linked them to Euclid's algorithm for finding the greatest common divisor.
@@ -68,6 +68,13 @@ Tangent : What is a Euclidean Rhythym? (not B! Elements) :
   1. Offset/Rotation (The ',O' after the pattern) You can shift the start point of the rhythm using a comma followed by the number of steps to offset '(O)'.
   s("cp").struct("1(3,8),4") // Note the ",4" // The same 3 pulses over 8 steps, but rotated 4 steps forward.
   's("snare").struct("1(<3 5>, 8)")' // In the first bar, the rhythm uses 3 pulses. // In the second bar, it uses 5 pulses. // Then it repeats.
+if you don't put the beat in '<>' angle brackets for a Euclid like '"<0 1 2 3>".struct("1(<3 5>,8),8")', it will skip over notes, instead of just doing timing
+  It will only hit the '3/8' or '5/8' notes with out '<>' carrot brackets '"0 1 2 3 4 5 6 7".struct("1(<3 5>,8),8")',
+  think of it like a pizza, each cycle is a pizza, with this you are dividing the pizza, with this you are playing through 8 equal parts, and selecting the '3' and '5'th slices
+  without the '<>' brackets you are playing ALL the notes in one cycle, with the '<>' brackets you are playing ONLY ONE per cycle, so it only hits the timing on that ONE note
+
+
+
 
 
 
