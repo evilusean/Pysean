@@ -8,6 +8,7 @@ Tangent : What is a Euclidean Rhythym? (not B! Elements) https://en.wikipedia.or
   '1(...)'	Represents the event being played.	What sound or note is triggered.
   'P'	The first number inside the parentheses.	Pulses (P): The number of times the event will occur.
   'E'	The second number inside the parentheses.	Euclidean Steps (E): The total number of available steps in the pattern.
+  '1(P,E),O' # 'O' = offset, offsets the pattern by the number in 'O'
   's("bd").struct("1(3,8)")' // Plays 3 events as evenly as possible over 8 steps. 
   You typically use .struct() to apply a rhythm to a source pattern, which is usually enclosed in angle brackets (<>).
   'note("<c e g b>").scale("c major").struct("1(5,12)").sound("sine")' // Source Pattern: Four notes // Rhythm: 5 pulses over 12 steps
