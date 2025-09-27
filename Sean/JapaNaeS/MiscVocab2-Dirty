@@ -223,7 +223,13 @@
 盗聴 = とうちょう = Tōchō = Wiretapping, electronic surveillance (more formal term for covert, often technical, listening)
 自己診断 = じこしんだん = Jiko Shindan = The act or process of an entity (a machine, program, or individual) performing a diagnosis or checkup on its own condition, state, or functionality. It literally combines 'self' (自己) and 'diagnosis' (診断).
 このシステムの故障の原因を特定するために、自己診断プログラムが起動された。 = このシステムのこしょうのげんいんをとくていするために、じこしんだんプログラムがきどうされた。 = Kono shisutemu no koshō no gen'in o tokutei suru tame ni, jiko shindan puroguramu ga kidō sareta. = The **self-diagnostic** program was activated to identify the cause of this system's failure.
-
+関数 = かんすう = Kansū = In programming, a block of organized, reusable code that is used to perform a single, related action. It is the primary term used for **functions** in most programming languages (C, C++, Python, etc.) and in mathematics.
+新しいユーザーを登録するための関数を定義しました。 = あたらしいユーザーをとうろくするためのかんすうをていぎしました。 = Atarashii yūzā o tōroku suru tame no kansū o teigi shimashita. = I defined a **function** to register new users.
+この関数は引数として二つの数を受け取る。 = このかんすうはひきすうとしてふたつのかずをうけとる。 = Kono kansū wa hikisū to shite futatsu no kazu o uketoru. = This **function** receives two numbers as arguments.
+メソッド = メソッド = Mesoddo = Method (a function associated with an object, common in object-oriented programming)
+サブルーチン = サブルーチン = Saburūchin = Subroutine (a general term for a sequence of instructions treated as a unit, often interchangeable with function)
+引数 = ひきすう = Hikisū = Argument, Parameter (the values passed into a function)
+戻り値 = もどりち = Modorichi = Return value (the value sent back by a function)
 
 
 
