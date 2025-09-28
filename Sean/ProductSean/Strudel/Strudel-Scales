@@ -21,3 +21,11 @@ bebopMajor	# Major scale with an added chromatic passing tone.
 bebopMinor	# Minor scale with an added chromatic passing tone.
 halfWhole	# Diminished scale alternating half steps and whole steps.
 majorBebop	# An eight-note scale used in jazz improvisation.
+ritusen	# Traditional Japanese pentatonic scale.	
+hirajoshi	# Traditional Japanese pentatonic scale.	
+iwato	# Traditional Japanese pentatonic scale.	
+chinese	# Common Chinese pentatonic scale.	
+egyptian	# African/Middle Eastern-sounding pentatonic scale.	
+indian	# Broad term for certain Indian-inspired scales.	
+prometheus	# An unusual six-note scale.	
+scriabin	# A symmetrical, non-diatonic scale.
