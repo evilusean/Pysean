@@ -12,3 +12,12 @@ locrian	# Diminished (7th degree)	Flat 2nd and flat 5th (unstable).
 '.scale('D:majorPent')' # majorPent	Major scale without the 4th and 7th degrees.	
 '.scale('E:minorPent')' # minorPent	Natural minor scale without the 2nd and 6th degrees.	
 '.scale('A:blues')' # blues	Minor pentatonic with an added flat 5th (the "blue" note).	
+whole (wholetone)	A six-note scale built entirely on whole steps.
+chromatic	# All twelve notes in an octave.
+augmented	# A six-note scale built by alternating minor thirds and half steps.
+diminished (dim)	# An eight-note scale alternating whole and half steps.
+superLocrian	# Also known as the Altered scale, the 7th mode of the melodic minor.
+bebopMajor	# Major scale with an added chromatic passing tone.
+bebopMinor	# Minor scale with an added chromatic passing tone.
+halfWhole	# Diminished scale alternating half steps and whole steps.
+majorBebop	# An eight-note scale used in jazz improvisation.
