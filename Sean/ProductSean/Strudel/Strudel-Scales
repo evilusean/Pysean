@@ -1,0 +1,4 @@
+'scale('C:major')' # major	The standard Major scale (Ionian mode).	.
+'.scale('A:minor')' # minor	The standard Natural Minor scale (Aeolian mode).	
+'.scale('C:harmonicMinor')' # harmonicMinor	Natural minor with a raised 7th degree.	
+'.scale('G:melodicMinor')' # melodicMinor	Minor scale with raised 6th and 7th ascending, natural minor descending.	
