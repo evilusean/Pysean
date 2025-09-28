@@ -9,3 +9,6 @@ lydian	# Major (4th degree)	Major with a raised 4th.
 mixolydian	# Major (5th degree)	Major with a flat 7th.
 aeolian	# Minor (6th degree)	Same as Natural Minor scale.
 locrian	# Diminished (7th degree)	Flat 2nd and flat 5th (unstable).
+'.scale('D:majorPent')' # majorPent	Major scale without the 4th and 7th degrees.	
+'.scale('E:minorPent')' # minorPent	Natural minor scale without the 2nd and 6th degrees.	
+'.scale('A:blues')' # blues	Minor pentatonic with an added flat 5th (the "blue" note).	
