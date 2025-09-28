@@ -2,3 +2,10 @@
 '.scale('A:minor')' # minor	The standard Natural Minor scale (Aeolian mode).	
 '.scale('C:harmonicMinor')' # harmonicMinor	Natural minor with a raised 7th degree.	
 '.scale('G:melodicMinor')' # melodicMinor	Minor scale with raised 6th and 7th ascending, natural minor descending.	
+ionian	# Major (1st degree)	Same as Major scale.
+dorian	# Minor (2nd degree)	Minor with a raised 6th.
+phrygian	# Minor (3rd degree)	Minor with a flat 2nd.
+lydian	# Major (4th degree)	Major with a raised 4th.
+mixolydian	# Major (5th degree)	Major with a flat 7th.
+aeolian	# Minor (6th degree)	Same as Natural Minor scale.
+locrian	# Diminished (7th degree)	Flat 2nd and flat 5th (unstable).
