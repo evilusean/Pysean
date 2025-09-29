@@ -10,6 +10,7 @@ The Linux Experience - Omarchy :
 https://www.youtube.com/watch?v=Urq__zOwQqg
 You NEED to try this Linux Setup! (Omarchy for Newbs) :
 https://www.youtube.com/watch?v=6YJImMYKefk
+'wget -qO- https://omarchy.org/install | bash' # one liner to install omarchy after installing Arch(btw)
 
 
 
