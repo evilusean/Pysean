@@ -134,11 +134,16 @@ n(pattern)	#A common alias (shorthand) for the .note() function.
 .cutoff(pattern)	#Sets the frequency limit (in Hertz) for the active Low-Pass Filter (LPF), controlling the brightness or darkness of the sound.
 .decay(pattern)	#Controls the decay time (how quickly the sound fades out) of the synthesizer's ADSR envelope for each note in the pattern.
 .delay(pattern)	#Controls the amount of delay (in seconds or a fraction of the cycle) for the built-in delay effect, often used with .delaytime() and .delayfeedback().
-
-
-
-
-
+.voicing()  # is a pattern transformation tool that generates different chord inversions or voicings by rearranging the vertical order of notes in a polyphonic chord pattern.
+.room() # is a simplified effect that applies a reverb (reverberation) effect to the sound, simulating the acoustic properties of a physical space.
+.begin(pattern)	# Specifies a delay or offset for when the pattern starts playing within its cycle. 
+  The pattern argument, which should be between 0 and 1, determines the fractional point in the cycle where the pattern's events begin.
+.begin(sine.slow(7).range(0, 0.5)) # schedules a pattern's start time to be delayed by a value that continuously fluctuates between 0% and 50% of the cycle, as a slow-moving sine wave.
+  sine	Creates a smooth, continuous pattern that oscillates up and down like a sine wave (from -1 to 1).
+  .slow(7)	Slows down the rate of the sine pattern so that the full up-and-down cycle takes 7 times longer (7 full pattern cycles) to complete.
+  .range(0, 0.5)	Takes the oscillating sine wave (which normally goes from -1 to 1) and scales its output to a new range, specifically from 0 to 0.5.
+  .begin(...)	Takes the resulting numerical pattern (the value between 0 and 0.5) and uses it to set the pattern's start offset. 
+    0 means no delay, and 0.5 means the pattern starts exactly halfway through the cycle.
 
 
 
