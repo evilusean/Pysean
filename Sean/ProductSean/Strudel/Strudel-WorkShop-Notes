@@ -151,10 +151,10 @@ n("0 2 4 6 4 0").scale("<G3 F3 D3>:<minor:pentatonic mixolydian>").jux(rev).mask
   This creates a dense, mirrored, and phasing texture where the notes constantly collide.
 .mask("<1>/2")	The Pattern Masking function.	Creates a polyrhythmic mask that silences or hides events. The value <1>/2 means that, on average, the sound will be heard half the time 
   This introduces a random, stuttering rhythm by dropping roughly half of the notes from the complex .jux(rev) stream.
-
-
-
-
+.off(pattern)	# Delays the pattern's start time by an offset amount defined by the numerical pattern. The offset is measured as a fraction of the pattern's cycle length.
+.palindrome()	 # Takes the existing pattern and doubles its length by playing the sequence of events forward, and then playing the exact same sequence in reverse immediately after.
+.pan(pattern)	# Controls the stereo panning of the sound. a value of 0 centers the sound, -1 sends it completely to the left channel, and 1 sends it completely to the right channel.
+.hpq(pattern)	# Controls the Q-factor (resonance/sharpness) of the active High-Pass Filter (HPF). A higher value emphasizes the frequencies around the filter's cutoff point
 
 
 
