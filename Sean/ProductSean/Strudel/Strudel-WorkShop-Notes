@@ -144,6 +144,14 @@ n(pattern)	#A common alias (shorthand) for the .note() function.
   .range(0, 0.5)	Takes the oscillating sine wave (which normally goes from -1 to 1) and scales its output to a new range, specifically from 0 to 0.5.
   .begin(...)	Takes the resulting numerical pattern (the value between 0 and 0.5) and uses it to set the pattern's start offset. 
     0 means no delay, and 0.5 means the pattern starts exactly halfway through the cycle.
+.layer(pattern1, pattern2, ...) #	Combines multiple patterns or transformations into a single output stream. It is used to quickly stack rhythmic variations, effects, or note sequences 
+.phaser(rate)	# Applies a Phaser effect to the sound. The single required argument, rate, is a number (or pattern) that controls the speed or rate of oscillation of the filter sweep
+n("0 2 4 6 4 0").scale("<G3 F3 D3>:<minor:pentatonic mixolydian>").jux(rev).mask("<1>/2") #The root notes cycle G3, F3, and D3. the scale alternates between Minor Pentatonic and Mixolydian. 
+.jux(rev)	# The Juxtapose and Reverse function.	Plays the entire 6-note pattern twice simultaneously: once normally (forward) and once in reverse (backward). 
+  This creates a dense, mirrored, and phasing texture where the notes constantly collide.
+.mask("<1>/2")	The Pattern Masking function.	Creates a polyrhythmic mask that silences or hides events. The value <1>/2 means that, on average, the sound will be heard half the time 
+  This introduces a random, stuttering rhythm by dropping roughly half of the notes from the complex .jux(rev) stream.
+
 
 
 
