@@ -1,3 +1,12 @@
+[]	# Square Brackets (List)	Group a Sub-Sequence. Defines a group of events that are treated as a single unit within the larger pattern.	
+  The events inside the brackets are divided equally over the time of their parent step.
+<>	# Angle Brackets (Alternate)	Alternate Between Patterns. Defines a sequence of events where the pattern alternates through the inner elements on successive cycles.	
+  Each element inside the brackets gets one full cycle to play before the pattern moves to the next element.
+()	# Round Brackets (Euclidean)	Euclidean Rhythms. Used to generate a specific, regular rhythmic pattern (pulse).	
+  Generates a sequence of on/off events based on the format (pulses, steps). e.g., bd(3, 8) places 3 bass drum beats evenly across 8 steps.
+{}	#Curly Braces (Polymeter)	Play Multiple Patterns in Parallel. Stacks patterns that run simultaneously (polyphony/polyrhythm), similar to the comma separator ,.	
+  The length of the total cycle is determined by the Least Common Multiple of the lengths of all patterns inside, creating complex polymeters.
+ "{0 1 2 3 4 5 6 7 8 9 1 0 2 3 4 5}%4".scale('c4 minor').note().sound("square").cutoff(1500) # using the '{}' brackets with other functions
 s("sd bd cp") # 's' is short for 'sound' 'sd' = snare drum, 'bd' = base drum, cp = clap
 '.slow(2)' # 'slow(2)' will slow down the beat by half
 '.struct' # allows you to use 1's and 0'z to show when it plays
