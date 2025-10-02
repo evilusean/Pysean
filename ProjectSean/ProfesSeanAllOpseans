@@ -159,6 +159,93 @@ Local Expenses	$150 – $300 USD	Food, transportation, etc., for a 5-day trip.
 Estimated Total Trip Cost	$1,100 – $1,894 USD	This is the full investment required to obtain a visa-qualifying Japanese IT certification.
 Learning Materials (Free Textbooks) :
 https://itpec.org/about/learning-materials.html
+This is a comprehensive summary of the core concepts you would need for your notes, organized according to the two main domains of the ITPEC FE syllabus.
+
+1. IT Fundamentals (Technology)
+A. Computer Science & Architecture
+Complexity Analysis:
+Time Complexity: Measures the execution time of an algorithm as a function of the input size (n), expressed using Big O notation (e.g., O(nlogn), O(n 2 )).
+Space Complexity: Measures the amount of memory space required by an algorithm.
+
+Data Structures:
+Stack: LIFO (Last-In, First-Out) data access.
+Queue: FIFO (First-In, First-Out) data access.
+Hash Table: Uses a hash function to map keys to indices for fast data retrieval.
+
+CPU Components:
+ALU (Arithmetic Logic Unit): Performs all arithmetic and logical operations.
+Control Unit: Directs the operation of the processor; manages the flow of instructions.
+Cache Memory: Small, fast memory between the CPU and main memory (RAM) used to hold frequently accessed data, speeding up processing.
+
+B. Networking & Communication
+OSI 7-Layer Model: A conceptual framework for understanding network communication.
+Network Layer (Layer 3): Handles logical addressing (IP) and routing data packets between networks.
+Transport Layer (Layer 4): Provides end-to-end communication services (segmentation, reassembly).
+
+Protocols:
+TCP (Transmission Control Protocol): Connection-oriented, reliable, error-checked data transmission (e.g., file transfers, web browsing).
+UDP (User Datagram Protocol): Connectionless, faster, best-effort transmission, often used for streaming and gaming.
+
+IP Addressing:
+IPv4: 32-bit address space, represented by four octets (e.g., 192.168.1.1).
+IPv6: 128-bit address space, designed to solve the address exhaustion problem, supports features like built-in security.
+
+C. Database Systems
+ACID Properties: Guarantees of transactional integrity:
+Atomicity: Transaction is all or nothing.
+Consistency: Transaction takes the database from one valid state to another.
+Isolation: Concurrent transactions do not interfere with each other.
+Durability: Once committed, changes are permanent.
+
+Normalization: The process of organizing tables to reduce data redundancy and dependency.
+Third Normal Form (3NF): Ensures that all non-key attributes are dependent only on the primary key, not on other non-key attributes.
+SQL (Structured Query Language): The standard language for managing relational databases (e.g., SELECT, INSERT, UPDATE).
+
+D. Information Security
+CIA Triad: The fundamental goals of information security:
+Confidentiality: Protecting information from unauthorized access (e.g., encryption).
+Integrity: Ensuring data is accurate and unchanged (e.g., hashing, digital signature).
+Availability: Ensuring users can access systems when needed (e.g., backup/recovery).
+
+Cryptography:
+Symmetric-key: Uses a single, shared key for both encryption and decryption (fast).
+Asymmetric-key (Public/Private): Uses two mathematically linked keys; the public key encrypts, and the private key decrypts.
+Digital Signature: Uses asymmetric cryptography to verify the authenticity and integrity of a message and ensure non-repudiation (proving the sender's identity).
+
+Threats & Defense:
+DoS (Denial of Service): An attack intended to make a machine or network resource unavailable to its intended users.
+Mitigation: Firewalls, Intrusion Detection Systems (IDS), strong authentication.
+
+2. IT Strategy & Management
+A. System Development & Project Management
+SDLC (Software Development Life Cycle): The structured process for planning, creating, testing, and deploying an information system
+  (e.g., Planning → Analysis → Design → Implementation → Testing → Maintenance).
+
+Methodologies:
+Waterfall: Linear, sequential approach; best for projects with well-defined, fixed requirements.
+Agile: Iterative, flexible, and adaptive approach; focuses on customer collaboration and rapid delivery of working software.
+
+Project Management:
+WBS (Work Breakdown Structure): A hierarchical decomposition of the total scope of work to be carried out by the project team.
+Risk Management: Avoidance (eliminating the threat) vs. Mitigation (reducing the impact or probability of the threat).
+
+B. IT Strategy & Financial Management
+BPR (Business Process Reengineering): Radical redesign of core business processes to achieve dramatic improvements in productivity, cycle times, and quality (often enabled by new IT systems).
+TCO (Total Cost of Ownership): A calculation that factors in all costs associated with an asset (hardware, software, personnel, maintenance, support, etc.) over its entire life cycle.
+
+Financial Categories:
+CapEx (Capital Expenditure): Funds used by a company to acquire or upgrade physical assets, expected to provide a benefit over a long period (e.g., purchasing new servers).
+OpEx (Operating Expenditure): Funds used for the day-to-day running of a business, charged in the period incurred (e.g., software subscription fees, utility bills).
+
+C. IT Audit, Legal, and Compliance
+IT System Audit: A formal examination of the management controls within an IT infrastructure. The goal is to evaluate the integrity, reliability, and security of the system and its data.
+Intellectual Property (IP):
+Copyright: Protects the expression of an idea (e.g., source code, written documentation).
+Patent: Protects the idea or invention itself (e.g., a novel algorithm or business process method).
+PII (Personally Identifiable Information): Any information that can be used to distinguish or trace an individual's identity 
+  (e.g., name, social security number, biometric data). Organizations have strict legal obligations (like GDPR or similar laws) for handling PII.
+SLA (Service Level Agreement): A contract between a service provider (internal or external) and the customer that specifies the minimum acceptable level of service 
+  (e.g., uptime, response time, resolution time). It is critical for setting expectations and managing outsourced services.
 
 TN Visa (Trade NAFTA) :
 For the TN Visa to work for a coder, you need to target a two-year college diploma that qualifies you for the Computer Systems Analyst category. 
