@@ -1,0 +1,19 @@
+It took me a few hours to get this figured out for Future Sean, but finally got it,
+Saving all the steps I took here for Future Future Sean if anything breaks, So I don't spend hours fixing this, again :
+First, Update Anki
+Second, 'sudo pacman -S qt6-webengine' # idk if this did anything, but it was part of the process
+Third, Get the addon 'Math Delimiters Replacer (Fixed)'	Code: '401047458', 'Anki' -> 'Tools' -> 'Addons' -> 'Add' -> Used the code
+Converts simple dollar signs ($) you type into the working \(\dots\) and \[\dots\] format inside the Anki editor.
+
+The only delimiters that worked reliably for bulk import (CSV) and general rendering on your system are the official LaTeX syntax, which bypasses potential conflicts with the dollar signs ($).
+
+Format	Delimiter (For CSV Import)	Example of Code
+Inline Math (Part of a sentence)	\( … \)	In the equation \(3x + 5 = 11\), \(x\) is the variable.
+Display Math (Centered, block format)	\[ … \]	Formula: \[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+https://docs.ankiweb.net/math.html
+Unlike obsidian .md markdown files, you can't use '$' dollar signs for telling it when to do mathjax, Future Sean needs to remember to use the new delimiters
+You can get it to use the new delimiters when you are adding a card by simply highlighting the text/formula -> then clicking the top right button that looks like an 'f(x)' 
+Select the text you want to turn into a MathJax with the new delimiters and press : 'Ctrl' + 'M' + 'M' for inline and 'Ctrl' + 'M' + 'E' for block 
+Or use the new addon you downloaded, also in the top right with the button looking like '\(...\)' and press that to replace the delimiters, or 'Alt' + 'M' hotkeys
+
