@@ -17,3 +17,10 @@ You can get it to use the new delimiters when you are adding a card by simply hi
 Select the text you want to turn into a MathJax with the new delimiters and press : 'Ctrl' + 'M' + 'M' for inline and 'Ctrl' + 'M' + 'E' for block 
 Or use the new addon you downloaded, also in the top right with the button looking like '\(...\)' and press that to replace the delimiters, or 'Alt' + 'M' hotkeys
 
+Future Sean Problem :
+Update my anki deck AI prompt query templates and remind the AI to use the new Delimiters when writing formulas with mathjax (creating anki decks for review)
+
+Create a script to 'Find and Replace All'
+Obsidian Input	Conversion Process	Anki CSV Output
+Inline: The slope is $m$.	-> Find & Replace All ->	The slope is \(\text{m}\).
+Block: Formula: $$y=mx+b$$	-> Find & Replace All	-> Formula: \[y=mx+b\]
