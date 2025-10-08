@@ -7,6 +7,7 @@ Most Used(/forgotten) :
   '"+yy' = add the current selected line to the system keyboard
   '"+p' = paste from the system keyboard
   'shift' + 'insert'('0' by the arrows) = paste from the keyboard, another way
+  'gg' + 'V' + 'G'' '"' + '+' 'p' =  ggVG"+p = a way to select all, delete, and paste clipboard, for some reason 'ggVG' + 'delete' overwrites up clipboard
 
 Motion Commands : Are shortcuts triggered in Normal mode that allow you to quickly move around your document with preceision
   '<#>g' = go to line number <#>
