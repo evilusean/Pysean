@@ -327,7 +327,7 @@ sudo pacman -S ffmpegthumbnailer gst-libav gst-plugins-bad gst-plugins-ugly
 
 Get WaCom-Intuos Working on Arch Linux :
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/WacomIntuos-Tablet-Stylus-Fix.md
-
+'sudo pacman -S --needed xf86-input-wacom libwacom' # install these
 
 
 
