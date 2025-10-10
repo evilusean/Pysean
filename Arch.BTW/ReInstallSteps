@@ -325,6 +325,8 @@ Get Display/Preview Images for videos/images in Nautilus on Hyprland :
 sudo pacman -S ffmpegthumbnailer gst-libav gst-plugins-bad gst-plugins-ugly
   in Nautilus click the 'hamburger dropdown' -> 'Preferences' -> 'More..' -> 'View' -> 'Preview' -> 'Show Thumbnails' = 'All Files' 'Always'
 
+Get WaCom-Intuos Working on Arch Linux :
+https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/WacomIntuos-Tablet-Stylus-Fix.md
 
 
 
