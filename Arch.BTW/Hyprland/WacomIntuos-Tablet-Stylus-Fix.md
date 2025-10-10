@@ -65,3 +65,76 @@ After rebooting, the tablet should be stable and functional.
     xinput test 10
     ```
     Moving the pen should now produce a stream of position and pressure data.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Wacom Intuos BT M Pad Mapping Fix for Xournal++
+
+This guide assumes 'input-remapper-git' is installed on Arch Linux and the daemon fails to start automatically. The fix addresses three main issues: macro syntax, user/root configuration path conflicts, and systemd service file errors.
+
+## I. Fix Xournal++ Macro Syntax
+
+The GUI fails to properly record complex hotkeys (like Shift+Ctrl+E). You must manually enter the hotkeys in the GUI using the specific human-readable format `Key_Side + Key_Side + letter`.
+
+### A. Xournal++ Hotkeys to Map:
+| Action | Xournal++ Hotkey | Input Remapper Output (Manual Entry) |
+| :--- | :--- | :--- |
+| **Eraser** | Shift+Ctrl+E | `Shift_L + Control_L + e` |
+| **Pen** | Shift+Ctrl+P | `Shift_L + Control_L + p` |
+| **Grab/Hand** | Shift+Ctrl+A | `Shift_L + Control_L + a` |
+| **Undo** | Ctrl+Z | `Control_L + z` |
+
+### B. Verification (Editing the JSON)
+To confirm or manually fix a malformed file:
+1.  Open the configuration file:
+    ```bash
+    nano /home/ArchSean/.config/input-remapper-2/config.json
+    ```
+2.  Locate your mappings and ensure the `output_symbol` value matches the required format (e.g., `"Shift_L + Control_L + e"`).
+3.  Save and close the file.
+
+---
+
+## II. Fix Daemon Startup (System Service)
+
+Since the `input-remapper-service` binary is limited and runs as root, we must ensure it can find and read the configuration file from your user's home directory.
+
+### A. Create Symlink for Root Access
+This links your user's config file to the location the root daemon expects (`/root/.config/...`).
+
+1.  Stop the service:
+    ```bash
+    sudo systemctl stop input-remapper.service
+    ```
+2.  Create the necessary root directory:
+    ```bash
+    sudo mkdir -p /root/.config/input-remapper-2
+    ```
+3.  Create the symbolic link:
+    ```bash
+    sudo ln -s /home/ArchSean/.config/input-remapper-2/config.json /root/.config/input-remapper-2/config.json
+    ```
+
+### B. Fix the System Service File
+We must ensure the service file is restored to its original state (no arguments), as the binary does not support `--dir` or `--config`.
+
+1.  Edit the service file:
+    ```bash
+    sudo nano /usr/lib/systemd/system/input-remapper.service
+    ```
+2.  Ensure the `ExecStart` line under `[Service]` is the original, simple command:
+    ```ini
+    ExecStart=/usr/bin/input-remapper-service
+    ```
+3.  Save and exit.
+
+### C. Final Service Reload and Restart
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart input-remapper.service
+```
+```bash
+# This step is what was required to make the keys work.
+input-remapper-gtk
+# Inside the GUI, click the 'Apply' button to force the daemon to start and read the config.
+```
