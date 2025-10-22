@@ -1,1 +1,3 @@
 2025-October-22 : Just reinstalled it on my 2012 macbook air with an intel i5 core, couldn't update OSX past High Sierra 10.13, hopefully this gives a second life to the machine
+For mac (Will require a USB keyboard, my laptop is broken) 
+pacman -S broadcom-wl # install this for apple wifi drivers
