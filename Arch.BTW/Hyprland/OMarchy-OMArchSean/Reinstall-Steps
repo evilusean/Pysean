@@ -6,3 +6,6 @@ For mac (Will require a USB keyboard, my laptop is broken)
 sudo pacman -S broadcom-wl # install this for apple wifi drivers
 sudo pacman -S bluez bluez-utils # for the keyboard
 sudo pacman -Syu # update all packages
+Fix Keyboard : 
+sudo nvim /etc/bluetooth/main.conf # 'AutoEnable=true' uncomment this line
+sudo bluetoothctl # open this type 'pair' 'trust' 'connect <MAC_ID_of_keyboard>'
