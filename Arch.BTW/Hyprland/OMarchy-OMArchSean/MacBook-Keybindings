@@ -29,7 +29,20 @@ bindd = SUPER SHIFT ALT, X, X Post, exec, omarchy-launch-webapp "https://x.com/c
 bindd = SUPER, L, Lock Screen, exec, omarchy-lock-screen
 bindd = SUPER, C, VS Code, exec, code
 bindd = SUPER ALT, C, Cursor, exec, cursor
+bindd = SUPER ALT, K, Kiro IDE, exec, uwsm app -- kiro
 bindd = SUPER, Q, Close Window, exec, hyprctl dispatch killactive ""
+bindd = SUPER, T, Terminal, exec, $terminal
+
+# Move active window to a specific workspace (Super + Alt + Number)
+bindd = SUPER ALT, 1, Move to workspace 1, exec, hyprctl dispatch movetoworkspace 1
+bindd = SUPER ALT, 2, Move to workspace 2, exec, hyprctl dispatch movetoworkspace 2
+bindd = SUPER ALT, 3, Move to workspace 3, exec, hyprctl dispatch movetoworkspace 3
+bindd = SUPER ALT, 4, Move to workspace 4, exec, hyprctl dispatch movetoworkspace 4
+bindd = SUPER ALT, 5, Move to workspace 5, exec, hyprctl dispatch movetoworkspace 5
+bindd = SUPER ALT, 6, Move to workspace 6, exec, hyprctl dispatch movetoworkspace 6
+bindd = SUPER ALT, 7, Move to workspace 7, exec, hyprctl dispatch movetoworkspace 7
+bindd = SUPER ALT, 8, Move to workspace 8, exec, hyprctl dispatch movetoworkspace 8
+bindd = SUPER ALT, 9, Move to workspace 9, exec, hyprctl dispatch movetoworkspace 9
 
 # Overwrite existing bindings, like putting Omarchy Menu on Super + Space
 # unbind = SUPER SHIFT, SPACE
