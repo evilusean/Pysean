@@ -2,6 +2,6 @@ A few differences from Arch-Hyprland and Omarchy - 'Super' + 'Enter' = Terminal,
 
 Mac Install :
 2025-October-22 : Just reinstalled it on my 2012 macbook air with an intel i5 core, couldn't update OSX past High Sierra 10.13, hopefully this gives a second life to the machine
-For mac (Will require a USB keyboard, my laptop is broken, the trick is to stop being poor and buy a USB keyboard/mouse combo) 
+For mac (Will require a USB keyboard, my laptop is broken, the trick is to stop being poor and buy a wireless USB keyboard/mouse combo) 
 sudo pacman -S syncthing # a private way for automatic updating of obsidian notes between machines
 sudo nvim ~/.config/hypr/hypridle.conf # change this to fix the lock screen, 5 min lock screen default
