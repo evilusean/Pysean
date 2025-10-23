@@ -28,6 +28,8 @@ bindd = SUPER SHIFT ALT, X, X Post, exec, omarchy-launch-webapp "https://x.com/c
 #Custom Keybindings :
 bindd = SUPER, L, Lock Screen, exec, omarchy-lock-screen
 bindd = SUPER, C, VS Code, exec, code
+bindd = SUPER ALT, C, Cursor, exec, cursor
+bindd = SUPER, Q, Close Window, exec, hyprctl dispatch killactive ""
 
 # Overwrite existing bindings, like putting Omarchy Menu on Super + Space
 # unbind = SUPER SHIFT, SPACE
