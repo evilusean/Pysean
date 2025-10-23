@@ -17,6 +17,7 @@ your board side 966 575
 
 'battleground' button : 917 400
 'hero power' button : 1136 825
+'hero power 2' button : 774 823
 """
 #clicks every 15ish seconds for roughly 8 hours
 n=0
@@ -39,7 +40,11 @@ while n < 8000:
     pyautogui.moveTo(810,225,0.3)
     pyautogui.click()
     time.sleep(1)
-    #moves to hero power and clicks
+    #moves to hero power (left) and clicks
+    pyautogui.moveTo(774,823,0.3)
+    pyautogui.click()
+    time.sleep(1)
+    #moves to hero power (right) and clicks
     pyautogui.moveTo(1136,825,0.3)
     pyautogui.click()
     time.sleep(1)
