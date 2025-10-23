@@ -18,6 +18,8 @@ your board side 966 575
 'battleground' button : 917 400
 'hero power' button : 1136 825
 'hero power 2' button : 774 823
+far right minion : 1379 587
+hero portrait : 956 815
 """
 #clicks every 15ish seconds for roughly 8 hours
 n=0
@@ -56,4 +58,11 @@ while n < 8000:
     time.sleep(1)
     pyautogui.moveTo(910,930,0.3)
     pyautogui.dragTo(965,575,0.5, button='left')
+    n=n+1
+    #sell far right minion :
+    time.sleep(1)
+    pyautogui.moveTo(1379,587,0.3)
+    pyautogui.dragTo(956,815,0.5, button='left')# drag mouse to X of 950, Y of 800 while holding down left mouse button    
+    time.sleep(1)
+    pyautogui.click()
     n=n+1
