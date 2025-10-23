@@ -2,6 +2,9 @@ import time
 import pyautogui
 import random
 """
+to run ( 'super' + 'x' to open a venv from hyprland with python) : 
+/mnt/sdb4/Python-Venv/venv/bin/python /mnt/sdb4/Code/Pysean/Hearthstone/ClickBot2
+
 gets current position for diagnostics
 currentMouseX, currentMouseY = pyautogui.position()
 print(currentMouseX, currentMouseY)
