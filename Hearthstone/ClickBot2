@@ -24,11 +24,12 @@ while n < 8000:
     #random time to avoid detection
     time.sleep(5)
     time.sleep(10 + 5*random.random())
+    #TODO : add click for disconnect to reconnect to main menu
+    
     #clicks battleground button
     pyautogui.moveTo(917,400,0.3)
     pyautogui.click()
-    time.sleep(2)
-    #
+    time.sleep(2) 
     #moves to Point(x=1436, y=826) at 0.3 second speed
     pyautogui.moveTo(1436, 826, 0.3)
     pyautogui.click()
