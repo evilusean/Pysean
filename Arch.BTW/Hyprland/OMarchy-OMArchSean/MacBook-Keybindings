@@ -17,8 +17,9 @@ bindd = SUPER SHIFT, slash, Passwords, exec, uwsm app -- 1password
 # If your web app url contains #, type it as ## to prevent hyperland treat it as comments
 bindd = SUPER SHIFT, A, ChatGPT, exec, omarchy-launch-webapp "https://chatgpt.com"
 bindd = SUPER SHIFT ALT, A, Grok, exec, omarchy-launch-webapp "https://grok.com"
+bindd = SUPER, A, Gemini, exec, omarchy-launch-webapp "https://gemini.google.com/"
 #bindd = SUPER SHIFT, C, Calendar, exec, omarchy-launch-webapp "https://app.hey.com/calendar/weeks/"
-bindd = SUPER, C, Calendar, exec, omarchy-launch-webapp "https://calendar.google.com"
+bindd = SUPER SHIF SHIFT, C, Calendar, exec, omarchy-launch-webapp "https://calendar.google.com"
 #bindd = SUPER SHIFT, E, Email, exec, omarchy-launch-webapp "https://app.hey.com"
 bindd = SUPER SHIFT, E, Email, exec, omarchy-launch-webapp "https://mail.google.com"
 bindd = SUPER, E, Proton Mail, exec, omarchy-launch-webapp "https://mail.proton.me"
@@ -35,6 +36,7 @@ bindd = SUPER ALT, C, Cursor, exec, cursor
 bindd = SUPER ALT, K, Kiro IDE, exec, uwsm app -- kiro
 bindd = SUPER, Q, Close Window, exec, hyprctl dispatch killactive ""
 bindd = SUPER, T, Terminal, exec, $terminal
+
 
 # Move active window to a specific workspace (Super + Alt + Number)
 bindd = SUPER ALT, 1, Move to workspace 1, exec, hyprctl dispatch movetoworkspace 1
