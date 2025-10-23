@@ -16,6 +16,7 @@ hand minion 910 930
 your board side 966 575
 
 'battleground' button : 917 400
+'hero power' button : 1136 825
 """
 #clicks every 15ish seconds for roughly 8 hours
 n=0
@@ -25,7 +26,7 @@ while n < 8000:
     time.sleep(5)
     time.sleep(10 + 5*random.random())
     #TODO : add click for disconnect to reconnect to main menu
-    
+
     #clicks battleground button
     pyautogui.moveTo(917,400,0.3)
     pyautogui.click()
@@ -37,6 +38,11 @@ while n < 8000:
     #moves to upgrade and clicks
     pyautogui.moveTo(810,225,0.3)
     pyautogui.click()
+    time.sleep(1)
+    #moves to hero power and clicks
+    pyautogui.moveTo(1136,825,0.3)
+    pyautogui.click()
+    time.sleep(1)
     #moves to first minion and buys it
     time.sleep(1)
     pyautogui.moveTo(875,400,0.3)
