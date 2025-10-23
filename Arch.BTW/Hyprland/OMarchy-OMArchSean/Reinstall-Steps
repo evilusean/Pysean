@@ -9,4 +9,4 @@ sudo pacman -Syu # update all packages
 Fix Keyboard : 
 sudo nvim /etc/bluetooth/main.conf # 'AutoEnable=true' uncomment this line
 sudo bluetoothctl # open this type 'pair' 'trust' 'connect <MAC_ID_of_keyboard>'
-sudo pacman -S maliit-keyboard # trying an onscreen keyboard, because omarchys security protocols won't let usb load until logged in
+sudo pacman -S maliit-keyboard # trying an onscreen keyboard, because omarchys security protocols won't let bluetooth load until logged in
