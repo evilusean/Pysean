@@ -203,6 +203,7 @@ sudo pacman -S p7zip
 sudo pacman -S file-roller
 sudo pacman -S --needed xournalpp
 sudo pacman -S qalculate-gtk
+sudo pacman -S syncthing # a private way for automatic updating of obsidian notes between machines
 
 Install Github Desktop:
 yay -S github-desktop-bin --noconfirm
