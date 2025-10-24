@@ -41,12 +41,19 @@ bindd = SUPER ALT SHIFT, T, OCR Japanese to Clipboard, exec, ~/scripts/ocr_to_cl
 bindd = Super+Shift, S, Screen snip, exec, pidof slurp || hyprshot --freeze --clipboard-only --mode region --silent
 # Region Recording (No sound - Default action if no argument is passed)
 bindd = SUPER ALT, R, Record region (no sound), exec, ~/scripts/record.sh
-
 # Region Recording (With sound - Requires slurp selection)
 bindd = SUPER SHIFT, R, Record region (with sound), exec, ~/scripts/record.sh --sound
-
 # Fullscreen Recording (With sound)
 bindd = SUPER SHIFT ALT, R, Record screen (with sound), exec, ~/scripts/record.sh --fullscreen-sound
+# TODO : Camera / Inbuilt camera recording script - record classes
+# TODO : Anki Launch + Anki Sync
+# Python VENV
+# Suspend System (Super + Shift + L)
+# ScreenSaver (Super + Alt + L)
+# Shutdown (Super + Alt + Shift + L)
+# Xournal + Keybindings Launch
+# Github / Desktop Launch
+# Zoom In / Out
 
 # Move active window to a specific workspace (Super + Alt + Number)
 bindd = SUPER ALT, 1, Move to workspace 1, exec, hyprctl dispatch movetoworkspace 1
