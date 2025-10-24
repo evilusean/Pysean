@@ -49,6 +49,7 @@ bindd = SUPER SHIFT ALT, R, Record screen (with sound), exec, ~/scripts/record.s
 bindd = SUPER, J, Anki, exec, uwsm app -- anki
 # TODO : Anki Sync
 bindd = SUPER, V, Python VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/venv && source bin/activate && exec $SHELL'
+bindd = SUPER SHIFT, V, Pysean VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/Documents/GitHub/Pysean && source ~/venv/bin/activate && exec $SHELL'
 #Suspend System (Super + Shift + L)
 # ScreenSaver (Super + Alt + L)
 # Shutdown (Super + Alt + Shift + L)
