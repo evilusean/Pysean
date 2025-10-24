@@ -1,4 +1,15 @@
 #!/usr/bin/env bash
+# Updated script for region/fullscreen recording with audio support
+# sudo pacman -S wf-recorder slurp ffmpeg x264 jq
+# Screenshot to Clipboard (Region)
+# 'bindd = Super+Shift, S, Screen snip, exec, pidof slurp || hyprshot --freeze --clipboard-only --mode region --silent'
+# Region Recording (No sound - Default action if no argument is passed)
+#bindd = SUPER ALT, R, Record region (no sound), exec, ~/scripts/record.sh
+# Region Recording (With sound - Requires slurp selection)
+#bindd = SUPER SHIFT, R, Record region (with sound), exec, ~/scripts/record.sh --sound
+# Fullscreen Recording (With sound)
+#bindd = SUPER SHIFT ALT, R, Record screen (with sound), exec, ~/scripts/record.sh --fullscreen-sound
+
 # Script for region/fullscreen recording with audio support using wf-recorder
 # Location: ~/scripts/record.sh
 # Keybindings:
@@ -12,20 +23,20 @@ exec > "$LOG_FILE" 2>&1
 
 # --- CONFIGURATION ---
 # The confirmed absolute path to the wf-recorder executable
-WF_RECORDER_PATH="/usr/bin/wf-recorder" 
+WF_RECORDER_PATH="/usr/bin/wf-recorder"
 # Your system's specific monitor source (what you hear)
-AUDIO_SOURCE="alsa_output.pci-0000_00_1b.0.analog-stereo.monitor" 
+AUDIO_SOURCE="alsa_output.pci-0000_00_1b.0.analog-stereo.monitor"
 # Ensure wf-recorder uses a reliable encoder
 VIDEO_CODEC="libx264"
 PIXEL_FORMAT="yuv420p"
 
 # --- Utility Functions ---
 
-get_date() { 
+get_date() {
     date '+%Y-%m-%d_%H.%M.%S'
 }
 
-get_active_monitor() { 
+get_active_monitor() {
     hyprctl monitors -j | jq -r '.[] | select(.focused == true) | .name'
 }
 
