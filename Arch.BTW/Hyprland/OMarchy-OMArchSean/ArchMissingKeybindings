@@ -1,0 +1,65 @@
+# I combined these 2 keybindings and asked AI what was missing, here is the response :
+# Original : https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/dots/keybinds.conf
+# New : https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/MacBook-Keybindings
+
+# Missing Functionalities in Omarchy from Your Current Setup
+
+# SHELL / QUICK-SHELL
+bindid : Super, Super_L / bindd : Super, Tab                        # Toggle overview/launcher
+bindd : Super, V                                                   # Clipboard history
+bindd : Super, Period                                              # Emoji picker
+bind : Super, B/O / bindd : Super, N                               # Toggle sidebars (left/right)
+bindd : Super, Slash                                               # Toggle cheatsheet
+bindd : Super, K                                                   # Toggle on-screen keyboard
+bindd : Super, M                                                   # Toggle media controls
+bindd : Ctrl+Alt, Delete                                           # Toggle session menu
+bind : Ctrl+Super, R                                               # Restart widgets/shell
+bindd : Ctrl+Super, T                                              # Change wallpaper
+
+# UTILITIES (Screenshots, OCR, Color Picker, Recording, AI)
+bindd : Super+Shift, S                                             # Screen snip (region)
+bindd : Super+Shift+Alt, S                                         # Screen snip and annotate
+bindd : Super+Shift, T                                             # OCR to clipboard
+bindd : Super+Shift, C                                             # Color picker
+bindld : ,Print / bindld : Ctrl,Print                              # Fullscreen Screenshot (Copy/Save)
+bindd : Super+Alt, R                                               # Region recording (no sound)
+bindd : Super+Shift+Alt, R                                         # Screen recording (with sound)
+bindd : Super+Shift+Alt, mouse:273                                 # AI summary for selected text
+
+# WINDOW MANAGEMENT
+bindm : Super, mouse:272/273                                       # Move/Resize Window (mouse binds)
+bind : Super, Left/Right/Up/Down                                   # Focus in direction (Cardinal)
+bind : Super+Shift, Left/Right/Up/Down                             # Move window in direction
+binde : Super, Semicolon/Apostrophe                                # Adjust split ratio
+bind : Super, D                                                    # Maximize window
+bind : Super+Alt, F                                                # Toggle Fullscreen spoof
+bind : Super, P                                                    # Pin window
+bind : Super+Shift+Alt, Q                                          # Forcefully zap a window
+
+# WORKSPACE MANAGEMENT
+bind : Ctrl+Super, Right/Left                                      # Focus workspace left/right (relative)
+bind : Super, mouse_up/mouse_down                                  # Focus workspace (mouse wheel)
+bind : Super+Shift, mouse_down/mouse_up                            # Move to workspace left/right (relative)
+bind : Super+Alt, S                                                # Send to scratchpad (non-toggling)
+bind : Super, mouse:275                                            # Activate scratchpad by mouse
+
+# SESSION / POWER
+bindld : Super+Shift, L                                            # Suspend system (long press)
+bindd : Ctrl+Shift+Alt+Super, Delete                               # Shutdown system
+
+# SCREEN
+binde : Super, Minus/Equal                                         # Zoom in/out
+
+# MEDIA
+bindl : Super+Shift, N/B                                           # Next/Previous track
+bindl : ,XF86AudioNext/Prev/Play/Pause                             # Next/Previous/Play-Pause (media keys)
+
+# HARDWARE (Volume / Mute / Backlight)
+bind : , XF86BrightnessUp/Down                                     # Keyboard backlight control
+bindle : ,XF86AudioRaiseVolume/LowerVolume                         # Volume control (hardware keys)
+bindl : ,XF86AudioMute / bindld : Super+Shift,M                    # Toggle mute (hardware key/hotkey)
+bindl : ,XF86AudioMicMute / bindld : Super+Alt,M                   # Toggle mic mute (hardware key/hotkey)
+
+# APPLICATION LAUNCHERS (Specific/Specialized)
+bind : Super, A/Z/C/X, etc.                                        # Dedicated/Fallback launchers for specific apps (e.g., Anki, Obsidian, Kdenlive, Steam)
+bind : SUPER, X (The second one)                                   # Launch app inside a Python virtual environment
