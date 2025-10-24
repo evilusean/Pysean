@@ -48,8 +48,8 @@ bindd = SUPER SHIFT ALT, R, Record screen (with sound), exec, ~/scripts/record.s
 # TODO : Camera / Inbuilt camera recording script - record classes
 bindd = SUPER, J, Anki, exec, uwsm app -- anki
 # TODO : Anki Sync
-# Python VENV
-# Suspend System (Super + Shift + L)
+bindd = SUPER, V, Python VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/venv && source bin/activate && exec $SHELL'
+#Suspend System (Super + Shift + L)
 # ScreenSaver (Super + Alt + L)
 # Shutdown (Super + Alt + Shift + L)
 # Xournal + Keybindings Launch
