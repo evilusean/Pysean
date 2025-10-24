@@ -1,6 +1,7 @@
 #!/bin/bash
 # Script for OCR capture and clipboard copy
-# save the script to '~/bin/ocr_to_clipboard.sh' 
+# 'sudo pacman -S tesseract grim slurp wl-clipboard'
+# bindd = SUPER SHIFT, T, OCR to Clipboard, exec, ~/scripts/ocr_to_clipboard.sh
 
 # Capture selected screen area to a temp file, run Tesseract OCR, copy to clipboard, and delete the temp file.
 TEMP_FILE="$(mktemp --suffix=.png)"
