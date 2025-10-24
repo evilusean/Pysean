@@ -46,7 +46,8 @@ bindd = SUPER SHIFT, R, Record region (with sound), exec, ~/scripts/record.sh --
 # Fullscreen Recording (With sound)
 bindd = SUPER SHIFT ALT, R, Record screen (with sound), exec, ~/scripts/record.sh --fullscreen-sound
 # TODO : Camera / Inbuilt camera recording script - record classes
-# TODO : Anki Launch + Anki Sync
+bindd = SUPER, J, Anki, exec, uwsm app -- anki
+# TODO : Anki Sync
 # Python VENV
 # Suspend System (Super + Shift + L)
 # ScreenSaver (Super + Alt + L)
