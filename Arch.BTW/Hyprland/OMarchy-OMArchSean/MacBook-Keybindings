@@ -36,7 +36,8 @@ bindd = SUPER ALT, C, Cursor, exec, cursor
 bindd = SUPER ALT, K, Kiro IDE, exec, uwsm app -- kiro
 bindd = SUPER, Q, Close Window, exec, hyprctl dispatch killactive ""
 bindd = SUPER, T, Terminal, exec, $terminal
-
+bindd = SUPER SHIFT, T, OCR to Clipboard, exec, ~/scripts/ocr_to_clipboard.sh
+bindd = SUPER ALT SHIFT, T, OCR Japanese to Clipboard, exec, ~/scripts/ocr_to_clipboard_jpn.sh
 
 # Move active window to a specific workspace (Super + Alt + Number)
 bindd = SUPER ALT, 1, Move to workspace 1, exec, hyprctl dispatch movetoworkspace 1
