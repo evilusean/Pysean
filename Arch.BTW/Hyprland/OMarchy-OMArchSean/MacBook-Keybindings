@@ -4,11 +4,11 @@ $browser = omarchy-launch-browser
 
 bindd = SUPER, RETURN, Terminal, exec, $terminal --working-directory="$(omarchy-cmd-terminal-cwd)"
 bindd = SUPER SHIFT, F, File manager, exec, uwsm app -- nautilus --new-window
-bindd = SUPER SHIFT, B, Browser, exec, $browser
-bindd = SUPER SHIFT ALT, B, Browser (private), exec, $browser --private
+bindd = SUPER, B, Browser, exec, $browser
+bindd = SUPER CTRL, B, Browser (private), exec, $browser --private
 bindd = SUPER SHIFT, M, Music, exec, omarchy-launch-or-focus spotify
 bindd = SUPER SHIFT, N, Editor, exec, omarchy-launch-editor
-bindd = SUPER SHIFT, T, Activity, exec, $terminal -e btop
+bindd = SUPER SHIFT, B, Activity, exec, $terminal -e btop
 bindd = SUPER SHIFT, D, Docker, exec, $terminal -e lazydocker
 bindd = SUPER SHIFT, G, Signal, exec, omarchy-launch-or-focus signal "uwsm app -- signal-desktop"
 bindd = SUPER SHIFT, O, Obsidian, exec, omarchy-launch-or-focus obsidian "uwsm app -- obsidian -disable-gpu --enable-wayland-ime"
@@ -38,6 +38,7 @@ bindd = SUPER, Q, Close Window, exec, hyprctl dispatch killactive ""
 bindd = SUPER, T, Terminal, exec, $terminal
 bindd = SUPER SHIFT, T, OCR to Clipboard, exec, ~/scripts/ocr_to_clipboard.sh
 bindd = SUPER ALT SHIFT, T, OCR Japanese to Clipboard, exec, ~/scripts/ocr_to_clipboard_jpn.sh
+bindd = Super+Shift, S, Screen snip, exec, pidof slurp || hyprshot --freeze --clipboard-only --mode region --silent
 
 # Move active window to a specific workspace (Super + Alt + Number)
 bindd = SUPER ALT, 1, Move to workspace 1, exec, hyprctl dispatch movetoworkspace 1
