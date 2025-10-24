@@ -1,6 +1,8 @@
 # Application bindings
 $terminal = uwsm app -- $TERMINAL
 $browser = omarchy-launch-browser
+# TODO : Change btop to 'ctrl' 'super' 'del'
+# TODO2 : Group the keys together based on their main letter, most are good, but xournal and a few others are misplaced, for future Sean.
 
 bindd = SUPER, RETURN, Terminal, exec, $terminal --working-directory="$(omarchy-cmd-terminal-cwd)"
 bindd = SUPER SHIFT, F, File manager, exec, uwsm app -- nautilus --new-window
