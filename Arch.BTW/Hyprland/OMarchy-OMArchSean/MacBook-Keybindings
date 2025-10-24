@@ -54,6 +54,7 @@ bindd = SUPER, J, Anki, exec, uwsm app -- anki
 bindd = SUPER, V, Python VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/venv && source bin/activate && exec $SHELL'
 bindd = SUPER SHIFT, V, Pysean VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/Documents/GitHub/Pysean && source ~/venv/bin/activate && exec $SHELL'
 bindd = SUPER ALT, V, Scripts VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/scripts && source ~/venv/bin/activate && exec $SHELL'
+bindd = SUPER, G, GitHub Profile, exec, $browser "https://github.com/evilusean"
 # Xournal + Keybindings Launch
 # Github / Desktop Launch
 # Zoom In / Out
