@@ -10,7 +10,7 @@ bindd = SUPER SHIFT, M, Music, exec, omarchy-launch-or-focus spotify
 bindd = SUPER SHIFT, N, Editor, exec, omarchy-launch-editor
 bindd = SUPER SHIFT, B, Activity, exec, $terminal -e btop
 bindd = SUPER SHIFT, D, Docker, exec, $terminal -e lazydocker
-bindd = SUPER SHIFT, G, Signal, exec, omarchy-launch-or-focus signal "uwsm app -- signal-desktop"
+bindd = SUPER, M, Signal, exec, omarchy-launch-or-focus signal "uwsm app -- signal-desktop"
 bindd = SUPER SHIFT, O, Obsidian, exec, omarchy-launch-or-focus obsidian "uwsm app -- obsidian -disable-gpu --enable-wayland-ime"
 bindd = SUPER SHIFT, slash, Passwords, exec, uwsm app -- 1password
 
@@ -55,8 +55,8 @@ bindd = SUPER, V, Python VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/venv
 bindd = SUPER SHIFT, V, Pysean VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/Documents/GitHub/Pysean && source ~/venv/bin/activate && exec $SHELL'
 bindd = SUPER ALT, V, Scripts VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/scripts && source ~/venv/bin/activate && exec $SHELL'
 bindd = SUPER, G, GitHub Profile, exec, $browser "https://github.com/evilusean"
-# Xournal + Keybindings Launch
-# Github / Desktop Launch
+bindd = SUPER SHIFT, G, GitHub Desktop, exec, omarchy-launch-or-focus github-desktop
+bindd = SUPER SHIFT, J, Xournal, exec, omarchy-launch-or-focus xournalpp
 # Zoom In / Out
 
 # Move active window to a specific workspace (Super + Alt + Number)
