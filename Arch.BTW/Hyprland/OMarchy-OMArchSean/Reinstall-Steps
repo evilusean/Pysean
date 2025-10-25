@@ -10,6 +10,16 @@ Get WaCom-Intuos Working on Arch Linux :
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/WacomIntuos-Tablet-Stylus-Fix.md
 'sudo pacman -S --needed xf86-input-wacom libwacom' # install these
 'yay -S input-remapper-git' # to remap keys, so you aren't going back and forth on keyboard and can just draw from tablet
+'input-remapper-gtk' # open the GUI 
+name the preset 'Xournal', set autoload, Create each button, press 'Record' and record the input of each button, 
+Far Left Button (Undo) : 'Button 0 + ABS MISC -' = 'KEY_LEFTCTRL + KEY_Z' 
+Left Button (Lasso Tool) : 'Button 1 + ABS MISC -' = 'KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_G'
+Right Button (Pen Tool) : 'Button 2 + ABS MISC -' = 'KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_P'
+Far Right Button (Straight Line Tool)	'Button 2 + ABS MISC -' =	'KEY_LEFTCTRL + KEY_7'
+'systemctl status input-remapper' # need to keep the remappings inbetween restarts, I don't always want to spin up the remapper
+'sudo systemctl enable input-remapper' # enable the process
+'sudo systemctl start input-remapper' 
+'Xournal ++' -> 'Edit' -> 'Preferences' -> 'Stylus' - Button 1 = Eraser, Button 2 = Grab - I just gained 2 buttons for my pad
 
 Add all extensions to chromium :
 UBlockOrigin
