@@ -342,7 +342,7 @@ Far Right Button (Grab Tool)	'Button 2 + ABS MISC -' =	'KEY_LEFTSHIFT + KEY_LEFT
 'systemctl status input-remapper' # need to keep the remappings inbetween restarts, I don't always want to spin up the remapper
 'sudo systemctl enable input-remapper' # enable the process
 'sudo systemctl start input-remapper' 
-
+'Xournal ++' -> 'Edit' -> 'Preferences' -> 'Stylus' - Button 1 = Eraser, Button 2 = Grab - I just gained 2 buttons for my pad
 
 
 
