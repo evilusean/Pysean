@@ -14,7 +14,7 @@ bindd = SUPER SHIFT, D, Docker, exec, $terminal -e lazydocker
 bindd = SUPER, M, Signal, exec, omarchy-launch-or-focus signal "uwsm app -- signal-desktop"
 bindd = SUPER ALT, M, WhatsApp, exec, omarchy-launch-or-focus-webapp WhatsApp "https://web.whatsapp.com/"
 bindd = SUPER SHIFT, M, Google Messages, exec, omarchy-launch-or-focus-webapp "Google Messages" "https://messages.google.com/web/conversations"
-bindd = SUPER SHIFT, O, Obsidian, exec, omarchy-launch-or-focus obsidian "uwsm app -- obsidian -disable-gpu --enable-wayland-ime"
+bindd = SUPER, O, Obsidian, exec, omarchy-launch-or-focus obsidian "uwsm app -- obsidian -disable-gpu --enable-wayland-ime"
 bindd = SUPER SHIFT, slash, Passwords, exec, uwsm app -- 1password
 
 # If your web app url contains #, type it as ## to prevent hyperland treat it as comments
@@ -39,7 +39,7 @@ bindd = SUPER, C, VS Code, exec, code
 bindd = SUPER ALT, C, Cursor, exec, cursor
 bindd = SUPER ALT, K, Kiro IDE, exec, uwsm app -- kiro
 bindd = SUPER, Q, Close Window, exec, hyprctl dispatch killactive ""
-bindd = SUPER, T, Terminal, exec, $terminal
+#bindd = SUPER, T, Terminal, exec, $terminal --working-directory="$(omarchy-cmd-terminal-cwd)" # 'super' 't' is bound to fullscreen-ish, took my a while to figure out, don't use
 bindd = SUPER SHIFT, T, OCR to Clipboard, exec, ~/scripts/ocr_to_clipboard.sh
 bindd = SUPER ALT SHIFT, T, OCR Japanese to Clipboard, exec, ~/scripts/ocr_to_clipboard_jpn.sh
 bindd = SUPER, S, Screen snip, exec, pidof slurp || hyprshot --freeze --clipboard-only --mode region --silent
@@ -49,6 +49,7 @@ bindd = SUPER ALT, R, Record region (no sound), exec, ~/scripts/record.sh
 bindd = SUPER SHIFT, R, Record region (with sound), exec, ~/scripts/record.sh --sound
 # Fullscreen Recording (With sound)
 bindd = SUPER SHIFT ALT, R, Record screen (with sound), exec, ~/scripts/record.sh --fullscreen-sound
+bindd = SUPER CTRL, R, Reload Hyprland, exec, hyprctl reload
 # TODO : Camera / Inbuilt camera recording script - record classes
 bindd = SUPER, J, Anki, exec, uwsm app -- anki
 bindd = SUPER SHIFT, J, Xournal, exec, omarchy-launch-or-focus xournalpp
@@ -60,6 +61,7 @@ bindd = SUPER, G, GitHub Profile, exec, $browser "https://github.com/evilusean"
 bindd = SUPER SHIFT, G, GitHub Desktop, exec, omarchy-launch-or-focus github-desktop
 bindd = SUPER, EQUAL, Zoom In, exec, ~/scripts/zoom.sh increase 0.1
 bindd = SUPER, MINUS, Zoom Out, exec, ~/scripts/zoom.sh decrease 0.1
+
 
 # Move active window to a specific workspace (Super + Alt + Number)
 bindd = SUPER ALT, 1, Move to workspace 1, exec, hyprctl dispatch movetoworkspace 1
