@@ -36,3 +36,5 @@ Create a central default folder that will always take the main repos, add to syn
 
 Save a single website to a future sean problem text document that will take all the videos on that text document and download the 
 Add that document to syncthing and the default folder, so I can have all my tabs on both devices
+
+Have a script that will run a cron job once a day and update the syncthing folder with my latest tabs on both devices
