@@ -13,3 +13,8 @@ https://github.com/evilusean/Pysean/tree/main/Chrome-ExtenSeans/TabulaSean-Chrom
 aspb player
 Yomitan popup dictionary
 Chromium webstore
+Ungoogled Chromium Extensions ('chrome://extensions/' -> extract zip / crv (rename to a zip) -> developer mode -> load unpacked) : 
+https://avoidthehack.com/manually-install-extensions-ungoogled-chromium
+https://github.com/NeverDecaf/chromium-web-store/releases
+https://ublockorigin.com/
+https://github.com/gorhill/uBlock #not even a day into a fresh install, and already getting Ad-gry, it's where you get angry from ads.
