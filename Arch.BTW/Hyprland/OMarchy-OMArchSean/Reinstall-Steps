@@ -5,7 +5,11 @@ Mac Install :
 For mac (Will require a USB keyboard, my laptop is broken, the trick is to stop being poor and buy a wireless USB keyboard/mouse combo) 
 sudo pacman -S syncthing # a private way for automatic updating of obsidian notes between machines
 sudo nvim ~/.config/hypr/hypridle.conf # change this to fix the lock screen, 5 min lock screen default
+
 Add all extensions to chromium :
 UBlockOrigin
 https://github.com/evilusean/Pysean/tree/main/Chrome-ExtenSeans/ImageInASean-ChromiumExtenSean
 https://github.com/evilusean/Pysean/tree/main/Chrome-ExtenSeans/TabulaSean-ChromiumExtenSean
+aspb player
+Yomitan popup dictionary
+Chromium webstore
