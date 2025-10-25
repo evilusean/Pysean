@@ -339,8 +339,9 @@ Far Left Button (Undo) : 'Button 0 + ABS MISC -' = 'KEY_LEFTCTRL + KEY_Z'
 Left Button (Eraser) : 'Button 1 + ABS MISC -' = 'KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_E'
 Right Button (Pen Tool) : 'Button 2 + ABS MISC -' = 'KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_P'
 Far Right Button (Grab Tool)	'Button 2 + ABS MISC -' =	'KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_A'
-
-
+'systemctl status input-remapper' # need to keep the remappings inbetween restarts, I don't always want to spin up the remapper
+'sudo systemctl enable input-remapper' # enable the process
+'sudo systemctl start input-remapper' 
 
 
 
