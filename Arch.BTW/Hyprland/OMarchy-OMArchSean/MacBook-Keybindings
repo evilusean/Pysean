@@ -1,7 +1,6 @@
 # Application bindings
 $terminal = uwsm app -- $TERMINAL
 $browser = omarchy-launch-browser
-# Hotkey a button that stops autolock entirely, have it show an icon in the top bar or top right so I know lock is disabled
 
 bindd = SUPER, RETURN, Terminal, exec, $terminal --working-directory="$(omarchy-cmd-terminal-cwd)"
 bindd = SUPER SHIFT, F, File manager, exec, uwsm app -- nautilus --new-window
