@@ -15,7 +15,7 @@ name the preset 'Xournal', set autoload, Create each button, press 'Record' and 
 Far Left Button (Undo) : 'Button 0 + ABS MISC -' = 'KEY_LEFTCTRL + KEY_Z' 
 Left Button (Lasso Tool) : 'Button 1 + ABS MISC -' = 'KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_G'
 Right Button (Pen Tool) : 'Button 2 + ABS MISC -' = 'KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_P'
-Far Right Button (New Page)	'Button 2 + ABS MISC -' =	'KEY_LEFTCTRL + KEY_D'
+Far Right Button (Highlighter)	'Button 2 + ABS MISC -' =	'KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_H'
 'systemctl status input-remapper' # need to keep the remappings inbetween restarts, I don't always want to spin up the remapper
 'sudo systemctl enable input-remapper' # enable the process
 'sudo systemctl start input-remapper' 
