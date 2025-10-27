@@ -52,6 +52,7 @@ bindd = SUPER CTRL, R, Reload Hyprland, exec, hyprctl reload
 # TODO : Camera / Inbuilt camera recording script - record classes
 bindd = SUPER, J, Anki, exec, uwsm app -- anki
 bindd = SUPER SHIFT, J, Xournal, exec, omarchy-launch-or-focus xournalpp
+# TODO : Xournal ++ that opens a PDF without affecting my default xournalpp for notetaking - Basically a file selector script so I can markup ebooks and not default to it
 # TODO : Anki Sync
 bindd = SUPER, V, Python VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/venv && source bin/activate && exec $SHELL'
 bindd = SUPER SHIFT, V, Pysean VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/Documents/GitHub/Pysean && source ~/venv/bin/activate && exec $SHELL'
