@@ -21,6 +21,7 @@ your board side 966 575
 far right minion : 1379 587
 hero portrait : 956 815
 enemy portrait (sell) : 966 199
+'disconnect' button : 958 644
 """
 #clicks every 15ish seconds for roughly 8 hours
 n=0
@@ -30,7 +31,9 @@ while n < 8000:
     time.sleep(5)
     time.sleep(10 + 5*random.random())
     #TODO : add click for disconnect to reconnect to main menu
-
+    pyautogui.moveTo(958, 644, 0.3)
+    pyautogui.click()
+    time.sleep(1)
     #clicks battleground button
     pyautogui.moveTo(917,400,0.3)
     pyautogui.click()
