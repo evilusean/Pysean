@@ -46,3 +46,5 @@ station wlan0 connect
 D7ED9E936EDF
 'quit' 
 - run updater
+- replace default keybindings
+https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/OmArchSean-Keybindings
