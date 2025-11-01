@@ -46,5 +46,54 @@ station wlan0 connect
 D7ED9E936EDF
 'quit' 
 - run updater
+
 - replace default keybindings
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/OmArchSean-Keybindings
+
+- Mount Drives :
+sudo pacman -S gnome-disk-utility
+search 'disks' to open gnome disk utility
+add drives, 'Edit Mount Options' -> Switch off 'User Session Defaults' -> 'Mount at system startup' -> Identify As '/dev/sdb2' + Mountpoint (Fstab will be updated)
+
+- add scripts (~/Scripts/system)
+https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/launch_venv.sh
+https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/lock_and_suspend.sh
+https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/ocr_to_clipboard.sh
+https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/ocr_to_clipboard_jpn.sh
+https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/record.sh
+https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/zoom.sh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
