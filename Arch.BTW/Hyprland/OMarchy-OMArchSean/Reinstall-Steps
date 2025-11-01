@@ -33,3 +33,16 @@ https://avoidthehack.com/manually-install-extensions-ungoogled-chromium
 https://github.com/NeverDecaf/chromium-web-store/releases
 https://ublockorigin.com/
 https://github.com/gorhill/uBlock #not even a day into a fresh install, and already getting Ad-gry, it's where you get angry from ads.
+
+Good (relative term) Laptop Omarchy Install Steps =========================================================================================================================================
+ install through ventoy ISO
+- connect to internet
+iwctl
+device wlan0 set-property Powered off
+device wlan0 set-property Powered on
+station wlan0 scan
+station wlan0 get-networks
+station wlan0 connect
+D7ED9E936EDF
+'quit' 
+- run updater
