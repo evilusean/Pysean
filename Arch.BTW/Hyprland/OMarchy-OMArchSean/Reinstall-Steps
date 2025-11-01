@@ -101,9 +101,18 @@ yay -S librewolf-bin
 yay -S kiro-bin
 yay -S warp-terminal
 
+-install packages
 
-
-
+-install fonts
+sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts # installs A Japanese capable font
+yay -S ttf-freefont ttf-ms-fonts ttf-linux-libertine ttf-dejavu ttf-inconsolata ttf-ubuntu-font-family
+-add Japanese keyboard 
+sudo pacman -S fcitx5 fcitx5-mozc fcitx5-gtk fcitx5-qt fcitx5-configtool 
+'fcitx5-configtool' #after install, run this, add mozc from the 
+Go to the "Input Method" tab.
+At the bottom left, uncheck "Only Show Current Language". This is crucial, as Mozc is Japanese and your system might be set to English.
+In the left pane (Available Input Methods), search for "Mozc".
+Select "Mozc" and click the + button (or the right arrow icon) to move it to the "Active Input Methods" list on the right.
 
 
 
