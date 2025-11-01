@@ -84,7 +84,15 @@ sudo pacman -S lib32-nvidia-utils
 sudo pacman -S vulkan-nouveau
 sudo pacman -S lib32-vulkan-nouveau
 
-
+- install steam
+sudo pacman -S steam
+sudo pacman -S wine wine-mono wine-gecko winetricks
+- Move OW2 Shaders
+mkdir -p ~/Games/Overwatch_ShaderCache
+ln -s ~/Games/Overwatch_ShaderCache /mnt/sdb5/SteamLibrary/steamapps/shadercache
+-install lutris
+sudo pacman -S lutris
+select the executable, select the wine prefix(the one that 'drive_c' is in), select the wine version, and set the default graphics card
 
 
 
