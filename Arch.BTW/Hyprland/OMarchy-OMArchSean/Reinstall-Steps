@@ -63,6 +63,16 @@ https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSe
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/record.sh
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/zoom.sh
 
+-fix monitors
+'super' + 'space' -> 'setup' -> monitors -> :
+.conf/hypr/monitors.conf
+# Set GDK_SCALE to 1 for correct sizing on 1080p displays
+env = GDK_SCALE,1
+# HDMI-A-1 (ViewSonic) is the leftmost screen (starts at 0x0)
+monitor=HDMI-A-1, 1920x1080@60, 0x0, 1
+# eDP-1 (Built-in) is the right screen (starts 1920 pixels to the right)
+monitor=eDP-1, 1920x1080@60, 1920x0, 1
+
 
 
 
