@@ -120,7 +120,7 @@ Select "Mozc" and click the + button (or the right arrow icon) to move it to the
 sudo pacman -S mpv
 mkdir -p ~/.local/share/Anki2
 rm -rf ~/.local/share/Anki2/User\ 1
-ln -s /mnt/sdb4/Anki/BackupProfile/User\ 1 ~/.local/share/Anki2/User\ 1
+ln -s "/mnt/sdb4/Lang/Anki/BackupProfile/User 1" /home/archsean/.local/share/Anki2/"User 1"
 
 -Github Setup
 clone repos to ~/Documents/Github/<repo>
