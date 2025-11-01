@@ -1,0 +1,79 @@
+# Application bindings
+$terminal = uwsm app -- $TERMINAL
+$browser = omarchy-launch-browser
+
+bindd = SUPER, RETURN, Terminal, exec, $terminal --working-directory="$(omarchy-cmd-terminal-cwd)"
+bindd = SUPER SHIFT, F, File manager, exec, uwsm app -- nautilus --new-window
+bindd = SUPER, B, Browser, exec, $browser
+bindd = SUPER CTRL, B, Browser (private), exec, $browser --private
+bindd = SUPER SHIFT, S, Music, exec, omarchy-launch-or-focus spotify
+bindd = SUPER SHIFT, N, Editor, exec, omarchy-launch-editor
+bindd = SUPER CTRL, DEL, Activity (btop), exec, $terminal -e btop
+bindd = SUPER SHIFT, D, Docker, exec, $terminal -e lazydocker
+bindd = SUPER, M, Signal, exec, omarchy-launch-or-focus signal "uwsm app -- signal-desktop"
+bindd = SUPER ALT, M, WhatsApp, exec, omarchy-launch-or-focus-webapp WhatsApp "https://web.whatsapp.com/"
+bindd = SUPER SHIFT, M, Google Messages, exec, omarchy-launch-or-focus-webapp "Google Messages" "https://messages.google.com/web/conversations"
+bindd = SUPER, O, Obsidian, exec, omarchy-launch-or-focus obsidian "uwsm app -- obsidian -disable-gpu --enable-wayland-ime"
+bindd = SUPER SHIFT, slash, Passwords, exec, uwsm app -- 1password
+
+# If your web app url contains #, type it as ## to prevent hyperland treat it as comments
+bindd = SUPER SHIFT, A, ChatGPT, exec, omarchy-launch-webapp "https://chatgpt.com"
+bindd = SUPER SHIFT ALT, A, Grok, exec, omarchy-launch-webapp "https://grok.com"
+bindd = SUPER, A, Gemini, exec, omarchy-launch-webapp "https://gemini.google.com/"
+#bindd = SUPER SHIFT, C, Calendar, exec, omarchy-launch-webapp "https://app.hey.com/calendar/weeks/"
+bindd = SUPER SHIFT, C, Calendar, exec, omarchy-launch-webapp "https://calendar.google.com"
+#bindd = SUPER SHIFT, E, Email, exec, omarchy-launch-webapp "https://app.hey.com"
+bindd = SUPER SHIFT, E, Email, exec, omarchy-launch-webapp "https://mail.google.com"
+bindd = SUPER, E, Proton Mail, exec, omarchy-launch-webapp "https://mail.proton.me"
+bindd = SUPER SHIFT, Y, YouTube, exec, omarchy-launch-or-focus-webapp YouTube "https://youtube.com/"
+bindd = SUPER SHIFT, X, X, exec, omarchy-launch-webapp "https://x.com/"
+bindd = SUPER SHIFT ALT, X, X Post, exec, omarchy-launch-webapp "https://x.com/compose/post"
+
+#Custom Keybindings :
+bindd = SUPER, L, Lock Screen, exec, omarchy-lock-screen
+bindd = SUPER SHIFT, L, Suspend System, exec, ~/Scripts/system/lock_and_suspend.sh
+bindd = SUPER ALT, L, Restart System, exec, systemctl reboot
+bindd = SUPER ALT SHIFT, L, Shutdown System, exec, systemctl poweroff
+bindd = SUPER, C, VS Code, exec, code
+bindd = SUPER ALT, C, Cursor, exec, cursor
+bindd = SUPER ALT, K, Kiro IDE, exec, uwsm app -- kiro
+bindd = SUPER, Q, Close Window, exec, hyprctl dispatch killactive ""
+#bindd = SUPER, T, Terminal, exec, $terminal --working-directory="$(omarchy-cmd-terminal-cwd)" # 'super' 't' is bound to fullscreen-ish, took my a while to figure out, don't use
+bindd = SUPER SHIFT, T, OCR to Clipboard, exec, ~/Scripts/system/ocr_to_clipboard.sh
+bindd = SUPER ALT SHIFT, T, OCR Japanese to Clipboard, exec, ~/Scripts/system/ocr_to_clipboard_jpn.sh
+bindd = SUPER, S, Screen snip, exec, pidof slurp || hyprshot --freeze --clipboard-only --mode region --silent
+# Region Recording (No sound - Default action if no argument is passed)
+bindd = SUPER ALT, R, Record region (no sound), exec, ~/Scripts/system/record.sh
+# Region Recording (With sound - Requires slurp selection)
+bindd = SUPER SHIFT, R, Record region (with sound), exec, ~/Scripts/system/record.sh --sound
+# Fullscreen Recording (With sound)
+bindd = SUPER SHIFT ALT, R, Record screen (with sound), exec, ~/Scripts/system/record.sh --fullscreen-sound
+bindd = SUPER CTRL, R, Reload Hyprland, exec, hyprctl reload
+# TODO : Camera / Inbuilt camera recording script - record classes
+bindd = SUPER, J, Anki, exec, uwsm app -- anki
+bindd = SUPER SHIFT, J, Xournal, exec, omarchy-launch-or-focus xournalpp
+# TODO : Xournal ++ that opens a PDF without affecting my default xournalpp for notetaking - Basically a file selector script so I can markup ebooks and not default to it
+# TODO : Anki Sync
+bindd = SUPER, V, Python VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/venv && source bin/activate && exec $SHELL'
+bindd = SUPER SHIFT, V, Pysean VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/Documents/GitHub/Pysean && source ~/venv/bin/activate && exec $SHELL'
+bindd = SUPER ALT, V, Scripts VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/Scripts && source ~/venv/bin/activate && exec $SHELL'
+bindd = SUPER, G, GitHub Profile, exec, $browser "https://github.com/evilusean"
+bindd = SUPER SHIFT, G, GitHub Desktop, exec, omarchy-launch-or-focus github-desktop
+bindd = SUPER, EQUAL, Zoom In, exec, ~/scripts/zoom.sh increase 0.1
+bindd = SUPER, MINUS, Zoom Out, exec, ~/scripts/zoom.sh decrease 0.1
+
+
+# Move active window to a specific workspace (Super + Alt + Number)
+bindd = SUPER ALT, 1, Move to workspace 1, exec, hyprctl dispatch movetoworkspace 1
+bindd = SUPER ALT, 2, Move to workspace 2, exec, hyprctl dispatch movetoworkspace 2
+bindd = SUPER ALT, 3, Move to workspace 3, exec, hyprctl dispatch movetoworkspace 3
+bindd = SUPER ALT, 4, Move to workspace 4, exec, hyprctl dispatch movetoworkspace 4
+bindd = SUPER ALT, 5, Move to workspace 5, exec, hyprctl dispatch movetoworkspace 5
+bindd = SUPER ALT, 6, Move to workspace 6, exec, hyprctl dispatch movetoworkspace 6
+bindd = SUPER ALT, 7, Move to workspace 7, exec, hyprctl dispatch movetoworkspace 7
+bindd = SUPER ALT, 8, Move to workspace 8, exec, hyprctl dispatch movetoworkspace 8
+bindd = SUPER ALT, 9, Move to workspace 9, exec, hyprctl dispatch movetoworkspace 9
+
+# Overwrite existing bindings, like putting Omarchy Menu on Super + Space
+# unbind = SUPER SHIFT, SPACE
+# bindd = SUPER SHIFT, SPACE, Omarchy menu, exec, omarchy-menu
