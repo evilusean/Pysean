@@ -83,6 +83,8 @@ sudo pacman -S nvidia-utils
 sudo pacman -S lib32-nvidia-utils
 sudo pacman -S vulkan-nouveau
 sudo pacman -S lib32-vulkan-nouveau
+sudo pacman -S vulkan-tools
+sudo pacman -S lib32-gnutls
 
 - install steam
 sudo pacman -S steam
