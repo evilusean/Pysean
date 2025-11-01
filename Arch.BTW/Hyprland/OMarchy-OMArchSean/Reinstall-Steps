@@ -162,11 +162,14 @@ https://github.com/NeverDecaf/chromium-web-store/releases
 https://ublockorigin.com/
 https://github.com/gorhill/uBlock #not even a day into a fresh install, and already getting Ad-gry, it's where you get angry from ads.
 
-
-
-
-
-
+Fix Keyboard Backlight (Fn + F4) :
+yay -S asusctl supergfxctl
+sudo systemctl enable asusd
+sudo systemctl start asusd
+asusctl -k #check backlight
+asusctl -k <level> #sets level
+asusctl -k high
+exec-once = asusctl -k high # add this to hyprland 'execs.conf' it will turn on the keyboard at start
 
 
 
