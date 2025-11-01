@@ -73,6 +73,15 @@ monitor=HDMI-A-1, 1920x1080@60, 0x0, 1
 # eDP-1 (built-in) is the current active screen, positioned on the RIGHT (starts at 1920x0)
 monitor=eDP-1, 1920x1080@60, 1920x0, 1
 
+-Fix monitors 2 (get audio to work):
+sudo nvim /etc/mkinitcpio.conf
+MODULES=(i915 nvidia nvidia_modeset nvidia_uvm nvidia_drm btrfs) # add this line to get monitor to work
+aplay -l # check hdmi connections
+wpctl status
+pactl list cards
+pactl set-card-profile 51 pro-audio
+sudo pacman -S alsa-ucm-conf
+
 - fix graphics
 sudo pacman -S nvidia-dkms nvidia-utils nvidia-settings nvidia-prime opencl-nvidia switcheroo-control nvidia
 sudo pacman -S vulkan-icd-loader package
