@@ -73,7 +73,16 @@ monitor=HDMI-A-1, 1920x1080@60, 0x0, 1
 # eDP-1 (Built-in) is the right screen (starts 1920 pixels to the right)
 monitor=eDP-1, 1920x1080@60, 1920x0, 1
 
-
+- fix graphics
+sudo pacman -S nvidia-dkms nvidia-utils nvidia-settings nvidia-prime opencl-nvidia switcheroo-control nvidia
+sudo pacman -S vulkan-icd-loader package
+sudo pacman -S lib32-vulkan-icd-loader
+sudo pacman -S vulkan-intel
+sudo pacman -S lib32-vulkan-intel
+sudo pacman -S nvidia-utils
+sudo pacman -S lib32-nvidia-utils
+sudo pacman -S vulkan-nouveau
+sudo pacman -S lib32-vulkan-nouveau
 
 
 
