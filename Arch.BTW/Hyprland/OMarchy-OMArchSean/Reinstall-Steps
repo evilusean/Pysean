@@ -126,13 +126,14 @@ ln -s "/mnt/sdb4/Lang/Anki/BackupProfile/User 1" /home/archsean/.local/share/Ank
 clone repos to ~/Documents/Github/<repo>
 
 -obsidian setup
+ln -s /mnt/sdb4/Obsidian /home/archsean/Documents/Obsidian
 -syncthing setup
 sudo pacman -S syncthing
 systemctl --user enable syncthing.service
 systemctl --user start syncthing.service
 http://localhost:8384/
 'Add Remote Device' -> Nearby Devices (have both machines with page open)
-'Add Folder' -> Share Folder with device (Obsidian)
+'Add Folder' -> Share Folder with device (Obsidian) (after creating the symlink, use the one on my slow HDD for sharing, because syncthing doesn't like symlinks)
 
 -Fix monitors 2 (get audio to work):
 sudo nvim /etc/mkinitcpio.conf
