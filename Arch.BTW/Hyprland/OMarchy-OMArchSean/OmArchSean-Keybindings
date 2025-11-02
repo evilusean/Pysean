@@ -55,13 +55,16 @@ bindd = SUPER SHIFT, J, Xournal, exec, omarchy-launch-or-focus xournalpp
 # TODO : Xournal ++ that opens a PDF without affecting my default xournalpp for notetaking - Basically a file selector script so I can markup ebooks and not default to it
 # TODO : Anki Sync
 bindd = SUPER, V, Python VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/venv && source bin/activate && exec $SHELL'
-bindd = SUPER SHIFT, V, Pysean VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/Documents/GitHub/Pysean && source ~/venv/bin/activate && exec $SHELL'
+#bindd = SUPER SHIFT, V, Pysean VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/Documents/GitHub/Pysean && source ~/venv/bin/activate && exec $SHELL'
+bindd = SUPER SHIFT, V, Pysean VENV, exec, uwsm app -- $TERMINAL -e bash -c '~/Scripts/system/launch_pysean.sh'
 bindd = SUPER ALT, V, Scripts VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/Scripts && source ~/venv/bin/activate && exec $SHELL'
 bindd = SUPER, G, GitHub Profile, exec, $browser "https://github.com/evilusean"
 bindd = SUPER SHIFT, G, GitHub Desktop, exec, omarchy-launch-or-focus github-desktop
-bindd = SUPER, EQUAL, Zoom In, exec, ~/scripts/zoom.sh increase 0.1
-bindd = SUPER, MINUS, Zoom Out, exec, ~/scripts/zoom.sh decrease 0.1
-
+bindd = SUPER, EQUAL, Zoom In, exec, ~/Scripts/zoom.sh increase 0.1
+bindd = SUPER, MINUS, Zoom Out, exec, ~/Scripts/zoom.sh decrease 0.1
+#bindd = , XF86BrightnessUp, exec, ~/Scripts/system/kbd_backlight_up.sh
+#bindd = , XF86BrightnessDown, exec, ~/Scripts/system/kbd_backlight_down.sh
+#bindd = , XF86Launch3, Keyboard Backlight Up, exec, ~/Scripts/system/kbd_backlight_up.sh
 
 # Move active window to a specific workspace (Super + Alt + Number)
 bindd = SUPER ALT, 1, Move to workspace 1, exec, hyprctl dispatch movetoworkspace 1
