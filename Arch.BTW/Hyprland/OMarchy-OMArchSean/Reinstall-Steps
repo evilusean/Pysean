@@ -124,6 +124,7 @@ ln -s "/mnt/sdb4/Lang/Anki/BackupProfile/User 1" /home/archsean/.local/share/Ank
 
 -Github Setup
 clone repos to ~/Documents/Github/<repo>
+ln -s /home/archsean/Documents/Obsidian/DailyNotes/DailyNotes/School/Github-Khan /home/archsean/Documents/GitHub/Khan
 
 -obsidian setup
 ln -s /mnt/sdb4/Obsidian /home/archsean/Documents/Obsidian
