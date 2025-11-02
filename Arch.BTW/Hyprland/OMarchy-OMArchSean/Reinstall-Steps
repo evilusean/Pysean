@@ -122,10 +122,6 @@ mkdir -p ~/.local/share/Anki2
 rm -rf ~/.local/share/Anki2/User\ 1
 ln -s "/mnt/sdb4/Lang/Anki/BackupProfile/User 1" /home/archsean/.local/share/Anki2/"User 1"
 
--Github Setup
-clone repos to ~/Documents/Github/<repo>
-ln -s /home/archsean/Documents/Obsidian/DailyNotes/DailyNotes/School/Github-Khan /home/archsean/Documents/GitHub/Khan
-
 -obsidian setup
 ln -s /mnt/sdb4/Obsidian /home/archsean/Documents/Obsidian
 -syncthing setup
@@ -135,6 +131,10 @@ systemctl --user start syncthing.service
 http://localhost:8384/
 'Add Remote Device' -> Nearby Devices (have both machines with page open)
 'Add Folder' -> Share Folder with device (Obsidian) (after creating the symlink, use the one on my slow HDD for sharing, because syncthing doesn't like symlinks)
+
+-Github Setup
+clone repos to ~/Documents/Github/<repo>
+ln -s /home/archsean/Documents/Obsidian/DailyNotes/DailyNotes/School/Github-Khan /home/archsean/Documents/GitHub/Khan
 
 -Fix monitors 2 (get audio to work):
 sudo nvim /etc/mkinitcpio.conf
