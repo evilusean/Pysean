@@ -40,7 +40,7 @@ bindd = SUPER ALT, K, Kiro IDE, exec, uwsm app -- kiro
 bindd = SUPER, Q, Close Window, exec, hyprctl dispatch killactive ""
 #bindd = SUPER, T, Terminal, exec, $terminal --working-directory="$(omarchy-cmd-terminal-cwd)" # 'super' 't' is bound to fullscreen-ish, took my a while to figure out, don't use
 bindd = SUPER SHIFT, T, OCR to Clipboard, exec, ~/Scripts/system/ocr_to_clipboard.sh
-bindd = SUPER ALT SHIFT, T, OCR Japanese to Clipboard, exec, ~/Scripts/system/ocr_to_clipboard_jpn.sh
+bindd = SUPER ALT, T, OCR Japanese to Clipboard, exec, ~/Scripts/system/ocr_to_clipboard_jpn.sh
 bindd = SUPER, S, Screen snip, exec, pidof slurp || hyprshot --freeze --clipboard-only --mode region --silent
 # Region Recording (No sound - Default action if no argument is passed)
 bindd = SUPER ALT, R, Record region (no sound), exec, ~/Scripts/system/record.sh
