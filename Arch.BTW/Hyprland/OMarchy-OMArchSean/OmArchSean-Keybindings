@@ -17,8 +17,8 @@ bindd = SUPER, O, Obsidian, exec, omarchy-launch-or-focus obsidian "uwsm app -- 
 bindd = SUPER SHIFT, slash, Passwords, exec, uwsm app -- 1password
 
 # If your web app url contains #, type it as ## to prevent hyperland treat it as comments
-bindd = SUPER SHIFT, A, ChatGPT, exec, omarchy-launch-webapp "https://chatgpt.com"
-bindd = SUPER SHIFT ALT, A, Grok, exec, omarchy-launch-webapp "https://grok.com"
+bindd = SUPER CTRL, A, ChatGPT, exec, omarchy-launch-webapp "https://chatgpt.com"
+bindd = SUPER SHIFT, A, Grok, exec, omarchy-launch-webapp "https://grok.com"
 bindd = SUPER, A, Gemini, exec, omarchy-launch-webapp "https://gemini.google.com/"
 #bindd = SUPER SHIFT, C, Calendar, exec, omarchy-launch-webapp "https://app.hey.com/calendar/weeks/"
 bindd = SUPER SHIFT, C, Calendar, exec, omarchy-launch-webapp "https://calendar.google.com"
@@ -50,6 +50,7 @@ bindd = SUPER SHIFT, R, Record region (with sound), exec, ~/Scripts/system/recor
 bindd = SUPER SHIFT ALT, R, Record screen (with sound), exec, ~/Scripts/system/record.sh --fullscreen-sound
 bindd = SUPER CTRL, R, Reload Hyprland, exec, hyprctl reload
 # TODO : Camera / Inbuilt camera recording script - record classes
+# TODO : Add TTS Text to speech button 
 bindd = SUPER, J, Anki, exec, uwsm app -- anki
 bindd = SUPER SHIFT, J, Xournal, exec, omarchy-launch-or-focus xournalpp
 bindd = SUPER, V, Python VENV, exec, uwsm app -- $TERMINAL -e bash -c 'cd ~/venv && source bin/activate && exec $SHELL'
