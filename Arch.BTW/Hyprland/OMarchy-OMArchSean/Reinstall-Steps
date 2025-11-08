@@ -45,6 +45,7 @@ station wlan0 get-networks
 station wlan0 connect
 D7ED9E936EDF
 'quit' 
+
 - run updater
 
 - replace default keybindings
