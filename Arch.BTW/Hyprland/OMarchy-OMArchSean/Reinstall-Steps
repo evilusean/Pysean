@@ -137,7 +137,7 @@ http://localhost:8384/
 'Add Remote Device' -> Nearby Devices (have both machines with page open)
 'Add Folder' -> Share Folder with device (Obsidian) (after creating the symlink, use the one on my slow HDD for sharing, because syncthing doesn't like symlinks)
 
--Github Setup : (First, download the khan repo with github desktop, then symlink it to sdb4, then symlink that to obsidian)
+-Github Setup : (First, download the khan repo with github desktop, delete it once it is registered, then symlink it to sdb4, then symlink that to obsidian) :
 clone repos to ~/Documents/Github/<repo>
 ln -s /mnt/sdb4/Code /home/archsean/Documents/Github
 ln -s /mnt/sdb4/Code/Khan /home/archsean/Documents/Obsidian/DailyNotes/DailyNotes/School/Github-Khan
