@@ -142,13 +142,15 @@ clone repos to ~/Documents/Github/<repo>
 ln -s /home/archsean/Documents/Obsidian/DailyNotes/DailyNotes/School/Github-Khan /home/archsean/Documents/GitHub/Khan
 
 -Fix monitors 2 (get audio to work):
+sudo pacman -S alsa-utils
+sudo pacman -S alsa-ucm-conf
 sudo nvim /etc/mkinitcpio.conf
+sudo mkinitcpio -P
 MODULES=(i915 nvidia nvidia_modeset nvidia_uvm nvidia_drm btrfs) # add this line to get monitor to work
 aplay -l # check hdmi connections
 wpctl status
 pactl list cards
 pactl set-card-profile 51 pro-audio
-sudo pacman -S alsa-ucm-conf
 alsa_card.platform-avs_hdaudio.2
 pactl set-card-profile alsa_card.platform-avs_hdaudio.2 pro-audio
 speaker-test -D plughw:2,0 -c 2 -r 48000
