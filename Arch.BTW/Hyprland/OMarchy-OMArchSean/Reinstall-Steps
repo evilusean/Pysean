@@ -194,5 +194,5 @@ Open Steam. -> Click Games > Add a Non-Steam Game to My Library...
 'Settings' Change to GE-Proton
 Now you can run it from steam
 
-- Update /home/archsean/.config/hypr
+- Update /home/archsean/.config/hypr/hypridle.conf
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/Macbook-hypridle.conf
