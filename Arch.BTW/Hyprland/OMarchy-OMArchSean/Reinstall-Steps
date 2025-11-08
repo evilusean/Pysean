@@ -58,6 +58,7 @@ add drives, 'Edit Mount Options' -> Switch off 'User Session Defaults' -> 'Mount
 
 - add scripts (~/Scripts/system)
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/launch_venv.sh
+https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/launch_pysean.sh
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/lock_and_suspend.sh
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/ocr_to_clipboard.sh
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/ocr_to_clipboard_jpn.sh
