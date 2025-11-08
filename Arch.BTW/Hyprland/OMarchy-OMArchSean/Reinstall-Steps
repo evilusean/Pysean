@@ -180,9 +180,15 @@ asusctl -k <level> #sets level
 asusctl -k high
 exec-once = asusctl -k high # add this to hyprland 'execs.conf' it will turn on the keyboard at start
 
-
-
-
+-Get Battle.Net Working :
+yay -S protonup-qt
+yay -S protontricks
+Launch ProtonUp-Qt: (From your applications menu or protonup-qt in terminal)
+ Click "Add version".
+ Select "GE-Proton" as the release type.
+ Choose the latest GE-Proton version from the list (e.g., GE-Proton9-27).
+ Click "Install".
+ Close ProtonUp-Qt after installation.
 
 
 
