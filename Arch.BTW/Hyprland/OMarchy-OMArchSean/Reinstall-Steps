@@ -93,6 +93,9 @@ sudo pacman -S wine wine-mono wine-gecko winetricks
 - Move OW2 Shaders
 mkdir -p ~/Games/Overwatch_ShaderCache
 ln -s ~/Games/Overwatch_ShaderCache /mnt/sdb5/SteamLibrary/steamapps/shadercache
+
+-reboot before re-adding games, need to get directories fixed
+
 -install lutris
 sudo pacman -S lutris
 select the executable, select the wine prefix(the one that 'drive_c' is in), select the wine version, and set the default graphics card
