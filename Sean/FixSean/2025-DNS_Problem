@@ -1,0 +1,49 @@
+Arch Linux / AUR: Fixing Persistent Connection Failure (EOF, Broken Pipe, TLS Error)
+This document addresses a rare, persistent network error that prevents Arch Linux users (using tools like yay, git, and curl) from establishing a secure connection (HTTPS/TLS) with the Arch User Repository (AUR) at aur.archlinux.org. This often presents as : EOF (End of File) or Send failure: Broken pipe errors, even when standard system updates (sudo pacman -Syu) are successful.
+
+The fix involves bypassing the failing Domain Name Server (DNS) and forcing the system to use a reliable public DNS resolver.
+
+🚨 Problem Diagnosis Summary
+The failure is caused by an issue in how your local DNS or network route handles the secure handshake (TLS/SSL) with the AUR server. Since basic checks (firewall, proxies, SSL package updates) did not resolve the issue, the solution is to change the upstream DNS servers used by your network interface.
+
+🛠️ Step-by-Step Fix: Changing DNS with resolvectl
+Your system uses systemd-resolved for DNS management, making the resolvectl tool the correct way to apply a permanent fix.
+
+1. Identify Your Active Network Interface
+First, you need to find the specific name of the network interface currently connected to the internet (e.g., wlan0 for Wi-Fi or eth0 for Ethernet).
+
+Run this command:
+
+Bash
+
+resolvectl status
+Look under the Link sections (e.g., Link 3 (wlan0)). The link that shows Current Scopes: DNS LLMNR/IPv4... and has an IP address listed is your active link. Record the device name (e.g., wlan0).
+
+2. Set New Upstream DNS Servers
+We will set Cloudflare's reliable public DNS servers (1.1.1.1 and 1.0.0.1) for your active interface.
+
+Replace DEVICE_NAME in the command below with the interface name you found in Step 1 (e.g., wlan0):
+
+Bash
+
+sudo resolvectl dns DEVICE_NAME 1.1.1.1 1.0.0.1
+Example: sudo resolvectl dns wlan0 1.1.1.1 1.0.0.1
+
+3. Clear DNS Cache and Verify
+Flush the cache to apply the changes immediately, and then verify the new settings.
+
+Bash
+
+# Flush the DNS cache
+sudo resolvectl flush-caches
+
+# Verify the changes (check the "Current DNS Server" under your link)
+resolvectl status
+In the output, the DNS Servers list under your active link (wlan0) should now display 1.1.1.1 and 1.0.0.1.
+
+🧪 Final Test and Confirmation
+After applying the DNS change, confirm the connection to the AUR is fully restored by running the test command that was previously failing:
+
+Bash
+
+curl https://aur.archlinux.org/rpc?v=5
