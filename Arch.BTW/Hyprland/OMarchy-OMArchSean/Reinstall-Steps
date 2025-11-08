@@ -170,6 +170,7 @@ https://avoidthehack.com/manually-install-extensions-ungoogled-chromium
 https://github.com/NeverDecaf/chromium-web-store/releases
 https://ublockorigin.com/
 https://github.com/gorhill/uBlock #not even a day into a fresh install, and already getting Ad-gry, it's where you get angry from ads.
+ln -s /mnt/sdb4/MEmes/4Chan-Unsorted/2025 /home/archsean/Downloads/4Chan-Unsorted #Symlink memes folder for ImageInASean downloads, in case main drive gets wiped / backups 
 
 Fix Keyboard Backlight (Fn + F4) :
 yay -S asusctl supergfxctl
