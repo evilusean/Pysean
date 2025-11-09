@@ -414,7 +414,8 @@ GAIy-dar : https://www.theguardian.com/technology/2017/sep/07/new-artificial-int
   Combine this (https://www.jordanharbinger.com/wp-content/uploads/2018/10/The-Behavioral-Table-of-Elements-2018.pdf) + AI = Psycho Pass https://en.wikipedia.org/wiki/Psycho-Pass
   Physiogonomy : https://theintercept.com/2016/11/18/troubling-study-says-artificial-intelligence-can-predict-who-will-be-criminals-based-on-facial-features/
 Kimi K2 (256k token context window, Kimi-Researcher, deeply analyze entire documents, run autonomous tasks, and deliver precise, research-grade answers) : https://www.kimi.com/en/
-  
+Kimi K2 Thinking (Open Source, good bench marks) : https://huggingface.co/moonshotai/Kimi-K2-Thinking
+  https://moonshotai.github.io/Kimi-K2/thinking.html
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
