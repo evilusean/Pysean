@@ -1,0 +1,162 @@
+# HDMI Audio Fix for Omarchy (Arch-based) – Full Recovery Steps
+*(Tested & Confirmed Working – November 10, 2025)*
+
+> **Problem**: After reboot, HDMI audio is **silent** even though the device appears in `wpctl status`.  
+> **Root Cause**:  
+> 1. **ALSA sees HDMI** (`card 2`)  
+> 2. **PipeWire creates sinks**  
+> 3. **ALSA HDMI output is muted by default** (SOF/AVS power-saving)  
+> 4. **PulseAudio default sink not set**  
+
+---
+
+## FULL RECOVERY STEPS (Run in Order)
+
+> **Do this *exactly* if HDMI audio breaks again.**
+
+---
+
+### **STEP 1: Confirm HDMI is Detected (ALSA Level)**
+
+```bash
+aplay -l | grep -i hdmi
+Expected Output:
+textcard 2: HDMI [AVS HDMI], device 0: HDMI1 (*) []
+card 2: HDMI [AVS HDMI], device 1: HDMI2 (*) []
+card 2: HDMI [AVS HDMI], device 2: HDMI3 (*) []
+If not → hardware/cable issue. Stop here.
+
+STEP 2: Unmute HDMI in ALSA (THE FIX)
+bash# Open alsamixer for HDMI card
+alsamixer -c 2
+
+Arrow keys → find HDMI1, HDMI2, HDMI3, or IEC958
+If MM → press M → becomes OO (unmuted)
+Press ↑ to raise volume to ~80%
+Press Esc to exit
+
+OR via command (one-liner):
+bashamixer -c 2 scontrols | grep -i hdmi | head -1 | cut -d"'" -f2 | xargs -I {} amixer -c 2 set "{}" 80% unmute
+amixer -c 2 scontrols | grep -i switch | head -1 | cut -d"'" -f2 | xargs -I {} amixer -c 2 set "{}" on
+
+STEP 3: Save ALSA State (Survive Reboot)
+bashsudo alsactl store
+
+STEP 4: Create PipeWire HDMI Sinks (If Missing)
+bashmkdir -p ~/.config/pipewire/pipewire.conf.d
+nano ~/.config/pipewire/pipewire.conf.d/99-hdmi-sinks.conf
+PASTE THIS:
+confcontext.objects = [
+  { factory = adapter
+    args = {
+      factory.name     = api.alsa.pcm.sink
+      node.name        = "HDMI1_Output"
+      node.description = "HDMI 1 (TV/Monitor)"
+      media.class      = "Audio/Sink"
+      api.alsa.path    = "hw:2,0"
+      api.alsa.use-acp = true
+      audio.channels   = 2
+      audio.format     = "S16LE"
+      audio.rate       = 48000
+      node.pause-on-idle = false
+    }
+  }
+  { factory = adapter
+    args = {
+      factory.name     = api.alsa.pcm.sink
+      node.name        = "HDMI2_Output"
+      node.description = "HDMI 2"
+      media.class      = "Audio/Sink"
+      api.alsa.path    = "hw:2,1"
+      api.alsa.use-acp = true
+      audio.channels   = 2
+      audio.format     = "S16LE"
+      audio.rate       = 48000
+      node.pause-on-idle = false
+    }
+  }
+  { factory = adapter
+    args = {
+      factory.name     = api.alsa.pcm.sink
+      node.name        = "HDMI3_Output"
+      node.description = "HDMI 3"
+      media.class      = "Audio/Sink"
+      api.alsa.path    = "hw:2,2"
+      api.alsa.use-acp = true
+      audio.channels   = 2
+      audio.format     = "S16LE"
+      audio.rate       = 48000
+      node.pause-on-idle = false
+    }
+  }
+]
+
+STEP 5: Set PulseAudio Default Sink (Apps Use This)
+bashmkdir -p ~/.config/pipewire/pipewire-pulse.conf.d
+nano ~/.config/pipewire/pipewire-pulse.conf.d/99-default-sink.conf
+PASTE THIS:
+confpulse.properties = {
+    pulse.default-sink = "HDMI1_Output"
+}
+
+STEP 6: Disable WirePlumber Auto-Switch (Prevents Override)
+bashmkdir -p ~/.config/wireplumber/wireplumber.conf.d
+nano ~/.config/wireplumber/wireplumber.conf.d/50-disable-autoswitch.conf
+PASTE THIS:
+confpolicy.default-profile = "off"
+
+STEP 7: Restart Audio Services
+bashsystemctl --user restart pipewire pipewire-pulse wireplumber
+Wait 5 seconds.
+
+STEP 8: Test
+bash# Test raw ALSA
+speaker-test -c 2 -r 48000 -D hw:2,0 -t wav
+
+# Check PipeWire
+wpctl status | grep -i hdmi
+
+# Check PulseAudio default
+pactl info | grep "Default Sink"
+Expected:
+textDefault Sink: HDMI1_Output
+Play YouTube → sound from TV
+
+STEP 9: Auto-Switch on Boot (Optional)
+bashnano ~/.config/hypr/hyprland.conf
+Add:
+confexec-once = bash -c 'sleep 8; HDMI_ID=$(wpctl status | grep -i "HDMI 1" | head -n1 | grep -o "[0-9]\+" | head -1); [ -n "$HDMI_ID" ] && wpctl set-default $HDMI_ID'
+
+QUICK RECOVERY SCRIPT (Save This)
+bashnano ~/fix-hdmi-audio.sh
+PASTE:
+bash#!/bin/bash
+echo "Fixing HDMI audio..."
+
+# Unmute HDMI
+amixer -c 2 scontrols | grep -i hdmi | head -1 | cut -d"'" -f2 | xargs -I {} amixer -c 2 set "{}" 80% unmute 2>/dev/null || true
+amixer -c 2 scontrols | grep -i switch | head -1 | cut -d"'" -f2 | xargs -I {} amixer -c 2 set "{}" on 2>/dev/null || true
+
+# Save state
+sudo alsactl store
+
+# Set PulseAudio default
+pactl set-default-sink HDMI1_Output
+
+# Restart
+systemctl --user restart pipewire pipewire-pulse wireplumber
+
+echo "HDMI audio fixed! Test with YouTube."
+bashchmod +x ~/fix-hdmi-audio.sh
+Run anytime:
+bash~/fix-hdmi-audio.sh
+
+Summary: If It Breaks Again
+
+alsamixer -c 2 → unmute HDMI
+sudo alsactl store
+pactl set-default-sink HDMI1_Output
+systemctl --user restart pipewire wireplumber
+
+Or just run:
+bash~/fix-hdmi-audio.sh
