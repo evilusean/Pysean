@@ -162,3 +162,19 @@ systemctl --user restart pipewire wireplumber
 
 Or just run:
 bash~/fix-hdmi-audio.sh
+
+## PipeWire Audio Cutout Fix (Arch Linux)
+
+This fix permanently disables the audio power-saving feature that causes the "Broken pipe" or "Device or resource busy" error on the **snd_soc_avs_hdaudio** kernel module, which manages Card 2 (often the built-in audio).
+
+### Steps:
+
+1.  **Create the configuration file** to prevent the kernel from putting the device to sleep.
+    ```bash
+    echo "options snd_soc_avs_hdaudio power_save=0" | sudo tee /etc/modprobe.d/avs_audio_powersave.conf
+    ```
+2.  **Reboot the system** for the kernel to load the new setting.
+    ```bash
+    sudo reboot
+    ```
+**Note:** If your audio hardware changes, you may need to check the module name again using `cat /proc/asound/modules` and update the file.
