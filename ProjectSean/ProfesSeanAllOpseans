@@ -319,3 +319,22 @@ Job security suggestions:
 - Electrical, communication and wet utilities. They'll pay for your training and study. Operational technology jobs like fibre optic splicing will be in demand.
 - Machine programming, automation, Autodesk etc. They're the future of manufacturing and remotely monitored/controlled infrastructure.
 - Machine interfacing with physical devices, beyond a server rack, and networking. Often a mix of hardline, line of sight (LOS), not line of sight (NLOS), and mesh nets while configuring behaviour.
+
+AI Response for my plan to go for a CNC shop dark factory - I want to use the irving model and control every step of the process (from sourcing materials, to creating packaging, to creating product, etc 
+  - I am paying myself every step of the way. Best degree for that would be Industrial Engineering, even though I had wanted to do EE because of ElectroMagneTism, I was gonna read the books anyways, might as well
+  get paid 6 figures + after I do. I could probably still make it work with an EE degree, I've got a few years before I have to worry about specializeASean, future Sean problems :
+- **Industrial vs. Electrical Engineering for a CNC Dark Factory Owner**: The best degree depends on your focus: IE trains you to be the **System Architect** focused on overall profitability and flow, 
+  while EE trains you to be the **Technical Specialist** focused on machine control and hardware reliability.
+    - **Industrial Engineering (IE) Perks - System Architect (Recommended for Owner)**:
+        - **Focus**: Optimization, efficiency, and resource management across the entire production system.
+        - **Core Skills**: **Operations Research** (simulation and optimization), **Production Planning**, **Quality Control** (Lean/Six Sigma), **Facilities Design**, and **Engineering Economics**.
+        - **Dark Factory Role**: Designs the factory **layout**, the **logistics** (AGV/AMR routes), the **scheduling algorithms**, and the **MES/ERP logic** to maximize CNC uptime and overall efficiency.
+        - **Owner Advantage**: Provides direct expertise in **cost control, profitability metrics, and strategic business planning**, which are crucial for running a vertically integrated company.
+    - **Electrical Engineering (EE) Perks - Technical Specialist**:
+        - **Focus**: The physical controls, circuits, and data network that enable automation.
+        - **Core Skills**: **Control Systems**, **PLC/CNC Programming**, **Instrumentation & Sensors (IIoT)**, **Robotics Control**, and **Digital Electronics**.
+        - **Dark Factory Role**: Designs the robust, high-speed **sensor network (IIoT)** and **communication protocols**. Can directly **program the CNCs and robots** and troubleshoot complex electrical
+  and controls hardware failures.
+        - **Owner Advantage**: Provides the ability to **diagnose and fix core automation failures** (reducing critical downtime) and control the development of proprietary machine controls in-house.
+    - **Strategic Conclusion**: For the **Owner/Operator** role, **IE** provides the most valuable skillset for strategic oversight and maximizing profitability.
+  If you choose EE, supplement it with strong coursework in engineering economics and operations management.
