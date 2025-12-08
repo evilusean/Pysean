@@ -1,4 +1,5 @@
 'alsamixer -c 2' -> press 'm' to unmute, idk why, but it always boots up on mute
+'systemctl --user restart pipewire pipewire-pulse wireplumber' # sometimes just needs to restart the daemon
 
 # HDMI Audio Fix for Omarchy (Arch-based) – Full Recovery Steps
 *(Tested & Confirmed Working – November 10, 2025)*
