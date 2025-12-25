@@ -1,0 +1,76 @@
+# Persona 5: The Phantom X — Arch Linux Fix Guide
+
+This document outlines the steps taken to resolve the "Silent Launch" and "Prefix Corruption" issues for **Persona 5: The Phantom X (P5X)** on Arch Linux with NVIDIA Hybrid Graphics.
+
+---
+
+## 🛠 The Symptoms
+* **Infinite Loading/Silent Exit:** The game appears to start in Steam but closes immediately.
+* **Log Error:** `Proton: Prefix has an invalid version?!`
+* **Wayland Warning:** `SDL_VIDEODRIVER='wayland' does not allow fallback`.
+* **Overlay Conflict:** Errors regarding `gameoverlayrenderer.so` (ELFCLASS32/64).
+
+---
+
+## 🚀 The Solution (Step-by-Step)
+
+### 1. Update GE-Proton
+Updating to the latest version of GE-Proton ensures compatibility with the game's anti-cheat and video codecs.
+* **Tool:** `ProtonUp-Qt` (Install via `yay -S protonup-qt`).
+* **Version Used:** `GE-Proton10-27` or newer.
+* **Action:** Install the latest version and **Restart Steam**.
+
+### 2. Reset the Game Prefix (Critical)
+When swapping Proton versions, the "virtual Windows drive" for the game can become corrupted. Deleting it forces Steam to rebuild a clean environment.
+* **Command:** ```bash
+  rm -rf /mnt/sdb5/SteamLibrary/steamapps/compatdata/3061570
+
+Markdown
+
+# Persona 5: The Phantom X — Arch Linux Fix Guide
+
+This document outlines the steps taken to resolve the "Silent Launch" and "Prefix Corruption" issues for **Persona 5: The Phantom X (P5X)** on Arch Linux with NVIDIA Hybrid Graphics.
+
+---
+
+## 🛠 The Symptoms
+* **Infinite Loading/Silent Exit:** The game appears to start in Steam but closes immediately.
+* **Log Error:** `Proton: Prefix has an invalid version?!`
+* **Wayland Warning:** `SDL_VIDEODRIVER='wayland' does not allow fallback`.
+* **Overlay Conflict:** Errors regarding `gameoverlayrenderer.so` (ELFCLASS32/64).
+
+---
+
+## 🚀 The Solution (Step-by-Step)
+
+### 1. Update GE-Proton
+Updating to the latest version of GE-Proton ensures compatibility with the game's anti-cheat and video codecs.
+* **Tool:** `ProtonUp-Qt` (Install via `yay -S protonup-qt`).
+* **Version Used:** `GE-Proton10-27` or newer.
+* **Action:** Install the latest version and **Restart Steam**.
+
+### 2. Reset the Game Prefix (Critical)
+When swapping Proton versions, the "virtual Windows drive" for the game can become corrupted. Deleting it forces Steam to rebuild a clean environment.
+* **Command:** ```bash
+  rm -rf /mnt/sdb5/SteamLibrary/steamapps/compatdata/3061570
+(Note: 3061570 is the Steam AppID for P5X).
+
+3. Set Final Launch Options
+These flags resolve GPU switching, Wayland windowing issues, and Steam Overlay crashes.
+
+Right-click Persona 5: The Phantom X in Steam.
+
+Select Properties > General.
+
+Paste the following into Launch Options:
+
+Plaintext
+
+prime-run LD_PRELOAD="" SDL_VIDEODRIVER=x11 %command%
+Breakdown of flags:
+
+prime-run: Forces the NVIDIA GPU (GTX 1050) instead of Intel HD 630.
+
+LD_PRELOAD="": Disables the Steam Overlay which causes crashes in P5X's launcher.
+
+SDL_VIDEODRIVER=x11: Forces the game to use Xwayland, preventing Wayland-related window mapping failures.
