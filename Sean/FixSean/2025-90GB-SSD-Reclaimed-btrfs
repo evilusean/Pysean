@@ -1,0 +1,55 @@
+# Arch Linux BTRFS Root Drive Full – Recovery Steps (December 2025)
+
+## Problem
+- Root filesystem (`/`) showed ~97 GB used out of 118 GB (`df -h /`), but `du` and `ncdu` only accounted for ~20-30 GB.
+- "Missing" ~70-90 GB turned out to be BTRFS chunk allocation overhead caused by old snapshots.
+
+## Steps Taken to Diagnose & Fix
+
+1. **Checked overall usage**
+   ```bash
+   df -h /
+
+Scanned directory sizesBashdu -sh /* | sort -hr
+ncdu ~  # (showed little in /home)
+Scanned entire root (excluding other mounts)Bashsudo pacman -S ncdu
+sudo ncdu -x /
+Checked for deleted-but-open filesBashsudo lsof +L1
+Confirmed BTRFS filesystemBashsudo btrfs fi df /
+sudo btrfs fi usage /
+Listed all BTRFS subvolumes/snapshotsBashsudo btrfs subvolume list -a /
+Revealed old snapshots in /.snapshots/ and /home/.snapshots/
+
+Installed snapper toolsBashsudo pacman -S btrfs-assistant snapper
+Deleted old snapshots via CLI (GUI failed on Wayland)Bashsudo btrfs subvolume delete /.snapshots/1/snapshot
+sudo btrfs subvolume delete /.snapshots/2/snapshot
+sudo btrfs subvolume delete /home/.snapshots/1/snapshot
+sudo btrfs subvolume delete /home/.snapshots/2/snapshot
+sudo btrfs subvolume delete /home/.snapshots/3/snapshot
+sudo btrfs filesystem sync /
+Reclaimed empty chunksBashsudo btrfs balance start -dusage=0 /
+sudo btrfs balance start -dusage=50 /  # More aggressive
+Result
+Freed ~100 GB instantly.
+df -h / now shows plenty of free space.
+
+
+Prevention – Enable Lightweight Automatic Snapshots
+
+Limit snapshot retentionBashsudo nano /etc/snapper/configs/rootAdd/replace:textTIMELINE_MIN_AGE="1800"
+TIMELINE_LIMIT_HOURLY="5"
+TIMELINE_LIMIT_DAILY="7"
+TIMELINE_LIMIT_WEEKLY="2"
+TIMELINE_LIMIT_MONTHLY="0"
+TIMELINE_LIMIT_YEARLY="0"
+NUMBER_LIMIT="10"
+Enable automatic timeline & cleanupBashsudo systemctl enable --now snapper-timeline.timer snapper-cleanup.timer
+Enable snapshots on pacman updates (pre/post)Bashsudo pacman -S snap-pac
+Manual check in futureBashsudo snapper list
+sudo btrfs fi usage /
+
+Notes
+
+BTRFS snapshots + chunk allocation can "hide" massive space until snapshots are deleted.
+With limited retention, snapshots stay tiny (few GB max).
+Always have recent backups without the 90 GB bloat again.
