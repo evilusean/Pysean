@@ -1,0 +1,43 @@
+Ran a 'sudo pacman -Syu' and one of the new packages broke my steam, here is the fix, used grok and was fixed in 15 mins, wasted hours on gemini.
+Markdown# Fixing Steam Update Freeze & GLX BadValue Error on Arch Linux (NVIDIA Pascal GTX 10-series, December 2025)
+
+## Problem
+- After `pacman -Syu`, Steam client update freezes ~60 MB in (due to failed GLX context creation).
+- `glxinfo` shows: `X Error ... BadValue ... GLXCreateNewContext`.
+- Cause: NVIDIA driver 590 series dropped support for Pascal GPUs (GTX 10xx). Mixed 580/590 packages break 32-bit GLX (needed by Steam).
+
+## Temporary Workaround (to force Steam update completion)
+```bash
+LD_PRELOAD="" LIBGL_ALWAYS_SOFTWARE=1 steam
+
+Let it run fully (do not Ctrl+C) – download continues in background despite no visible progress/UI.
+
+Permanent Fix: Switch to Legacy 580xx Driver Branch
+1. List current NVIDIA packages
+Bashpacman -Qs nvidia
+2. Remove conflicting 590-series packages
+Bashsudo pacman -Rns nvidia-open-dkms nvidia-utils nvidia-settings opencl-nvidia libxnvctrl supergfxctl nvidia-prime
+
+Ignore optional dependency warnings (ffmpeg/mpv NVENC will work again after reinstall).
+
+3. Reinstall prerequisites
+Bashsudo pacman -S dkms linux-headers base-devel
+4. Install legacy 580xx driver stack from AUR
+Bashyay -S nvidia-580xx-dkms nvidia-580xx-utils nvidia-580xx-settings lib32-nvidia-580xx-utils
+
+lib32-nvidia-580xx-utils is critical for Steam's 32-bit runtime.
+
+(Optional: Reinstall PRIME/hybrid tools)
+Bashsudo pacman -S nvidia-prime supergfxctl
+sudo systemctl enable --now supergfxd
+(Optional: OpenCL support)
+Bashyay -S opencl-nvidia-580xx lib32-opencl-nvidia-580xx
+5. Reboot
+Bashsudo reboot
+6. Verify
+Bashglxinfo | grep "OpenGL vendor"          # Should show "NVIDIA Corporation"
+prime-run glxinfo | grep "OpenGL vendor" # Confirms offload works
+nvidia-smi                               # Shows GPU + driver ~580.xx
+7. Launch Steam
+Bashsteam          # Normal launch (integrated GPU)
+prime-run steam  # Discrete NVIDIA GPU
