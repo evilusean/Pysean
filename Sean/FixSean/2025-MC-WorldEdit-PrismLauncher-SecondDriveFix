@@ -1,0 +1,68 @@
+PrismLauncher - Use for minecraft, allows you to create geometric shapes instead of placing thousands of blocks manually, also have it on second drive, so main drive doesn't lose multi gigs
+Markdown# Fixing Minecraft on Arch Linux with Prism Launcher (Full Guide)
+
+## 1. Install & Setup Prism Launcher
+```bash
+sudo pacman -Syu prismlauncher
+prismlauncher  # Launch to verify
+2. Install Java (for MC 1.17+)
+Bashsudo pacman -S jre21-openjdk-headless  # Primary
+# Optional for older MC versions:
+sudo pacman -S jre8-openjdk-headless jre17-openjdk-headless
+3. Prepare Secondary Drive (e.g., /mnt/sdb5/Minecraft)
+Bashsudo mkdir -p /mnt/sdb5/Minecraft/{instances,mods,resourcepacks,icons,java}
+sudo chown $USER:$USER /mnt/sdb5/Minecraft
+chmod -R 755 /mnt/sdb5/Minecraft
+4. Configure Prism for Secondary Drive
+
+Open Prism Launcher.
+Settings (gear icon) → Launcher tab → Folders:
+Instances Folder: /mnt/sdb5/Minecraft/instances
+Mods Folder: /mnt/sdb5/Minecraft/mods
+Resource Packs: /mnt/sdb5/Minecraft/resourcepacks
+Icons Folder: /mnt/sdb5/Minecraft/icons
+
+Java tab: Enable "Download Java automatically" or select system Java.
+OK → Restart Prism.
+
+5. Create Fabric/Quilt Instance (for WorldEdit)
+
+Add Instance:
+Loader: Fabric or Quilt.
+MC Version: e.g., 1.21.1.
+Name: e.g., "1.21.11".
+
+OK → Instance creates in /mnt/sdb5/Minecraft/instances/1.21.11.
+
+6. Install WorldEdit Mod
+
+Right-click instance → Edit → Mods tab.
+Download Mods → Search WorldEdit (EngineHub).
+Filter: Fabric/Quilt + your MC version.
+Install → Close → Launch once to verify.
+
+7. Add Old World from ZIP Backup
+Bashcd /mnt/sdb5/
+unzip "2025-12-27_12-20-22_CherrySean.zip"  # Extracts CherrySean/
+mkdir -p /mnt/sdb5/Minecraft/instances/1.21.11/minecraft/saves
+cp -r CherrySean /mnt/sdb5/Minecraft/instances/1.21.11/minecraft/saves/
+ls /mnt/sdb5/Minecraft/instances/1.21.11/minecraft/saves/CherrySean  # Verify: level.dat, region/
+8. Launch & Verify
+
+Prism → Select 1.21.11 → Launch.
+Minecraft → Singleplayer → CherrySean appears → Play.
+WorldEdit: //wand (get tool), //sel, //set stone (test).
+
+Troubleshooting
+
+No saves folder: Launch instance once (creates structure).
+Version mismatch: Match MC version to world.
+Crashes: Check latest.log; install Fabric API if missing.
+NVIDIA: prime-run prismlauncher.
+Move existing instances: rsync -avh old/path/ /mnt/sdb5/Minecraft/instances/.
+
+Notes
+
+All data on secondary drive – main SSD stays clean.
+WorldEdit works in singleplayer (full perms).
+Backup worlds: cp -r saves/YourWorld ~/backup/.
