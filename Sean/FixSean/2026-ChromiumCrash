@@ -1,0 +1,36 @@
+chromium --enable-unsafe-swiftshader
+
+1. WebGL & GPU Errors
+The most frequent error is about Automatic fallback to software WebGL. This usually happens because Chromium is having trouble talking to your graphics card or drivers.
+
+The Quick Fix: As suggested in your logs, you can run Chromium with this flag to allow the software fallback: chromium --enable-unsafe-swiftshader
+
+The Better Fix: If you want actual hardware acceleration, try forcing it (though this may be unstable depending on your drivers): chromium --ignore-gpu-blocklist --enable-gpu-rasterization --enable-zero-copy
+
+2. DEPRECATED_ENDPOINT (GCM)
+The google_apis/gcm/ errors refer to Google Cloud Messaging.
+
+This is common in open-source Chromium builds that don't have official Google API keys baked in.
+
+Fix: You can generally ignore this. If you want to stop the background syncing attempts, you can try signing out of your Google account within the browser or launching with --disable-background-networking.
+
+3. IPH_TabSearch Errors
+The "IPH" stands for In-Product Help.
+
+Chromium is trying to show you a "Help" bubble for the Tab Search feature before the browser window is fully "ready" in the code's eyes.
+
+Fix: This is a cosmetic bug in the current version of Chromium. It doesn't affect performance, but it sure does spam the console. You can disable these tips by launching with: chromium --propagate-iph-for-testing (though this is a workaround) or simply ignoring them.
+
+Clean Launch Command
+If you want to launch Chromium and suppress most of this console spam while addressing the WebGL issue, try this command:
+
+Bash
+
+chromium --enable-unsafe-swiftshader --disable-logging > /dev/null 2>&1 &
+--enable-unsafe-swiftshader: Fixes the WebGL fallback error.
+
+--disable-logging: Tells Chromium not to be so talkative.
+
+> /dev/null 2>&1: Redirects any remaining output to the "black hole" so your terminal stays clean.
+
+Would you like me to help you create an alias for your .bashrc or .zshrc so you don't have to type these flags every time?
