@@ -8,7 +8,7 @@ I want to be at the top of a mountain with a steady stream of water for power an
 create an app that can track elevation of rivers and streams and find a nice spot to buy land, I would love to live in appalachia, 
 or canada has alot of spots I can build cool shit in, step 1 is escaping the rent seeking parasites of '"them"' and fellow cantadians, 
 where, somehow, in a country with infinite landmass and resources EVERYTHING is prohibitively expensive and requires a piece of paper just to dig a hole.
-(++taxes, ++inflation, ++debt, ++laws, '"they"'/jboomers REALLY fucked over young people - less free now than medieval peasents, at least they had to feed and house their slaves) -
+(++taxes, ++inflation, ++debt, ++laws, ++immigration, ++fraud, ++credentialism, ++financialization, ++offshoring(arbitrage), ++onshoring(indians) ++'"private equity"' backed by '"central banks"', just compete with infinite people from india and a money printer(it's your fault if you can't compete against slavery). Social CON~~tr~~ACT - '"they"'/jboomers REALLY fucked over young people - less free now than medieval peasents, at least they had to feed and house their slaves) -
 Repeat after me : 'Housing. Is. Not. A. Speculative. Investment.' - There, I fixed your housing ponzi. You're welcome.
 https://www.youtube.com/watch?v=7OHCOFFUamQ # Recreating an Ancient Pump (with no moving parts) - Ram Pumps https://www.youtube.com/watch?v=xLaLpMeOyHk The Ancient City That Mastered Water  
 - https://www.youtube.com/watch?v=0Trz6NvsUQQ # 5 Best (and Worst) Places to Build a Home or Village
