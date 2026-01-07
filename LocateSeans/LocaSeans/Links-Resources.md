@@ -1,4 +1,4 @@
-I preferably would be far away from cantada and cantadians, because I don't want to spend the next however many decades of my life dealing with these treachorous idiots and cleaning up their mess. 
+I preferably would be far away from cantada and cantadians, because I don't want to spend the next however many decades of my life dealing with these treachorous idiots and cleaning up their mess, living in the fiery but mostly peaceful aftermath of their failed fabian experiement, or, at best, managed decline till they devalue the currency until we need a mediocre reset that takes decades to undo the damages of profligate ignorant *expletives*.  
 They've already stolen enough (literal decades have been stolen from me, of my best years, lost opportunity cost, and I'm gaslit about it, I still haven't received a single apology.).
 
 #CodeIdea #Cabin 
