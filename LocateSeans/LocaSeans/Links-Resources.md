@@ -27,5 +27,5 @@ Cool Stuff to build When you escape the normie cattle vax/tax maxxers - They poi
 - https://www.youtube.com/watch?v=7OHCOFFUamQ # Recreating an Ancient Pump (with no moving parts)
 - https://www.youtube.com/watch?v=xLaLpMeOyHk The Ancient City That Mastered Water  
 
-I wrote all that to explain why I'm building an app to become a hermit and live in the mountains far away from the normies, '"them"' and their BS.  
+I wrote all that to explain why I'm building an app to become a hermit and live in the mountains far away from the normies, '"them"' and their BS.  It's not me, it's you.
 
