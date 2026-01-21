@@ -417,7 +417,8 @@ Kimi K2 (256k token context window, Kimi-Researcher, deeply analyze entire docum
 Kimi K2 Thinking (Open Source, good bench marks) : https://huggingface.co/moonshotai/Kimi-K2-Thinking
   https://moonshotai.github.io/Kimi-K2/thinking.html
 Claude Code ran locally with Ollamma : 
-https://ollama.com/blog/claude
+  https://ollama.com/blog/claude
+  https://docs.ollama.com/integrations/claude-code
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
