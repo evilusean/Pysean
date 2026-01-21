@@ -416,6 +416,8 @@ GAIy-dar : https://www.theguardian.com/technology/2017/sep/07/new-artificial-int
 Kimi K2 (256k token context window, Kimi-Researcher, deeply analyze entire documents, run autonomous tasks, and deliver precise, research-grade answers) : https://www.kimi.com/en/
 Kimi K2 Thinking (Open Source, good bench marks) : https://huggingface.co/moonshotai/Kimi-K2-Thinking
   https://moonshotai.github.io/Kimi-K2/thinking.html
+Claude Code ran locally with Ollamma : 
+https://ollama.com/blog/claude
 
 Voice AI: https://beta.elevenlabs.io/
 Google: MusicLM/AudioLM
