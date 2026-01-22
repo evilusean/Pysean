@@ -105,6 +105,9 @@ ln -s ~/Games/Overwatch_ShaderCache /mnt/sdb5/SteamLibrary/steamapps/shadercache
 sudo pacman -S lutris
 select the executable, select the wine prefix(the one that 'drive_c' is in), select the wine version, and set the default graphics card
 
+- Top Left Omarchy Button -> Install -> Editor -> Cursor
+- Top Left Omarchy Button -> Install -> Editor -> VSCode
+
 - install yay packages
 yay -S github-desktop-bin --noconfirm
 yay -S anki-bin
