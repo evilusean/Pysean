@@ -103,7 +103,7 @@ ln -s ~/Games/Overwatch_ShaderCache /mnt/sdb5/SteamLibrary/steamapps/shadercache
 -reboot before re-adding games, need to get directories fixed
 
 -Get Battle.Net Working :
-yay -S protonup-qt
+yay -S protonup-qt-bin --noconfirm
 yay -S protontricks
 Launch ProtonUp-Qt: (From your applications menu or protonup-qt in terminal)
  Click "Add version".
