@@ -104,7 +104,7 @@ ln -s ~/Games/Overwatch_ShaderCache /mnt/sdb5/SteamLibrary/steamapps/shadercache
 
 -Get Battle.Net Working :
 yay -S protonup-qt-bin --noconfirm
-yay -S protontricks
+yay -S protontricks --noconfirm
 Launch ProtonUp-Qt: (From your applications menu or protonup-qt in terminal)
  Click "Add version".
  Select "GE-Proton" as the release type.
