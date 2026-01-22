@@ -90,7 +90,7 @@ sudo pacman -S lib32-vulkan-nouveau
 sudo pacman -S vulkan-tools
 sudo pacman -S lib32-gnutls
 
-
+- Top Left Omarchy Button -> Install -> Gaming -> Steam
 
 - install steam
 sudo pacman -S steam
