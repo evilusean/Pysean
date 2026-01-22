@@ -126,7 +126,7 @@ select the executable, select the wine prefix(the one that 'drive_c' is in), sel
 yay -S github-desktop-bin --noconfirm
 yay -S anki-bin --noconfirm
 yay -S librewolf-bin --noconfirm
-yay -S kiro-bin --noconfirm
+yay -S kiro-ide --noconfirm
 yay -S warp-terminal --noconfirm
 
 -install packages
