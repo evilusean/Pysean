@@ -1,5 +1,7 @@
 A few differences from Arch-Hyprland and Omarchy - 'Super' + 'Enter' = Terminal, 'Tab' + 'Space' to log in to wifi
 
+FUTURE SEAN : DO NOT USE 'sudo pacman -Syu' like you used to, use the built in omarchy updater or it will break - it automatically does pacman and yay without overwriting configs
+
 Mac Install :
 2025-October-22 : Just reinstalled it on my 2012 macbook air with an intel i5 core, couldn't update OSX past High Sierra 10.13, hopefully this gives a second life to the machine
 For mac (Will require a USB keyboard, my laptop is broken, the trick is to stop being poor and buy a wireless USB keyboard/mouse combo) 
@@ -87,6 +89,8 @@ sudo pacman -S vulkan-nouveau
 sudo pacman -S lib32-vulkan-nouveau
 sudo pacman -S vulkan-tools
 sudo pacman -S lib32-gnutls
+
+
 
 - install steam
 sudo pacman -S steam
