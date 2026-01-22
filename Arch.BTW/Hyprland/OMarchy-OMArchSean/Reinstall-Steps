@@ -102,6 +102,19 @@ ln -s ~/Games/Overwatch_ShaderCache /mnt/sdb5/SteamLibrary/steamapps/shadercache
 
 -reboot before re-adding games, need to get directories fixed
 
+-Get Battle.Net Working :
+yay -S protonup-qt
+yay -S protontricks
+Launch ProtonUp-Qt: (From your applications menu or protonup-qt in terminal)
+ Click "Add version".
+ Select "GE-Proton" as the release type.
+ Choose the latest GE-Proton version from the list (e.g., GE-Proton9-27).
+ Click "Install".
+ Close ProtonUp-Qt after installation.
+Open Steam. -> Click Games > Add a Non-Steam Game to My Library...
+'Settings' Change to GE-Proton
+Now you can run it from steam
+
 -install lutris
 sudo pacman -S lutris
 select the executable, select the wine prefix(the one that 'drive_c' is in), select the wine version, and set the default graphics card
@@ -190,19 +203,6 @@ asusctl -k #check backlight
 asusctl -k <level> #sets level
 asusctl -k high
 exec-once = asusctl -k high # add this to hyprland 'execs.conf' it will turn on the keyboard at start
-
--Get Battle.Net Working :
-yay -S protonup-qt
-yay -S protontricks
-Launch ProtonUp-Qt: (From your applications menu or protonup-qt in terminal)
- Click "Add version".
- Select "GE-Proton" as the release type.
- Choose the latest GE-Proton version from the list (e.g., GE-Proton9-27).
- Click "Install".
- Close ProtonUp-Qt after installation.
-Open Steam. -> Click Games > Add a Non-Steam Game to My Library...
-'Settings' Change to GE-Proton
-Now you can run it from steam
 
 - Update /home/archsean/.config/hypr/hypridle.conf
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/Macbook-hypridle.conf
