@@ -121,6 +121,7 @@ select the executable, select the wine prefix(the one that 'drive_c' is in), sel
 
 - Top Left Omarchy Button -> Install -> Editor -> Cursor
 - Top Left Omarchy Button -> Install -> Editor -> VSCode
+- Top Left Omarchy Button -> Install -> Development -> Python
 
 - install yay packages
 yay -S github-desktop-bin --noconfirm
