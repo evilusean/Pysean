@@ -165,6 +165,7 @@ http://localhost:8384/
 clone repos to ~/Documents/Github/<repo>
 ln -s /mnt/sdb4/Code /home/archsean/Documents/Github
 ln -s /mnt/sdb4/Code/Khan /home/archsean/Documents/Obsidian/DailyNotes/DailyNotes/School/Github-Khan
+Change github desktop to then check that symlink in `~/Documents/Github/Khan', and you can now edit in obsidian and post to github
 
 -Fix monitors 2 (get audio to work):
 sudo pacman -S alsa-utils
