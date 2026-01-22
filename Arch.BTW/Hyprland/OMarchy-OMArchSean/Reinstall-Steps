@@ -90,6 +90,7 @@ sudo pacman -S vulkan-nouveau
 sudo pacman -S lib32-vulkan-nouveau
 sudo pacman -S vulkan-tools
 sudo pacman -S lib32-gnutls
+sudo pacman -S nvidia-prime
 
 - Top Left Omarchy Button -> Install -> Gaming -> Steam
 
@@ -131,6 +132,7 @@ yay -S kiro-ide --noconfirm
 yay -S warp-terminal --noconfirm
 
 -install packages
+
 
 -install fonts
 sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts # installs A Japanese capable font
