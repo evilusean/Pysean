@@ -100,6 +100,7 @@ sudo pacman -S wine wine-mono wine-gecko winetricks
 - Move OW2 Shaders
 mkdir -p ~/Games/Overwatch_ShaderCache
 ln -s ~/Games/Overwatch_ShaderCache /mnt/sdb5/SteamLibrary/steamapps/shadercache
+Overwatch Steam Launch Options so shaders don't delete every time : __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1 __GL_SHADER_DISK_CACHE_SIZE=10737418240 %command%
 
 -reboot before re-adding games, need to get directories fixed
 
@@ -117,7 +118,6 @@ Open Steam. -> Click Games > Add a Non-Steam Game to My Library...
 Now you can run it from steam
 
 Get Arknights Endfield to work on Arch : https://dawn.wine/dawn-winery/dwproton/releases
-Overwatch Steam Launch Options so shaders don't delete every time : __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1 __GL_SHADER_DISK_CACHE_SIZE=10737418240 %command%
 
 -install lutris
 sudo pacman -S lutris
