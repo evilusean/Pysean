@@ -116,6 +116,9 @@ Open Steam. -> Click Games > Add a Non-Steam Game to My Library...
 'Settings' Change to GE-Proton
 Now you can run it from steam
 
+Get Arknights Endfield to work on Arch : https://dawn.wine/dawn-winery/dwproton/releases
+Overwatch Steam Launch Options so shaders don't delete every time : __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1 __GL_SHADER_DISK_CACHE_SIZE=10737418240 %command%
+
 -install lutris
 sudo pacman -S lutris
 select the executable, select the wine prefix(the one that 'drive_c' is in), select the wine version, and set the default graphics card
@@ -212,5 +215,3 @@ exec-once = asusctl -k high # add this to hyprland 'execs.conf' it will turn on 
 
 - Update /home/archsean/.config/hypr/hypridle.conf
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/Macbook-hypridle.conf
-
-Get Arknights Endfield to work on Arch : https://dawn.wine/dawn-winery/dwproton/releases
