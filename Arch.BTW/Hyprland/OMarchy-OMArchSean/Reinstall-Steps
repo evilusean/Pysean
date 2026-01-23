@@ -1,4 +1,4 @@
-A few differences from Arch-Hyprland and Omarchy - 'Super' + 'Enter' = Terminal, 'Tab' + 'Space' to log in to wifi, 'Ctrl' + 'X' to close a window until you change keybinds
+A few differences from Arch-Hyprland and Omarchy - 'Super' + 'Enter' = Terminal, 'Tab' + 'Space' to log in to wifi, 'Super' + 'X' to close a window until you change keybinds
 
 FUTURE SEAN : DO NOT USE 'sudo pacman -Syu' like you used to update, use the built in omarchy updater or it will break - it automatically does pacman and yay without overwriting configs
 
