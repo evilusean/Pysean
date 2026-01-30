@@ -124,6 +124,7 @@ Genshin :
 git clone https://aur.archlinux.org/an-anime-game-launcher-bin.git
 cd an-anime-game-launcher-bin
 makepkg -si
+change the launcher folder to what is installed already on the large external HDD 
 
 -install lutris
 sudo pacman -S lutris
