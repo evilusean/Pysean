@@ -120,6 +120,11 @@ Now you can run it from steam
 Get Arknights Endfield to work on Arch : https://dawn.wine/dawn-winery/dwproton/releases
 Steam Launch Options to avoid ACE Anticheat : STEAMDECK=1 SteamOS=1 prime-run %command%
 
+Genshin : 
+git clone https://aur.archlinux.org/an-anime-game-launcher-bin.git
+cd an-anime-game-launcher-bin
+makepkg -si
+
 -install lutris
 sudo pacman -S lutris
 select the executable, select the wine prefix(the one that 'drive_c' is in), select the wine version, and set the default graphics card
