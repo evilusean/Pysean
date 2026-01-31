@@ -6,6 +6,9 @@ ls #lists all files in directory
 $PATH #tell linux where to find executables
 which #finds out which binary is being used, where it is located
 ~ #home directory
+inxi -CGm # shows all your computer specs
+btop # linux task manager
+htop # linux task manager but pretty
 
 /bin #contains binaries/executables
 /sbin #contains system binaries, should only be executed by rootuser/SUDO
