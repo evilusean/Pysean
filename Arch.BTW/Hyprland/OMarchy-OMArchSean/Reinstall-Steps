@@ -119,6 +119,7 @@ Now you can run it from steam
 
 Get Arknights Endfield to work on Arch : https://dawn.wine/dawn-winery/dwproton/releases
 Steam Launch Options to avoid ACE Anticheat : STEAMDECK=1 SteamOS=1 prime-run %command%
+pkill -9 -f "Endfield|Gryphline|wine|wineserver|ACE-BASE" # if you get kicked by anticheat a background process will stay, use this line to restart
 
 Genshin : 
 git clone https://aur.archlinux.org/an-anime-game-launcher-bin.git
