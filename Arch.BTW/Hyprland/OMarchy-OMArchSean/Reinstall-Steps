@@ -176,7 +176,7 @@ http://localhost:8384/
 
 -Github Setup : (First, download the khan repo with github desktop, delete it once it is registered, then symlink it to sdb4, then symlink that to obsidian) :
 clone repos to ~/Documents/Github/<repo>
-ln -s /mnt/sdb4/Code /home/archsean/Documents/Github
+ln -s /mnt/sdb4/Code /home/archsean/Documents/GitHub
 ln -s /mnt/sdb4/Code/Khan /home/archsean/Documents/Obsidian/DailyNotes/DailyNotes/School/Github-Khan
 Change github desktop to then check that symlink in `~/Documents/Github/Khan', and you can now edit in obsidian and post to github
 
