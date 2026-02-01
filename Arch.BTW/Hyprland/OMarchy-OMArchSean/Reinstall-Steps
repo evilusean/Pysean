@@ -67,6 +67,7 @@ https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSe
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/ocr_to_clipboard_jpn.sh
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/record.sh
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/zoom.sh
+sudo chmod +x
 
 -fix monitors
 'super' + 'space' -> 'setup' -> monitors -> :
