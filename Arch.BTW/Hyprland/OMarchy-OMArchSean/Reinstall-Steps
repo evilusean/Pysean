@@ -198,6 +198,8 @@ systemctl --user restart wireplumber pipewire pipewire-pulse
 # Just did a reboot, and it worked, idk what it was, put my last like 5 commands there for future Sean, hopefully he can figure it out
 wpctl set-default 42 #change the defaults, now fiddle around with the settings in the audio mixer controller, it SHOULD be one of the HDMI's, theres 3
 https://github.com/evilusean/Pysean/blob/main/Sean/FixSean/2025-Omarchy-AudioFix
+wpctl status # get the audio outputs
+wpctl set-default 58 && speaker-test -c 2 -t wav -l 1 #test each one replace '58' with numbers from list of 'sinks' from 'wpctl status'
 
 Add all extensions to chromium :
 UBlockOrigin
