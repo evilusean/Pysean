@@ -1,0 +1,18 @@
+# Move the major files to SSD for better loading
+ - **SSD Path:** 
+ `/home/archsean/Games/CyberPunk2077/archive/pc/content/` - 
+ **HDD Path:** 
+ `/mnt/sdb4/SteamLibrary/steamapps/common/Cyberpunk 2077/archive/pc/content/` 
+ **Commands used:** 
+ #  Create SSD target 
+ mkdir -p /home/archsean/Games/CyberPunk2077/archive/pc/content/ 
+ # 2. Move high-impact files to SSD (Textures/Geometry) 
+ mv -v basegame_3_nightcity* basegame_4_appearance.archive basegame_4_gamedata.archive basegame_1_engine.archive /home/archsean/Games/CyberPunk2077/archive/pc/content/ # 3. Create Symlinks back to HDD Steam folder 
+ # Change Directory
+ cd "/mnt/sdb4/SteamLibrary/steamapps/common/Cyberpunk 2077/archive/pc/content/" 
+# Link files via symlinks
+ln -s /home/archsean/Games/CyberPunk2077/archive/pc/content/basegame_3_nightcity* . 
+ln -s /home/archsean/Games/CyberPunk2077/archive/pc/content/basegame_4_appearance.archive . 
+ln -s /home/archsean/Games/CyberPunk2077/archive/pc/content/basegame_4_gamedata.archive . 
+ln -s /home/archsean/Games/CyberPunk2077/archive/pc/content/basegame_1_engine.archive .
+ 
