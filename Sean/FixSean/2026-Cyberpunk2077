@@ -19,3 +19,9 @@ ln -s /home/archsean/Games/CyberPunk2077/archive/pc/content/basegame_1_engine.ar
 Launch Settings : '%command% --launcher-skip -skipStartScreen'
 Proton Version : GE(Glorious Eggroll)
 
+Steam  - > Settings -> General -> Language -> Japanese (game will instALL Japanese audio and language files) :
+Next - Change the menus back to English :
+- **Settings Path:** Main Menu > 3rd from bottom > 3rd icon from right. -Language (言語)  
+- **Top Dropdown (Interface / インターフェース):** Click and scroll until you find **English**. (This fixes all menus/text).
+- **Middle Dropdown (Subtitles / 字幕):** Set to **English**.
+- **Bottom Dropdown (Audio / 音声):** Keep this as **Japanese**.
