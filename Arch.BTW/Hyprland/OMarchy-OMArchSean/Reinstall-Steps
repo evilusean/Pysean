@@ -128,6 +128,9 @@ cd an-anime-game-launcher-bin
 makepkg -si
 change the launcher folder to what is installed already on the large external HDD 
 
+Cyberpunk 2077 (download, switch language, and swap files to SSD with symlinks) :
+https://github.com/evilusean/Pysean/blob/main/Sean/FixSean/2026-Cyberpunk2077
+
 -install lutris
 sudo pacman -S lutris
 select the executable, select the wine prefix(the one that 'drive_c' is in), select the wine version, and set the default graphics card
