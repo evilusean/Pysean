@@ -102,6 +102,8 @@ sudo pacman -S wine wine-mono wine-gecko winetricks
 mkdir -p ~/Games/Overwatch_ShaderCache
 ln -s ~/Games/Overwatch_ShaderCache /mnt/sdb5/SteamLibrary/steamapps/shadercache
 Overwatch Steam Launch Options so shaders don't delete every time : __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1 __GL_SHADER_DISK_CACHE_SIZE=10737418240 %command%
+Overwatch Settings -> Dynamic Render Scale -> Off 
+Render Scale -> Custom -> Reduce (50% works, I don't need it to look pretty, how a 10 year old game is lagging worse than Cyberpunk 2077 idk)
 
 -reboot before re-adding games, need to get directories fixed
 
