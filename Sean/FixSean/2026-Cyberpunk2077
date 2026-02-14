@@ -16,3 +16,6 @@ ln -s /home/archsean/Games/CyberPunk2077/archive/pc/content/basegame_4_appearanc
 ln -s /home/archsean/Games/CyberPunk2077/archive/pc/content/basegame_4_gamedata.archive . 
 ln -s /home/archsean/Games/CyberPunk2077/archive/pc/content/basegame_1_engine.archive .
  
+Launch Settings : '%command% --launcher-skip -skipStartScreen'
+Proton Version : GE(Glorious Eggroll)
+
