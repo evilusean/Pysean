@@ -149,7 +149,7 @@ yay -S kiro-ide --noconfirm
 yay -S warp-terminal --noconfirm
 
 -install packages
-
+sudo pacman -S yt-dlp ffmpeg
 
 -install fonts
 sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts # installs A Japanese capable font
