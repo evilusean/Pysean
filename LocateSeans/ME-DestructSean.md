@@ -36,17 +36,21 @@ Oh, that's too bold? There is no way they could get away with it? Covid. 86% of 
 
 **Napkin Math Analysis:**
 The US and Canada combined move from ~19% to **~26%** of the remaining global market. However, because "Rest of World" is fragmented among dozens of smaller nations, the US/Canada duo becomes the only cohesive energy superpower left.
-### Global Oil Hegemony: Post-Middle East Destruction
 
-- **Total Global Supply (Pre):** ~102.5 mb/d
-- **Total Global Supply (Post):** ~74.9 mb/d (Loss of ~27% of global energy)
+### Complete Oil Hegemony: Post-Middle East Destruction (2026)
 
-| Alliance / Block | Post-Collapse % | Key Players |
-| :--- | :--- | :--- |
-| **Americas Bloc** | **27.7%** | US, Canada, Brazil, Venezuela, Mexico |
-| **Eurasian Bloc** | **15.9%** | Russia, Kazakhstan |
-| **East Asian Bloc** | **5.7%** | China |
+- **Total Global Supply (Pre):** ~103.5 mb/d
+- **Total Global Supply (Post):** ~76.1 mb/d 
 
+| Block | Total mb/d | Share % | Status |
+| :--- | :--- | :--- | :--- |
+| **North/South America** | 28.5 | 37.5 | **Dominant.** Internal supply chain intact. |
+| **Russia & Neighbors** | 13.1 | 17.2 | **Secondary.** Sanction-heavy but operational. |
+| **Africa (OPEC-Non-GCC)** | 6.4 | 8.4 | **Volatile.** High risk of piracy/coups. |
+| **China & East Asia** | 5.4 | 7.1 | **Critical Deficit.** Not enough for survival. |
+| **All Others** | 22.7 | 29.8 | **Fragmented.** No unified pricing power. |
+
+**Strategic Takeaway:** The Americas Bloc (led by US/Canada) controls nearly **40%** of the surviving oil. The "Rest of World" is too fragmented to resist their pricing.
 **Analysis for Exit Strategy:**
 The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8% of the world's remaining active production and the 3rd largest reserves globally (mostly oil sands), the "frozen shithole" becomes the most valuable piece of real estate on the planet.
 
