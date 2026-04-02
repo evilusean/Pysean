@@ -1,9 +1,6 @@
 I thought about it for a while, with canada, america, venezuella (intentionally left uncapitalized) being net oil exporters I decided to do some napkin math
 
-If the middle east gets destroyed, that's, what? 20-30% of the worlds cheap oil supply gone for at minimum the next 10 years - decadent ME dictatorships toppled
-
-Mutually assured destruction when they start targetting eachothers infrastructure, desalination plants, that takes AT MINIMUM 10+ years to rebuild
-
+If the middle east gets destroyed, that's, what? 20-30% of the worlds cheap oil supply gone for at minimum the next 10 years - decadent ME dictatorships toppled - Mutually assured destruction when they start targetting eachothers infrastructure, desalination plants, that takes AT MINIMUM 10+ years to rebuild.
 When empires collapse, they do so from the periphery to the core, venezuella was recently captured by the us, 51st state talk, greenland, etc.
 
 Petrodollar is turning into the petroyuan, if america holds, what? like 50%ish of the worlds oil is under their thumb - If you want to buy from america use CBDC
@@ -70,4 +67,4 @@ The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8%
 #### The "Hormuz Choke" Implications
 * **The "Potash Paradox":** China produces its own Nitrogen, but it imports nearly half its Potash (mostly via sea). Without the Middle Eastern shipping lanes and Western sanctions on Belarus/Russia, China's soil hits a wall.
 * **Days of Fuel vs. Days of Food:** Japan and South Korea have massive strategic oil reserves (200+ days) because of their history with scarcity, but they cannot *eat* oil. Without imported fertilizer (NPK), their domestic production cannot feed even 30% of their populations.
-* **The Nitrogen Cliff:** Without GCC Natural Gas, global Urea production drops by nearly **30%** overnight. This is the primary driver for the "Abikyokan" (Hellish) state in SE Asia and India.
+* **The Nitrogen Cliff:** Without GCC Natural Gas, global Urea production drops by nearly **30%** overnight. This is the primary driver for the "Abikyokan" (Hellish) state in SE Asia and India. - I do find it deeply ironic that a country known for poo can't find pee(urea).
