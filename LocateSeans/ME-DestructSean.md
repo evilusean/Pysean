@@ -50,4 +50,24 @@ Oh, that's too bold? There is no way they could get away with it? Covid. 86% of 
 **Analysis for Exit Strategy:**
 The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8% of the world's remaining active production and the 3rd largest reserves globally (mostly oil sands), the "frozen shithole" becomes the most valuable piece of real estate on the planet.
 
+### Global Depletion & Agricultural Failure Matrix (Post-Hormuz/GCC Collapse)
 
+| Country | Population (2026) | Fuel Reserves (Days) | Fertilizer Status (NPK) | 2026 Planting Potential |
+| :--- | :--- | :--- | :--- | :--- |
+| **China** | 1.41B | ~90-100 | **Critical** (Potash Shortage) | **Tiered Failure.** High domestic Nitrogen, but Potash gap is 50%. |
+| **India** | 1.45B | ~60 | **Lethal Gap** (70% Urea loss) | **Total Failure.** Planting window missed for most staples. |
+| **Japan** | 122M | ~250 | **Total Dependency** (99% Import) | **Minimal.** Mechanical tillage possible, but zero yield boost. |
+| **South Korea** | 51M | ~200 | **Severe** (China/GCC Block) | **Limited.** Hydroponics prioritized; field crops failing. |
+| **Thailand** | 71M | ~45 | **Severe** (Rice export engine) | **Stagnant.** High fuel costs grounding tractors/milling. |
+| **Philippines** | 119M | ~30 (Rationing) | **Critical** (98% Import) | **Failing.** Domestic supply chain broken. |
+| **UK** | 68M | ~85 | **Moderate** (Some domestic gas) | **Partial.** 60% Capacity; transport logistics bottlenecked. |
+| **Germany** | 83M | ~150 | **Low** (Gas costs killed BASF) | **Industrial Pivot.** Fertilizer diverted to "Strategic Bio-fuels." |
+| **Australia** | 27M | ~45 | **Surplus** (Potash rich) | **High.** Net exporter; high logistics costs but soil is fed. |
+| **Indonesia** | 280M | ~40 | **High** (Coal/Gas based) | **Buffer Zone.** Can produce Nitrogen, lacks Phosphorus/Potash. |
+| **Vietnam** | 100M | ~35 | **Severe** (Import reliance) | **Critical.** Rice yields projected to drop 40% this cycle. |
+| **USA / Canada** | 385M+ | **Indefinite** | **Self-Sufficient** | **Full Capacity.** World's "Breadbasket & Bio-Fortress." |
+
+#### The "Hormuz Choke" Implications
+* **The "Potash Paradox":** China produces its own Nitrogen, but it imports nearly half its Potash (mostly via sea). Without the Middle Eastern shipping lanes and Western sanctions on Belarus/Russia, China's soil hits a wall.
+* **Days of Fuel vs. Days of Food:** Japan and South Korea have massive strategic oil reserves (200+ days) because of their history with scarcity, but they cannot *eat* oil. Without imported fertilizer (NPK), their domestic production cannot feed even 30% of their populations.
+* **The Nitrogen Cliff:** Without GCC Natural Gas, global Urea production drops by nearly **30%** overnight. This is the primary driver for the "Abikyokan" (Hellish) state in SE Asia and India.
