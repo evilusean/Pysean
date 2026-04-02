@@ -17,22 +17,25 @@ Oh, that's too bold? There is no way they could get away with it? Covid. 86% of 
   This is a continuation of General Wesley Clarks 7 countries in 5 years. Except it's been, what? like 25 years. PNAC '"neocons"' are persistant.
   Saving my napkin math of the potential new world (dis)order here for posterity, numbers were gotten from AI, so it might be a hallucinateSean :
   
-### Oil Production Data: Hypothetical GCC Collapse (2026 Projections)
+### Oil Production Data: Total Middle East Infrastructure Collapse (2026)
 
 - **Total Global Production (Pre):** ~102.5 mb/d
-- **Total Global Production (Post):** ~83.5 mb/d
+- **Total Global Production (Post):** ~75.6 mb/d
+- **Total Supply Loss:** 26.9 mb/d (GCC + Iran + Iraq)
 
 | Nation/Region | Before % | After % | Delta (%) |
 | :--- | :--- | :--- | :--- |
-| **United States** | 13.3 | 16.3 | +3.0 |
-| **Canada** | 5.9 | 7.2 | +1.3 |
-| **Russia** | 9.4 | 11.5 | +2.1 |
+| **United States** | 13.3 | 18.0 | +4.7 |
+| **Canada** | 5.9 | 7.9 | +2.0 |
+| **Russia** | 9.4 | 12.7 | +3.3 |
 | **GCC (Destroyed)** | 18.5 | 0.0 | -18.5 |
-| **Iraq** | 4.3 | 5.3 | +1.0 |
-| **Iran** | 3.2 | 4.0 | +0.8 |
-| **Venezuela** | 1.1 | 1.3 | +0.2 |
-| **Rest of World** | 44.4 | 54.5 | +10.1 |
+| **Iraq (Destroyed)** | 4.3 | 0.0 | -4.3 |
+| **Iran (Destroyed)** | 3.2 | 0.0 | -3.2 |
+| **Venezuela** | 1.1 | 1.5 | +0.4 |
+| **Rest of World** | 44.3 | 59.9 | +15.6 |
 
+**Napkin Math Analysis:**
+The US and Canada combined move from ~19% to **~26%** of the remaining global market. However, because "Rest of World" is fragmented among dozens of smaller nations, the US/Canada duo becomes the only cohesive energy superpower left.
 ### Global Oil Hegemony: Post-Middle East Destruction
 
 - **Total Global Supply (Pre):** ~102.5 mb/d
