@@ -56,22 +56,27 @@ The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8%
 
 ### Global Depletion & Agricultural Failure Matrix (Post-Hormuz/GCC Collapse)
 
-| Country | Population (2026) | Fuel Reserves (Days) | Fertilizer Status (NPK) | 2026 Planting Potential |
+| Country / Region | Population (2026) | Fuel Reserves (Days) | Fertilizer Status (NPK) | 2026 Planting Potential |
 | :--- | :--- | :--- | :--- | :--- |
-| **China** | 1.41B | ~90-100 | **Critical** (Potash Shortage) | **Tiered Failure.** High domestic Nitrogen, but Potash gap is 50%. |
-| **India** | 1.45B | ~60 | **Lethal Gap** (70% Urea loss) | **Total Failure.** Planting window missed for most staples. |
-| **Japan** | 122M | ~250 | **Total Dependency** (99% Import) | **Minimal.** Mechanical tillage possible, but zero yield boost. |
-| **South Korea** | 51M | ~200 | **Severe** (China/GCC Block) | **Limited.** Hydroponics prioritized; field crops failing. |
-| **Thailand** | 71M | ~45 | **Severe** (Rice export engine) | **Stagnant.** High fuel costs grounding tractors/milling. |
+| **USA / Canada** | 385M+ | **Indefinite** | **Self-Sufficient** | **Full Capacity.** Primary global exporter. |
+| **China** | 1.41B | ~90-100 | **Critical** (50% Potash Gap) | **Tiered Failure.** Soil exhaustion imminent. |
+| **India** | 1.45B | ~60 | **Lethal** (70% Urea loss) | **Total Failure.** Planting window missed. |
+| **Egypt** | 117M | ~60 | **Surplus** (Urea/Nitrogen) | **Lethal Paradox.** Can't grow enough wheat. |
+| **Nigeria** | 230M | **Indefinite** | **Self-Sufficient** (Dangote) | **High.** Regional food/energy hegemon. |
+| **Morocco** | 38M | ~45 | **Global Titan** (Phosphate) | **Secure.** Controls 70% of world's P. |
+| **Japan** | 122M | ~250 | **Total Dependency** | **Minimal.** Mechanical tillage only. |
+| **South Korea** | 51M | ~200 | **Severe** | **Limited.** Hydroponic/Greenhouse only. |
+| **UK** | 68M | ~85 | **Moderate** | **Partial.** 60% capacity; logicistics issues. |
+| **Germany** | 83M | ~150 | **Low** (Industrial Halt) | **Failing.** Fertilizer diverted to industry. |
 | **Philippines** | 119M | ~30 (Rationing) | **Critical** (98% Import) | **Failing.** Domestic supply chain broken. |
-| **UK** | 68M | ~85 | **Moderate** (Some domestic gas) | **Partial.** 60% Capacity; transport logistics bottlenecked. |
-| **Germany** | 83M | ~150 | **Low** (Gas costs killed BASF) | **Industrial Pivot.** Fertilizer diverted to "Strategic Bio-fuels." |
-| **Australia** | 27M | ~45 | **Surplus** (Potash rich) | **High.** Net exporter; high logistics costs but soil is fed. |
-| **Indonesia** | 280M | ~40 | **High** (Coal/Gas based) | **Buffer Zone.** Can produce Nitrogen, lacks Phosphorus/Potash. |
-| **Vietnam** | 100M | ~35 | **Severe** (Import reliance) | **Critical.** Rice yields projected to drop 40% this cycle. |
-| **USA / Canada** | 385M+ | **Indefinite** | **Self-Sufficient** | **Full Capacity.** World's "Breadbasket & Bio-Fortress." |
+| **Vietnam** | 100M | ~35 | **Severe** | **Critical.** Rice yields projected -40%. |
+| **Thailand** | 71M | ~45 | **Severe** | **Stagnant.** High fuel costs grounding fleets. |
+| **Ethiopia** | 132M | ~20 | **Critical** | **Famine Risk.** Zero NPK or fuel access. |
+| **South Africa** | 61M | ~60 | **Severe** | **Stagnant.** Power/Port failures. |
+| **Indonesia** | 280M | ~40 | **High** (Gas-based N) | **Buffer Zone.** Lacks P and K minerals. |
 
 #### The "Hormuz Choke" Implications
 * **The "Potash Paradox":** China produces its own Nitrogen, but it imports nearly half its Potash (mostly via sea). Without the Middle Eastern shipping lanes and Western sanctions on Belarus/Russia, China's soil hits a wall.
 * **Days of Fuel vs. Days of Food:** Japan and South Korea have massive strategic oil reserves (200+ days) because of their history with scarcity, but they cannot *eat* oil. Without imported fertilizer (NPK), their domestic production cannot feed even 30% of their populations.
 * **The Nitrogen Cliff:** Without GCC Natural Gas, global Urea production drops by nearly **30%** overnight. This is the primary driver for the "Abikyokan" (Hellish) state in SE Asia and India. - I do find it deeply ironic that a country known for poo can't find pee(urea).
+* **The "Looming Bread Riot":** Egypt is a massive exporter of Nitrogen fertilizer but imports nearly all its calories. This makes them a high-value target for "food-for-fuel" trades with the Americas.
