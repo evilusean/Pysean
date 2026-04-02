@@ -1,12 +1,18 @@
 I thought about it for a while, with canada, america, venezuella (intentionally left uncapitalized) being net oil exporters I decided to do some napkin math
+
 If the middle east gets destroyed, that's, what? 20-30% of the worlds cheap oil supply gone for at minimum the next 10 years - decadent ME dictatorships toppled
+
 Mutually assured destruction when they start targetting eachothers infrastructure, desalination plants, that takes AT MINIMUM 10+ years to rebuild
-when empires collapse, they do so from the periphery to the core, venezuella was recently captured by the us, 51st state talk, greenland, etc.
+
+When empires collapse, they do so from the periphery to the core, venezuella was recently captured by the us, 51st state talk, greenland, etc.
+
 Petrodollar is turning into the petroyuan, if america holds, what? like 50%ish of the worlds oil is under their thumb - If you want to buy from america use CBDC
   and the GCC destroy eachother, America is effectively the largest producer and bigger than OPEC now. 
+
 Remember the GENIUS ACT + stable coins?(I AM A STABLE GENIUS) Another layer of abstraction on the dying dollar will not fix the underlying issues
 But it will allow the us to continue it's 'Exorbitant Privilege'(Coined by Charles de Gaulle) and print money forcing others to take it to transact for oil
   and allowing the us to continue creating debt in perpetuity and spending it on creating a panopticon slave state that watches everything you buy, say, and do
+
 Oh, that's too bold? There is no way they could get away with it? Covid. 86% of you will poison kids if the TV tells them to. They are trying to do the exact
   same thing, only this time, with food and fuel shortages, it looks like austrailia is going to revert back into a prison island. It's all dependant on fragile
   infrastructure that can be taken down with a 20$k shahed drone. It's never '"the bankers"' for your life being worse by every metric for decades - It's
@@ -30,6 +36,18 @@ Oh, that's too bold? There is no way they could get away with it? Covid. 86% of 
 | **Venezuela** | 1.1 | 1.3 | +0.2 |
 | **Rest of World** | 44.4 | 54.5 | +10.1 |
 
+### Global Oil Hegemony: Post-Middle East Destruction
 
+- **Total Global Supply (Pre):** ~102.5 mb/d
+- **Total Global Supply (Post):** ~74.9 mb/d (Loss of ~27% of global energy)
+
+| Alliance / Block | Post-Collapse % | Key Players |
+| :--- | :--- | :--- |
+| **Americas Bloc** | **27.7%** | US, Canada, Brazil, Venezuela, Mexico |
+| **Eurasian Bloc** | **15.9%** | Russia, Kazakhstan |
+| **East Asian Bloc** | **5.7%** | China |
+
+**Analysis for Exit Strategy:**
+The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8% of the world's remaining active production and the 3rd largest reserves globally (mostly oil sands), the "frozen shithole" becomes the most valuable piece of real estate on the planet.
 
 
