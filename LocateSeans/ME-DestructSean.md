@@ -59,6 +59,7 @@ The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8%
 | Country / Region | Population (2026) | Fuel Reserves (Days) | Fertilizer Status (NPK) | 2026 Planting Potential |
 | :--- | :--- | :--- | :--- | :--- |
 | **USA / Canada** | 385M+ | **Indefinite** | **Self-Sufficient** | **Full Capacity.** Primary global exporter. |
+| **Australia** | 27M | **~28 (Diesel) / 38 (Petrol)** | **Lethal Dependency** | **Collapse.** Winter crop sowing (Wheat/Barley) missed due to diesel dry-out. |
 | **China** | 1.41B | ~90-100 | **Critical** (50% Potash Gap) | **Tiered Failure.** Soil exhaustion imminent. |
 | **India** | 1.45B | ~60 | **Lethal** (70% Urea loss) | **Total Failure.** Planting window missed. |
 | **Egypt** | 117M | ~60 | **Surplus** (Urea/Nitrogen) | **Lethal Paradox.** Can't grow enough wheat. |
@@ -66,7 +67,7 @@ The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8%
 | **Morocco** | 38M | ~45 | **Global Titan** (Phosphate) | **Secure.** Controls 70% of world's P. |
 | **Japan** | 122M | ~250 | **Total Dependency** | **Minimal.** Mechanical tillage only. |
 | **South Korea** | 51M | ~200 | **Severe** | **Limited.** Hydroponic/Greenhouse only. |
-| **UK** | 68M | ~85 | **Moderate** | **Partial.** 60% capacity; logicistics issues. |
+| **UK** | 68M | ~85 | **Moderate** | **Partial.** 60% capacity; logistics issues. |
 | **Germany** | 83M | ~150 | **Low** (Industrial Halt) | **Failing.** Fertilizer diverted to industry. |
 | **Philippines** | 119M | ~30 (Rationing) | **Critical** (98% Import) | **Failing.** Domestic supply chain broken. |
 | **Vietnam** | 100M | ~35 | **Severe** | **Critical.** Rice yields projected -40%. |
