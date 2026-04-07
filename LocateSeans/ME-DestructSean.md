@@ -133,3 +133,4 @@ With the Malacca-Hormuz corridor dead, the "Global Factory" in East Asia is effe
 * **The Nitrogen Cliff:** Without GCC Natural Gas, global Urea production drops by nearly **30%** overnight. This is the primary driver for the "Abikyokan" (Hellish) state in SE Asia and India. - I do find it deeply ironic that a country known for poo can't find pee(urea).
 * **The "Looming Bread Riot":** Egypt is a massive exporter of Nitrogen fertilizer but imports nearly all its calories. This makes them a high-value target for "food-for-fuel" trades with the Americas.
 * **Austrailia Oil Refineries :** Before 2020, straya had 7 oil refineries, after covid, it now has 2, at what point does incompetence become malicious? 
+* **Covid Vibes :** '"short term pain for long term gain"' vs '"just 2 weeks to flatten the curve"' - normies are already being primed with the cliches - *Covid 2 : Electric Boogaloo* - This time with food and fuel shortages - Energy lockdowns 
