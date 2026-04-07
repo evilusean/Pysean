@@ -17,7 +17,7 @@ Oh, that's too bold? There is no way they could get away with it? Covid. 86% of 
   This is a continuation of General Wesley Clarks 7 countries in 5 years. Except it's been, what? like 25 years. PNAC '"neocons"' are persistant.
   Saving my napkin math of the potential new world (dis)order here for posterity, numbers were gotten from AI, so it might be a hallucinateSean :
   
-### Oil Production Data: Total Middle East Infrastructure Collapse (2026)
+### Oil Production Data: Total Middle East Infrastructure Collapse (2026) (Just Hormuz, missing Malacca Data)
 
 - **Total Global Production (Pre):** ~102.5 mb/d
 - **Total Global Production (Post):** ~75.6 mb/d
@@ -37,7 +37,7 @@ Oh, that's too bold? There is no way they could get away with it? Covid. 86% of 
 **Napkin Math Analysis:**
 The US and Canada combined move from ~19% to **~26%** of the remaining global market. However, because "Rest of World" is fragmented among dozens of smaller nations, the US/Canada duo becomes the only cohesive energy superpower left.
 
-### Complete Oil Hegemony: Post-Middle East Destruction (2026)
+### Complete Oil Hegemony: Post-Middle East Destruction (2026) (Just Hormuz, missing Malacca Data)
 
 - **Total Global Supply (Pre):** ~103.5 mb/d
 - **Total Global Supply (Post):** ~76.1 mb/d 
@@ -54,9 +54,9 @@ The US and Canada combined move from ~19% to **~26%** of the remaining global ma
 **Analysis for Exit Strategy:**
 The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8% of the world's remaining active production and the 3rd largest reserves globally (mostly oil sands), the "frozen shithole" becomes the most valuable piece of real estate on the planet.
 
-### The Strait of Malacca Asphyxiation: 2026 Transit Collapse
+## The Strait of Malacca Asphyxiation: 2026 Transit Collapse
 
-#### Asset: The Malacca Choke (Iranian-Houthi Influence)
+### Asset: The Malacca Choke (Iranian-Houthi Influence)
 
 - **Total Energy Transit (Pre):** ~23.2 mb/d Crude & 9.2 Bcf/d LNG
 - **Primary Tech Vector:** Iranian Shahed-series / Soumar Cruise Missiles
