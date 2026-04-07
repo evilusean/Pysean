@@ -56,7 +56,7 @@ The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8%
 
 ### The Strait of Malacca Asphyxiation: 2026 Transit Collapse
 
-### Asset: The Malacca Choke (Iranian-Houthi Influence)
+#### Asset: The Malacca Choke (Iranian-Houthi Influence)
 
 - **Total Energy Transit (Pre):** ~23.2 mb/d Crude & 9.2 Bcf/d LNG
 - **Primary Tech Vector:** Iranian Shahed-series / Soumar Cruise Missiles
@@ -86,7 +86,21 @@ The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8%
 **Analysis for Exit Strategy:**
 With the Malacca-Hormuz corridor dead, the "Global Factory" in East Asia is effectively bricked. China's **80% dependency** on this single 1.5-mile chink in the armor (the Phillips Channel) has been its undoing. This triggers a permanent "East-to-West" power shift: as the Asian manufacturing hubs starve for nitrogen and oil, the "Americas Bloc" (Canada/USA) is the only region capable of both powering its industry and feeding its people. Canada’s position as a resource-safe "Bunker State" is now undisputed.
 
-### Global Depletion & Agricultural Failure Matrix (Post-Hormuz/GCC Collapse)
+### Combined Impact: Hormuz + Malacca Strategic Blackout (2026)
+
+- **Total Oil Lost:** ~34.1 mb/d (Combined Transit)
+- **Total LNG Lost:** ~20-25% of Global Supply (Primarily Qatari/Emirati)
+- **Total Fertilizer Lost:** ~50% of Global Seaborne Urea & ~44% of Sulphur Feedstock
+
+| Resource | Total Volume Lost | % Global Trade | Primary Victim(s) |
+| :--- | :--- | :--- | :--- |
+| **Crude Oil** | 34.1 million b/d | **~42.0%** | **China, Japan, S. Korea.** Total industrial paralysis. |
+| **LNG (Gas)** | 112 Billion m³ | **~20.0%** | **Pakistan (99%), Bangladesh (72%), India.** Power grid death. |
+| **Nitrogen (Urea)** | 25M+ Tonnes/yr | **~46.0%** | **India, Brazil, SE Asian Rice Belt.** Mass crop failure. |
+| **Sulphur** | 1.8M Tonnes/mo | **~50.0%** | **Morocco, China, Indonesia.** Phosphate production halt. |
+| **LPG (Cooking)** | 90% of S. Asia Supply | **N/A** | **India/Pakistan.** 500M+ people lose cooking fuel. |
+
+### Global Depletion & Agricultural Failure Matrix (Post-Hormuz/GCC Collapse - I haven't run the calcs for Strait of Malacca on everything after this - this is JUST the strait of hormuz fallout)
 
 | Country / Region | Population (2026) | Fuel Reserves (Days) | Fertilizer Status (NPK) | 2026 Planting Potential |
 | :--- | :--- | :--- | :--- | :--- |
