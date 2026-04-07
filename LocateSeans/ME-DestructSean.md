@@ -54,6 +54,38 @@ The US and Canada combined move from ~19% to **~26%** of the remaining global ma
 **Analysis for Exit Strategy:**
 The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8% of the world's remaining active production and the 3rd largest reserves globally (mostly oil sands), the "frozen shithole" becomes the most valuable piece of real estate on the planet.
 
+### The Strait of Malacca Asphyxiation: 2026 Transit Collapse
+
+### Asset: The Malacca Choke (Iranian-Houthi Influence)
+
+- **Total Energy Transit (Pre):** ~23.2 mb/d Crude & 9.2 Bcf/d LNG
+- **Primary Tech Vector:** Iranian Shahed-series / Soumar Cruise Missiles
+
+| Resource | Annual Volume | Strategic Role | Loss Impact |
+| :--- | :--- | :--- | :--- |
+| **Crude Oil** | 8.5 Billion Barrels | Powering 80% of China/Japan | **Total.** Grid failure in 30-90 days. |
+| **LNG (Gas)** | 45M Tonnes | Industrial heating/Electricity | **Critical.** "Dark Factory" shutdowns. |
+| **Urea/Nitrogen** | 22M Tonnes | Primary rice fertilizer (Asia) | **Famine.** -40% crop yields in SE Asia. |
+| **Iron Ore** | 250M Tonnes | Steel production (Australia -> China)| **Systemic.** Global construction halt. |
+| **Palm Oil** | 40M Tonnes | Global food/Industrial feedstock | **Shortage.** 60% of world supply stalled. |
+
+**Houthi/Iranian Closure Capability:**
+- **The 'Bypass' Threat**: Using the **Soumar-3** cruise missile (range 2,500km–3,000km) and **Shahed-149** (Gaza) drones, Iranian-backed assets in the Indian Ocean can now strike the western entrance of the Malacca Strait from mobile sea platforms or "Ghost Ships".
+- **Kinetic Interdiction**: Even without "closing" the water, a single Houthi-directed strike on an Ultra Large Crude Carrier (ULCC) in the 1.5-mile Phillips Channel creates a "Suez-style" physical blockage that takes months to clear.
+
+| Sector | Volume (mb/d) | % Loss | Status |
+| :--- | :--- | :--- | :--- |
+| **Middle East Crude** | 13.9 | **-60.0** | **Severed.** Saudi/UAE/Iraq flows stopped at Hormuz. |
+| **Nitrogen (Urea)** | 22M T/yr | **-46.0** | **Empty.** Gulf-sourced Urea transit has ceased. |
+| **Sulphur/Phosphate** | 1.8M T/mo | **-50.0** | **Fractured.** Critical for Asian/Australian NPK plants. |
+| **LNG (Gas)** | 9.2 Bcf/d | **-25.0** | **Critical.** Power grid failures imminent in Japan/SE Asia. |
+| **Russian/Shadow Crude**| 1.2 | **+5.1** | **Diversion.** Minor uptick in "Grey Market" transit. |
+
+**Strategic Takeaway:** The Malacca Strait has transitioned from the world's busiest "Lifeline" to a "Ghost Lane." China and the "Tiger Economies" of SE Asia have lost **over 60%** of their primary energy and fertilizer inputs.
+
+**Analysis for Exit Strategy:**
+With the Malacca-Hormuz corridor dead, the "Global Factory" in East Asia is effectively bricked. China's **80% dependency** on this single 1.5-mile chink in the armor (the Phillips Channel) has been its undoing. This triggers a permanent "East-to-West" power shift: as the Asian manufacturing hubs starve for nitrogen and oil, the "Americas Bloc" (Canada/USA) is the only region capable of both powering its industry and feeding its people. Canada’s position as a resource-safe "Bunker State" is now undisputed.
+
 ### Global Depletion & Agricultural Failure Matrix (Post-Hormuz/GCC Collapse)
 
 | Country / Region | Population (2026) | Fuel Reserves (Days) | Fertilizer Status (NPK) | 2026 Planting Potential |
