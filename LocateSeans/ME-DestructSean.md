@@ -58,23 +58,28 @@ The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8%
 
 | Country / Region | Population (2026) | Fuel Reserves (Days) | Fertilizer Status (NPK) | 2026 Planting Potential |
 | :--- | :--- | :--- | :--- | :--- |
-| **USA / Canada** | 385M+ | **Indefinite** | **Self-Sufficient** | **Full Capacity.** Primary global exporter. |
+| **USA / Canada** | 385M+ | **Indefinite** | **Self-Sufficient** | **Full Capacity.** Primary global exporter; SPR remains stable. |
 | **Australia** | 27M | **~28 (Diesel) / 38 (Petrol)** | **Lethal Dependency** | **Collapse.** Winter crop sowing (Wheat/Barley) missed due to diesel dry-out. |
-| **China** | 1.41B | ~90-100 | **Critical** (50% Potash Gap) | **Tiered Failure.** Soil exhaustion imminent. |
-| **India** | 1.45B | ~60 | **Lethal** (70% Urea loss) | **Total Failure.** Planting window missed. |
-| **Egypt** | 117M | ~60 | **Surplus** (Urea/Nitrogen) | **Lethal Paradox.** Can't grow enough wheat. |
-| **Nigeria** | 230M | **Indefinite** | **Self-Sufficient** (Dangote) | **High.** Regional food/energy hegemon. |
-| **Morocco** | 38M | ~45 | **Global Titan** (Phosphate) | **Secure.** Controls 70% of world's P. |
-| **Japan** | 122M | ~250 | **Total Dependency** | **Minimal.** Mechanical tillage only. |
-| **South Korea** | 51M | ~200 | **Severe** | **Limited.** Hydroponic/Greenhouse only. |
-| **UK** | 68M | ~85 | **Moderate** | **Partial.** 60% capacity; logistics issues. |
-| **Germany** | 83M | ~150 | **Low** (Industrial Halt) | **Failing.** Fertilizer diverted to industry. |
-| **Philippines** | 119M | ~30 (Rationing) | **Critical** (98% Import) | **Failing.** Domestic supply chain broken. |
-| **Vietnam** | 100M | ~35 | **Severe** | **Critical.** Rice yields projected -40%. |
-| **Thailand** | 71M | ~45 | **Severe** | **Stagnant.** High fuel costs grounding fleets. |
-| **Ethiopia** | 132M | ~20 | **Critical** | **Famine Risk.** Zero NPK or fuel access. |
-| **South Africa** | 61M | ~60 | **Severe** | **Stagnant.** Power/Port failures. |
-| **Indonesia** | 280M | ~40 | **High** (Gas-based N) | **Buffer Zone.** Lacks P and K minerals. |
+| **Bangladesh** | 175M | **<10 (Diesel) / ~14 (Crude)** | **Critical** (Gas Shortage) | **Catastrophic.** State fertilizer plants shut down; Boro rice crop at risk. |
+| **Pakistan** | 245M | **~15-20** | **Severe** (NPK Import Gap) | **Failing.** Rapid population growth vs. declining oilseed/cotton yields. |
+| **China** | 1.41B | ~90-100 | **Critical** (50% Potash Gap) | **Tiered Failure.** Soil exhaustion imminent; prioritizing industry. |
+| **India** | 1.45B | ~60 | **Lethal** (70% Urea loss) | **Total Failure.** Critical planting window for staple grains missed. |
+| **Egypt** | 117M | ~60 | **Surplus** (Urea/Nitrogen) | **Lethal Paradox.** Can't ship fertilizer; can't import wheat. |
+| **Nigeria** | 230M | **Indefinite** | **Self-Sufficient** (Dangote) | **High.** Regional food/energy hegemon; exporting to West Africa. |
+| **Morocco** | 38M | ~45 | **Global Titan** (Phosphate) | **Secure.** Controls 70% of world's P; massive geopolitical leverage. |
+| **Japan** | 122M | ~250 | **Total Dependency** | **Minimal.** Mechanical tillage only; fuel reserves high but NPK zero. |
+| **South Korea** | 51M | ~200 | **Severe** | **Limited.** Hydroponic/Greenhouse only; energy-intensive. |
+| **UK** | 68M | ~85 | **Moderate** | **Partial.** 60% capacity; high logistics friction in North Sea. |
+| **Germany** | 83M | ~150 | **Low** (Industrial Halt) | **Failing.** NPK diverted to maintain chemical/industrial lines. |
+| **Philippines** | 119M | ~30 (Rationing) | **Critical** (98% Import) | **Failing.** Island-to-island supply chain essentially severed. |
+| **Vietnam** | 100M | ~35 | **Severe** | **Critical.** Rice export ban in effect; yields projected -40%. |
+| **Thailand** | 71M | ~45 | **Severe** | **Stagnant.** "Worst energy crisis in history"; diesel prices trebled. |
+| **Argentina** | 47M | **~40** | **Severe** (NPK Shortage) | **Dual Shock.** High yields but farmers priced out of fuel/NPK. |
+| **Yemen** | 35M | **<7** | **Non-Existent** | **Famine.** 18M+ facing catastrophic hunger; total logistics death. |
+| **Sudan** | 50M | **Critical** | **Non-Existent** | **Total Collapse.** Civil strife compounded by zero NPK access. |
+| **Ethiopia** | 132M | ~20 | **Critical** | **Famine Risk.** Zero NPK or fuel access; transport grid dead. |
+| **South Africa** | 61M | ~60 | **Severe** | **Stagnant.** Power/Port failures; fertilizer imports stalled. |
+| **Indonesia** | 280M | ~40 | **High** (Gas-based N) | **Buffer Zone.** Lacks P and K; rice surplus provides 3-month lead. |
 
 #### The "Hormuz Choke" Implications
 * **The "Potash Paradox":** China produces its own Nitrogen, but it imports nearly half its Potash (mostly via sea). Without the Middle Eastern shipping lanes and Western sanctions on Belarus/Russia, China's soil hits a wall.
