@@ -17,7 +17,7 @@ Oh, that's too bold? There is no way they could get away with it? Covid. 86% of 
   This is a continuation of General Wesley Clarks 7 countries in 5 years. Except it's been, what? like 25 years. PNAC '"neocons"' are persistant.
   Saving my napkin math of the potential new world (dis)order here for posterity, numbers were gotten from AI, so it might be a hallucinateSean :
   
-### Oil Production Data: Total Middle East Infrastructure Collapse (2026) (Just Hormuz, missing Malacca Data)
+### Oil Production Data: Total Middle East Infrastructure Collapse (2026) (Just Hormuz, missing Bab el-Mandeb)
 
 - **Total Global Production (Pre):** ~102.5 mb/d
 - **Total Global Production (Post):** ~75.6 mb/d
@@ -37,7 +37,7 @@ Oh, that's too bold? There is no way they could get away with it? Covid. 86% of 
 **Napkin Math Analysis:**
 The US and Canada combined move from ~19% to **~26%** of the remaining global market. However, because "Rest of World" is fragmented among dozens of smaller nations, the US/Canada duo becomes the only cohesive energy superpower left.
 
-### Complete Oil Hegemony: Post-Middle East Destruction (2026) (Just Hormuz, missing Malacca Data)
+### Complete Oil Hegemony: Post-Middle East Destruction (2026) (Just Hormuz, missing Bab el-Mandeb Data)
 
 - **Total Global Supply (Pre):** ~103.5 mb/d
 - **Total Global Supply (Post):** ~76.1 mb/d 
@@ -115,6 +115,7 @@ With the Malacca-Hormuz corridor dead, the "Global Factory" in East Asia is effe
 * **FERTILIZER (~70% Disruption):** - 30-35% is physically TRAPPED if Hormuz closes (Source Failure).
     - Another 35-40% (Red Sea Phosphate) is REROUTED or BLOCKED by Houthi/Bab el-Mandeb activity.
     - **Result:** Supply doesn't vanish entirely, but 70% of the market faces 'Extreme Latency' or localized unavailability.
+    - I counted the hormuz strait twice on some previous entries, because I was assuming the Strait of Malacca was at full capacity, with hormuz closed, it isn't. 
 
 * **OIL (~50% Disruption):** - You do NOT add 25% (Hormuz) + 30% (Malacca). 
     - **The Logic:** Hormuz closure takes 25% offline instantly. The remaining 25% of 'Global Seaborne Oil' becomes disrupted because it must compete for the same strained Malacca/African routes to replace the lost Gulf supply.
@@ -134,7 +135,7 @@ With the Malacca-Hormuz corridor dead, the "Global Factory" in East Asia is effe
 * **Houthi Response:** Using $20k drones to strike multi-billion dollar oil facilities in Saudi/UAE and shipping in the Red Sea.
 * **Outcome:** The 'War of Attrition' has forced Saudi Arabia into long-term peace talks to exit the conflict.
 
-### Global Depletion & Agricultural Failure Matrix (Post-Hormuz/GCC Collapse - I haven't run the calcs for Strait of Malacca on everything after this - this is JUST the strait of hormuz fallout)
+### Global Depletion & Agricultural Failure Matrix (Post-Hormuz/GCC Collapse - I haven't run the calcs for Bab el-Mandeb on everything after this - this is JUST the strait of hormuz fallout)
 
 | Country / Region | Population (2026) | Fuel Reserves (Days) | Fertilizer Status (NPK) | 2026 Planting Potential |
 | :--- | :--- | :--- | :--- | :--- |
