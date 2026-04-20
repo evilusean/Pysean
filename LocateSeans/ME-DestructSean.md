@@ -54,51 +54,38 @@ The US and Canada combined move from ~19% to **~26%** of the remaining global ma
 **Analysis for Exit Strategy:**
 The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8% of the world's remaining active production and the 3rd largest reserves globally (mostly oil sands), the "frozen shithole" becomes the most valuable piece of real estate on the planet.
 
-## The Strait of Malacca Asphyxiation: 2026 Transit Collapse
+# INTEL: THE 2026 'ZERO-FLOW' MARITIME COLLAPSE
 
-### Asset: The Malacca Choke (Iranian-Houthi Influence)
-
-- **Total Energy Transit (Pre):** ~23.2 mb/d Crude & 9.2 Bcf/d LNG
-- **Primary Tech Vector:** Iranian Shahed-series / Soumar Cruise Missiles
-
-| Resource | Annual Volume | Strategic Role | Loss Impact |
+## 1. THE KINETIC BLOCKADE: ASSET STATUS
+| Strategic Asset | Status | Method of Denial | Systemic Impact |
 | :--- | :--- | :--- | :--- |
-| **Crude Oil** | 8.5 Billion Barrels | Powering 80% of China/Japan | **Total.** Grid failure in 30-90 days. |
-| **LNG (Gas)** | 45M Tonnes | Industrial heating/Electricity | **Critical.** "Dark Factory" shutdowns. |
-| **Urea/Nitrogen** | 22M Tonnes | Primary rice fertilizer (Asia) | **Famine.** -40% crop yields in SE Asia. |
-| **Iron Ore** | 250M Tonnes | Steel production (Australia -> China)| **Systemic.** Global construction halt. |
-| **Palm Oil** | 40M Tonnes | Global food/Industrial feedstock | **Shortage.** 60% of world supply stalled. |
+| **Strait of Hormuz** | **CLOSED** | Smart Mines / Swarm Drones | **The Source:** 21mb/d & 35% Global Urea trapped. |
+| **Bab el-Mandeb** | **SEVERED** | Houthi ASBMs / USVs | **The Western Gate:** Suez Canal utility = 0. |
+| **Yanbu Pipeline** | **DESTROYED** | Deep-Strike Drone Swarm | **Bypass A Failure:** Saudi Red Sea exit offline. |
+| **Fujairah (ADCOP)** | **DESTROYED** | Sabotage / Cruise Missile | **Bypass B Failure:** UAE Indian Ocean exit offline. |
 
-**Houthi/Iranian Closure Capability:**
-- **The 'Bypass' Threat**: Using the **Soumar-3** cruise missile (range 2,500km–3,000km) and **Shahed-149** (Gaza) drones, Iranian-backed assets in the Indian Ocean can now strike the western entrance of the Malacca Strait from mobile sea platforms or "Ghost Ships".
-- **Kinetic Interdiction**: Even without "closing" the water, a single Houthi-directed strike on an Ultra Large Crude Carrier (ULCC) in the 1.5-mile Phillips Channel creates a "Suez-style" physical blockage that takes months to clear.
+## 2. THE MALACCA 'GHOST LANE' EFFECT (DOWNSTREAM)
+*Note: Volume is non-cumulative. Malacca collapse is a direct result of Hormuz/Bypass failure.*
+- **Total Energy Transit (Offline):** ~23.2 mb/d Crude & 9.2 Bcf/d LNG.
+- **Primary Tech Vector:** Iranian Soumar-3 (2,500km range) + Shahed-149.
+- **Impact:** China/Japan/S. Korea lose 80% of primary energy inputs within 21 days.
+- **Strategic Takeaway:** The strait is physically 'open' but functionally 'dead' because the source (The Gulf) is capped.
 
-| Sector | Volume (mb/d) | % Loss | Status |
-| :--- | :--- | :--- | :--- |
-| **Middle East Crude** | 13.9 | **-60.0** | **Severed.** Saudi/UAE/Iraq flows stopped at Hormuz. |
-| **Nitrogen (Urea)** | 22M T/yr | **-46.0** | **Empty.** Gulf-sourced Urea transit has ceased. |
-| **Sulphur/Phosphate** | 1.8M T/mo | **-50.0** | **Fractured.** Critical for Asian/Australian NPK plants. |
-| **LNG (Gas)** | 9.2 Bcf/d | **-25.0** | **Critical.** Power grid failures imminent in Japan/SE Asia. |
-| **Russian/Shadow Crude**| 1.2 | **+5.1** | **Diversion.** Minor uptick in "Grey Market" transit. |
-
-**Strategic Takeaway:** The Malacca Strait has transitioned from the world's busiest "Lifeline" to a "Ghost Lane." China and the "Tiger Economies" of SE Asia have lost **over 60%** of their primary energy and fertilizer inputs.
-
-**Analysis for Exit Strategy:**
-With the Malacca-Hormuz corridor dead, the "Global Factory" in East Asia is effectively bricked. China's **80% dependency** on this single 1.5-mile chink in the armor (the Phillips Channel) has been its undoing. This triggers a permanent "East-to-West" power shift: as the Asian manufacturing hubs starve for nitrogen and oil, the "Americas Bloc" (Canada/USA) is the only region capable of both powering its industry and feeding its people. Canada’s position as a resource-safe "Bunker State" is now undisputed.
-
-### Combined Impact: Hormuz + Malacca Strategic Blackout (2026)
-
-- **Total Oil Lost:** ~34.1 mb/d (Combined Transit)
-- **Total LNG Lost:** ~20-25% of Global Supply (Primarily Qatari/Emirati)
-- **Total Fertilizer Lost:** ~50% of Global Seaborne Urea & ~44% of Sulphur Feedstock
-
+## 3. GLOBAL SYSTEMIC IMPACT: THE 70/50 CRUNCH
 | Resource | Total Volume Lost | % Global Trade | Primary Victim(s) |
 | :--- | :--- | :--- | :--- |
-| **Crude Oil** | 34.1 million b/d | **~42.0%** | **China, Japan, S. Korea.** Total industrial paralysis. |
-| **LNG (Gas)** | 112 Billion m³ | **~20.0%** | **Pakistan (99%), Bangladesh (72%), India.** Power grid death. |
-| **Nitrogen (Urea)** | 25M+ Tonnes/yr | **~46.0%** | **India, Brazil, SE Asian Rice Belt.** Mass crop failure. |
-| **Sulphur** | 1.8M Tonnes/mo | **~50.0%** | **Morocco, China, Indonesia.** Phosphate production halt. |
-| **LPG (Cooking)** | 90% of S. Asia Supply | **N/A** | **India/Pakistan.** 500M+ people lose cooking fuel. |
+| **Crude Oil** | ~35 million b/d | **~50.0%** | **EU & East Asia.** Total logistics/grid death. |
+| **Nitrogen (Urea)** | 35M+ Tonnes/yr | **~70.0%** | **India, Brazil, Rice Belt.** Mass crop failure. |
+| **LNG (Gas)** | 140 Billion m³ | **~25.0%** | **Germany, Japan.** Industrial 'Dark Factory' halt. |
+| **Phosphate** | 15M+ Tonnes/yr | **~44.0%** | **Global Agriculture.** N-P-K triad dissolved. |
+| **Sulphur** | 1.8M Tonnes/mo | **~50.0%** | **Morocco, China.** Phosphate processing halt. |
+
+## 4. SOVEREIGN RESOURCE POSITIONING
+- [ ] **The 'Bunker' State:** Canada/USA are the only regions with 
+      surplus BTUs and Calories.
+- [ ] **The 'Internal' Risk:** Anticipate 'Emergency Resource Acts' 
+      (Totalitarian rationing) to prevent domestic leak to starving 
+      allies.
 
 # MARITIME CHOKEPOINT SYSTEM (2026)
 
