@@ -123,7 +123,7 @@ With the Malacca-Hormuz corridor dead, the "Global Factory" in East Asia is effe
 # INTEL: YEMEN CONFLICT & FAMINE (2015–2026)
 
 ## 1. THE BLOCKADE DYNAMICS
-- [ ] **Start Date:** March 26, 2015. - israeli/saudi/us sanctions and bombing have been starving yemen/houthis for over a decades
+- [ ] **Start Date:** March 26, 2015. - israeli/saudi/us sanctions and bombing have been starving yemen/houthis for over a decade
 - [ ] **Mechanism:** Naval and air blockade of Houthi-controlled ports (e.g., Hodeidah).
 - [ ] **Direct Result:** 90% of food in Yemen is imported; blocking ports created an artificial famine.
 ## 2. KEY STATS (AS OF 2026)
