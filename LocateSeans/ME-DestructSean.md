@@ -120,6 +120,20 @@ With the Malacca-Hormuz corridor dead, the "Global Factory" in East Asia is effe
     - **The Logic:** Hormuz closure takes 25% offline instantly. The remaining 25% of 'Global Seaborne Oil' becomes disrupted because it must compete for the same strained Malacca/African routes to replace the lost Gulf supply.
     - **Total Systemic Shock:** ~50% of global oil is either blocked or stuck in an 'Efficiency Loop' (detouring around Africa).
 
+# INTEL: YEMEN CONFLICT & FAMINE (2015–2026)
+
+## 1. THE BLOCKADE DYNAMICS
+- [ ] **Start Date:** March 26, 2015. - israeli/saudi/us sanctions and bombing have been starving yemen/houthis for over a decades
+- [ ] **Mechanism:** Naval and air blockade of Houthi-controlled ports (e.g., Hodeidah).
+- [ ] **Direct Result:** 90% of food in Yemen is imported; blocking ports created an artificial famine.
+## 2. KEY STATS (AS OF 2026)
+* **Duration:** 11 years, 1 month.
+* **Casualties:** ~377,000 total (direct combat + indirect starvation).
+* **Current Status:** 2022 ceasefire mostly holds for ground troops,  but the 'Economic War' and Red Sea naval strikes continue.
+## 3. ASYMMETRIC RESPONSE
+* **Houthi Response:** Using $20k drones to strike multi-billion dollar oil facilities in Saudi/UAE and shipping in the Red Sea.
+* **Outcome:** The 'War of Attrition' has forced Saudi Arabia into long-term peace talks to exit the conflict.
+
 ### Global Depletion & Agricultural Failure Matrix (Post-Hormuz/GCC Collapse - I haven't run the calcs for Strait of Malacca on everything after this - this is JUST the strait of hormuz fallout)
 
 | Country / Region | Population (2026) | Fuel Reserves (Days) | Fertilizer Status (NPK) | 2026 Planting Potential |
