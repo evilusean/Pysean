@@ -100,6 +100,26 @@ With the Malacca-Hormuz corridor dead, the "Global Factory" in East Asia is effe
 | **Sulphur** | 1.8M Tonnes/mo | **~50.0%** | **Morocco, China, Indonesia.** Phosphate production halt. |
 | **LPG (Cooking)** | 90% of S. Asia Supply | **N/A** | **India/Pakistan.** 500M+ people lose cooking fuel. |
 
+# MARITIME CHOKEPOINT SYSTEM (2026)
+
+## 1. STRATEGIC FLOW HIERARCHY (NON-CUMULATIVE)
+| Chokepoint / Facility    | Oil (% Global Total)                              | Fertilizer (% Global Total) | Role in System                                                                                          |
+| :----------------------- | :------------------------------------------------ | :-------------------------- | :------------------------------------------------------------------------------------------------------ |
+| **1. Strait of Hormuz**  | **20% - 25%**                                     | **30% - 35%**               | **THE SOURCE:** Primary Inlet. If closed, downstream volume drops by ~80%.                              |
+| **2. Bab el-Mandeb**     | **~12%**                                          | **~15%**                    | **WESTERN EXIT:** Redirects Hormuz flow to Europe. Closure forces detour around Africa.                 |
+| **3. Strait of Malacca** | **30% with hormuz, <5% (Net New without hormuz)** | **Negligible**              | **EASTERN EXIT:** Mostly a delivery pipe for Hormuz. Only ~5% of its oil is 'non-Gulf' (Russia/Africa). |
+| **4. Yanbu Pipeline**    | **10% - 12%**                                     | **Negligible**              | **BYPASS A:** Saudi overland safety valve to the Red Sea.                                               |
+| **5. Fujairah (ADCOP)**  | **4% - 5%**                                       | **Negligible**              | **BYPASS B:** UAE overland safety valve to Indian Ocean.                                                |
+
+## 2. THE 'REAL' OFFLINE MATH (THE 70/50 CRUNCH)
+* **FERTILIZER (~70% Disruption):** - 30-35% is physically TRAPPED if Hormuz closes (Source Failure).
+    - Another 35-40% (Red Sea Phosphate) is REROUTED or BLOCKED by Houthi/Bab el-Mandeb activity.
+    - **Result:** Supply doesn't vanish entirely, but 70% of the market faces 'Extreme Latency' or localized unavailability.
+
+* **OIL (~50% Disruption):** - You do NOT add 25% (Hormuz) + 30% (Malacca). 
+    - **The Logic:** Hormuz closure takes 25% offline instantly. The remaining 25% of 'Global Seaborne Oil' becomes disrupted because it must compete for the same strained Malacca/African routes to replace the lost Gulf supply.
+    - **Total Systemic Shock:** ~50% of global oil is either blocked or stuck in an 'Efficiency Loop' (detouring around Africa).
+
 ### Global Depletion & Agricultural Failure Matrix (Post-Hormuz/GCC Collapse - I haven't run the calcs for Strait of Malacca on everything after this - this is JUST the strait of hormuz fallout)
 
 | Country / Region | Population (2026) | Fuel Reserves (Days) | Fertilizer Status (NPK) | 2026 Planting Potential |
