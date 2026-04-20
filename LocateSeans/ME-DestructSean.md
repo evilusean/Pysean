@@ -56,13 +56,14 @@ The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8%
 
 # INTEL: THE 2026 'ZERO-FLOW' MARITIME COLLAPSE
 
-## 1. THE KINETIC BLOCKADE: ASSET STATUS
-| Strategic Asset | Status | Method of Denial | Systemic Impact |
-| :--- | :--- | :--- | :--- |
-| **Strait of Hormuz** | **CLOSED** | Smart Mines / Swarm Drones | **The Source:** 21mb/d & 35% Global Urea trapped. |
-| **Bab el-Mandeb** | **SEVERED** | Houthi ASBMs / USVs | **The Western Gate:** Suez Canal utility = 0. |
-| **Yanbu Pipeline** | **DESTROYED** | Deep-Strike Drone Swarm | **Bypass A Failure:** Saudi Red Sea exit offline. |
-| **Fujairah (ADCOP)** | **DESTROYED** | Sabotage / Cruise Missile | **Bypass B Failure:** UAE Indian Ocean exit offline. |
+## 1. THE KINETIC BLOCKADE: ASSET STATUS & VOLUMETRIC LOSS
+| Strategic Asset | Status | Method of Denial | Oil Offline (% Global) | Fertilizer Offline (% Global) | Systemic Impact |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Strait of Hormuz** | **CLOSED** | Smart Mines / Drones | **25%** | **35%** | **The Source:** Primary inlet valve for Persian Gulf. |
+| **Bab el-Mandeb** | **SEVERED** | Houthi ASBMs / USVs | **12%** | **15%** | **The Western Gate:** Reroutes remaining trade around Africa. |
+| **Yanbu Pipeline** | **DESTROYED** | Drone Swarms | **10%** | **Negligible** | **Bypass A Failure:** Kills the Saudi 'Red Sea' safety valve. |
+| **Fujairah (ADCOP)** | **DESTROYED** | Cruise Missiles | **5%** | **Negligible** | **Bypass B Failure:** Kills the UAE 'Indian Ocean' safety valve. |
+| **Suez/Red Sea Hub** | **BLOCKED** | Kinetic Strikes | **Included Above** | **20% (Phosphate)** | **Nutrient Collapse:** Kills Jordanian/Saudi Phosphate exports. |
 
 ## 2. THE MALACCA 'GHOST LANE' EFFECT (DOWNSTREAM)
 *Note: Volume is non-cumulative. Malacca collapse is a direct result of Hormuz/Bypass failure.*
