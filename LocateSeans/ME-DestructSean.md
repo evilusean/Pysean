@@ -158,5 +158,5 @@ The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8%
 * **The "Looming Bread Riot":** Egypt is a massive exporter of Nitrogen fertilizer but imports nearly all its calories. This makes them a high-value target for "food-for-fuel" trades with the Americas.
 * **Austrailia Oil Refineries :** Before 2020, straya had 7 oil refineries, after covid, it now has 2, at what point does incompetence become malicious?  Vs   Hanlons Razor = 'Never attribute to malice that which is adequately explained by stupidity.'... What if they are stupid, incompetent, and malicious?
   https://www.dailymail.co.uk/news/article-15735917/Victoria-Corio-oil-refinery.html
-  It's now one refinery. Fun Fact : Mad Max was filmed in austrailia.  https://www.youtube.com/watch?v=kFr8SdOS5ic
+  It's now one refinery. Fun Fact : Mad Max was filmed in austrailia. 
 * **Covid Vibes :** '"short term pain for long term gain"' vs '"just 2 weeks to flatten the curve"' - normies are already being primed with the cliches - *Covid 2 : Electric Boogaloo* - This time with food and fuel shortages - Energy lockdowns 
