@@ -70,7 +70,7 @@ import shutil
 from urllib.parse import urlparse
 
 # Default download folder
-DEFAULT_DOWNLOAD_FOLDER = "/home/ArchSean/Downloads/"
+DEFAULT_DOWNLOAD_FOLDER = os.path.expanduser("~/Downloads")
 
 def validate_substack_url(url):
     """
@@ -278,4 +278,4 @@ if __name__ == "__main__":
         sys.exit(1)
     except Exception as e:
         print(f"Unexpected error: {e}")
-        sys.exit(1) 
+        sys.exit(1)
