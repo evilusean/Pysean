@@ -489,6 +489,9 @@ Warp-Terminal (Warp isn't a traditional IDE like VS Code or JetBrains; it's a te
 Claude Desktop (Not exactly an IDE, but another option if you run out of monthly queries and need a good AI in a pinch) : 'yay -S claude-desktop'
 Google AntiGravity : https://antigravity.google/
 
+AI Wrappers :
+OpenCode AI (FOSS - Run Models Locally) : https://opencode.ai/
+
 See what someone is saying with AI and lip reading (upload video):
 https://www.readtheirlips.com/
 
