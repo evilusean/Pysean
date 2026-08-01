@@ -5,6 +5,7 @@
   "permissions": [
     "activeTab",
     "downloads",
+    "downloads.ui",
     "downloads.shelf",
     "downloads.open",
     "storage",

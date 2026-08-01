@@ -74,6 +74,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     return true;  // Keep the message port open
   }
 
+
   // Collect all posts and media for HTML export
   if (request.action === "getThreadFull") {
     try {

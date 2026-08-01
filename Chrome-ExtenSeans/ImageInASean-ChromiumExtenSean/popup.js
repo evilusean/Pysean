@@ -233,38 +233,63 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (saveImagesButton) {
-    saveImagesButton.addEventListener('click', async () => {
-      try {
-        const tabs = await chrome.tabs.query({ currentWindow: true });
-        const [activeTab] = await chrome.tabs.query({ active: true, currentWindow: true });
-        if (!activeTab) {
-          console.error("No active tab found");
-          return;
-        }
-        const validExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webm', '.mp4'];
-        const tabsToProcess = tabs.filter(tab => {
-          if (!tab.url || tab.index < activeTab.index) return false;
-          const is4ChanImage = tab.url.startsWith('https://i.4cdn.org/') && 
-                               validExtensions.some(ext => tab.url.toLowerCase().endsWith(ext));
-          const is8KunImage = tab.url.includes('8kun.top') && 
-                              tab.url.includes('file_store') && 
-                              validExtensions.some(ext => tab.url.toLowerCase().endsWith(ext));
-          return is4ChanImage || is8KunImage;
+    saveImagesButton.addEventListener('click', () => {
+      chrome.tabs.query({ currentWindow: true }, (tabs) => {
+        chrome.tabs.query({ active: true, currentWindow: true }, (activeTabs) => {
+          if (activeTabs.length === 0) {
+            console.error("No active tab found");
+            return;
+          }
+
+          const activeTab = activeTabs[0];
+          const validExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webm', '.mp4'];
+          const tabsToProcess = tabs.filter(tab => {
+            if (!tab.url || tab.index < activeTab.index) return false;
+            const is4ChanImage = tab.url.startsWith('https://i.4cdn.org/') &&
+              validExtensions.some(ext => tab.url.toLowerCase().endsWith(ext));
+            const is8KunImage = tab.url.includes('8kun.top') &&
+              tab.url.includes('file_store') &&
+              validExtensions.some(ext => tab.url.toLowerCase().endsWith(ext));
+            return is4ChanImage || is8KunImage;
+          });
+
+          if (tabsToProcess.length === 0) {
+            console.log("No image tabs found to process");
+            return;
+          }
+
+          const discoveredUrls = [];
+          let completedTabs = 0;
+
+          tabsToProcess.forEach(tab => {
+            chrome.tabs.sendMessage(tab.id, { action: 'getImages' }, (response) => {
+              if (chrome.runtime.lastError) {
+                if (chrome.runtime.lastError.message !== 'Could not establish connection. Receiving end does not exist.') {
+                  console.error(`Error sending message to tab ${tab.id}:`, chrome.runtime.lastError.message);
+                }
+              } else if (response && response.urls) {
+                discoveredUrls.push(...response.urls);
+                console.log(`Received images from tab ${tab.id}:`, response.urls);
+              }
+
+              completedTabs += 1;
+              if (completedTabs === tabsToProcess.length) {
+                const uniqueUrls = [...new Set(discoveredUrls.filter(Boolean))];
+                if (uniqueUrls.length === 0) {
+                  console.log("No URLs were found to download");
+                  return;
+                }
+
+                chrome.runtime.sendMessage({
+                  action: 'downloadImages',
+                  urls: uniqueUrls,
+                  tabIds: tabsToProcess.map(tab => tab.id)
+                });
+              }
+            });
+          });
         });
-        if (tabsToProcess.length === 0) {
-          console.log("No image tabs found to process");
-          return;
-        }
-        const allUrls = tabsToProcess.map(tab => tab.url);
-        const tabIds = tabsToProcess.map(tab => tab.id);
-        await chrome.runtime.sendMessage({
-          action: "downloadImages",
-          urls: allUrls,
-          tabIds: tabIds
-        });
-      } catch (error) {
-        console.error("Error in main process:", error.message);
-      }
+      });
     });
   } else {
     console.error("Save Images button not found");
