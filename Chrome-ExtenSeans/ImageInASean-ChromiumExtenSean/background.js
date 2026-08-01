@@ -88,10 +88,20 @@ function delay(ms) {
 
 function startDownload(options) {
   return new Promise((resolve, reject) => {
-    chrome.downloads.download(options, (downloadId) => {
+    const downloadOptions = {
+      ...options,
+      saveAs: false,
+      conflictAction: 'uniquify'
+    };
+
+    console.log('[background] Calling chrome.downloads.download with options:', downloadOptions);
+    chrome.downloads.download(downloadOptions, (downloadId) => {
+      console.log('[background] chrome.downloads.download callback fired with downloadId:', downloadId);
       if (chrome.runtime.lastError) {
+        console.error('[background] chrome.downloads.download reported runtime error:', chrome.runtime.lastError.message);
         reject(new Error(chrome.runtime.lastError.message));
       } else {
+        console.log('[background] chrome.downloads.download accepted request');
         resolve(downloadId);
       }
     });
@@ -105,28 +115,22 @@ async function downloadFile(url, filename, subpath = DOWNLOAD_PATH, retryCount =
   console.log(`[background] Downloading: ${url} as ${subpathAndFilename} (attempt ${retryCount + 1})`);
   
   if (downloadedFiles.has(subpathAndFilename)) {
-    console.log(`Skipping duplicate: ${subpathAndFilename}`);
+    console.log(`[background] Skipping duplicate: ${subpathAndFilename}`);
     return null;
   }
   
   try {
+    console.log(`[background] Invoking chrome.downloads.download for ${url}`);
     const downloadId = await startDownload({
-      url
+      url,
+      filename: subpathAndFilename
     });
 
     console.log(`[background] Download started with ID: ${downloadId}`);
     downloadedFiles.add(subpathAndFilename);
     return downloadId;
   } catch (error) {
-    console.error(`Download failed for ${url}:`, error);
-    
-    if (retryCount < 2) {
-      console.log(`Retrying download for ${filename} in 1 second...`);
-      await delay(1000);
-      return downloadFile(url, filename, subpath, retryCount + 1);
-    }
-
-    console.error(`Failed to download ${filename} after ${retryCount + 1} attempts`);
+    console.error(`[background] Download failed for ${url}:`, error);
     return null;
   }
 }
@@ -135,13 +139,12 @@ async function downloadBatchInQueue(urls, subpath = DOWNLOAD_PATH) {
   const results = [];
 
   for (let index = 0; index < urls.length; index += 1) {
-    if (index > 0) {
-      await delay(750);
-    }
-
     const url = urls[index];
     const filename = decodeURIComponent((url.split('/').pop() || `image-${index + 1}`).trim());
     results.push(await downloadFile(url, filename, subpath));
+    if (index < urls.length - 1) {
+      await delay(250);
+    }
   }
 
   return results;
@@ -149,12 +152,11 @@ async function downloadBatchInQueue(urls, subpath = DOWNLOAD_PATH) {
 
 // Process download message
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  console.log("Message received in background script:", message);
+  console.log("[background] Message received in background script:", message);
   
   if (message.action === "downloadImages") {
     console.log("[background] Received downloadImages message:", message);
     
-    // Extract the URLs and tab IDs
     const urls = message.urls || [];
     const tabIds = message.tabIds || [];
     
@@ -162,6 +164,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     
     if (urls.length === 0) {
       console.log("No URLs to download");
+      sendResponse({ ok: true });
       return true;
     }
     
@@ -175,7 +178,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
             console.log(`Closing ${tabIds.length} tabs after batch download`);
             closeTabs(tabIds);
           }
-        }, 1500);
+        }, 10000);
       } catch (error) {
         console.error("[background] Error while downloading image batch:", error);
         setTimeout(() => {
@@ -183,19 +186,23 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
             console.log(`Closing ${tabIds.length} tabs after batch download`);
             closeTabs(tabIds);
           }
-        }, 1500);
+        }, 10000);
       }
     })();
+
+    sendResponse({ ok: true });
+    return true;
   }
 
-  // New: Download all media from a thread to a thread-specific folder
   if (message.action === "downloadThreadMedia") {
     const urls = message.urls || [];
     const threadId = message.threadId;
     if (!urls.length || !threadId) {
       console.log("No URLs or threadId for thread media download");
+      sendResponse({ ok: true });
       return true;
     }
+
     void (async () => {
       try {
         await downloadBatchInQueue(urls, `4Chan-${threadId}`);
@@ -204,8 +211,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         console.error(`Error while downloading thread media for ${threadId}:`, error);
       }
     })();
+
+    sendResponse({ ok: true });
     return true;
   }
+
+  sendResponse({ ok: true });
+  return true;
 });
 
 // Monitor download progress

@@ -68,6 +68,67 @@
       }
     });
   }
+function sanitizeFilename(name, fallback) {
+  const baseName = (name || fallback).trim();
+  return baseName.replace(/[\\/:*?"<>|]/g, '_') || fallback;
+}
+
+function getFilenameFromUrl(url, fallbackIndex) {
+  try {
+    const parsed = new URL(url);
+    const fileName = decodeURIComponent(parsed.pathname.split('/').pop() || '');
+    return sanitizeFilename(fileName, `image-${fallbackIndex + 1}`);
+  } catch (error) {
+    console.warn('[popup] Could not parse URL for filename:', url, error);
+    return `image-${fallbackIndex + 1}`;
+  }
+}
+
+async function downloadBatchFromPopup(urls) {
+  const results = [];
+
+  for (let index = 0; index < urls.length; index += 1) {
+    const url = urls[index];
+    const filename = getFilenameFromUrl(url, index);
+    const downloadPath = `4Chan-Unsorted/${filename}`;
+    console.log(`[popup] Starting download ${index + 1}/${urls.length}: ${url} -> ${downloadPath}`);
+
+    const downloadId = await new Promise((resolve) => {
+      chrome.downloads.download({
+        url,
+        filename: downloadPath,
+        saveAs: false,
+        conflictAction: 'uniquify'
+      }, (id) => {
+        if (chrome.runtime.lastError) {
+          console.error(`[popup] Download failed for ${url}:`, chrome.runtime.lastError.message);
+          resolve(null);
+        } else {
+          resolve(id);
+        }
+      });
+    });
+
+    results.push(downloadId);
+
+    if (index < urls.length - 1) {
+      await new Promise((resolve) => setTimeout(resolve, 250));
+    }
+  }
+
+  return results;
+}
+
+function closeTabsById(tabIds) {
+  tabIds.forEach((tabId) => {
+    chrome.tabs.remove(tabId, () => {
+      if (chrome.runtime.lastError) {
+        console.warn(`[popup] Could not close tab ${tabId}:`, chrome.runtime.lastError.message);
+      }
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   console.log("[popup] DOM loaded");
   const saveImagesButton = document.getElementById('saveImages');
@@ -235,9 +296,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (saveImagesButton) {
     saveImagesButton.addEventListener('click', () => {
       console.log("[popup] Save Images button clicked");
+      console.log("[popup] Querying tabs...");
       chrome.tabs.query({ currentWindow: true }, (tabs) => {
         console.log("[popup] Found tabs in current window", tabs.length);
         chrome.tabs.query({ active: true, currentWindow: true }, (activeTabs) => {
+          console.log("[popup] Active tabs query returned", activeTabs.length);
           if (activeTabs.length === 0) {
             console.error("No active tab found");
             return;
@@ -288,11 +351,10 @@ document.addEventListener('DOMContentLoaded', () => {
                   return;
                 }
 
-                console.log("[popup] Sending downloadImages message to background", uniqueUrls.slice(0, 5));
-                chrome.runtime.sendMessage({
-                  action: 'downloadImages',
-                  urls: uniqueUrls,
-                  tabIds: tabsToProcess.map(tab => tab.id)
+                console.log("[popup] Downloading from popup directly", uniqueUrls.slice(0, 5));
+                void downloadBatchFromPopup(uniqueUrls).then(() => {
+                  console.log('[popup] Batch download queue completed');
+                  closeTabsById(tabsToProcess.map(tab => tab.id));
                 });
               }
             });
