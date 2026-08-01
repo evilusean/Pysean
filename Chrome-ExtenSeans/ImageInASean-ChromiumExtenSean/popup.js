@@ -120,10 +120,18 @@ async function downloadBatchFromPopup(urls) {
 }
 
 function closeTabsById(tabIds) {
-  tabIds.forEach((tabId) => {
+  const safeTabIds = Array.from(new Set((tabIds || []).filter((tabId) => Number.isInteger(tabId) && tabId >= 0)));
+
+  if (safeTabIds.length === 0) {
+    return;
+  }
+
+  safeTabIds.forEach((tabId) => {
     chrome.tabs.remove(tabId, () => {
       if (chrome.runtime.lastError) {
         console.warn(`[popup] Could not close tab ${tabId}:`, chrome.runtime.lastError.message);
+      } else {
+        console.log(`[popup] Closed tab ${tabId}`);
       }
     });
   });
@@ -328,6 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           const discoveredUrls = [];
           let completedTabs = 0;
+          const tabIdsToClose = tabsToProcess.map(tab => tab.id).filter((tabId) => Number.isInteger(tabId) && tabId >= 0);
 
           tabsToProcess.forEach(tab => {
             chrome.tabs.sendMessage(tab.id, { action: 'getImages' }, (response) => {
@@ -346,16 +355,23 @@ document.addEventListener('DOMContentLoaded', () => {
               if (completedTabs === tabsToProcess.length) {
                 const uniqueUrls = [...new Set(discoveredUrls.filter(Boolean))];
                 console.log(`[popup] Unique URLs collected: ${uniqueUrls.length}`);
+
                 if (uniqueUrls.length === 0) {
-                  console.log("[popup] No URLs were found to download");
+                  console.log("[popup] No URLs were found to download; closing matching tabs anyway");
+                  closeTabsById(tabIdsToClose);
                   return;
                 }
 
                 console.log("[popup] Downloading from popup directly", uniqueUrls.slice(0, 5));
-                void downloadBatchFromPopup(uniqueUrls).then(() => {
-                  console.log('[popup] Batch download queue completed');
-                  closeTabsById(tabsToProcess.map(tab => tab.id));
-                });
+                void downloadBatchFromPopup(uniqueUrls)
+                  .then(() => {
+                    console.log('[popup] Batch download queue completed');
+                    closeTabsById(tabIdsToClose);
+                  })
+                  .catch((error) => {
+                    console.error('[popup] Batch download queue failed:', error);
+                    closeTabsById(tabIdsToClose);
+                  });
               }
             });
           });
