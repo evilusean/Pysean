@@ -1,6 +1,6 @@
 
 // Service worker initialization
-console.log("4chan Image Saver background script initialized");
+console.log("[background] 4chan Image Saver background script initialized");
 
 const downloadedFiles = new Set();
 const DOWNLOAD_PATH = '4Chan-Unsorted';
@@ -20,7 +20,7 @@ async function configureDownloads() {
       createDirectory: true
     });
 
-    console.log("Download preferences configured");
+    console.log("[background] Download preferences configured");
   } catch (error) {
     console.log("Could not configure download preferences:", error);
   }
@@ -102,7 +102,7 @@ function startDownload(options) {
 async function downloadFile(url, filename, subpath = DOWNLOAD_PATH, retryCount = 0) {
   const safeFilename = filename.replace(/[\\/:*?"<>|]/g, '_').trim();
   const subpathAndFilename = `${subpath}/${safeFilename}`;
-  console.log(`Downloading: ${url} as ${subpathAndFilename} (attempt ${retryCount + 1})`);
+  console.log(`[background] Downloading: ${url} as ${subpathAndFilename} (attempt ${retryCount + 1})`);
   
   if (downloadedFiles.has(subpathAndFilename)) {
     console.log(`Skipping duplicate: ${subpathAndFilename}`);
@@ -114,7 +114,7 @@ async function downloadFile(url, filename, subpath = DOWNLOAD_PATH, retryCount =
       url
     });
 
-    console.log(`Download started with ID: ${downloadId}`);
+    console.log(`[background] Download started with ID: ${downloadId}`);
     downloadedFiles.add(subpathAndFilename);
     return downloadId;
   } catch (error) {
@@ -152,13 +152,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   console.log("Message received in background script:", message);
   
   if (message.action === "downloadImages") {
-    console.log("Received downloadImages message:", message);
+    console.log("[background] Received downloadImages message:", message);
     
     // Extract the URLs and tab IDs
     const urls = message.urls || [];
     const tabIds = message.tabIds || [];
     
-    console.log(`Processing ${urls.length} URLs, tab IDs: ${tabIds}`);
+    console.log(`[background] Processing ${urls.length} URLs, tab IDs: ${tabIds}`);
     
     if (urls.length === 0) {
       console.log("No URLs to download");
@@ -168,7 +168,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     void (async () => {
       try {
         await downloadBatchInQueue(urls, DOWNLOAD_PATH);
-        console.log(`Queued ${urls.length} image downloads`);
+        console.log(`[background] Queued ${urls.length} image downloads`);
 
         setTimeout(() => {
           if (tabIds.length > 0) {
@@ -177,7 +177,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
           }
         }, 1500);
       } catch (error) {
-        console.error("Error while downloading image batch:", error);
+        console.error("[background] Error while downloading image batch:", error);
         setTimeout(() => {
           if (tabIds.length > 0) {
             console.log(`Closing ${tabIds.length} tabs after batch download`);

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  console.log("Popup DOM fully loaded.");
+  console.log("[content] DOM loaded");
   const saveImagesButton = document.getElementById('saveImages');
   if (saveImagesButton) {
     console.log("Save Images button found.");
@@ -65,7 +65,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
           url.includes('file_store/')
         );
       
-      console.log(`Found ${urls.length} images`);
+      console.log(`[content] Found ${urls.length} images`);
       sendResponse({ urls: urls });
     } catch (error) {
       console.error('Error in content script:', error);

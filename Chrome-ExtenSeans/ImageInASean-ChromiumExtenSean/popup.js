@@ -69,7 +69,7 @@
     });
   }
 document.addEventListener('DOMContentLoaded', () => {
-  console.log("Popup DOM loaded");
+  console.log("[popup] DOM loaded");
   const saveImagesButton = document.getElementById('saveImages');
   const saveThreadMediaButton = document.getElementById('saveThreadMedia');
   
@@ -234,7 +234,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (saveImagesButton) {
     saveImagesButton.addEventListener('click', () => {
+      console.log("[popup] Save Images button clicked");
       chrome.tabs.query({ currentWindow: true }, (tabs) => {
+        console.log("[popup] Found tabs in current window", tabs.length);
         chrome.tabs.query({ active: true, currentWindow: true }, (activeTabs) => {
           if (activeTabs.length === 0) {
             console.error("No active tab found");
@@ -242,6 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
 
           const activeTab = activeTabs[0];
+          console.log("[popup] Active tab", activeTab?.id, activeTab?.url);
           const validExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webm', '.mp4'];
           const tabsToProcess = tabs.filter(tab => {
             if (!tab.url || tab.index < activeTab.index) return false;
@@ -254,9 +257,11 @@ document.addEventListener('DOMContentLoaded', () => {
           });
 
           if (tabsToProcess.length === 0) {
-            console.log("No image tabs found to process");
+            console.log("[popup] No image tabs found to process");
             return;
           }
+
+          console.log("[popup] Tabs to process", tabsToProcess.map(tab => ({ id: tab.id, url: tab.url })));
 
           const discoveredUrls = [];
           let completedTabs = 0;
@@ -265,21 +270,25 @@ document.addEventListener('DOMContentLoaded', () => {
             chrome.tabs.sendMessage(tab.id, { action: 'getImages' }, (response) => {
               if (chrome.runtime.lastError) {
                 if (chrome.runtime.lastError.message !== 'Could not establish connection. Receiving end does not exist.') {
-                  console.error(`Error sending message to tab ${tab.id}:`, chrome.runtime.lastError.message);
+                  console.error(`[popup] Error sending message to tab ${tab.id}:`, chrome.runtime.lastError.message);
+                } else {
+                  console.log(`[popup] No content script on tab ${tab.id}; skipping`);
                 }
               } else if (response && response.urls) {
                 discoveredUrls.push(...response.urls);
-                console.log(`Received images from tab ${tab.id}:`, response.urls);
+                console.log(`[popup] Received images from tab ${tab.id}:`, response.urls);
               }
 
               completedTabs += 1;
               if (completedTabs === tabsToProcess.length) {
                 const uniqueUrls = [...new Set(discoveredUrls.filter(Boolean))];
+                console.log(`[popup] Unique URLs collected: ${uniqueUrls.length}`);
                 if (uniqueUrls.length === 0) {
-                  console.log("No URLs were found to download");
+                  console.log("[popup] No URLs were found to download");
                   return;
                 }
 
+                console.log("[popup] Sending downloadImages message to background", uniqueUrls.slice(0, 5));
                 chrome.runtime.sendMessage({
                   action: 'downloadImages',
                   urls: uniqueUrls,
