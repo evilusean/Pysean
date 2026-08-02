@@ -129,10 +129,44 @@ function closeTabsById(tabIds) {
   safeTabIds.forEach((tabId) => {
     chrome.tabs.remove(tabId, () => {
       if (chrome.runtime.lastError) {
-        console.warn(`[popup] Could not close tab ${tabId}:`, chrome.runtime.lastError.message);
+        const errorMessage = chrome.runtime.lastError.message;
+        if (!errorMessage.includes('No tab found with id')) {
+          console.warn(`[popup] Could not close tab ${tabId}:`, errorMessage);
+        }
       } else {
         console.log(`[popup] Closed tab ${tabId}`);
       }
+    });
+  });
+}
+
+function sendMessageToTab(tabId, message, timeoutMs = 1500) {
+  return new Promise((resolve) => {
+    if (!Number.isInteger(tabId) || tabId < 0) {
+      resolve(null);
+      return;
+    }
+
+    const timer = window.setTimeout(() => {
+      console.warn(`[popup] Timed out waiting for tab ${tabId}`);
+      resolve(null);
+    }, timeoutMs);
+
+    chrome.tabs.sendMessage(tabId, message, (response) => {
+      window.clearTimeout(timer);
+
+      if (chrome.runtime.lastError) {
+        const errorMessage = chrome.runtime.lastError.message;
+        if (errorMessage.includes('Could not establish connection') || errorMessage.includes('Receiving end does not exist')) {
+          console.log(`[popup] No content script on tab ${tabId}; skipping`);
+        } else {
+          console.warn(`[popup] Message error for tab ${tabId}:`, errorMessage);
+        }
+        resolve(null);
+        return;
+      }
+
+      resolve(response || null);
     });
   });
 }
@@ -302,81 +336,69 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (saveImagesButton) {
-    saveImagesButton.addEventListener('click', () => {
-      console.log("[popup] Save Images button clicked");
-      console.log("[popup] Querying tabs...");
-      chrome.tabs.query({ currentWindow: true }, (tabs) => {
+    saveImagesButton.addEventListener('click', async () => {
+      try {
+        console.log("[popup] Save Images button clicked");
+        const [activeTab] = await chrome.tabs.query({ active: true, currentWindow: true });
+        if (!activeTab) {
+          console.error("No active tab found");
+          return;
+        }
+
+        const tabs = await chrome.tabs.query({ currentWindow: true });
         console.log("[popup] Found tabs in current window", tabs.length);
-        chrome.tabs.query({ active: true, currentWindow: true }, (activeTabs) => {
-          console.log("[popup] Active tabs query returned", activeTabs.length);
-          if (activeTabs.length === 0) {
-            console.error("No active tab found");
-            return;
-          }
+        console.log("[popup] Active tab", activeTab?.id, activeTab?.url);
 
-          const activeTab = activeTabs[0];
-          console.log("[popup] Active tab", activeTab?.id, activeTab?.url);
-          const validExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webm', '.mp4'];
-          const tabsToProcess = tabs.filter(tab => {
-            if (!tab.url || tab.index < activeTab.index) return false;
-            const is4ChanImage = tab.url.startsWith('https://i.4cdn.org/') &&
-              validExtensions.some(ext => tab.url.toLowerCase().endsWith(ext));
-            const is8KunImage = tab.url.includes('8kun.top') &&
-              tab.url.includes('file_store') &&
-              validExtensions.some(ext => tab.url.toLowerCase().endsWith(ext));
-            return is4ChanImage || is8KunImage;
-          });
+        const validExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webm', '.mp4'];
+        const tabsToProcess = tabs.filter((tab) => {
+          if (!tab.url || !Number.isInteger(tab.id) || tab.id < 0) return false;
+          if (tab.index < activeTab.index) return false;
 
-          if (tabsToProcess.length === 0) {
-            console.log("[popup] No image tabs found to process");
-            return;
-          }
-
-          console.log("[popup] Tabs to process", tabsToProcess.map(tab => ({ id: tab.id, url: tab.url })));
-
-          const discoveredUrls = [];
-          let completedTabs = 0;
-          const tabIdsToClose = tabsToProcess.map(tab => tab.id).filter((tabId) => Number.isInteger(tabId) && tabId >= 0);
-
-          tabsToProcess.forEach(tab => {
-            chrome.tabs.sendMessage(tab.id, { action: 'getImages' }, (response) => {
-              if (chrome.runtime.lastError) {
-                if (chrome.runtime.lastError.message !== 'Could not establish connection. Receiving end does not exist.') {
-                  console.error(`[popup] Error sending message to tab ${tab.id}:`, chrome.runtime.lastError.message);
-                } else {
-                  console.log(`[popup] No content script on tab ${tab.id}; skipping`);
-                }
-              } else if (response && response.urls) {
-                discoveredUrls.push(...response.urls);
-                console.log(`[popup] Received images from tab ${tab.id}:`, response.urls);
-              }
-
-              completedTabs += 1;
-              if (completedTabs === tabsToProcess.length) {
-                const uniqueUrls = [...new Set(discoveredUrls.filter(Boolean))];
-                console.log(`[popup] Unique URLs collected: ${uniqueUrls.length}`);
-
-                if (uniqueUrls.length === 0) {
-                  console.log("[popup] No URLs were found to download; closing matching tabs anyway");
-                  closeTabsById(tabIdsToClose);
-                  return;
-                }
-
-                console.log("[popup] Downloading from popup directly", uniqueUrls.slice(0, 5));
-                void downloadBatchFromPopup(uniqueUrls)
-                  .then(() => {
-                    console.log('[popup] Batch download queue completed');
-                    closeTabsById(tabIdsToClose);
-                  })
-                  .catch((error) => {
-                    console.error('[popup] Batch download queue failed:', error);
-                    closeTabsById(tabIdsToClose);
-                  });
-              }
-            });
-          });
+          const is4ChanImage = tab.url.startsWith('https://i.4cdn.org/') &&
+            validExtensions.some((ext) => tab.url.toLowerCase().endsWith(ext));
+          const is8KunImage = tab.url.includes('8kun.top') &&
+            tab.url.includes('file_store') &&
+            validExtensions.some((ext) => tab.url.toLowerCase().endsWith(ext));
+          return is4ChanImage || is8KunImage;
         });
-      });
+
+        const tabIdsToClose = tabsToProcess.map((tab) => tab.id).filter((tabId) => Number.isInteger(tabId) && tabId >= 0);
+
+        if (tabsToProcess.length === 0) {
+          console.log("[popup] No image tabs found to process");
+          closeTabsById(tabIdsToClose);
+          return;
+        }
+
+        console.log("[popup] Tabs to process", tabsToProcess.map((tab) => ({ id: tab.id, url: tab.url })));
+
+        const responses = await Promise.all(
+          tabsToProcess.map((tab) => sendMessageToTab(tab.id, { action: 'getImages' }))
+        );
+
+        const discoveredUrls = responses.flatMap((response) => response?.urls || []);
+        const uniqueUrls = [...new Set(discoveredUrls.filter(Boolean))];
+        console.log(`[popup] Unique URLs collected: ${uniqueUrls.length}`);
+
+        if (uniqueUrls.length === 0) {
+          console.log("[popup] No URLs were found to download; closing matching tabs anyway");
+          closeTabsById(tabIdsToClose);
+          return;
+        }
+
+        console.log("[popup] Queuing downloads", uniqueUrls.slice(0, 5));
+        chrome.runtime.sendMessage({ action: 'downloadImages', urls: uniqueUrls, tabIds: tabIdsToClose }, () => {
+          if (chrome.runtime.lastError) {
+            console.error("[popup] Failed to queue downloads:", chrome.runtime.lastError.message);
+          } else {
+            console.log("[popup] Download request accepted by background script");
+          }
+
+          closeTabsById(tabIdsToClose);
+        });
+      } catch (error) {
+        console.error("[popup] Error saving images:", error);
+      }
     });
   } else {
     console.error("Save Images button not found");

@@ -173,20 +173,16 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         await downloadBatchInQueue(urls, DOWNLOAD_PATH);
         console.log(`[background] Queued ${urls.length} image downloads`);
 
-        setTimeout(() => {
-          if (tabIds.length > 0) {
-            console.log(`Closing ${tabIds.length} tabs after batch download`);
-            closeTabs(tabIds);
-          }
-        }, 10000);
+        if (tabIds.length > 0) {
+          console.log(`Closing ${tabIds.length} tabs after batch download`);
+          closeTabs(tabIds);
+        }
       } catch (error) {
         console.error("[background] Error while downloading image batch:", error);
-        setTimeout(() => {
-          if (tabIds.length > 0) {
-            console.log(`Closing ${tabIds.length} tabs after batch download`);
-            closeTabs(tabIds);
-          }
-        }, 10000);
+        if (tabIds.length > 0) {
+          console.log(`Closing ${tabIds.length} tabs after batch download`);
+          closeTabs(tabIds);
+        }
       }
     })();
 
