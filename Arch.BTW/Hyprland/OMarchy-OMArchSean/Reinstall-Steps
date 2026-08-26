@@ -149,8 +149,11 @@ yay -S kiro-ide --noconfirm
 yay -S warp-terminal --noconfirm
 yay -S simplex-chat-bin
 
+
 -install packages
 sudo pacman -S yt-dlp ffmpeg
+sudo pacman -S telegram-desktop # still need to make an account, also 'comped' secure-lite
+
 
 -install fonts
 sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts # installs A Japanese capable font
