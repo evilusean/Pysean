@@ -148,7 +148,7 @@ yay -S librewolf-bin --noconfirm
 yay -S kiro-ide --noconfirm
 yay -S warp-terminal --noconfirm
 yay -S simplex-chat-bin
-
+yay -S signal-desktop
 
 -install packages
 sudo pacman -S yt-dlp ffmpeg
