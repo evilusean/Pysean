@@ -120,7 +120,7 @@ Open Steam. -> Click Games > Add a Non-Steam Game to My Library...
 'Settings' Change to GE-Proton
 Now you can run it from steam
 
-Get Arknights Endfield to work on Arch : https://dawn.wine/dawn-winery/dwproton/releases
+Get Arknights Endfield to work on Arch (Use 'Heroic Launcher', move files to SSD) : https://dawn.wine/dawn-winery/dwproton/releases
 Steam Launch Options to avoid ACE Anticheat : STEAMDECK=1 SteamOS=1 prime-run %command%
 pkill -9 -f "Endfield|Gryphline|wine|wineserver|ACE-BASE" # if you get kicked by anticheat a background process will stay, use this line to restart
 
@@ -147,6 +147,7 @@ yay -S anki-bin --noconfirm
 yay -S librewolf-bin --noconfirm
 yay -S kiro-ide --noconfirm
 yay -S warp-terminal --noconfirm
+yay -S simplex-chat-bin
 
 -install packages
 sudo pacman -S yt-dlp ffmpeg
