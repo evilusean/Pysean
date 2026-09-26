@@ -1,0 +1,3 @@
+A repo for making my own discord bot, for my own wow guild, because wow forever just released, I can MT and daddy needs TF bindings. 
+Just when you think you are free, they pull you back in. 
+You're Here Forever (WoW), And Ever, And Ever...
