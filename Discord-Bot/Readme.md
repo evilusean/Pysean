@@ -5,3 +5,6 @@ I've got a month before I need to no-life it to 60, then pre-raid BiS. Might as 
 Just when you think you are free, they pull you back in. 
 
 You're Here Forever (WoW), And Ever, And Ever...
+
+About to go into a fuel/famine crisis and subsequent immigrant wave (from 5 billion people without food or fertilizer) on failing european countries whose entire countries are a ponzi scheme run by thieves and criminals who want to institute a draft to distract the plebs from their decades of failures and gaslighting (ironically, they don't have gas from yet another jish war in ukraine). All while the US 10 year is spiking from endless jish wars and usury, and all I can think about is getting dem greens (when I should be thinking about beans). Also, need Calculus for Engineering. I can get to raid-log status, and only log in for one/two day a week once the account is established and I need to study. 
+
