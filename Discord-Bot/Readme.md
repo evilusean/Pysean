@@ -10,6 +10,6 @@ About to go into a fuel/famine crisis and subsequent immigrant wave (from 5 bill
 
 As far as Distract-Seans go, WoW Forever is peak. World is burning outside, but WoW remains cozy. Unc Ted's 'Surrogate Activities'. Realistically, what can you even do about macroeconomic trends? political corruption? and jish wars/usury? Wait for the collapse, while waiting, let's get some BiS and do some Calculus.
 
-We can not allow Iranforge to get the manabomb. Varian Wrynn appeared in the Onyxia Files 109 times! Nagas stole my mount! 
+We can not allow Iranforge to get the manabomb. Varian Wrynn appeared in the Onyxia Files 109 times! Nagas stole my mount! Sylvanas did Nothing Wrong! FOR THE HORDE!!!
 
 First, we conquer the goblin bankers in BlackRock Mountain in WoW, then, we conquer the '"goblin bankers"' in BlackRock Mountain in RL.
