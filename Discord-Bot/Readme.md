@@ -2,7 +2,7 @@ A repo for making my own Discord bot, for my own WoW guild, because WoW forever 
 
 I've got a month before I need to no-life it to 60, then pre-raid BiS. Might as well get the basic stuff like a Discord done before release.
 
-Just when you think you are free, they pull you back in. I pulled that needle out of the arm, and here we are. Mr. Bones Wild Ride..
+Just when you think you are free, they pull you back in. The great opiate of the autists. I pulled that needle out of the arm, and here we are. Mr. Bones Wild Ride..
 
 You're Here Forever (WoW), And Ever, And Ever...
 
