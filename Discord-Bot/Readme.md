@@ -1,6 +1,6 @@
-A repo for making my own discord bot, for my own wow guild, because wow forever just released, I can MT and daddy needs TF bindings. 
+A repo for making my own Discord bot, for my own WoW guild, because WoW forever just released, I can MT and daddy needs TF bindings. 
 
-I've got a month before I need to no-life it to 60, then pre-raid BiS. Might as well get the basic stuff like a disc done before release.
+I've got a month before I need to no-life it to 60, then pre-raid BiS. Might as well get the basic stuff like a Discord done before release.
 
 Just when you think you are free, they pull you back in. 
 
@@ -10,4 +10,4 @@ About to go into a fuel/famine crisis and subsequent immigrant wave (from 5 bill
 
 As far as Distract-Seans go, WoW Forever is peak. World is burning outside, but WoW remains cozy. Realistically, what can you even do about macroeconomic trends? and jish wars/usury? Wait for the collapse, while waiting, let's get some BiS and do some Calculus.
 
-First, we conquer the goblin bankers in blackrock mountain in wow, then we conquer the goblin bankers in blackrock mountain in RL.
+First, we conquer the goblin bankers in BlackRock Mountain in WoW, then we conquer the '"goblin bankers"' in BlackRock Mountain in RL.
