@@ -156,6 +156,7 @@ yay -S pdfcraft-git
 sudo pacman -S yt-dlp ffmpeg
 sudo pacman -S telegram-desktop # still need to make an account, also 'comped' secure-lite
 sudo pacman -S element-desktop 
+sudo pacman -S okular
 
 -install fonts
 sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts # installs A Japanese capable font
