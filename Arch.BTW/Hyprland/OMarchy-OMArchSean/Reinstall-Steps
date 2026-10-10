@@ -149,6 +149,8 @@ yay -S kiro-ide --noconfirm
 yay -S warp-terminal --noconfirm
 yay -S simplex-chat-bin
 yay -S signal-desktop
+yay -S photocraft-git
+yay -S pdfcraft-git
 
 -install packages
 sudo pacman -S yt-dlp ffmpeg
