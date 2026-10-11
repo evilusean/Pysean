@@ -807,6 +807,14 @@ Adobe Photoslop Vs PhotoCraft (Photoshop), VectorCraft (Illustrator), FilmCraft 
   PdfCraft (Acrobat Pro), EffectCraft (After Effects), DesignCraft (InDesign)
   https://getartcraft.com/apps
   https://github.com/storytold/photocraft
+PhotoCraft (Adobe Photoshop) ~14 MB = 'yay -S photocraft-git'
+VectorCraft (Adobe Illustrator) ~18 MB = 'yay -S vectorcraft-git'
+FilmCraft (Adobe Premiere Pro) ~28 MB = 'yay -S filmcraft-git'
+LightCraft (Adobe Lightroom) ~16 MB = 'yay -S lightcraft-git'
+PdfCraft (Adobe Acrobat) ~11 MB = 'yay -S pdfcraft-git'
+EffectCraft (Adobe After Effects) ~32 MB = 'yay -S effectcraft-git'
+DesignCraft (Adobe InDesign) ~15 MB = 'yay -S designcraft-git'
+
 
 Obsidian (notetaking/schizoboarding/weaponized autisming):
 https://obsidian.md/
