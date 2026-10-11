@@ -141,6 +141,13 @@ select the executable, select the wine prefix(the one that 'drive_c' is in), sel
 - Top Left Omarchy Button -> Install -> Editor -> VSCode
 - Top Left Omarchy Button -> Install -> Development -> Python
 
+-install packages
+sudo pacman -S yt-dlp ffmpeg
+sudo pacman -S telegram-desktop # still need to make an account, also 'comped' secure-lite
+sudo pacman -S element-desktop 
+sudo pacman -S okular
+sudo pacman -S gimp
+
 - install yay packages
 yay -S github-desktop-bin --noconfirm
 yay -S anki-bin --noconfirm
@@ -151,13 +158,7 @@ yay -S simplex-chat-bin
 yay -S signal-desktop
 yay -S photocraft-git
 yay -S pdfcraft-git
-
--install packages
-sudo pacman -S yt-dlp ffmpeg
-sudo pacman -S telegram-desktop # still need to make an account, also 'comped' secure-lite
-sudo pacman -S element-desktop 
-sudo pacman -S okular
-sudo pacman -S gimp
+yay -S photogimp
 
 -install fonts
 sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts # installs A Japanese capable font
