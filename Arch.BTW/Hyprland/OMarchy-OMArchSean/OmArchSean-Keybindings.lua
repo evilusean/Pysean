@@ -120,5 +120,15 @@ hl.unbind("SUPER + SHIFT + G")
 o.bind("SUPER + SHIFT + G", "GitHub Desktop", "omarchy-launch-or-focus github-desktop")
 
 -- Zoom
-o.bind("SUPER + equal", "Zoom In", "~/Scripts/system/zoom.sh increase 0.1")
-o.bind("SUPER + minus", "Zoom Out", "~/Scripts/system/zoom.sh decrease 0.1")
+hl.unbind("SUPER + EQUAL")
+hl.unbind("SUPER + MINUS")
+
+o.bind("SUPER + EQUAL", "Zoom In", function()
+  local zoom = hl.get_config("cursor.zoom_factor") or 1
+  hl.config({ cursor = { zoom_factor = math.min(zoom + 0.1, 3) } })
+end)
+
+o.bind("SUPER + MINUS", "Zoom Out", function()
+  local zoom = hl.get_config("cursor.zoom_factor") or 1
+  hl.config({ cursor = { zoom_factor = math.max(zoom - 0.1, 1) } })
+end)
