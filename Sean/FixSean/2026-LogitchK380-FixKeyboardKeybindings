@@ -1,0 +1,32 @@
+# Logitech K380 Fn-Lock & Bluetooth F-Keys Fix
+
+**Problem:** Over raw Bluetooth on Arch Linux, the Logitech K380 defaults the top row (F1–F3) to Easy-Switch host selection, requiring Fn for standard F1–F12 inputs. Solaar cannot configure Bluetooth devices directly without a Unifying receiver.
+
+## Option 1: Direct GitHub Compilation (Recommended)
+
+1. Clone, build, and install:
+   git clone https://github.com/jergusg/k380-function-keys-conf.git /tmp/k380-conf
+   cd /tmp/k380-conf
+   sudo make install
+
+2. Reload udev rules:
+   sudo make reload
+
+*Verify:* Turn the keyboard off and back on. Press F1 or F2 directly without holding Fn.
+
+## Option 2: Standalone Udev Rule (No Compilation Required)
+
+1. Create the udev rule:
+   cat << 'EOF' | sudo tee /etc/udev/rules.d/70-k380-fkeys.rules
+   ACTION=="add", SUBSYSTEM=="hidraw", KERNEL=="hidraw*", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="b342", RUN+="/bin/sh -c 'echo -ne \"\x10\xff\x0b\x1e\x00\x00\x00\" > /dev/%k'"
+   EOF
+
+2. Reload and trigger:
+   sudo udevadm control --reload-rules && sudo udevadm trigger
+
+## Keybindings & Swapping Laptops
+
+- **Standard F-Keys:** Press F1–F12 directly -> Sends standard function keys (targeting, macros, in-game actions).
+- **Switch to Laptop 1:** Hold `Fn + F1` -> Connects to Bluetooth Device 1.
+- **Switch to Laptop 2:** Hold `Fn + F2` -> Connects to Bluetooth Device 2.
+- **Switch to Laptop 3:** Hold `Fn + F3` -> Connects to Bluetooth Device 3.
