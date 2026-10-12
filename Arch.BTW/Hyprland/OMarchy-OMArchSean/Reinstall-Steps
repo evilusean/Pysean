@@ -239,5 +239,8 @@ asusctl -k <level> #sets level
 asusctl -k high
 exec-once = asusctl -k high # add this to hyprland 'execs.conf' it will turn on the keyboard at start
 
+Fix Keyboard Bindings (Logitech K380) :
+https://github.com/evilusean/Pysean/blob/main/Sean/FixSean/2026-LogitchK380-FixKeyboardKeybindings
+
 - Update /home/archsean/.config/hypr/hypridle.conf
 https://github.com/evilusean/Pysean/blob/main/Arch.BTW/Hyprland/OMarchy-OMArchSean/Macbook-hypridle.conf
