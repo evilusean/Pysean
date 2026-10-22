@@ -159,6 +159,7 @@ yay -S signal-desktop
 yay -S photocraft-git
 yay -S pdfcraft-git
 yay -S photogimp
+yay -S protonplus
 
 -install fonts
 sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts # installs A Japanese capable font
