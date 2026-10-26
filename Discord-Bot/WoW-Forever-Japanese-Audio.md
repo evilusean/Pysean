@@ -50,3 +50,11 @@ Native WoW only voices vendor greetings and boss lines. To hear full quest text 
 * **In-Game Commands**:
   * Type `/fvo` or `/voiceover` in-chat to bring up the control panel.
   * Adjust volume channels, toggle auto-play on quest open, or tweak speech playback speed.
+ 
+## World of Warcraft: Japanese Voiceover Addon Mechanics
+
+### How VoiceOver Handles Localization
+* **No Real-Time Screen Scraping**: The VoiceOver addon does not translate on-the-fly or read English text aloud. 
+* **Quest ID Mapping**: It operates using Blizzard's hidden **Quest ID** system, matching each unique quest identifier to a pre-rendered audio file stored inside the addon's data folder.
+* **Native Japanese Scripts**: The `jaJP` sound pack is compiled using official Japanese localized quest text (authored by Blizzard's native localization team) processed through neural TTS models.
+* **Result**: Even though your client UI and screen text are set to English (`enUS`), opening a quest triggers the corresponding Quest ID audio file, playing natural, contextually accurate Japanese voice acting for language immersion.
