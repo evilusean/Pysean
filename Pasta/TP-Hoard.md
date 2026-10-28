@@ -1,0 +1,1 @@
+Honestly you people laugh at toilet paper hoarders, but you really dont have enough toilet paper yourselves. The average person uses 1 roll per day. If you have a family of 4, that's 28 rolls a week. Over 100 a month. TP rolls will be worth their weight in gold in a few months, because everyone needs it.
