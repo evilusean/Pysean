@@ -161,3 +161,44 @@ The "Americas Bloc" becomes the absolute titan of energy. With Canada holding 8%
   https://www.dailymail.co.uk/news/article-15735917/Victoria-Corio-oil-refinery.html
   It's now one refinery. Fun Fact : Mad Max was filmed in austrailia. 
 * **Covid Vibes :** '"short term pain for long term gain"' vs '"just 2 weeks to flatten the curve"' - normies are already being primed with the cliches - *Covid 2 : Electric Boogaloo* - This time with food and fuel shortages - Energy lockdowns 
+
+# Middle Distillates & The Hormuz Shock: Geopolitical & Refining Realignment
+
+## Overview: The Middle Distillate Deficit
+When the Strait of Hormuz goes offline, the global **middle distillate** market (primarily diesel, heating oil, gasoil, and jet fuel) enters an immediate structural deficit. Middle distillates require specific crude oil chemical profiles (specifically **medium/heavy, medium-sulfur to sour crude grades**), and losing Middle Eastern export volumes removes nearly **10% of global gasoil trade** and over **20% of global jet fuel trade**.
+
+## The Chemistry: What Oil Makes Diesel?
+Unlike gasoline, which thrives on light, sweet crudes (like US shale / WTI), **middle distillates require medium-to-heavy crude slates with longer carbon chains (C10 to C20)**. 
+
+* **Light Sweet Crudes (API >38°)**: Excellent for naphtha and gasoline; poor yield for diesel.
+* **Medium/Heavy Sour & Medium Sweet Crudes (API 15°–34°)**: High natural yield of middle distillates. These crudes require complex secondary refining (hydrocrackers, desulfurization units) to process.
+
+### The Diesel-Crude Chessboard: Regional Sourcing - Distillates : 
+
+| Region | Key Crude Grades | Distillate Yield & Status |
+| :--- | :--- | :--- |
+| **1. Canada** | Western Canadian Select (WCS), Cold Lake, Bow River | High distillate density; needs complex refining & upgraded transport capacity. |
+| **2. South America & West Africa** | Venezuela (Merey), Brazil (Lula/Tupi), Colombia, Angola (Cabinda) | Ideal heavy/medium slates; high yield, but Venezuela has severe infrastructure bottlenecks. |
+| **3. Russia & E. Europe / Gulf** | Urals, ESPO | Perfect yield slate; restricted by sanctions, redirection to shadow fleets. |
+
+#### 1. Canada (Western Canadian Select - WCS)
+* **The Crude**: Heavy, sour bitumen blends (API 20°–22°).
+* **Distillate Profile**: Unmatched middle distillate carbon distribution. Extremely high yield for diesel and industrial gasoil when run through complex cracking facilities.
+* **Role**: Canada becomes the premier supplier for US Gulf Coast (USGC) and Midwest refiners, who possess the heavy coking and hydroprocessing capacity required to convert WCS into low-sulfur diesel.
+
+#### 2. South America & West Africa
+* **South America (Venezuela, Brazil, Colombia)**: 
+  * **Venezuela (Merey / BCF-17)**: Ultra-heavy, high-yielding crude. Ideal for distillates, but crippled by years of underinvestment and infrastructure limits.
+  * **Brazil (Lula/Tupi) & Colombia (Cano Limon)**: Medium-sweet and medium-sour crudes (API 28°–30°). Excellent distillate yield without heavy desulfurization overhead.
+* **West Africa (Angola, Nigeria)**:
+  * **Angola (Cabinda, Dalia)**: Medium heavy, low-sulfur crudes. High demand from European refiners seeking to replace lost Middle Eastern gasoil.
+
+#### 3. Russia (Urals & ESPO)
+* **The Crude**: Urals is the global benchmark for medium sour crude (API 31°, ~1.3% sulfur).
+* **Distillate Profile**: Structurally designed for European-style diesel-heavy refinery setups.
+* **Role**: While Western sanctions alter official trade routes, Russian Urals are diverted directly to non-aligned refineries (India, China) that process it into finished diesel for re-export at massive premiums.
+
+### Strategic Trade Realignment
+1. **Refinery Complexity Gap**: Light US shale (WTI) cannot cleanly solve the global diesel shortage alone. USGC refiners blend heavy Canadian and South American crudes with light domestic shale to run their hydrocrackers at full capacity.
+2. **Europe's Exposure**: Europe is structurally short on diesel and jet fuel. Deprived of Middle Eastern gasoil and direct Russian pipeline crude, Europe relies heavily on imports from US, Indian, and West African refiners.
+3. **The Premium Skyrockets**: Distillate crack spreads (the profit margin between raw crude and finished diesel) reach record highs, making complex refineries configured for heavy/medium crudes exceptionally lucrative.
