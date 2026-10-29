@@ -1,16 +1,17 @@
-Option 2: The Discord & Web Ecosystem (wowaudit or Raidify)
-If your guild plans raids on Discord or a web dashboard, you can automate attendance tracking through external integrations.
+### Discord & Web Ecosystem Attendance Setup
 
-wowaudit + Discord Bot
+Automation via Discord and web integration minimizes officer workload by linking raid sign-ups, in-game rosters, and combat log data into a single tracking pipeline.
 
-How it works: Connects your Discord raid sign-ups directly to a managed web dashboard.
+---
 
-Attendance System: Tracks who signed up, who showed up, and who flaked. It can cross-reference your in-game logs or Warcraft Logs to auto-populate attendance metrics.
+### Method 1: `wowaudit` + Discord Bot (Fully Automated)
 
-Friction Level: Near zero for officers after the initial 5-minute Discord bot hookup.
+#### Overview
+`wowaudit` connects directly to your Discord server and Warcraft Logs. It synchronizes sign-ups from Discord event scheduling tools (like Raid-Helper) with actual combat logs to verify attendance without manual data entry.
 
-Raidify / WoW Classic Raid Tools (WCRT)
+#### Setup Pipeline
+1. **Connect Platform**: Link your guild on `wowaudit.com` using Battle.net OAuth.
+2. **Discord Bot Authorization**: Invite the `wowaudit` Discord Bot to your server and grant permissions to inspect raid sign-up channels.
+3. **Log Integration**: Connect your guild's Warcraft Logs API key to `wowaudit`.
 
-How it works: Uses a lightweight in-game addon to take a snapshot of your raid group.
-
-Execution: Click a button in-game (/raidify start or /wcrt export) at the start or end of a raid. It saves a clean string to your SavedVariables file that automatically updates your roster app or Discord webhooks.
+#### Automated Tracking Logic
