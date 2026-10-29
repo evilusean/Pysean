@@ -47,3 +47,6 @@ Run a local script in the background on your PC that watches your WoW `SavedVari
 **Python Dependencies Required:**
 ```bash
 pip install requests watchdog
+```
+
+
