@@ -33,6 +33,8 @@ Native WoW only voices vendor greetings and boss lines. To hear full quest text 
 * **Storyline** or **Immersion**: (Optional UI Addon) Replaces the standard quest window with an animated, cinematic dialogue frame (similar to modern RPGs/FFXIV) that displays English subtitles line-by-line in sync with the Japanese audio playback.
 
 ### Step-by-Step Installation
+- I just checked, there is no Japanese audiopack for the WoW addon 'Spoken' which will read all the quest text/gossip/etc as TTS 
+
 1. Install **VoiceOver (Classic)** via CurseForge, WoWUp, or manual extract:
    * Path: `World of Warcraft/_classic_era_/Interface/AddOns/VoiceOver/`
 2. Download and extract the **Japanese AI Voice Pack**:
