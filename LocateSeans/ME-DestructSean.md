@@ -215,7 +215,7 @@ Unlike gasoline, which thrives on light, sweet crudes (like US shale / WTI), **m
 ---
 
 #### The Strait of Hormuz Shutdown & The Qatari Shock
-* **The Epicenter:** Qatar (centered around Ras Laffan Industrial City) produces approximately **30% to 33% of the entire global helium supply**, extracted as a byproduct of its massive natural gas fields.
+* **The Epicenter:** Much to Tucker Qatarlsons chagrin, Qatar (centered around Ras Laffan Industrial City) produces approximately **30% to 33% of the entire global helium supply**, extracted as a byproduct of its massive natural gas fields.
 * **The Shutdown:** Following military conflict in the region, the **Strait of Hormuz** became heavily blockaded and disrupted, shutting down maritime egress from the Persian Gulf.
 * **The Impact on Global Trade:** This crisis instantly choked off roughly **one-third (30–33%) of the world's total active helium production**, compounded by roughly a third of the world's cryogenic helium ISO containers becoming stranded in or around Qatar. Because liquid helium evaporates within about 45 days, that trapped inventory cannot be saved for later delivery. Spot prices immediately doubled as a result.
 
